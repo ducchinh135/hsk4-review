@@ -5,8 +5,8 @@
   "description": "HSK4 vocabulary review with cross-device progress sync (Cloudflare Pages + D1)",
   "scripts": {
     "db:local": "wrangler d1 migrations apply hsk4 --local",
-    "dev": "wrangler pages dev public --d1=DB --port 8788",
-    "test": "node --test tests/",
+    "dev": "wrangler pages dev public --port 8788",
+    "test": "node --test tests/api.test.mjs",
     "deploy": "wrangler pages deploy public --project-name hsk4-review"
   },
   "devDependencies": {

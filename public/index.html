@@ -217,9 +217,62 @@
   @keyframes pulse{ from{ transform:scale(1);} to{ transform:scale(1.12);} }
   @media (max-width:600px){ .speak-btn.front{ width:46px; height:46px; font-size:22px; top:10px; right:10px; } .speak-row{ gap:8px; } .speak-btn.mini{ flex:1 1 40%; padding:11px 8px; } }
   @media (prefers-reduced-motion:reduce){ .speak-btn.speaking{ animation:none; } }
+
+  /* ===== MARKS / FILTER / ACCOUNT ===== */
+  .account-bar{ max-width:1000px; margin:0 auto; padding:10px 16px 0; display:flex; justify-content:flex-end; align-items:center; gap:10px; flex-wrap:wrap; font-size:14px; font-weight:700; color:#555; }
+  .account-bar[hidden]{ display:none; }
+  .acc-btn{ border:none; cursor:pointer; padding:9px 16px; border-radius:999px; background:#ffffffcc; color:#333; font-size:14px; font-weight:800; box-shadow:0 2px 0 rgba(0,0,0,0.1); min-height:40px; }
+  .acc-btn.primary{ background:#232333; color:#fff; }
+  .sync-status{ font-size:13px; font-weight:700; color:#2f9e44; }
+  .sync-status.warn{ color:#c2410c; }
+  .filter-bar{ max-width:900px; margin:-8px auto 18px; padding:0 12px; display:flex; flex-direction:column; align-items:center; gap:8px; }
+  .filter-chips{ display:flex; gap:6px; flex-wrap:wrap; justify-content:center; background:#ffffffaa; padding:6px; border-radius:16px; }
+  .chip{ border:none; background:transparent; cursor:pointer; padding:9px 14px; border-radius:12px; font-size:14px; font-weight:700; color:#555; min-height:40px; }
+  .tab-sub{ display:block; font-size:12px; font-weight:700; opacity:.92; margin-top:2px; }
+  .chip .n{ opacity:.7; font-weight:600; margin-left:4px; }
+  .chip.active{ background:var(--accent-a,#333); color:#fff; }
+  .filter-note{ font-size:13px; font-weight:600; color:#c2410c; text-align:center; }
+  .filter-tools{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:center; font-size:13px; color:#666; font-weight:600; }
+  .link-btn{ border:none; background:none; cursor:pointer; color:#666; text-decoration:underline; font-size:13px; font-weight:700; padding:8px; }
+  .mark-row{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin:6px 0 2px; width:100%; }
+  .mark-btn{ border:2px solid #d0d0d8; background:#fff; color:#444; cursor:pointer; padding:10px 16px; border-radius:14px; font-size:15px; font-weight:800; min-height:44px; }
+  .mark-btn[data-s="k"].active{ background:#d3f9d8; border-color:#2f9e44; color:#2b8a3e; }
+  .mark-btn[data-s="r"].active{ background:#ffe3e3; border-color:#e03131; color:#c92a2a; }
+  .status-chip{ position:absolute; top:16px; left:16px; padding:5px 12px; border-radius:999px; background:rgba(255,255,255,0.3); color:#fff; font-size:13px; font-weight:800; }
+  .status-chip:empty{ display:none; }
+  .mini-card{ position:relative; }
+  .mini-card.is-known{ opacity:.5; }
+  .mini-card.is-known::after{ content:'✓'; position:absolute; top:2px; right:6px; font-size:14px; }
+  .mini-card.is-review{ box-shadow:0 4px 0 rgba(0,0,0,0.15), inset 0 0 0 3px #fff; }
+  .mini-card.is-review::after{ content:'!'; position:absolute; top:2px; right:6px; font-size:15px; }
+  .modal{ position:fixed; inset:0; background:rgba(20,20,35,0.55); display:flex; align-items:center; justify-content:center; padding:16px; z-index:50; }
+  .modal[hidden]{ display:none; }
+  .modal-box{ background:#fff; border-radius:22px; padding:22px 20px; width:min(400px,100%); box-shadow:0 20px 50px rgba(0,0,0,0.3); max-height:92vh; overflow:auto; }
+  .modal-tabs{ display:flex; gap:6px; background:#f0f0f6; padding:5px; border-radius:14px; margin-bottom:14px; }
+  .modal-tabs button{ flex:1; border:none; background:transparent; padding:11px; border-radius:10px; font-size:15px; font-weight:800; cursor:pointer; color:#555; }
+  .modal-tabs button.active{ background:#232333; color:#fff; }
+  .modal label{ display:block; font-size:14px; font-weight:700; margin:12px 0 5px; color:#444; }
+  .modal input{ width:100%; padding:13px 14px; border:2px solid #d8d8e2; border-radius:12px; font-size:16px; font-family:inherit; }
+  .modal input:focus{ outline:none; border-color:#3d8bff; }
+  .modal .hint-small{ font-size:12.5px; color:#777; margin-top:5px; font-weight:500; }
+  .modal-error{ margin-top:12px; color:#c92a2a; background:#ffe3e3; border-radius:10px; padding:10px 12px; font-size:14px; font-weight:700; }
+  .modal-error[hidden]{ display:none; }
+  .modal-actions{ display:flex; gap:10px; margin-top:16px; }
+  .modal-actions .btn{ flex:1; }
+  @media (max-width:600px){
+    .account-bar{ justify-content:space-between; padding:8px 12px 0; }
+    .chip{ flex:1 1 calc(50% - 6px); padding:10px 8px; }
+    .mark-btn{ flex:1 1 calc(50% - 10px); padding:11px 8px; }
+    .status-chip{ top:10px; left:10px; font-size:12px; }
+  }
 </style>
 </head>
 <body>
+
+<div class="account-bar" id="accountBar" hidden>
+  <span class="sync-status" id="syncStatus" role="status" aria-live="polite"></span>
+  <span id="accountArea"></span>
+</div>
 
 <header>
   <h1>📇 Thẻ Từ Vựng HSK4</h1>
@@ -232,6 +285,20 @@
 <div class="audio-bar" id="audioBar">
   <label><input type="checkbox" id="autoSpeak"> 🔊 Tự đọc khi chuyển thẻ</label>
   <div class="audio-note" id="audioNote" hidden></div>
+</div>
+
+<div class="filter-bar" id="filterBar">
+  <div class="filter-chips" role="group" aria-label="Lọc từ theo trạng thái">
+    <button class="chip active" data-f="all">Tất cả<span class="n" id="cnt-all"></span></button>
+    <button class="chip" data-f="new">Chưa đánh dấu<span class="n" id="cnt-new"></span></button>
+    <button class="chip" data-f="r">🔁 Cần ôn lại<span class="n" id="cnt-r"></span></button>
+    <button class="chip" data-f="k">✅ Đã thuộc<span class="n" id="cnt-k"></span></button>
+  </div>
+  <div class="audio-note filter-note" id="filterNote" hidden></div>
+  <div class="filter-tools">
+    <span id="progressText"></span>
+    <button class="link-btn" id="resetMarks" type="button">Xóa đánh dấu bài này</button>
+  </div>
 </div>
 
 <div class="mode-tabs" id="modeTabs">
@@ -247,6 +314,7 @@
     <div class="flip-card" id="flipCard">
       <div class="flip-inner">
         <div class="face face-front">
+          <span class="status-chip" data-p="card"></span>
           <button class="speak-btn front" data-speak="cardHanzi" aria-label="Phát âm từ" title="Nghe phát âm">🔊</button>
           <div class="hanzi-big" id="cardHanzi"></div>
           <div class="hint">👆 Chạm vào thẻ để xem phiên âm &amp; nghĩa</div>
@@ -257,6 +325,10 @@
           <div class="speak-row">
             <button class="speak-btn mini" data-speak="cardHanzi">🔊 Nghe từ</button>
             <button class="speak-btn mini" data-speak="cardExampleZh">🔊 Nghe câu</button>
+          </div>
+          <div class="mark-row">
+            <button class="mark-btn" data-p="card" data-s="k" type="button">✅ Đã thuộc</button>
+            <button class="mark-btn" data-p="card" data-s="r" type="button">🔁 Cần ôn lại</button>
           </div>
           <div class="back-example">
             <div class="zh" id="cardExampleZh"></div>
@@ -280,6 +352,7 @@
     <div class="flip-card" id="reviewCard">
       <div class="flip-inner">
         <div class="face face-front">
+          <span class="status-chip" data-p="review"></span>
           <button class="speak-btn front" data-speak="reviewHanzi" aria-label="Phát âm từ" title="Nghe phát âm">🔊</button>
           <div class="hanzi-big" id="reviewHanzi"></div>
           <div class="hint">Đọc to lên rồi chạm để kiểm tra!</div>
@@ -290,6 +363,10 @@
           <div class="speak-row">
             <button class="speak-btn mini" data-speak="reviewHanzi">🔊 Nghe từ</button>
             <button class="speak-btn mini" data-speak="reviewExampleZh">🔊 Nghe câu</button>
+          </div>
+          <div class="mark-row">
+            <button class="mark-btn" data-p="review" data-s="k" type="button">✅ Đã thuộc</button>
+            <button class="mark-btn" data-p="review" data-s="r" type="button">🔁 Cần ôn lại</button>
           </div>
           <div class="back-example">
             <div class="zh" id="reviewExampleZh"></div>
@@ -317,6 +394,33 @@
       <button class="btn" id="fillNext">Câu tiếp theo ▶</button>
     </div>
     <div class="fb-score" id="fillScore"></div>
+  </div>
+</div>
+
+<div class="modal" id="authModal" hidden role="dialog" aria-modal="true" aria-labelledby="authTitle">
+  <div class="modal-box">
+    <div class="modal-tabs" id="authTabs">
+      <button type="button" data-t="login" class="active" id="authTitle">Đăng nhập</button>
+      <button type="button" data-t="register">Đăng ký</button>
+    </div>
+    <form id="authForm" autocomplete="on">
+      <label for="authUser">Tên đăng nhập</label>
+      <input id="authUser" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" required>
+      <div class="hint-small" id="authUserHint" hidden>3–20 ký tự: chữ không dấu, số hoặc dấu gạch dưới.</div>
+      <label for="authPass">Mật khẩu</label>
+      <input id="authPass" name="password" type="password" autocomplete="current-password" required>
+      <div class="hint-small" id="authPassHint" hidden>Ít nhất 8 ký tự.</div>
+      <div id="inviteWrap" hidden>
+        <label for="authInvite">Mã mời</label>
+        <input id="authInvite" name="invite" autocomplete="off" autocapitalize="none" spellcheck="false">
+        <div class="hint-small">Hỏi người chia sẻ trang này để lấy mã.</div>
+      </div>
+      <div class="modal-error" id="authError" hidden role="alert"></div>
+      <div class="modal-actions">
+        <button class="btn secondary" type="button" id="authCancel">Hủy</button>
+        <button class="btn" type="submit" id="authSubmit">Đăng nhập</button>
+      </div>
+    </form>
   </div>
 </div>
 
@@ -381,7 +485,7 @@ function buildLessonTabs(){
     const btn = document.createElement('button');
     btn.className = 'lesson-tab' + (l===currentLesson?' active':'');
     btn.dataset.l = l;
-    btn.textContent = LESSON_LABELS[l] + ' (' + VOCAB[l].words.length + ' từ)';
+    setTabLabel(btn, l);
     btn.addEventListener('click', ()=>{ selectLesson(l); });
     wrap.appendChild(btn);
   });
@@ -389,6 +493,7 @@ function buildLessonTabs(){
 
 function selectLesson(l){
   currentLesson = l;
+  refreshView();
   applyAccent(l);
   document.getElementById('lessonTitle').textContent = VOCAB[l].title;
   document.getElementById('lessonTitle').style.color = LESSON_COLORS[l].a;
@@ -399,6 +504,7 @@ function selectLesson(l){
   initReview();
   initFill();
   renderMode();
+  updateStats();
 }
 
 function buildModeTabs(){
@@ -423,7 +529,7 @@ function renderMode(){
 
 /* ---------------- FLASHCARD MODE ---------------- */
 function renderCard(){
-  const words = VOCAB[currentLesson].words;
+  const words = curWords();
   const w = words[cardIndex];
   const el = document.getElementById('flipCard');
   el.classList.remove('flipped');
@@ -433,10 +539,11 @@ function renderCard(){
   document.getElementById('cardExampleZh').textContent = w[3];
   document.getElementById('cardsProgress').textContent = 'Từ ' + (cardIndex+1) + ' / ' + words.length;
   renderCardsGrid();
+  updateMarkButtons();
 }
 
 function renderCardsGrid(){
-  const words = VOCAB[currentLesson].words;
+  const words = curWords();
   const grid = document.getElementById('cardsGrid');
   grid.innerHTML = '';
   const c = LESSON_COLORS[currentLesson];
@@ -445,6 +552,8 @@ function renderCardsGrid(){
     d.className = 'mini-card' + (i===cardIndex?' current':'');
     d.style.background = i%2===0 ? c.a : c.b;
     d.textContent = w[0];
+    const mk = getMark(w[0]);
+    if(mk==='k') d.classList.add('is-known'); else if(mk==='r') d.classList.add('is-review');
     d.addEventListener('click', ()=>{ cardIndex=i; renderCard(); });
     grid.appendChild(d);
   });
@@ -457,24 +566,24 @@ document.getElementById('cardFlip').addEventListener('click', ()=>{
   document.getElementById('flipCard').classList.toggle('flipped');
 });
 document.getElementById('cardPrev').addEventListener('click', ()=>{
-  const n = VOCAB[currentLesson].words.length;
+  const n = curWords().length;
   cardIndex = (cardIndex-1+n)%n;
   renderCard();
 });
 document.getElementById('cardNext').addEventListener('click', ()=>{
-  const n = VOCAB[currentLesson].words.length;
+  const n = curWords().length;
   cardIndex = (cardIndex+1)%n;
   renderCard();
 });
 
 /* ---------------- REVIEW (SHUFFLE) MODE ---------------- */
 function initReview(){
-  const n = VOCAB[currentLesson].words.length;
+  const n = curWords().length;
   reviewOrder = shuffle([...Array(n).keys()]);
   reviewIndex = 0;
 }
 function renderReview(){
-  const words = VOCAB[currentLesson].words;
+  const words = curWords();
   const w = words[reviewOrder[reviewIndex]];
   const el = document.getElementById('reviewCard');
   el.classList.remove('flipped');
@@ -483,6 +592,7 @@ function renderReview(){
   document.getElementById('reviewMeaning').textContent = w[2];
   document.getElementById('reviewExampleZh').textContent = w[3];
   document.getElementById('reviewProgress').textContent = 'Từ ' + (reviewIndex+1) + ' / ' + words.length + ' (thứ tự đã xáo trộn)';
+  updateMarkButtons();
 }
 document.getElementById('reviewCard').addEventListener('click', ()=>{
   document.getElementById('reviewCard').classList.toggle('flipped');
@@ -492,7 +602,7 @@ document.getElementById('reviewShuffle').addEventListener('click', ()=>{
   renderReview();
 });
 document.getElementById('reviewNext').addEventListener('click', ()=>{
-  const n = VOCAB[currentLesson].words.length;
+  const n = curWords().length;
   reviewIndex = (reviewIndex+1)%n;
   if(reviewIndex===0){ reviewOrder = shuffle(reviewOrder); }
   renderReview();
@@ -500,14 +610,14 @@ document.getElementById('reviewNext').addEventListener('click', ()=>{
 
 /* ---------------- FILL IN THE BLANK MODE ---------------- */
 function initFill(){
-  const n = VOCAB[currentLesson].words.length;
+  const n = curWords().length;
   fillOrder = shuffle([...Array(n).keys()]);
   fillIndex = 0;
   fillScore = {correct:0, total:0};
   fillAnswered = false;
 }
 function renderFill(){
-  const words = VOCAB[currentLesson].words;
+  const words = curWords();
   const idx = fillOrder[fillIndex];
   const w = words[idx];
   fillAnswered = false;
@@ -520,7 +630,7 @@ function renderFill(){
   document.getElementById('fillScore').textContent = 'Điểm: ' + fillScore.correct + ' / ' + fillScore.total;
 
   // build options: correct + 3 distractors from same lesson
-  const others = words.filter((_,i)=>i!==idx).map(x=>x[0]);
+  const others = VOCAB[currentLesson].words.filter(x=>x[0]!==w[0]).map(x=>x[0]);
   const distractors = shuffle(others).slice(0,3);
   const options = shuffle([w[0], ...distractors]);
 
@@ -539,6 +649,7 @@ function renderFill(){
         fillScore.correct++;
       } else {
         b.classList.add('wrong');
+        if(getMark(w[0])!=='r') setMark(w[0],'r');
         optWrap.querySelectorAll('.fb-opt').forEach(x=>{
           if(x.textContent===w[0]) x.classList.add('correct');
         });
@@ -550,7 +661,7 @@ function renderFill(){
   });
 }
 document.getElementById('fillNext').addEventListener('click', ()=>{
-  const n = VOCAB[currentLesson].words.length;
+  const n = curWords().length;
   fillIndex = (fillIndex+1)%n;
   if(fillIndex===0){ fillOrder = shuffle(fillOrder); }
   renderFill();
@@ -559,6 +670,118 @@ document.getElementById('fillRestart').addEventListener('click', ()=>{
   initFill();
   renderFill();
 });
+
+/* ---------------- MARKS (known / review) ---------------- */
+const MARKS_KEY = 'hsk4_marks_v1';
+const FILTER_KEY = 'hsk4_filter';
+let marks = {};            // hanzi -> {s:'k'|'r'|'', t:epoch ms}
+let filterMode = 'all';    // all | new | r | k
+let viewWords = [];
+let syncHook = null;
+
+function loadMarks(){
+  try{ marks = JSON.parse(localStorage.getItem(MARKS_KEY) || '{}') || {}; }catch(e){ marks = {}; }
+  try{ const f = localStorage.getItem(FILTER_KEY); if(['all','new','r','k'].includes(f)) filterMode = f; }catch(e){}
+}
+function saveMarks(){ try{ localStorage.setItem(MARKS_KEY, JSON.stringify(marks)); }catch(e){} }
+function getMark(h){ const m = marks[h]; return m && m.s ? m.s : ''; }
+function setMark(h, s){
+  marks[h] = {s: s, t: Math.max(Date.now(), (marks[h] ? marks[h].t + 1 : 0))};
+  saveMarks();
+  onMarksChanged();
+}
+function toggleMark(h, s){ setMark(h, getMark(h)===s ? '' : s); }
+function curWords(){ return viewWords; }
+
+function refreshView(){
+  const all = VOCAB[currentLesson].words;
+  let list = all.filter(w=>{
+    const m = getMark(w[0]);
+    return filterMode==='all' || (filterMode==='new' && m==='') || m===filterMode;
+  });
+  const note = document.getElementById('filterNote');
+  if(!list.length){
+    list = all;
+    note.textContent = 'Chưa có từ nào ở mục này nên đang hiện tất cả từ của bài.';
+    note.hidden = false;
+  } else { note.hidden = true; }
+  viewWords = list;
+}
+
+function lessonCounts(l){
+  const ws = VOCAB[l].words;
+  let k = 0, r = 0;
+  ws.forEach(w=>{ const m = getMark(w[0]); if(m==='k') k++; else if(m==='r') r++; });
+  return {n: ws.length, k: k, r: r, fresh: ws.length - k - r};
+}
+function setTabLabel(btn, l){
+  const c = lessonCounts(l);
+  btn.textContent = '';
+  const a = document.createElement('span'); a.textContent = LESSON_LABELS[l];
+  const b = document.createElement('span'); b.className = 'tab-sub'; b.textContent = c.k + '/' + c.n + ' ✓';
+  btn.append(a, b);
+}
+function updateStats(){
+  const c = lessonCounts(currentLesson);
+  document.getElementById('cnt-all').textContent = c.n;
+  document.getElementById('cnt-new').textContent = c.fresh;
+  document.getElementById('cnt-r').textContent = c.r;
+  document.getElementById('cnt-k').textContent = c.k;
+  document.getElementById('progressText').textContent = 'Đã thuộc ' + c.k + '/' + c.n + ' từ của bài này';
+  document.querySelectorAll('.chip').forEach(b=>b.classList.toggle('active', b.dataset.f===filterMode));
+  document.querySelectorAll('.lesson-tab').forEach(b=>setTabLabel(b, b.dataset.l));
+}
+function updateMarkButtons(){
+  ['card','review'].forEach(p=>{
+    const hz = document.getElementById(p + 'Hanzi').textContent;
+    const m = getMark(hz);
+    document.querySelectorAll('.mark-btn[data-p="'+p+'"]').forEach(b=>b.classList.toggle('active', b.dataset.s===m));
+    const chip = document.querySelector('.status-chip[data-p="'+p+'"]');
+    chip.textContent = m==='k' ? '✅ Đã thuộc' : (m==='r' ? '🔁 Cần ôn lại' : '');
+  });
+}
+function onMarksChanged(){
+  updateMarkButtons();
+  updateStats();
+  if(currentMode==='cards') renderCardsGrid();
+  if(syncHook) syncHook();
+}
+function applyFilter(f){
+  filterMode = f;
+  try{ localStorage.setItem(FILTER_KEY, f); }catch(e){}
+  refreshView();
+  cardIndex = 0;
+  initReview();
+  initFill();
+  renderMode();
+  updateStats();
+}
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click', ()=>applyFilter(b.dataset.f)));
+document.querySelectorAll('.mark-btn').forEach(b=>b.addEventListener('click', e=>{
+  e.stopPropagation();
+  toggleMark(document.getElementById(b.dataset.p + 'Hanzi').textContent, b.dataset.s);
+}));
+(function(){
+  const btn = document.getElementById('resetMarks');
+  let armed = null;
+  btn.addEventListener('click', ()=>{
+    if(!armed){
+      btn.textContent = 'Bấm lần nữa để xác nhận xóa';
+      armed = setTimeout(()=>{ armed = null; btn.textContent = 'Xóa đánh dấu bài này'; }, 4000);
+      return;
+    }
+    clearTimeout(armed); armed = null;
+    btn.textContent = 'Xóa đánh dấu bài này';
+    const t = Date.now();
+    VOCAB[currentLesson].words.forEach(w=>{ if(marks[w[0]] && marks[w[0]].s) marks[w[0]] = {s:'', t: Math.max(t, marks[w[0]].t + 1)}; });
+    saveMarks();
+    applyFilter('all');
+    if(syncHook) syncHook();
+  });
+})();
+// Called after account sync or logout to redraw with the new marks.
+function marksReplaced(){ saveMarks(); refreshView(); renderMode(); updateStats(); }
+loadMarks();
 
 /* ---------------- INIT ---------------- */
 buildLessonTabs();
@@ -641,6 +864,138 @@ if(!TTS){
   document.querySelectorAll('.lesson-tab, .mode-tab').forEach(b=>b.addEventListener('click', ()=>{ TTS.cancel(); }));
 }
 window.addEventListener('pagehide', ()=>{ if(TTS) TTS.cancel(); });
+</script>
+<script>
+/* ---------------- ACCOUNT + SYNC (needs the Cloudflare backend; hidden elsewhere) ---------------- */
+(function(){
+  const bar = document.getElementById('accountBar');
+  const area = document.getElementById('accountArea');
+  const statusEl = document.getElementById('syncStatus');
+  const modal = document.getElementById('authModal');
+  const form = document.getElementById('authForm');
+  let user = null, mode = 'login', timer = null, retry = null, syncing = false, pending = false;
+
+  async function api(method, path, body){
+    const res = await fetch(path, {
+      method: method,
+      credentials: 'same-origin',
+      headers: body ? {'content-type':'application/json'} : {},
+      body: body ? JSON.stringify(body) : undefined
+    });
+    let data = null;
+    try{ data = await res.json(); }catch(e){}
+    return {ok: res.ok, status: res.status, data: data};
+  }
+  function setStatus(text, warn){ statusEl.textContent = text; statusEl.classList.toggle('warn', !!warn); }
+
+  function renderAccount(){
+    area.textContent = '';
+    if(user){
+      const name = document.createElement('span');
+      name.textContent = '👤 ' + user.username + ' ';
+      const out = document.createElement('button');
+      out.className = 'acc-btn'; out.type = 'button'; out.textContent = 'Đăng xuất';
+      out.addEventListener('click', logout);
+      area.append(name, out);
+    } else {
+      const b = document.createElement('button');
+      b.className = 'acc-btn primary'; b.type = 'button';
+      b.textContent = '👤 Đăng nhập để đồng bộ';
+      b.addEventListener('click', ()=>openModal('login'));
+      area.append(b);
+      setStatus('Tiến độ đang lưu trên máy này', false);
+    }
+  }
+
+  async function doSync(first){
+    if(!user) return;
+    if(syncing){ pending = true; return; }
+    syncing = true; pending = false;
+    setStatus('☁ Đang đồng bộ…', false);
+    try{
+      const r = await api('POST', '/api/sync', {marks: marks});
+      if(r.status === 401){ user = null; renderAccount(); setStatus('Phiên đăng nhập đã hết hạn, hãy đăng nhập lại.', true); return; }
+      if(!r.ok) throw new Error('sync ' + r.status);
+      const server = r.data.marks || {};
+      Object.keys(server).forEach(h=>{
+        if(!marks[h] || server[h].t >= marks[h].t) marks[h] = server[h];
+      });
+      if(first) marksReplaced(); else { saveMarks(); updateMarkButtons(); updateStats(); if(currentMode==='cards') renderCardsGrid(); }
+      setStatus('☁ Đã đồng bộ', false);
+      clearTimeout(retry); retry = null;
+    }catch(e){
+      setStatus('⚠️ Chưa đồng bộ được, sẽ thử lại', true);
+      clearTimeout(retry); retry = setTimeout(()=>doSync(false), 15000);
+    }finally{
+      syncing = false;
+      if(pending) doSync(false);
+    }
+  }
+  syncHook = function(){
+    if(!user) return;
+    setStatus('☁ Chờ đồng bộ…', false);
+    clearTimeout(timer); timer = setTimeout(()=>doSync(false), 800);
+  };
+  window.addEventListener('online', ()=>{ if(user) doSync(false); });
+  document.addEventListener('visibilitychange', ()=>{ if(!document.hidden && user) doSync(false); });
+
+  async function logout(){
+    clearTimeout(timer); clearTimeout(retry);
+    if(user) await doSync(false);   // push anything unsent before leaving
+    try{ await api('POST', '/api/logout', {}); }catch(e){}
+    user = null;
+    marks = {};                      // do not leave this account's progress on a shared browser
+    marksReplaced();
+    renderAccount();
+  }
+
+  function setMode(m){
+    mode = m;
+    document.querySelectorAll('#authTabs button').forEach(b=>b.classList.toggle('active', b.dataset.t===m));
+    document.getElementById('inviteWrap').hidden = m !== 'register';
+    document.getElementById('authUserHint').hidden = m !== 'register';
+    document.getElementById('authPassHint').hidden = m !== 'register';
+    document.getElementById('authPass').autocomplete = m === 'register' ? 'new-password' : 'current-password';
+    document.getElementById('authSubmit').textContent = m === 'register' ? 'Tạo tài khoản' : 'Đăng nhập';
+    document.getElementById('authError').hidden = true;
+  }
+  function openModal(m){ setMode(m); modal.hidden = false; document.getElementById('authUser').focus(); }
+  function closeModal(){ modal.hidden = true; form.reset(); document.getElementById('authError').hidden = true; }
+  document.querySelectorAll('#authTabs button').forEach(b=>b.addEventListener('click', ()=>setMode(b.dataset.t)));
+  document.getElementById('authCancel').addEventListener('click', closeModal);
+  modal.addEventListener('click', e=>{ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', e=>{ if(e.key === 'Escape' && !modal.hidden) closeModal(); });
+
+  form.addEventListener('submit', async e=>{
+    e.preventDefault();
+    const errEl = document.getElementById('authError');
+    const submit = document.getElementById('authSubmit');
+    errEl.hidden = true; submit.disabled = true;
+    const body = {username: document.getElementById('authUser').value.trim(), password: document.getElementById('authPass').value};
+    if(mode === 'register') body.invite = document.getElementById('authInvite').value.trim();
+    try{
+      const r = await api('POST', mode === 'register' ? '/api/register' : '/api/login', body);
+      if(!r.ok){ errEl.textContent = (r.data && r.data.error) || 'Có lỗi xảy ra, thử lại sau.'; errEl.hidden = false; return; }
+      user = r.data.user;
+      closeModal();
+      renderAccount();
+      await doSync(true);
+    }catch(err){
+      errEl.textContent = 'Không kết nối được máy chủ.'; errEl.hidden = false;
+    }finally{ submit.disabled = false; }
+  });
+
+  (async function init(){
+    try{
+      const r = await api('GET', '/api/me');
+      if(!r.ok || !r.data || !('user' in r.data)) return;   // static hosting (e.g. GitHub Pages): no backend
+      bar.hidden = false;
+      user = r.data.user;
+      renderAccount();
+      if(user) doSync(true);
+    }catch(e){ /* offline or no backend: stay local-only */ }
+  })();
+})();
 </script>
 </body>
 </html>
