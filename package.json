@@ -7,7 +7,7 @@
     "db:local": "wrangler d1 migrations apply hsk4 --local",
     "dev": "wrangler pages dev public --port 8788",
     "test": "node --test tests/api.test.mjs",
-    "deploy": "wrangler pages deploy public --project-name hsk4-review"
+    "deploy": "wrangler pages deploy public --project-name hsk4-review --branch main"
   },
   "devDependencies": {
     "wrangler": "^4"

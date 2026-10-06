@@ -1,11 +1,11 @@
 // Integration tests. Start the dev server first (npm run dev), then: npm test
-// Reads INVITE_CODE from .dev.vars.
+// Reads INVITE_CODE from .dev.vars, or from the INVITE env var. BASE selects the server.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
 const BASE = process.env.BASE || 'http://127.0.0.1:8788';
-const INVITE = (readFileSync(new URL('../.dev.vars', import.meta.url), 'utf8').match(/^INVITE_CODE=(.*)$/m) || [])[1];
+const INVITE = process.env.INVITE || (readFileSync(new URL('../.dev.vars', import.meta.url), 'utf8').match(/^INVITE_CODE=(.*)$/m) || [])[1];
 const uname = () => 't' + Math.random().toString(36).slice(2, 10);
 
 async function call(method, path, { body, cookie, headers } = {}) {

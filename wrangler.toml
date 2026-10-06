@@ -5,6 +5,5 @@ pages_build_output_dir = "public"
 [[d1_databases]]
 binding = "DB"
 database_name = "hsk4"
-# Replace with the real id after running: npx wrangler d1 create hsk4
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "f9513e61-36be-491f-9e0e-70ebf9686795"
 migrations_dir = "migrations"
