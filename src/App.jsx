@@ -4,16 +4,20 @@ import AudioBar from './components/AudioBar.jsx';
 import AuthModal from './components/AuthModal.jsx';
 import FilterBar from './components/FilterBar.jsx';
 import LessonTabs from './components/LessonTabs.jsx';
+import SrsPanel from './components/SrsPanel.jsx';
+import SrsSummary from './components/SrsSummary.jsx';
 import Study from './components/Study.jsx';
 import { useAccount } from './hooks/useAccount.js';
 import { useMarks } from './hooks/useMarks.js';
 import { useSrs } from './hooks/useSrs.js';
 import { useSpeech } from './hooks/useSpeech.js';
-import { LESSON_COLORS, LESSON_ORDER, VOCAB } from './lessons.js';
+import { ALL_HANZI, LESSON_COLORS, LESSON_ORDER, VOCAB } from './lessons.js';
+import { queueCounts, today } from './srs.js';
 
 const FILTER_KEY = 'hsk4_filter';
 const FILTERS = ['all', 'new', 'r', 'k'];
 const MODES = [
+  ['srs', '🧠 Ôn hằng ngày'],
   ['cards', '📇 Thẻ từ vựng'],
   ['review', '🔀 Ôn tập xáo trộn'],
   ['fill', '✏️ Điền từ vào chỗ trống'],
@@ -30,7 +34,7 @@ function loadFilter() {
 
 export default function App() {
   const [lesson, setLesson] = useState(LESSON_ORDER[0]);
-  const [mode, setMode] = useState('cards');
+  const [mode, setMode] = useState('srs');
   const [filter, setFilter] = useState(loadFilter);
   const [authMode, setAuthMode] = useState(null); // null = modal closed
   // Bumped whenever the study view must be rebuilt (lesson/filter picked, marks replaced).
@@ -74,6 +78,9 @@ export default function App() {
     return { n: lessonWords.length, k, r, fresh: lessonWords.length - k - r };
   }, [lessonWords, marks.getMark]);
 
+  // Recomputed whenever a card changes, so the summary line stays current during a session.
+  const srsCounts = useMemo(() => queueCounts(srs.srs, ALL_HANZI, today(), srs.newPerDay), [srs.srs, srs.newPerDay]);
+
   const color = LESSON_COLORS[lesson];
   useEffect(() => {
     const s = document.documentElement.style;
@@ -114,14 +121,15 @@ export default function App() {
         <h1>📇 Thẻ Từ Vựng HSK4</h1>
         <p>Giáo trình HSK4 chuẩn — Bài 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 · 汉字 · Pinyin · Nghĩa · Ví dụ</p>
       </header>
+      <SrsSummary counts={srsCounts} active={mode === 'srs'} onStart={() => selectMode('srs')} />
 
       <LessonTabs lesson={lesson} getMark={marks.getMark} onSelect={selectLesson} />
       <div className="lesson-title" style={{ color: color.a }}>
-        {VOCAB[lesson].title}
+        {mode === 'srs' ? 'Tất cả các bài' : VOCAB[lesson].title}
       </div>
 
       <AudioBar speech={speech} />
-      <FilterBar counts={counts} filter={filter} fellBack={fellBack} onFilter={applyFilter} onReset={resetMarks} />
+      {mode !== 'srs' && <FilterBar counts={counts} filter={filter} fellBack={fellBack} onFilter={applyFilter} onReset={resetMarks} />}
 
       <div className="mode-tabs">
         {MODES.map(([m, label]) => (
@@ -131,7 +139,8 @@ export default function App() {
         ))}
       </div>
 
-      <Study key={viewVersion} mode={mode} lesson={lesson} words={words} lessonWords={lessonWords} marks={marks} speech={speech} />
+      <SrsPanel active={mode === 'srs'} srs={srs} counts={srsCounts} speech={speech} />
+      <Study key={viewVersion} mode={mode} lesson={lesson} words={words} lessonWords={lessonWords} marks={marks} srs={srs} speech={speech} />
 
       {authMode && <AuthModal initialMode={authMode} onClose={() => setAuthMode(null)} authenticate={account.authenticate} />}
 

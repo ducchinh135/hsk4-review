@@ -3,9 +3,9 @@ import { useImperativeHandle, useState } from 'react';
 const STATUS_TEXT = { k: '✅ Đã thuộc', r: '🔁 Cần ôn lại' };
 
 // One flashcard. Remount it (via `key`) to show it unflipped.
-export default function FlipCard({ word, hint, id, mark, onMark, speech, flipRef }) {
+export default function FlipCard({ word, hint, id, mark, onMark, speech, flipRef, actions }) {
   const [flipped, setFlipped] = useState(false);
-  useImperativeHandle(flipRef, () => ({ toggle: () => setFlipped((f) => !f) }));
+  useImperativeHandle(flipRef, () => ({ toggle: () => setFlipped((f) => !f), isFlipped: () => flipped }), [flipped]);
   const sp = (text, part) => (e) => {
     e.stopPropagation(); // do not flip the card
     speech.speak(text, id + part);
@@ -38,22 +38,24 @@ export default function FlipCard({ word, hint, id, mark, onMark, speech, flipRef
               </button>
             </div>
           )}
-          <div className="mark-row">
-            {['k', 'r'].map((s) => (
-              <button
-                key={s}
-                type="button"
-                className={'mark-btn' + (mark === s ? ' active' : '')}
-                data-s={s}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onMark(s);
-                }}
-              >
-                {STATUS_TEXT[s]}
-              </button>
-            ))}
-          </div>
+          {actions ?? (
+            <div className="mark-row">
+              {['k', 'r'].map((s) => (
+                <button
+                  key={s}
+                  type="button"
+                  className={'mark-btn' + (mark === s ? ' active' : '')}
+                  data-s={s}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onMark(s);
+                  }}
+                >
+                  {STATUS_TEXT[s]}
+                </button>
+              ))}
+            </div>
+          )}
           <div className="back-example">
             <div className="zh">{word[3]}</div>
           </div>
