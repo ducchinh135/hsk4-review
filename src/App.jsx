@@ -119,7 +119,7 @@ export default function App() {
 
       <header>
         <h1>📇 Thẻ Từ Vựng HSK4</h1>
-        <p>Giáo trình HSK4 chuẩn — Bài 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 · 汉字 · Pinyin · Nghĩa · Ví dụ</p>
+        <p>Giáo trình HSK4 chuẩn — Bài 1–10 · Ôn hằng ngày · Thẻ từ · Quiz</p>
       </header>
       <SrsSummary counts={srsCounts} active={mode === 'srs'} onStart={() => selectMode('srs')} />
 
