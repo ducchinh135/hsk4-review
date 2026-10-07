@@ -281,3 +281,31 @@ button{ font-family:inherit; -webkit-tap-highlight-color:transparent; touch-acti
 .grade-btn[data-g="3"]{ border-color:#2f9e44; color:#2b8a3e; }
 .grade-btn[data-g="4"]{ border-color:#1c7ed6; color:#1971c2; }
 @media (max-width:520px){ .grade-row{ grid-template-columns:repeat(2,1fr); } }
+
+/* ===== QUIZ ===== */
+.quiz-setup, .quiz-done{ display:flex; flex-direction:column; gap:18px; align-items:center; }
+.quiz-setup h2, .quiz-done h2{ margin:0; font-size:24px; }
+.quiz-group{ display:flex; flex-direction:column; gap:6px; align-items:center; }
+.quiz-label{ font-size:13px; font-weight:800; color:#777; text-transform:uppercase; letter-spacing:.04em; }
+.quiz-check{ display:flex; align-items:center; gap:8px; font-size:16px; font-weight:700; cursor:pointer; padding:6px 10px; }
+.quiz-check input{ width:20px; height:20px; accent-color:var(--accent-a,#333); }
+.quiz-check.off{ opacity:.5; cursor:default; }
+.quiz-prompt{ font-size:clamp(22px,4.5vw,30px); font-weight:800; margin:18px 0; }
+.quiz-prompt.hanzi{ font-size:clamp(56px,13vw,96px); font-weight:900; line-height:1.1; }
+.fb-opt.text{ font-size:clamp(16px,3.5vw,20px); padding:14px 18px; }
+.pinyin-form{ display:flex; flex-direction:column; align-items:center; gap:12px; margin-bottom:14px; }
+.pinyin-form input{ width:min(360px,100%); padding:14px; font-size:22px; text-align:center; border:3px solid #ddd; border-radius:14px; font-family:inherit; }
+.pinyin-form input:focus{ outline:none; border-color:var(--accent-a,#333); }
+.pinyin-form input.correct{ border-color:#2f9e44; background:#d3f9d8; color:#2b8a3e; }
+.pinyin-form input.wrong{ border-color:#e03131; background:#ffe3e3; color:#c92a2a; }
+.quiz-verdict{ font-size:16px; font-weight:700; color:#c92a2a; }
+.quiz-reveal{ font-size:18px; font-weight:800; margin:6px 0 14px; padding:10px 14px; border-radius:12px; background:var(--accent-bg,#f3f3f8); overflow-wrap:anywhere; }
+.quiz-reveal.ok{ background:#d3f9d8; color:#2b8a3e; }
+.quiz-reveal.bad{ background:#ffe3e3; color:#c92a2a; }
+.quiz-wrong{ display:flex; flex-direction:column; gap:6px; width:100%; }
+.quiz-wrong .quiz-reveal{ margin:0; }
+.quiz-bytype{ list-style:none; padding:0; margin:0; display:flex; gap:12px; flex-wrap:wrap; justify-content:center; font-size:15px; font-weight:700; color:#555; }
+@media (max-width:600px){
+  .fb-opt.text{ padding:12px 8px; }
+  .pinyin-form input{ font-size:20px; }
+}

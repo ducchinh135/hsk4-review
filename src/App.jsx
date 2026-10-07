@@ -20,7 +20,7 @@ const MODES = [
   ['srs', '🧠 Ôn hằng ngày'],
   ['cards', '📇 Thẻ từ vựng'],
   ['review', '🔀 Ôn tập xáo trộn'],
-  ['fill', '✏️ Điền từ vào chỗ trống'],
+  ['quiz', '📝 Quiz'],
 ];
 
 function loadFilter() {

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { range, shuffle } from '../lessons.js';
 import CardsPanel from './CardsPanel.jsx';
-import FillPanel from './FillPanel.jsx';
+import QuizPanel from './QuizPanel.jsx';
 import ReviewPanel from './ReviewPanel.jsx';
 
 // Holds the progress of the lesson modes so switching tabs keeps your place.
@@ -9,7 +9,7 @@ import ReviewPanel from './ReviewPanel.jsx';
 export default function Study({ mode, lesson, words, lessonWords, marks, srs, speech }) {
   const [cardIndex, setCardIndex] = useState(0);
   const [review, setReview] = useState(() => ({ order: shuffle(range(words.length)), index: 0 }));
-  const [fill, setFill] = useState(() => ({ order: shuffle(range(words.length)), index: 0, correct: 0, total: 0 }));
+  const [quiz, setQuiz] = useState(null);
   const { getMark, setMark, toggleMark } = marks;
 
   if (mode === 'srs') return null; // stays mounted so the other tabs keep their place
@@ -19,5 +19,16 @@ export default function Study({ mode, lesson, words, lessonWords, marks, srs, sp
   if (mode === 'review') {
     return <ReviewPanel words={words} state={review} setState={setReview} getMark={getMark} toggleMark={toggleMark} speech={speech} />;
   }
-  return <FillPanel words={words} lessonWords={lessonWords} state={fill} setState={setFill} getMark={getMark} setMark={setMark} speech={speech} />;
+  return (
+    <QuizPanel
+      words={words}
+      lessonWords={lessonWords}
+      state={quiz}
+      setState={setQuiz}
+      getMark={getMark}
+      setMark={setMark}
+      lapse={srs.lapse}
+      speech={speech}
+    />
+  );
 }
