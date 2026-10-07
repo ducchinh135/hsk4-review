@@ -109,3 +109,42 @@ test('logout clears the cookie', async () => {
   assert.equal(r.status, 200);
   assert.match(r.raw, /Max-Age=0/);
 });
+
+const card = (o = {}) => ({ due: 20000, ivl: 3, ease: 2500, reps: 2, lapses: 0, added: 19990, t: 1000, ...o });
+
+test('sync stores srs cards last-write-wins and still accepts marks-only clients', async () => {
+  const u = await newUser();
+  const a = await call('POST', '/api/sync', { cookie: u.cookie, body: { marks: {}, srs: { 好: card(), 你: card() } } });
+  assert.equal(a.status, 200);
+  assert.deepEqual(a.data.srs['好'], card());
+  const b = await call('POST', '/api/sync', {
+    cookie: u.cookie,
+    body: { marks: {}, srs: { 好: card({ ivl: 9, t: 500 }), 你: card({ ivl: 0, due: 20001, t: 2000 }) } },
+  });
+  assert.deepEqual(b.data.srs['好'], card(), 'older edit must not overwrite');
+  assert.deepEqual(b.data.srs['你'], card({ ivl: 0, due: 20001, t: 2000 }), 'newer edit wins');
+  const old = await call('POST', '/api/sync', { cookie: u.cookie, body: { marks: { 好: { s: 'k', t: 1000 } } } });
+  assert.equal(old.status, 200, 'clients that only send marks keep working');
+  assert.equal(Object.keys(old.data.srs).length, 2);
+  assert.deepEqual(old.data.marks['好'], { s: 'k', t: 1000 });
+});
+
+test('sync rejects invalid srs cards', async () => {
+  const u = await newUser();
+  const bad = [
+    { 好: card({ ease: 1200 }) },
+    { 好: card({ ivl: 400 }) },
+    { 好: card({ due: 1.5 }) },
+    { 好: card({ reps: undefined }) },
+    { 好: card({ t: 'now' }) },
+    { 好: card({ t: Date.now() + 9e9 }) },
+    { '': card() },
+    'nope',
+  ];
+  for (const srs of bad) {
+    const r = await call('POST', '/api/sync', { cookie: u.cookie, body: { marks: {}, srs } });
+    assert.equal(r.status, 400, JSON.stringify(srs));
+  }
+  const pull = await call('POST', '/api/sync', { cookie: u.cookie, body: { marks: {} } });
+  assert.deepEqual(pull.data.srs, {}, 'nothing from the rejected requests was stored');
+});
