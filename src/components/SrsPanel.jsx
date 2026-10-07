@@ -39,14 +39,14 @@ export default function SrsPanel({ active, srs, counts, speech }) {
     setSession({ ...before, undo: null });
   };
 
-  // Space flips, 1-4 grade (only once flipped). Ignored while typing or with a modal open.
+  // Space flips, 1-4 grade (only once flipped). Ignored while typing or while any modal is open.
   const keys = useRef(null);
   keys.current = { grade, live: active && !!session && session.queue.length > 0 };
   useEffect(() => {
     const onKey = (e) => {
       const k = keys.current;
       if (!k.live || e.repeat || e.metaKey || e.ctrlKey || e.altKey) return;
-      if (e.target.closest?.('input, textarea, select, .modal')) return;
+      if (e.target.closest?.('input, textarea, select') || document.querySelector('.modal')) return;
       if (e.key === ' ') {
         e.preventDefault();
         card.current?.toggle();

@@ -78,8 +78,22 @@ export default function App() {
     return { n: lessonWords.length, k, r, fresh: lessonWords.length - k - r };
   }, [lessonWords, marks.getMark]);
 
-  // Recomputed whenever a card changes, so the summary line stays current during a session.
-  const srsCounts = useMemo(() => queueCounts(srs.srs, ALL_HANZI, today(), srs.newPerDay), [srs.srs, srs.newPerDay]);
+  // The study day changes at 4am; a tab left open overnight must notice.
+  const [day, setDay] = useState(today);
+  useEffect(() => {
+    const tick = () => setDay(today());
+    const onVisible = () => !document.hidden && tick();
+    const id = setInterval(tick, 60_000);
+    window.addEventListener('focus', tick);
+    document.addEventListener('visibilitychange', onVisible);
+    return () => {
+      clearInterval(id);
+      window.removeEventListener('focus', tick);
+      document.removeEventListener('visibilitychange', onVisible);
+    };
+  }, []);
+  // Recomputed whenever a card changes or the day rolls over, so the summary line stays current.
+  const srsCounts = useMemo(() => queueCounts(srs.srs, ALL_HANZI, day, srs.newPerDay), [srs.srs, srs.newPerDay, day]);
 
   const color = LESSON_COLORS[lesson];
   useEffect(() => {

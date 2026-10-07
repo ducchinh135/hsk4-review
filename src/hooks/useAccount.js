@@ -42,38 +42,47 @@ export function useAccount({ getMarks, mergeServer, clearMarks, getSrs, mergeSrs
   };
   const say = (text, warn = false) => setStatus({ text, warn });
 
+  // Resolves true when the push succeeded. While one is in flight, a second call only queues a
+  // follow-up push and returns the promise of the one in flight.
   const doSync = useRef();
-  doSync.current = async (first) => {
-    if (!userRef.current) return;
+  const run = useRef(Promise.resolve(true));
+  doSync.current = (first) => {
+    if (!userRef.current) return Promise.resolve(true);
     if (syncing.current) {
       pending.current = true;
-      return;
+      return run.current;
     }
     syncing.current = true;
     pending.current = false;
-    say('☁ Đang đồng bộ…');
-    try {
-      const r = await api('POST', '/api/sync', { marks: deps.current.getMarks(), srs: deps.current.getSrs() });
-      if (r.status === 401) {
-        setUser(null);
-        say('Phiên đăng nhập đã hết hạn, hãy đăng nhập lại.', true);
-        return;
+    run.current = (async () => {
+      say('☁ Đang đồng bộ…');
+      try {
+        const r = await api('POST', '/api/sync', { marks: deps.current.getMarks(), srs: deps.current.getSrs() });
+        if (!userRef.current) return false; // logged out while this was in flight: drop the response
+        if (r.status === 401) {
+          setUser(null);
+          say('Phiên đăng nhập đã hết hạn, hãy đăng nhập lại.', true);
+          return false;
+        }
+        if (!r.ok) throw new Error('sync ' + r.status);
+        deps.current.mergeServer(r.data.marks || {});
+        deps.current.mergeSrs(r.data.srs || {});
+        if (first) deps.current.onReplaced();
+        say('☁ Đã đồng bộ');
+        clearTimeout(retry.current);
+        retry.current = null;
+        return true;
+      } catch {
+        say('⚠️ Chưa đồng bộ được, sẽ thử lại', true);
+        clearTimeout(retry.current);
+        retry.current = setTimeout(() => doSync.current(false), 15000);
+        return false;
+      } finally {
+        syncing.current = false;
+        if (pending.current) doSync.current(false);
       }
-      if (!r.ok) throw new Error('sync ' + r.status);
-      deps.current.mergeServer(r.data.marks || {});
-      deps.current.mergeSrs(r.data.srs || {});
-      if (first) deps.current.onReplaced();
-      say('☁ Đã đồng bộ');
-      clearTimeout(retry.current);
-      retry.current = null;
-    } catch {
-      say('⚠️ Chưa đồng bộ được, sẽ thử lại', true);
-      clearTimeout(retry.current);
-      retry.current = setTimeout(() => doSync.current(false), 15000);
-    } finally {
-      syncing.current = false;
-      if (pending.current) doSync.current(false);
-    }
+    })();
+    return run.current;
   };
 
   // Debounced push after a local edit.
@@ -127,7 +136,16 @@ export function useAccount({ getMarks, mergeServer, clearMarks, getSrs, mergeSrs
   const logout = useCallback(async () => {
     clearTimeout(timer.current);
     clearTimeout(retry.current);
-    if (userRef.current) await doSync.current(false); // push anything unsent before leaving
+    if (userRef.current) {
+      // Push everything unsent, including edits made while a sync was in flight. If that fails,
+      // stay signed in rather than wipe progress that never reached the server.
+      let ok = await doSync.current(false);
+      while (syncing.current) ok = await run.current;
+      if (!ok && userRef.current) {
+        say('⚠️ Chưa đồng bộ được tiến độ nên chưa đăng xuất. Hãy thử lại khi có mạng.', true);
+        return;
+      }
+    }
     try {
       await api('POST', '/api/logout', {});
     } catch {
