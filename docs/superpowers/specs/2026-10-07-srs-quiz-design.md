@@ -140,15 +140,17 @@ Ease kẹp trong [1300, 5000]; khoảng kẹp ≤ 365; `due = today + ivl`. Kho�
 3. thẻ mới, theo thứ tự Bài 1 → Bài 10 và thứ tự từ trong bài, số lượng
    `max(0, newLimit − count(added == today))`.
 
-`counts(srs, allWords, today, newLimit) → { due, learning, fresh, tomorrow }` cho dòng tóm tắt và màn hình
+`queueCounts(srs, allWords, today, newLimit) → { due, learning, fresh, tomorrow }` cho dòng tóm tắt và màn hình
 kết thúc (`tomorrow` = số thẻ ôn có `due == today + 1`).
 
-`allWords` là danh sách phẳng mọi từ theo `LESSON_ORDER` (thêm export `ALL_WORDS` vào `src/lessons.js`).
-Nếu một Hán tự xuất hiện ở nhiều bài, chỉ lấy lần đầu (dữ liệu hiện tại: 309 từ, không trùng).
+`allWords` là danh sách Hán tự theo `LESSON_ORDER` (export `ALL_HANZI` trong `src/lessons.js`).
+`buildQueue` và `queueCounts` tự bỏ Hán tự trùng (chỉ lấy lần đầu; dữ liệu hiện tại: 309 từ, không trùng).
+`newCard(today)` trả về thẻ đang học khởi tạo; `clampNewPerDay(v)` kẹp cài đặt số thẻ mới về [0, 50]
+(giá trị không phải số → 10).
 
 ## 4. Giao diện SRS
 
-- Tab chế độ mới, đặt **đầu tiên**: `🧠 Ôn hằng ngày`.
+- Tab chế độ mới, đặt **đầu tiên** và là tab mặc định khi mở app: `🧠 Ôn hằng ngày`.
 - Dòng tóm tắt luôn hiển thị dưới header: `Hôm nay: 8 thẻ ôn · 10 thẻ mới [Ôn ngay]`; bấm → chuyển tab
   SRS. Khi không còn gì: `Hôm nay đã ôn xong 🎉`.
 - Ở tab SRS: ẩn `FilterBar`; tiêu đề bài hiện "Tất cả các bài"; tab bài vẫn hiện nhưng không ảnh hưởng lượt.
@@ -161,8 +163,9 @@ Nếu một Hán tự xuất hiện ở nhiều bài, chỉ lấy lần đầu (
     `Quên · lại ngay` `Khó · lát nữa` `Được · 3 ngày` `Dễ · 9 ngày`. Màn hình hẹp: lưới 2×2.
   - Phím tắt: `Space` lật, `1`–`4` chấm (chỉ khi đã lật). Bỏ qua phím khi focus đang ở ô nhập.
   - `speech.autoSpeak(hanzi)` khi hiện thẻ mới.
-  - Tiến độ: "Còn N thẻ". Nút `↶ Hoàn tác` khôi phục thẻ vừa chấm (trạng thái card cũ — hoặc xóa nếu
-    trước đó là thẻ mới — với `t` mới, và đưa thẻ về đầu hàng). Hoàn tác 1 bước.
+  - Tiến độ: "Còn N thẻ". Nút `↶ Hoàn tác` khôi phục thẻ vừa chấm về trạng thái card cũ (với `t` mới) và
+    đưa thẻ về đầu hàng. Nếu trước đó là thẻ mới thì khôi phục thành `newCard(today)` (thẻ đang học,
+    `reps = 0`, `added = today`) thay vì xóa — xóa không đồng bộ được vì không có tombstone. Hoàn tác 1 bước.
   - Requeue: chèn lại hanzi vào hàng ở vị trí `min(requeue, length)`.
 - **Kết thúc:** `🎉 Xong hôm nay!`, số thẻ đã ôn, số lần Quên, "Ngày mai có khoảng X thẻ", nút về màn hình
   bắt đầu.
