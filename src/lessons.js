@@ -15,13 +15,4 @@ const PALETTE = [
 ];
 export const LESSON_COLORS = Object.fromEntries(LESSON_ORDER.map((l, i) => [l, PALETTE[i % PALETTE.length]]));
 
-export function shuffle(arr) {
-  const a = arr.slice();
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-export const range = (n) => [...Array(n).keys()];
+export { range, shuffle } from './random.js';
