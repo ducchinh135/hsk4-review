@@ -6,6 +6,12 @@ export { VOCAB };
 export const LESSON_ORDER = Object.keys(VOCAB);
 export const LESSON_LABELS = Object.fromEntries(LESSON_ORDER.map((l) => [l, 'Bài ' + l.slice(1)]));
 
+// Every word once, in lesson order (the daily review introduces new words in this order).
+const seen = new Set();
+export const ALL_WORDS = LESSON_ORDER.flatMap((l) => VOCAB[l].words).filter((w) => !seen.has(w[0]) && seen.add(w[0]));
+export const ALL_HANZI = ALL_WORDS.map((w) => w[0]);
+export const WORD_BY_HANZI = Object.fromEntries(ALL_WORDS.map((w) => [w[0], w]));
+
 const PALETTE = [
   { a: '#ff5e78', b: '#ff8fa3', bg: '#fff0f3' },
   { a: '#3d8bff', b: '#7db2ff', bg: '#eef5ff' },

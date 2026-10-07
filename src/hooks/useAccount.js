@@ -19,11 +19,11 @@ async function api(method, path, body) {
 const LOCAL_ONLY = 'Tiến độ đang lưu trên máy này';
 
 // Account + background sync. Hidden (`available` false) when there is no backend.
-//  getMarks():       current marks to push
-//  mergeServer(m):   fold server marks into local state
-//  clearMarks():     wipe local marks (on logout, shared browsers)
-//  onReplaced():     marks changed wholesale, redraw the study view
-export function useAccount({ getMarks, mergeServer, clearMarks, onReplaced }) {
+//  getMarks() / getSrs():         current state to push
+//  mergeServer(m) / mergeSrs(s):  fold server state into local state
+//  clearMarks() / clearSrs():     wipe local state (on logout, shared browsers)
+//  onReplaced():                  state changed wholesale, redraw the study view
+export function useAccount({ getMarks, mergeServer, clearMarks, getSrs, mergeSrs, clearSrs, onReplaced }) {
   const [available, setAvailable] = useState(false);
   const [user, setUserState] = useState(null);
   const [status, setStatus] = useState({ text: '', warn: false });
@@ -34,7 +34,7 @@ export function useAccount({ getMarks, mergeServer, clearMarks, onReplaced }) {
   const syncing = useRef(false);
   const pending = useRef(false);
   const deps = useRef({});
-  deps.current = { getMarks, mergeServer, clearMarks, onReplaced };
+  deps.current = { getMarks, mergeServer, clearMarks, getSrs, mergeSrs, clearSrs, onReplaced };
 
   const setUser = (u) => {
     userRef.current = u;
@@ -53,7 +53,7 @@ export function useAccount({ getMarks, mergeServer, clearMarks, onReplaced }) {
     pending.current = false;
     say('☁ Đang đồng bộ…');
     try {
-      const r = await api('POST', '/api/sync', { marks: deps.current.getMarks() });
+      const r = await api('POST', '/api/sync', { marks: deps.current.getMarks(), srs: deps.current.getSrs() });
       if (r.status === 401) {
         setUser(null);
         say('Phiên đăng nhập đã hết hạn, hãy đăng nhập lại.', true);
@@ -61,6 +61,7 @@ export function useAccount({ getMarks, mergeServer, clearMarks, onReplaced }) {
       }
       if (!r.ok) throw new Error('sync ' + r.status);
       deps.current.mergeServer(r.data.marks || {});
+      deps.current.mergeSrs(r.data.srs || {});
       if (first) deps.current.onReplaced();
       say('☁ Đã đồng bộ');
       clearTimeout(retry.current);
@@ -116,7 +117,7 @@ export function useAccount({ getMarks, mergeServer, clearMarks, onReplaced }) {
       if (!r.ok) return (r.data && r.data.error) || 'Có lỗi xảy ra, thử lại sau.';
       setUser(r.data.user);
       say('');
-      doSync.current(true); // pull this account's marks and push local ones
+      doSync.current(true); // pull this account's progress and push local progress
       return null;
     } catch {
       return 'Không kết nối được máy chủ.';
@@ -135,6 +136,7 @@ export function useAccount({ getMarks, mergeServer, clearMarks, onReplaced }) {
     setUser(null);
     say('');
     deps.current.clearMarks(); // do not leave this account's progress on a shared browser
+    deps.current.clearSrs();
     deps.current.onReplaced();
   }, []);
 

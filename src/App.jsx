@@ -7,6 +7,7 @@ import LessonTabs from './components/LessonTabs.jsx';
 import Study from './components/Study.jsx';
 import { useAccount } from './hooks/useAccount.js';
 import { useMarks } from './hooks/useMarks.js';
+import { useSrs } from './hooks/useSrs.js';
 import { useSpeech } from './hooks/useSpeech.js';
 import { LESSON_COLORS, LESSON_ORDER, VOCAB } from './lessons.js';
 
@@ -39,11 +40,15 @@ export default function App() {
 
   const syncRef = useRef(() => {});
   const marks = useMarks(() => syncRef.current());
+  const srs = useSrs(() => syncRef.current());
   const speech = useSpeech();
   const account = useAccount({
     getMarks: marks.getAll,
     mergeServer: marks.mergeServer,
     clearMarks: marks.clearAll,
+    getSrs: srs.getAll,
+    mergeSrs: srs.mergeServer,
+    clearSrs: srs.clearAll,
     onReplaced: refreshView,
   });
   syncRef.current = account.scheduleSync;
