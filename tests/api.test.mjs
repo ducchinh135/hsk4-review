@@ -1,4 +1,4 @@
-// Integration tests. Start the dev server first (npm run dev), then: npm test
+// Integration tests for the API. Start the dev server first (npm run dev), then: npm test
 // Reads INVITE_CODE from .dev.vars, or from the INVITE env var. BASE selects the server.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';

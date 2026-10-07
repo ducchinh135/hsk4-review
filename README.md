@@ -11,11 +11,17 @@ Flashcards, shuffled review and fill-in-the-blank for HSK4 (lessons 1-10), with 
 
 | Path | What |
 |---|---|
-| `public/index.html` | The whole frontend (vocabulary is embedded) |
-| `functions/api/*.js` | Pages Functions: `register`, `login`, `logout`, `me`, `sync` |
-| `functions/_lib/auth.js` | PBKDF2 password hashing, signed session cookie, CSRF guard, login throttling |
+| `index.html`, `src/` | Vite + React frontend (`App.jsx`, `components/`, `hooks/`, `styles.css`) |
+| `src/data/vocab.json` | The vocabulary, one array per word: `[hanzi, pinyin, meaning, example zh, example vi]` |
+| `server/app.js` | The Hono API: middleware (no-store, CSRF guard) and routes |
+| `server/routes/` | `auth.js` (`me`, `register`, `login`, `logout`) and `sync.js` |
+| `server/lib/` | PBKDF2 hashing + HMAC (`crypto.js`), signed session cookie (`session.js`), login throttling (`throttle.js`) |
+| `functions/api/[[route]].js` | Mounts the Hono app on Cloudflare Pages Functions |
 | `migrations/0001_init.sql` | D1 schema (`users`, `progress`, `attempts`) |
 | `tests/api.test.mjs` | Integration tests for the API |
+
+`server/` has no Pages-specific code. When the API outgrows Pages Functions, export `app.fetch`
+from a Worker entry and point `/api/*` at it; the frontend does not change.
 
 ## Run locally
 
@@ -23,9 +29,13 @@ Flashcards, shuffled review and fill-in-the-blank for HSK4 (lessons 1-10), with 
 npm install
 cp .dev.vars.example .dev.vars      # then edit SESSION_SECRET and INVITE_CODE
 npm run db:local                    # create the local D1 tables
-npm run dev                         # http://localhost:8788
-npm test                            # in another terminal, with the dev server running
+npm run dev                         # app at http://localhost:5173 (Vite), API at :8788 (wrangler)
+npm test                            # in another terminal, with `npm run dev` running
 ```
+
+`npm run dev` starts Vite (hot reload) and `wrangler pages dev` together; Vite proxies `/api` to
+wrangler so cookies stay same-origin. `npm run preview` builds and serves the production bundle
+plus the API from wrangler alone.
 
 ## Deploy to Cloudflare
 
@@ -37,7 +47,7 @@ npm test                            # in another terminal, with the dev server r
    `npx wrangler d1 migrations apply hsk4 --remote`
 4. Create the Pages project and deploy:
    `npx wrangler pages project create hsk4-review --production-branch main`
-   `npm run deploy`
+   `npm run deploy` (builds with Vite into `dist/`, then uploads it with the functions)
 5. Set the two secrets (Pages project > Settings > Variables and Secrets, or via the CLI):
    `npx wrangler pages secret put SESSION_SECRET --project-name hsk4-review` (a long random string,
    e.g. `openssl rand -hex 32`) and

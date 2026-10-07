@@ -2,14 +2,27 @@
   "name": "hsk4-review",
   "version": "1.0.0",
   "private": true,
-  "description": "HSK4 vocabulary review with cross-device progress sync (Cloudflare Pages + D1)",
+  "description": "HSK4 vocabulary review with cross-device progress sync (Vite + React, Hono API on Cloudflare Pages + D1)",
   "scripts": {
+    "dev": "mkdir -p dist && concurrently -k -n api,web -c blue,green \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "wrangler pages dev dist --port 8788",
+    "dev:web": "vite",
+    "build": "vite build",
+    "preview": "vite build && wrangler pages dev dist --port 8788",
     "db:local": "wrangler d1 migrations apply hsk4 --local",
-    "dev": "wrangler pages dev public --port 8788",
     "test": "node --test tests/api.test.mjs",
-    "deploy": "wrangler pages deploy public --project-name hsk4-review --branch main"
+    "deploy": "npm run build && wrangler pages deploy dist --project-name hsk4-review --branch main"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.5",
+    "vite": "^8.3.3",
     "wrangler": "^4"
-  }
+  },
+  "dependencies": {
+    "hono": "^4.13.13",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "type": "module"
 }
