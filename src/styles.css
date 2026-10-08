@@ -326,3 +326,25 @@ button{ font-family:inherit; -webkit-tap-highlight-color:transparent; touch-acti
 }
 
 .review-mode{ max-width:900px; margin:0 auto 18px; }
+
+/* ---------- WORD LIST ---------- */
+.word-list{ display:flex; flex-direction:column; gap:10px; }
+.word-row{ background:#fff; border-radius:18px; border:2px solid transparent; box-shadow:0 4px 14px rgba(0,0,0,.06); overflow:hidden; }
+.word-row.is-known{ border-color:#2f9e44; }
+.word-row.is-review{ border-color:#e03131; }
+.word-main{ display:flex; align-items:center; gap:10px; padding:10px 14px; flex-wrap:wrap; }
+.word-toggle{ flex:1 1 220px; min-width:0; display:flex; align-items:center; gap:14px; border:none; background:transparent; cursor:pointer; text-align:left; font:inherit; color:inherit; padding:4px 0; }
+.word-hanzi{ font-size:clamp(26px,5vw,34px); font-weight:900; color:var(--accent-a,#333); min-width:2.2em; }
+.word-text{ display:flex; flex-direction:column; min-width:0; }
+.word-pinyin{ font-size:16px; font-weight:700; color:#555; }
+.word-meaning{ font-size:15px; color:#666; overflow-wrap:anywhere; }
+.word-actions{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.word-actions .mark-btn{ padding:8px 12px; font-size:14px; min-height:40px; flex:0 0 auto; }
+.word-actions .speak-btn.mini{ padding:8px 12px; }
+.word-detail{ padding:4px 16px 14px; border-top:1px dashed #e4e4ec; display:flex; flex-direction:column; align-items:flex-start; gap:6px; }
+.word-detail .zh{ font-size:clamp(18px,3.5vw,24px); font-weight:700; overflow-wrap:anywhere; }
+.word-detail .vi{ font-size:15px; color:#666; overflow-wrap:anywhere; }
+@media (max-width:600px){
+  .word-actions{ width:100%; }
+  .word-actions .mark-btn{ flex:1 1 calc(50% - 40px); }
+}
