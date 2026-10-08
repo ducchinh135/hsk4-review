@@ -52,7 +52,7 @@ export default function QuizPanel({ words, lessonWords, state, setState, getMark
 
   if (!state) {
     return (
-      <div className="panel active">
+      <div className="panel">
         <div className="fillblank-box quiz-setup">
           <h2>📝 Quiz — {words.length} từ</h2>
           <div className="quiz-group">
@@ -102,7 +102,7 @@ export default function QuizPanel({ words, lessonWords, state, setState, getMark
 
   if (!questions.length) {
     return (
-      <div className="panel active">
+      <div className="panel">
         <div className="fillblank-box quiz-done">
           <div className="filter-note">Không tạo được câu hỏi nào với các dạng đã chọn.</div>
           <button className="btn" onClick={() => setState(null)}>
@@ -121,7 +121,7 @@ export default function QuizPanel({ words, lessonWords, state, setState, getMark
       return rs.length ? { label, ok: rs.filter((r) => r.ok).length, n: rs.length } : null;
     }).filter(Boolean);
     return (
-      <div className="panel active">
+      <div className="panel">
         <div className="fillblank-box quiz-done">
           <h2>
             Kết quả: {score} / {results.length}
@@ -180,7 +180,7 @@ export default function QuizPanel({ words, lessonWords, state, setState, getMark
   };
 
   return (
-    <div className="panel active">
+    <div className="panel">
       <div className="fillblank-box">
         <div className="progress">
           Câu {index + 1} / {questions.length} · {TYPE_LABEL[q.type]}

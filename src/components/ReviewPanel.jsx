@@ -10,7 +10,7 @@ export default function ReviewPanel({ words, state, setState, getMark, toggleMar
   };
 
   return (
-    <div className="panel active">
+    <div className="panel">
       <div className="viewer">
         <div className="progress">
           Từ {index + 1} / {words.length} (thứ tự đã xáo trộn)

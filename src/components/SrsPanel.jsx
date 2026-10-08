@@ -10,9 +10,9 @@ const GRADES = [
   [4, 'Dễ'],
 ];
 
-// Daily spaced-repetition review across all lessons. Rendered outside <Study> so a session
-// survives lesson/filter changes; `active` is false (panel hidden) while another tab is shown.
-export default function SrsPanel({ active, srs, counts, speech }) {
+// Daily spaced-repetition review across all lessons. The page mounts it only while /daily is
+// shown, so an unfinished session is dropped when you leave (every graded card is already saved).
+export default function SrsPanel({ srs, counts, speech }) {
   // null = start screen; otherwise { queue: hanzi[], reviewed, again, undo: { h, prev, session } | null }
   const [session, setSession] = useState(null);
   const card = useRef(null);
@@ -41,7 +41,7 @@ export default function SrsPanel({ active, srs, counts, speech }) {
 
   // Space flips, 1-4 grade (only once flipped). Ignored while typing or while any modal is open.
   const keys = useRef(null);
-  keys.current = { grade, live: active && !!session && session.queue.length > 0 };
+  keys.current = { grade, live: !!session && session.queue.length > 0 };
   useEffect(() => {
     const onKey = (e) => {
       const k = keys.current;
@@ -58,7 +58,7 @@ export default function SrsPanel({ active, srs, counts, speech }) {
     return () => window.removeEventListener('keydown', onKey);
   }, []);
 
-  const cls = 'panel' + (active ? ' active' : '');
+  const cls = 'panel';
 
   if (!session) {
     const any = counts.due + counts.learning + counts.fresh > 0;

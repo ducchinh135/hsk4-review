@@ -13,7 +13,7 @@ export default function CardsPanel({ lesson, words, index, setIndex, getMark, to
   const card = useRef(null);
 
   return (
-    <div className="panel active">
+    <div className="panel">
       <div className="viewer">
         <div className="progress">
           Từ {index + 1} / {n}
