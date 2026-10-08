@@ -28,15 +28,27 @@ export function useApp() {
 export function AppProvider({ children }) {
   const [lesson, setLesson] = useState(LESSON_ORDER[0]);
   const [filter, setFilter] = useState(loadFilter);
-  // Bumped whenever page views must be rebuilt (lesson/filter picked, marks replaced).
-  // Marking a word does NOT bump it, so a card or row stays put after you mark it.
-  const [viewVersion, setViewVersion] = useState(0);
-  const refreshView = useCallback(() => setViewVersion((v) => v + 1), []);
-
   const syncRef = useRef(() => {});
   const marks = useMarks(() => syncRef.current());
   const srs = useSrs(() => syncRef.current());
   const speech = useSpeech();
+
+  // Bumped whenever page views must be rebuilt (lesson/filter picked, marks replaced).
+  // Marking a word does NOT bump it, so a card or row stays put after you mark it.
+  const [viewVersion, setViewVersion] = useState(0);
+  const builtWith = useRef(null); // the marks the current views were built from
+  const refreshView = useCallback(() => {
+    builtWith.current = JSON.stringify(marks.markRef.current);
+    setViewVersion((v) => v + 1);
+  }, [marks.markRef]);
+  if (builtWith.current === null) builtWith.current = JSON.stringify(marks.markRef.current);
+  // The account hook reports a wholesale replace after every login, logout and the first sync of a
+  // page load. Rebuild only if the marks really changed, so a run or a typed answer already in
+  // progress is not thrown away when a sync that changed nothing lands a moment after load.
+  const onReplaced = useCallback(() => {
+    if (JSON.stringify(marks.markRef.current) !== builtWith.current) refreshView();
+  }, [marks.markRef, refreshView]);
+
   const account = useAccount({
     getMarks: marks.getAll,
     mergeServer: marks.mergeServer,
@@ -44,7 +56,7 @@ export function AppProvider({ children }) {
     getSrs: srs.getAll,
     mergeSrs: srs.mergeServer,
     clearSrs: srs.clearAll,
-    onReplaced: refreshView,
+    onReplaced,
   });
   syncRef.current = account.scheduleSync;
 
