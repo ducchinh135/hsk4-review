@@ -4,7 +4,9 @@ import assert from 'node:assert/strict';
 import {
   DAY_MS,
   buildQueue,
-  clampNewPerDay,
+  KNOWN_IVL,
+  enroll,
+  known,
   lapse,
   newCard,
   preview,
@@ -83,7 +85,7 @@ test('lapse(): new card becomes a learning card due today, review card is forgot
   assert.deepEqual(forgotten, review({ ivl: 0, due: D, lapses: 1, ease: 2300 }));
 });
 
-test('buildQueue(): overdue reviews first, then learning, then new cards in lesson order', () => {
+test('buildQueue(): overdue reviews first (most overdue first), then learning cards; unseen words never', () => {
   const words = ['a', 'b', 'c', 'd', 'e', 'f', 'a'];
   const srs = {
     b: review({ due: D - 2 }),
@@ -91,34 +93,31 @@ test('buildQueue(): overdue reviews first, then learning, then new cards in less
     d: { ...newCard(D - 1), reps: 1 },
     e: review({ due: D + 3 }),
   };
-  assert.deepEqual(buildQueue(srs, words, D, 1), ['c', 'b', 'd', 'a']);
-  assert.deepEqual(buildQueue(srs, words, D, 5), ['c', 'b', 'd', 'a', 'f'], 'duplicate hanzi only once');
-  assert.deepEqual(buildQueue(srs, words, D, 0), ['c', 'b', 'd']);
+  assert.deepEqual(buildQueue(srs, words, D), ['c', 'b', 'd']);
+  assert.deepEqual(buildQueue({ ...srs, a: newCard(D) }, words, D), ['c', 'b', 'a', 'd'], 'enrolled word, duplicate hanzi once');
+  assert.deepEqual(buildQueue({}, words, D), []);
 });
 
-test('buildQueue(): cards added today use up the daily new-card limit', () => {
-  const srs = { d: newCard(D) }; // introduced today (e.g. by a wrong quiz answer)
-  assert.deepEqual(buildQueue(srs, ['a', 'b', 'd'], D, 2), ['d', 'a']);
-  assert.deepEqual(buildQueue(srs, ['a', 'b', 'd'], D, 1), ['d']);
-});
-
-test('queueCounts()', () => {
+test('queueCounts(): due, learning, tomorrow and how many words are in the schedule', () => {
   const srs = {
     b: review({ due: D - 2 }),
     c: review({ due: D + 1 }),
     d: newCard(D),
     e: review({ due: D + 1 }),
   };
-  assert.deepEqual(queueCounts(srs, ['a', 'b', 'c', 'd', 'e', 'f', 'g'], D, 3), { due: 1, learning: 1, fresh: 2, tomorrow: 2 });
-  assert.equal(queueCounts(srs, ['a', 'b', 'c', 'd', 'e', 'f', 'g'], D, 1).fresh, 0);
+  assert.deepEqual(queueCounts(srs, ['a', 'b', 'c', 'd', 'e', 'f', 'g'], D), { due: 1, learning: 1, tomorrow: 2, enrolled: 4 });
+  assert.deepEqual(queueCounts({}, ['a'], D), { due: 0, learning: 0, tomorrow: 0, enrolled: 0 });
 });
 
-test('clampNewPerDay() turns any input into 0..50', () => {
-  assert.equal(clampNewPerDay('7'), 7);
-  assert.equal(clampNewPerDay(''), 0);
-  assert.equal(clampNewPerDay(-3), 0);
-  assert.equal(clampNewPerDay(999), 50);
-  assert.equal(clampNewPerDay(2.6), 3);
-  assert.equal(clampNewPerDay('abc'), 10);
-  assert.equal(clampNewPerDay(undefined), 10);
+test('enroll(): an unseen word becomes a learning card due today, an existing card is untouched', () => {
+  assert.deepEqual(enroll(undefined, D), newCard(D));
+  const c = review({ due: D + 9 });
+  assert.equal(enroll(c, D), c);
+});
+
+test('known(): marking an unseen word as known schedules it a week out, an existing card is untouched', () => {
+  assert.deepEqual(known(undefined, D), { ...newCard(D), ivl: KNOWN_IVL, due: D + KNOWN_IVL, reps: 1 });
+  assert.equal(KNOWN_IVL, 7);
+  const c = review({ due: D + 2 });
+  assert.equal(known(c, D), c);
 });

@@ -1,8 +1,7 @@
 import { useCallback, useRef, useState } from 'react';
-import { DEFAULT_NEW_PER_DAY, clampNewPerDay, lapse as lapseCard, schedule, today } from '../srs.js';
+import { enroll as enrollCard, known as knownCard, lapse as lapseCard, schedule, today } from '../srs.js';
 
 const SRS_KEY = 'hsk4_srs_v1';
-const NEW_KEY = 'hsk4_srs_new_per_day';
 
 // srs: hanzi -> card (see src/srs.js) + `t` edit time (ms). Persisted in localStorage like marks;
 // `onLocalChange` fires after every local edit so the account hook can sync.
@@ -14,18 +13,8 @@ function load() {
   }
 }
 
-function loadNewPerDay() {
-  try {
-    const v = localStorage.getItem(NEW_KEY);
-    return v === null ? DEFAULT_NEW_PER_DAY : clampNewPerDay(v);
-  } catch {
-    return DEFAULT_NEW_PER_DAY;
-  }
-}
-
 export function useSrs(onLocalChange) {
   const [srs, setSrs] = useState(load);
-  const [newPerDay, setNew] = useState(loadNewPerDay);
   const ref = useRef(srs); // always the latest, for callbacks that must not go stale
   const changed = useRef(onLocalChange);
   changed.current = onLocalChange;
@@ -73,6 +62,35 @@ export function useSrs(onLocalChange) {
     [put]
   );
 
+  // Add words to the schedule (due today) in one write; words that already have a card are skipped.
+  const enroll = useCallback(
+    (hanzi) => {
+      const day = today();
+      const t = Date.now();
+      const next = { ...ref.current };
+      let n = 0;
+      hanzi.forEach((h) => {
+        if (!next[h]) {
+          next[h] = { ...enrollCard(undefined, day), t };
+          n++;
+        }
+      });
+      if (!n) return 0;
+      commit(next);
+      changed.current?.();
+      return n;
+    },
+    [commit]
+  );
+
+  // The word was marked "known": if it has no card yet, schedule it a week out.
+  const markKnown = useCallback(
+    (h) => {
+      if (!ref.current[h]) put(h, knownCard(undefined, today()));
+    },
+    [put]
+  );
+
   // Undo: put a card back the way it was (with a fresh edit time so the undo syncs too).
   const restore = useCallback((h, card) => put(h, card), [put]);
 
@@ -91,15 +109,5 @@ export function useSrs(onLocalChange) {
   const clearAll = useCallback(() => commit({}), [commit]);
   const getAll = useCallback(() => ref.current, []);
 
-  const setNewPerDay = useCallback((v) => {
-    const n = clampNewPerDay(v);
-    setNew(n);
-    try {
-      localStorage.setItem(NEW_KEY, String(n));
-    } catch {
-      /* ignore */
-    }
-  }, []);
-
-  return { srs, getCard, review, lapse, restore, mergeServer, clearAll, getAll, newPerDay, setNewPerDay };
+  return { srs, getCard, review, lapse, restore, mergeServer, clearAll, getAll, enroll, markKnown };
 }

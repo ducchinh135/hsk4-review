@@ -13,10 +13,14 @@ fill-in-the-blank) for HSK4 (lessons 1-10), with pronunciation (Web Speech API) 
 
 | Path | Page |
 |---|---|
-| `/daily` | Daily review: the spaced-repetition queue across all lessons |
+| `/daily` | Daily review: every due card of the words you have studied, across all lessons |
 | `/words` | Vocabulary list of the chosen lesson: pinyin, meaning, example sentence, marks |
 | `/review` | Flip through the lesson's cards in order or shuffled |
 | `/practice` | Pick an exercise type; `/practice/meaning`, `/hanzi`, `/listen`, `/pinyin`, `/fill` run one |
+
+A word enters the daily schedule when you study it: add a whole lesson with the button under the
+filter on `/words` and `/review`, mark it (known: first review in a week; needs review: today), or get
+it wrong in an exercise (today). There is no "new cards per day" limit; everything due is shown.
 
 Paths are real URLs (History API), so the host must serve `index.html` for them. Cloudflare Pages does
 that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.

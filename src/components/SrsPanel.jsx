@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ALL_HANZI, WORD_BY_HANZI } from '../lessons.js';
 import { buildQueue, newCard, preview, today } from '../srs.js';
+import { Link } from '../router.jsx';
 import FlipCard from './FlipCard.jsx';
 
 const GRADES = [
@@ -18,7 +19,7 @@ export default function SrsPanel({ srs, counts, speech }) {
   const card = useRef(null);
 
   const start = () => {
-    const queue = buildQueue(srs.getAll(), ALL_HANZI, today(), srs.newPerDay);
+    const queue = buildQueue(srs.getAll(), ALL_HANZI, today());
     setSession({ queue, reviewed: 0, again: 0, undo: null });
     if (queue.length) speech.autoSpeak(queue[0]);
   };
@@ -61,7 +62,7 @@ export default function SrsPanel({ srs, counts, speech }) {
   const cls = 'panel';
 
   if (!session) {
-    const any = counts.due + counts.learning + counts.fresh > 0;
+    const any = counts.due + counts.learning > 0;
     return (
       <div className={cls}>
         <div className="fillblank-box srs-box">
@@ -73,19 +74,19 @@ export default function SrsPanel({ srs, counts, speech }) {
               <b>{counts.learning}</b>Đang học
             </div>
             <div className="srs-stat">
-              <b>{counts.fresh}</b>Mới hôm nay
+              <b>{counts.enrolled}</b>Trong lịch ôn
             </div>
           </div>
-          <label className="srs-setting">
-            Số thẻ mới mỗi ngày
-            <input type="number" min="0" max="50" inputMode="numeric" value={srs.newPerDay} onChange={(e) => srs.setNewPerDay(e.target.value)} />
-          </label>
           {any ? (
             <button className="btn" onClick={start}>
               ▶ Bắt đầu
             </button>
-          ) : (
+          ) : counts.enrolled ? (
             <div className="srs-note">Hôm nay không còn thẻ nào. Quay lại vào ngày mai nhé!</div>
+          ) : (
+            <div className="srs-note">
+              Chưa có từ nào trong lịch ôn. Vào <Link to="/words">Danh sách từ vựng</Link> để đưa cả bài vào lịch, hoặc đánh dấu từng từ.
+            </div>
           )}
         </div>
       </div>

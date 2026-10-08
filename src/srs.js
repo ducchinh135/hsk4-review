@@ -8,7 +8,7 @@ export const EASE_START = 2500;
 export const EASE_MIN = 1300;
 export const EASE_MAX = 5000;
 export const IVL_MAX = 365;
-export const DEFAULT_NEW_PER_DAY = 10;
+export const KNOWN_IVL = 7; // a word marked "known" first comes back after a week
 const GRADES = [1, 2, 3, 4]; // Quên, Khó, Được, Dễ
 
 const clamp = (x, lo, hi) => Math.min(hi, Math.max(lo, x));
@@ -68,39 +68,34 @@ export function lapse(card, day) {
   return { ...card, ivl: 0, due: day, lapses: card.lapses + 1, ease: clamp(card.ease - 200, EASE_MIN, EASE_MAX) };
 }
 
+// Entering the schedule. A word only has a card once you have studied it (marked it, got it wrong in
+// an exercise, or added its lesson), so the daily review never hands you words you have not met.
+export const enroll = (card, day) => card || newCard(day);
+export const known = (card, day) => card || { ...newCard(day), ivl: KNOWN_IVL, due: day + KNOWN_IVL, reps: 1 };
+
 function split(srs, hanzi, day) {
   const due = [];
   const learning = [];
-  const fresh = [];
-  let addedToday = 0;
+  let enrolled = 0;
   let tomorrow = 0;
   for (const h of new Set(hanzi)) {
     const c = srs[h];
-    if (!c) {
-      fresh.push(h);
-      continue;
-    }
-    if (c.added === day) addedToday++;
+    if (!c) continue;
+    enrolled++;
     if (c.due <= day) (c.ivl > 0 ? due : learning).push(h);
     else if (c.ivl > 0 && c.due === day + 1) tomorrow++;
   }
-  return { due, learning, fresh, addedToday, tomorrow };
+  return { due, learning, enrolled, tomorrow };
 }
 
-// Today's session: overdue reviews (most overdue first), learning cards, then new cards
-// in lesson order up to the daily limit (cards introduced today count against it).
-export function buildQueue(srs, hanzi, day, newLimit) {
-  const { due, learning, fresh, addedToday } = split(srs, hanzi, day);
+// Today's session: every card that is due (most overdue first), then the learning cards.
+export function buildQueue(srs, hanzi, day) {
+  const { due, learning } = split(srs, hanzi, day);
   due.sort((a, b) => srs[a].due - srs[b].due); // stable: ties keep lesson order
-  return [...due, ...learning, ...fresh.slice(0, Math.max(0, newLimit - addedToday))];
+  return [...due, ...learning];
 }
 
-export function queueCounts(srs, hanzi, day, newLimit) {
-  const { due, learning, fresh, addedToday, tomorrow } = split(srs, hanzi, day);
-  return { due: due.length, learning: learning.length, fresh: Math.min(fresh.length, Math.max(0, newLimit - addedToday)), tomorrow };
-}
-
-export function clampNewPerDay(v) {
-  const n = Math.round(Number(v));
-  return Number.isFinite(n) ? clamp(n, 0, 50) : DEFAULT_NEW_PER_DAY;
+export function queueCounts(srs, hanzi, day) {
+  const { due, learning, enrolled, tomorrow } = split(srs, hanzi, day);
+  return { due: due.length, learning: learning.length, tomorrow, enrolled };
 }

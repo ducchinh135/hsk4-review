@@ -7,7 +7,7 @@ export default function DailyPage() {
   const { srs, speech, srsCounts } = useApp();
   return (
     <>
-      <SrsSummary counts={srsCounts} active />
+      <SrsSummary counts={srsCounts} />
       <SrsPanel srs={srs} counts={srsCounts} speech={speech} />
     </>
   );
