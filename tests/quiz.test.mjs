@@ -1,7 +1,7 @@
 // Unit tests for quiz question building and pinyin checking. Run: npm run test:unit
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { QUIZ_TYPES, applicableTypes, buildQuiz, checkPinyin, makeQuestion, pinyinKey } from '../src/quiz.js';
+import { PRACTICE_COUNT, QUIZ_TYPES, applicableTypes, buildQuiz, checkPinyin, countApplicable, makeQuestion, pinyinKey } from '../src/quiz.js';
 
 const W = (h, p, m, zh) => [h, p, m, zh, ''];
 const LESSON = [
@@ -101,4 +101,29 @@ test('buildQuiz(): count, distinct words, and only the chosen types', () => {
 
 test('buildQuiz(): listen-only quiz without speech support is empty instead of crashing', () => {
   assert.deepEqual(buildQuiz(LESSON, { types: ['listen'], count: 10 }, LESSON, ALL, { canSpeak: false }), []);
+});
+
+test('countApplicable() counts the words one exercise type can use', () => {
+  const noSentence = W('学', 'xué', 'học (đgt)', '我喜欢读书。'); // sentence lacks the word itself
+  const words = [...LESSON, noSentence];
+  assert.equal(countApplicable(words, 'meaning', { canSpeak: true }), 6);
+  assert.equal(countApplicable(words, 'fill', { canSpeak: true }), 5);
+  assert.equal(countApplicable(words, 'listen', { canSpeak: true }), 6);
+  assert.equal(countApplicable(words, 'listen', { canSpeak: false }), 0);
+  assert.equal(countApplicable([], 'pinyin', { canSpeak: true }), 0);
+});
+
+test('buildQuiz() with one type caps at PRACTICE_COUNT, one question per word', () => {
+  const many = Array.from({ length: 30 }, (_, i) => W('字' + i, 'zi' + i, 'nghĩa ' + i, '句子字' + i + '。'));
+  const qs = buildQuiz(many, { types: ['hanzi'], count: PRACTICE_COUNT }, many, many, { canSpeak: true, rng: seeded(7) });
+  assert.equal(PRACTICE_COUNT, 20);
+  assert.equal(qs.length, PRACTICE_COUNT);
+  assert.ok(qs.every((q) => q.type === 'hanzi'));
+  assert.equal(new Set(qs.map((q) => q.word[0])).size, PRACTICE_COUNT);
+});
+
+test('buildQuiz() returns no questions when the type fits none of the words', () => {
+  const none = [W('学', 'xué', 'học', '我喜欢读书。')];
+  assert.deepEqual(buildQuiz(none, { types: ['fill'], count: PRACTICE_COUNT }, none, none, { canSpeak: true }), []);
+  assert.deepEqual(buildQuiz(LESSON, { types: ['listen'], count: PRACTICE_COUNT }, LESSON, ALL, { canSpeak: false }), []);
 });

@@ -15,6 +15,14 @@ export function applicableTypes(word, types, { canSpeak }) {
   );
 }
 
+// Questions per practice run.
+export const PRACTICE_COUNT = 20;
+
+// How many of the words this one exercise type can ask about.
+export function countApplicable(words, type, { canSpeak }) {
+  return words.filter((w) => applicableTypes(w, [type], { canSpeak }).length > 0).length;
+}
+
 const shown = (type) => (type === 'meaning' ? (w) => w[2] : (w) => w[0]);
 
 // The answer plus 3 distractors, same lesson first, never two options with the same text.
