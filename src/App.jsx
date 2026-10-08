@@ -4,7 +4,8 @@ import AuthModal from './components/AuthModal.jsx';
 import NavBar from './components/NavBar.jsx';
 import { AppProvider, useApp } from './context/AppContext.jsx';
 import DailyPage from './pages/DailyPage.jsx';
-import PracticePage from './pages/PracticePage.jsx';
+import PracticeHub from './components/PracticeHub.jsx';
+import ExercisePage from './pages/ExercisePage.jsx';
 import ReviewPage from './pages/ReviewPage.jsx';
 import WordsPage from './pages/WordsPage.jsx';
 import { useRoute } from './router.jsx';
@@ -13,7 +14,8 @@ import { PAGE_TITLES } from './routes.js';
 function Page({ route }) {
   if (route.page === 'words') return <WordsPage />;
   if (route.page === 'review') return <ReviewPage />;
-  if (route.page === 'practice' || route.page === 'exercise') return <PracticePage />;
+  if (route.page === 'practice') return <PracticeHub />;
+  if (route.page === 'exercise') return <ExercisePage key={route.params.type} type={route.params.type} />;
   return <DailyPage />;
 }
 

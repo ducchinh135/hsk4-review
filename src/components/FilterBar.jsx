@@ -7,6 +7,8 @@ const CHIPS = [
   ['k', '✅ Đã thuộc'],
 ];
 
+export const FILTER_LABELS = Object.fromEntries(CHIPS);
+
 export default function FilterBar({ counts, filter, fellBack, onFilter, onReset }) {
   const [armed, setArmed] = useState(false);
   const timer = useRef(null);

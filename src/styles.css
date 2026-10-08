@@ -348,3 +348,16 @@ button{ font-family:inherit; -webkit-tap-highlight-color:transparent; touch-acti
   .word-actions{ width:100%; }
   .word-actions .mark-btn{ flex:1 1 calc(50% - 40px); }
 }
+
+/* ---------- PRACTICE ---------- */
+a.btn{ display:inline-block; text-decoration:none; text-align:center; }
+a.link-btn{ text-decoration:none; }
+.practice-hub{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+.exercise-card{ display:flex; flex-direction:column; gap:6px; background:#fff; border-radius:20px; padding:18px; text-decoration:none; color:inherit; border:2px solid transparent; box-shadow:0 4px 14px rgba(0,0,0,.06); }
+a.exercise-card:hover{ border-color:var(--accent-a,#333); }
+.exercise-card.off{ opacity:.5; }
+.exercise-name{ font-size:20px; font-weight:900; color:var(--accent-a,#333); }
+.exercise-desc{ font-size:15px; color:#555; }
+.exercise-count{ font-size:14px; font-weight:700; color:#777; margin-top:auto; }
+.exercise-top{ display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; margin-bottom:12px; }
+.exercise-summary{ font-size:14px; font-weight:700; color:#666; }
