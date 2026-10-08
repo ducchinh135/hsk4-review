@@ -11,11 +11,14 @@ import WordsPage from './pages/WordsPage.jsx';
 import { useRoute } from './router.jsx';
 import { PAGE_TITLES } from './routes.js';
 
-function Page({ route }) {
-  if (route.page === 'words') return <WordsPage />;
-  if (route.page === 'review') return <ReviewPage />;
-  if (route.page === 'practice') return <PracticeHub />;
-  if (route.page === 'exercise') return <ExercisePage key={route.params.type} type={route.params.type} />;
+// The study pages are remounted (via `key`) when the lesson, filter or account data changes, so
+// their lists and positions are rebuilt. The daily review is not: a session in progress must
+// survive the first account sync that lands a moment after the page loads.
+function Page({ route, viewVersion }) {
+  if (route.page === 'words') return <WordsPage key={viewVersion} />;
+  if (route.page === 'review') return <ReviewPage key={viewVersion} />;
+  if (route.page === 'practice') return <PracticeHub key={viewVersion} />;
+  if (route.page === 'exercise') return <ExercisePage key={route.params.type + ':' + viewVersion} type={route.params.type} />;
   return <DailyPage />;
 }
 
@@ -40,9 +43,8 @@ function Shell() {
       </header>
       <NavBar page={route.page} dueCount={srsCounts.due + srsCounts.learning} />
 
-      {/* viewVersion remounts the page when the lesson, filter or account data changes */}
-      <main key={viewVersion}>
-        <Page route={route} />
+      <main>
+        <Page route={route} viewVersion={viewVersion} />
       </main>
 
       {authMode && <AuthModal initialMode={authMode} onClose={() => setAuthMode(null)} authenticate={account.authenticate} />}
