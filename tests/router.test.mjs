@@ -6,16 +6,15 @@ import { PAGES, matchRoute } from '../src/routes.js';
 
 const page = (p) => ({ page: p, params: {}, path: '/' + p });
 
-test('matchRoute() maps the four pages', () => {
-  assert.deepEqual(matchRoute('/daily'), page('daily'));
+test('matchRoute() maps the three pages', () => {
   assert.deepEqual(matchRoute('/words'), page('words'));
   assert.deepEqual(matchRoute('/review'), page('review'));
   assert.deepEqual(matchRoute('/practice'), page('practice'));
 });
 
-test('matchRoute() sends the root and unknown paths to /daily', () => {
-  for (const p of ['/', '', '/nope', '/index.html', '/Words', '/words/foo', '/daily/x', '/api/me']) {
-    assert.deepEqual(matchRoute(p), { page: 'daily', params: {}, path: '/daily' }, p);
+test('matchRoute() sends the root and unknown paths to /review', () => {
+  for (const p of ['/', '', '/nope', '/index.html', '/Words', '/words/foo', '/daily', '/api/me']) {
+    assert.deepEqual(matchRoute(p), page('review'), p);
   }
 });
 
@@ -37,9 +36,9 @@ test('matchRoute() sends an unknown or over-long practice path to /practice', ()
   assert.deepEqual(matchRoute('/practice/Pinyin'), page('practice'));
 });
 
-test('PAGES lists the four navigation entries in order', () => {
+test('PAGES lists the three navigation entries in order', () => {
   assert.deepEqual(
     PAGES.map((p) => p.path),
-    ['/daily', '/words', '/review', '/practice']
+    ['/words', '/review', '/practice']
   );
 });

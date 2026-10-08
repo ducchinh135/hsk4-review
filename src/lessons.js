@@ -6,7 +6,7 @@ export { VOCAB };
 export const LESSON_ORDER = Object.keys(VOCAB);
 export const LESSON_LABELS = Object.fromEntries(LESSON_ORDER.map((l) => [l, 'Bài ' + l.slice(1)]));
 
-// Every word once, in lesson order (the daily review introduces new words in this order).
+// Every word once, in lesson order.
 const seen = new Set();
 export const ALL_WORDS = LESSON_ORDER.flatMap((l) => VOCAB[l].words).filter((w) => !seen.has(w[0]) && seen.add(w[0]));
 export const ALL_HANZI = ALL_WORDS.map((w) => w[0]);

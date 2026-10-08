@@ -19,11 +19,11 @@ async function api(method, path, body) {
 const LOCAL_ONLY = 'Tiến độ đang lưu trên máy này';
 
 // Account + background sync. Hidden (`available` false) when there is no backend.
-//  getMarks() / getSrs():         current state to push
-//  mergeServer(m) / mergeSrs(s):  fold server state into local state
-//  clearMarks() / clearSrs():     wipe local state (on logout, shared browsers)
-//  onReplaced():                  state changed wholesale, redraw the study view
-export function useAccount({ getMarks, mergeServer, clearMarks, getSrs, mergeSrs, clearSrs, onReplaced }) {
+//  getMarks():     current state to push
+//  mergeServer(m): fold server state into local state
+//  clearMarks():   wipe local state (on logout, shared browsers)
+//  onReplaced():   state changed wholesale, redraw the study view
+export function useAccount({ getMarks, mergeServer, clearMarks, onReplaced }) {
   const [available, setAvailable] = useState(false);
   const [user, setUserState] = useState(null);
   const [status, setStatus] = useState({ text: '', warn: false });
@@ -34,7 +34,7 @@ export function useAccount({ getMarks, mergeServer, clearMarks, getSrs, mergeSrs
   const syncing = useRef(false);
   const pending = useRef(false);
   const deps = useRef({});
-  deps.current = { getMarks, mergeServer, clearMarks, getSrs, mergeSrs, clearSrs, onReplaced };
+  deps.current = { getMarks, mergeServer, clearMarks, onReplaced };
 
   const setUser = (u) => {
     userRef.current = u;
@@ -57,7 +57,7 @@ export function useAccount({ getMarks, mergeServer, clearMarks, getSrs, mergeSrs
     run.current = (async () => {
       say('☁ Đang đồng bộ…');
       try {
-        const r = await api('POST', '/api/sync', { marks: deps.current.getMarks(), srs: deps.current.getSrs() });
+        const r = await api('POST', '/api/sync', { marks: deps.current.getMarks() });
         if (!userRef.current) return false; // logged out while this was in flight: drop the response
         if (r.status === 401) {
           setUser(null);
@@ -66,7 +66,6 @@ export function useAccount({ getMarks, mergeServer, clearMarks, getSrs, mergeSrs
         }
         if (!r.ok) throw new Error('sync ' + r.status);
         deps.current.mergeServer(r.data.marks || {});
-        deps.current.mergeSrs(r.data.srs || {});
         if (first) deps.current.onReplaced();
         say('☁ Đã đồng bộ');
         clearTimeout(retry.current);
@@ -154,7 +153,6 @@ export function useAccount({ getMarks, mergeServer, clearMarks, getSrs, mergeSrs
     setUser(null);
     say('');
     deps.current.clearMarks(); // do not leave this account's progress on a shared browser
-    deps.current.clearSrs();
     deps.current.onReplaced();
   }, []);
 

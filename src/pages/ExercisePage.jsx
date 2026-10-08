@@ -12,7 +12,7 @@ const TYPE_LABEL = Object.fromEntries(QUIZ_TYPES);
 // One practice run of a single exercise type. Starts as soon as the page opens; leaving the page
 // (or F5) drops an unfinished run.
 export default function ExercisePage({ type }) {
-  const { lesson, filter, words, lessonWords, marks, srs, speech } = useApp();
+  const { lesson, filter, words, lessonWords, marks, speech } = useApp();
   const { getMark, setMark } = marks;
   const canSpeak = speech.supported;
 
@@ -84,7 +84,6 @@ export default function ExercisePage({ type }) {
       const h = q.word[0];
       if (!ok) {
         if (getMark(h) !== 'r') setMark(h, 'r');
-        srs.lapse(h); // back into today's daily review
       }
       speech.speak(q.type === 'fill' ? q.word[3] : h, 'quiz');
       setState({ ...state, answered: { given, ok, result }, results: [...results, { hanzi: h, type: q.type, ok }] });

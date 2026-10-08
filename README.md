@@ -1,26 +1,21 @@
 # HSK4 vocabulary review
 
-Daily spaced-repetition review (Anki-style, SM-2), a vocabulary list, flashcard review (in order or
+A vocabulary list, flashcard review (in order or
 shuffled) and five practice exercises (hanzi → meaning, meaning → hanzi, listening, typing pinyin,
 fill-in-the-blank) for HSK4 (lessons 1-10), with pronunciation (Web Speech API) and per-word
 "known / needs review" marks.
 
 - Without a backend (e.g. GitHub Pages) marks and review progress are stored in the browser only.
 - With the Cloudflare backend, users sign in (username + password, invite code to register) and
-  their marks and daily-review progress sync across devices (last write wins per word).
+  their marks sync across devices (last write wins per word).
 
 ## Pages
 
 | Path | Page |
 |---|---|
-| `/daily` | Daily review: every due card of the words you have studied, across all lessons |
 | `/words` | Vocabulary list of the chosen lesson: pinyin, meaning, example sentence, marks |
 | `/review` | Flip through the lesson's cards in order or shuffled |
 | `/practice` | Pick an exercise type; `/practice/meaning`, `/hanzi`, `/listen`, `/pinyin`, `/fill` run one |
-
-A word enters the daily schedule when you study it: add a whole lesson with the button under the
-filter on `/words` and `/review`, mark it (known: first review in a week; needs review: today), or get
-it wrong in an exercise (today). There is no "new cards per day" limit; everything due is shown.
 
 Paths are real URLs (History API), so the host must serve `index.html` for them. Cloudflare Pages does
 that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
@@ -31,17 +26,16 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 |---|---|
 | `index.html`, `src/` | Vite + React frontend (`App.jsx`, `pages/`, `components/`, `hooks/`, `styles.css`) |
 | `src/routes.js`, `src/router.jsx` | URL → page matching (pure, unit-tested) and the History API router (`useRoute`, `Link`) |
-| `src/context/AppContext.jsx` | `AppProvider` / `useApp()`: marks, daily review, speech, account sync, chosen lesson and filter |
-| `src/srs.js` | Spaced-repetition scheduler (SM-2, study day rolls over at 4am), daily queue building |
+| `src/context/AppContext.jsx` | `AppProvider` / `useApp()`: marks, speech, account sync, chosen lesson and filter |
 | `src/quiz.js` | Quiz question building, pinyin normalisation and checking |
 | `src/data/vocab.json` | The vocabulary, one array per word: `[hanzi, pinyin, meaning, example zh, example vi]` |
 | `server/app.js` | The Hono API: middleware (no-store, CSRF guard) and routes |
 | `server/routes/` | `auth.js` (`me`, `register`, `login`, `logout`) and `sync.js` |
 | `server/lib/` | PBKDF2 hashing + HMAC (`crypto.js`), signed session cookie (`session.js`), login throttling (`throttle.js`) |
 | `functions/api/[[route]].js` | Mounts the Hono app on Cloudflare Pages Functions |
-| `migrations/` | D1 schema: `0001_init.sql` (`users`, `progress`, `attempts`), `0002_srs.sql` (`srs`) |
+| `migrations/` | D1 schema: `0001_init.sql` (`users`, `progress`, `attempts`), `0002_srs.sql` (`srs`, no longer used by the frontend) |
 | `tests/api.test.mjs` | Integration tests for the API |
-| `tests/srs.test.mjs`, `tests/quiz.test.mjs`, `tests/router.test.mjs` | Unit tests for the scheduler, the quiz and URL matching (no server needed) |
+| `tests/quiz.test.mjs`, `tests/router.test.mjs` | Unit tests for the quiz and URL matching (no server needed) |
 
 `server/` has no Pages-specific code. When the API outgrows Pages Functions, export `app.fetch`
 from a Worker entry and point `/api/*` at it; the frontend does not change.
@@ -54,7 +48,7 @@ cp .dev.vars.example .dev.vars      # then edit SESSION_SECRET and INVITE_CODE
 npm run db:local                    # create the local D1 tables
 npm run dev                         # app at http://localhost:5173 (Vite), API at :8788 (wrangler)
 npm test                            # in another terminal, with `npm run dev` running
-npm run test:unit                   # scheduler + quiz unit tests, no server needed
+npm run test:unit                   # quiz + router unit tests, no server needed
 ```
 
 `npm run dev` starts Vite (hot reload) and `wrangler pages dev` together; Vite proxies `/api` to

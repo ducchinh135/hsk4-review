@@ -2,14 +2,12 @@
 import { QUIZ_TYPES } from './quiz.js';
 
 export const PAGES = [
-  { page: 'daily', path: '/daily', label: '🧠 Ôn hằng ngày' },
   { page: 'words', path: '/words', label: '📚 Từ vựng' },
   { page: 'review', path: '/review', label: '📇 Ôn tập' },
   { page: 'practice', path: '/practice', label: '📝 Thực hành' },
 ];
 
 export const PAGE_TITLES = {
-  daily: 'Ôn hằng ngày',
   words: 'Từ vựng',
   review: 'Ôn tập',
   practice: 'Thực hành',
@@ -17,7 +15,7 @@ export const PAGE_TITLES = {
 };
 
 const EXERCISE_TYPES = QUIZ_TYPES.map(([t]) => t);
-const SIMPLE = ['daily', 'words', 'review'];
+const SIMPLE = ['words', 'review'];
 
 // Returns the page to render and the canonical path for it (the router replaces the URL with
 // `path` when they differ, so unknown URLs end up on a real page).
@@ -28,5 +26,5 @@ export function matchRoute(pathname) {
     return { page: 'practice', params: {}, path: '/practice' };
   }
   if (SIMPLE.includes(a) && !b) return { page: a, params: {}, path: '/' + a };
-  return { page: 'daily', params: {}, path: '/daily' };
+  return { page: 'review', params: {}, path: '/review' };
 }
