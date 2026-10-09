@@ -1,14 +1,4 @@
 :root{
-  --l1-a:#ff5e78; --l1-b:#ff8fa3; --l1-bg:#fff0f3;
-  --l2-a:#3d8bff; --l2-b:#7db2ff; --l2-bg:#eef5ff;
-  --l3-a:#12b886; --l3-b:#63e6be; --l3-bg:#eafff6;
-  --l4-a:#ff9800; --l4-b:#ffc266; --l4-bg:#fff7e8;
-  --l5-a:#7950f2; --l5-b:#a98bff; --l5-bg:#f3eeff;
-  --l6-a:#ff5e78; --l6-b:#ff8fa3; --l6-bg:#fff0f3;
-  --l7-a:#3d8bff; --l7-b:#7db2ff; --l7-bg:#eef5ff;
-  --l8-a:#12b886; --l8-b:#63e6be; --l8-bg:#eafff6;
-  --l9-a:#ff9800; --l9-b:#ffc266; --l9-bg:#fff7e8;
-  --l10-a:#7950f2; --l10-b:#a98bff; --l10-bg:#f3eeff;
   --ink:#232333; --card-radius:26px;
 }
 *{box-sizing:border-box;}
@@ -38,16 +28,6 @@ header p{ font-size:18px; color:#555; margin:0; }
 }
 .lesson-tab:hover{ transform:translateY(-2px); }
 .lesson-tab.active{ opacity:1; transform:translateY(-3px) scale(1.04); }
-.lesson-tab[data-l="L1"]{ background:linear-gradient(135deg,var(--l1-a),var(--l1-b)); }
-.lesson-tab[data-l="L2"]{ background:linear-gradient(135deg,var(--l2-a),var(--l2-b)); }
-.lesson-tab[data-l="L3"]{ background:linear-gradient(135deg,var(--l3-a),var(--l3-b)); }
-.lesson-tab[data-l="L4"]{ background:linear-gradient(135deg,var(--l4-a),var(--l4-b)); }
-.lesson-tab[data-l="L5"]{ background:linear-gradient(135deg,var(--l5-a),var(--l5-b)); }
-.lesson-tab[data-l="L6"]{ background:linear-gradient(135deg,var(--l6-a),var(--l6-b)); }
-.lesson-tab[data-l="L7"]{ background:linear-gradient(135deg,var(--l7-a),var(--l7-b)); }
-.lesson-tab[data-l="L8"]{ background:linear-gradient(135deg,var(--l8-a),var(--l8-b)); }
-.lesson-tab[data-l="L9"]{ background:linear-gradient(135deg,var(--l9-a),var(--l9-b)); }
-.lesson-tab[data-l="L10"]{ background:linear-gradient(135deg,var(--l10-a),var(--l10-b)); }
 
 .lesson-title{
   text-align:center; font-size:clamp(20px,3.2vw,28px); font-weight:800; margin:6px 0 22px;

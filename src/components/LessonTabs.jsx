@@ -1,4 +1,4 @@
-import { LESSON_LABELS, LESSON_ORDER, VOCAB } from '../lessons.js';
+import { LESSON_COLORS, LESSON_LABELS, LESSON_ORDER, VOCAB } from '../lessons.js';
 
 export default function LessonTabs({ lesson, getMark, onSelect }) {
   return (
@@ -7,7 +7,9 @@ export default function LessonTabs({ lesson, getMark, onSelect }) {
         const ws = VOCAB[l].words;
         const known = ws.filter((w) => getMark(w[0]) === 'k').length;
         return (
-          <button key={l} className={'lesson-tab' + (l === lesson ? ' active' : '')} data-l={l} onClick={() => onSelect(l)}>
+          <button key={l} className={'lesson-tab' + (l === lesson ? ' active' : '')} data-l={l}
+            style={{ background: `linear-gradient(135deg,${LESSON_COLORS[l].a},${LESSON_COLORS[l].b})` }}
+            onClick={() => onSelect(l)}>
             <span>{LESSON_LABELS[l]}</span>
             <span className="tab-sub">
               {known}/{ws.length} ✓
