@@ -2,7 +2,7 @@
 
 A vocabulary list, flashcard review (in order or
 shuffled) and five practice exercises (hanzi → meaning, meaning → hanzi, listening, typing pinyin,
-fill-in-the-blank) for HSK4 (lessons 1-10), with pronunciation (Web Speech API) and per-word
+fill-in-the-blank) for HSK4 (lessons 1-20), with pronunciation (Web Speech API) and per-word
 "known / needs review" marks.
 
 - Without a backend (e.g. GitHub Pages) marks and review progress are stored in the browser only.
