@@ -1,14 +1,14 @@
 import { useApp } from '../context/AppContext.jsx';
-import { QUIZ_TYPES, countApplicable } from '../quiz.js';
+import { QUIZ_TYPES, countApplicable, countQuestions } from '../quiz.js';
 import { Link } from '../router.jsx';
 import StudyBar from './StudyBar.jsx';
 
 const DESC = {
-  meaning: 'Thấy chữ Hán, chọn nghĩa tiếng Việt đúng.',
-  hanzi: 'Thấy nghĩa tiếng Việt, chọn chữ Hán đúng.',
-  listen: 'Nghe phát âm, chọn chữ Hán đúng.',
-  pinyin: 'Thấy chữ Hán, gõ pinyin (phải đúng dấu thanh).',
-  fill: 'Chọn từ còn thiếu trong câu ví dụ.',
+  meaning: 'Thấy chữ Hán (từ & cụm từ kết hợp), chọn nghĩa tiếng Việt đúng.',
+  hanzi: 'Thấy nghĩa tiếng Việt, chọn từ hoặc cụm từ chữ Hán đúng.',
+  listen: 'Nghe phát âm từ hoặc cụm từ, chọn chữ Hán đúng.',
+  pinyin: 'Thấy chữ Hán (từ & cụm từ), gõ pinyin (phải đúng dấu thanh).',
+  fill: 'Chọn từ còn thiếu trong các câu ví dụ & bài tập ngữ cảnh.',
 };
 
 // Pick an exercise type for the words of the chosen lesson and filter.
@@ -21,7 +21,13 @@ export default function PracticeHub() {
       <div className="panel practice-hub">
         {QUIZ_TYPES.map(([type, label]) => {
           const n = countApplicable(words, type, { canSpeak });
-          const note = type === 'listen' && !canSpeak ? 'Trình duyệt không hỗ trợ đọc' : n ? `${n} từ` : 'Không có từ phù hợp';
+          const qCount = countQuestions(words, type, { canSpeak });
+          const note =
+            type === 'listen' && !canSpeak
+              ? 'Trình duyệt không hỗ trợ đọc'
+              : n
+              ? `${n} từ · ${qCount} câu hỏi`
+              : 'Không có từ phù hợp';
           const body = (
             <>
               <div className="exercise-name">{label}</div>

@@ -1,8 +1,20 @@
-import VOCAB from './data/vocab.json';
+import RAW_VOCAB from './data/vocab.json' with { type: 'json' };
+import PRACTICE from './data/practice.json' with { type: 'json' };
 
-export { VOCAB };
+// Each word is [hanzi, pinyin, meaning, example (zh), example (vi), phrases, extraSentences].
+export const VOCAB = Object.fromEntries(
+  Object.entries(RAW_VOCAB).map(([lesson, data]) => [
+    lesson,
+    {
+      ...data,
+      words: data.words.map((w) => {
+        const ext = PRACTICE[lesson]?.[w[0]];
+        return ext ? [w[0], w[1], w[2], w[3], w[4], ext.phrases || [], ext.sentences || []] : w;
+      }),
+    },
+  ])
+);
 
-// Each word is [hanzi, pinyin, meaning, example (zh), example (vi)].
 export const LESSON_ORDER = Object.keys(VOCAB);
 export const LESSON_LABELS = Object.fromEntries(LESSON_ORDER.map((l) => [l, 'Bài ' + l.slice(1)]));
 

@@ -3,7 +3,8 @@ import { checkPinyin } from '../quiz.js';
 
 // Type the pinyin for a hanzi. Remount (via `key`) per question.
 export default function PinyinQuestion({ q, answered, onAnswer, noTones }) {
-  const [text, setText] = useState('');
+  const [text, setText] = useState(answered ? answered.given : '');
+  const target = q.target || q.word;
   const submit = (e) => {
     e.preventDefault();
     if (answered || !text.trim()) return;
@@ -14,7 +15,8 @@ export default function PinyinQuestion({ q, answered, onAnswer, noTones }) {
 
   return (
     <form className="pinyin-form" onSubmit={submit}>
-      <div className="quiz-prompt hanzi">{q.word[0]}</div>
+      <div className="quiz-prompt hanzi">{target[0]}</div>
+      <div className="fb-hint">💡 Nghĩa: {target[2]}</div>
       <input
         className={state.trim()}
         value={text}

@@ -1,7 +1,18 @@
 // Unit tests for quiz question building and pinyin checking. Run: npm run test:unit
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { PRACTICE_COUNT, QUIZ_TYPES, applicableTypes, buildQuiz, checkPinyin, countApplicable, makeQuestion, pinyinKey } from '../src/quiz.js';
+import {
+  PRACTICE_COUNT,
+  QUIZ_TYPES,
+  applicableTypes,
+  buildQuiz,
+  checkPinyin,
+  countApplicable,
+  countQuestions,
+  makeQuestion,
+  pinyinKey,
+  variantsForWord,
+} from '../src/quiz.js';
 
 const W = (h, p, m, zh) => [h, p, m, zh, ''];
 const LESSON = [
@@ -126,4 +137,75 @@ test('buildQuiz() returns no questions when the type fits none of the words', ()
   const none = [W('学', 'xué', 'học', '我喜欢读书。')];
   assert.deepEqual(buildQuiz(none, { types: ['fill'], count: PRACTICE_COUNT }, none, none, { canSpeak: true }), []);
   assert.deepEqual(buildQuiz(LESSON, { types: ['listen'], count: PRACTICE_COUNT }, LESSON, ALL, { canSpeak: false }), []);
+});
+
+test('variantsForWord(), countQuestions() and buildQuiz() expand phrases and extra sentences across all 5 types', () => {
+  const rich = [
+    [
+      '法律',
+      'fǎlǜ',
+      'luật pháp (dt)',
+      '他在大学学习法律。',
+      'Anh ấy học luật ở đại học.',
+      [
+        ['遵守法律', 'zūnshǒu fǎlǜ', 'tuân thủ pháp luật'],
+        ['法律规定', 'fǎlǜ guīdìng', 'quy định pháp luật'],
+      ],
+      [
+        ['任何人都要遵守国家的法律。', 'Bất kỳ ai cũng phải tuân thủ luật pháp nhà nước.'],
+        ['他毕业后成了一名法律工作者。', 'Sau khi tốt nghiệp anh ấy làm công tác pháp luật.'],
+      ],
+    ],
+    [
+      '印象',
+      'yìnxiàng',
+      'ấn tượng (dt)',
+      '他给我的印象非常好。',
+      'Anh ấy để lại cho tôi ấn tượng rất tốt.',
+      [
+        ['第一印象', 'dì-yī yìnxiàng', 'ấn tượng đầu tiên'],
+        ['印象很深', 'yìnxiàng hěn shēn', 'ấn tượng rất sâu'],
+      ],
+      [
+        ['我对那座城市的印象特别深刻。', 'Ấn tượng của tôi về thành phố đó vô cùng sâu sắc.'],
+        ['面试时要给经理留下好印象。', 'Khi phỏng vấn cần để lại ấn tượng tốt cho giám đốc.'],
+      ],
+    ],
+  ];
+  for (const [type] of QUIZ_TYPES) {
+    assert.equal(variantsForWord(rich[0], type, { canSpeak: true }).length, 3, type);
+    assert.equal(countQuestions(rich, type, { canSpeak: true }), 6, type);
+    const qs = buildQuiz(rich, { types: [type], count: 'all' }, rich, [...rich, ...ALL], { canSpeak: true, rng: seeded(11) });
+    assert.equal(qs.length, 6, type);
+    if (type === 'fill') {
+      assert.equal(new Set(qs.map((q) => q.sentence)).size, 6);
+    } else {
+      assert.equal(new Set(qs.map((q) => q.target[0])).size, 6);
+    }
+  }
+});
+
+test('all 20 lessons in VOCAB have 3x expanded questions across all 5 exercise types', async () => {
+  const { VOCAB, ALL_WORDS, LESSON_ORDER } = await import('../src/lessons.js');
+  assert.equal(LESSON_ORDER.length, 20);
+  for (const l of LESSON_ORDER) {
+    const ws = VOCAB[l].words;
+    for (const [type] of QUIZ_TYPES) {
+      assert.equal(countQuestions(ws, type, { canSpeak: true }), ws.length * 3, `${l} ${type}`);
+      const qs = buildQuiz(ws, { types: [type], count: 'all' }, ws, ALL_WORDS, { canSpeak: true, rng: seeded(19) });
+      assert.equal(qs.length, ws.length * 3, `${l} buildQuiz ${type}`);
+      for (const q of qs) {
+        if (type === 'pinyin') {
+          assert.equal(checkPinyin(q.answer, q.answer), 'ok', `${l} pinyin ${q.target[0]}`);
+        } else {
+          assert.equal(q.options.length, 4);
+          assert.equal(new Set(q.options).size, 4, `${l} ${type} distinct options for ${q.target[0]}`);
+          assert.ok(q.options.includes(q.answer));
+        }
+        if (type === 'fill') {
+          assert.ok(q.sentence.includes(q.word[0]), `${l} fill sentence includes ${q.word[0]}`);
+        }
+      }
+    }
+  }
 });

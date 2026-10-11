@@ -29,6 +29,7 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 | `src/context/AppContext.jsx` | `AppProvider` / `useApp()`: marks, speech, account sync, chosen lesson and filter |
 | `src/quiz.js` | Quiz question building, pinyin normalisation and checking |
 | `src/data/vocab.json` | The vocabulary, one array per word: `[hanzi, pinyin, meaning, example zh, example vi]` |
+| `src/data/practice.json` | Expanded HSK 4 textbook/workbook collocations (`phrases`) and context sentences (`sentences`) per word |
 | `server/app.js` | The Hono API: middleware (no-store, CSRF guard) and routes |
 | `server/routes/` | `auth.js` (`me`, `register`, `login`, `logout`) and `sync.js` |
 | `server/lib/` | PBKDF2 hashing + HMAC (`crypto.js`), signed session cookie (`session.js`), login throttling (`throttle.js`) |
