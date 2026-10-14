@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { QUIZ_TYPES } from '../src/quiz.js';
-import { PAGES, SECTIONS, matchRoute, sectionOf } from '../src/routes.js';
+import { GRAMMAR_PAGES, PAGES, PAGE_TITLES, SECTIONS, matchRoute, sectionOf } from '../src/routes.js';
 
 const page = (p) => ({ page: p, params: {}, path: '/vocab/' + p });
 
@@ -12,9 +12,26 @@ test('matchRoute() maps the vocabulary pages', () => {
   assert.deepEqual(matchRoute('/vocab/practice'), page('practice'));
 });
 
-test('matchRoute() maps the grammar page', () => {
-  assert.deepEqual(matchRoute('/grammar'), { page: 'grammar', params: {}, path: '/grammar' });
-  assert.deepEqual(matchRoute('/grammar/x'), { page: 'grammar', params: {}, path: '/grammar' });
+const gpage = (p, path) => ({ page: p, params: {}, path });
+
+test('matchRoute() maps the grammar pages', () => {
+  assert.deepEqual(matchRoute('/grammar'), gpage('grammar', '/grammar'));
+  assert.deepEqual(matchRoute('/grammar/'), gpage('grammar', '/grammar'));
+  assert.deepEqual(matchRoute('/grammar/practice'), gpage('grammar-practice', '/grammar/practice'));
+  assert.deepEqual(matchRoute('/grammar/review'), gpage('grammar-review', '/grammar/review'));
+  assert.deepEqual(matchRoute('//grammar//practice/'), gpage('grammar-practice', '/grammar/practice'));
+});
+
+test('matchRoute() sends unknown grammar paths to /grammar', () => {
+  for (const p of ['/grammar/x', '/grammar/xyz', '/grammar/practice/1', '/grammar/Practice', '/grammar/review/x']) {
+    assert.deepEqual(matchRoute(p), gpage('grammar', '/grammar'), p);
+  }
+});
+
+test('GRAMMAR_PAGES lists the grammar tabs, and every page has a title', () => {
+  assert.deepEqual(GRAMMAR_PAGES.map((p) => p.path), ['/grammar', '/grammar/practice']);
+  for (const p of GRAMMAR_PAGES) assert.equal(matchRoute(p.path).page, p.page);
+  for (const p of ['words', 'review', 'practice', 'exercise', 'grammar', 'grammar-practice', 'grammar-review']) assert.ok(PAGE_TITLES[p], p);
 });
 
 test('matchRoute() redirects the old pre-sidebar URLs into /vocab', () => {
@@ -55,6 +72,6 @@ test('PAGES and SECTIONS list the navigation entries in order', () => {
 });
 
 test('sectionOf() groups pages by section', () => {
-  assert.equal(sectionOf('grammar'), 'grammar');
+  for (const p of ['grammar', 'grammar-practice', 'grammar-review']) assert.equal(sectionOf(p), 'grammar');
   for (const p of ['words', 'review', 'practice', 'exercise']) assert.equal(sectionOf(p), 'vocab');
 });
