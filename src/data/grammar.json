@@ -8010,5 +8010,1244 @@
         }
       ]
     }
+  ],
+  "L14": [
+    {
+      "id": "14.1",
+      "title": "够",
+      "pattern": "够 + V（吃够 · 睡够）   |   够 + Adj + 的（了）   |   不够 + Adj",
+      "meaning": "(1) Động từ: đủ về số lượng. (2) Phó từ: mức độ đã đạt tới một chuẩn nào đó, khá, đủ… Cấu trúc 够 + tính từ, ở câu khẳng định thường kèm 的 (够重的了); phủ định là 不够 + tính từ.",
+      "notes": [
+        "Động từ “đủ”: 睡够八个小时, 吃够、吃饱.",
+        "Phó từ + tính từ: 够 + Adj + 的(了) cho thấy mức độ đã khá cao: 箱子已经够重的了.",
+        "Phủ định: 不够 + Adj: 不够勇敢 (chưa đủ dũng cảm)."
+      ],
+      "examples": [
+        [
+          "一般睡够八个小时就可以了。",
+          "Yìbān shuì gòu bā ge xiǎoshí jiù kěyǐ le.",
+          "Thông thường ngủ đủ tám tiếng là được."
+        ],
+        [
+          "你的箱子已经够重的了，别再放东西了。",
+          "Nǐ de xiāngzi yǐjīng gòu zhòng de le, bié zài fàng dōngxi le.",
+          "Vali của bạn đã khá nặng rồi, đừng bỏ thêm đồ nữa."
+        ],
+        [
+          "他不够勇敢，所以害怕失败。",
+          "Tā bú gòu yǒnggǎn, suǒyǐ hàipà shībài.",
+          "Anh ấy chưa đủ dũng cảm nên sợ thất bại."
+        ],
+        [
+          "客人来了，要让客人吃够、吃饱。",
+          "Kèrén lái le, yào ràng kèrén chī gòu, chī bǎo.",
+          "Khách đến, phải để khách ăn no, ăn đủ."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "你的箱子已经___重的了，别再放东西了。",
+          "options": [
+            "够",
+            "倍",
+            "并",
+            "对"
+          ],
+          "answer": "够",
+          "explain": "够 + tính từ + 的(了): “đã khá nặng rồi”. 倍/并/对 không đi trước tính từ theo nghĩa này."
+        },
+        {
+          "type": "choice",
+          "q": "一般睡___八个小时就可以了。",
+          "options": [
+            "够",
+            "倍",
+            "并",
+            "竟"
+          ],
+          "answer": "够",
+          "explain": "睡够八个小时: 够 làm bổ ngữ kết quả, nghĩa “đủ”."
+        },
+        {
+          "type": "choice",
+          "q": "他___勇敢，所以害怕失败。",
+          "options": [
+            "不够",
+            "不倍",
+            "不并",
+            "不竟"
+          ],
+          "answer": "不够",
+          "explain": "不够 + tính từ: “chưa đủ…”, ở đây là chưa đủ dũng cảm."
+        },
+        {
+          "type": "choice",
+          "q": "这个房间已经够大___，不用再换了。",
+          "options": [
+            "的",
+            "地",
+            "得",
+            "吗"
+          ],
+          "answer": "的",
+          "explain": "够 + tính từ + 的: cuối cụm thường có 的 trong câu khẳng định."
+        },
+        {
+          "type": "choice",
+          "q": "让客人吃___、吃饱。",
+          "options": [
+            "够",
+            "倍",
+            "并",
+            "竟"
+          ],
+          "answer": "够",
+          "explain": "吃够、吃饱: 够 làm bổ ngữ kết quả nghĩa là ăn đủ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "你的",
+            "箱子",
+            "已经",
+            "够",
+            "重",
+            "的",
+            "了"
+          ],
+          "answer": "你的箱子已经够重的了。",
+          "alt": [],
+          "vi": "Vali của bạn đã khá nặng rồi."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "不够",
+            "勇敢",
+            "所以",
+            "害怕",
+            "失败"
+          ],
+          "answer": "他不够勇敢，所以害怕失败。",
+          "alt": [],
+          "vi": "Anh ấy chưa đủ dũng cảm nên sợ thất bại."
+        }
+      ]
+    },
+    {
+      "id": "14.2",
+      "title": "以",
+      "pattern": "以 + N + V   |   以……为……   |   A，以 + V（mục đích）",
+      "meaning": "Ba cách dùng: (1) giới từ: dùng, lấy, bằng (như 用, 拿) — 以……+V; (2) 以……为……: lấy… làm…, coi… là…; (3) liên từ chỉ mục đích: để, nhằm (như 用来, 为的是), đứng đầu vế sau, hai vế cùng chủ ngữ.",
+      "notes": [
+        "以 + danh từ + động từ: 以最快的速度完成, 以严格的标准要求自己.",
+        "以……为……: lấy… làm…: 以朋友为镜子 (lấy bạn bè làm tấm gương).",
+        "Liên từ chỉ mục đích: 请客人去饭店吃饭，以表示对客人的尊重; hai vế phải cùng chủ ngữ, thường dùng trong văn viết."
+      ],
+      "examples": [
+        [
+          "经理您放心，我一定以最快的速度完成。",
+          "Jīnglǐ nín fàngxīn, wǒ yídìng yǐ zuì kuài de sùdù wánchéng.",
+          "Giám đốc yên tâm, tôi nhất định hoàn thành với tốc độ nhanh nhất."
+        ],
+        [
+          "我们应该以身边的朋友为镜子。",
+          "Wǒmen yīnggāi yǐ shēnbiān de péngyou wéi jìngzi.",
+          "Chúng ta nên lấy bạn bè bên cạnh làm tấm gương."
+        ],
+        [
+          "他以严格的标准要求自己。",
+          "Tā yǐ yángé de biāozhǔn yāoqiú zìjǐ.",
+          "Anh ấy yêu cầu bản thân bằng tiêu chuẩn nghiêm khắc."
+        ],
+        [
+          "中国人常常请客人去饭店吃饭，以表示对客人的尊重。",
+          "Zhōngguórén chángcháng qǐng kèrén qù fàndiàn chīfàn, yǐ biǎoshì duì kèrén de zūnzhòng.",
+          "Người Trung Quốc thường mời khách đi ăn nhà hàng để tỏ lòng tôn trọng khách."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "经理您放心，我一定___最快的速度完成。",
+          "options": [
+            "以",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "以",
+          "explain": "以 + 最快的速度: “bằng tốc độ nhanh nhất”, giới từ chỉ cách thức."
+        },
+        {
+          "type": "choice",
+          "q": "我们应该以身边的朋友___镜子。",
+          "options": [
+            "为",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "为",
+          "explain": "以……为……: lấy bạn bè làm tấm gương."
+        },
+        {
+          "type": "choice",
+          "q": "他___严格的标准要求自己。",
+          "options": [
+            "以",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "以",
+          "explain": "以 + 严格的标准: “theo tiêu chuẩn nghiêm khắc” — giới từ 以."
+        },
+        {
+          "type": "choice",
+          "q": "中国人请客人去饭店吃饭，___表示对客人的尊重。",
+          "options": [
+            "以",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "以",
+          "explain": "以 chỉ mục đích (để biểu thị sự tôn trọng); hai vế cùng chủ ngữ."
+        },
+        {
+          "type": "choice",
+          "q": "他以努力工作___目标。",
+          "options": [
+            "为",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "为",
+          "explain": "以……为目标: lấy… làm mục tiêu."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我",
+            "一定",
+            "以",
+            "最快的",
+            "速度",
+            "完成"
+          ],
+          "answer": "我一定以最快的速度完成。",
+          "alt": [],
+          "vi": "Tôi nhất định hoàn thành với tốc độ nhanh nhất."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我们",
+            "应该",
+            "以",
+            "朋友",
+            "为",
+            "镜子"
+          ],
+          "answer": "我们应该以朋友为镜子。",
+          "alt": [],
+          "vi": "Chúng ta nên lấy bạn bè làm tấm gương."
+        }
+      ]
+    },
+    {
+      "id": "14.3",
+      "title": "既然",
+      "pattern": "既然 + A，（那么）就/也/还 + B",
+      "meaning": "Liên từ: đã… thì… — vế đầu nêu sự thật đã xảy ra hoặc đã được thừa nhận; vế sau thường có 就/也/还, nêu kết luận rút ra từ tình huống đó.",
+      "notes": [
+        "Vế đầu nêu việc đã là sự thật; vế sau nêu kết luận, đề nghị hoặc câu hỏi tu từ rút ra từ đó.",
+        "Vế sau thường có 就 / 也 / 还 (hoặc 那么就): 既然这样，就只好安排在下周了.",
+        "Có thể đứng trước hoặc sau chủ ngữ vế đầu: 既然你不愿意打球 / 你既然不愿意打球."
+      ],
+      "examples": [
+        [
+          "你既然不愿意去，为什么还答应他呢？",
+          "Nǐ jìrán bú yuànyì qù, wèishénme hái dāying tā ne?",
+          "Bạn đã không muốn đi, sao còn nhận lời anh ấy?"
+        ],
+        [
+          "既然这样，就只好安排在下周了。",
+          "Jìrán zhèyàng, jiù zhǐhǎo ānpái zài xiàzhōu le.",
+          "Đã vậy thì đành sắp xếp vào tuần sau."
+        ],
+        [
+          "既然明天公司停电，我们肯定不用加班了。",
+          "Jìrán míngtiān gōngsī tíngdiàn, wǒmen kěndìng búyòng jiābān le.",
+          "Đã mai công ty cắt điện thì chắc chắn chúng ta không phải tăng ca."
+        ],
+        [
+          "既然你已经决定了，我就不再说什么了。",
+          "Jìrán nǐ yǐjīng juédìng le, wǒ jiù bú zài shuō shénme le.",
+          "Bạn đã quyết định rồi thì tôi không nói gì thêm."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "___这样，就只好安排在下周了。",
+          "options": [
+            "既然",
+            "即使",
+            "无论",
+            "否则"
+          ],
+          "answer": "既然",
+          "explain": "既然……，就……: đã là như vậy thì rút ra kết luận. 即使 cần 也, 无论 cần 都."
+        },
+        {
+          "type": "choice",
+          "q": "你既然不愿意去，为什么___答应他呢？",
+          "options": [
+            "还",
+            "才",
+            "刚",
+            "够"
+          ],
+          "answer": "还",
+          "explain": "既然……，为什么还……？: vế sau có 还 để hỏi tu từ."
+        },
+        {
+          "type": "choice",
+          "q": "既然你已经决定了，我___不再说什么了。",
+          "options": [
+            "就",
+            "却",
+            "刚",
+            "才"
+          ],
+          "answer": "就",
+          "explain": "既然……，就……: vế sau dùng 就 nêu kết luận."
+        },
+        {
+          "type": "choice",
+          "q": "___明天公司停电，我们肯定不用加班了。",
+          "options": [
+            "既然",
+            "即使",
+            "无论",
+            "否则"
+          ],
+          "answer": "既然",
+          "explain": "Căn cứ vào sự thật “mai công ty cắt điện” để rút ra kết luận → 既然."
+        },
+        {
+          "type": "choice",
+          "q": "你___不愿意打球，为什么还要打？",
+          "options": [
+            "既然",
+            "即使",
+            "无论",
+            "只要"
+          ],
+          "answer": "既然",
+          "explain": "既然 nêu điều đã là sự thật (không muốn đánh), vế sau chất vấn → 既然."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "既然",
+            "这样",
+            "就",
+            "只好",
+            "安排",
+            "在下周"
+          ],
+          "answer": "既然这样，就只好安排在下周。",
+          "alt": [],
+          "vi": "Đã vậy thì đành sắp xếp vào tuần sau."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "你",
+            "既然",
+            "不愿意",
+            "去",
+            "为什么",
+            "还",
+            "答应"
+          ],
+          "answer": "你既然不愿意去，为什么还答应？",
+          "alt": [],
+          "vi": "Bạn đã không muốn đi, sao còn nhận lời?"
+        }
+      ]
+    },
+    {
+      "id": "14.4",
+      "title": "于是",
+      "pattern": "A，于是 + B",
+      "meaning": "Liên từ: thế là, vì vậy — dùng ở vế sau; việc sau xảy ra ngay sau việc trước, thường có quan hệ nối tiếp.",
+      "notes": [
+        "Vế sau là việc xảy ra tiếp theo việc ở vế trước, nhấn quan hệ nối tiếp theo thời gian.",
+        "Khác 因此: 于是 nhấn thứ tự trước – sau (kể diễn biến), còn 因此 nhấn nguyên nhân – kết quả. Cả hai đều dùng được trong A，于是/因此 B khi A dẫn tới B.",
+        "Thường dùng khi kể một chuỗi sự việc đã xảy ra."
+      ],
+      "examples": [
+        [
+          "我妹妹出生那天正好下大雪，于是爸妈给她取名叫夏雪。",
+          "Wǒ mèimei chūshēng nà tiān zhènghǎo xià dàxuě, yúshì bàmā gěi tā qǔ míng jiào Xiàxuě.",
+          "Hôm em gái tôi sinh ra đúng lúc tuyết rơi, thế là bố mẹ đặt tên cho em là Hạ Tuyết."
+        ],
+        [
+          "大家都同意寒假去旅行，于是我们开始讨论去哪里。",
+          "Dàjiā dōu tóngyì hánjià qù lǚxíng, yúshì wǒmen kāishǐ tǎolùn qù nǎlǐ.",
+          "Mọi người đều đồng ý nghỉ đông đi du lịch, thế là chúng tôi bắt đầu bàn xem đi đâu."
+        ],
+        [
+          "塑料袋带来了环境问题，于是一些国家不让商店免费提供塑料袋。",
+          "Sùliàodài dài lái le huánjìng wèntí, yúshì yìxiē guójiā bú ràng shāngdiàn miǎnfèi tígōng sùliàodài.",
+          "Túi ni lông gây vấn đề môi trường, thế là một số nước không cho cửa hàng phát túi miễn phí."
+        ],
+        [
+          "他想了很久，于是决定接受这份工作。",
+          "Tā xiǎng le hěn jiǔ, yúshì juédìng jiēshòu zhè fèn gōngzuò.",
+          "Anh ấy suy nghĩ rất lâu, thế là quyết định nhận công việc này."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "大家都同意寒假去旅行，___我们开始讨论去哪里。",
+          "options": [
+            "于是",
+            "否则",
+            "无论",
+            "即使"
+          ],
+          "answer": "于是",
+          "explain": "Việc sau nối tiếp việc trước (đồng ý đi → bắt đầu bàn) → 于是."
+        },
+        {
+          "type": "choice",
+          "q": "他想了很久，___决定接受这份工作。",
+          "options": [
+            "于是",
+            "否则",
+            "无论",
+            "即使"
+          ],
+          "answer": "于是",
+          "explain": "Nối tiếp: nghĩ lâu rồi quyết định → 于是."
+        },
+        {
+          "type": "choice",
+          "q": "我妹妹出生那天正好下大雪，___爸妈给她取名叫夏雪。",
+          "options": [
+            "于是",
+            "否则",
+            "无论",
+            "即使"
+          ],
+          "answer": "于是",
+          "explain": "Một sự việc dẫn tới sự việc kế tiếp (tuyết rơi → đặt tên) → 于是."
+        },
+        {
+          "type": "choice",
+          "q": "这个问题越来越严重，___政府决定采取办法。",
+          "options": [
+            "于是",
+            "否则",
+            "无论",
+            "即使"
+          ],
+          "answer": "于是",
+          "explain": "Tình hình nghiêm trọng thêm, thế là chính phủ quyết định hành động → 于是."
+        },
+        {
+          "type": "choice",
+          "q": "塑料袋带来了环境问题，___一些国家不让商店免费提供塑料袋。",
+          "options": [
+            "于是",
+            "否则",
+            "无论",
+            "即使"
+          ],
+          "answer": "于是",
+          "explain": "Vấn đề xuất hiện, thế là có quy định mới → 于是."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "大家",
+            "都",
+            "同意",
+            "去旅行",
+            "于是",
+            "我们",
+            "开始",
+            "讨论"
+          ],
+          "answer": "大家都同意去旅行，于是我们开始讨论。",
+          "alt": [],
+          "vi": "Mọi người đều đồng ý đi du lịch, thế là chúng tôi bắt đầu bàn bạc."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "想了",
+            "很久",
+            "于是",
+            "决定",
+            "接受",
+            "这份工作"
+          ],
+          "answer": "他想了很久，于是决定接受这份工作。",
+          "alt": [],
+          "vi": "Anh ấy suy nghĩ rất lâu, thế là quyết định nhận công việc này."
+        }
+      ]
+    },
+    {
+      "id": "14.5",
+      "title": "什么的",
+      "pattern": "A、B 什么的",
+      "meaning": "Trợ từ đặt sau các ví dụ đã liệt kê, nghĩa là còn những thứ tương tự khác: vân vân, … gì đó. Chủ yếu dùng trong khẩu ngữ.",
+      "notes": [
+        "Đặt sau danh từ hoặc cụm đã liệt kê (một hoặc nhiều ví dụ): 中文、国际关系什么的.",
+        "Hàm ý còn những thứ cùng loại chưa nêu hết.",
+        "Chủ yếu dùng trong khẩu ngữ."
+      ],
+      "examples": [
+        [
+          "中文、国际关系什么的，我和你爸都不反对。",
+          "Zhōngwén, guójì guānxi shénme de, wǒ hé nǐ bà dōu bù fǎnduì.",
+          "Tiếng Trung, quan hệ quốc tế gì đó, bố mẹ đều không phản đối."
+        ],
+        [
+          "A：明天出去玩儿要买点儿吃的。 B：好，还有矿泉水、果汁什么的。",
+          "A: Míngtiān chūqù wánr yào mǎi diǎnr chī de. B: Hǎo, hái yǒu kuàngquánshuǐ, guǒzhī shénme de.",
+          "A: Mai đi chơi phải mua ít đồ ăn. B: Được, còn nước khoáng, nước ép gì đó nữa."
+        ],
+        [
+          "我周末喜欢看电影、逛街什么的。",
+          "Wǒ zhōumò xǐhuan kàn diànyǐng, guàngjiē shénme de.",
+          "Cuối tuần tôi thích xem phim, đi dạo phố gì đó."
+        ],
+        [
+          "桌子上有苹果、香蕉什么的，你随便吃。",
+          "Zhuōzi shang yǒu píngguǒ, xiāngjiāo shénme de, nǐ suíbiàn chī.",
+          "Trên bàn có táo, chuối gì đó, bạn cứ ăn tự nhiên."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "我周末喜欢看电影、逛街___的。",
+          "options": [
+            "什么",
+            "怎么",
+            "为什么",
+            "这么"
+          ],
+          "answer": "什么",
+          "explain": "什么的 đặt sau các ví dụ đã liệt kê, ngụ ý còn những thứ tương tự."
+        },
+        {
+          "type": "choice",
+          "q": "桌子上有苹果、香蕉什么___，你随便吃。",
+          "options": [
+            "的",
+            "了",
+            "吗",
+            "吧"
+          ],
+          "answer": "的",
+          "explain": "什么的 là trợ từ cố định ở cuối chuỗi liệt kê."
+        },
+        {
+          "type": "choice",
+          "q": "买点儿吃的吧，面包、饼干___的。",
+          "options": [
+            "什么",
+            "怎么",
+            "为什么",
+            "这么"
+          ],
+          "answer": "什么",
+          "explain": "面包、饼干什么的: liệt kê vài ví dụ và gợi ý còn thứ khác."
+        },
+        {
+          "type": "choice",
+          "q": "还有矿泉水、果汁___的。",
+          "options": [
+            "什么",
+            "怎么",
+            "为什么",
+            "这么"
+          ],
+          "answer": "什么",
+          "explain": "矿泉水、果汁什么的: sau các ví dụ dùng 什么的 để nói “gì đó nữa”."
+        },
+        {
+          "type": "choice",
+          "q": "桌子上有苹果、香蕉___，你随便吃。",
+          "options": [
+            "什么的",
+            "什么了",
+            "什么吗",
+            "什么吧"
+          ],
+          "answer": "什么的",
+          "explain": "什么的 làm trợ từ liệt kê; các phương án còn lại không phải cách nói này."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我",
+            "周末",
+            "喜欢",
+            "看电影",
+            "逛街",
+            "什么的"
+          ],
+          "answer": "我周末喜欢看电影、逛街什么的。",
+          "alt": [],
+          "vi": "Cuối tuần tôi thích xem phim, đi dạo phố gì đó."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "桌子上",
+            "有",
+            "苹果",
+            "香蕉",
+            "什么的",
+            "你",
+            "随便",
+            "吃"
+          ],
+          "answer": "桌子上有苹果、香蕉什么的，你随便吃。",
+          "alt": [],
+          "vi": "Trên bàn có táo, chuối gì đó, bạn cứ ăn tự nhiên."
+        }
+      ]
+    }
+  ],
+  "L15": [
+    {
+      "id": "15.1",
+      "title": "想起来",
+      "pattern": "想起来（了）   |   S + 想起来 + 小句",
+      "meaning": "起来 là bổ ngữ xu hướng chỉ chuyển động đi lên (站起来, 坐起来). Sau động từ 想, 起来 mở rộng nghĩa thành “nhớ ra, nhớ lại” một người hoặc việc trong quá khứ.",
+      "notes": [
+        "起来 sau động từ chỉ chuyển động đi lên: 坐起来, 站起来.",
+        "想起来: nhớ ra, chợt nhớ: 我突然想起来得去银行.",
+        "Thường dùng với 了 khi vừa nhớ ra: 我想起来了."
+      ],
+      "examples": [
+        [
+          "你这样躺着看书对眼睛不好，快坐起来！",
+          "Nǐ zhèyàng tǎng zhe kànshū duì yǎnjing bù hǎo, kuài zuò qǐlái!",
+          "Bạn nằm đọc sách thế này hại mắt, mau ngồi dậy đi!"
+        ],
+        [
+          "长时间坐着工作的人，一小时左右要站起来活动活动。",
+          "Cháng shíjiān zuò zhe gōngzuò de rén, yì xiǎoshí zuǒyòu yào zhàn qǐlái huódòng huódòng.",
+          "Người ngồi làm việc lâu, khoảng một tiếng phải đứng dậy vận động một chút."
+        ],
+        [
+          "我突然想起来得去银行，不能陪你去了。",
+          "Wǒ tūrán xiǎng qǐlái děi qù yínháng, bù néng péi nǐ qù le.",
+          "Tôi chợt nhớ ra phải đến ngân hàng, không đi cùng bạn được rồi."
+        ],
+        [
+          "我想起来了，这孩子又聪明又可爱！",
+          "Wǒ xiǎng qǐlái le, zhè háizi yòu cōngming yòu kě'ài!",
+          "Tôi nhớ ra rồi, đứa bé này vừa thông minh vừa đáng yêu!"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "你躺着看书对眼睛不好，快坐___！",
+          "options": [
+            "起来",
+            "出来",
+            "过去",
+            "回去"
+          ],
+          "answer": "起来",
+          "explain": "坐起来: từ nằm chuyển sang ngồi dậy — 起来 chỉ chuyển động đi lên."
+        },
+        {
+          "type": "choice",
+          "q": "一小时左右要站___活动活动。",
+          "options": [
+            "起来",
+            "出来",
+            "过去",
+            "回去"
+          ],
+          "answer": "起来",
+          "explain": "站起来: đứng dậy — chuyển động đi lên."
+        },
+        {
+          "type": "choice",
+          "q": "我突然想___得去银行。",
+          "options": [
+            "起来",
+            "出来",
+            "过去",
+            "回去"
+          ],
+          "answer": "起来",
+          "explain": "想起来: chợt nhớ ra. 想出来có nghĩa khác (nghĩ ra cách)."
+        },
+        {
+          "type": "choice",
+          "q": "我想___了，这孩子又聪明又可爱！",
+          "options": [
+            "起来",
+            "出来",
+            "过去",
+            "回去"
+          ],
+          "answer": "起来",
+          "explain": "想起来了: nhớ ra rồi (nhớ lại điều thuộc quá khứ)."
+        },
+        {
+          "type": "choice",
+          "q": "他忽然想___自己还没给妈妈打电话。",
+          "options": [
+            "起来",
+            "出来",
+            "过去",
+            "回去"
+          ],
+          "answer": "起来",
+          "explain": "想起来 + cụm: chợt nhớ ra điều gì đó."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我",
+            "突然",
+            "想起来",
+            "得",
+            "去",
+            "银行"
+          ],
+          "answer": "我突然想起来得去银行。",
+          "alt": [],
+          "vi": "Tôi chợt nhớ ra phải đến ngân hàng."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "快",
+            "坐",
+            "起来",
+            "别",
+            "躺着",
+            "看书"
+          ],
+          "answer": "快坐起来，别躺着看书。",
+          "alt": [],
+          "vi": "Mau ngồi dậy, đừng nằm đọc sách."
+        }
+      ]
+    },
+    {
+      "id": "15.2",
+      "title": "弄",
+      "pattern": "弄 + 好 / 坏 / 清楚 / 丢 …   |   弄得 + ……",
+      "meaning": "Động từ: làm, xử lý — có thể thay cho nhiều động từ cụ thể khác (准备, 碰, 批评……). Dùng nhiều trong khẩu ngữ.",
+      "notes": [
+        "弄 là động từ đa năng, thay cho động từ cụ thể tùy ngữ cảnh: 弄好 (= 准备好), 弄坏 (= 碰坏), 弄得…… (= 批评得……).",
+        "Hay đi với bổ ngữ kết quả: 弄好, 弄坏, 弄清楚, 弄丢.",
+        "Cấu trúc 弄得 + kết quả: 弄得我们心情都不好."
+      ],
+      "examples": [
+        [
+          "材料都弄好了，马上给您送过去。",
+          "Cáiliào dōu nòng hǎo le, mǎshàng gěi nín sòng guòqù.",
+          "Tài liệu đều chuẩn bị xong rồi, tôi đưa sang ngay."
+        ],
+        [
+          "搬沙发的时候小心点儿，别弄坏了。",
+          "Bān shāfā de shíhou xiǎoxīn diǎnr, bié nòng huài le.",
+          "Khiêng sofa cẩn thận chút, đừng làm hỏng."
+        ],
+        [
+          "每天为小事批评她，弄得我们心情都不好。",
+          "Měitiān wèi xiǎoshì pīpíng tā, nòng de wǒmen xīnqíng dōu bù hǎo.",
+          "Ngày nào cũng vì chuyện nhỏ mà phê bình cô ấy, làm cả hai chúng tôi tâm trạng đều không tốt."
+        ],
+        [
+          "这个问题我还没弄清楚。",
+          "Zhège wèntí wǒ hái méi nòng qīngchu.",
+          "Vấn đề này tôi vẫn chưa làm rõ."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "材料都___好了，马上给您送过去。",
+          "options": [
+            "弄",
+            "倒",
+            "左右",
+            "千万"
+          ],
+          "answer": "弄",
+          "explain": "弄好: làm xong, chuẩn bị xong — 弄 thay cho động từ cụ thể."
+        },
+        {
+          "type": "choice",
+          "q": "搬沙发的时候小心点儿，别___坏了。",
+          "options": [
+            "弄",
+            "倒",
+            "左右",
+            "千万"
+          ],
+          "answer": "弄",
+          "explain": "别弄坏了: đừng làm hỏng — 弄 + bổ ngữ kết quả 坏."
+        },
+        {
+          "type": "choice",
+          "q": "这个问题我还没___清楚。",
+          "options": [
+            "弄",
+            "倒",
+            "左右",
+            "千万"
+          ],
+          "answer": "弄",
+          "explain": "弄清楚: làm cho rõ ràng."
+        },
+        {
+          "type": "choice",
+          "q": "每天为小事批评她，___得我们心情都不好。",
+          "options": [
+            "弄",
+            "倒",
+            "干",
+            "趟"
+          ],
+          "answer": "弄",
+          "explain": "弄得 + kết quả: gây ra tình trạng nào đó cho người khác."
+        },
+        {
+          "type": "choice",
+          "q": "手机被我___丢了。",
+          "options": [
+            "弄",
+            "倒",
+            "左右",
+            "千万"
+          ],
+          "answer": "弄",
+          "explain": "弄丢: làm mất — 弄 + bổ ngữ kết quả 丢."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "材料",
+            "都",
+            "弄",
+            "好",
+            "了"
+          ],
+          "answer": "材料都弄好了。",
+          "alt": [],
+          "vi": "Tài liệu đều chuẩn bị xong rồi."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "搬",
+            "沙发",
+            "时",
+            "别",
+            "弄",
+            "坏",
+            "了"
+          ],
+          "answer": "搬沙发时别弄坏了。",
+          "alt": [],
+          "vi": "Khi khiêng sofa đừng làm hỏng nhé."
+        }
+      ]
+    },
+    {
+      "id": "15.3",
+      "title": "千万",
+      "pattern": "千万 + 不要 / 别 / 不能 + V",
+      "meaning": "Phó từ: nhất thiết, nhất định phải — thường theo sau là hình thức phủ định (千万不要, 千万别), dùng để dặn dò, khuyên nhủ.",
+      "notes": [
+        "Thường dùng ở dạng phủ định: 千万不要, 千万别, 千万不能.",
+        "Giọng nhẹ nhàng, chân thành, mong người nghe làm theo (dặn dò tha thiết).",
+        "Khác 一定: 一定 dùng nhiều ở câu khẳng định, giọng mạnh, mang tính mệnh lệnh hơn; 一定 còn nói lên quyết tâm của mình (我一定会继续努力), nghĩa “chắc chắn”, làm tính từ “nhất định” và đáp ngắn một mình. 千万 không có các cách dùng này."
+      ],
+      "examples": [
+        [
+          "表扬千万不要太多，过多的表扬会给孩子压力。",
+          "Biǎoyáng qiānwàn bú yào tài duō, guòduō de biǎoyáng huì gěi háizi yālì.",
+          "Khen tuyệt đối đừng quá nhiều, khen quá mức sẽ tạo áp lực cho trẻ."
+        ],
+        [
+          "这是她的生日礼物，你现在千万别告诉她。",
+          "Zhè shì tā de shēngrì lǐwù, nǐ xiànzài qiānwàn bié gàosu tā.",
+          "Đây là quà sinh nhật của cô ấy, bây giờ bạn nhất thiết đừng nói cho cô ấy."
+        ],
+        [
+          "开车千万别喝酒，喝酒千万别开车。",
+          "Kāichē qiānwàn bié hē jiǔ, hē jiǔ qiānwàn bié kāichē.",
+          "Lái xe tuyệt đối đừng uống rượu, uống rượu tuyệt đối đừng lái xe."
+        ],
+        [
+          "机会来的时候，千万不要放手。",
+          "Jīhuì lái de shíhou, qiānwàn bú yào fàngshǒu.",
+          "Khi cơ hội đến, nhất thiết đừng buông tay."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "开车___别喝酒。",
+          "options": [
+            "千万",
+            "刚才",
+            "倍",
+            "并"
+          ],
+          "answer": "千万",
+          "explain": "千万别 + động từ: dặn dò tha thiết “tuyệt đối đừng”."
+        },
+        {
+          "type": "choice",
+          "q": "这是她的生日礼物，你现在___别告诉她。",
+          "options": [
+            "千万",
+            "刚才",
+            "倍",
+            "并"
+          ],
+          "answer": "千万",
+          "explain": "千万别告诉她: lời dặn dò nhẹ nhàng, chân thành."
+        },
+        {
+          "type": "choice",
+          "q": "表扬___不要太多。",
+          "options": [
+            "千万",
+            "刚才",
+            "倍",
+            "并"
+          ],
+          "answer": "千万",
+          "explain": "千万不要: dặn dò dạng phủ định."
+        },
+        {
+          "type": "choice",
+          "q": "感谢大家，我___会继续努力。",
+          "options": [
+            "一定",
+            "千万",
+            "刚才",
+            "倍"
+          ],
+          "answer": "一定",
+          "explain": "Nói lên quyết tâm của chính mình (我一定会……) → 一定. 千万 không dùng cho quyết tâm của bản thân."
+        },
+        {
+          "type": "choice",
+          "q": "机会来的时候，___不要放手。",
+          "options": [
+            "千万",
+            "刚才",
+            "倍",
+            "并"
+          ],
+          "answer": "千万",
+          "explain": "千万不要放手: lời nhắn nhủ tha thiết."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "开车",
+            "千万",
+            "别",
+            "喝酒"
+          ],
+          "answer": "开车千万别喝酒。",
+          "alt": [],
+          "vi": "Lái xe tuyệt đối đừng uống rượu."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这是",
+            "她的",
+            "生日礼物",
+            "你",
+            "千万",
+            "别",
+            "告诉她"
+          ],
+          "answer": "这是她的生日礼物，你千万别告诉她。",
+          "alt": [],
+          "vi": "Đây là quà sinh nhật của cô ấy, bạn nhất thiết đừng nói cho cô ấy."
+        }
+      ]
+    },
+    {
+      "id": "15.4",
+      "title": "来",
+      "pattern": "来 + V（我来帮你 · 让他来负责）",
+      "meaning": "Động từ đặt trước một động từ khác, nghĩa “sẽ làm việc gì” (tự nguyện nhận làm hoặc được giao làm). Chủ yếu dùng trong khẩu ngữ; bỏ 来 đi thì nghĩa câu không đổi.",
+      "notes": [
+        "来 + động từ: tự nguyện nhận làm (我来帮你们) hoặc giao ai đó làm (让他来负责).",
+        "Bỏ 来 thì nghĩa câu không đổi: 我来帮你 = 我帮你.",
+        "Còn gặp trong dạng 通过……来……: 通过哭来引起父母的注意 (来 nối cách thức với mục đích)."
+      ],
+      "examples": [
+        [
+          "这个沙发太大了，你们抬不动，我来帮你们。",
+          "Zhège shāfā tài dà le, nǐmen tái bu dòng, wǒ lái bāng nǐmen.",
+          "Cái sofa này to quá, các bạn khiêng không nổi, để tôi giúp."
+        ],
+        [
+          "这次就让他来负责吧。",
+          "Zhè cì jiù ràng tā lái fùzé ba.",
+          "Lần này cứ để anh ấy phụ trách đi."
+        ],
+        [
+          "今天的饭我来做，你休息吧。",
+          "Jīntiān de fàn wǒ lái zuò, nǐ xiūxi ba.",
+          "Cơm hôm nay để tôi nấu, bạn nghỉ đi."
+        ],
+        [
+          "有的孩子通过哭来引起父母的注意。",
+          "Yǒu de háizi tōngguò kū lái yǐnqǐ fùmǔ de zhùyì.",
+          "Có đứa trẻ khóc để thu hút sự chú ý của bố mẹ."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "这个沙发太大了，你们抬不动，我___帮你们。",
+          "options": [
+            "来",
+            "往",
+            "对",
+            "把"
+          ],
+          "answer": "来",
+          "explain": "来 + động từ: tự nguyện nhận làm (我来帮你们)."
+        },
+        {
+          "type": "choice",
+          "q": "这次就让他___负责吧。",
+          "options": [
+            "来",
+            "往",
+            "对",
+            "把"
+          ],
+          "answer": "来",
+          "explain": "让他来负责: giao cho anh ấy làm; 来 đặt trước động từ."
+        },
+        {
+          "type": "choice",
+          "q": "今天的饭我___做，你休息吧。",
+          "options": [
+            "来",
+            "往",
+            "对",
+            "把"
+          ],
+          "answer": "来",
+          "explain": "我来做: tôi nhận làm."
+        },
+        {
+          "type": "choice",
+          "q": "有的孩子通过哭___引起父母的注意。",
+          "options": [
+            "来",
+            "往",
+            "对",
+            "把"
+          ],
+          "answer": "来",
+          "explain": "通过……来……: nối cách thức (哭) với mục đích (引起注意)."
+        },
+        {
+          "type": "choice",
+          "q": "你们坐着吧，茶我___倒。",
+          "options": [
+            "来",
+            "往",
+            "对",
+            "把"
+          ],
+          "answer": "来",
+          "explain": "我来倒: tôi sẽ rót — nhận việc làm."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "今天的",
+            "饭",
+            "我",
+            "来",
+            "做"
+          ],
+          "answer": "今天的饭我来做。",
+          "alt": [],
+          "vi": "Cơm hôm nay để tôi nấu."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这次",
+            "就",
+            "让",
+            "他",
+            "来",
+            "负责",
+            "吧"
+          ],
+          "answer": "这次就让他来负责吧。",
+          "alt": [],
+          "vi": "Lần này cứ để anh ấy phụ trách đi."
+        }
+      ]
+    },
+    {
+      "id": "15.5",
+      "title": "左右",
+      "pattern": "số lượng + 左右",
+      "meaning": "Danh từ chỉ dùng sau số từ hoặc cụm số lượng, nghĩa “khoảng, trên dưới” — hơn hoặc kém con số nêu ra một chút.",
+      "notes": [
+        "左右 đứng sau số lượng: 三天左右, 五百米左右, 七岁左右.",
+        "Nghĩa ước chừng: hơi nhiều hơn hoặc hơi ít hơn con số đó.",
+        "Nằm sau số lượng, không đứng trước (khác 大概 đứng trước số lượng): 三天左右."
+      ],
+      "examples": [
+        [
+          "网上买的书三天左右能到。",
+          "Wǎngshàng mǎi de shū sān tiān zuǒyòu néng dào.",
+          "Sách mua trên mạng khoảng ba ngày là đến."
+        ],
+        [
+          "前方五百米左右有个免费停车场。",
+          "Qiánfāng wǔbǎi mǐ zuǒyòu yǒu ge miǎnfèi tíngchēchǎng.",
+          "Phía trước khoảng năm trăm mét có bãi đỗ xe miễn phí."
+        ],
+        [
+          "七岁左右的孩子都很好动。",
+          "Qī suì zuǒyòu de háizi dōu hěn hàodòng.",
+          "Trẻ khoảng bảy tuổi đều rất hiếu động."
+        ],
+        [
+          "他每天六点左右起床。",
+          "Tā měitiān liù diǎn zuǒyòu qǐchuáng.",
+          "Mỗi ngày anh ấy dậy khoảng sáu giờ."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "网上买的书三天___能到。",
+          "options": [
+            "左右",
+            "其中",
+            "竟然",
+            "倍"
+          ],
+          "answer": "左右",
+          "explain": "三天左右: 左右 đặt sau số lượng, nghĩa “khoảng”."
+        },
+        {
+          "type": "choice",
+          "q": "前方五百米___有个免费停车场。",
+          "options": [
+            "左右",
+            "其中",
+            "竟然",
+            "倍"
+          ],
+          "answer": "左右",
+          "explain": "五百米左右: khoảng năm trăm mét."
+        },
+        {
+          "type": "choice",
+          "q": "七岁___的孩子都很好动。",
+          "options": [
+            "左右",
+            "其中",
+            "竟然",
+            "倍"
+          ],
+          "answer": "左右",
+          "explain": "七岁左右: trẻ khoảng bảy tuổi."
+        },
+        {
+          "type": "choice",
+          "q": "他每天六点___起床。",
+          "options": [
+            "左右",
+            "其中",
+            "竟然",
+            "倍"
+          ],
+          "answer": "左右",
+          "explain": "六点左右: khoảng sáu giờ."
+        },
+        {
+          "type": "choice",
+          "q": "这个房间有二十平方米___。",
+          "options": [
+            "左右",
+            "其中",
+            "竟然",
+            "倍"
+          ],
+          "answer": "左右",
+          "explain": "二十平方米左右: khoảng hai mươi mét vuông."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "网上",
+            "买的",
+            "书",
+            "三天",
+            "左右",
+            "能到"
+          ],
+          "answer": "网上买的书三天左右能到。",
+          "alt": [],
+          "vi": "Sách mua trên mạng khoảng ba ngày là đến."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "每天",
+            "六点",
+            "左右",
+            "起床"
+          ],
+          "answer": "他每天六点左右起床。",
+          "alt": [],
+          "vi": "Mỗi ngày anh ấy dậy khoảng sáu giờ."
+        }
+      ]
+    }
   ]
 }
