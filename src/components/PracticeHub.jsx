@@ -36,7 +36,7 @@ export default function PracticeHub() {
             </>
           );
           return n ? (
-            <Link key={type} to={'/practice/' + type} className="exercise-card">
+            <Link key={type} to={'/vocab/practice/' + type} className="exercise-card">
               {body}
             </Link>
           ) : (

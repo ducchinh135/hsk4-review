@@ -39,7 +39,7 @@ export default function ExercisePage({ type }) {
   const score = answerList.filter((r) => r.ok).length;
 
   const back = (
-    <Link to="/practice" className="btn secondary">
+    <Link to="/vocab/practice" className="btn secondary">
       ← Chọn dạng khác
     </Link>
   );
@@ -210,7 +210,7 @@ export default function ExercisePage({ type }) {
   return (
     <div className="panel">
       <div className="exercise-top">
-        <Link to="/practice" className="link-btn">
+        <Link to="/vocab/practice" className="link-btn">
           ← Chọn dạng khác
         </Link>
         <span className="exercise-summary">
