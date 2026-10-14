@@ -171,8 +171,36 @@ test('grammar.json is valid', () => {
   assert.deepEqual(validateGrammar(GRAMMAR, Object.keys(VOCAB)), []);
 });
 
-test('grammar.json has lessons 1 and 2 written', () => {
-  for (const l of ['L1', 'L2']) assert.equal(GRAMMAR[l]?.length, 5, l);
+// The 5 notes of each lesson as printed in the textbook's contents page (each title must contain its key).
+const TEXTBOOK_KEYS = {
+  L1: ['不仅', '从来', '刚', '即使', '上'],
+  L2: ['正好', '差不多', '尽管', '却', '而'],
+  L3: ['挺', '本来', '另外', '首先', '不管'],
+  L4: ['以为', '原来', '并', '按照', '甚至'],
+  L5: ['肯定', '再说', '实际', '对', '尤其'],
+  L6: ['竟然', '倍', '值得', '其中', '下'],
+  L7: ['估计', '来不及', '离合词', '要是', '既'],
+  L8: ['使', '只要', '可不是', '因此', '往往'],
+  L9: ['难道', '通过', '可是', '结果', '上'],
+  L10: ['不过', '确实', '看来', '由于', '比如'],
+  L11: ['连', '否则', '无论', '然而', '同时'],
+  L12: ['并且', '再', '对于', '量词', '相反'],
+  L13: ['大概', '偶尔', '由', '进行', '随着'],
+  L14: ['够', '以', '既然', '于是', '什么的'],
+  L15: ['想起来', '弄', '千万', '来', '左右'],
+  L16: ['可', '恐怕', '到底', '拿', '敢'],
+  L17: ['倒', '干', '趟', '为了', '仍然'],
+  L18: ['是否', '受不了', '接着', '除此以外', '叫作'],
+  L19: ['疑问代词', '上', '出来', '总的来说', '在于'],
+  L20: ['着', '就', '究竟', '起来', '起'],
+};
+const WRITTEN = ['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7', 'L8', 'L9', 'L10'];
+
+test('written lessons have the 5 points the textbook lists, in order', () => {
+  for (const l of WRITTEN) {
+    assert.equal(GRAMMAR[l]?.length, 5, l + ' should have 5 points');
+    GRAMMAR[l].forEach((p, i) => assert.ok(p.title.includes(TEXTBOOK_KEYS[l][i]), `${p.id} "${p.title}" should contain "${TEXTBOOK_KEYS[l][i]}"`));
+  }
 });
 
 const byAnswer = (a) => ALL_QUESTIONS.find((q) => q.answer === a);
