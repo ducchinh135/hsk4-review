@@ -9249,5 +9249,1862 @@
         }
       ]
     }
+  ],
+  "L16": [
+    {
+      "id": "16.1",
+      "title": "可",
+      "pattern": "可 + V / Adj（nhấn mạnh）   |   这可怎么办？",
+      "meaning": "Phó từ dùng để nhấn mạnh giọng điệu; cũng có thể đặt trong câu hỏi (kể cả câu hỏi tu từ) để làm mạnh giọng. Đứng trước động từ hoặc tính từ làm vị ngữ.",
+      "notes": [
+        "可 nhấn mạnh sự thật hoặc mức độ: 这可是个大问题 (đây quả là vấn đề lớn), 理发可节约了不少钱.",
+        "Dùng trong câu hỏi để làm mạnh giọng, thường mang vẻ lo lắng: 这可怎么办？ (thế này thì biết làm sao).",
+        "Đứng trước động từ hoặc tính từ của vị ngữ, thường sau chủ ngữ hoặc 这."
+      ],
+      "examples": [
+        [
+          "这可是个大问题，我也不太清楚。",
+          "Zhè kěshì ge dà wèntí, wǒ yě bú tài qīngchu.",
+          "Đây quả là một vấn đề lớn, tôi cũng không rõ lắm."
+        ],
+        [
+          "下个星期就要办签证了，这可怎么办？",
+          "Xià ge xīngqī jiù yào bàn qiānzhèng le, zhè kě zěnme bàn?",
+          "Tuần sau là phải làm visa rồi, thế này thì biết làm sao?"
+        ],
+        [
+          "我办了一张会员卡，理发可节约了不少钱。",
+          "Wǒ bàn le yì zhāng huìyuánkǎ, lǐfà kě jiéyuē le bù shǎo qián.",
+          "Tôi làm một thẻ hội viên, cắt tóc tiết kiệm được khối tiền."
+        ],
+        [
+          "这个电影可好看了，你一定要去看。",
+          "Zhège diànyǐng kě hǎokàn le, nǐ yídìng yào qù kàn.",
+          "Bộ phim này hay lắm, bạn nhất định phải đi xem."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "下个星期就要办签证了，这___怎么办？",
+          "options": [
+            "可",
+            "够",
+            "弄",
+            "以"
+          ],
+          "answer": "可",
+          "explain": "这可怎么办？: 可 làm mạnh giọng câu hỏi lo lắng. 够/弄/以 không dùng được ở vị trí này."
+        },
+        {
+          "type": "choice",
+          "q": "这___是个大问题，我也不太清楚。",
+          "options": [
+            "可",
+            "够",
+            "弄",
+            "以"
+          ],
+          "answer": "可",
+          "explain": "这可是……: 可 nhấn mạnh “đây quả là…”."
+        },
+        {
+          "type": "choice",
+          "q": "这个电影___好看了，你一定要去看。",
+          "options": [
+            "可",
+            "并",
+            "弄",
+            "以"
+          ],
+          "answer": "可",
+          "explain": "可……了: nhấn mạnh mức độ (hay lắm). 并 phải đi với từ phủ định."
+        },
+        {
+          "type": "choice",
+          "q": "我办了会员卡，理发___节约了不少钱。",
+          "options": [
+            "可",
+            "并",
+            "弄",
+            "以"
+          ],
+          "answer": "可",
+          "explain": "可 đứng trước động từ để nhấn mạnh kết quả (tiết kiệm được nhiều)."
+        },
+        {
+          "type": "choice",
+          "q": "你___别忘了，明天要考试！",
+          "options": [
+            "可",
+            "并",
+            "弄",
+            "以"
+          ],
+          "answer": "可",
+          "explain": "可别 + động từ: nhấn mạnh lời dặn dò. 并 không đi với 别."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这",
+            "可",
+            "是",
+            "个",
+            "大问题"
+          ],
+          "answer": "这可是个大问题。",
+          "alt": [],
+          "vi": "Đây quả là một vấn đề lớn."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这",
+            "可",
+            "怎么办"
+          ],
+          "answer": "这可怎么办？",
+          "alt": [],
+          "vi": "Thế này thì biết làm sao đây?"
+        }
+      ]
+    },
+    {
+      "id": "16.2",
+      "title": "恐怕",
+      "pattern": "恐怕 + V（担心）   |   恐怕 + 不够 / 会……（估计 + lo lắng）   |   恐怕 + 已经……（phỏng đoán）",
+      "meaning": "Ba cách dùng: (1) động từ: sợ, e rằng (lo làm không được hoặc không tốt); (2) phó từ: ước đoán kèm lo lắng, hàm ý kết quả không tốt; (3) phó từ: phỏng đoán “có lẽ” (như 大概, 也许).",
+      "notes": [
+        "Ước đoán kèm lo ngại: 这个会议室的座位恐怕不够 (chỗ ngồi e là không đủ).",
+        "Phỏng đoán thuần túy: 现在恐怕已经结束了 (bây giờ có lẽ đã kết thúc rồi) — có thể thay bằng 也许 / 大概.",
+        "Động từ “e rằng, sợ”: 那份工作我恐怕完成不了.",
+        "Khác 怕: 恐怕 làm động từ chỉ đứng trước động từ (không đứng trước danh từ) và có thể đứng trước hoặc sau chủ ngữ; 怕 làm động từ có thể mang tân ngữ (不怕困难), còn 恐怕 không có cách dùng này, cũng không có nghĩa “phỏng đoán” của 恐怕."
+      ],
+      "examples": [
+        [
+          "我的工作经验比较少，那份工作我恐怕完成不了。",
+          "Wǒ de gōngzuò jīngyàn bǐjiào shǎo, nà fèn gōngzuò wǒ kǒngpà wánchéng bu liǎo.",
+          "Kinh nghiệm làm việc của tôi còn ít, công việc đó e là tôi không hoàn thành nổi."
+        ],
+        [
+          "这个会议室的座位恐怕不够，还是换到旁边大的吧。",
+          "Zhège huìyìshì de zuòwèi kǒngpà bú gòu, háishi huàn dào pángbiān dà de ba.",
+          "Chỗ ngồi của phòng họp này e là không đủ, hay là đổi sang phòng lớn bên cạnh đi."
+        ],
+        [
+          "京剧七点就开始了，现在恐怕已经结束了。",
+          "Jīngjù qī diǎn jiù kāishǐ le, xiànzài kǒngpà yǐjīng jiéshù le.",
+          "Kinh kịch bảy giờ đã bắt đầu, bây giờ có lẽ đã kết thúc rồi."
+        ],
+        [
+          "明天可能会下大雨，足球比赛恐怕不能举行了。",
+          "Míngtiān kěnéng huì xià dàyǔ, zúqiú bǐsài kǒngpà bù néng jǔxíng le.",
+          "Ngày mai có thể mưa lớn, trận bóng đá e là không tổ chức được."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "这个会议室的座位___不够，还是换到旁边大的吧。",
+          "options": [
+            "恐怕",
+            "偶尔",
+            "随着",
+            "由"
+          ],
+          "answer": "恐怕",
+          "explain": "Ước đoán kèm lo lắng (chỗ ngồi không đủ) → 恐怕."
+        },
+        {
+          "type": "choice",
+          "q": "京剧七点就开始了，现在___已经结束了。",
+          "options": [
+            "恐怕",
+            "偶尔",
+            "随着",
+            "由"
+          ],
+          "answer": "恐怕",
+          "explain": "Phỏng đoán “có lẽ đã kết thúc rồi” → 恐怕 (có thể thay bằng 也许/大概)."
+        },
+        {
+          "type": "choice",
+          "q": "他的表情那么难过，___有什么不开心的事吧。",
+          "options": [
+            "恐怕",
+            "偶尔",
+            "随着",
+            "由"
+          ],
+          "answer": "恐怕",
+          "explain": "Dựa vào biểu hiện để phỏng đoán “có lẽ có chuyện không vui” → 恐怕."
+        },
+        {
+          "type": "choice",
+          "q": "我的经验比较少，那份工作我___完成不了。",
+          "options": [
+            "恐怕",
+            "偶尔",
+            "随着",
+            "由"
+          ],
+          "answer": "恐怕",
+          "explain": "“E rằng tôi không hoàn thành nổi” → 恐怕 (lo lắng không làm được)."
+        },
+        {
+          "type": "choice",
+          "q": "找工作关键看能力，有能力的人不___找不到好工作。",
+          "options": [
+            "怕",
+            "恐怕",
+            "偶尔",
+            "由"
+          ],
+          "answer": "怕",
+          "explain": "不怕 + cụm “找不到好工作”: 怕 có thể mang tân ngữ/cụm; 恐怕 không có cách dùng này."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这个",
+            "会议室",
+            "的",
+            "座位",
+            "恐怕",
+            "不够"
+          ],
+          "answer": "这个会议室的座位恐怕不够。",
+          "alt": [],
+          "vi": "Chỗ ngồi của phòng họp này e là không đủ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "京剧七点就开始了",
+            "现在",
+            "恐怕",
+            "已经",
+            "结束了"
+          ],
+          "answer": "京剧七点就开始了，现在恐怕已经结束了。",
+          "alt": [
+            "京剧七点就开始了，恐怕现在已经结束了。"
+          ],
+          "vi": "Kinh kịch bảy giờ đã bắt đầu, bây giờ có lẽ đã kết thúc rồi."
+        }
+      ]
+    },
+    {
+      "id": "16.3",
+      "title": "到底",
+      "pattern": "到底 + câu hỏi   |   V + 到底",
+      "meaning": "(1) Động từ: đến cùng, đến tận cuối. (2) Phó từ dùng trong câu hỏi hoặc câu có đại từ nghi vấn: “rốt cuộc, cuối cùng thì” — nhấn mạnh muốn hỏi cho ra lẽ. Không dùng trong câu hỏi có 吗.",
+      "notes": [
+        "到底 dùng trong câu hỏi (kể cả câu có đại từ nghi vấn) để hỏi cho ra lẽ: 你到底怎么打算的?",
+        "Không dùng 到底 trong câu hỏi có 吗.",
+        "Nếu chủ ngữ chính là đại từ nghi vấn thì 到底 đứng trước chủ ngữ (到底谁去?); trường hợp khác thì đứng sau chủ ngữ, trước động từ.",
+        "Động từ: 到底 = đến cùng, làm đến tận cuối: 逛街逛到底."
+      ],
+      "examples": [
+        [
+          "你不是买好火车票了吗？你到底怎么打算的呀？",
+          "Nǐ bú shì mǎi hǎo huǒchē piào le ma? Nǐ dàodǐ zěnme dǎsuàn de ya?",
+          "Chẳng phải bạn đã mua vé tàu rồi sao? Rốt cuộc bạn tính thế nào vậy?"
+        ],
+        [
+          "我给他打了好几次电话，没人接，也不知道他到底是怎么回事。",
+          "Wǒ gěi tā dǎ le hǎo jǐ cì diànhuà, méi rén jiē, yě bù zhīdào tā dàodǐ shì zěnme huí shì.",
+          "Tôi gọi cho anh ấy mấy lần mà không ai nghe, cũng không biết rốt cuộc là có chuyện gì."
+        ],
+        [
+          "到底谁去参加比赛，大家还没决定。",
+          "Dàodǐ shéi qù cānjiā bǐsài, dàjiā hái méi juédìng.",
+          "Rốt cuộc ai đi dự thi, mọi người vẫn chưa quyết định."
+        ],
+        [
+          "今天我一定陪你逛街逛到底。",
+          "Jīntiān wǒ yídìng péi nǐ guàngjiē guàng dàodǐ.",
+          "Hôm nay nhất định tôi đi dạo phố với bạn đến cùng."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "你___怎么打算的呀？",
+          "options": [
+            "到底",
+            "大概",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "到底",
+          "explain": "Câu hỏi có đại từ nghi vấn 怎么, muốn hỏi cho ra lẽ → 到底, đứng sau chủ ngữ 你."
+        },
+        {
+          "type": "choice",
+          "q": "___谁去参加比赛，大家还没决定。",
+          "options": [
+            "到底",
+            "大概",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "到底",
+          "explain": "Chủ ngữ là đại từ nghi vấn 谁 nên 到底 đứng trước chủ ngữ."
+        },
+        {
+          "type": "choice",
+          "q": "每个人都希望健康，那么___什么是健康呢？",
+          "options": [
+            "到底",
+            "大概",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "到底",
+          "explain": "Chủ ngữ là đại từ nghi vấn 什么 → 到底 đứng trước."
+        },
+        {
+          "type": "choice",
+          "q": "我给他打了好几次电话，也不知道他___是怎么回事。",
+          "options": [
+            "到底",
+            "大概",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "到底",
+          "explain": "“Rốt cuộc là chuyện gì” → 到底 đứng sau chủ ngữ 他, trước 是."
+        },
+        {
+          "type": "choice",
+          "q": "今天我一定陪你逛街逛___，保证让你买到合适的衣服。",
+          "options": [
+            "到底",
+            "大概",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "到底",
+          "explain": "逛到底: 到底 làm động từ/bổ ngữ nghĩa “đến cùng”."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "你",
+            "到底",
+            "怎么",
+            "打算",
+            "的",
+            "呀"
+          ],
+          "answer": "你到底怎么打算的呀？",
+          "alt": [],
+          "vi": "Rốt cuộc bạn tính thế nào vậy?"
+        },
+        {
+          "type": "order",
+          "parts": [
+            "到底",
+            "谁",
+            "去",
+            "参加",
+            "比赛"
+          ],
+          "answer": "到底谁去参加比赛？",
+          "alt": [],
+          "vi": "Rốt cuộc ai đi dự thi?"
+        }
+      ]
+    },
+    {
+      "id": "16.4",
+      "title": "拿……来说",
+      "pattern": "拿 + N / cụm + 来说，……",
+      "meaning": "拿 là giới từ dẫn ra sự việc hoặc tình huống cụ thể để minh họa: lấy… mà nói, chẳng hạn như…. Dùng để đưa ví dụ cụ thể cho một nhận định chung.",
+      "notes": [
+        "拿 + danh từ / cụm + 来说: nêu một ví dụ cụ thể: 拿他来说，……",
+        "Thường đứng sau một nhận định chung rồi nêu ví dụ; có thể thêm 就: 就拿学汉语来说吧.",
+        "Phần sau 来说 là nhận xét về ví dụ đó."
+      ],
+      "examples": [
+        [
+          "这次招聘很多人符合要求，拿他来说，他不仅专业符合，而且还有工作经验。",
+          "Zhè cì zhāopìn hěn duō rén fúhé yāoqiú, ná tā lái shuō, tā bùjǐn zhuānyè fúhé, érqiě hái yǒu gōngzuò jīngyàn.",
+          "Đợt tuyển dụng này nhiều người đạt yêu cầu, lấy anh ấy mà nói, anh ấy không chỉ đúng chuyên môn mà còn có kinh nghiệm."
+        ],
+        [
+          "很多汉字和水有关系，拿“河、流、洗”这几个字来说，它们都跟水有关。",
+          "Hěn duō Hànzì hé shuǐ yǒu guānxi, ná “hé, liú, xǐ” zhè jǐ ge zì lái shuō, tāmen dōu gēn shuǐ yǒu guān.",
+          "Nhiều chữ Hán liên quan đến nước, lấy các chữ “河, 流, 洗” mà nói, chúng đều liên quan đến nước."
+        ],
+        [
+          "就拿学汉语来说吧，首先要注意课前预习。",
+          "Jiù ná xué Hànyǔ lái shuō ba, shǒuxiān yào zhùyì kèqián yùxí.",
+          "Cứ lấy việc học tiếng Trung mà nói, trước hết phải chú ý chuẩn bị bài trước giờ học."
+        ],
+        [
+          "北京很大，拿交通来说，地铁就有很多条线路。",
+          "Běijīng hěn dà, ná jiāotōng lái shuō, dìtiě jiù yǒu hěn duō tiáo xiànlù.",
+          "Bắc Kinh rất lớn, lấy giao thông mà nói, tàu điện ngầm đã có rất nhiều tuyến."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "这次招聘很多人符合要求，___他来说，他不仅专业符合，而且还有工作经验。",
+          "options": [
+            "拿",
+            "对",
+            "被",
+            "把"
+          ],
+          "answer": "拿",
+          "explain": "Nêu một ví dụ cụ thể trong tổng thể “nhiều người đạt yêu cầu” → 拿他来说. 对他来说 sẽ chỉ góc nhìn của riêng anh ấy."
+        },
+        {
+          "type": "choice",
+          "q": "北京很大，拿交通___，地铁就有很多条线路。",
+          "options": [
+            "来说",
+            "来看",
+            "来想",
+            "来听"
+          ],
+          "answer": "来说",
+          "explain": "拿……来说 là cấu trúc cố định."
+        },
+        {
+          "type": "choice",
+          "q": "很多汉字和水有关系，___“河、流、洗”这几个字来说，它们都跟水有关。",
+          "options": [
+            "拿",
+            "对",
+            "被",
+            "把"
+          ],
+          "answer": "拿",
+          "explain": "拿 + cụm ví dụ + 来说: dẫn ra các chữ làm minh họa."
+        },
+        {
+          "type": "choice",
+          "q": "___拿学汉语来说吧，首先要注意课前预习。",
+          "options": [
+            "就",
+            "却",
+            "刚",
+            "才"
+          ],
+          "answer": "就",
+          "explain": "就拿……来说吧: cách nói quen dùng để đưa ra ví dụ cụ thể."
+        },
+        {
+          "type": "choice",
+          "q": "学习需要方法，拿背生词___，你可以每天背十个。",
+          "options": [
+            "来说",
+            "来看",
+            "来想",
+            "来听"
+          ],
+          "answer": "来说",
+          "explain": "拿背生词来说: lấy việc học từ mới làm ví dụ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "拿",
+            "他",
+            "来说",
+            "他",
+            "专业",
+            "符合",
+            "要求"
+          ],
+          "answer": "拿他来说，他专业符合要求。",
+          "alt": [],
+          "vi": "Lấy anh ấy mà nói, chuyên môn của anh ấy phù hợp yêu cầu."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "北京",
+            "很大",
+            "拿",
+            "交通",
+            "来说",
+            "地铁",
+            "线路",
+            "很多"
+          ],
+          "answer": "北京很大，拿交通来说，地铁线路很多。",
+          "alt": [],
+          "vi": "Bắc Kinh rất lớn, lấy giao thông mà nói, tàu điện ngầm có rất nhiều tuyến."
+        }
+      ]
+    },
+    {
+      "id": "16.5",
+      "title": "敢",
+      "pattern": "敢 + V   |   不敢 + V",
+      "meaning": "Động từ năng nguyện đứng trước động từ: dám, có đủ can đảm hoặc tự tin làm việc gì. Phủ định là 不敢 (không dám).",
+      "notes": [
+        "敢 + động từ: 敢说真话, 敢诚实地说出……",
+        "不敢 + động từ: không dám: 不敢再躺着看书了.",
+        "Chỉ lòng can đảm hoặc tự tin khi làm việc khó hay có rủi ro."
+      ],
+      "examples": [
+        [
+          "我们应该把敢说真话的人当成“镜子”。",
+          "Wǒmen yīnggāi bǎ gǎn shuō zhēnhuà de rén dàngchéng “jìngzi”.",
+          "Chúng ta nên xem những người dám nói thật như “tấm gương”."
+        ],
+        [
+          "他很勇敢，什么都敢做。",
+          "Tā hěn yǒnggǎn, shénme dōu gǎn zuò.",
+          "Anh ấy rất dũng cảm, việc gì cũng dám làm."
+        ],
+        [
+          "小时候躺着看书，眼睛不好了，从那以后就不敢躺着看书了。",
+          "Xiǎoshíhou tǎng zhe kànshū, yǎnjing bù hǎo le, cóng nà yǐhòu jiù bù gǎn tǎng zhe kànshū le.",
+          "Hồi nhỏ nằm đọc sách làm mắt kém đi, từ đó tôi không dám nằm đọc sách nữa."
+        ],
+        [
+          "你敢诚实地说出自己不了解的地方吗？",
+          "Nǐ gǎn chéngshí de shuō chū zìjǐ bù liǎojiě de dìfang ma?",
+          "Bạn có dám thành thật nói ra chỗ mình chưa hiểu không?"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "我们应该把___说真话的人当成“镜子”。",
+          "options": [
+            "敢",
+            "以",
+            "够",
+            "弄"
+          ],
+          "answer": "敢",
+          "explain": "敢说真话: “dám nói thật” — động từ năng nguyện 敢 đứng trước động từ."
+        },
+        {
+          "type": "choice",
+          "q": "他很勇敢，什么都___做。",
+          "options": [
+            "敢",
+            "以",
+            "够",
+            "弄"
+          ],
+          "answer": "敢",
+          "explain": "什么都敢做: việc gì cũng dám làm."
+        },
+        {
+          "type": "choice",
+          "q": "从那以后，我就不___躺着看书了。",
+          "options": [
+            "敢",
+            "以",
+            "够",
+            "弄"
+          ],
+          "answer": "敢",
+          "explain": "不敢 + động từ: không dám làm gì nữa."
+        },
+        {
+          "type": "choice",
+          "q": "你___诚实地说出自己不了解的地方吗？",
+          "options": [
+            "敢",
+            "以",
+            "够",
+            "弄"
+          ],
+          "answer": "敢",
+          "explain": "敢 + động từ trong câu hỏi: “bạn có dám…không?”"
+        },
+        {
+          "type": "choice",
+          "q": "那只狗很大，我不___靠近它。",
+          "options": [
+            "敢",
+            "以",
+            "弄",
+            "并"
+          ],
+          "answer": "敢",
+          "explain": "不敢靠近: không dám lại gần — sợ nên không dám."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "什么",
+            "都",
+            "敢",
+            "做"
+          ],
+          "answer": "他什么都敢做。",
+          "alt": [],
+          "vi": "Anh ấy việc gì cũng dám làm."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我",
+            "不敢",
+            "再",
+            "躺着",
+            "看书",
+            "了"
+          ],
+          "answer": "我不敢再躺着看书了。",
+          "alt": [],
+          "vi": "Tôi không dám nằm đọc sách nữa."
+        }
+      ]
+    }
+  ],
+  "L17": [
+    {
+      "id": "17.1",
+      "title": "倒",
+      "pattern": "倒 + 杯水（động từ dào）   |   倒 + V / Adj（phó từ dào）",
+      "meaning": "(1) Động từ (dào): rót, đổ (nghiêng vật đựng cho thứ bên trong chảy ra). (2) Phó từ (dào): trái với dự đoán; hàm ý trách nhẹ; hoặc nhượng bộ (hay dùng 倒是) — đứng trước động từ hoặc tính từ ở vị ngữ.",
+      "notes": [
+        "Động từ: 倒水, 倒咖啡 (rót nước, rót cà phê).",
+        "Phó từ trái dự đoán: 我以为坐出租车会快些，没想到倒比骑车还慢.",
+        "Phó từ giọng trách móc: 你说得倒容易，做起来就难了.",
+        "Phó từ nhượng bộ (倒是): 去长城倒是个好主意，就是太远了."
+      ],
+      "examples": [
+        [
+          "麻烦你给我倒杯咖啡吧。",
+          "Máfan nǐ gěi wǒ dào bēi kāfēi ba.",
+          "Phiền bạn rót cho tôi một ly cà phê."
+        ],
+        [
+          "我以为坐出租车更快，没想到倒比骑车还慢。",
+          "Wǒ yǐwéi zuò chūzūchē gèng kuài, méi xiǎngdào dào bǐ qí chē hái màn.",
+          "Tôi tưởng đi taxi nhanh hơn, không ngờ lại còn chậm hơn đi xe đạp."
+        ],
+        [
+          "你说得倒容易，做起来可就难了！",
+          "Nǐ shuō de dào róngyì, zuò qǐlái kě jiù nán le!",
+          "Bạn nói thì dễ lắm, làm mới khó chứ!"
+        ],
+        [
+          "去长城倒是个好主意，就是太远了。",
+          "Qù Chángchéng dàoshì ge hǎo zhǔyi, jiùshì tài yuǎn le.",
+          "Đi Vạn Lý Trường Thành thì đúng là ý hay, chỉ có điều xa quá."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "你怎么咳嗽得这么厉害？我给你___杯水吧。",
+          "options": [
+            "倒",
+            "干",
+            "趟",
+            "仍然"
+          ],
+          "answer": "倒",
+          "explain": "倒杯水: 倒 là động từ “rót”. 干/趟/仍然 không có nghĩa này."
+        },
+        {
+          "type": "choice",
+          "q": "我以为坐出租车更快，没想到___比骑车还慢。",
+          "options": [
+            "倒",
+            "干",
+            "趟",
+            "为了"
+          ],
+          "answer": "倒",
+          "explain": "“Không ngờ lại còn chậm hơn” — 倒 làm phó từ chỉ điều trái dự đoán."
+        },
+        {
+          "type": "choice",
+          "q": "你说得___容易，做起来可就难了！",
+          "options": [
+            "倒",
+            "干",
+            "趟",
+            "为了"
+          ],
+          "answer": "倒",
+          "explain": "说得倒容易: 倒 mang giọng trách nhẹ — nói thì dễ mà làm mới khó."
+        },
+        {
+          "type": "choice",
+          "q": "去长城___是个好主意，就是太远了。",
+          "options": [
+            "倒",
+            "干",
+            "趟",
+            "为了"
+          ],
+          "answer": "倒",
+          "explain": "倒是……，就是……: 倒 thể hiện nhượng bộ (đúng là hay, nhưng…)."
+        },
+        {
+          "type": "choice",
+          "q": "请给我___一杯咖啡。",
+          "options": [
+            "倒",
+            "干",
+            "趟",
+            "为了"
+          ],
+          "answer": "倒",
+          "explain": "倒一杯咖啡: động từ “rót”."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "麻烦",
+            "你",
+            "给",
+            "我",
+            "倒",
+            "杯",
+            "咖啡"
+          ],
+          "answer": "麻烦你给我倒杯咖啡。",
+          "alt": [],
+          "vi": "Phiền bạn rót cho tôi một ly cà phê."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "去长城",
+            "倒是",
+            "个",
+            "好主意",
+            "就是",
+            "太远了"
+          ],
+          "answer": "去长城倒是个好主意，就是太远了。",
+          "alt": [],
+          "vi": "Đi Vạn Lý Trường Thành thì đúng là ý hay, chỉ có điều xa quá."
+        }
+      ]
+    },
+    {
+      "id": "17.2",
+      "title": "干",
+      "pattern": "干 (gàn) + 工作 / 什么   |   干 (gān) + tính từ   |   干儿 (gānr)",
+      "meaning": "干 (gàn): động từ, làm (việc), tham gia công việc hay hoạt động. Ngoài ra 干 (gān) là tính từ “khô” và 干(儿) (gānr) là danh từ “đồ khô” (牛肉干).",
+      "notes": [
+        "干 đọc gàn: làm việc, làm gì: 干工作, 你想干什么?",
+        "干 đọc gān: tính từ “khô, ráo”: 把头发擦干.",
+        "干 đọc gānr làm danh từ “đồ khô, đã tách nước”: 牛肉干."
+      ],
+      "examples": [
+        [
+          "干工作的时候要认真、仔细。",
+          "Gàn gōngzuò de shíhou yào rènzhēn, zǐxì.",
+          "Khi làm việc phải nghiêm túc, cẩn thận."
+        ],
+        [
+          "你整天在家，到底想干什么？",
+          "Nǐ zhěngtiān zài jiā, dàodǐ xiǎng gàn shénme?",
+          "Cả ngày bạn ở nhà, rốt cuộc muốn làm gì?"
+        ],
+        [
+          "头发都湿了，先擦干，别感冒了。",
+          "Tóufa dōu shī le, xiān cā gān, bié gǎnmào le.",
+          "Tóc ướt hết rồi, lau khô trước đi kẻo bị cảm."
+        ],
+        [
+          "这牛肉干味道真不错。",
+          "Zhè niúròugān wèidào zhēn búcuò.",
+          "Món thịt bò khô này vị thật ngon."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "___工作的时候一定要认真、仔细。",
+          "options": [
+            "干",
+            "倒",
+            "趟",
+            "为了"
+          ],
+          "answer": "干",
+          "explain": "干工作 (gàn gōngzuò): làm việc. 倒/趟/为了 không có nghĩa này."
+        },
+        {
+          "type": "choice",
+          "q": "你整天在家，到底想___什么？",
+          "options": [
+            "干",
+            "趟",
+            "为了",
+            "仍然"
+          ],
+          "answer": "干",
+          "explain": "干什么 (gàn shénme): làm gì — động từ 干 (gàn)."
+        },
+        {
+          "type": "choice",
+          "q": "头发都湿了，先把头发擦___，别感冒了。",
+          "options": [
+            "干",
+            "倒",
+            "趟",
+            "为了"
+          ],
+          "answer": "干",
+          "explain": "擦干 (cā gān): lau cho khô — 干 (gān) là tính từ làm bổ ngữ kết quả."
+        },
+        {
+          "type": "choice",
+          "q": "这牛肉___真不错，在哪儿买的？",
+          "options": [
+            "干",
+            "倒",
+            "趟",
+            "为了"
+          ],
+          "answer": "干",
+          "explain": "牛肉干 (niúròugān): thịt bò khô — danh từ."
+        },
+        {
+          "type": "choice",
+          "q": "他每天都很努力地___活儿。",
+          "options": [
+            "干",
+            "倒",
+            "趟",
+            "为了"
+          ],
+          "answer": "干",
+          "explain": "干活儿 (gàn huór): làm việc."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "干",
+            "工作",
+            "的",
+            "时候",
+            "要",
+            "认真"
+          ],
+          "answer": "干工作的时候要认真。",
+          "alt": [],
+          "vi": "Khi làm việc phải nghiêm túc."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "头发",
+            "湿了",
+            "先",
+            "擦干",
+            "别",
+            "感冒"
+          ],
+          "answer": "头发湿了，先擦干，别感冒。",
+          "alt": [],
+          "vi": "Tóc ướt rồi, lau khô trước đi, đừng để bị cảm."
+        }
+      ]
+    },
+    {
+      "id": "17.3",
+      "title": "趟",
+      "pattern": "V + 一趟 / 趟 + N   |   去 / 回 / 出 + 趟",
+      "meaning": "Lượng từ chỉ số lần đi và về (một chuyến khứ hồi); dùng với các động từ đi/đến (去, 回, 出差…), và còn dùng cho xe buýt, tàu chạy theo tuyến cố định (chuyến).",
+      "notes": [
+        "趟 chỉ một lượt đi rồi về: 去了趟北京, 回一趟家, 出趟差.",
+        "Khác 次: 次 chỉ đếm số lần, không nhấn khứ hồi, và đếm được cả các hành động khác (问, 说, 看, 讨论); 趟 chỉ dùng cho hành động đi – về.",
+        "趟 còn dùng cho xe, tàu chạy theo tuyến cố định: 好几趟公共汽车."
+      ],
+      "examples": [
+        [
+          "上个月我去了趟北京动物园。",
+          "Shàng ge yuè wǒ qù le tàng Běijīng dòngwùyuán.",
+          "Tháng trước tôi đã đi một chuyến đến vườn thú Bắc Kinh."
+        ],
+        [
+          "我要出趟差，你能帮我照顾一下小狗吗？",
+          "Wǒ yào chū tàng chāi, nǐ néng bāng wǒ zhàogù yíxià xiǎo gǒu ma?",
+          "Tôi phải đi công tác một chuyến, bạn có thể giúp tôi trông con chó nhỏ được không?"
+        ],
+        [
+          "我打算先回一趟家，看看奶奶。",
+          "Wǒ dǎsuàn xiān huí yí tàng jiā, kànkan nǎinai.",
+          "Tôi định về nhà một chuyến trước, thăm bà."
+        ],
+        [
+          "附近有好几趟公共汽车能到我的公司。",
+          "Fùjìn yǒu hǎo jǐ tàng gōnggòng qìchē néng dào wǒ de gōngsī.",
+          "Gần đây có mấy tuyến xe buýt đến được công ty tôi."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "附近有好几___公共汽车都能到我工作的公司。",
+          "options": [
+            "趟",
+            "次",
+            "倍",
+            "个"
+          ],
+          "answer": "趟",
+          "explain": "趟 dùng cho xe chạy theo tuyến cố định (好几趟公共汽车). 次 không dùng được như vậy."
+        },
+        {
+          "type": "choice",
+          "q": "你这么着急去哪儿？我刚才叫了你两___，你都没听到。",
+          "options": [
+            "趟",
+            "次",
+            "倍",
+            "个"
+          ],
+          "answer": "次",
+          "explain": "“叫” không phải hành động đi – về, chỉ đếm số lần → dùng 次; 趟 không dùng được."
+        },
+        {
+          "type": "choice",
+          "q": "我打算先回一___家，看看奶奶。",
+          "options": [
+            "趟",
+            "倍",
+            "个",
+            "件"
+          ],
+          "answer": "趟",
+          "explain": "回一趟家: về nhà một chuyến (đi rồi lại về) → 趟."
+        },
+        {
+          "type": "choice",
+          "q": "上个月我去了___北京动物园。",
+          "options": [
+            "趟",
+            "倍",
+            "个",
+            "件"
+          ],
+          "answer": "趟",
+          "explain": "去了趟北京动物园: một chuyến đi (rồi về) → 趟."
+        },
+        {
+          "type": "choice",
+          "q": "小时候，爷爷差不多每个月都带我去看一___京剧。",
+          "options": [
+            "次",
+            "趟",
+            "倍",
+            "个"
+          ],
+          "answer": "次",
+          "explain": "看京剧 chỉ là đếm số lần xem, không nhấn khứ hồi → 次."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我",
+            "打算",
+            "先",
+            "回",
+            "一趟",
+            "家"
+          ],
+          "answer": "我打算先回一趟家。",
+          "alt": [],
+          "vi": "Tôi định về nhà một chuyến trước."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "附近",
+            "有",
+            "好几趟",
+            "公共汽车",
+            "能",
+            "到",
+            "公司"
+          ],
+          "answer": "附近有好几趟公共汽车能到公司。",
+          "alt": [],
+          "vi": "Gần đây có mấy tuyến xe buýt đến được công ty."
+        }
+      ]
+    },
+    {
+      "id": "17.4",
+      "title": "为了……而……",
+      "pattern": "(S) 为了 + N / V（mục đích）而 + V",
+      "meaning": "Cấu trúc: vế đầu (为了 + từ hoặc cụm) nêu mục đích của hành động ở vế sau (而 + động từ). Sau 为了 là một từ hay cụm (danh từ hoặc động từ).",
+      "notes": [
+        "为了 + mục đích (danh từ hoặc cụm động từ) + 而 + hành động: 为了阳光、空气和水而竞争.",
+        "Chủ ngữ thường đứng trước 为了: 植物为了……而……",
+        "而 nối mục đích với hành động, đứng ngay trước động từ."
+      ],
+      "examples": [
+        [
+          "植物会为了阳光、空气和水而竞争。",
+          "Zhíwù huì wèile yángguāng, kōngqì hé shuǐ ér jìngzhēng.",
+          "Thực vật sẽ cạnh tranh vì ánh sáng, không khí và nước."
+        ],
+        [
+          "北风与南风为了比谁更有能力而吵了起来。",
+          "Běifēng yǔ nánfēng wèile bǐ shéi gèng yǒu nénglì ér chǎo le qǐlái.",
+          "Gió bắc và gió nam cãi nhau để xem ai có năng lực hơn."
+        ],
+        [
+          "不少动物为了保护自己而改变身体的颜色。",
+          "Bù shǎo dòngwù wèile bǎohù zìjǐ ér gǎibiàn shēntǐ de yánsè.",
+          "Không ít động vật thay đổi màu cơ thể để tự bảo vệ."
+        ],
+        [
+          "他为了学好汉语而来到北京。",
+          "Tā wèile xuéhǎo Hànyǔ ér láidào Běijīng.",
+          "Anh ấy đến Bắc Kinh để học giỏi tiếng Trung."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "他___了学好汉语而来到北京。",
+          "options": [
+            "为",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "为",
+          "explain": "为了……而……: cấu trúc chỉ mục đích; blank là 为 trong 为了."
+        },
+        {
+          "type": "choice",
+          "q": "他为了学好汉语___来到北京。",
+          "options": [
+            "而",
+            "却",
+            "够",
+            "刚"
+          ],
+          "answer": "而",
+          "explain": "为了……而……: 而 nối mục đích (学好汉语) với hành động (来到北京)."
+        },
+        {
+          "type": "choice",
+          "q": "植物会为了阳光、空气和水___竞争。",
+          "options": [
+            "而",
+            "却",
+            "够",
+            "刚"
+          ],
+          "answer": "而",
+          "explain": "为了 + mục đích + 而 + động từ: vì ánh sáng… mà cạnh tranh."
+        },
+        {
+          "type": "choice",
+          "q": "不少动物___了保护自己而改变身体的颜色。",
+          "options": [
+            "为",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "为",
+          "explain": "为了保护自己而……: vì tự bảo vệ mà thay đổi màu sắc."
+        },
+        {
+          "type": "choice",
+          "q": "他们为了赢得比赛___每天训练。",
+          "options": [
+            "而",
+            "却",
+            "够",
+            "刚"
+          ],
+          "answer": "而",
+          "explain": "为了赢得比赛而每天训练: mục đích (thắng) + 而 + hành động (luyện tập)."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "植物",
+            "会",
+            "为了",
+            "阳光",
+            "而",
+            "竞争"
+          ],
+          "answer": "植物会为了阳光而竞争。",
+          "alt": [],
+          "vi": "Thực vật sẽ cạnh tranh vì ánh sáng."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "为了",
+            "学好",
+            "汉语",
+            "而",
+            "来到",
+            "北京"
+          ],
+          "answer": "他为了学好汉语而来到北京。",
+          "alt": [],
+          "vi": "Anh ấy đến Bắc Kinh để học giỏi tiếng Trung."
+        }
+      ]
+    },
+    {
+      "id": "17.5",
+      "title": "仍然",
+      "pattern": "S + 仍然 + V / Adj",
+      "meaning": "Phó từ: vẫn, vẫn còn — tình huống giống như trước, không thay đổi. Đứng trước động từ hoặc vị ngữ, thường sau một vế nhượng bộ hay chuyển ý.",
+      "notes": [
+        "Chỉ trạng thái giữ nguyên như cũ: 仍然是0比0.",
+        "Hay đứng sau vế nhượng bộ hoặc chuyển ý: 就算……也仍然……, ……，但……仍然……",
+        "Đứng trước động từ hoặc tính từ, sau chủ ngữ."
+      ],
+      "examples": [
+        [
+          "就算在几公里深的海底，也仍然能看到东西。",
+          "Jiùsuàn zài jǐ gōnglǐ shēn de hǎidǐ, yě réngrán néng kàndào dōngxi.",
+          "Dù ở đáy biển sâu mấy cây số, vẫn nhìn thấy được vật."
+        ],
+        [
+          "人比动物聪明，但动物仍然有很多值得人学习的地方。",
+          "Rén bǐ dòngwù cōngming, dàn dòngwù réngrán yǒu hěn duō zhídé rén xuéxí de dìfang.",
+          "Con người thông minh hơn động vật, nhưng động vật vẫn có nhiều điều đáng để con người học."
+        ],
+        [
+          "比赛九十分钟后仍然是零比零。",
+          "Bǐsài jiǔshí fēnzhōng hòu réngrán shì líng bǐ líng.",
+          "Sau chín mươi phút trận đấu vẫn là không – không."
+        ],
+        [
+          "已经过去很多年了，他仍然记得那天的事。",
+          "Yǐjīng guòqù hěn duō nián le, tā réngrán jìde nà tiān de shì.",
+          "Đã nhiều năm trôi qua, anh ấy vẫn nhớ chuyện hôm đó."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "比赛九十分钟后___是零比零。",
+          "options": [
+            "仍然",
+            "倒",
+            "干",
+            "趟"
+          ],
+          "answer": "仍然",
+          "explain": "“Vẫn là không – không”: tình huống không đổi → 仍然."
+        },
+        {
+          "type": "choice",
+          "q": "人比动物聪明，但动物___有很多值得学习的地方。",
+          "options": [
+            "仍然",
+            "倒",
+            "干",
+            "趟"
+          ],
+          "answer": "仍然",
+          "explain": "但……仍然……: dù vậy tình huống vẫn còn → 仍然."
+        },
+        {
+          "type": "choice",
+          "q": "已经过去很多年了，他___记得那天的事。",
+          "options": [
+            "仍然",
+            "倒",
+            "干",
+            "趟"
+          ],
+          "answer": "仍然",
+          "explain": "Nhiều năm đã qua nhưng vẫn nhớ → 仍然."
+        },
+        {
+          "type": "choice",
+          "q": "就算在海底，也___能看到东西。",
+          "options": [
+            "仍然",
+            "倒",
+            "干",
+            "趟"
+          ],
+          "answer": "仍然",
+          "explain": "就算……也仍然……: dù thế nào tình huống vẫn không đổi."
+        },
+        {
+          "type": "choice",
+          "q": "我劝了他很多次，他___不听。",
+          "options": [
+            "仍然",
+            "干",
+            "趟",
+            "为了"
+          ],
+          "answer": "仍然",
+          "explain": "Khuyên nhiều lần mà anh ấy vẫn không nghe → 仍然."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "已经",
+            "过去",
+            "很多年",
+            "他",
+            "仍然",
+            "记得",
+            "那件事"
+          ],
+          "answer": "已经过去很多年，他仍然记得那件事。",
+          "alt": [],
+          "vi": "Đã nhiều năm trôi qua, anh ấy vẫn nhớ chuyện đó."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "人比动物聪明",
+            "但",
+            "动物",
+            "仍然",
+            "有",
+            "值得学习的",
+            "地方"
+          ],
+          "answer": "人比动物聪明，但动物仍然有值得学习的地方。",
+          "alt": [],
+          "vi": "Con người thông minh hơn động vật, nhưng động vật vẫn có điều đáng học."
+        }
+      ]
+    }
+  ],
+  "L18": [
+    {
+      "id": "18.1",
+      "title": "是否",
+      "pattern": "是否 + V / Adj   |   不知道 + 是否……",
+      "meaning": "Phó từ: có hay không (= 是不是), thường dùng trong văn viết. Hay đứng trong mệnh đề sau các động từ như 知道 / 看 / 查 / 考虑, hoặc đứng trước động từ, tính từ.",
+      "notes": [
+        "是否 = 是不是, dùng trong văn viết, sắc thái trang trọng.",
+        "Thường đứng sau các động từ như 知道, 看, 查, 考虑: 不知道她是否能读懂.",
+        "Cũng làm thành phần của chủ ngữ hoặc vị ngữ: 婚姻是否幸福, 是否喜欢这份工作."
+      ],
+      "examples": [
+        [
+          "这本书我不知道她是否能读懂。",
+          "Zhè běn shū wǒ bù zhīdào tā shìfǒu néng dúdǒng.",
+          "Cuốn sách này tôi không biết cô ấy có đọc hiểu được không."
+        ],
+        [
+          "婚姻是否幸福，跟这个没有关系。",
+          "Hūnyīn shìfǒu xìngfú, gēn zhège méiyǒu guānxi.",
+          "Hôn nhân có hạnh phúc hay không không liên quan đến điều này."
+        ],
+        [
+          "有人选职业主要看自己是否喜欢这份工作。",
+          "Yǒu rén xuǎn zhíyè zhǔyào kàn zìjǐ shìfǒu xǐhuan zhè fèn gōngzuò.",
+          "Có người chọn nghề chủ yếu xem bản thân có thích công việc đó không."
+        ],
+        [
+          "请你查一下这个地址是否正确。",
+          "Qǐng nǐ chá yíxià zhège dìzhǐ shìfǒu zhèngquè.",
+          "Nhờ bạn kiểm tra xem địa chỉ này có đúng không."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "这本书我不知道她___能读懂。",
+          "options": [
+            "是否",
+            "倒",
+            "干",
+            "趟"
+          ],
+          "answer": "是否",
+          "explain": "不知道……是否……: “không biết có … hay không”."
+        },
+        {
+          "type": "choice",
+          "q": "婚姻___幸福，跟这个没有关系。",
+          "options": [
+            "是否",
+            "倒",
+            "干",
+            "趟"
+          ],
+          "answer": "是否",
+          "explain": "是否 + tính từ làm chủ ngữ: “có hạnh phúc hay không”."
+        },
+        {
+          "type": "choice",
+          "q": "选择职业时，有人主要看自己___喜欢这份工作。",
+          "options": [
+            "是否",
+            "倒",
+            "干",
+            "趟"
+          ],
+          "answer": "是否",
+          "explain": "看……是否……: xem có hay không."
+        },
+        {
+          "type": "choice",
+          "q": "请你查一下这个地址___正确。",
+          "options": [
+            "是否",
+            "倒",
+            "干",
+            "趟"
+          ],
+          "answer": "是否",
+          "explain": "查……是否正确: kiểm tra xem có đúng không — văn viết, trang trọng."
+        },
+        {
+          "type": "choice",
+          "q": "我还没决定___参加这次活动。",
+          "options": [
+            "是否",
+            "倒",
+            "干",
+            "趟"
+          ],
+          "answer": "是否",
+          "explain": "决定是否 + động từ: quyết định có tham gia hay không."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我",
+            "不知道",
+            "她",
+            "是否",
+            "能读懂",
+            "这本书"
+          ],
+          "answer": "我不知道她是否能读懂这本书。",
+          "alt": [],
+          "vi": "Tôi không biết cô ấy có đọc hiểu cuốn sách này không."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "婚姻",
+            "是否",
+            "幸福",
+            "跟",
+            "这个",
+            "没有",
+            "关系"
+          ],
+          "answer": "婚姻是否幸福，跟这个没有关系。",
+          "alt": [],
+          "vi": "Hôn nhân có hạnh phúc hay không không liên quan đến điều này."
+        }
+      ]
+    },
+    {
+      "id": "18.2",
+      "title": "受不了",
+      "pattern": "受不了 + N（人 / 事）   |   实在受不了",
+      "meaning": "Không chịu nổi, không chịu được (đau đớn, khổ cực, áp lực, thái độ, tính khí…). Thường dùng trước danh từ hoặc cụm danh từ làm tân ngữ; sách cũng cho thấy có thể đặt ở cuối vế.",
+      "notes": [
+        "受不了 + danh từ hoặc cụm: 受不了你了, 受不了这样的老师.",
+        "Cũng có thể đứng cuối vế: 眼睛实在受不了.",
+        "Dùng khi mức chịu đựng đã tới giới hạn; thường đi với 真 / 实在."
+      ],
+      "examples": [
+        [
+          "我真的受不了你了，你到底还要逛多久？",
+          "Wǒ zhēn de shòu bu liǎo nǐ le, nǐ dàodǐ hái yào guàng duō jiǔ?",
+          "Tôi thật sự chịu không nổi bạn nữa, rốt cuộc bạn còn định đi dạo bao lâu?"
+        ],
+        [
+          "天天对着电脑看，眼睛实在受不了。",
+          "Tiāntiān duìzhe diànnǎo kàn, yǎnjing shízài shòu bu liǎo.",
+          "Ngày nào cũng nhìn máy tính, mắt thật sự không chịu nổi."
+        ],
+        [
+          "真受不了这样的老师！",
+          "Zhēn shòu bu liǎo zhèyàng de lǎoshī!",
+          "Thật không chịu nổi giáo viên như thế!"
+        ],
+        [
+          "他的脾气太坏，大家都受不了他。",
+          "Tā de píqi tài huài, dàjiā dōu shòu bu liǎo tā.",
+          "Tính khí anh ấy tệ quá, mọi người đều không chịu nổi anh ấy."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "我真的___你了，你到底还要逛多久？",
+          "options": [
+            "受不了",
+            "来不及",
+            "弄不好",
+            "想起来"
+          ],
+          "answer": "受不了",
+          "explain": "受不了你: không chịu nổi bạn nữa — 受不了 + người."
+        },
+        {
+          "type": "choice",
+          "q": "天天对着电脑看，眼睛实在___。",
+          "options": [
+            "受不了",
+            "来不及",
+            "弄不好",
+            "想起来"
+          ],
+          "answer": "受不了",
+          "explain": "眼睛实在受不了: mắt không chịu nổi nữa — 受不了 ở cuối vế."
+        },
+        {
+          "type": "choice",
+          "q": "真___这样的老师！",
+          "options": [
+            "受不了",
+            "来不及",
+            "弄不好",
+            "想起来"
+          ],
+          "answer": "受不了",
+          "explain": "真受不了 + cụm danh từ: thật không chịu nổi."
+        },
+        {
+          "type": "choice",
+          "q": "这里太热了，我___了。",
+          "options": [
+            "受不了",
+            "来不及",
+            "弄不好",
+            "想起来"
+          ],
+          "answer": "受不了",
+          "explain": "太热了，我受不了了: nóng quá, tôi chịu không nổi."
+        },
+        {
+          "type": "choice",
+          "q": "他的脾气太坏，大家都___他。",
+          "options": [
+            "受不了",
+            "来不及",
+            "弄不好",
+            "想起来"
+          ],
+          "answer": "受不了",
+          "explain": "受不了 + người: không chịu nổi tính khí của ai đó."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我",
+            "真的",
+            "受不了",
+            "你",
+            "了"
+          ],
+          "answer": "我真的受不了你了。",
+          "alt": [],
+          "vi": "Tôi thật sự không chịu nổi bạn nữa."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "天天",
+            "对着",
+            "电脑",
+            "眼睛",
+            "实在",
+            "受不了"
+          ],
+          "answer": "天天对着电脑，眼睛实在受不了。",
+          "alt": [],
+          "vi": "Ngày nào cũng nhìn máy tính, mắt thật sự không chịu nổi."
+        }
+      ]
+    },
+    {
+      "id": "18.3",
+      "title": "接着",
+      "pattern": "A，接着 + B   |   接着 + V（tiếp tục）",
+      "meaning": "Phó từ: ngay sau đó — một việc xảy ra liền sau việc vừa rồi; đứng trước động từ; hai vế có thể cùng hoặc khác chủ ngữ. Còn có nghĩa “tiếp tục” (我接着看) và “nói tiếp” (接着说).",
+      "notes": [
+        "Chỉ việc xảy ra liền sau việc trước: 他毕业后接着又考上了研究生.",
+        "Nghĩa “tiếp tục”: 我接着看, 明年还要接着学.",
+        "Khác 然后: 接着 là phó từ nhấn việc sau xảy ra ngay lập tức; 然后 là liên từ, thường dùng trong 先……然后(再)……; với 接着 hai việc có thể cùng hoặc khác chủ ngữ, còn 然后 thường cùng chủ ngữ."
+      ],
+      "examples": [
+        [
+          "这本书你看完以后先不要还，我接着看。",
+          "Zhè běn shū nǐ kàn wán yǐhòu xiān bú yào huán, wǒ jiēzhe kàn.",
+          "Cuốn sách này bạn đọc xong đừng trả vội, tôi đọc tiếp."
+        ],
+        [
+          "大学毕业后，他接着又考上了研究生。",
+          "Dàxué bìyè hòu, tā jiēzhe yòu kǎoshàng le yánjiūshēng.",
+          "Sau khi tốt nghiệp đại học, anh ấy liền thi đỗ cao học."
+        ],
+        [
+          "他已经学了一年汉语了，明年还要接着学。",
+          "Tā yǐjīng xué le yì nián Hànyǔ le, míngnián hái yào jiēzhe xué.",
+          "Anh ấy đã học tiếng Trung một năm rồi, năm sau còn học tiếp."
+        ],
+        [
+          "妻子问完，丈夫接着说了自己的想法。",
+          "Qīzi wèn wán, zhàngfu jiēzhe shuō le zìjǐ de xiǎngfǎ.",
+          "Vợ hỏi xong, chồng nói tiếp suy nghĩ của mình."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "这本书你看完以后先不要还，我___看。",
+          "options": [
+            "接着",
+            "是否",
+            "受不了",
+            "到底"
+          ],
+          "answer": "接着",
+          "explain": "“Tôi đọc tiếp” (sau người khác): 接着 + động từ nghĩa “tiếp tục”."
+        },
+        {
+          "type": "choice",
+          "q": "大学毕业后，他___又考上了研究生。",
+          "options": [
+            "接着",
+            "是否",
+            "受不了",
+            "到底"
+          ],
+          "answer": "接着",
+          "explain": "Việc sau xảy ra liền sau việc trước → 接着."
+        },
+        {
+          "type": "choice",
+          "q": "他已经学了一年汉语了，明年还要___学。",
+          "options": [
+            "接着",
+            "是否",
+            "受不了",
+            "到底"
+          ],
+          "answer": "接着",
+          "explain": "接着学: học tiếp — nghĩa “tiếp tục”."
+        },
+        {
+          "type": "choice",
+          "q": "咱们先去吃晚饭，___看电影，好不好？",
+          "options": [
+            "然后",
+            "是否",
+            "受不了",
+            "到底"
+          ],
+          "answer": "然后",
+          "explain": "先……然后……: 然后 là liên từ nối hai việc theo thứ tự (cùng chủ ngữ “咱们”)."
+        },
+        {
+          "type": "choice",
+          "q": "妻子问完，丈夫___说了自己的想法。",
+          "options": [
+            "接着",
+            "是否",
+            "受不了",
+            "到底"
+          ],
+          "answer": "接着",
+          "explain": "Chủ ngữ hai vế khác nhau (妻子 / 丈夫) và việc sau nối liền → 接着."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这本书",
+            "你",
+            "看完",
+            "我",
+            "接着",
+            "看"
+          ],
+          "answer": "这本书你看完，我接着看。",
+          "alt": [],
+          "vi": "Cuốn sách này bạn đọc xong thì tôi đọc tiếp."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "大学",
+            "毕业后",
+            "他",
+            "接着",
+            "又",
+            "考上了",
+            "研究生"
+          ],
+          "answer": "大学毕业后，他接着又考上了研究生。",
+          "alt": [],
+          "vi": "Sau khi tốt nghiệp đại học, anh ấy liền thi đỗ cao học."
+        }
+      ]
+    },
+    {
+      "id": "18.4",
+      "title": "除此以外",
+      "pattern": "A。除此以外，B   |   A，除此以外，还 + B",
+      "meaning": "Tương đương “除了这个(chỉ điều vừa nói)以外”: ngoài điều này ra. Thường dùng trong văn viết; mở đầu vế hoặc câu bổ sung thêm các mục sau điều đã nêu.",
+      "notes": [
+        "此 chỉ nội dung vừa nói ở trước: 除此以外 = 除了这个以外.",
+        "Đứng đầu câu hoặc đầu vế sau để bổ sung thêm; vế sau thường có 还.",
+        "Thường dùng trong văn viết."
+      ],
+      "examples": [
+        [
+          "他和弟弟长得很像，但除此以外，几乎找不到其他共同点。",
+          "Tā hé dìdi zhǎng de hěn xiàng, dàn chúcǐ yǐwài, jīhū zhǎo bú dào qítā gòngtóngdiǎn.",
+          "Anh ấy và em trai giống nhau lắm, nhưng ngoài ra gần như không tìm thấy điểm chung nào khác."
+        ],
+        [
+          "北方人过年爱吃饺子，是因为饺子味道好，除此以外，还因为全家人一起包饺子是很好的交流机会。",
+          "Běifāngrén guònián ài chī jiǎozi, shì yīnwèi jiǎozi wèidào hǎo, chúcǐ yǐwài, hái yīnwèi quánjiā rén yìqǐ bāo jiǎozi shì hěn hǎo de jiāoliú jīhuì.",
+          "Người miền Bắc ăn sủi cảo dịp Tết vì sủi cảo ngon, ngoài ra còn vì cả nhà cùng gói sủi cảo là dịp giao lưu tốt."
+        ],
+        [
+          "手机能打电话、发短信，除此以外，还能听音乐、看电影。",
+          "Shǒujī néng dǎ diànhuà, fā duǎnxìn, chúcǐ yǐwài, hái néng tīng yīnyuè, kàn diànyǐng.",
+          "Điện thoại gọi điện, nhắn tin được, ngoài ra còn nghe nhạc, xem phim được."
+        ],
+        [
+          "这家店卖衣服，除此以外，还卖鞋和包。",
+          "Zhè jiā diàn mài yīfu, chúcǐ yǐwài, hái mài xié hé bāo.",
+          "Cửa hàng này bán quần áo, ngoài ra còn bán giày và túi."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "手机能打电话、发短信，___，还能听音乐、看电影。",
+          "options": [
+            "除此以外",
+            "因此",
+            "否则",
+            "然而"
+          ],
+          "answer": "除此以外",
+          "explain": "Bổ sung thêm chức năng ngoài những điều vừa nêu → 除此以外，还……"
+        },
+        {
+          "type": "choice",
+          "q": "这家店卖衣服，___，还卖鞋和包。",
+          "options": [
+            "除此以外",
+            "因此",
+            "否则",
+            "然而"
+          ],
+          "answer": "除此以外",
+          "explain": "Thêm mặt hàng khác ngoài quần áo → 除此以外，还卖……"
+        },
+        {
+          "type": "choice",
+          "q": "他们长得很像，但___，几乎找不到其他共同点。",
+          "options": [
+            "除此以外",
+            "因此",
+            "否则",
+            "然而"
+          ],
+          "answer": "除此以外",
+          "explain": "“Ngoài điều này ra gần như không có điểm chung khác” → 除此以外."
+        },
+        {
+          "type": "choice",
+          "q": "北方人过年爱吃饺子，是因为味道好，___，还因为全家人一起包饺子是交流机会。",
+          "options": [
+            "除此以外",
+            "因此",
+            "否则",
+            "然而"
+          ],
+          "answer": "除此以外",
+          "explain": "Nêu thêm lý do thứ hai ngoài lý do đã nói → 除此以外，还因为……"
+        },
+        {
+          "type": "choice",
+          "q": "这个城市环境很好，___，交通也很方便。",
+          "options": [
+            "除此以外",
+            "因此",
+            "否则",
+            "然而"
+          ],
+          "answer": "除此以外",
+          "explain": "Bổ sung thêm ưu điểm khác → 除此以外. 因此 sẽ tạo quan hệ nhân quả sai."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这家店",
+            "卖衣服",
+            "除此以外",
+            "还",
+            "卖",
+            "鞋和包"
+          ],
+          "answer": "这家店卖衣服，除此以外，还卖鞋和包。",
+          "alt": [],
+          "vi": "Cửa hàng này bán quần áo, ngoài ra còn bán giày và túi."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "手机",
+            "能",
+            "打电话",
+            "除此以外",
+            "还能",
+            "听音乐"
+          ],
+          "answer": "手机能打电话，除此以外，还能听音乐。",
+          "alt": [],
+          "vi": "Điện thoại có thể gọi điện, ngoài ra còn nghe được nhạc."
+        }
+      ]
+    },
+    {
+      "id": "18.5",
+      "title": "把……叫作……",
+      "pattern": "把 + A + 叫作 + B",
+      "meaning": "Cấu trúc nghĩa “gọi A là B”: phần sau 叫作 là tên gọi của sự vật đứng trước. Sau 把 thường là danh từ, đại từ hoặc cụm danh từ.",
+      "notes": [
+        "把 + sự vật + 叫作 + “tên gọi”: 人们把地球叫作“地球村”.",
+        "Sau 叫作 thường là tên gọi (hay đặt trong dấu ngoặc kép).",
+        "Sau 把 thường là danh từ, đại từ hoặc cụm danh từ: 把它叫作“母亲河”, 把这个习惯叫作“暖房”."
+      ],
+      "examples": [
+        [
+          "现在人们把地球叫作“地球村”。",
+          "Xiànzài rénmen bǎ dìqiú jiàozuò “dìqiúcūn”.",
+          "Bây giờ người ta gọi Trái Đất là “làng toàn cầu”."
+        ],
+        [
+          "黄河是中国第二大河，人们把它叫作“母亲河”。",
+          "Huánghé shì Zhōngguó dì-èr dà hé, rénmen bǎ tā jiàozuò “mǔqīnhé”.",
+          "Hoàng Hà là con sông lớn thứ hai Trung Quốc, người ta gọi nó là “sông mẹ”."
+        ],
+        [
+          "中国人搬了新家以后会请亲戚朋友吃饭，人们把这个习惯叫作“暖房”。",
+          "Zhōngguórén bān le xīn jiā yǐhòu huì qǐng qīnqi péngyou chīfàn, rénmen bǎ zhège xíguàn jiàozuò “nuǎnfáng”.",
+          "Người Trung Quốc chuyển nhà mới thường mời họ hàng bạn bè ăn cơm, người ta gọi thói quen này là “nuǎnfáng” (mừng nhà mới)."
+        ],
+        [
+          "我们把这种水果叫作“苹果”。",
+          "Wǒmen bǎ zhè zhǒng shuǐguǒ jiàozuò “píngguǒ”.",
+          "Chúng tôi gọi loại trái cây này là “táo”."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "人们___黄河叫作“母亲河”。",
+          "options": [
+            "把",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "把",
+          "explain": "把……叫作……: cấu trúc cố định “gọi … là …”. 对/被/比 không tạo cấu trúc này."
+        },
+        {
+          "type": "choice",
+          "q": "现在人们把地球___作“地球村”。",
+          "options": [
+            "叫",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "叫",
+          "explain": "叫作: “gọi là” — 把……叫作……"
+        },
+        {
+          "type": "choice",
+          "q": "人们把这个习惯___作“暖房”。",
+          "options": [
+            "叫",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "叫",
+          "explain": "把……叫作……: 叫 đi với 作 để nêu tên gọi."
+        },
+        {
+          "type": "choice",
+          "q": "人们把它叫___“母亲河”。",
+          "options": [
+            "作",
+            "的",
+            "得",
+            "了"
+          ],
+          "answer": "作",
+          "explain": "叫作 (jiàozuò): gọi là. 的/得/了 không tạo thành cụm này."
+        },
+        {
+          "type": "choice",
+          "q": "黄河是中国第二大河，人们把它___作“母亲河”。",
+          "options": [
+            "叫",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "叫",
+          "explain": "把它叫作“母亲河”: tên gọi của sự vật đứng trước 叫作."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "人们",
+            "把",
+            "地球",
+            "叫作",
+            "地球村"
+          ],
+          "answer": "人们把地球叫作“地球村”。",
+          "alt": [],
+          "vi": "Người ta gọi Trái Đất là “làng toàn cầu”."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "人们",
+            "把",
+            "这个",
+            "习惯",
+            "叫作",
+            "暖房"
+          ],
+          "answer": "人们把这个习惯叫作“暖房”。",
+          "alt": [],
+          "vi": "Người ta gọi thói quen này là “nuǎnfáng” (mừng nhà mới)."
+        }
+      ]
+    }
   ]
 }
