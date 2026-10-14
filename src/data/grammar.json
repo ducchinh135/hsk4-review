@@ -6145,5 +6145,1870 @@
         }
       ]
     }
+  ],
+  "L11": [
+    {
+      "id": "11.1",
+      "title": "连",
+      "pattern": "连 + N，也/都 + ……",
+      "meaning": "Giới từ: ngay cả, đến cả — nhấn mạnh một trường hợp cực đoan để ngụ ý những trường hợp khác còn hơn thế. Hay dùng cấu trúc 连……也/都……",
+      "notes": [
+        "Cấu trúc 连……也/都……: vế sau cần có 也 hoặc 都.",
+        "Danh từ sau 连 có thể là chủ ngữ (连你自己都不喜欢) hoặc tân ngữ được đảo lên trước động từ (连中文小说都看得懂).",
+        "Nhấn mạnh ý: đến cả trường hợp này còn như vậy, thì các trường hợp khác càng như vậy."
+      ],
+      "examples": [
+        [
+          "连你自己都不喜欢自己，别人怎么会喜欢你呢？",
+          "Lián nǐ zìjǐ dōu bù xǐhuan zìjǐ, biérén zěnme huì xǐhuan nǐ ne?",
+          "Đến cả bản thân bạn còn không thích mình, người khác sao có thể thích bạn?"
+        ],
+        [
+          "你太厉害了，连中文小说都看得懂！",
+          "Nǐ tài lìhai le, lián Zhōngwén xiǎoshuō dōu kàn de dǒng!",
+          "Bạn giỏi quá, đến cả tiểu thuyết tiếng Trung cũng đọc hiểu!"
+        ],
+        [
+          "这个问题很简单，连小孩子都会做。",
+          "Zhège wèntí hěn jiǎndān, lián xiǎoháizi dōu huì zuò.",
+          "Vấn đề này rất đơn giản, ngay cả trẻ con cũng làm được."
+        ],
+        [
+          "他太忙了，连吃饭的时间都没有。",
+          "Tā tài máng le, lián chīfàn de shíjiān dōu méiyǒu.",
+          "Anh ấy bận quá, đến thời gian ăn cơm cũng không có."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "这个问题很简单，___小孩子都会做。",
+          "options": [
+            "连",
+            "对",
+            "被",
+            "把"
+          ],
+          "answer": "连",
+          "explain": "连……都……: nhấn mạnh “đến cả trẻ con”. 对/被/把 không tạo được cấu trúc này."
+        },
+        {
+          "type": "choice",
+          "q": "他太忙了，连吃饭的时间___没有。",
+          "options": [
+            "都",
+            "才",
+            "却",
+            "刚"
+          ],
+          "answer": "都",
+          "explain": "连……都……: vế sau dùng 都 (hoặc 也) với phủ định 没有."
+        },
+        {
+          "type": "choice",
+          "q": "你太厉害了，连中文小说___看得懂！",
+          "options": [
+            "都",
+            "才",
+            "却",
+            "刚"
+          ],
+          "answer": "都",
+          "explain": "连中文小说都看得懂: tân ngữ đảo lên sau 连, vế sau có 都."
+        },
+        {
+          "type": "choice",
+          "q": "他累得连话___不想说。",
+          "options": [
+            "都",
+            "才",
+            "却",
+            "刚"
+          ],
+          "answer": "都",
+          "explain": "连话都不想说: nhấn mạnh mức độ cực đoan (đến nói cũng không muốn)."
+        },
+        {
+          "type": "choice",
+          "q": "我忙得___周末都在加班。",
+          "options": [
+            "连",
+            "对",
+            "被",
+            "把"
+          ],
+          "answer": "连",
+          "explain": "连周末都在加班: đến cả cuối tuần cũng tăng ca — trường hợp cực đoan."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这个问题",
+            "很简单",
+            "连",
+            "小孩子",
+            "都",
+            "会做"
+          ],
+          "answer": "这个问题很简单，连小孩子都会做。",
+          "alt": [],
+          "vi": "Vấn đề này rất đơn giản, ngay cả trẻ con cũng làm được."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "太忙了",
+            "连",
+            "吃饭",
+            "的时间",
+            "都",
+            "没有"
+          ],
+          "answer": "他太忙了，连吃饭的时间都没有。",
+          "alt": [],
+          "vi": "Anh ấy bận quá, đến thời gian ăn cơm cũng không có."
+        }
+      ]
+    },
+    {
+      "id": "11.2",
+      "title": "否则",
+      "pattern": "A，否则 + B",
+      "meaning": "Liên từ: nếu không thì, bằng không thì. Mở đầu vế sau; nêu kết quả (thường xấu) nếu vế trước không đúng, hoặc nêu một lựa chọn khác.",
+      "notes": [
+        "Đứng đầu vế sau, nêu hậu quả hoặc lựa chọn thay thế nếu điều ở vế trước không xảy ra: 你最好四点前去，否则就明天再去.",
+        "Cũng dùng để suy luận ngược: 他一定有急事，否则不会打这么多次电话 (nếu không có việc gấp thì đã không gọi).",
+        "Vế sau thường có 就 / 会 / 不会."
+      ],
+      "examples": [
+        [
+          "他一定有急事找你，否则不会打这么多次电话。",
+          "Tā yídìng yǒu jíshì zhǎo nǐ, fǒuzé bú huì dǎ zhème duō cì diànhuà.",
+          "Anh ấy chắc chắn có việc gấp tìm bạn, nếu không đã không gọi nhiều cuộc thế."
+        ],
+        [
+          "你最好下午四点前去公司，否则就明天再去。",
+          "Nǐ zuìhǎo xiàwǔ sì diǎn qián qù gōngsī, fǒuzé jiù míngtiān zài qù.",
+          "Bạn nên đến công ty trước bốn giờ chiều, nếu không thì mai hãy đi."
+        ],
+        [
+          "快点儿走，否则要迟到了。",
+          "Kuài diǎnr zǒu, fǒuzé yào chídào le.",
+          "Đi nhanh lên, nếu không sẽ muộn mất."
+        ],
+        [
+          "要认真复习，否则考不好。",
+          "Yào rènzhēn fùxí, fǒuzé kǎo bu hǎo.",
+          "Phải ôn tập nghiêm túc, nếu không sẽ thi không tốt."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "快点儿走，___要迟到了。",
+          "options": [
+            "否则",
+            "因此",
+            "即使",
+            "只要"
+          ],
+          "answer": "否则",
+          "explain": "“Nếu không đi nhanh thì sẽ muộn” → 否则. 因此 sẽ biến câu thành quan hệ nhân – quả sai."
+        },
+        {
+          "type": "choice",
+          "q": "你最好下午四点前去，___就明天再去。",
+          "options": [
+            "否则",
+            "因此",
+            "即使",
+            "只要"
+          ],
+          "answer": "否则",
+          "explain": "否则 nêu lựa chọn khác nếu không kịp bốn giờ chiều."
+        },
+        {
+          "type": "choice",
+          "q": "他一定有急事找你，___不会打这么多次电话。",
+          "options": [
+            "否则",
+            "因此",
+            "即使",
+            "只要"
+          ],
+          "answer": "否则",
+          "explain": "“Nếu không có việc gấp thì đã không gọi nhiều thế” → 否则."
+        },
+        {
+          "type": "choice",
+          "q": "要认真复习，___考不好。",
+          "options": [
+            "否则",
+            "因此",
+            "即使",
+            "虽然"
+          ],
+          "answer": "否则",
+          "explain": "“Nếu không ôn kỹ thì sẽ thi không tốt” → 否则."
+        },
+        {
+          "type": "choice",
+          "q": "你要早点儿睡，___明天起不来。",
+          "options": [
+            "否则",
+            "因此",
+            "即使",
+            "只要"
+          ],
+          "answer": "否则",
+          "explain": "Nêu hậu quả xấu nếu không ngủ sớm → 否则."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "快点儿",
+            "走",
+            "否则",
+            "要",
+            "迟到",
+            "了"
+          ],
+          "answer": "快点儿走，否则要迟到了。",
+          "alt": [],
+          "vi": "Đi nhanh lên, nếu không sẽ muộn mất."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "一定",
+            "有急事",
+            "否则",
+            "不会",
+            "打",
+            "这么多",
+            "电话"
+          ],
+          "answer": "他一定有急事，否则不会打这么多电话。",
+          "alt": [],
+          "vi": "Anh ấy chắc chắn có việc gấp, nếu không đã không gọi nhiều cuộc thế."
+        }
+      ]
+    },
+    {
+      "id": "11.3",
+      "title": "无论",
+      "pattern": "无论 + 疑问代词 / A 还是 B，都/也 + ……",
+      "meaning": "Liên từ: bất kể, dù thế nào thì kết quả hay kết luận cũng không đổi. Thường dùng 无论……都/也……; sau 无论 là các lựa chọn song song (A还是B) hoặc đại từ nghi vấn mang nghĩa “bất kỳ”.",
+      "notes": [
+        "无论……都/也……: kết quả không đổi trong mọi điều kiện.",
+        "Sau 无论: các lựa chọn (无论是 A 还是 B) hoặc đại từ nghi vấn (什么, 怎么样, 谁……).",
+        "Khác 不管: 无论 chủ yếu dùng trong văn viết, có thể đi với 如何 / 是否; 不管 thiên về khẩu ngữ, không đi với 如何 / 是否.",
+        "Dạng khẳng định–phủ định: 不管 nối thẳng (不管热不热); 无论 thường phải chèn 还是 (无论热还是不热)."
+      ],
+      "examples": [
+        [
+          "无论做什么事都要注意方法。",
+          "Wúlùn zuò shénme shì dōu yào zhùyì fāngfǎ.",
+          "Dù làm việc gì cũng phải chú ý phương pháp."
+        ],
+        [
+          "无论是烦恼的事还是高兴的事，我都会写进日记。",
+          "Wúlùn shì fánnǎo de shì háishi gāoxìng de shì, wǒ dōu huì xiě jìn rìjì.",
+          "Dù là chuyện phiền muộn hay chuyện vui, tôi đều viết vào nhật ký."
+        ],
+        [
+          "无论结果怎么样，我们都应该为他高兴。",
+          "Wúlùn jiéguǒ zěnmeyàng, wǒmen dōu yīnggāi wèi tā gāoxìng.",
+          "Dù kết quả thế nào, chúng ta cũng nên mừng cho anh ấy."
+        ],
+        [
+          "无论如何，我都不会离开你。",
+          "Wúlùn rúhé, wǒ dōu bú huì líkāi nǐ.",
+          "Dù thế nào đi nữa, tôi cũng sẽ không rời xa bạn."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "___做什么事都要注意方法。",
+          "options": [
+            "无论",
+            "否则",
+            "然而",
+            "同时"
+          ],
+          "answer": "无论",
+          "explain": "Đại từ nghi vấn 什么 + vế sau có 都 → 无论……都……"
+        },
+        {
+          "type": "choice",
+          "q": "无论结果怎么样，我们___应该为他高兴。",
+          "options": [
+            "都",
+            "才",
+            "却",
+            "刚"
+          ],
+          "answer": "都",
+          "explain": "无论……都……: kết quả không đổi trong mọi tình huống."
+        },
+        {
+          "type": "choice",
+          "q": "无论是烦恼的事___高兴的事，我都会写进日记。",
+          "options": [
+            "还是",
+            "但是",
+            "所以",
+            "因此"
+          ],
+          "answer": "还是",
+          "explain": "Liệt kê các lựa chọn sau 无论: 无论是……还是……"
+        },
+        {
+          "type": "choice",
+          "q": "___如何，我都不会离开你。",
+          "options": [
+            "无论",
+            "否则",
+            "然而",
+            "同时"
+          ],
+          "answer": "无论",
+          "explain": "无论如何: cụm cố định “dù thế nào đi nữa”. 如何 là từ trang trọng đi với 无论."
+        },
+        {
+          "type": "choice",
+          "q": "无论热___不热，他总是穿这么多。",
+          "options": [
+            "还是",
+            "不是",
+            "也是",
+            "就是"
+          ],
+          "answer": "还是",
+          "explain": "无论 + dạng khẳng định–phủ định thường chèn 还是: 无论热还是不热."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "无论",
+            "做",
+            "什么事",
+            "都",
+            "要",
+            "注意",
+            "方法"
+          ],
+          "answer": "无论做什么事都要注意方法。",
+          "alt": [],
+          "vi": "Dù làm việc gì cũng phải chú ý phương pháp."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "无论",
+            "结果",
+            "怎么样",
+            "我们",
+            "都",
+            "应该",
+            "为他高兴"
+          ],
+          "answer": "无论结果怎么样，我们都应该为他高兴。",
+          "alt": [],
+          "vi": "Dù kết quả thế nào, chúng ta cũng nên mừng cho anh ấy."
+        }
+      ]
+    },
+    {
+      "id": "11.4",
+      "title": "然而",
+      "pattern": "A，然而 + B",
+      "meaning": "Liên từ: nhưng, tuy nhiên — mở đầu vế sau để chuyển ý (đối lập). Chủ yếu dùng trong văn viết, mang sắc thái trang trọng.",
+      "notes": [
+        "Đứng đầu vế sau để chuyển sang ý trái ngược: 他失败了很多次，然而一直没有放弃.",
+        "Chủ yếu dùng trong văn viết; sau 然而 có thể có dấu phẩy (ngắt nghỉ).",
+        "Hay đi sau một vế nêu tình huống hoặc sau 虽然: 很多人觉得生活幸福，然而每个人对幸福的看法并不相同."
+      ],
+      "examples": [
+        [
+          "他失败了很多次，然而一直没有放弃。",
+          "Tā shībài le hěn duō cì, rán'ér yìzhí méiyǒu fàngqì.",
+          "Anh ấy thất bại nhiều lần, nhưng vẫn không bỏ cuộc."
+        ],
+        [
+          "很多人觉得自己很幸福，然而每个人对幸福的看法并不相同。",
+          "Hěn duō rén juéde zìjǐ hěn xìngfú, rán'ér měi ge rén duì xìngfú de kànfǎ bìng bù xiāngtóng.",
+          "Nhiều người thấy mình rất hạnh phúc, nhưng cách nhìn về hạnh phúc của mỗi người không giống nhau."
+        ],
+        [
+          "他很努力，然而成绩一直不太好。",
+          "Tā hěn nǔlì, rán'ér chéngjì yìzhí bú tài hǎo.",
+          "Anh ấy rất chăm chỉ, nhưng thành tích vẫn luôn không tốt lắm."
+        ],
+        [
+          "书里说得很有道理，然而，你不能完全相信书上的内容。",
+          "Shū lǐ shuō de hěn yǒu dàolǐ, rán'ér, nǐ bù néng wánquán xiāngxìn shū shang de nèiróng.",
+          "Sách nói rất có lý, tuy nhiên bạn không thể tin hoàn toàn vào nội dung trong sách."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "他失败了很多次，___一直没有放弃。",
+          "options": [
+            "然而",
+            "否则",
+            "即使",
+            "只要"
+          ],
+          "answer": "然而",
+          "explain": "Chuyển ý: thất bại nhiều lần nhưng không bỏ cuộc → 然而."
+        },
+        {
+          "type": "choice",
+          "q": "他很努力，___成绩一直不太好。",
+          "options": [
+            "然而",
+            "否则",
+            "即使",
+            "只要"
+          ],
+          "answer": "然而",
+          "explain": "“Chăm chỉ” và “thành tích không tốt” đối lập nhau → 然而."
+        },
+        {
+          "type": "choice",
+          "q": "很多人觉得生活很幸福，___每个人对幸福的看法并不相同。",
+          "options": [
+            "然而",
+            "否则",
+            "即使",
+            "只要"
+          ],
+          "answer": "然而",
+          "explain": "Chuyển ý trang trọng ở đầu vế sau → 然而."
+        },
+        {
+          "type": "choice",
+          "q": "书里说得很有道理，___，你不能完全相信书上的内容。",
+          "options": [
+            "然而",
+            "否则",
+            "即使",
+            "只要"
+          ],
+          "answer": "然而",
+          "explain": "然而 đứng đầu vế sau, có thể có dấu phẩy ngay sau."
+        },
+        {
+          "type": "choice",
+          "q": "他很有钱，___他并不快乐。",
+          "options": [
+            "然而",
+            "否则",
+            "即使",
+            "只要"
+          ],
+          "answer": "然而",
+          "explain": "Có tiền nhưng không vui → chuyển ý: 然而."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "失败了",
+            "很多次",
+            "然而",
+            "一直",
+            "没有放弃"
+          ],
+          "answer": "他失败了很多次，然而一直没有放弃。",
+          "alt": [],
+          "vi": "Anh ấy thất bại nhiều lần, nhưng vẫn không bỏ cuộc."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "很努力",
+            "然而",
+            "成绩",
+            "一直",
+            "不太好"
+          ],
+          "answer": "他很努力，然而成绩一直不太好。",
+          "alt": [],
+          "vi": "Anh ấy rất chăm chỉ, nhưng thành tích vẫn luôn không tốt lắm."
+        }
+      ]
+    },
+    {
+      "id": "11.5",
+      "title": "同时",
+      "pattern": "A。同时，B   |   在……的同时，……",
+      "meaning": "(1) Liên từ: đồng thời, ngoài ra — thêm một ý bổ sung, hay đi với 又/也/还. (2) Danh từ: hai việc xảy ra cùng lúc, thường dùng 在……(的)同时.",
+      "notes": [
+        "Liên từ: mở đầu vế/câu sau để bổ sung thêm: 小孩子想法简单，所以很快乐。同时，他们也最诚实.",
+        "Danh từ: 在……的同时: trong khi…, đồng thời…: 在学习汉语的同时，我还认识了很多中国朋友.",
+        "Phần sau thường có 又 / 也 / 还."
+      ],
+      "examples": [
+        [
+          "小孩子的想法没有那么复杂，所以总是很快乐。同时，他们也最诚实。",
+          "Xiǎo háizi de xiǎngfǎ méiyǒu nàme fùzá, suǒyǐ zǒngshì hěn kuàilè. Tóngshí, tāmen yě zuì chéngshí.",
+          "Suy nghĩ của trẻ con không phức tạp nên luôn vui vẻ. Đồng thời, chúng cũng thật thà nhất."
+        ],
+        [
+          "阅读能丰富你的知识，同时，它还会丰富你的感情。",
+          "Yuèdú néng fēngfù nǐ de zhīshi, tóngshí, tā hái huì fēngfù nǐ de gǎnqíng.",
+          "Đọc sách làm phong phú kiến thức, đồng thời còn làm phong phú tình cảm."
+        ],
+        [
+          "在学习汉语的同时，我还认识了很多中国朋友。",
+          "Zài xuéxí Hànyǔ de tóngshí, wǒ hái rènshi le hěn duō Zhōngguó péngyou.",
+          "Trong lúc học tiếng Trung, tôi còn quen được nhiều bạn Trung Quốc."
+        ],
+        [
+          "这个故事让人觉得好笑的同时，又让人觉得有些难过。",
+          "Zhège gùshi ràng rén juéde hǎoxiào de tóngshí, yòu ràng rén juéde yǒuxiē nánguò.",
+          "Câu chuyện này vừa khiến người ta thấy buồn cười, vừa khiến người ta thấy hơi buồn."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "在学习汉语___同时，我还认识了很多中国朋友。",
+          "options": [
+            "的",
+            "地",
+            "得",
+            "了"
+          ],
+          "answer": "的",
+          "explain": "在……的同时: cấu trúc quen dùng, giữa là phần động từ/danh từ, sau đó có 的."
+        },
+        {
+          "type": "choice",
+          "q": "阅读能丰富你的知识，___，它还会丰富你的感情。",
+          "options": [
+            "同时",
+            "否则",
+            "然而",
+            "无论"
+          ],
+          "answer": "同时",
+          "explain": "同时 làm liên từ, thêm một ý bổ sung (còn làm phong phú tình cảm)."
+        },
+        {
+          "type": "choice",
+          "q": "___学习汉语的同时，我还认识了很多中国朋友。",
+          "options": [
+            "在",
+            "对",
+            "被",
+            "把"
+          ],
+          "answer": "在",
+          "explain": "在……的同时: 在 mở đầu cấu trúc."
+        },
+        {
+          "type": "choice",
+          "q": "小孩子想法简单，所以总是很快乐。___，他们也是最诚实的。",
+          "options": [
+            "同时",
+            "否则",
+            "然而",
+            "无论"
+          ],
+          "answer": "同时",
+          "explain": "同时 nối thêm một đặc điểm tích cực khác (chân thật) → bổ sung."
+        },
+        {
+          "type": "choice",
+          "q": "这个故事让人觉得好笑的___，又让人觉得有些难过。",
+          "options": [
+            "同时",
+            "同样",
+            "同学",
+            "同意"
+          ],
+          "answer": "同时",
+          "explain": "……的同时，又……: hai cảm giác cùng xuất hiện một lúc."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "在",
+            "学习",
+            "汉语",
+            "的",
+            "同时",
+            "我",
+            "认识了",
+            "很多朋友"
+          ],
+          "answer": "在学习汉语的同时，我认识了很多朋友。",
+          "alt": [],
+          "vi": "Trong lúc học tiếng Trung, tôi đã quen nhiều bạn."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "阅读",
+            "能",
+            "丰富",
+            "知识",
+            "同时",
+            "还会",
+            "丰富",
+            "感情"
+          ],
+          "answer": "阅读能丰富知识，同时还会丰富感情。",
+          "alt": [],
+          "vi": "Đọc sách làm phong phú kiến thức, đồng thời còn làm phong phú tình cảm."
+        }
+      ]
+    }
+  ],
+  "L12": [
+    {
+      "id": "12.1",
+      "title": "并且",
+      "pattern": "A 并且 B（động từ / tính từ / vế câu）",
+      "meaning": "Liên từ: và, đồng thời, hơn nữa. Nối động từ hoặc tính từ song song (nhiều hành động hay nhiều tính chất cùng tồn tại), hoặc nối các vế/câu để thêm một tầng ý nghĩa.",
+      "notes": [
+        "Nối hai động từ hoặc tính từ song song: 认真并且有经验.",
+        "Nối vế hoặc câu để thêm một tầng ý: 价格便宜，并且质量很好.",
+        "并且 chỉ bổ sung, tiến thêm một bước; không dùng để chuyển ý (khác 但是)."
+      ],
+      "examples": [
+        [
+          "他做事很认真，并且有丰富的经验。",
+          "Tā zuòshì hěn rènzhēn, bìngqiě yǒu fēngfù de jīngyàn.",
+          "Anh ấy làm việc rất nghiêm túc, hơn nữa còn nhiều kinh nghiệm."
+        ],
+        [
+          "这种花比普通的花大，并且特别漂亮。",
+          "Zhè zhǒng huā bǐ pǔtōng de huā dà, bìngqiě tèbié piàoliang.",
+          "Loại hoa này to hơn hoa thường, hơn nữa đặc biệt đẹp."
+        ],
+        [
+          "这房子家具很全，并且价格也便宜。",
+          "Zhè fángzi jiājù hěn quán, bìngqiě jiàgé yě piányi.",
+          "Căn nhà này đồ đạc đầy đủ, hơn nữa giá cũng rẻ."
+        ],
+        [
+          "我们要及时发现问题，并且准确地找到解决的办法。",
+          "Wǒmen yào jíshí fāxiàn wèntí, bìngqiě zhǔnquè de zhǎodào jiějué de bànfǎ.",
+          "Chúng ta cần kịp thời phát hiện vấn đề, đồng thời tìm chính xác cách giải quyết."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "他做事很认真，___有丰富的经验。",
+          "options": [
+            "并且",
+            "否则",
+            "然而",
+            "无论"
+          ],
+          "answer": "并且",
+          "explain": "Hai mặt cùng chiều (nghiêm túc, nhiều kinh nghiệm) → 并且 thêm một tầng ý."
+        },
+        {
+          "type": "choice",
+          "q": "这房子家具很全，___价格也便宜。",
+          "options": [
+            "并且",
+            "否则",
+            "然而",
+            "无论"
+          ],
+          "answer": "并且",
+          "explain": "Bổ sung thêm ưu điểm → 并且. 然而 là chuyển ý nên không hợp."
+        },
+        {
+          "type": "choice",
+          "q": "我们要及时发现问题，___准确地找到解决的办法。",
+          "options": [
+            "并且",
+            "否则",
+            "然而",
+            "无论"
+          ],
+          "answer": "并且",
+          "explain": "Nối hai hành động diễn ra cùng nhau → 并且."
+        },
+        {
+          "type": "choice",
+          "q": "这种花比普通的花大，___特别漂亮。",
+          "options": [
+            "并且",
+            "否则",
+            "然而",
+            "并"
+          ],
+          "answer": "并且",
+          "explain": "并且 nối hai đặc điểm cùng chiều. 并 phải đứng trước từ phủ định nên không dùng ở đây."
+        },
+        {
+          "type": "choice",
+          "q": "她很聪明，___很努力。",
+          "options": [
+            "并且",
+            "否则",
+            "然而",
+            "无论"
+          ],
+          "answer": "并且",
+          "explain": "Hai ưu điểm cùng chiều → 并且."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "做事",
+            "很认真",
+            "并且",
+            "有",
+            "丰富的",
+            "经验"
+          ],
+          "answer": "他做事很认真，并且有丰富的经验。",
+          "alt": [],
+          "vi": "Anh ấy làm việc rất nghiêm túc, hơn nữa có nhiều kinh nghiệm."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这种花",
+            "比",
+            "普通的花",
+            "大",
+            "并且",
+            "特别",
+            "漂亮"
+          ],
+          "answer": "这种花比普通的花大，并且特别漂亮。",
+          "alt": [],
+          "vi": "Loại hoa này to hơn hoa thường, hơn nữa còn đặc biệt đẹp."
+        }
+      ]
+    },
+    {
+      "id": "12.2",
+      "title": "再……也……",
+      "pattern": "再 + V / Adj / 小句 + 也 + ……",
+      "meaning": "Cấu trúc nhượng bộ giả định: dù (có) … đến đâu cũng …. Kết quả sau 也 không đổi dù mức độ ở phần 再 tăng lên thế nào.",
+      "notes": [
+        "再 + động từ / tính từ / cụm: 再后悔, 再久, 再怎么不同意; vế sau có 也.",
+        "Nghĩa: dù…đến đâu cũng…: 事情已经发生了，你再后悔也无法改变.",
+        "Có thể thêm 不管 ở đầu: 不管别人再怎么不同意，也应该说出来."
+      ],
+      "examples": [
+        [
+          "事情已经发生了，你再后悔也无法改变。",
+          "Shìqing yǐjīng fāshēng le, nǐ zài hòuhuǐ yě wúfǎ gǎibiàn.",
+          "Việc đã xảy ra rồi, bạn có hối hận thế nào cũng không thay đổi được."
+        ],
+        [
+          "这件衣服穿得再久，也不容易坏。",
+          "Zhè jiàn yīfu chuān de zài jiǔ, yě bù róngyì huài.",
+          "Cái áo này mặc lâu đến đâu cũng không dễ hỏng."
+        ],
+        [
+          "工作再忙，他也每天锻炼身体。",
+          "Gōngzuò zài máng, tā yě měitiān duànliàn shēntǐ.",
+          "Công việc có bận đến đâu, anh ấy cũng tập thể dục mỗi ngày."
+        ],
+        [
+          "不管别人再怎么不同意，我也要说出自己的想法。",
+          "Bùguǎn biérén zài zěnme bù tóngyì, wǒ yě yào shuō chū zìjǐ de xiǎngfǎ.",
+          "Dù người khác có không đồng ý đến đâu, tôi cũng phải nói ra suy nghĩ của mình."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "事情已经发生了，你___后悔也无法改变。",
+          "options": [
+            "再",
+            "才",
+            "刚",
+            "就"
+          ],
+          "answer": "再",
+          "explain": "再……也……: “hối hận đến đâu cũng không thay đổi được”."
+        },
+        {
+          "type": "choice",
+          "q": "工作再忙，他___每天锻炼身体。",
+          "options": [
+            "也",
+            "才",
+            "却",
+            "刚"
+          ],
+          "answer": "也",
+          "explain": "再忙，……也……: vế sau dùng 也 để nêu kết quả không đổi."
+        },
+        {
+          "type": "choice",
+          "q": "这件衣服穿得再久，___不容易坏。",
+          "options": [
+            "也",
+            "才",
+            "刚",
+            "够"
+          ],
+          "answer": "也",
+          "explain": "穿得再久，也不容易坏: dù mặc lâu đến đâu cũng không hỏng."
+        },
+        {
+          "type": "choice",
+          "q": "不管别人再怎么不同意，我___要说出自己的想法。",
+          "options": [
+            "也",
+            "才",
+            "刚",
+            "够"
+          ],
+          "answer": "也",
+          "explain": "不管……再……，也……: kết quả không đổi dù người khác phản đối."
+        },
+        {
+          "type": "choice",
+          "q": "菜___好吃，我也不能吃太多。",
+          "options": [
+            "再",
+            "才",
+            "刚",
+            "就"
+          ],
+          "answer": "再",
+          "explain": "菜再好吃，我也不能吃太多: dù ngon đến đâu cũng không ăn nhiều."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "事情已经发生了",
+            "你",
+            "再",
+            "后悔",
+            "也",
+            "无法改变"
+          ],
+          "answer": "事情已经发生了，你再后悔也无法改变。",
+          "alt": [],
+          "vi": "Việc đã xảy ra rồi, bạn có hối hận thế nào cũng không thay đổi được."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "工作",
+            "再",
+            "忙",
+            "他",
+            "也",
+            "每天",
+            "锻炼"
+          ],
+          "answer": "工作再忙，他也每天锻炼。",
+          "alt": [],
+          "vi": "Công việc có bận đến đâu, anh ấy cũng tập thể dục mỗi ngày."
+        }
+      ]
+    },
+    {
+      "id": "12.3",
+      "title": "对于",
+      "pattern": "对于 + N，……   |   S + 对于 + N + ……",
+      "meaning": "Giới từ: đối với, về (đưa ra đối tượng mà thái độ hoặc tình hình có liên quan). Có thể đứng trước hoặc sau chủ ngữ.",
+      "notes": [
+        "对于 nhấn mạnh đối tượng (người hay việc mà thái độ, hành động hướng tới).",
+        "Có thể đứng trước hoặc sau chủ ngữ: 对于这件事，我…… / 我对于这件事……",
+        "Khác 关于: 关于 nhấn mạnh phạm vi, đề tài; chỉ đứng trước chủ ngữ và có thể làm tiêu đề (《关于……》). 对于 không làm tiêu đề."
+      ],
+      "examples": [
+        [
+          "对于这件事，我和大家的看法不一样。",
+          "Duìyú zhè jiàn shì, wǒ hé dàjiā de kànfǎ bù yíyàng.",
+          "Về chuyện này, quan điểm của tôi khác mọi người."
+        ],
+        [
+          "对于每个需要帮助的人，他都热情地提供帮助。",
+          "Duìyú měi ge xūyào bāngzhù de rén, tā dōu rèqíng de tígōng bāngzhù.",
+          "Với mỗi người cần giúp đỡ, anh ấy đều nhiệt tình giúp."
+        ],
+        [
+          "他对于每个需要帮助的人都很热情。",
+          "Tā duìyú měi ge xūyào bāngzhù de rén dōu hěn rèqíng.",
+          "Anh ấy đối với mỗi người cần giúp đỡ đều rất nhiệt tình."
+        ],
+        [
+          "对于这次调查计划，经理特别满意。",
+          "Duìyú zhè cì diàochá jìhuà, jīnglǐ tèbié mǎnyì.",
+          "Đối với kế hoạch điều tra lần này, giám đốc đặc biệt hài lòng."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "___这件事，我和大家的看法不一样。",
+          "options": [
+            "对于",
+            "无论",
+            "比如",
+            "同时"
+          ],
+          "answer": "对于",
+          "explain": "对于 + đối tượng (这件事): “về chuyện này”. 由于 chỉ nguyên nhân, 比如 dẫn ví dụ."
+        },
+        {
+          "type": "choice",
+          "q": "他___每个需要帮助的人都很热情。",
+          "options": [
+            "对于",
+            "关于",
+            "由于",
+            "比如"
+          ],
+          "answer": "对于",
+          "explain": "对于 có thể đứng sau chủ ngữ 他; 关于 chỉ đứng trước chủ ngữ nên không điền được ở đây."
+        },
+        {
+          "type": "choice",
+          "q": "《___中国经济的几个问题》是一本新书。",
+          "options": [
+            "关于",
+            "对于",
+            "由于",
+            "比如"
+          ],
+          "answer": "关于",
+          "explain": "Tên sách/bài viết dùng 关于; 对于 không làm tiêu đề."
+        },
+        {
+          "type": "choice",
+          "q": "___每个需要帮助的人，他都热情地提供帮助。",
+          "options": [
+            "对于",
+            "由于",
+            "比如",
+            "同时"
+          ],
+          "answer": "对于",
+          "explain": "对于 + đối tượng (người cần giúp), đứng đầu câu trước chủ ngữ 他."
+        },
+        {
+          "type": "choice",
+          "q": "我___这次调查计划很满意。",
+          "options": [
+            "对于",
+            "关于",
+            "由于",
+            "比如"
+          ],
+          "answer": "对于",
+          "explain": "对于 đứng sau chủ ngữ 我 để chỉ đối tượng của thái độ; 关于 không đứng sau chủ ngữ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "对于",
+            "这件事",
+            "我",
+            "和",
+            "大家",
+            "的看法",
+            "不一样"
+          ],
+          "answer": "对于这件事，我和大家的看法不一样。",
+          "alt": [],
+          "vi": "Về chuyện này, quan điểm của tôi khác mọi người."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "对于",
+            "每个",
+            "需要帮助的人",
+            "都",
+            "很热情"
+          ],
+          "answer": "他对于每个需要帮助的人都很热情。",
+          "alt": [],
+          "vi": "Anh ấy đối với mỗi người cần giúp đỡ đều rất nhiệt tình."
+        }
+      ]
+    },
+    {
+      "id": "12.4",
+      "title": "名量词重叠",
+      "pattern": "AA: 人人 · 天天 · 件件 · 本本 · 年年",
+      "meaning": "Lặp lại danh từ hoặc lượng từ theo dạng AA, nghĩa là “mỗi, từng, tất cả”. Từ lặp có thể làm chủ ngữ, định ngữ của chủ ngữ hoặc trạng ngữ; không làm tân ngữ hay định ngữ của tân ngữ.",
+      "notes": [
+        "Dạng AA: 人 → 人人, 天 → 天天, 件 → 件件, 本 → 本本: nghĩa “mỗi / mọi”.",
+        "Làm chủ ngữ (人人都会), định ngữ của chủ ngữ (件件小事) hoặc trạng ngữ (天天去).",
+        "Không làm tân ngữ hay định ngữ của tân ngữ: không nói “我喜欢人人” hay “我买了本本书”.",
+        "Câu thường có 都 đi kèm để nhấn mạnh “tất cả”."
+      ],
+      "examples": [
+        [
+          "人人都会使用语言。",
+          "Rénrén dōu huì shǐyòng yǔyán.",
+          "Ai cũng biết dùng ngôn ngữ."
+        ],
+        [
+          "白先生天天都去那家咖啡馆坐一会儿。",
+          "Bái xiānsheng tiāntiān dōu qù nà jiā kāfēiguǎn zuò yíhuìr.",
+          "Ông Bạch ngày nào cũng đến quán cà phê đó ngồi một lát."
+        ],
+        [
+          "件件小事都应该被看成是一次学习的机会。",
+          "Jiànjiàn xiǎoshì dōu yīnggāi bèi kànchéng shì yí cì xuéxí de jīhuì.",
+          "Chuyện nhỏ nào cũng nên được xem là một cơ hội học hỏi."
+        ],
+        [
+          "这位作家的书，本本都很有意思。",
+          "Zhè wèi zuòjiā de shū, běnběn dōu hěn yǒuyìsi.",
+          "Sách của nhà văn này, cuốn nào cũng rất thú vị."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "白先生___都去那家咖啡馆坐一会儿。",
+          "options": [
+            "天天",
+            "天天天",
+            "每天天",
+            "天个天"
+          ],
+          "answer": "天天",
+          "explain": "Danh từ 天 lặp theo dạng AA → 天天 (ngày nào cũng)."
+        },
+        {
+          "type": "choice",
+          "q": "___小事都应该被看成是一次学习的机会。",
+          "options": [
+            "件件",
+            "件件件",
+            "每件件",
+            "件个件"
+          ],
+          "answer": "件件",
+          "explain": "Lượng từ 件 lặp theo dạng AA → 件件 (mỗi việc)."
+        },
+        {
+          "type": "choice",
+          "q": "___都会使用语言，但怎么说好却是一门艺术。",
+          "options": [
+            "人人",
+            "人人人",
+            "每人人",
+            "人个人"
+          ],
+          "answer": "人人",
+          "explain": "Danh từ 人 lặp theo dạng AA → 人人 (mọi người)."
+        },
+        {
+          "type": "choice",
+          "q": "这位作家的书，___都很有意思。",
+          "options": [
+            "本本",
+            "本本本",
+            "每本本",
+            "本个本"
+          ],
+          "answer": "本本",
+          "explain": "Lượng từ 本 lặp theo dạng AA → 本本 (cuốn nào cũng)."
+        },
+        {
+          "type": "choice",
+          "q": "这家店的东西，件件___很好。",
+          "options": [
+            "都",
+            "才",
+            "却",
+            "刚"
+          ],
+          "answer": "都",
+          "explain": "Từ lặp AA làm chủ ngữ thường đi với 都 để nhấn mạnh “tất cả”."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "人人",
+            "都",
+            "会",
+            "使用",
+            "语言"
+          ],
+          "answer": "人人都会使用语言。",
+          "alt": [],
+          "vi": "Ai cũng biết dùng ngôn ngữ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "白先生",
+            "天天",
+            "都",
+            "去",
+            "那家",
+            "咖啡馆"
+          ],
+          "answer": "白先生天天都去那家咖啡馆。",
+          "alt": [],
+          "vi": "Ông Bạch ngày nào cũng đến quán cà phê đó."
+        }
+      ]
+    },
+    {
+      "id": "12.5",
+      "title": "相反",
+      "pattern": "A，相反，B   |   A 和 B 相反   |   相反的 + N",
+      "meaning": "(1) Liên từ: trái lại, ngược lại (hoặc tiến thêm một bước); (2) tính từ: trái ngược — làm vị ngữ hoặc định ngữ (làm định ngữ phải có 的).",
+      "notes": [
+        "Liên từ: đứng đầu hoặc giữa câu sau: 不但不能解决问题，相反，会使问题更复杂.",
+        "Tính từ làm vị ngữ: 调查结果和他们想的完全相反.",
+        "Tính từ làm định ngữ phải có 的: 相反的方向."
+      ],
+      "examples": [
+        [
+          "如果还用老办法，不但不能解决问题，相反，会使问题更复杂。",
+          "Rúguǒ hái yòng lǎo bànfǎ, bú dàn bù néng jiějué wèntí, xiāngfǎn, huì shǐ wèntí gèng fùzá.",
+          "Nếu còn dùng cách cũ thì không những không giải quyết được vấn đề, ngược lại còn làm nó phức tạp hơn."
+        ],
+        [
+          "调查结果和他们想的几乎完全相反。",
+          "Diàochá jiéguǒ hé tāmen xiǎng de jīhū wánquán xiāngfǎn.",
+          "Kết quả điều tra gần như hoàn toàn trái với điều họ nghĩ."
+        ],
+        [
+          "我以为任务能顺利完成，没想到事情向相反的方向发展了。",
+          "Wǒ yǐwéi rènwu néng shùnlì wánchéng, méi xiǎngdào shìqing xiàng xiāngfǎn de fāngxiàng fāzhǎn le.",
+          "Tôi tưởng nhiệm vụ sẽ hoàn thành suôn sẻ, không ngờ sự việc lại diễn biến theo hướng ngược lại."
+        ],
+        [
+          "他不但不生气，相反还笑了。",
+          "Tā bú dàn bù shēngqì, xiāngfǎn hái xiào le.",
+          "Anh ấy không những không giận, ngược lại còn cười."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "调查结果和他们想的几乎完全___，他们不得不改变原来的计划。",
+          "options": [
+            "相反",
+            "相同",
+            "相信",
+            "相当"
+          ],
+          "answer": "相反",
+          "explain": "“Trái ngược hoàn toàn nên phải đổi kế hoạch” → tính từ 相反 làm vị ngữ."
+        },
+        {
+          "type": "choice",
+          "q": "我本来以为任务能顺利完成，没想到事情向___的方向发展了。",
+          "options": [
+            "相反",
+            "相同",
+            "相信",
+            "相当"
+          ],
+          "answer": "相反",
+          "explain": "“Không ngờ sự việc đi theo hướng ngược lại” → 相反的方向 (định ngữ có 的)."
+        },
+        {
+          "type": "choice",
+          "q": "如果还用老办法，不但不能解决问题，___，会使问题更复杂。",
+          "options": [
+            "相反",
+            "无论",
+            "对于",
+            "偶尔"
+          ],
+          "answer": "相反",
+          "explain": "不但不……，相反……: liên từ 相反 nêu kết quả trái ngược."
+        },
+        {
+          "type": "choice",
+          "q": "他不但不生气，___还笑了。",
+          "options": [
+            "相反",
+            "无论",
+            "对于",
+            "偶尔"
+          ],
+          "answer": "相反",
+          "explain": "“Không những không giận mà ngược lại còn cười” → 相反."
+        },
+        {
+          "type": "choice",
+          "q": "我们的意见不一致，我的看法和你的完全___。",
+          "options": [
+            "相反",
+            "相同",
+            "相信",
+            "相当"
+          ],
+          "answer": "相反",
+          "explain": "Ý kiến không thống nhất nên phải là “trái ngược hoàn toàn” → 相反."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "调查",
+            "结果",
+            "和",
+            "他们",
+            "想的",
+            "完全",
+            "相反"
+          ],
+          "answer": "调查结果和他们想的完全相反。",
+          "alt": [],
+          "vi": "Kết quả điều tra hoàn toàn trái với điều họ nghĩ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "不但",
+            "不",
+            "生气",
+            "相反",
+            "还",
+            "笑了"
+          ],
+          "answer": "他不但不生气，相反还笑了。",
+          "alt": [],
+          "vi": "Anh ấy không những không giận, ngược lại còn cười."
+        }
+      ]
+    }
+  ],
+  "L13": [
+    {
+      "id": "13.1",
+      "title": "大概",
+      "pattern": "S + 大概 + V   |   大概 + số lượng   |   大概的 + N",
+      "meaning": "(1) Phó từ: khoảng, đại khái, có lẽ — ước lượng số lượng/thời gian hoặc phỏng đoán có xác suất cao. (2) Tính từ: sơ lược, không chính xác, không chi tiết.",
+      "notes": [
+        "Ước lượng số lượng, thời gian: 大概唱了六十多年, 大概有三分之二的人.",
+        "Phỏng đoán có xác suất cao: 校长大概会同意.",
+        "Tính từ “đại khái”: 大概的意思, 一个大概的想法 (có 的).",
+        "Khác 也许: 大概 phán đoán chắc chắn hơn và ước lượng được số lượng; 也许 chỉ là phỏng đoán nhẹ, không ước lượng số lượng, nhưng dùng được cho kế hoạch tương lai chưa chắc của chính mình. 也许 không làm tính từ."
+      ],
+      "examples": [
+        [
+          "他八岁就开始演出，到现在大概唱了六十多年了。",
+          "Tā bā suì jiù kāishǐ yǎnchū, dào xiànzài dàgài chàng le liùshí duō nián le.",
+          "Anh ấy tám tuổi đã biểu diễn, đến nay hát khoảng hơn sáu mươi năm."
+        ],
+        [
+          "你的计划很好，我想校长大概会同意。",
+          "Nǐ de jìhuà hěn hǎo, wǒ xiǎng xiàozhǎng dàgài huì tóngyì.",
+          "Kế hoạch của bạn rất tốt, tôi nghĩ hiệu trưởng có lẽ sẽ đồng ý."
+        ],
+        [
+          "现在即使不用翻译，他也能听懂大概的意思。",
+          "Xiànzài jíshǐ bú yòng fānyì, tā yě néng tīngdǒng dàgài de yìsi.",
+          "Bây giờ dù không cần phiên dịch, anh ấy cũng nghe hiểu đại ý."
+        ],
+        [
+          "大概有三分之二的人反对这样做。",
+          "Dàgài yǒu sān fēn zhī èr de rén fǎnduì zhèyàng zuò.",
+          "Khoảng hai phần ba số người phản đối làm như vậy."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "他八岁就开始演出，到现在___唱了六十多年了。",
+          "options": [
+            "大概",
+            "也许",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "大概",
+          "explain": "Ước lượng số năm (六十多年) → 大概. 也许 không dùng để ước lượng số lượng."
+        },
+        {
+          "type": "choice",
+          "q": "___有三分之二的人反对这样做。",
+          "options": [
+            "大概",
+            "也许",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "大概",
+          "explain": "大概 có thể ước lượng số lượng/tỉ lệ; 也许 thì không."
+        },
+        {
+          "type": "choice",
+          "q": "现在他能听懂___的意思，但是细节还不太明白。",
+          "options": [
+            "大概",
+            "也许",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "大概",
+          "explain": "大概的意思: 大概 làm tính từ “đại khái, sơ lược”, đứng trước 的."
+        },
+        {
+          "type": "choice",
+          "q": "我现在还不确定，以后___会成为一名记者。",
+          "options": [
+            "也许",
+            "大概",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "也许",
+          "explain": "Kế hoạch tương lai chưa chắc của chính mình → 也许. 大概 không dùng cho trường hợp này."
+        },
+        {
+          "type": "choice",
+          "q": "你的计划很好，我想校长___会同意。",
+          "options": [
+            "大概",
+            "偶尔",
+            "随着",
+            "由"
+          ],
+          "answer": "大概",
+          "explain": "Phỏng đoán có xác suất cao (kế hoạch tốt nên hiệu trưởng chắc sẽ đồng ý) → 大概."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "到现在",
+            "他",
+            "大概",
+            "唱了",
+            "六十多年"
+          ],
+          "answer": "到现在他大概唱了六十多年。",
+          "alt": [],
+          "vi": "Đến nay anh ấy hát khoảng hơn sáu mươi năm."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我想",
+            "校长",
+            "大概",
+            "会",
+            "同意"
+          ],
+          "answer": "我想校长大概会同意。",
+          "alt": [],
+          "vi": "Tôi nghĩ hiệu trưởng có lẽ sẽ đồng ý."
+        }
+      ]
+    },
+    {
+      "id": "13.2",
+      "title": "偶尔",
+      "pattern": "S + 偶尔 + V",
+      "meaning": "Phó từ: thỉnh thoảng, hãn hữu — việc rất ít khi xảy ra.",
+      "notes": [
+        "Chỉ việc xảy ra rất ít, tần suất thấp: 偶尔跟中国人一起唱几句.",
+        "Đối lập với 经常 / 常常; có thể đi cùng để so sánh: 有的人经常加班，有的人偶尔加班.",
+        "Có thể kết hợp với 也: 偶尔也会出现四个叶子的."
+      ],
+      "examples": [
+        [
+          "我常常跟着电视学唱京剧，偶尔跟中国人一起唱几句。",
+          "Wǒ chángcháng gēnzhe diànshì xué chàng jīngjù, ǒu'ěr gēn Zhōngguórén yìqǐ chàng jǐ jù.",
+          "Tôi thường học hát kinh kịch theo tivi, thỉnh thoảng hát vài câu cùng người Trung Quốc."
+        ],
+        [
+          "有的人经常加班，有的人偶尔加班。",
+          "Yǒu de rén jīngcháng jiābān, yǒu de rén ǒu'ěr jiābān.",
+          "Có người thường xuyên tăng ca, có người thỉnh thoảng mới tăng ca."
+        ],
+        [
+          "三叶草一般有三片叶子，偶尔也会有四片。",
+          "Sānyècǎo yìbān yǒu sān piàn yèzi, ǒu'ěr yě huì yǒu sì piàn.",
+          "Cỏ ba lá thường có ba lá, thỉnh thoảng cũng có bốn lá."
+        ],
+        [
+          "我平时不喝酒，偶尔和朋友一起喝一点儿。",
+          "Wǒ píngshí bù hē jiǔ, ǒu'ěr hé péngyou yìqǐ hē yìdiǎnr.",
+          "Bình thường tôi không uống rượu, thỉnh thoảng uống chút cùng bạn bè."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "我平时不喝酒，___和朋友一起喝一点儿。",
+          "options": [
+            "偶尔",
+            "经常",
+            "并",
+            "肯定"
+          ],
+          "answer": "偶尔",
+          "explain": "Bình thường không uống, chỉ rất hiếm khi uống → 偶尔. 经常 mâu thuẫn với “平时不喝酒”."
+        },
+        {
+          "type": "choice",
+          "q": "三叶草一般有三片叶子，___也会有四片。",
+          "options": [
+            "偶尔",
+            "经常",
+            "并",
+            "肯定"
+          ],
+          "answer": "偶尔",
+          "explain": "Trường hợp hiếm gặp (một ngoại lệ) → 偶尔也会……"
+        },
+        {
+          "type": "choice",
+          "q": "我很少跟中国人聊天，只是___说几句。",
+          "options": [
+            "偶尔",
+            "经常",
+            "并",
+            "肯定"
+          ],
+          "answer": "偶尔",
+          "explain": "“Rất ít khi, chỉ thỉnh thoảng nói vài câu” → 偶尔."
+        },
+        {
+          "type": "choice",
+          "q": "有的人经常加班，有的人___加班。",
+          "options": [
+            "偶尔",
+            "经常",
+            "并",
+            "肯定"
+          ],
+          "answer": "偶尔",
+          "explain": "Hai nhóm đối lập về tần suất: 经常 và 偶尔."
+        },
+        {
+          "type": "choice",
+          "q": "他很少迟到，只是___迟到一两次。",
+          "options": [
+            "偶尔",
+            "经常",
+            "并",
+            "肯定"
+          ],
+          "answer": "偶尔",
+          "explain": "“Rất ít khi, chỉ thỉnh thoảng một hai lần” → 偶尔."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我",
+            "平时",
+            "不",
+            "喝酒",
+            "偶尔",
+            "喝",
+            "一点儿"
+          ],
+          "answer": "我平时不喝酒，偶尔喝一点儿。",
+          "alt": [],
+          "vi": "Bình thường tôi không uống rượu, thỉnh thoảng uống một chút."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "有的人",
+            "经常",
+            "加班",
+            "有的人",
+            "偶尔",
+            "加班"
+          ],
+          "answer": "有的人经常加班，有的人偶尔加班。",
+          "alt": [],
+          "vi": "Có người thường xuyên tăng ca, có người thỉnh thoảng mới tăng ca."
+        }
+      ]
+    },
+    {
+      "id": "13.3",
+      "title": "由",
+      "pattern": "N + 由 + người / đơn vị + V（负责 · 组织 · 翻译）",
+      "meaning": "Giới từ: do, bởi — dẫn ra người (hoặc bên) chịu trách nhiệm làm việc gì.",
+      "notes": [
+        "由 + người hoặc đơn vị chịu trách nhiệm + động từ: 由王大夫负责.",
+        "Hay đi với các động từ như 负责, 组织, 翻译, 完成.",
+        "Có thể dùng trong cấu trúc 是……由……的 để nhấn mạnh người thực hiện: 这个词是由林先生翻译过来的."
+      ],
+      "examples": [
+        [
+          "按照规定，这件事应该由王大夫负责。",
+          "Ànzhào guīdìng, zhè jiàn shì yīnggāi yóu Wáng dàifu fùzé.",
+          "Theo quy định, việc này nên do bác sĩ Vương phụ trách."
+        ],
+        [
+          "“幽默”这个词最早是由林语堂先生翻译过来的。",
+          "“Yōumò” zhège cí zuì zǎo shì yóu Lín Yǔtáng xiānsheng fānyì guòlái de.",
+          "Từ “幽默” sớm nhất là do ông Lâm Ngữ Đường dịch sang."
+        ],
+        [
+          "这次活动由你们继续负责。",
+          "Zhè cì huódòng yóu nǐmen jìxù fùzé.",
+          "Hoạt động lần này tiếp tục do các bạn phụ trách."
+        ],
+        [
+          "今天的饭由我来做。",
+          "Jīntiān de fàn yóu wǒ lái zuò.",
+          "Cơm hôm nay do tôi nấu."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "这件事应该___王大夫负责。",
+          "options": [
+            "由",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "由",
+          "explain": "由 + người chịu trách nhiệm: “do bác sĩ Vương phụ trách”."
+        },
+        {
+          "type": "choice",
+          "q": "今天的饭___我来做。",
+          "options": [
+            "由",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "由",
+          "explain": "由我来做: “do tôi làm” — 由 dẫn ra người thực hiện."
+        },
+        {
+          "type": "choice",
+          "q": "这次活动___你们继续负责。",
+          "options": [
+            "由",
+            "对",
+            "把",
+            "比"
+          ],
+          "answer": "由",
+          "explain": "由你们继续负责: người phụ trách là “các bạn”."
+        },
+        {
+          "type": "choice",
+          "q": "这个词最早是___林先生翻译过来的。",
+          "options": [
+            "由",
+            "对",
+            "把",
+            "比"
+          ],
+          "answer": "由",
+          "explain": "是……由……翻译……的: nhấn mạnh người dịch → 由."
+        },
+        {
+          "type": "choice",
+          "q": "学校的活动___老师组织。",
+          "options": [
+            "由",
+            "对",
+            "把",
+            "比"
+          ],
+          "answer": "由",
+          "explain": "由老师组织: “do thầy cô tổ chức”."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这件事",
+            "应该",
+            "由",
+            "王大夫",
+            "负责"
+          ],
+          "answer": "这件事应该由王大夫负责。",
+          "alt": [],
+          "vi": "Việc này nên do bác sĩ Vương phụ trách."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "今天的",
+            "饭",
+            "由",
+            "我",
+            "来",
+            "做"
+          ],
+          "answer": "今天的饭由我来做。",
+          "alt": [],
+          "vi": "Cơm hôm nay do tôi nấu."
+        }
+      ]
+    },
+    {
+      "id": "13.4",
+      "title": "进行",
+      "pattern": "进行 + động từ hai âm tiết（调查 · 交流 · 讨论）",
+      "meaning": "Động từ: tiến hành (một hoạt động, công việc). Thường đứng trước động từ hai âm tiết; động từ ấy phải chỉ hành động tương đối trang trọng, nghiêm túc — hành động tạm thời, thường ngày thì không dùng 进行.",
+      "notes": [
+        "进行 + động từ hai âm tiết: 进行调查, 进行交流, 进行讨论.",
+        "Động từ theo sau chỉ hành động tương đối chính thức; việc thường ngày, nhất thời (吃饭, 睡觉) không dùng 进行.",
+        "Có thể làm vị ngữ độc lập khi chủ ngữ là hoạt động: 会议继续进行."
+      ],
+      "examples": [
+        [
+          "现在休息十五分钟，十点半会议继续进行。",
+          "Xiànzài xiūxi shíwǔ fēnzhōng, shí diǎn bàn huìyì jìxù jìnxíng.",
+          "Bây giờ nghỉ mười lăm phút, mười giờ rưỡi cuộc họp tiếp tục."
+        ],
+        [
+          "有人在网上专门进行过调查。",
+          "Yǒu rén zài wǎngshàng zhuānmén jìnxíng guo diàochá.",
+          "Có người đã chuyên tiến hành điều tra trên mạng."
+        ],
+        [
+          "他们会主动和别人进行交流。",
+          "Tāmen huì zhǔdòng hé biérén jìnxíng jiāoliú.",
+          "Họ chủ động giao lưu với người khác."
+        ],
+        [
+          "我们要对这个问题进行讨论。",
+          "Wǒmen yào duì zhège wèntí jìnxíng tǎolùn.",
+          "Chúng ta cần thảo luận vấn đề này."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "有人在网上专门___过调查。",
+          "options": [
+            "进行",
+            "通过",
+            "由于",
+            "随着"
+          ],
+          "answer": "进行",
+          "explain": "进行 + 调查 (động từ hai âm tiết, trang trọng) và có 过 → 进行过调查."
+        },
+        {
+          "type": "choice",
+          "q": "他们会主动和别人___交流。",
+          "options": [
+            "进行",
+            "通过",
+            "由于",
+            "随着"
+          ],
+          "answer": "进行",
+          "explain": "进行交流: tiến hành giao lưu, động từ 交流 là hai âm tiết."
+        },
+        {
+          "type": "choice",
+          "q": "现在休息十五分钟，十点半会议继续___。",
+          "options": [
+            "进行",
+            "通过",
+            "由于",
+            "随着"
+          ],
+          "answer": "进行",
+          "explain": "会议继续进行: cuộc họp tiếp tục diễn ra, 进行 làm vị ngữ."
+        },
+        {
+          "type": "choice",
+          "q": "我们要对这个问题___讨论。",
+          "options": [
+            "进行",
+            "通过",
+            "由于",
+            "随着"
+          ],
+          "answer": "进行",
+          "explain": "对……进行讨论: cấu trúc quen dùng."
+        },
+        {
+          "type": "choice",
+          "q": "老师对学生的作业___检查。",
+          "options": [
+            "进行",
+            "通过",
+            "由于",
+            "随着"
+          ],
+          "answer": "进行",
+          "explain": "对……进行检查: tiến hành kiểm tra, hành động trang trọng."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我们",
+            "要",
+            "对",
+            "这个问题",
+            "进行",
+            "讨论"
+          ],
+          "answer": "我们要对这个问题进行讨论。",
+          "alt": [],
+          "vi": "Chúng ta cần thảo luận vấn đề này."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "十点半",
+            "会议",
+            "继续",
+            "进行"
+          ],
+          "answer": "十点半会议继续进行。",
+          "alt": [],
+          "vi": "Mười giờ rưỡi cuộc họp tiếp tục."
+        }
+      ]
+    },
+    {
+      "id": "13.5",
+      "title": "随着",
+      "pattern": "随着 + (định ngữ +) từ hai âm tiết（发展 · 增长），……",
+      "meaning": "Giới từ: cùng với, theo đà — một việc là điều kiện đi kèm để việc khác xảy ra hay thay đổi. Phía sau thường là danh từ hoặc động từ hai âm tiết có định ngữ (社会的发展, 年龄的增长).",
+      "notes": [
+        "随着 + (định ngữ +) từ hai âm tiết chỉ quá trình hay sự thay đổi: 随着社会的发展, 随着年龄的增长.",
+        "Vế sau nêu sự thay đổi đi cùng: 京剧也在改变.",
+        "Thường đứng đầu câu làm trạng ngữ, sau đó có dấu phẩy."
+      ],
+      "examples": [
+        [
+          "随着社会的发展，京剧也在改变。",
+          "Suízhe shèhuì de fāzhǎn, jīngjù yě zài gǎibiàn.",
+          "Cùng với sự phát triển của xã hội, kinh kịch cũng đang thay đổi."
+        ],
+        [
+          "随着年龄的增长，他们会发现生活总在变化。",
+          "Suízhe niánlíng de zēngzhǎng, tāmen huì fāxiàn shēnghuó zǒng zài biànhuà.",
+          "Cùng với tuổi tác tăng lên, họ sẽ thấy cuộc sống luôn thay đổi."
+        ],
+        [
+          "随着经济的发展，人们的生活水平提高了。",
+          "Suízhe jīngjì de fāzhǎn, rénmen de shēnghuó shuǐpíng tígāo le.",
+          "Cùng với kinh tế phát triển, mức sống của mọi người đã nâng cao."
+        ],
+        [
+          "随着人们对茶的认识的加深，茶文化慢慢形成了。",
+          "Suízhe rénmen duì chá de rènshi de jiāshēn, chá wénhuà mànmàn xíngchéng le.",
+          "Cùng với việc con người hiểu về trà sâu hơn, văn hóa trà dần hình thành."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "___社会的发展，京剧也在改变。",
+          "options": [
+            "随着",
+            "进行",
+            "偶尔",
+            "大概"
+          ],
+          "answer": "随着",
+          "explain": "随着 + 社会的发展: cùng với sự phát triển, vế sau nêu sự thay đổi đi kèm."
+        },
+        {
+          "type": "choice",
+          "q": "___年龄的增长，他们会发现生活总在变化。",
+          "options": [
+            "随着",
+            "进行",
+            "偶尔",
+            "大概"
+          ],
+          "answer": "随着",
+          "explain": "随着年龄的增长: sự thay đổi diễn ra cùng với tuổi tác."
+        },
+        {
+          "type": "choice",
+          "q": "___经济的发展，人们的生活水平提高了。",
+          "options": [
+            "随着",
+            "进行",
+            "偶尔",
+            "大概"
+          ],
+          "answer": "随着",
+          "explain": "随着经济的发展: điều kiện đi kèm với sự nâng cao mức sống."
+        },
+        {
+          "type": "choice",
+          "q": "随着社会的发展，京剧___在改变。",
+          "options": [
+            "也",
+            "才",
+            "刚",
+            "够"
+          ],
+          "answer": "也",
+          "explain": "随着……，……也在改变: vế sau dùng 也 để nói điều đó cũng thay đổi theo."
+        },
+        {
+          "type": "choice",
+          "q": "随着人们对茶的认识的___，茶文化慢慢形成了。",
+          "options": [
+            "加深",
+            "加高",
+            "加大",
+            "加快"
+          ],
+          "answer": "加深",
+          "explain": "“Hiểu biết ngày càng sâu” → 认识的加深; các từ còn lại không đi với 认识."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "随着",
+            "社会",
+            "的",
+            "发展",
+            "京剧",
+            "也",
+            "在改变"
+          ],
+          "answer": "随着社会的发展，京剧也在改变。",
+          "alt": [],
+          "vi": "Cùng với sự phát triển của xã hội, kinh kịch cũng đang thay đổi."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "随着",
+            "年龄的增长",
+            "他们",
+            "会发现",
+            "生活",
+            "总在变化"
+          ],
+          "answer": "随着年龄的增长，他们会发现生活总在变化。",
+          "alt": [],
+          "vi": "Cùng với tuổi tác tăng lên, họ sẽ thấy cuộc sống luôn thay đổi."
+        }
+      ]
+    }
   ]
 }
