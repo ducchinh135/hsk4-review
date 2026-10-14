@@ -345,11 +345,20 @@ a.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .sidebar{ flex:0 0 190px; position:sticky; top:12px; display:flex; flex-direction:column; gap:6px; background:#ffffffaa; border-radius:18px; padding:8px; }
 .side-link{ display:block; text-decoration:none; padding:12px 16px; border-radius:14px; font-size:16px; font-weight:700; color:#555; }
 .side-link.active{ background:var(--accent,#333); color:#fff; }
+.side-toggle{ border:0; background:transparent; color:#555; font:inherit; font-size:13px; font-weight:700; cursor:pointer; padding:6px 10px; border-radius:10px; text-align:right; }
+.side-toggle:hover{ background:#0001; }
+.sidebar.collapsed{ flex-basis:56px; }
+.sidebar.collapsed .side-text{ display:none; }
+.sidebar.collapsed .side-link{ padding:12px 0; text-align:center; }
+.sidebar.collapsed .side-toggle{ text-align:center; padding:6px 0; }
 .grammar-empty{ text-align:center; color:#555; padding:40px 16px; }
 @media (max-width:700px){
   .layout{ flex-direction:column; align-items:stretch; padding:0; }
   .sidebar{ position:static; flex-direction:row; margin:0 10px 12px; padding:6px; gap:4px; border-radius:16px; }
   .side-link{ flex:1 1 0; text-align:center; padding:10px 4px; font-size:14px; }
+  .side-toggle{ display:none; }
+  .sidebar.collapsed .side-text{ display:inline; }
+  .sidebar.collapsed .side-link{ padding:10px 4px; }
 }
 
 /* ---------- GRAMMAR ---------- */
