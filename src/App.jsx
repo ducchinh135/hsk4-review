@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import AccountBar from './components/AccountBar.jsx';
 import AuthModal from './components/AuthModal.jsx';
+import GrammarNav from './components/GrammarNav.jsx';
 import NavBar from './components/NavBar.jsx';
 import Sidebar from './components/Sidebar.jsx';
 import { AppProvider, useApp } from './context/AppContext.jsx';
@@ -10,12 +11,12 @@ import ExercisePage from './pages/ExercisePage.jsx';
 import ReviewPage from './pages/ReviewPage.jsx';
 import WordsPage from './pages/WordsPage.jsx';
 import { useRoute } from './router.jsx';
-import { PAGE_TITLES } from './routes.js';
+import { PAGE_TITLES, sectionOf } from './routes.js';
 
 // The study pages are remounted (via `key`) when the lesson, filter or account data changes, so
 // their lists and positions are rebuilt.
 function Page({ route, viewVersion }) {
-  if (route.page === 'grammar') return <GrammarPage />;
+  if (sectionOf(route.page) === 'grammar') return <GrammarPage />;
   if (route.page === 'words') return <WordsPage key={viewVersion} />;
   if (route.page === 'practice') return <PracticeHub key={viewVersion} />;
   if (route.page === 'exercise') return <ExercisePage key={route.params.type + ':' + viewVersion} type={route.params.type} />;
@@ -44,7 +45,7 @@ function Shell() {
       <div className="layout">
         <Sidebar page={route.page} />
         <div className="content">
-          {route.page !== 'grammar' && <NavBar page={route.page} />}
+          {sectionOf(route.page) === 'grammar' ? <GrammarNav page={route.page} /> : <NavBar page={route.page} />}
           <main>
             <Page route={route} viewVersion={viewVersion} />
           </main>
@@ -53,7 +54,7 @@ function Shell() {
 
       {authMode && <AuthModal initialMode={authMode} onClose={() => setAuthMode(null)} authenticate={account.authenticate} />}
 
-      <footer>Được biên soạn từ nội dung HSK Standard Course 4 — Bài 1, 2, 3, 4, 5, 6, 7, 8, 9, 10</footer>
+      <footer>Được biên soạn từ nội dung HSK Standard Course 4 — Bài 1–20</footer>
     </>
   );
 }

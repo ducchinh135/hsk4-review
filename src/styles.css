@@ -351,3 +351,17 @@ a.exercise-card:hover{ border-color:var(--accent-a,#333); }
   .sidebar{ position:static; flex-direction:row; margin:0 10px 12px; padding:6px; gap:4px; border-radius:16px; }
   .side-link{ flex:1 1 0; text-align:center; padding:10px 4px; font-size:14px; }
 }
+
+/* ---------- GRAMMAR ---------- */
+.grammar-actions{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin:0 0 16px; }
+.grammar-list{ display:flex; flex-direction:column; gap:10px; }
+.gp-title{ font-size:clamp(20px,4vw,26px); font-weight:900; color:var(--accent-a,#333); overflow-wrap:anywhere; }
+.gp-status{ margin-left:auto; padding:4px 10px; border-radius:999px; font-size:13px; font-weight:800; flex:0 0 auto; }
+.gp-status.k{ background:#d3f9d8; color:#2b8a3e; }
+.gp-status.r{ background:#ffe3e3; color:#c92a2a; }
+.gp-pattern{ font-size:18px; font-weight:800; background:var(--accent-bg,#f3f3f8); border-radius:12px; padding:8px 12px; overflow-wrap:anywhere; }
+.gp-meaning{ font-size:15px; color:#444; }
+.gp-pinyin{ font-size:14px; color:#777; }
+.gp-notes{ background:#fff9db; border-radius:12px; padding:8px 12px; width:100%; }
+.gp-notes ul{ margin:4px 0 0; padding-left:20px; font-size:14px; color:#555; }
+.word-detail .zh .speak-btn{ margin-left:8px; vertical-align:middle; }
