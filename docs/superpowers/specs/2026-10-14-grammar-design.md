@@ -20,7 +20,7 @@ Vòng ôn cho mỗi điểm: **đọc lý thuyết → làm bài → sai thì t�
 | Tiến độ | Dấu `k`/`r` từng điểm, dùng chung kho dấu của từ vựng với khoá `g:<id>`, đồng bộ tài khoản |
 | Làm sai | Tự đặt dấu "Cần ôn" cho điểm của câu đó; làm đúng không tự đặt "Đã nắm" |
 | Bài đang chọn | Dùng chung `lesson` trong `AppContext` với phần từ vựng |
-| Bộ lọc | Bộ lọc riêng của trang ngữ pháp (state cục bộ), không đụng bộ lọc từ vựng |
+| Bộ lọc | Bộ lọc riêng của phần ngữ pháp, lưu `localStorage` khoá `hsk4_grammar_filter` (để trang Luyện tập đọc được), không đụng bộ lọc từ vựng |
 | Triển khai nội dung | Đợt 1: toàn bộ code + nội dung Bài 1–2; Bài 3–20 soạn theo đợt sau |
 
 ### Không thay đổi
@@ -116,7 +116,7 @@ Câu hỏi `order`: `parts` là các cụm theo **đúng thứ tự** (giao di�
 
 ## 4. Giao diện và định tuyến
 
-Sidebar giữ nguyên. Phần ngữ pháp có thanh tab con riêng (cùng kiểu `NavBar`): **📖 Lý thuyết** (`/grammar`) · **📝 Luyện tập** (`/grammar/practice`).
+Sidebar giữ nguyên. Phần ngữ pháp có thanh tab con riêng (cùng kiểu `NavBar`): **📖 Lý thuyết** (`/grammar`) · **📝 Luyện tập** (`/grammar/practice`); ở `/grammar/review` tab "Luyện tập" sáng. `App.jsx` đổi điều kiện hiện `NavBar` từ vựng thành `sectionOf(route.page) === 'vocab'`, và hiện `GrammarNav` khi `sectionOf(route.page) === 'grammar'`.
 
 | Đường dẫn | `page` | Nội dung |
 |---|---|---|
@@ -128,20 +128,23 @@ Sidebar giữ nguyên. Phần ngữ pháp có thanh tab con riêng (cùng kiểu
 
 ### Trang Lý thuyết (`/grammar`)
 
-- `LessonTabs` (số phụ: số điểm đã nắm / số điểm của bài).
-- Bộ lọc: Tất cả / Chưa đánh dấu / Cần ôn / Đã nắm, kèm số đếm. Nếu mục lọc rỗng thì hiện cả bài kèm ghi chú (giống từ vựng).
+- `LessonTabs` (số phụ: số điểm đã nắm / số điểm của bài; bài chưa soạn hiện `—`).
+- Bộ lọc: Tất cả / Chưa đánh dấu / Cần ôn / Đã nắm, kèm số đếm; giá trị lưu ở `hsk4_grammar_filter` (đọc/ghi trong try/catch, mặc định `all`). Nếu mục lọc rỗng thì hiện cả bài kèm ghi chú (giống từ vựng). Đánh dấu một điểm không lọc lại danh sách ngay (thẻ không biến mất khi vừa bấm), chỉ lọc lại khi đổi bài/bộ lọc.
 - Mỗi điểm là một thẻ `GrammarPoint`: tiêu đề + dấu hiện tại ở dòng đầu; bấm để mở/đóng; khi mở hiện công thức, ý nghĩa, ví dụ (🔊 đọc câu bằng `speech.speak`), mục "⚠️ Lưu ý", và nút **✅ Đã nắm / 🔁 Cần ôn** (bấm lại để bỏ dấu).
-- Mở trang bằng link có `#1.3` thì thẻ đó mở sẵn và cuộn tới (dùng cho link "Xem lý thuyết" từ bài tập).
+- Mở trang bằng link có `#1.3` (dùng cho link "Xem lý thuyết" từ bài tập): nếu điểm thuộc bài khác bài đang chọn thì `selectLesson('L1')` trước (link từ `/grammar/review` có thể trỏ sang bất kỳ bài nào); thẻ đó mở sẵn và luôn hiện dù bộ lọc không khớp; cuộn tới trong `useEffect` sau khi render (vì `navigate()` đã `scrollTo(0,0)`), tìm phần tử bằng `document.getElementById` — không dùng `querySelector('#1.3')` vì id bắt đầu bằng số là selector không hợp lệ. Hash id lạ thì bỏ qua.
 - Nút **📝 Luyện tập bài này** → `/grammar/practice`; nút **🔁 Ôn các điểm cần ôn (n)** → `/grammar/review` (ẩn khi n = 0).
 
 ### Trang Luyện tập
 
-- Tập câu hỏi: mọi câu của các điểm được chọn (bài đang chọn theo bộ lọc; hoặc mọi điểm `r` khi ở `/grammar/review`), xáo trộn; `/grammar/review` tối đa 30 câu.
+- Tập câu hỏi: mọi câu của các điểm được chọn, xáo trộn.
+  - `/grammar/practice`: các điểm của bài đang chọn theo bộ lọc đọc từ `hsk4_grammar_filter`; mục lọc rỗng thì dùng cả bài (kèm ghi chú, như trang Lý thuyết). Đầu trang có `LessonTabs` để đổi bài.
+  - `/grammar/review`: mọi điểm `r` của cả 20 bài, không có `LessonTabs`. Tối đa 30 câu, chia đều theo điểm (lần lượt lấy một câu ngẫu nhiên của từng điểm cho đến khi đủ 30 hoặc hết câu) để một điểm nhiều câu không chiếm hết lượt.
+- Lượt luyện được dựng một lần khi trang mount. Trang được remount bằng `key={viewVersion}` như các trang từ vựng, nên đổi bài hoặc dữ liệu tài khoản thay đổi (đăng nhập/đăng xuất, lần đồng bộ đầu có thay đổi) sẽ tạo lượt mới; đặt dấu `r` khi làm sai không tăng `viewVersion` nên không làm mất lượt đang làm.
 - Lưới số câu để nhảy, ô màu theo đúng/sai; nút trước/sau; nút "Xem kết quả".
 - **Chọn từ**: câu có ô trống, 4 nút lựa chọn (dùng lại class `fb-opt`). Sau khi chọn: tô đúng/sai, hiện `explain` và link "Xem lý thuyết" (`/grammar#<id>`).
-- **Sắp xếp** (`OrderQuestion`): các cụm xáo ở dưới; bấm cụm để đưa lên dòng trả lời, bấm cụm trên dòng trả lời để trả về. Nút "Kiểm tra" bật khi đã dùng hết cụm. Sau khi kiểm tra: đúng/sai, câu đúng, nghĩa `vi`, link "Xem lý thuyết".
+- **Sắp xếp** (`OrderQuestion`): các cụm xáo ở dưới (xáo lại nếu trùng thứ tự đúng; cụm được theo dõi theo chỉ số nên hai cụm giống chữ vẫn hoạt động); bấm cụm để đưa lên dòng trả lời, bấm cụm trên dòng trả lời để trả về. Nút "Kiểm tra" bật khi đã dùng hết cụm. Sau khi kiểm tra: đúng/sai, câu đúng, nghĩa `vi`, link "Xem lý thuyết".
 - Trả lời sai → `setMark('g:'+id, 'r')`.
-- Màn kết quả: điểm số, danh sách điểm ngữ pháp có câu sai (link về lý thuyết), nút **🔁 Làm lại câu sai** và **Làm lượt mới**.
+- Màn kết quả: điểm số, danh sách điểm ngữ pháp có câu sai (link về lý thuyết), nút **🔁 Làm lại câu sai** và **Làm lượt mới**. Ở `/grammar/review`, mỗi điểm trong lượt có nút **✅ Đã nắm** để gỡ khỏi danh sách cần ôn (vì làm đúng không tự gỡ dấu `r`, đây là cách chủ đích để danh sách giảm).
 - Không có câu nào (bài chưa soạn hoặc không có điểm cần ôn) → thông báo và link về Lý thuyết.
 
 ## 5. Mã nguồn
@@ -164,7 +167,7 @@ Sidebar giữ nguyên. Phần ngữ pháp có thanh tab con riêng (cùng kiểu
 | File | Thay đổi |
 |---|---|
 | `src/routes.js` | Thêm `grammar-practice`, `grammar-review`, tiêu đề trang, `sectionOf` |
-| `src/App.jsx` | Render các trang ngữ pháp, `GrammarNav` cho phần ngữ pháp |
+| `src/App.jsx` | Render các trang ngữ pháp (trang luyện có `key={viewVersion}`), `GrammarNav` cho phần ngữ pháp, điều kiện `NavBar` theo `sectionOf`; footer sửa "Bài 1…10" thành Bài 1–20 |
 | `src/components/LessonTabs.jsx` | Nhận prop tuỳ chọn `progress(lesson) → { done, total }`; mặc định vẫn đếm từ vựng |
 | `tests/router.test.mjs` | Test các đường dẫn mới |
 | `package.json` | Thêm `tests/grammar.test.mjs` vào `test:unit` |
@@ -181,13 +184,14 @@ Dùng `marks` từ `useApp()`: `getMark('g:1.1')`, `setMark`, `toggleMark`. Kho�
 `npm run test:unit` (Node test runner, như hiện có):
 
 - **Router:** `/grammar`, `/grammar/practice`, `/grammar/review` khớp đúng trang; `/grammar/xyz` về `/grammar`; `sectionOf` đúng.
-- **Logic:** `buildGrammarQuiz` lấy đủ câu, giới hạn `max`, giữ `answer` trong `options` sau khi xáo; `checkOrder` đúng với câu có/không dấu câu, khoảng trắng, và `alt`; sai khi thiếu/thừa cụm.
+- **Logic:** `buildGrammarQuiz` lấy đủ câu, giới hạn `max` và chia đều theo điểm, giữ `answer` trong `options` sau khi xáo, `parts` sau khi xáo khác thứ tự đúng; `checkOrder` đúng với câu có/không dấu câu, khoảng trắng, và `alt`; sai khi thiếu/thừa cụm.
 - **Dữ liệu** (chạy trên mọi bài đã soạn): khoá bài có trong `vocab.json`; bài đã soạn có đúng 5 điểm; id duy nhất và đúng dạng `<bài>.<n>`; mỗi điểm có ≥ 3 ví dụ, ≥ 6 câu hỏi và có cả hai dạng; câu `choice` có đúng một `___`, 4 lựa chọn không trùng, `answer` thuộc `options`; câu `order` có ≥ 3 cụm và `normalize(parts.join(''))` bằng `normalize(answer)`.
 
-Thủ công (Playwright, `npm run dev`): mở `/grammar` Bài 1, mở thẻ, nghe ví dụ, đánh dấu; vào Luyện tập, làm sai một câu chọn từ và một câu sắp xếp → điểm đó thành "Cần ôn"; `/grammar/review` chỉ hiện câu của điểm cần ôn; F5 và Back/Forward đúng.
+Thủ công (Playwright, `npm run dev`): mở `/grammar` Bài 1, mở thẻ, nghe ví dụ, đánh dấu; vào Luyện tập, làm sai một câu chọn từ và một câu sắp xếp → điểm đó thành "Cần ôn"; `/grammar/review` chỉ hiện câu của điểm cần ôn; đang ở Bài 1, từ review bấm "Xem lý thuyết" của một điểm Bài 2 → chuyển sang Bài 2, thẻ mở và cuộn tới; đặt bộ lọc "Cần ôn" ở Lý thuyết rồi vào Luyện tập → chỉ có câu của điểm cần ôn; F5 và Back/Forward đúng.
 
 ## 7. Kế hoạch nội dung
 
 - **Đợt 1** (cùng code): Bài 1–2 — 10 điểm, ~70 câu hỏi. Người dùng dùng thử và góp ý định dạng trước khi soạn tiếp.
 - **Các đợt sau:** Bài 3–20, mỗi đợt 4–5 bài, mỗi đợt một commit, test dữ liệu phải qua.
 - Ví dụ và câu hỏi ưu tiên dùng từ vựng của chính bài đó và các bài trước.
+- Khi soạn mỗi đợt, đối chiếu lại danh sách điểm của các bài đó với sách/AllSet (bảng ở mục 2 chưa được kiểm chứng từng dòng, ví dụ 可是 ở Bài 9, 上 xuất hiện ở cả Bài 9 và 19); sửa bảng nếu lệch.
