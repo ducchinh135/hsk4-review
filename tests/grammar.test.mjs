@@ -186,7 +186,6 @@ test('order questions accept the same-meaning variants a learner could build', (
     ['从这儿到学校差不多要二十分钟。', '从这儿到学校要差不多二十分钟。'],
     ['尽管天气很冷，他还是去跑步了。', '天气尽管很冷，他还是去跑步了。'],
     ['尽管工作很忙，她却没有忘记给妈妈打电话。', '工作尽管很忙，她却没有忘记给妈妈打电话。'],
-    ['这个办法简单而有效。', '这个办法有效而简单。'],
   ];
   for (const [answer, variant] of variants) {
     const q = byAnswer(answer);
@@ -208,4 +207,24 @@ test('explanations have no known wording errors', () => {
   assert.ok(!explains.some((e) => e.includes('cứ cứ')), 'typo "cứ cứ"');
   const first = ALL_QUESTIONS.find((q) => q.q === '这家饭馆的菜___便宜，而且很好吃。');
   assert.ok(!first.explain.includes('即使 cần vế chuyển ý'), '即使 pairs with 也, not a turning clause');
+});
+
+const ALL_TEXT = JSON.stringify(GRAMMAR);
+const POINT = (id) => Object.values(GRAMMAR).flat().find((p) => p.id === id);
+
+test('usages the textbook does not teach in these lessons are not included', () => {
+  for (const out of ['你尽管问', '简单而有效', '聪明而幽默', '刚才的事情', '不但', '即使是']) {
+    assert.ok(!ALL_TEXT.includes(out), out);
+  }
+});
+
+test('usages the textbook teaches are covered by notes or examples', () => {
+  const has = (id, text) => assert.ok(JSON.stringify(POINT(id)).includes(text), `${id} should mention ${text}`);
+  has('1.2', '从来只');
+  has('1.3', '上个月刚'); // 刚 can follow a time word, 刚才 cannot
+  has('1.4', 'đã xảy ra'); // 即使 can also state a fact
+  has('1.5', '课上'); // 上 also means "within a scope"
+  has('2.2', '几乎');
+  has('2.4', 'nhẹ hơn');
+  has('2.5', '而不要'); // parallel use
 });
