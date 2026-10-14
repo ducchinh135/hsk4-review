@@ -7,6 +7,7 @@ import Sidebar from './components/Sidebar.jsx';
 import { AppProvider, useApp } from './context/AppContext.jsx';
 import PracticeHub from './components/PracticeHub.jsx';
 import GrammarPage from './pages/GrammarPage.jsx';
+import GrammarPracticePage from './pages/GrammarPracticePage.jsx';
 import ExercisePage from './pages/ExercisePage.jsx';
 import ReviewPage from './pages/ReviewPage.jsx';
 import WordsPage from './pages/WordsPage.jsx';
@@ -16,7 +17,9 @@ import { PAGE_TITLES, sectionOf } from './routes.js';
 // The study pages are remounted (via `key`) when the lesson, filter or account data changes, so
 // their lists and positions are rebuilt.
 function Page({ route, viewVersion }) {
-  if (sectionOf(route.page) === 'grammar') return <GrammarPage />;
+  if (route.page === 'grammar') return <GrammarPage />;
+  if (route.page === 'grammar-practice') return <GrammarPracticePage key={'lesson:' + viewVersion} scope="lesson" />;
+  if (route.page === 'grammar-review') return <GrammarPracticePage key={'review:' + viewVersion} scope="review" />;
   if (route.page === 'words') return <WordsPage key={viewVersion} />;
   if (route.page === 'practice') return <PracticeHub key={viewVersion} />;
   if (route.page === 'exercise') return <ExercisePage key={route.params.type + ':' + viewVersion} type={route.params.type} />;
