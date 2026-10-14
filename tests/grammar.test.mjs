@@ -194,9 +194,9 @@ const TEXTBOOK_KEYS = {
   L19: ['疑问代词', '上', '出来', '总的来说', '在于'],
   L20: ['着', '就', '究竟', '起来', '起'],
 };
-const WRITTEN = ['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7', 'L8', 'L9', 'L10', 'L11', 'L12', 'L13', 'L14', 'L15', 'L16', 'L17', 'L18'];
+const WRITTEN = Object.keys(TEXTBOOK_KEYS); // every lesson of the textbook is written
 
-test('written lessons have the 5 points the textbook lists, in order', () => {
+test('every lesson has the 5 points the textbook lists, in order', () => {
   for (const l of WRITTEN) {
     assert.equal(GRAMMAR[l]?.length, 5, l + ' should have 5 points');
     GRAMMAR[l].forEach((p, i) => assert.ok(p.title.includes(TEXTBOOK_KEYS[l][i]), `${p.id} "${p.title}" should contain "${TEXTBOOK_KEYS[l][i]}"`));

@@ -11106,5 +11106,1238 @@
         }
       ]
     }
+  ],
+  "L19": [
+    {
+      "id": "19.1",
+      "title": "疑问代词活用（任指）",
+      "pattern": "谁 / 什么 / 哪儿 / 怎么 + 都 / 也 + ……",
+      "meaning": "Đại từ nghi vấn dùng không phải để hỏi mà chỉ “bất kỳ, tất cả”: 什么 = bất cứ thứ gì, 谁 = bất cứ ai, 哪儿 = bất cứ đâu, 怎么 = thế nào cũng. Thường đi với 都 hoặc 也.",
+      "notes": [
+        "Dạng: đại từ nghi vấn + 都 / 也 + động từ: 谁都有粗心的时候.",
+        "Gồm 什么, 谁, 哪, 哪儿, 哪里, 怎么.",
+        "Phải có 都 hoặc 也 ở phía sau để mang nghĩa “bất kỳ”; nếu không có, câu chỉ là câu hỏi (谁都…… khác với 谁去？)."
+      ],
+      "examples": [
+        [
+          "没关系，不用道歉，谁都有粗心的时候。",
+          "Méi guānxi, bú yòng dàoqiàn, shéi dōu yǒu cūxīn de shíhou.",
+          "Không sao, không cần xin lỗi, ai cũng có lúc sơ ý."
+        ],
+        [
+          "我昨天做了一个怪梦，早上起来怎么想都想不起来。",
+          "Wǒ zuótiān zuò le yí ge guài mèng, zǎoshang qǐlái zěnme xiǎng dōu xiǎng bu qǐlái.",
+          "Hôm qua tôi mơ một giấc mơ lạ, sáng dậy nghĩ thế nào cũng không nhớ ra."
+        ],
+        [
+          "世界上没有免费的午餐，什么东西都要通过努力才能得到。",
+          "Shìjiè shang méiyǒu miǎnfèi de wǔcān, shénme dōngxi dōu yào tōngguò nǔlì cái néng dédào.",
+          "Trên đời không có bữa trưa miễn phí, thứ gì cũng phải thông qua nỗ lực mới có được."
+        ],
+        [
+          "这个周末我哪儿也不想去，只想在家休息。",
+          "Zhège zhōumò wǒ nǎr yě bù xiǎng qù, zhǐ xiǎng zài jiā xiūxi.",
+          "Cuối tuần này tôi chẳng muốn đi đâu cả, chỉ muốn ở nhà nghỉ ngơi."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "没关系，不用道歉，___都有粗心的时候。",
+          "options": [
+            "谁",
+            "即使",
+            "同时",
+            "随着"
+          ],
+          "answer": "谁",
+          "explain": "谁 + 都: “ai cũng” — đại từ nghi vấn dùng với nghĩa bất kỳ."
+        },
+        {
+          "type": "choice",
+          "q": "世界上没有免费的午餐，什么东西___要通过努力才能得到。",
+          "options": [
+            "都",
+            "才",
+            "却",
+            "刚"
+          ],
+          "answer": "都",
+          "explain": "什么 + 东西 + 都: “thứ gì cũng” — phải có 都 (hoặc 也) mới mang nghĩa bất kỳ."
+        },
+        {
+          "type": "choice",
+          "q": "这个周末我哪儿___不想去，只想在家休息。",
+          "options": [
+            "也",
+            "才",
+            "却",
+            "刚"
+          ],
+          "answer": "也",
+          "explain": "哪儿也不……: “chẳng… đâu cả” — 也 đi với đại từ nghi vấn và phủ định."
+        },
+        {
+          "type": "choice",
+          "q": "早上起来，我___想都想不起来昨天的梦。",
+          "options": [
+            "怎么",
+            "为什么",
+            "什么",
+            "哪儿"
+          ],
+          "answer": "怎么",
+          "explain": "怎么想都想不起来: “nghĩ thế nào cũng không nhớ ra” — 怎么 chỉ mọi cách."
+        },
+        {
+          "type": "choice",
+          "q": "这个问题太简单了，___都能回答。",
+          "options": [
+            "谁",
+            "什么",
+            "哪儿",
+            "怎么"
+          ],
+          "answer": "谁",
+          "explain": "谁都能回答: ai cũng trả lời được — 谁 chỉ bất kỳ người nào."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "谁",
+            "都",
+            "有",
+            "粗心",
+            "的时候"
+          ],
+          "answer": "谁都有粗心的时候。",
+          "alt": [],
+          "vi": "Ai cũng có lúc sơ ý."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这个",
+            "周末",
+            "我",
+            "哪儿",
+            "也",
+            "不想",
+            "去"
+          ],
+          "answer": "这个周末我哪儿也不想去。",
+          "alt": [],
+          "vi": "Cuối tuần này tôi chẳng muốn đi đâu cả."
+        }
+      ]
+    },
+    {
+      "id": "19.2",
+      "title": "上",
+      "pattern": "V + 上   |   V得上 / V不上",
+      "meaning": "上 là bổ ngữ xu hướng đứng sau động từ; nghĩa mở rộng là hành động đạt tới mục đích. Cũng dùng ở dạng bổ ngữ khả năng V得上 / V不上 để nói có đạt được mục đích hay không.",
+      "notes": [
+        "V + 上: hành động đạt tới mục tiêu: 考上 (thi đỗ), 买上 (mua được), 吃上 (được ăn).",
+        "Dạng khả năng: V得上 (làm được) / V不上 (không làm được): 吃不上羊肉饺子, 坐不上八点的飞机.",
+        "Dạng phủ định khả năng 不上 thường dùng khi điều kiện khách quan không cho phép (hết giờ, kẹt xe, hết vé…)."
+      ],
+      "examples": [
+        [
+          "看来今天吃不上羊肉饺子了。",
+          "Kànlái jīntiān chī bu shàng yángròu jiǎozi le.",
+          "Xem ra hôm nay không được ăn sủi cảo thịt cừu rồi."
+        ],
+        [
+          "堵车这么厉害，今天坐不上八点去上海的飞机了。",
+          "Dǔchē zhème lìhai, jīntiān zuò bu shàng bā diǎn qù Shànghǎi de fēijī le.",
+          "Kẹt xe nặng thế này, hôm nay không kịp đi chuyến bay tám giờ đến Thượng Hải rồi."
+        ],
+        [
+          "一听到哥哥考上了博士，我们全家都特别高兴。",
+          "Yì tīngdào gēge kǎoshàng le bóshì, wǒmen quánjiā dōu tèbié gāoxìng.",
+          "Vừa nghe tin anh trai thi đỗ tiến sĩ, cả nhà chúng tôi đều rất vui."
+        ],
+        [
+          "他终于买上了自己的房子。",
+          "Tā zhōngyú mǎi shàng le zìjǐ de fángzi.",
+          "Cuối cùng anh ấy cũng mua được nhà của riêng mình."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "饭店已经关门了，看来今天吃不___羊肉饺子了。",
+          "options": [
+            "上",
+            "出",
+            "住",
+            "开"
+          ],
+          "answer": "上",
+          "explain": "吃不上: không có điều kiện để ăn được (hết giờ) — V不上 chỉ không đạt được mục đích."
+        },
+        {
+          "type": "choice",
+          "q": "一听到哥哥考___了博士，全家都特别高兴。",
+          "options": [
+            "上",
+            "出",
+            "住",
+            "开"
+          ],
+          "answer": "上",
+          "explain": "考上: thi đỗ — 上 chỉ đạt được mục tiêu."
+        },
+        {
+          "type": "choice",
+          "q": "堵车太厉害，今天坐不___八点去上海的飞机了。",
+          "options": [
+            "上",
+            "出",
+            "住",
+            "开"
+          ],
+          "answer": "上",
+          "explain": "坐不上: không kịp / không đi được chuyến bay."
+        },
+        {
+          "type": "choice",
+          "q": "他终于买___了自己的房子。",
+          "options": [
+            "上",
+            "出",
+            "住",
+            "开"
+          ],
+          "answer": "上",
+          "explain": "买上: cuối cùng cũng mua được — 上 chỉ đạt được mong muốn."
+        },
+        {
+          "type": "choice",
+          "q": "这个周末的票都卖完了，我们肯定买不___了。",
+          "options": [
+            "上",
+            "出",
+            "住",
+            "开"
+          ],
+          "answer": "上",
+          "explain": "买不上: không mua được (vì hết vé)."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "看来",
+            "今天",
+            "吃不上",
+            "羊肉",
+            "饺子",
+            "了"
+          ],
+          "answer": "看来今天吃不上羊肉饺子了。",
+          "alt": [],
+          "vi": "Xem ra hôm nay không được ăn sủi cảo thịt cừu rồi."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "哥哥",
+            "考上",
+            "了",
+            "博士",
+            "全家",
+            "都",
+            "高兴"
+          ],
+          "answer": "哥哥考上了博士，全家都高兴。",
+          "alt": [],
+          "vi": "Anh trai thi đỗ tiến sĩ, cả nhà đều vui."
+        }
+      ]
+    },
+    {
+      "id": "19.3",
+      "title": "出来",
+      "pattern": "V + 出来   |   V得出来 / V不出来",
+      "meaning": "出来 là bổ ngữ xu hướng đứng sau động từ. Nghĩa mở rộng: hành động khiến sự vật từ không có thành có, hoặc từ ẩn thành lộ rõ (nói ra, nghĩ ra, nhận ra, làm ra).",
+      "notes": [
+        "说出来, 翻译出来: từ trong ra ngoài, từ không có thành có.",
+        "看出来, 听出来: nhận ra, nhận biết: 没看出来你跳得这么好.",
+        "Dạng khả năng: V得出来 / V不出来.",
+        "So với 起来: 出来 là hướng từ trong ra ngoài hoặc từ không thành có; 起来 là hướng lên hoặc hành động bắt đầu và tiếp diễn. 想出来 là nghĩ ra điều mới chưa có; 想起来 là nhớ lại điều đã có nhưng quên."
+      ],
+      "examples": [
+        [
+          "有的人心里有看法，嘴上就会直接说出来。",
+          "Yǒu de rén xīn lǐ yǒu kànfǎ, zuǐ shang jiù huì zhíjiē shuō chūlái.",
+          "Có người trong lòng có ý kiến thì sẽ nói thẳng ra."
+        ],
+        [
+          "你要的那篇文章我已经翻译出来了。",
+          "Nǐ yào de nà piān wénzhāng wǒ yǐjīng fānyì chūlái le.",
+          "Bài viết bạn cần tôi đã dịch xong rồi."
+        ],
+        [
+          "刚才我看到你跳中国舞，没看出来你跳得这么好！",
+          "Gāngcái wǒ kàndào nǐ tiào Zhōngguó wǔ, méi kàn chūlái nǐ tiào de zhème hǎo!",
+          "Vừa rồi tôi thấy bạn nhảy múa Trung Quốc, không nhận ra là bạn nhảy giỏi thế!"
+        ],
+        [
+          "这道题太难了，我想了很久，还是想不出来答案。",
+          "Zhè dào tí tài nán le, wǒ xiǎng le hěn jiǔ, háishi xiǎng bu chūlái dá'àn.",
+          "Câu này khó quá, tôi nghĩ rất lâu mà vẫn không nghĩ ra đáp án."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "你要的那篇文章我已经翻译___了。",
+          "options": [
+            "出来",
+            "过去",
+            "回去",
+            "上去"
+          ],
+          "answer": "出来",
+          "explain": "翻译出来: dịch xong, từ chưa có thành đã có — 出来 chỉ sự hình thành."
+        },
+        {
+          "type": "choice",
+          "q": "刚才我看到你跳中国舞，没看___你跳得这么好！",
+          "options": [
+            "出来",
+            "起来",
+            "过去",
+            "回去"
+          ],
+          "answer": "出来",
+          "explain": "看出来: nhận ra điều vốn không rõ — 出来 chỉ từ ẩn thành lộ."
+        },
+        {
+          "type": "choice",
+          "q": "有的人心里有什么看法，嘴上就会直接说___。",
+          "options": [
+            "出来",
+            "进去",
+            "过去",
+            "回去"
+          ],
+          "answer": "出来",
+          "explain": "说出来: nói ra — từ trong ra ngoài."
+        },
+        {
+          "type": "choice",
+          "q": "这道题太难了，我想了很久，还是想不___答案。",
+          "options": [
+            "出来",
+            "起来",
+            "过去",
+            "回去"
+          ],
+          "answer": "出来",
+          "explain": "想出来: nghĩ ra điều mới chưa có (đáp án). 想起来 là nhớ lại điều đã có nhưng quên."
+        },
+        {
+          "type": "choice",
+          "q": "我想___了，那个唱歌的男孩子是高老师的孙子。",
+          "options": [
+            "起来",
+            "出来",
+            "过去",
+            "回去"
+          ],
+          "answer": "起来",
+          "explain": "想起来: nhớ lại điều đã từng biết nhưng quên mất."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "你要的",
+            "文章",
+            "我",
+            "已经",
+            "翻译",
+            "出来",
+            "了"
+          ],
+          "answer": "你要的文章我已经翻译出来了。",
+          "alt": [],
+          "vi": "Bài viết bạn cần tôi đã dịch ra rồi."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "没",
+            "看出来",
+            "你",
+            "跳得",
+            "这么",
+            "好"
+          ],
+          "answer": "没看出来你跳得这么好。",
+          "alt": [],
+          "vi": "Không nhận ra là bạn nhảy giỏi thế."
+        }
+      ]
+    },
+    {
+      "id": "19.4",
+      "title": "总的来说",
+      "pattern": "总的来说，……",
+      "meaning": "Thành phần xen (插入语) thường đặt đầu vế hoặc đầu câu, theo sau là dấu phẩy: nhìn chung, nói chung — đưa ra đánh giá hoặc kết luận tổng quát.",
+      "notes": [
+        "Thường mở đầu vế hoặc câu, có dấu phẩy sau, đưa ra kết luận tổng quát sau khi đã nêu nhiều mặt.",
+        "Dùng để tổng kết, đánh giá chung: 总的来说，这套房子他很满意.",
+        "Phần theo sau thường là một đánh giá hay kết luận, không phải một sự việc cụ thể."
+      ],
+      "examples": [
+        [
+          "房子交通方便，周围安静，厨房也很大。总的来说，他很满意这套房子。",
+          "Fángzi jiāotōng fāngbiàn, zhōuwéi ānjìng, chúfáng yě hěn dà. Zǒng de lái shuō, tā hěn mǎnyì zhè tào fángzi.",
+          "Nhà giao thông thuận tiện, xung quanh yên tĩnh, bếp cũng rộng. Nhìn chung anh ấy rất hài lòng với căn nhà này."
+        ],
+        [
+          "这个公司工资不算高，但奖金很多，总的来说收入还不错。",
+          "Zhège gōngsī gōngzī bú suàn gāo, dàn jiǎngjīn hěn duō, zǒng de lái shuō shōurù hái búcuò.",
+          "Lương công ty này không tính là cao nhưng thưởng nhiều, nhìn chung thu nhập vẫn khá."
+        ],
+        [
+          "总的来说，丽江景色不错，那里的人也很热情。",
+          "Zǒng de lái shuō, Lìjiāng jǐngsè búcuò, nàlǐ de rén yě hěn rèqíng.",
+          "Nhìn chung, phong cảnh Lệ Giang khá đẹp, người ở đó cũng rất nhiệt tình."
+        ],
+        [
+          "这次旅行有开心的事，也有不开心的事，总的来说还是很愉快的。",
+          "Zhè cì lǚxíng yǒu kāixīn de shì, yě yǒu bù kāixīn de shì, zǒng de lái shuō háishi hěn yúkuài de.",
+          "Chuyến đi này có chuyện vui cũng có chuyện không vui, nhìn chung vẫn rất vui."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "房子交通方便，周围安静，___，他很满意这套房子。",
+          "options": [
+            "总的来说",
+            "否则",
+            "然而",
+            "无论"
+          ],
+          "answer": "总的来说",
+          "explain": "Sau khi nêu nhiều ưu điểm, đưa ra đánh giá tổng quát → 总的来说."
+        },
+        {
+          "type": "choice",
+          "q": "这个公司工资不算高，但奖金很多，___收入还不错。",
+          "options": [
+            "总的来说",
+            "否则",
+            "然而",
+            "无论"
+          ],
+          "answer": "总的来说",
+          "explain": "Cân nhắc cả hai mặt (lương, thưởng) rồi kết luận chung → 总的来说."
+        },
+        {
+          "type": "choice",
+          "q": "___，丽江景色不错，那里的人也很热情。",
+          "options": [
+            "总的来说",
+            "否则",
+            "然而",
+            "无论"
+          ],
+          "answer": "总的来说",
+          "explain": "Mở đầu bằng một đánh giá chung → 总的来说，……"
+        },
+        {
+          "type": "choice",
+          "q": "这次旅行有开心的事，也有不开心的事，___还是很愉快的。",
+          "options": [
+            "总的来说",
+            "否则",
+            "然而",
+            "无论"
+          ],
+          "answer": "总的来说",
+          "explain": "Tổng kết sau khi nêu cả mặt tốt lẫn không tốt → 总的来说."
+        },
+        {
+          "type": "choice",
+          "q": "他看了几套房子，___，最喜欢第一套。",
+          "options": [
+            "总的来说",
+            "否则",
+            "然而",
+            "无论"
+          ],
+          "answer": "总的来说",
+          "explain": "Tổng kết sau khi xem nhiều căn → 总的来说，……"
+        },
+        {
+          "type": "order",
+          "parts": [
+            "总的来说",
+            "这套",
+            "房子",
+            "他",
+            "很满意"
+          ],
+          "answer": "总的来说，这套房子他很满意。",
+          "alt": [],
+          "vi": "Nhìn chung, anh ấy rất hài lòng với căn nhà này."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "工资",
+            "不算高",
+            "但",
+            "奖金",
+            "很多",
+            "总的来说",
+            "收入",
+            "还不错"
+          ],
+          "answer": "工资不算高，但奖金很多，总的来说收入还不错。",
+          "alt": [],
+          "vi": "Lương không tính là cao, nhưng thưởng nhiều, nhìn chung thu nhập vẫn khá."
+        }
+      ]
+    },
+    {
+      "id": "19.5",
+      "title": "在于",
+      "pattern": "N + 在于 + N / V / 小句",
+      "meaning": "Động từ, chủ yếu dùng trong văn viết hoặc trang trọng, chỉ ra bản chất hay mấu chốt của việc gì: nằm ở, ở chỗ. Chủ ngữ thường là cụm danh từ; sau 在于 phải có tân ngữ là danh từ, động từ hoặc một câu.",
+      "notes": [
+        "Chỉ ra bản chất, mấu chốt của vấn đề: 选择职业的关键在于兴趣.",
+        "Chủ ngữ thường là cụm danh từ (关键, 区别, 问题…), sau 在于 bắt buộc có tân ngữ.",
+        "Chủ yếu dùng trong văn viết, trang trọng; hay gặp trong 生命在于运动."
+      ],
+      "examples": [
+        [
+          "人们常说“生命在于运动”。",
+          "Rénmen cháng shuō “shēngmìng zàiyú yùndòng”.",
+          "Người ta thường nói “sự sống nằm ở vận động”."
+        ],
+        [
+          "选择职业的关键在于兴趣。",
+          "Xuǎnzé zhíyè de guānjiàn zàiyú xìngqù.",
+          "Mấu chốt của việc chọn nghề nằm ở sở thích."
+        ],
+        [
+          "他们的区别在于，一个人能接受失败，另一个人不能。",
+          "Tāmen de qūbié zàiyú, yí ge rén néng jiēshòu shībài, lìng yí ge rén bù néng.",
+          "Sự khác nhau giữa họ nằm ở chỗ: một người chấp nhận được thất bại, người kia thì không."
+        ],
+        [
+          "学汉语的关键在于多听多说。",
+          "Xué Hànyǔ de guānjiàn zàiyú duō tīng duō shuō.",
+          "Mấu chốt của việc học tiếng Trung nằm ở nghe nói nhiều."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "人们常说“生命___于运动”。",
+          "options": [
+            "在",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": "在",
+          "explain": "在于: “nằm ở” — 在 + 于 tạo thành động từ chỉ mấu chốt."
+        },
+        {
+          "type": "choice",
+          "q": "选择职业的关键在___兴趣。",
+          "options": [
+            "于",
+            "的",
+            "了",
+            "着"
+          ],
+          "answer": "于",
+          "explain": "在于: cụm cố định “nằm ở”."
+        },
+        {
+          "type": "choice",
+          "q": "他们的___在于，一个人能接受失败，另一个人不能。",
+          "options": [
+            "区别",
+            "倍",
+            "左右",
+            "弄"
+          ],
+          "answer": "区别",
+          "explain": "区别在于……: sự khác nhau nằm ở…"
+        },
+        {
+          "type": "choice",
+          "q": "学汉语的___在于多听多说。",
+          "options": [
+            "关键",
+            "倍",
+            "左右",
+            "弄"
+          ],
+          "answer": "关键",
+          "explain": "关键在于……: mấu chốt nằm ở…"
+        },
+        {
+          "type": "choice",
+          "q": "学习的___在于坚持。",
+          "options": [
+            "关键",
+            "倍",
+            "左右",
+            "弄"
+          ],
+          "answer": "关键",
+          "explain": "关键在于坚持: mấu chốt của việc học nằm ở sự kiên trì."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "选择",
+            "职业",
+            "的",
+            "关键",
+            "在于",
+            "兴趣"
+          ],
+          "answer": "选择职业的关键在于兴趣。",
+          "alt": [],
+          "vi": "Mấu chốt của việc chọn nghề nằm ở sở thích."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "生命",
+            "在于",
+            "运动"
+          ],
+          "answer": "生命在于运动。",
+          "alt": [],
+          "vi": "Sự sống nằm ở vận động."
+        }
+      ]
+    }
+  ],
+  "L20": [
+    {
+      "id": "20.1",
+      "title": "V着V着",
+      "pattern": "V 着 V 着 + (就)……",
+      "meaning": "Lặp lại cùng một động từ (thường đơn âm tiết) theo dạng V着V着; theo sau là một động từ hoặc cụm khác, chỉ trong lúc một hành động đang diễn ra thì xảy ra hành động hay tình huống khác (thường bất ngờ hoặc dần dần).",
+      "notes": [
+        "V着V着 + hành động / tình huống khác: 讲着讲着自己就笑了.",
+        "Động từ thường là đơn âm tiết: 开, 讲, 躺, 说, 走.",
+        "Vế sau hay có 就 hoặc 突然, nhấn sự thay đổi xảy ra giữa chừng."
+      ],
+      "examples": [
+        [
+          "别开着开着没油了。",
+          "Bié kāi zhe kāi zhe méi yóu le.",
+          "Đừng lái đi lái đi rồi hết xăng."
+        ],
+        [
+          "她讲着讲着自己先笑了。",
+          "Tā jiǎng zhe jiǎng zhe zìjǐ xiān xiào le.",
+          "Cô ấy nói được nói được thì tự mình bật cười trước."
+        ],
+        [
+          "他看着看着就睡着了。",
+          "Tā kàn zhe kàn zhe jiù shuìzháo le.",
+          "Anh ấy xem được xem được thì ngủ thiếp đi."
+        ],
+        [
+          "走着走着，天突然下起雨来。",
+          "Zǒu zhe zǒu zhe, tiān tūrán xià qǐ yǔ lái.",
+          "Đi được đi được thì trời đột nhiên đổ mưa."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "她___，自己先笑了。",
+          "options": [
+            "讲着讲着",
+            "讲讲着",
+            "讲着着讲",
+            "讲着讲"
+          ],
+          "answer": "讲着讲着",
+          "explain": "Dạng đúng là V着V着: lặp cả động từ và 着 → 讲着讲着."
+        },
+        {
+          "type": "choice",
+          "q": "别___没油了。",
+          "options": [
+            "开着开着",
+            "开开着着",
+            "开着着开",
+            "着开着开"
+          ],
+          "answer": "开着开着",
+          "explain": "开着开着: trong lúc đang lái thì hết xăng."
+        },
+        {
+          "type": "choice",
+          "q": "他看着看着___睡着了。",
+          "options": [
+            "就",
+            "却",
+            "刚",
+            "够"
+          ],
+          "answer": "就",
+          "explain": "V着V着 + 就 + kết quả bất ngờ: xem một lúc thì ngủ thiếp."
+        },
+        {
+          "type": "choice",
+          "q": "走着走着，天突然___起雨来。",
+          "options": [
+            "下",
+            "倒",
+            "干",
+            "趟"
+          ],
+          "answer": "下",
+          "explain": "下起雨来: bắt đầu mưa — tình huống xảy ra giữa chừng."
+        },
+        {
+          "type": "choice",
+          "q": "___着躺着，他就安静地睡着了。",
+          "options": [
+            "躺",
+            "躺着",
+            "着躺",
+            "躺躺"
+          ],
+          "answer": "躺",
+          "explain": "V着V着 cần lặp cùng một động từ: 躺着躺着."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "她",
+            "讲着讲着",
+            "自己",
+            "先",
+            "笑了"
+          ],
+          "answer": "她讲着讲着自己先笑了。",
+          "alt": [],
+          "vi": "Cô ấy nói được nói được thì tự mình bật cười trước."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "别",
+            "开着开着",
+            "没油",
+            "了"
+          ],
+          "answer": "别开着开着没油了。",
+          "alt": [],
+          "vi": "Đừng lái đi lái đi rồi hết xăng."
+        }
+      ]
+    },
+    {
+      "id": "20.2",
+      "title": "一……就……",
+      "pattern": "一 + A，就 + B",
+      "meaning": "Hai cách dùng: (a) hai việc xảy ra liên tiếp: vừa… thì…; (b) nghĩa như 要是……就……: 一 nêu điều kiện, 就 nêu kết quả trong điều kiện đó. Hai vế có thể cùng hoặc khác chủ ngữ.",
+      "notes": [
+        "Nối tiếp: 塑料一出现就受到欢迎; 等女儿一回来我就告诉她.",
+        "Điều kiện (nếu… thì…): 儿子一说话就脸红; 不是所有东西一哭就能得到.",
+        "Hai vế có thể cùng hoặc khác chủ ngữ."
+      ],
+      "examples": [
+        [
+          "塑料一出现就受到人们的普遍欢迎。",
+          "Sùliào yì chūxiàn jiù shòudào rénmen de pǔbiàn huānyíng.",
+          "Nhựa vừa xuất hiện đã được mọi người đón nhận rộng rãi."
+        ],
+        [
+          "等女儿一回来，我就告诉她这个好消息。",
+          "Děng nǚ'ér yì huílái, wǒ jiù gàosu tā zhège hǎo xiāoxi.",
+          "Chờ con gái vừa về là tôi báo cho nó tin tốt này."
+        ],
+        [
+          "儿子小时候一说话就脸红。",
+          "Érzi xiǎoshíhou yì shuōhuà jiù liǎnhóng.",
+          "Hồi nhỏ con trai hễ nói chuyện là đỏ mặt."
+        ],
+        [
+          "他一下班就回家。",
+          "Tā yí xiàbān jiù huí jiā.",
+          "Anh ấy vừa tan làm là về nhà."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "塑料一出现___受到人们的普遍欢迎。",
+          "options": [
+            "就",
+            "才",
+            "却",
+            "刚"
+          ],
+          "answer": "就",
+          "explain": "一……就……: việc sau xảy ra ngay khi việc trước xảy ra."
+        },
+        {
+          "type": "choice",
+          "q": "等女儿___回来，我就告诉她这个好消息。",
+          "options": [
+            "一",
+            "才",
+            "却",
+            "刚"
+          ],
+          "answer": "一",
+          "explain": "一……就……: 一 đứng trước động từ ở vế đầu."
+        },
+        {
+          "type": "choice",
+          "q": "儿子小时候一说话___脸红。",
+          "options": [
+            "就",
+            "又",
+            "也",
+            "却"
+          ],
+          "answer": "就",
+          "explain": "一说话就脸红: hễ nói chuyện là đỏ mặt — nghĩa điều kiện (nếu… thì…)."
+        },
+        {
+          "type": "choice",
+          "q": "他一下班___回家。",
+          "options": [
+            "就",
+            "才",
+            "却",
+            "刚"
+          ],
+          "answer": "就",
+          "explain": "一下班就回家: vừa tan làm là về nhà."
+        },
+        {
+          "type": "choice",
+          "q": "妈妈一进房间，他___把手机装了起来。",
+          "options": [
+            "就",
+            "才",
+            "却",
+            "刚"
+          ],
+          "answer": "就",
+          "explain": "一进房间就……: việc sau nối liền ngay sau việc trước (khác chủ ngữ)."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "一",
+            "下班",
+            "就",
+            "回",
+            "家"
+          ],
+          "answer": "他一下班就回家。",
+          "alt": [],
+          "vi": "Anh ấy vừa tan làm là về nhà."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "儿子",
+            "小时候",
+            "一",
+            "说话",
+            "就",
+            "脸红"
+          ],
+          "answer": "儿子小时候一说话就脸红。",
+          "alt": [],
+          "vi": "Hồi nhỏ con trai hễ nói chuyện là đỏ mặt."
+        }
+      ]
+    },
+    {
+      "id": "20.3",
+      "title": "究竟",
+      "pattern": "究竟 + câu hỏi（có đại từ nghi vấn / A 还是 B）",
+      "meaning": "Phó từ dùng trong câu hỏi hoặc câu có đại từ nghi vấn để truy hỏi, làm mạnh giọng hỏi; chủ yếu dùng trong văn viết. Nếu chủ ngữ là đại từ nghi vấn thì 究竟 chỉ có thể đứng trước chủ ngữ.",
+      "notes": [
+        "究竟 dùng trong câu hỏi hoặc câu có đại từ nghi vấn: 究竟哪个季节去丽江比较好?",
+        "Chủ ngữ là đại từ nghi vấn → 究竟 đứng trước chủ ngữ; còn lại thì đứng sau chủ ngữ.",
+        "Khác 到底: cả hai đều dùng để truy hỏi; 到底 còn là động từ “đến cùng” (坚持到底), còn 究竟 không có cách dùng này."
+      ],
+      "examples": [
+        [
+          "究竟哪个季节去丽江旅游比较好呢？",
+          "Jiūjìng nǎge jìjié qù Lìjiāng lǚyóu bǐjiào hǎo ne?",
+          "Rốt cuộc mùa nào đi Lệ Giang thì tốt hơn?"
+        ],
+        [
+          "生命究竟从哪里来？",
+          "Shēngmìng jiūjìng cóng nǎlǐ lái?",
+          "Rốt cuộc sự sống từ đâu mà có?"
+        ],
+        [
+          "你究竟想怎么样？",
+          "Nǐ jiūjìng xiǎng zěnmeyàng?",
+          "Rốt cuộc bạn muốn thế nào?"
+        ],
+        [
+          "人的一生中，究竟什么是最重要的？",
+          "Rén de yìshēng zhōng, jiūjìng shénme shì zuì zhòngyào de?",
+          "Trong cuộc đời, rốt cuộc điều gì là quan trọng nhất?"
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "___哪个季节去丽江旅游比较好呢？",
+          "options": [
+            "究竟",
+            "大概",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "究竟",
+          "explain": "Câu hỏi có 哪个 — truy hỏi cho ra lẽ → 究竟; chủ ngữ là đại từ nghi vấn nên 究竟 đứng trước."
+        },
+        {
+          "type": "choice",
+          "q": "生命___从哪里来？",
+          "options": [
+            "究竟",
+            "大概",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "究竟",
+          "explain": "究竟 đứng sau chủ ngữ 生命, trước 从哪里来: truy hỏi về nguồn gốc."
+        },
+        {
+          "type": "choice",
+          "q": "你___想怎么样？",
+          "options": [
+            "究竟",
+            "大概",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "究竟",
+          "explain": "你究竟想怎么样？: truy hỏi, đứng sau chủ ngữ 你."
+        },
+        {
+          "type": "choice",
+          "q": "我们已经做了这么多努力，一定要把计划坚持___。",
+          "options": [
+            "到底",
+            "究竟",
+            "大概",
+            "偶尔"
+          ],
+          "answer": "到底",
+          "explain": "坚持到底: 到底 làm động từ/bổ ngữ nghĩa “đến cùng”; 究竟 không có cách dùng này."
+        },
+        {
+          "type": "choice",
+          "q": "人的一生中，___什么是最重要的？",
+          "options": [
+            "究竟",
+            "大概",
+            "偶尔",
+            "随着"
+          ],
+          "answer": "究竟",
+          "explain": "Chủ ngữ là đại từ nghi vấn 什么 → 究竟 đứng trước chủ ngữ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "你",
+            "究竟",
+            "想",
+            "怎么样"
+          ],
+          "answer": "你究竟想怎么样？",
+          "alt": [],
+          "vi": "Rốt cuộc bạn muốn thế nào?"
+        },
+        {
+          "type": "order",
+          "parts": [
+            "究竟",
+            "哪个",
+            "季节",
+            "去",
+            "丽江",
+            "比较",
+            "好"
+          ],
+          "answer": "究竟哪个季节去丽江比较好？",
+          "alt": [],
+          "vi": "Rốt cuộc mùa nào đi Lệ Giang thì tốt hơn?"
+        }
+      ]
+    },
+    {
+      "id": "20.4",
+      "title": "起来",
+      "pattern": "V + 起来   |   V + 起来 + 就 / 很……",
+      "meaning": "起来 là bổ ngữ xu hướng sau động từ. Nghĩa: (a) động tác đi lên; (b) nghĩa mở rộng: hành động bắt đầu và tiếp diễn; (c) nghĩa mở rộng: đánh giá của người nói về người hay vật từ một phương diện nào đó (听起来, 看起来).",
+      "notes": [
+        "Hướng lên: 拿起来, 站起来.",
+        "Bắt đầu và tiếp diễn: 唱起来, 热起来: 他又唱起来了; 天气开始热起来.",
+        "Đánh giá từ một phương diện: 听起来像外语, 看起来很年轻."
+      ],
+      "examples": [
+        [
+          "你先把桌子上的东西拿起来，我擦完你再放下。",
+          "Nǐ xiān bǎ zhuōzi shang de dōngxi ná qǐlái, wǒ cā wán nǐ zài fàng xià.",
+          "Bạn nhấc đồ trên bàn lên trước, tôi lau xong bạn lại đặt xuống."
+        ],
+        [
+          "邻居小王最近一定很开心，你听，他又唱起来了。",
+          "Línjū Xiǎo Wáng zuìjìn yídìng hěn kāixīn, nǐ tīng, tā yòu chàng qǐlái le.",
+          "Dạo này anh Vương hàng xóm chắc rất vui, bạn nghe xem, anh ấy lại hát rồi."
+        ],
+        [
+          "上海话听起来就像外语一样。",
+          "Shànghǎihuà tīng qǐlái jiù xiàng wàiyǔ yíyàng.",
+          "Tiếng Thượng Hải nghe cứ như ngoại ngữ vậy."
+        ],
+        [
+          "尽管现在才四月，天气已经开始热起来了。",
+          "Jǐnguǎn xiànzài cái sì yuè, tiānqì yǐjīng kāishǐ rè qǐlái le.",
+          "Dù mới tháng tư, thời tiết đã bắt đầu nóng lên rồi."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "你先把桌子上的东西拿___，我擦完你再放下。",
+          "options": [
+            "起来",
+            "出来",
+            "过去",
+            "回去"
+          ],
+          "answer": "起来",
+          "explain": "拿起来: nhấc lên — 起来 chỉ động tác đi lên."
+        },
+        {
+          "type": "choice",
+          "q": "邻居小王最近一定很开心，你听，他又唱___了。",
+          "options": [
+            "起来",
+            "出来",
+            "过去",
+            "回去"
+          ],
+          "answer": "起来",
+          "explain": "唱起来了: bắt đầu hát (và tiếp tục hát) — 起来 chỉ hành động bắt đầu."
+        },
+        {
+          "type": "choice",
+          "q": "上海话听___就像外语一样。",
+          "options": [
+            "起来",
+            "出来",
+            "过去",
+            "回去"
+          ],
+          "answer": "起来",
+          "explain": "听起来: “nghe có vẻ” — 起来 dùng để đánh giá từ một phương diện."
+        },
+        {
+          "type": "choice",
+          "q": "尽管现在才四月，天气已经开始热___了。",
+          "options": [
+            "起来",
+            "出来",
+            "过去",
+            "回去"
+          ],
+          "answer": "起来",
+          "explain": "热起来: bắt đầu nóng lên — hành động/trạng thái bắt đầu và tiếp diễn."
+        },
+        {
+          "type": "choice",
+          "q": "这件衣服看___很便宜，其实很贵。",
+          "options": [
+            "起来",
+            "出来",
+            "过去",
+            "回去"
+          ],
+          "answer": "起来",
+          "explain": "看起来: “trông có vẻ” — đánh giá từ bề ngoài."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "上海话",
+            "听",
+            "起来",
+            "就",
+            "像",
+            "外语"
+          ],
+          "answer": "上海话听起来就像外语。",
+          "alt": [],
+          "vi": "Tiếng Thượng Hải nghe cứ như ngoại ngữ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "天气",
+            "已经",
+            "开始",
+            "热",
+            "起来",
+            "了"
+          ],
+          "answer": "天气已经开始热起来了。",
+          "alt": [],
+          "vi": "Thời tiết đã bắt đầu nóng lên rồi."
+        }
+      ]
+    },
+    {
+      "id": "20.5",
+      "title": "V+起",
+      "pattern": "说 / 谈 / 讲 / 问 / 提 / 聊 / 回忆 + 起 + N",
+      "meaning": "Cấu trúc V + 起 dẫn ra đối tượng mà hành động liên quan: nhắc đến, nói đến, khi nói về…. Động từ thường là một số động từ như 说, 谈, 讲, 问, 提, 聊, 回忆; sau V+起 thường là danh từ (tân ngữ).",
+      "notes": [
+        "V + 起 + danh từ: 说起吃的东西, 聊起那场比赛.",
+        "Động từ thường dùng: 说, 谈, 讲, 问, 提, 聊, 回忆.",
+        "Có thể đứng đầu vế để dẫn chủ đề, hoặc sau chủ ngữ: 有人问起那件事."
+      ],
+      "examples": [
+        [
+          "说起吃的东西，我印象最深的是湖南菜。",
+          "Shuō qǐ chī de dōngxi, wǒ yìnxiàng zuì shēn de shì Húnán cài.",
+          "Nhắc đến đồ ăn, ấn tượng nhất với tôi là món Hồ Nam."
+        ],
+        [
+          "聊起那场网球比赛，他们俩就兴奋得停不下来。",
+          "Liáo qǐ nà chǎng wǎngqiú bǐsài, tāmen liǎ jiù xīngfèn de tíng bu xiàlái.",
+          "Nhắc đến trận quần vợt ấy, hai người họ phấn khích đến không dừng được."
+        ],
+        [
+          "要是有人问起那件事，你就说你还不清楚。",
+          "Yàoshi yǒu rén wèn qǐ nà jiàn shì, nǐ jiù shuō nǐ hái bù qīngchu.",
+          "Nếu có người hỏi về chuyện đó, bạn cứ nói bạn chưa rõ."
+        ],
+        [
+          "谈起小时候的事，奶奶总是很开心。",
+          "Tán qǐ xiǎoshíhou de shì, nǎinai zǒngshì hěn kāixīn.",
+          "Nhắc đến chuyện hồi nhỏ, bà luôn rất vui."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "___起吃的东西，我印象最深的是湖南菜。",
+          "options": [
+            "说",
+            "吃",
+            "买",
+            "看"
+          ],
+          "answer": "说",
+          "explain": "说起 + danh từ: “nhắc đến…”. 说 là một trong các động từ dùng với 起 để dẫn chủ đề."
+        },
+        {
+          "type": "choice",
+          "q": "聊___那场网球比赛，他们俩就兴奋得停不下来。",
+          "options": [
+            "起",
+            "出",
+            "开",
+            "回"
+          ],
+          "answer": "起",
+          "explain": "聊起 + danh từ: “nói đến…”. 聊出/聊开/聊回 không dẫn ra chủ đề như vậy."
+        },
+        {
+          "type": "choice",
+          "q": "要是有人问___那件事，你就说你还不清楚。",
+          "options": [
+            "起",
+            "开",
+            "回",
+            "下"
+          ],
+          "answer": "起",
+          "explain": "问起那件事: “hỏi đến chuyện đó” — V+起 + danh từ."
+        },
+        {
+          "type": "choice",
+          "q": "谈___小时候的事，奶奶总是很开心。",
+          "options": [
+            "起",
+            "开",
+            "回",
+            "下"
+          ],
+          "answer": "起",
+          "explain": "谈起 + chuyện cũ: “nhắc đến…”."
+        },
+        {
+          "type": "choice",
+          "q": "___起那件事，他就不想说话了。",
+          "options": [
+            "提",
+            "吃",
+            "走",
+            "买"
+          ],
+          "answer": "提",
+          "explain": "提起那件事: “nhắc đến chuyện đó” — 提 là động từ thường dùng trong V+起."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "说起",
+            "吃的",
+            "东西",
+            "我",
+            "印象",
+            "最深的",
+            "是",
+            "湖南菜"
+          ],
+          "answer": "说起吃的东西，我印象最深的是湖南菜。",
+          "alt": [],
+          "vi": "Nhắc đến đồ ăn, ấn tượng nhất với tôi là món Hồ Nam."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "谈起",
+            "小时候",
+            "的事",
+            "奶奶",
+            "总是",
+            "很开心"
+          ],
+          "answer": "谈起小时候的事，奶奶总是很开心。",
+          "alt": [],
+          "vi": "Nhắc chuyện hồi nhỏ, bà luôn rất vui."
+        }
+      ]
+    }
   ]
 }
