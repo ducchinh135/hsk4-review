@@ -5,6 +5,10 @@ shuffled) and five practice exercises (hanzi → meaning, meaning → hanzi, lis
 fill-in-the-blank) for HSK4 (lessons 1-20), with pronunciation (Web Speech API) and per-word
 "known / needs review" marks.
 
+A grammar section follows the textbook lesson by lesson: each grammar point has a pattern, an
+explanation in Vietnamese, examples with pronunciation and common mistakes, plus fill-in-the-blank and
+sentence-ordering exercises. Wrong answers mark the point "needs review" (synced like word marks).
+
 - Without a backend (e.g. GitHub Pages) marks and review progress are stored in the browser only.
 - With the Cloudflare backend, users sign in (username + password, invite code to register) and
   their marks sync across devices (last write wins per word).
@@ -16,6 +20,9 @@ fill-in-the-blank) for HSK4 (lessons 1-20), with pronunciation (Web Speech API) 
 | `/words` | Vocabulary list of the chosen lesson: pinyin, meaning, example sentence, marks |
 | `/review` | Flip through the lesson's cards in order or shuffled |
 | `/practice` | Pick an exercise type; `/practice/meaning`, `/hanzi`, `/listen`, `/pinyin`, `/fill` run one |
+| `/grammar` | Grammar points of the chosen lesson, filtered by mark; `/grammar#1.3` opens and scrolls to a point |
+| `/grammar/practice` | A practice run over the chosen lesson's points (under the grammar filter) |
+| `/grammar/review` | A practice run over every "needs review" grammar point (at most 30 questions) |
 
 Paths are real URLs (History API), so the host must serve `index.html` for them. Cloudflare Pages does
 that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
@@ -28,6 +35,8 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 | `src/routes.js`, `src/router.jsx` | URL → page matching (pure, unit-tested) and the History API router (`useRoute`, `Link`) |
 | `src/context/AppContext.jsx` | `AppProvider` / `useApp()`: marks, speech, account sync, chosen lesson and filter |
 | `src/quiz.js` | Quiz question building, pinyin normalisation and checking |
+| `src/grammar.js` | Grammar data access, filters, practice-run building, sentence-order checking, data validation |
+| `src/data/grammar.json` | Grammar points per lesson (see below) |
 | `src/data/vocab.json` | The vocabulary, one array per word: `[hanzi, pinyin, meaning, example zh, example vi]` |
 | `src/data/practice.json` | Expanded HSK 4 textbook/workbook collocations (`phrases`) and context sentences (`sentences`) per word |
 | `server/app.js` | The Hono API: middleware (no-store, CSRF guard) and routes |
@@ -36,7 +45,31 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 | `functions/api/[[route]].js` | Mounts the Hono app on Cloudflare Pages Functions |
 | `migrations/` | D1 schema: `0001_init.sql` (`users`, `progress`, `attempts`), `0002_srs.sql` (`srs`, no longer used by the frontend) |
 | `tests/api.test.mjs` | Integration tests for the API |
-| `tests/quiz.test.mjs`, `tests/router.test.mjs` | Unit tests for the quiz and URL matching (no server needed) |
+| `tests/quiz.test.mjs`, `tests/router.test.mjs`, `tests/grammar.test.mjs` | Unit tests for the quiz, URL matching, grammar logic and grammar data (no server needed) |
+
+### Grammar data
+
+`src/data/grammar.json` maps a lesson key (`L1`…`L20`, as in `vocab.json`) to its 5 grammar points in
+textbook order. Lessons not written yet have no key, and their pages say the content is coming.
+
+```json
+{
+  "id": "1.1",
+  "title": "不仅……也/还/而且……",
+  "pattern": "不仅 + A，也/还/而且 + B",
+  "meaning": "…",
+  "notes": ["…"],
+  "examples": [["中文。", "pīnyīn", "Nghĩa tiếng Việt."]],
+  "questions": [
+    { "type": "choice", "q": "…___…", "options": ["4 khác nhau"], "answer": "…", "explain": "…" },
+    { "type": "order", "parts": ["các cụm", "theo đúng thứ tự"], "answer": "…。", "alt": [], "vi": "…" }
+  ]
+}
+```
+
+Point marks are stored with the word marks under the key `g:<id>`. `npm run test:unit` validates the
+whole file (5 points per lesson, ≥ 3 examples, ≥ 6 questions with both types, one `___` per choice
+question, parts that join into the answer).
 
 `server/` has no Pages-specific code. When the API outgrows Pages Functions, export `app.fetch`
 from a Worker entry and point `/api/*` at it; the frontend does not change.
