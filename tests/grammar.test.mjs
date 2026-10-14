@@ -170,3 +170,7 @@ test('validateGrammar() reports each kind of problem', () => {
 test('grammar.json is valid', () => {
   assert.deepEqual(validateGrammar(GRAMMAR, Object.keys(VOCAB)), []);
 });
+
+test('grammar.json has lessons 1 and 2 written', () => {
+  for (const l of ['L1', 'L2']) assert.equal(GRAMMAR[l]?.length, 5, l);
+});

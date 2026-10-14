@@ -1,1 +1,1239 @@
-{}
+{
+  "L1": [
+    {
+      "id": "1.1",
+      "title": "不仅……也/还/而且……",
+      "pattern": "不仅 + A，也/还/而且 + B",
+      "meaning": "Không chỉ A mà còn B — quan hệ tăng tiến, B thường nhấn mạnh hơn A.",
+      "notes": [
+        "Hai vế cùng chủ ngữ: 不仅 đứng sau chủ ngữ (他不仅……，还……). Khác chủ ngữ: 不仅 đứng trước chủ ngữ vế đầu (不仅他……，我也……).",
+        "Vế sau phải có 也 / 还 / 而且 đi kèm; không dùng 但是 hay 可是 ở đây vì đây là quan hệ tăng tiến, không phải chuyển ý.",
+        "Dễ nhầm: 不但 dùng giống 不仅 nhưng thường gặp hơn trong khẩu ngữ; 不仅 trang trọng hơn."
+      ],
+      "examples": [
+        [
+          "他不仅会说汉语，还会说日语。",
+          "Tā bùjǐn huì shuō Hànyǔ, hái huì shuō Rìyǔ.",
+          "Anh ấy không chỉ biết nói tiếng Trung mà còn biết nói tiếng Nhật."
+        ],
+        [
+          "她不仅性格好，而且很幽默。",
+          "Tā bùjǐn xìnggé hǎo, érqiě hěn yōumò.",
+          "Cô ấy không chỉ tính cách tốt mà còn rất hài hước."
+        ],
+        [
+          "不仅我喜欢这个电影，我的朋友也喜欢。",
+          "Bùjǐn wǒ xǐhuan zhège diànyǐng, wǒ de péngyou yě xǐhuan.",
+          "Không chỉ tôi thích bộ phim này mà bạn tôi cũng thích."
+        ],
+        [
+          "这份工作不仅很累，而且工资不高。",
+          "Zhè fèn gōngzuò bùjǐn hěn lèi, érqiě gōngzī bù gāo.",
+          "Công việc này không chỉ rất mệt mà lương cũng không cao."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "这家饭馆的菜___便宜，而且很好吃。",
+          "options": [
+            "不仅",
+            "尽管",
+            "即使",
+            "从来"
+          ],
+          "answer": "不仅",
+          "explain": "Vế sau có 而且 → cặp tăng tiến 不仅…而且. 尽管/即使 là nhượng bộ và cần vế chuyển ý, 从来 đi với phủ định."
+        },
+        {
+          "type": "choice",
+          "q": "我弟弟___喜欢运动，还喜欢看电影。",
+          "options": [
+            "不仅",
+            "即使",
+            "刚",
+            "从来"
+          ],
+          "answer": "不仅",
+          "explain": "Vế sau có 还 → 不仅…还…: không chỉ thích thể thao mà còn thích xem phim."
+        },
+        {
+          "type": "choice",
+          "q": "___他喜欢这个城市，他的家人也很喜欢。",
+          "options": [
+            "不仅",
+            "从来",
+            "刚",
+            "最好"
+          ],
+          "answer": "不仅",
+          "explain": "Hai vế khác chủ ngữ (他 / 他的家人) nên 不仅 đứng trước chủ ngữ vế đầu; vế sau có 也."
+        },
+        {
+          "type": "choice",
+          "q": "这个孩子不仅聪明，___很努力。",
+          "options": [
+            "而且",
+            "但是",
+            "所以",
+            "即使"
+          ],
+          "answer": "而且",
+          "explain": "不仅…而且… là cặp tăng tiến. 但是 là chuyển ý, 所以 là kết quả, 即使 là giả định — đều sai quan hệ."
+        },
+        {
+          "type": "choice",
+          "q": "她不仅会做饭，___会做衣服。",
+          "options": [
+            "也",
+            "却",
+            "才",
+            "刚"
+          ],
+          "answer": "也",
+          "explain": "不仅…也… nối hai điều cùng hướng. 却 là chuyển ý nên không hợp; 才 và 刚 không đi với 不仅."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "不仅",
+            "聪明",
+            "而且很努力"
+          ],
+          "answer": "他不仅聪明，而且很努力。",
+          "alt": [],
+          "vi": "Anh ấy không chỉ thông minh mà còn rất chăm chỉ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这个城市",
+            "不仅",
+            "很大",
+            "还",
+            "很漂亮"
+          ],
+          "answer": "这个城市不仅很大，还很漂亮。",
+          "alt": [],
+          "vi": "Thành phố này không chỉ rất lớn mà còn rất đẹp."
+        }
+      ]
+    },
+    {
+      "id": "1.2",
+      "title": "从来",
+      "pattern": "从来 + 不/没(有) + V（过）",
+      "meaning": "Từ trước đến nay (không bao giờ / chưa từng) — thường đi với phủ định để nói về thói quen hoặc trải nghiệm.",
+      "notes": [
+        "从来不 + V: thói quen, từ trước đến nay không làm (他从来不迟到).",
+        "从来没(有) + V + 过: từ trước đến nay chưa từng trải qua (我从来没去过北京).",
+        "Hiếm khi dùng với câu khẳng định thông thường; muốn khẳng định thì dùng 从来都 + tính từ (他从来都很认真) hoặc dùng 一直.",
+        "Dễ nhầm: 一直 dùng được với câu khẳng định để nhấn mạnh sự liên tục (她一直在学习); 从来 thì thiên về phủ định."
+      ],
+      "examples": [
+        [
+          "他从来不迟到。",
+          "Tā cónglái bù chídào.",
+          "Anh ấy xưa nay không đến muộn."
+        ],
+        [
+          "我从来没吃过这么好吃的菜。",
+          "Wǒ cónglái méi chī guo zhème hǎochī de cài.",
+          "Tôi chưa từng ăn món nào ngon như vậy."
+        ],
+        [
+          "他从来不开玩笑。",
+          "Tā cónglái bù kāi wánxiào.",
+          "Anh ấy xưa nay không đùa."
+        ],
+        [
+          "我从来没见过这个人。",
+          "Wǒ cónglái méi jiàn guo zhège rén.",
+          "Tôi chưa từng gặp người này."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "我___不喝咖啡，因为喝了睡不着。",
+          "options": [
+            "从来",
+            "刚",
+            "互相",
+            "够"
+          ],
+          "answer": "从来",
+          "explain": "Nói về thói quen từ trước đến nay và có 不 → 从来不 + V."
+        },
+        {
+          "type": "choice",
+          "q": "她___在学习汉语，每天都学。",
+          "options": [
+            "一直",
+            "从来",
+            "刚才",
+            "互相"
+          ],
+          "answer": "一直",
+          "explain": "Câu khẳng định, nhấn mạnh việc diễn ra liên tục → 一直. 从来 thường đi với phủ định nên không hợp."
+        },
+        {
+          "type": "choice",
+          "q": "我从来___去过那个地方。",
+          "options": [
+            "没",
+            "不",
+            "别",
+            "要"
+          ],
+          "answer": "没",
+          "explain": "Có 过 (đã từng trải qua) → 从来没…过. 从来不 dùng cho thói quen, không đi với 过."
+        },
+        {
+          "type": "choice",
+          "q": "这是我第一次来中国，我以前___来过。",
+          "options": [
+            "从来没",
+            "从来不",
+            "一直",
+            "刚才"
+          ],
+          "answer": "从来没",
+          "explain": "Nói về trải nghiệm chưa từng có, kết thúc bằng 过 → 从来没…过."
+        },
+        {
+          "type": "choice",
+          "q": "弟弟___不吃苹果，他不喜欢苹果。",
+          "options": [
+            "从来",
+            "即使",
+            "刚",
+            "够"
+          ],
+          "answer": "从来",
+          "explain": "Thói quen không đổi vì không thích → 从来不吃. 即使 cần vế sau có 也, 刚 và 够 không hợp nghĩa."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "从来",
+            "不",
+            "迟到"
+          ],
+          "answer": "他从来不迟到。",
+          "alt": [],
+          "vi": "Anh ấy xưa nay không bao giờ đến muộn."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我",
+            "从来",
+            "没",
+            "去过",
+            "北京"
+          ],
+          "answer": "我从来没去过北京。",
+          "alt": [],
+          "vi": "Tôi chưa từng đến Bắc Kinh."
+        }
+      ]
+    },
+    {
+      "id": "1.3",
+      "title": "刚 (so với 刚才)",
+      "pattern": "S + 刚 + V   |   刚才 + S + V   |   S + 刚才 + V",
+      "meaning": "刚 là phó từ: hành động vừa mới xảy ra, đứng sau chủ ngữ, trước động từ. 刚才 là danh từ chỉ thời gian: lúc nãy, cách đây không lâu, đứng trước hoặc sau chủ ngữ.",
+      "notes": [
+        "刚 chỉ đứng sau chủ ngữ, trước động từ: 我刚到家. Không nói 刚我到家.",
+        "刚才 là danh từ thời gian nên có thể đứng đầu câu (刚才他在这儿) hoặc làm định ngữ (刚才的事情). 刚 thì không làm được hai việc này.",
+        "刚 có thể đi với thời lượng: 他刚来两天. 刚才 không dùng như vậy.",
+        "Muốn phủ định hành động lúc nãy thì dùng 刚才没…: 我刚才没听清楚."
+      ],
+      "examples": [
+        [
+          "我刚到家，你就打电话来了。",
+          "Wǒ gāng dào jiā, nǐ jiù dǎ diànhuà lái le.",
+          "Tôi vừa mới về đến nhà thì bạn gọi điện đến."
+        ],
+        [
+          "刚才有人给你打电话。",
+          "Gāngcái yǒu rén gěi nǐ dǎ diànhuà.",
+          "Lúc nãy có người gọi điện cho bạn."
+        ],
+        [
+          "他刚来北京两天，还不太熟悉这里。",
+          "Tā gāng lái Běijīng liǎng tiān, hái bú tài shúxi zhèlǐ.",
+          "Anh ấy mới đến Bắc Kinh hai ngày, chưa quen lắm nơi này."
+        ],
+        [
+          "你刚才说什么？我没听清楚。",
+          "Nǐ gāngcái shuō shénme? Wǒ méi tīng qīngchu.",
+          "Lúc nãy bạn nói gì? Tôi nghe không rõ."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "他___来北京三天，还不认识路。",
+          "options": [
+            "刚",
+            "刚才",
+            "马上",
+            "正在"
+          ],
+          "answer": "刚",
+          "explain": "Sau động từ có thời lượng 三天 → dùng 刚 (mới đến được ba ngày). 刚才 là danh từ thời gian, không đi với thời lượng."
+        },
+        {
+          "type": "choice",
+          "q": "___他在这儿，现在去哪儿了？",
+          "options": [
+            "刚才",
+            "刚",
+            "马上",
+            "正在"
+          ],
+          "answer": "刚才",
+          "explain": "Chỗ trống đứng trước chủ ngữ 他. 刚才 là danh từ thời gian nên đứng được ở đây; 刚 phải đứng sau chủ ngữ."
+        },
+        {
+          "type": "choice",
+          "q": "___的事情，请你不要告诉别人。",
+          "options": [
+            "刚才",
+            "刚",
+            "够",
+            "互相"
+          ],
+          "answer": "刚才",
+          "explain": "Chỗ trống làm định ngữ trước 的 → cần danh từ 刚才 (chuyện lúc nãy). 刚 là phó từ nên không làm định ngữ."
+        },
+        {
+          "type": "choice",
+          "q": "我___坐下，电话就响了。",
+          "options": [
+            "刚",
+            "够",
+            "互相",
+            "即使"
+          ],
+          "answer": "刚",
+          "explain": "刚…就… : vừa… thì đã…. 刚 đứng sau chủ ngữ 我, trước động từ 坐下."
+        },
+        {
+          "type": "choice",
+          "q": "我___学汉语半年，还说不好。",
+          "options": [
+            "刚",
+            "刚才",
+            "互相",
+            "够"
+          ],
+          "answer": "刚",
+          "explain": "Có thời lượng 半年 → 刚 (mới học được nửa năm). 刚才 chỉ lúc nãy nên không hợp."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我",
+            "刚",
+            "到",
+            "家"
+          ],
+          "answer": "我刚到家。",
+          "alt": [],
+          "vi": "Tôi vừa mới về đến nhà."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "刚才",
+            "有人",
+            "给你",
+            "打电话"
+          ],
+          "answer": "刚才有人给你打电话。",
+          "alt": [
+            "有人刚才给你打电话。"
+          ],
+          "vi": "Lúc nãy có người gọi điện cho bạn."
+        }
+      ]
+    },
+    {
+      "id": "1.4",
+      "title": "即使……也……",
+      "pattern": "即使 + A，（主语）也 + B",
+      "meaning": "Dù cho / cho dù A (giả định, có thể chưa xảy ra) thì B vẫn như vậy. Vế sau thường có 也 (hoặc 还, 都).",
+      "notes": [
+        "Vế sau thường dùng 也 (có thể là 还 / 都), đứng sau chủ ngữ; không dùng 但是 ở vế sau.",
+        "即使 nêu giả thiết hoặc tình huống cực đoan, không nhất thiết đã xảy ra; 虽然/尽管 nêu sự thật đã có.",
+        "即使 có thể đứng trước hoặc sau chủ ngữ vế đầu: 即使你不去，我也去 / 你即使不去，我也去.",
+        "Có thể dùng 即使是 + danh từ để nhấn mạnh: 即使是老师，也会写错字."
+      ],
+      "examples": [
+        [
+          "即使明天下雨，我们也要去。",
+          "Jíshǐ míngtiān xià yǔ, wǒmen yě yào qù.",
+          "Dù ngày mai có mưa, chúng ta cũng phải đi."
+        ],
+        [
+          "即使你不同意，我也会这样做。",
+          "Jíshǐ nǐ bù tóngyì, wǒ yě huì zhèyàng zuò.",
+          "Dù bạn không đồng ý, tôi cũng sẽ làm như vậy."
+        ],
+        [
+          "即使工作很忙，他也每天锻炼身体。",
+          "Jíshǐ gōngzuò hěn máng, tā yě měitiān duànliàn shēntǐ.",
+          "Dù công việc rất bận, anh ấy vẫn tập thể dục mỗi ngày."
+        ],
+        [
+          "即使是最好的朋友，也会有缺点。",
+          "Jíshǐ shì zuì hǎo de péngyou, yě huì yǒu quēdiǎn.",
+          "Dù là người bạn tốt nhất cũng có khuyết điểm."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "___明天下雨，我们也要去爬山。",
+          "options": [
+            "即使",
+            "因为",
+            "不仅",
+            "从来"
+          ],
+          "answer": "即使",
+          "explain": "Vế sau có 也 và nói về tình huống giả định (ngày mai) → 即使…也…. 因为 và 不仅 không hợp quan hệ."
+        },
+        {
+          "type": "choice",
+          "q": "即使你不说，我___知道是谁做的。",
+          "options": [
+            "也",
+            "就",
+            "才",
+            "却"
+          ],
+          "answer": "也",
+          "explain": "即使…也… là cặp cố định. 就, 才, 却 không đi với 即使 trong nghĩa nhượng bộ này."
+        },
+        {
+          "type": "choice",
+          "q": "即使工作很忙，他___每天锻炼身体。",
+          "options": [
+            "也",
+            "但是",
+            "所以",
+            "因为"
+          ],
+          "answer": "也",
+          "explain": "Vế sau của 即使 dùng 也 (hoặc 还/都), không dùng 但是; 所以/因为 sai quan hệ."
+        },
+        {
+          "type": "choice",
+          "q": "___是最好的朋友，也会有缺点。",
+          "options": [
+            "即使",
+            "因为",
+            "所以",
+            "刚"
+          ],
+          "answer": "即使",
+          "explain": "即使是 + danh từ, 也…: dù là người bạn tốt nhất cũng có khuyết điểm. Vế sau có 也 nên cần 即使."
+        },
+        {
+          "type": "choice",
+          "q": "你___不喜欢他，也不应该这样说话。",
+          "options": [
+            "即使",
+            "刚",
+            "互相",
+            "够"
+          ],
+          "answer": "即使",
+          "explain": "Giả định “dù bạn không thích” và vế sau có 也 → 即使. Các từ còn lại không tạo được cấu trúc này."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "即使",
+            "天气",
+            "不好",
+            "我们",
+            "也要",
+            "去"
+          ],
+          "answer": "即使天气不好，我们也要去。",
+          "alt": [
+            "天气即使不好，我们也要去。"
+          ],
+          "vi": "Dù thời tiết không tốt, chúng tôi cũng phải đi."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "即使",
+            "你不同意",
+            "我",
+            "也会",
+            "这样做"
+          ],
+          "answer": "即使你不同意，我也会这样做。",
+          "alt": [],
+          "vi": "Dù bạn không đồng ý, tôi cũng sẽ làm như vậy."
+        }
+      ]
+    },
+    {
+      "id": "1.5",
+      "title": "(在)……上",
+      "pattern": "(在) + danh từ + 上",
+      "meaning": "Chỉ phương diện, lĩnh vực: về mặt…, trong việc…. Thường đi với danh từ trừu tượng như 学习、工作、生活、感情、这个问题.",
+      "notes": [
+        "上 ở đây không chỉ vị trí “ở trên” mà chỉ phạm vi, phương diện: 在学习上 = về việc học.",
+        "Danh từ đi trước thường là danh từ trừu tượng: 工作、学习、生活、感情、问题.",
+        "Khi cụm đứng đầu câu có thể bỏ 在: 生活上，我们互相帮助.",
+        "Cả cụm làm trạng ngữ, đứng đầu câu hoặc sau chủ ngữ: 在工作上，他很认真 / 他在工作上很认真."
+      ],
+      "examples": [
+        [
+          "在学习上，他从来不让父母担心。",
+          "Zài xuéxí shang, tā cónglái bú ràng fùmǔ dānxīn.",
+          "Về việc học, anh ấy xưa nay không để bố mẹ lo lắng."
+        ],
+        [
+          "在生活上，我们互相帮助。",
+          "Zài shēnghuó shang, wǒmen hùxiāng bāngzhù.",
+          "Trong cuộc sống, chúng tôi giúp đỡ lẫn nhau."
+        ],
+        [
+          "在这个问题上，我同意你的看法。",
+          "Zài zhège wèntí shang, wǒ tóngyì nǐ de kànfǎ.",
+          "Về vấn đề này, tôi đồng ý với quan điểm của bạn."
+        ],
+        [
+          "他们在感情上遇到了一些困难。",
+          "Tāmen zài gǎnqíng shang yùdào le yìxiē kùnnan.",
+          "Họ gặp một số khó khăn về mặt tình cảm."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "在工作___，他是个很认真的人。",
+          "options": [
+            "上",
+            "里",
+            "下",
+            "外"
+          ],
+          "answer": "上",
+          "explain": "Chỉ phương diện công việc → 在……上. 里/下/外 chỉ vị trí không gian nên không hợp."
+        },
+        {
+          "type": "choice",
+          "q": "在这个问题___，我们的看法不一样。",
+          "options": [
+            "上",
+            "里",
+            "下",
+            "外"
+          ],
+          "answer": "上",
+          "explain": "“Về vấn đề này” → 在这个问题上. 问题 là danh từ trừu tượng, đi với 上 để chỉ phương diện."
+        },
+        {
+          "type": "choice",
+          "q": "___生活上，我们互相帮助。",
+          "options": [
+            "在",
+            "把",
+            "被",
+            "比"
+          ],
+          "answer": "在",
+          "explain": "Cụm chỉ phương diện mở đầu bằng 在 (在……上). 把/被/比 là những giới từ khác, không tạo được cấu trúc này."
+        },
+        {
+          "type": "choice",
+          "q": "他们在感情___遇到了一些困难。",
+          "options": [
+            "上",
+            "下",
+            "外",
+            "间"
+          ],
+          "answer": "上",
+          "explain": "Phương diện tình cảm → 在感情上. Các phương án còn lại không tạo thành cụm chỉ phương diện."
+        },
+        {
+          "type": "choice",
+          "q": "___，他比我有经验。",
+          "options": [
+            "在工作上",
+            "在工作外",
+            "在工作比",
+            "在工作和"
+          ],
+          "answer": "在工作上",
+          "explain": "Về mặt công việc → 在工作上, làm trạng ngữ đứng đầu câu. Ba phương án còn lại không phải cụm giới từ đúng."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "在",
+            "学习",
+            "上",
+            "他",
+            "很",
+            "努力"
+          ],
+          "answer": "在学习上，他很努力。",
+          "alt": [
+            "他在学习上很努力。"
+          ],
+          "vi": "Về việc học, anh ấy rất chăm chỉ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "在",
+            "感情",
+            "上",
+            "他们",
+            "遇到了",
+            "困难"
+          ],
+          "answer": "在感情上，他们遇到了困难。",
+          "alt": [
+            "他们在感情上遇到了困难。"
+          ],
+          "vi": "Về mặt tình cảm, họ gặp khó khăn."
+        }
+      ]
+    }
+  ],
+  "L2": [
+    {
+      "id": "2.1",
+      "title": "正好",
+      "pattern": "正好 + V / số lượng / hình dung   |   S + V + 得正好",
+      "meaning": "Vừa vặn, vừa đúng, vừa khéo — chỉ số lượng, kích cỡ, thời điểm hoặc sự việc trùng khớp đúng lúc.",
+      "notes": [
+        "Chỉ số lượng hoặc kích cỡ vừa đủ, không thừa không thiếu: 这件衣服我穿正好.",
+        "Chỉ sự trùng hợp về thời gian: 你来得正好 (bạn đến thật đúng lúc), 我正好有空.",
+        "Dễ nhầm với 差不多: 正好 là đúng, vừa khít; 差不多 là gần như, xấp xỉ, chưa chắc đúng.",
+        "Dễ nhầm với 刚: 刚 chỉ hành động vừa mới xảy ra; 正好 nhấn mạnh sự trùng khớp may mắn."
+      ],
+      "examples": [
+        [
+          "这件衣服我穿正好。",
+          "Zhè jiàn yīfu wǒ chuān zhènghǎo.",
+          "Cái áo này tôi mặc vừa vặn."
+        ],
+        [
+          "你来得正好，我们正要吃饭。",
+          "Nǐ lái de zhènghǎo, wǒmen zhèng yào chīfàn.",
+          "Bạn đến thật đúng lúc, chúng tôi sắp ăn cơm."
+        ],
+        [
+          "我正好有时间，可以陪你去。",
+          "Wǒ zhènghǎo yǒu shíjiān, kěyǐ péi nǐ qù.",
+          "Tôi vừa hay có thời gian, có thể đi cùng bạn."
+        ],
+        [
+          "一共五十块钱，我正好带了五十。",
+          "Yígòng wǔshí kuài qián, wǒ zhènghǎo dài le wǔshí.",
+          "Tổng cộng năm mươi tệ, tôi vừa hay mang đúng năm mươi."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "我想找你帮忙，你___在这儿，太好了！",
+          "options": [
+            "正好",
+            "差不多",
+            "尽管",
+            "从来"
+          ],
+          "answer": "正好",
+          "explain": "Trùng hợp đúng lúc cần → 正好 (vừa hay bạn ở đây). Các từ còn lại không có nghĩa trùng hợp."
+        },
+        {
+          "type": "choice",
+          "q": "这双鞋不大也不小，我穿___。",
+          "options": [
+            "正好",
+            "差不多",
+            "尽管",
+            "却"
+          ],
+          "answer": "正好",
+          "explain": "Không lớn không nhỏ, vừa khít → 正好. 差不多 chỉ là gần giống, không nói được “vừa vặn”."
+        },
+        {
+          "type": "choice",
+          "q": "你来得___，我们刚要开会。",
+          "options": [
+            "正好",
+            "刚才",
+            "即使",
+            "从来"
+          ],
+          "answer": "正好",
+          "explain": "来得正好 = đến thật đúng lúc. 刚才 là danh từ thời gian, không đi với 得 làm bổ ngữ như vậy."
+        },
+        {
+          "type": "choice",
+          "q": "我去超市的时候，___遇到了老同学。",
+          "options": [
+            "正好",
+            "差不多",
+            "尽管",
+            "而"
+          ],
+          "answer": "正好",
+          "explain": "Sự việc xảy ra trùng hợp ngẫu nhiên → 正好 (vừa hay gặp bạn cũ)."
+        },
+        {
+          "type": "choice",
+          "q": "一共三十块，我钱包里___有三十块，不用找钱。",
+          "options": [
+            "正好",
+            "尽管",
+            "从来",
+            "而"
+          ],
+          "answer": "正好",
+          "explain": "Đúng ba mươi, không cần thối tiền → 正好 (số lượng khớp đúng)."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这件衣服",
+            "我",
+            "穿",
+            "正好"
+          ],
+          "answer": "这件衣服我穿正好。",
+          "alt": [],
+          "vi": "Cái áo này tôi mặc vừa vặn."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "你",
+            "来得",
+            "正好",
+            "我们",
+            "正要",
+            "出发"
+          ],
+          "answer": "你来得正好，我们正要出发。",
+          "alt": [],
+          "vi": "Bạn đến thật đúng lúc, chúng tôi sắp xuất phát."
+        }
+      ]
+    },
+    {
+      "id": "2.2",
+      "title": "差不多",
+      "pattern": "A 和/跟 B + 差不多   |   差不多 + số lượng / V",
+      "meaning": "Gần giống, xấp xỉ. Làm vị ngữ: hai thứ chênh lệch không nhiều. Làm phó từ: gần như, suýt soát về số lượng, thời gian, mức độ.",
+      "notes": [
+        "Làm vị ngữ: 这两个城市的天气差不多; 他和我的汉语水平差不多.",
+        "Làm phó từ, đứng trước động từ hoặc số lượng: 差不多三个小时 (gần ba tiếng), 饭差不多做好了 (cơm gần xong).",
+        "差不多 không có nghĩa “đúng”: muốn nói vừa khít, đúng lúc thì dùng 正好.",
+        "Có thể trả lời ngắn: A: 做好了吗？ B: 差不多了 (gần xong rồi)."
+      ],
+      "examples": [
+        [
+          "我和他的身高差不多。",
+          "Wǒ hé tā de shēngāo chàbuduō.",
+          "Chiều cao của tôi và anh ấy gần như nhau."
+        ],
+        [
+          "从这儿到学校差不多要二十分钟。",
+          "Cóng zhèr dào xuéxiào chàbuduō yào èrshí fēnzhōng.",
+          "Từ đây đến trường mất khoảng hai mươi phút."
+        ],
+        [
+          "饭差不多做好了，你们再等一会儿。",
+          "Fàn chàbuduō zuò hǎo le, nǐmen zài děng yíhuìr.",
+          "Cơm gần nấu xong rồi, mọi người đợi thêm chút nhé."
+        ],
+        [
+          "这两个城市的天气差不多。",
+          "Zhè liǎng gè chéngshì de tiānqì chàbuduō.",
+          "Thời tiết hai thành phố này gần giống nhau."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "我和哥哥的汉语水平___。",
+          "options": [
+            "差不多",
+            "正好",
+            "尽管",
+            "却"
+          ],
+          "answer": "差不多",
+          "explain": "So sánh hai người và kết luận “gần như nhau” → A 和 B + 差不多."
+        },
+        {
+          "type": "choice",
+          "q": "他们俩的性格___，所以很容易成为朋友。",
+          "options": [
+            "差不多",
+            "不仅",
+            "即使",
+            "从来"
+          ],
+          "answer": "差不多",
+          "explain": "Làm vị ngữ: tính cách hai người gần giống nhau → 差不多. Các từ còn lại không đứng làm vị ngữ được."
+        },
+        {
+          "type": "choice",
+          "q": "这个工作我___做完了，只剩一点儿了。",
+          "options": [
+            "差不多",
+            "正好",
+            "即使",
+            "却"
+          ],
+          "answer": "差不多",
+          "explain": "Chỉ còn một chút → mới “gần xong”, dùng 差不多. 正好 chỉ sự đúng khít nên mâu thuẫn với “còn một chút”."
+        },
+        {
+          "type": "choice",
+          "q": "这两件衣服的颜色___，我分不清哪件是我的。",
+          "options": [
+            "差不多",
+            "正好",
+            "尽管",
+            "而"
+          ],
+          "answer": "差不多",
+          "explain": "Hai màu gần giống nhau nên phân biệt không ra → 差不多."
+        },
+        {
+          "type": "choice",
+          "q": "A：饭做好了吗？ B：___了，再等五分钟。",
+          "options": [
+            "差不多",
+            "正好",
+            "尽管",
+            "从来"
+          ],
+          "answer": "差不多",
+          "explain": "差不多了 = gần xong rồi, còn phải đợi thêm. 正好了 không nói được trong câu này."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我",
+            "和",
+            "他",
+            "差不多",
+            "高"
+          ],
+          "answer": "我和他差不多高。",
+          "alt": [],
+          "vi": "Tôi và anh ấy cao gần bằng nhau."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "从",
+            "这儿",
+            "到",
+            "学校",
+            "差不多",
+            "要",
+            "二十分钟"
+          ],
+          "answer": "从这儿到学校差不多要二十分钟。",
+          "alt": [],
+          "vi": "Từ đây đến trường mất khoảng hai mươi phút."
+        }
+      ]
+    },
+    {
+      "id": "2.3",
+      "title": "尽管",
+      "pattern": "尽管 + A，但是/可是/还是/却 + B",
+      "meaning": "Mặc dù / dù cho A (sự thật đã có), B vẫn xảy ra hoặc đối lập với A. A là điều có thật, không phải giả định.",
+      "notes": [
+        "A là sự thật hiện có; vế sau thường có 但是 / 可是 / 还是 / 却 để chuyển ý.",
+        "Dễ nhầm với 即使: 即使 là giả định (chưa chắc xảy ra) và vế sau dùng 也; 尽管 là sự thật.",
+        "Gần nghĩa với 虽然 nhưng 尽管 nhấn mạnh hơn và trang trọng hơn.",
+        "尽管 còn có nghĩa “cứ, đừng ngại”: 有问题你尽管问 (có vấn đề gì bạn cứ hỏi)."
+      ],
+      "examples": [
+        [
+          "尽管天气很冷，他还是去跑步了。",
+          "Jǐnguǎn tiānqì hěn lěng, tā háishi qù pǎobù le.",
+          "Mặc dù trời rất lạnh, anh ấy vẫn đi chạy bộ."
+        ],
+        [
+          "尽管工作很忙，但是她没有忘记给妈妈打电话。",
+          "Jǐnguǎn gōngzuò hěn máng, dànshì tā méiyǒu wàngjì gěi māma dǎ diànhuà.",
+          "Mặc dù công việc rất bận nhưng cô ấy không quên gọi điện cho mẹ."
+        ],
+        [
+          "尽管我们认识很多年了，我却不太了解他。",
+          "Jǐnguǎn wǒmen rènshi hěn duō nián le, wǒ què bú tài liǎojiě tā.",
+          "Dù quen biết nhiều năm rồi, tôi lại không hiểu rõ anh ấy lắm."
+        ],
+        [
+          "有什么问题，你尽管问。",
+          "Yǒu shénme wèntí, nǐ jǐnguǎn wèn.",
+          "Có vấn đề gì bạn cứ hỏi."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "___他已经学了三年汉语，但是说得还不太好。",
+          "options": [
+            "尽管",
+            "因为",
+            "不仅",
+            "从来"
+          ],
+          "answer": "尽管",
+          "explain": "Việc đã học ba năm là sự thật và vế sau có 但是 (chuyển ý) → 尽管…但是…"
+        },
+        {
+          "type": "choice",
+          "q": "明天___下大雨，比赛也不会取消。",
+          "options": [
+            "即使",
+            "尽管",
+            "因为",
+            "不仅"
+          ],
+          "answer": "即使",
+          "explain": "Chuyện ngày mai là giả định, vế sau có 也 → 即使…也…. 尽管 chỉ dùng cho sự thật đã có."
+        },
+        {
+          "type": "choice",
+          "q": "尽管他很努力，成绩___不太好。",
+          "options": [
+            "却",
+            "刚",
+            "互相",
+            "够"
+          ],
+          "answer": "却",
+          "explain": "Vế sau trái với mong đợi, đứng sau chủ ngữ 成绩 → 却."
+        },
+        {
+          "type": "choice",
+          "q": "尽管他已经五十岁了，他___每天跑步。",
+          "options": [
+            "还是",
+            "因为",
+            "所以",
+            "如果"
+          ],
+          "answer": "还是",
+          "explain": "Nhượng bộ: dù đã 50 tuổi anh ấy vẫn chạy mỗi ngày → 还是 (vẫn). 因为/所以/如果 sai quan hệ."
+        },
+        {
+          "type": "choice",
+          "q": "有什么问题，你___问。",
+          "options": [
+            "尽管",
+            "即使",
+            "刚",
+            "却"
+          ],
+          "answer": "尽管",
+          "explain": "尽管 + động từ = cứ cứ (đừng ngại). Các từ còn lại không có nghĩa này."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "尽管",
+            "天气",
+            "很冷",
+            "他",
+            "还是",
+            "去跑步了"
+          ],
+          "answer": "尽管天气很冷，他还是去跑步了。",
+          "alt": [],
+          "vi": "Mặc dù trời rất lạnh, anh ấy vẫn đi chạy bộ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "尽管",
+            "工作",
+            "很忙",
+            "她",
+            "却",
+            "没有忘记",
+            "给妈妈打电话"
+          ],
+          "answer": "尽管工作很忙，她却没有忘记给妈妈打电话。",
+          "alt": [],
+          "vi": "Dù công việc rất bận, cô ấy lại không quên gọi điện cho mẹ."
+        }
+      ]
+    },
+    {
+      "id": "2.4",
+      "title": "却",
+      "pattern": "A，（主语）却 + B",
+      "meaning": "Nhưng, lại, thế mà — phó từ chuyển ý, kết quả trái với dự đoán. 却 đứng sau chủ ngữ vế sau, trước vị ngữ.",
+      "notes": [
+        "却 là phó từ: phải đứng sau chủ ngữ vế sau, không đứng đầu vế: 他很聪明，却不努力.",
+        "但是 / 可是 là liên từ: đứng trước chủ ngữ vế sau: 他很聪明，但是他不努力.",
+        "Có thể dùng chung: 虽然他很有钱，但是他却不快乐.",
+        "却 nhấn vào sự trái ngược hoặc bất ngờ so với điều mong đợi."
+      ],
+      "examples": [
+        [
+          "他很有钱，却不快乐。",
+          "Tā hěn yǒu qián, què bú kuàilè.",
+          "Anh ấy rất giàu, nhưng lại không vui."
+        ],
+        [
+          "我想帮他，他却不接受。",
+          "Wǒ xiǎng bāng tā, tā què bù jiēshòu.",
+          "Tôi muốn giúp anh ấy, nhưng anh ấy lại không chấp nhận."
+        ],
+        [
+          "大家都来了，他却没来。",
+          "Dàjiā dōu lái le, tā què méi lái.",
+          "Mọi người đều đến rồi, riêng anh ấy lại không đến."
+        ],
+        [
+          "虽然我们是邻居，却很少见面。",
+          "Suīrán wǒmen shì línjū, què hěn shǎo jiànmiàn.",
+          "Tuy chúng tôi là hàng xóm nhưng lại ít gặp nhau."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "他很聪明，他___不努力。",
+          "options": [
+            "却",
+            "但是",
+            "可是",
+            "所以"
+          ],
+          "answer": "却",
+          "explain": "Chỗ trống đứng sau chủ ngữ 他 → dùng phó từ 却. 但是/可是 phải đứng trước chủ ngữ."
+        },
+        {
+          "type": "choice",
+          "q": "大家都来了，他___没来。",
+          "options": [
+            "却",
+            "但是",
+            "而",
+            "可是"
+          ],
+          "answer": "却",
+          "explain": "Chỗ trống sau chủ ngữ 他, nêu điều trái mong đợi → 却."
+        },
+        {
+          "type": "choice",
+          "q": "他很聪明，___他不努力。",
+          "options": [
+            "但是",
+            "却",
+            "所以",
+            "因为"
+          ],
+          "answer": "但是",
+          "explain": "Chỗ trống đứng trước chủ ngữ 他 → dùng liên từ 但是. 却 là phó từ, phải đứng sau 他."
+        },
+        {
+          "type": "choice",
+          "q": "这家饭馆看起来很普通，味道___很好。",
+          "options": [
+            "却",
+            "但是",
+            "而",
+            "所以"
+          ],
+          "answer": "却",
+          "explain": "Chỗ trống đứng sau chủ ngữ 味道 → 却. 但是 sẽ phải đặt trước 味道."
+        },
+        {
+          "type": "choice",
+          "q": "我以为他会生气，他___笑了笑。",
+          "options": [
+            "却",
+            "但是",
+            "而",
+            "互相"
+          ],
+          "answer": "却",
+          "explain": "Kết quả bất ngờ, đứng sau chủ ngữ 他 → 却."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "他",
+            "很",
+            "聪明",
+            "却",
+            "不努力"
+          ],
+          "answer": "他很聪明，却不努力。",
+          "alt": [],
+          "vi": "Anh ấy rất thông minh nhưng lại không chăm chỉ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "大家",
+            "都",
+            "来了",
+            "他",
+            "却",
+            "没来"
+          ],
+          "answer": "大家都来了，他却没来。",
+          "alt": [],
+          "vi": "Mọi người đều đến rồi, riêng anh ấy lại không đến."
+        }
+      ]
+    },
+    {
+      "id": "2.5",
+      "title": "而",
+      "pattern": "A 而 B   |   A，而 + chủ ngữ + B",
+      "meaning": "Liên từ 而 có hai cách dùng chính: (1) nối hai tính từ hoặc cụm động từ cùng loại (聪明而幽默); (2) nối hai vế đối chiếu: A thế này, còn B thì thế kia.",
+      "notes": [
+        "Đối chiếu hai vế: 而 đứng trước chủ ngữ vế sau: 我喜欢安静，而他喜欢热闹.",
+        "Nối hai tính từ bổ sung cho nhau: 这个办法简单而有效.",
+        "Dễ nhầm với 却: 却 đứng sau chủ ngữ và nhấn vào điều trái dự đoán; 而 đứng trước chủ ngữ và chỉ đối chiếu hai đối tượng.",
+        "Thường gặp trong văn viết, trang trọng hơn 但是."
+      ],
+      "examples": [
+        [
+          "我喜欢安静，而他喜欢热闹。",
+          "Wǒ xǐhuan ānjìng, ér tā xǐhuan rènao.",
+          "Tôi thích yên tĩnh, còn anh ấy thích náo nhiệt."
+        ],
+        [
+          "这个办法简单而有效。",
+          "Zhège bànfǎ jiǎndān ér yǒuxiào.",
+          "Cách này đơn giản mà hiệu quả."
+        ],
+        [
+          "哥哥喜欢运动，而弟弟喜欢读书。",
+          "Gēge xǐhuan yùndòng, ér dìdi xǐhuan dúshū.",
+          "Anh trai thích thể thao, còn em trai thích đọc sách."
+        ],
+        [
+          "他是个聪明而幽默的人。",
+          "Tā shì gè cōngmíng ér yōumò de rén.",
+          "Anh ấy là người thông minh mà hài hước."
+        ]
+      ],
+      "questions": [
+        {
+          "type": "choice",
+          "q": "我喜欢安静，___他喜欢热闹。",
+          "options": [
+            "而",
+            "却",
+            "就",
+            "才"
+          ],
+          "answer": "而",
+          "explain": "Chỗ trống đứng trước chủ ngữ 他, đối chiếu hai người → 而. 却 phải đứng sau chủ ngữ."
+        },
+        {
+          "type": "choice",
+          "q": "他是个聪明___幽默的人。",
+          "options": [
+            "而",
+            "刚",
+            "才",
+            "互相"
+          ],
+          "answer": "而",
+          "explain": "Nối hai tính từ 聪明 và 幽默 trước 的 → 聪明而幽默."
+        },
+        {
+          "type": "choice",
+          "q": "哥哥喜欢运动，弟弟___喜欢读书。",
+          "options": [
+            "却",
+            "而",
+            "刚",
+            "才"
+          ],
+          "answer": "却",
+          "explain": "Chỗ trống đứng sau chủ ngữ 弟弟 → dùng phó từ 却. 而 phải đứng trước chủ ngữ."
+        },
+        {
+          "type": "choice",
+          "q": "这个办法简单___有效。",
+          "options": [
+            "而",
+            "刚",
+            "才",
+            "互相"
+          ],
+          "answer": "而",
+          "explain": "Nối hai tính từ 简单 và 有效 → 简单而有效."
+        },
+        {
+          "type": "choice",
+          "q": "有的人喜欢早起，___有的人喜欢晚睡。",
+          "options": [
+            "而",
+            "却",
+            "刚",
+            "才"
+          ],
+          "answer": "而",
+          "explain": "Chỗ trống đứng trước chủ ngữ 有的人 để đối chiếu hai nhóm người → 而; 却 không đứng trước chủ ngữ."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "我",
+            "喜欢",
+            "安静",
+            "而",
+            "他",
+            "喜欢",
+            "热闹"
+          ],
+          "answer": "我喜欢安静，而他喜欢热闹。",
+          "alt": [],
+          "vi": "Tôi thích yên tĩnh, còn anh ấy thích náo nhiệt."
+        },
+        {
+          "type": "order",
+          "parts": [
+            "这个办法",
+            "简单",
+            "而",
+            "有效"
+          ],
+          "answer": "这个办法简单而有效。",
+          "alt": [],
+          "vi": "Cách này đơn giản mà hiệu quả."
+        }
+      ]
+    }
+  ]
+}
