@@ -368,6 +368,7 @@ a.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .order-line{ min-height:58px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; justify-content:center; border-bottom:3px dashed #ddd; padding:10px; margin:16px 0; font-size:22px; font-weight:800; overflow-wrap:anywhere; }
 .order-line.done.ok{ color:#2b8a3e; }
 .order-line.done.bad{ color:#c92a2a; }
+.order-vi{ text-align:center; font-size:16px; font-weight:700; color:#555; margin:6px 0 0; }
 .order-hint{ font-size:14px; font-weight:600; color:#999; }
 .order-pool{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:12px; }
 .order-tile{ border:3px solid #ddd; background:#fafafa; cursor:pointer; padding:10px 16px; border-radius:14px; font-size:20px; font-weight:800; font-family:inherit; }

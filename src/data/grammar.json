@@ -43,7 +43,7 @@
             "从来"
           ],
           "answer": "不仅",
-          "explain": "Vế sau có 而且 → cặp tăng tiến 不仅…而且. 尽管/即使 là nhượng bộ và cần vế chuyển ý, 从来 đi với phủ định."
+          "explain": "Vế sau có 而且 → cặp tăng tiến 不仅…而且. 尽管/即使 là nhượng bộ (尽管 cần vế chuyển ý, 即使 cần 也 ở vế sau), 从来 đi với phủ định."
         },
         {
           "type": "choice",
@@ -115,7 +115,9 @@
             "很漂亮"
           ],
           "answer": "这个城市不仅很大，还很漂亮。",
-          "alt": [],
+          "alt": [
+            "这个城市不仅很漂亮，还很大。"
+          ],
           "vi": "Thành phố này không chỉ rất lớn mà còn rất đẹp."
         }
       ]
@@ -721,7 +723,9 @@
             "正好"
           ],
           "answer": "这件衣服我穿正好。",
-          "alt": [],
+          "alt": [
+            "我穿这件衣服正好。"
+          ],
           "vi": "Cái áo này tôi mặc vừa vặn."
         },
         {
@@ -844,7 +848,9 @@
             "高"
           ],
           "answer": "我和他差不多高。",
-          "alt": [],
+          "alt": [
+            "他和我差不多高。"
+          ],
           "vi": "Tôi và anh ấy cao gần bằng nhau."
         },
         {
@@ -859,7 +865,9 @@
             "二十分钟"
           ],
           "answer": "从这儿到学校差不多要二十分钟。",
-          "alt": [],
+          "alt": [
+            "从这儿到学校要差不多二十分钟。"
+          ],
           "vi": "Từ đây đến trường mất khoảng hai mươi phút."
         }
       ]
@@ -956,7 +964,7 @@
             "却"
           ],
           "answer": "尽管",
-          "explain": "尽管 + động từ = cứ cứ (đừng ngại). Các từ còn lại không có nghĩa này."
+          "explain": "尽管 + động từ = cứ (đừng ngại). Các từ còn lại không có nghĩa này."
         },
         {
           "type": "order",
@@ -969,7 +977,9 @@
             "去跑步了"
           ],
           "answer": "尽管天气很冷，他还是去跑步了。",
-          "alt": [],
+          "alt": [
+            "天气尽管很冷，他还是去跑步了。"
+          ],
           "vi": "Mặc dù trời rất lạnh, anh ấy vẫn đi chạy bộ."
         },
         {
@@ -984,7 +994,9 @@
             "给妈妈打电话"
           ],
           "answer": "尽管工作很忙，她却没有忘记给妈妈打电话。",
-          "alt": [],
+          "alt": [
+            "工作尽管很忙，她却没有忘记给妈妈打电话。"
+          ],
           "vi": "Dù công việc rất bận, cô ấy lại không quên gọi điện cho mẹ."
         }
       ]
@@ -1053,8 +1065,8 @@
           "options": [
             "但是",
             "却",
-            "所以",
-            "因为"
+            "即使",
+            "不仅"
           ],
           "answer": "但是",
           "explain": "Chỗ trống đứng trước chủ ngữ 他 → dùng liên từ 但是. 却 là phó từ, phải đứng sau 他."
@@ -1230,7 +1242,9 @@
             "有效"
           ],
           "answer": "这个办法简单而有效。",
-          "alt": [],
+          "alt": [
+            "这个办法有效而简单。"
+          ],
           "vi": "Cách này đơn giản mà hiệu quả."
         }
       ]

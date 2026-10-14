@@ -174,3 +174,38 @@ test('grammar.json is valid', () => {
 test('grammar.json has lessons 1 and 2 written', () => {
   for (const l of ['L1', 'L2']) assert.equal(GRAMMAR[l]?.length, 5, l);
 });
+
+const byAnswer = (a) => ALL_QUESTIONS.find((q) => q.answer === a);
+const ALL_QUESTIONS = Object.values(GRAMMAR).flat().flatMap((p) => p.questions);
+
+test('order questions accept the same-meaning variants a learner could build', () => {
+  const variants = [
+    ['这个城市不仅很大，还很漂亮。', '这个城市不仅很漂亮，还很大。'],
+    ['这件衣服我穿正好。', '我穿这件衣服正好。'],
+    ['我和他差不多高。', '他和我差不多高。'],
+    ['从这儿到学校差不多要二十分钟。', '从这儿到学校要差不多二十分钟。'],
+    ['尽管天气很冷，他还是去跑步了。', '天气尽管很冷，他还是去跑步了。'],
+    ['尽管工作很忙，她却没有忘记给妈妈打电话。', '工作尽管很忙，她却没有忘记给妈妈打电话。'],
+    ['这个办法简单而有效。', '这个办法有效而简单。'],
+  ];
+  for (const [answer, variant] of variants) {
+    const q = byAnswer(answer);
+    assert.ok(q, 'question not found: ' + answer);
+    assert.equal(checkOrder(variant, q), true, variant);
+  }
+  // a swapped meaning stays wrong
+  assert.equal(checkOrder('从学校到这儿差不多要二十分钟。', byAnswer('从这儿到学校差不多要二十分钟。')), false);
+});
+
+test('choice question 2.4 "他很聪明，___他不努力" has one fitting option', () => {
+  const q = ALL_QUESTIONS.find((x) => x.q === '他很聪明，___他不努力。');
+  assert.ok(q);
+  for (const bad of ['所以', '因为']) assert.ok(!q.options.includes(bad), bad);
+});
+
+test('explanations have no known wording errors', () => {
+  const explains = ALL_QUESTIONS.filter((q) => q.type === 'choice').map((q) => q.explain);
+  assert.ok(!explains.some((e) => e.includes('cứ cứ')), 'typo "cứ cứ"');
+  const first = ALL_QUESTIONS.find((q) => q.q === '这家饭馆的菜___便宜，而且很好吃。');
+  assert.ok(!first.explain.includes('即使 cần vế chuyển ý'), '即使 pairs with 也, not a turning clause');
+});

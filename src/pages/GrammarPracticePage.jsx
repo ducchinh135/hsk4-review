@@ -157,6 +157,7 @@ export default function GrammarPracticePage({ scope }) {
         <div className="progress">
           Câu {index + 1} / {n} · {q.type === 'order' ? 'Sắp xếp thành câu' : 'Chọn từ điền vào chỗ trống'}
         </div>
+        {q.type === 'order' && <div className="order-vi">{q.vi}</div>}
         {q.type === 'order' ? (
           <OrderQuestion key={run + ':' + index} q={q} answered={answered} onAnswer={(given) => answer(given, checkOrder(given, q))} />
         ) : (
@@ -168,7 +169,7 @@ export default function GrammarPracticePage({ scope }) {
               {answered.ok ? '✅ Đúng' : '❌ Sai'}
               {q.type === 'order' && ' · ' + q.answer}
             </div>
-            <div className="quiz-reveal-sub">{q.type === 'order' ? q.vi : q.explain}</div>
+            {q.type === 'choice' && <div className="quiz-reveal-sub">{q.explain}</div>}
             <div className="quiz-reveal-sub">
               <Link to={theoryLink(q.pointId)}>📖 Xem lý thuyết: {point.title}</Link>
             </div>
