@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import AccountBar from './components/AccountBar.jsx';
 import AuthModal from './components/AuthModal.jsx';
+import CompareNav from './components/CompareNav.jsx';
 import GrammarNav from './components/GrammarNav.jsx';
 import NavBar from './components/NavBar.jsx';
 import Sidebar from './components/Sidebar.jsx';
 import { AppProvider, useApp } from './context/AppContext.jsx';
 import PracticeHub from './components/PracticeHub.jsx';
+import ComparePage from './pages/ComparePage.jsx';
 import GrammarPage from './pages/GrammarPage.jsx';
 import GrammarPracticePage from './pages/GrammarPracticePage.jsx';
 import ExercisePage from './pages/ExercisePage.jsx';
@@ -17,6 +19,7 @@ import { PAGE_TITLES, sectionOf } from './routes.js';
 // The study pages are remounted (via `key`) when the lesson, filter or account data changes, so
 // their lists and positions are rebuilt.
 function Page({ route, viewVersion }) {
+  if (route.page === 'compare') return <ComparePage />;
   if (route.page === 'grammar') return <GrammarPage />;
   if (route.page === 'grammar-practice') return <GrammarPracticePage key={'lesson:' + viewVersion} scope="lesson" />;
   if (route.page === 'grammar-review') return <GrammarPracticePage key={'review:' + viewVersion} scope="review" />;
@@ -29,6 +32,7 @@ function Page({ route, viewVersion }) {
 function Shell() {
   const { account, speech, viewVersion } = useApp();
   const route = useRoute();
+  const section = sectionOf(route.page);
   const [authMode, setAuthMode] = useState(null); // null = modal closed
 
   useEffect(() => {
@@ -48,7 +52,7 @@ function Shell() {
       <div className="layout">
         <Sidebar page={route.page} />
         <div className="content">
-          {sectionOf(route.page) === 'grammar' ? <GrammarNav page={route.page} /> : <NavBar page={route.page} />}
+          {section === 'grammar' ? <GrammarNav page={route.page} /> : section === 'compare' ? <CompareNav page={route.page} /> : <NavBar page={route.page} />}
           <main>
             <Page route={route} viewVersion={viewVersion} />
           </main>

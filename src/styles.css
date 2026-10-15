@@ -389,3 +389,23 @@ a.exercise-card:hover{ border-color:var(--accent-a,#333); }
   .order-tile{ font-size:17px; padding:8px 12px; }
   .order-line{ font-size:19px; }
 }
+
+/* ---------- confusable words ---------- */
+.cp-search{ margin:0 0 12px; }
+.cp-search input{ width:100%; box-sizing:border-box; font:inherit; font-size:16px; padding:10px 14px; border:2px solid #d0d0d8; border-radius:14px; background:#fff; color:var(--ink); }
+.cp-search input:focus{ outline:none; border-color:var(--accent-a,#3d8bff); }
+.cp-title{ display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 12px; min-width:0; }
+.cp-word{ display:inline-flex; align-items:baseline; gap:6px; }
+.cp-hz{ font-size:clamp(20px,4vw,26px); font-weight:900; color:var(--accent-a,#333); }
+.cp-py{ font-size:14px; color:#777; }
+.cp-sep{ color:#aaa; font-weight:800; margin-right:6px; }
+.cp-lesson{ font-size:12px; font-weight:800; color:#555; background:#f0f0f5; border-radius:999px; padding:3px 8px; flex:0 0 auto; }
+.cp-table-wrap{ width:100%; max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.cp-table{ width:100%; min-width:420px; border-collapse:collapse; font-size:14px; }
+.cp-table th, .cp-table td{ border:1px solid #e4e4ec; padding:8px 10px; text-align:left; vertical-align:top; }
+.cp-table thead th{ background:var(--accent-bg,#f3f3f8); }
+.cp-table thead .cp-hz{ font-size:20px; }
+.cp-table tbody th{ background:#fafafc; font-weight:800; white-space:nowrap; }
+.cp-examples{ width:100%; }
+.cp-examples .zh b{ color:var(--accent-a,#333); }
+.cp-tip{ background:#fff9db; border-radius:12px; padding:8px 12px; width:100%; box-sizing:border-box; font-size:15px; }
