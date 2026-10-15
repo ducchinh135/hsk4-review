@@ -141,7 +141,7 @@ Giống trang luyện ngữ pháp, chỉ có một dạng câu:
 | `src/pages/GrammarPracticePage.jsx` | Import `ChoiceBlank` từ file mới |
 | `src/routes.js` | `SECTIONS` thêm `compare`, `COMPARE_PAGES`, tiêu đề trang, `matchCompare`, `sectionOf` |
 | `src/App.jsx` | Render các trang so sánh (trang luyện có `key={viewVersion}`), `CompareNav` |
-| `src/styles.css` | Kiểu cho bảng so sánh, ô tìm, thẻ nhóm (dùng lại token màu sẵn có, đủ sáng/tối) |
+| `src/styles.css` | Kiểu cho bảng so sánh, ô tìm, thẻ nhóm (dùng lại màu và class sẵn có; app chưa có chế độ tối nên không thêm) |
 | `tests/router.test.mjs` | Test các đường dẫn mới |
 | `package.json` | Thêm `tests/compare.test.mjs` vào `test:unit` |
 | `README.md` | Mô tả chuyên mục, đường dẫn và định dạng `compare.json` |
@@ -156,9 +156,9 @@ Dùng `marks` từ `useApp()` với khoá `c:<id>`. Khoá hợp lệ với API (
 
 - **Router:** `/compare`, `/compare/practice`, `/compare/review` khớp đúng; `/compare/xyz` về `/compare`; `sectionOf` đúng cho cả ba chuyên mục; đường dẫn cũ không đổi.
 - **Logic:** `toneless('suǒ yǒu') === 'suoyou'`; `searchPairs` khớp hán tự, pinyin có/không dấu, rỗng khi không khớp; `buildCompareQuiz` có `options` đúng bằng tập từ của nhóm và chứa `answer`, giới hạn `max` chia đều theo nhóm; `filterPoints`/`countPoints` với `keyOf` của so sánh; mọi test ngữ pháp cũ vẫn qua.
-- **Dữ liệu** (mọi bài đã soạn): khoá bài có trong `vocab.json`; bài đã soạn có 3–5 nhóm; id duy nhất, đúng dạng `<bài>.<n>` theo thứ tự; 2–3 từ khác nhau; các trường chữ không rỗng; mỗi dòng `rows` có 1 + số từ ô và có ≥ 2 dòng; mỗi từ ≥ 2 ví dụ, chỉ số từ hợp lệ, câu ví dụ chứa từ đó; 4–6 câu hỏi, đúng một `___`, `answer` thuộc `words`, mỗi từ là đáp án ít nhất một lần; ít nhất một từ của nhóm có trong từ vựng của bài đó.
+- **Dữ liệu** (mọi bài đã soạn): khoá bài có trong `vocab.json`; bài đã soạn có 3–5 nhóm; id duy nhất, đúng dạng `<bài>.<n>` theo thứ tự; 2–3 từ khác nhau; các trường chữ không rỗng; mỗi dòng `rows` có 1 + số từ ô và có ≥ 2 dòng; mỗi từ ≥ 2 ví dụ, chỉ số từ hợp lệ, câu ví dụ chứa từ đó; 4–6 câu hỏi, đúng một `___`, `answer` thuộc `words`, mỗi từ là đáp án ít nhất một lần; ít nhất một từ của nhóm có trong từ vựng của bài đó và không từ nào thuộc từ vựng của bài sau.
 
-Thủ công (Playwright, `npm run dev`): sidebar có mục mới và chuyển qua lại được; `/compare` Bài 1 mở thẻ, nghe từ và ví dụ, đánh dấu; tìm `suoyou` ra nhóm 所有/一切 ở bài khác, xoá ô thì về bài cũ; Luyện tập làm sai một câu → nhóm thành "Cần ôn"; từ `/compare/review` bấm "Xem so sánh" của nhóm bài khác → chuyển bài, thẻ mở và cuộn tới; bề rộng 375px không cuộn ngang trang; chế độ tối; F5 và Back/Forward đúng; các trang ngữ pháp vẫn hoạt động.
+Thủ công (Playwright, `npm run dev`): sidebar có mục mới và chuyển qua lại được; `/compare` Bài 1 mở thẻ, nghe từ và ví dụ, đánh dấu; tìm `suoyou` ra nhóm 所有/一切 ở bài khác, xoá ô thì về bài cũ; Luyện tập làm sai một câu → nhóm thành "Cần ôn"; từ `/compare/review` bấm "Xem so sánh" của nhóm bài khác → chuyển bài, thẻ mở và cuộn tới; bề rộng 375px không cuộn ngang trang; F5 và Back/Forward đúng; các trang ngữ pháp vẫn hoạt động.
 
 ## 6. Kế hoạch nội dung
 
