@@ -13,7 +13,7 @@
       ],
       "examples": [
         ["我刚到公司，还没开始工作。", "Wǒ gāng dào gōngsī, hái méi kāishǐ gōngzuò.", "Tôi vừa đến công ty, chưa bắt đầu làm việc.", 0],
-        ["他刚来北京一个月，还不太熟悉这里。", "Tā gāng lái Běijīng yí ge yuè, hái bú tài shúxī zhèlǐ.", "Anh ấy mới đến Bắc Kinh được một tháng, còn chưa quen nơi này lắm.", 0],
+        ["他刚来北京一个月，还不太熟悉这里。", "Tā gāng lái Běijīng yí ge yuè, hái bú tài shúxi zhèlǐ.", "Anh ấy mới đến Bắc Kinh được một tháng, còn chưa quen nơi này lắm.", 0],
         ["刚才有人给你打电话。", "Gāngcái yǒu rén gěi nǐ dǎ diànhuà.", "Lúc nãy có người gọi điện cho bạn.", 1],
         ["对不起，我刚才没听清楚。", "Duìbuqǐ, wǒ gāngcái méi tīng qīngchu.", "Xin lỗi, lúc nãy tôi nghe không rõ.", 1],
         ["刚才的事你别生气了。", "Gāngcái de shì nǐ bié shēngqì le.", "Chuyện lúc nãy bạn đừng giận nữa.", 1]
@@ -50,7 +50,7 @@
         { "q": "你放心，以后我会___支持你。", "answer": "一直", "explain": "Nói về tương lai (以后, 会) → 一直; 从来 chỉ tính từ trước đến lúc nói, không dùng cho tương lai." },
         { "q": "我长这么大，___没有像今天这么紧张过。", "answer": "从来", "explain": "从来没…过 = chưa từng bao giờ trong cả quá khứ, so với hôm nay. 一直 chỉ trạng thái liên tục kéo tới hiện tại, không hợp với kiểu so sánh “chưa bao giờ… như hôm nay”." },
         { "q": "你从这儿___往前走，就到学校了。", "answer": "一直", "explain": "Nghĩa “thẳng” (一直往前走 = đi thẳng) chỉ 一直 có; 从来 không có nghĩa này." },
-        { "q": "昨天晚上雨___下到十二点才停。", "answer": "一直", "explain": "Khẳng định, có khoảng thời gian cụ thể (昨天晚上, 到十二点) → 一直; 从来 không dùng cho một khoảng cụ thể như vậy." }
+        { "q": "这么好吃的菜，我___没吃过。", "answer": "从来", "explain": "Trải nghiệm chưa từng có, kết thúc bằng 过 → 从来没…过; 一直没 chỉ trạng thái kéo dài, không dùng cho kiểu “chưa bao giờ… như thế này”." }
       ]
     },
     {
@@ -58,7 +58,7 @@
       "words": [["即使", "jíshǐ"], ["虽然", "suīrán"]],
       "common": "Đều mở đầu vế nhượng bộ, dịch là “dù, mặc dù”.",
       "rows": [
-        ["Tính chất", "Giả định: điều chưa xảy ra hoặc chưa chắc (dù cho…)", "Sự thật đã có hoặc đang có (tuy…)"],
+        ["Tính chất", "Thường là giả định: điều chưa xảy ra hoặc chưa chắc (dù cho…); đôi khi nêu việc đã có: 即使已经很晚了，灯也还亮着", "Sự thật đã có hoặc đang có (tuy…)"],
         ["Vế sau đi với", "也: 即使…也…", "但是 / 可是 / 却: 虽然…但是…"],
         ["Nói về tương lai", "Được: 即使明天下雨，…", "Không: chỉ nói điều có thật"]
       ],
@@ -79,7 +79,7 @@
     },
     {
       "id": "1.4",
-      "words": [["熟悉", "shúxī"], ["了解", "liǎojiě"]],
+      "words": [["熟悉", "shúxi"], ["了解", "liǎojiě"]],
       "common": "Đều có nghĩa “biết rõ” về người, nơi chốn hay sự việc.",
       "rows": [
         ["Nghĩa", "Quen thuộc, quen vì tiếp xúc nhiều lần", "Biết, nắm được thông tin, tình hình"],
@@ -88,9 +88,9 @@
         ["Kết hợp", "环境, 声音, 路, 地方, 人", "情况, 原因, 文化, 想法"]
       ],
       "examples": [
-        ["我对这儿很熟悉，我带你去吧。", "Wǒ duì zhèr hěn shúxī, wǒ dài nǐ qù ba.", "Tôi rất quen chỗ này, để tôi dẫn bạn đi.", 0],
-        ["我听到了一个熟悉的声音。", "Wǒ tīngdào le yí ge shúxī de shēngyīn.", "Tôi nghe thấy một giọng nói quen thuộc.", 0],
-        ["你刚来，先熟悉一下环境吧。", "Nǐ gāng lái, xiān shúxī yíxià huánjìng ba.", "Bạn mới đến, trước hết hãy làm quen với môi trường đã.", 0],
+        ["我对这儿很熟悉，我带你去吧。", "Wǒ duì zhèr hěn shúxi, wǒ dài nǐ qù ba.", "Tôi rất quen chỗ này, để tôi dẫn bạn đi.", 0],
+        ["我听到了一个熟悉的声音。", "Wǒ tīngdào le yí ge shúxi de shēngyīn.", "Tôi nghe thấy một giọng nói quen thuộc.", 0],
+        ["你刚来，先熟悉一下环境吧。", "Nǐ gāng lái, xiān shúxi yíxià huánjìng ba.", "Bạn mới đến, trước hết hãy làm quen với môi trường đã.", 0],
         ["我们认识很多年了，我很了解他的性格。", "Wǒmen rènshi hěn duō nián le, wǒ hěn liǎojiě tā de xìnggé.", "Chúng tôi quen nhau nhiều năm rồi, tôi rất hiểu tính cách anh ấy.", 1],
         ["我想多了解一些中国文化。", "Wǒ xiǎng duō liǎojiě yìxiē Zhōngguó wénhuà.", "Tôi muốn tìm hiểu thêm về văn hóa Trung Quốc.", 1],
         ["我先去了解一下情况。", "Wǒ xiān qù liǎojiě yíxià qíngkuàng.", "Để tôi đi tìm hiểu tình hình trước.", 1]
@@ -99,7 +99,7 @@
       "questions": [
         { "q": "回到家乡，看到___的街道，我很感动。", "answer": "熟悉", "explain": "Làm định ngữ “con phố quen thuộc” → 熟悉的街道; 了解 không làm định ngữ với nghĩa này." },
         { "q": "出了什么问题？我去___一下原因。", "answer": "了解", "explain": "Tìm hiểu nguyên nhân (thông tin) → 了解; 熟悉 không đi với 原因." },
-        { "q": "他是我最好的朋友，我很___他的想法。", "answer": "了解", "explain": "想法 là thông tin bên trong, “biết rõ” → 了解; 熟悉 dùng cho thứ tiếp xúc nhiều như nơi chốn, giọng nói, đường xá." },
+        { "q": "我想___一下他为什么不来上课。", "answer": "了解", "explain": "Tìm hiểu nguyên nhân/sự việc (câu hỏi 为什么…) → 了解; 熟悉 không mang cả câu làm tân ngữ." },
         { "q": "电话里是一个很___的声音，可是我想不起来是谁。", "answer": "熟悉", "explain": "Giọng nói nghe nhiều lần nên quen → 熟悉; không nói 了解的声音." },
         { "q": "我在这个城市住了十年，这里的每条路我都很___。", "answer": "熟悉", "explain": "Đường xá quen vì đi lại nhiều năm → 熟悉; 了解 nói về thông tin, không dùng cho “quen đường”." }
       ]
@@ -138,8 +138,8 @@
       "words": [["尽管", "jǐnguǎn"], ["即使", "jíshǐ"]],
       "common": "Đều mở đầu vế nhượng bộ, dịch là “dù, mặc dù”.",
       "rows": [
-        ["Tính chất", "Sự thật đã có (mặc dù…)", "Giả định, chưa xảy ra (dù cho…)"],
-        ["Vế sau đi với", "但是 / 可是 / 还是 / 却", "也"],
+        ["Tính chất", "Sự thật đã có (mặc dù…)", "Thường là giả định, chưa xảy ra (dù cho…); đôi khi nêu việc đã có"],
+        ["Vế sau đi với", "但是 / 可是 / 还是 / 却", "也 (còn 还/都)"],
         ["Nghĩa riêng", "Phó từ “cứ việc”: 有问题尽管问", "Không có"]
       ],
       "examples": [
@@ -181,7 +181,7 @@
         { "q": "我刚来公司，想先___一下这里的情况。", "answer": "了解", "explain": "Tìm hiểu tình hình (thông tin) → 了解; 理解 không đi với 情况 theo nghĩa “tìm hiểu”." },
         { "q": "你别生气，他那么做是有原因的，你要___他。", "answer": "理解", "explain": "Khuyên thông cảm với cách làm của người khác → 理解; 了解他 chỉ là biết về anh ta, không có ý thông cảm." },
         { "q": "你对这个城市的历史___多少？", "answer": "了解", "explain": "Kiến thức lịch sử (thông tin) → 了解; 理解 không dùng cho “biết bao nhiêu về lịch sử”." },
-        { "q": "我___你的心情，换了我也会很生气。", "answer": "理解", "explain": "Đặt mình vào chỗ người khác, thông cảm tâm trạng → 理解; 了解 không mang ý đồng cảm này." }
+        { "q": "他这么做是可以___的，换了我也会这样。", "answer": "理解", "explain": "可以理解 = có thể thông cảm được; không nói 是可以了解的." }
       ]
     },
     {
@@ -191,7 +191,7 @@
       "rows": [
         ["Nghĩa", "Chuyên, riêng cho một mục đích hoặc một lĩnh vực", "Rất, đặc biệt (chỉ mức độ); khác thường"],
         ["Chỉ mức độ", "Không: không nói 专门好", "Được: 特别好, 特别高兴"],
-        ["Làm vị ngữ", "Không nói 很专门", "Được: 这个名字很特别"],
+        ["Làm vị ngữ", "Ít dùng (这个问题太专门了)", "Được: 这个名字很特别"],
         ["Kết hợp", "专门研究… / 专门卖… / 专门为…", "特别 + tính từ hoặc động từ tâm lý"]
       ],
       "examples": [
@@ -217,7 +217,7 @@
       "words": [["改变", "gǎibiàn"], ["变化", "biànhuà"]],
       "common": "Đều nói về sự thay đổi, khác đi so với trước.",
       "rows": [
-        ["Từ loại", "Chủ yếu là động từ", "Chủ yếu là danh từ, cũng làm động từ"],
+        ["Từ loại", "Chủ yếu là động từ, cũng làm danh từ (很大的改变)", "Chủ yếu là danh từ, cũng làm động từ"],
         ["Mang tân ngữ", "Được: 改变计划, 改变自己", "Không: không nói 变化计划"],
         ["Sắc thái", "Chủ động làm cho cái gì đó thay đổi", "Tự thay đổi, tự khác đi: 天气变化很快"],
         ["Kết hợp", "改变主意 / 改变习惯 / 改变看法", "很大的变化 / 有变化 / 变化很快"]
@@ -228,12 +228,12 @@
         ["这几年我的家乡变化很大。", "Zhè jǐ nián wǒ de jiāxiāng biànhuà hěn dà.", "Mấy năm nay quê tôi thay đổi rất nhiều.", 1],
         ["你发现他有什么变化了吗？", "Nǐ fāxiàn tā yǒu shénme biànhuà le ma?", "Bạn có thấy anh ấy có thay đổi gì không?", 1]
       ],
-      "tip": "Có tân ngữ phía sau (改变 + 计划/习惯/看法) → 改变; tự thay đổi, không có tân ngữ (天气变化很快) → 变化.",
+      "tip": "Có tân ngữ phía sau (改变 + 计划/习惯/看法) → 改变; sự vật tự thay đổi (天气变化很快, 温度变化不大) → 变化.",
       "questions": [
         { "q": "因为天气不好，我们只好___计划，明天再去。", "answer": "改变", "explain": "Có tân ngữ 计划, chủ động làm thay đổi → 改变; 变化 không mang tân ngữ." },
-        { "q": "春天的天气___很快，早上冷，中午热。", "answer": "变化", "explain": "Thời tiết tự thay đổi, không có tân ngữ → 变化; 改变 là chủ động làm cho cái gì thay đổi, cần tân ngữ." },
+        { "q": "春天的天气___很快，早上冷，中午热。", "answer": "变化", "explain": "Thời tiết tự thay đổi → 变化. 温度/天气 + 变化 là kết hợp cố định; 改变 thường nói sự thay đổi do con người gây ra." },
         { "q": "这次经历___了他对生活的看法。", "answer": "改变", "explain": "Có tân ngữ 看法 (làm thay đổi cách nhìn) → 改变; 变化 không mang tân ngữ." },
-        { "q": "这里一年四季温度___不大，总是很舒服。", "answer": "变化", "explain": "Nhiệt độ tự thay đổi theo mùa, không có ai làm thay đổi → 变化; 改变 cần người chủ động và tân ngữ." },
+        { "q": "这里一年四季温度___不大，总是很舒服。", "answer": "变化", "explain": "Nhiệt độ tự thay đổi theo mùa → 变化. 温度/天气 + 变化 là kết hợp cố định; 改变 thường nói sự thay đổi do con người gây ra." },
         { "q": "他决定___自己的坏习惯，每天早睡早起。", "answer": "改变", "explain": "Có tân ngữ 坏习惯, chủ động sửa → 改变; 变化 không mang tân ngữ." }
       ]
     },
@@ -247,19 +247,19 @@
         ["Sắc thái", "Thiên về cảm nhận qua giác quan, cảm xúc", "Thường dùng để nêu ý kiến, đánh giá; rất khẩu ngữ"]
       ],
       "examples": [
-        ["第一次见到她，我就有一种很熟悉的感觉。", "Dì-yī cì jiàndào tā, wǒ jiù yǒu yì zhǒng hěn shúxī de gǎnjué.", "Lần đầu gặp cô ấy, tôi đã có cảm giác rất quen thuộc.", 0],
+        ["第一次见到她，我就有一种很熟悉的感觉。", "Dì-yī cì jiàndào tā, wǒ jiù yǒu yì zhǒng hěn shúxi de gǎnjué.", "Lần đầu gặp cô ấy, tôi đã có cảm giác rất quen thuộc.", 0],
         ["我感觉有点儿冷，把窗户关上吧。", "Wǒ gǎnjué yǒudiǎnr lěng, bǎ chuānghu guānshang ba.", "Tôi thấy hơi lạnh, đóng cửa sổ lại đi.", 0],
         ["跟他在一起的感觉很好。", "Gēn tā zài yìqǐ de gǎnjué hěn hǎo.", "Cảm giác khi ở bên anh ấy rất tốt.", 0],
         ["你觉得这件衣服怎么样？", "Nǐ juéde zhè jiàn yīfu zěnmeyàng?", "Bạn thấy bộ quần áo này thế nào?", 1],
         ["我觉得你应该早点儿告诉他。", "Wǒ juéde nǐ yīnggāi zǎo diǎnr gàosu tā.", "Tôi thấy bạn nên nói với anh ấy sớm hơn.", 1]
       ],
-      "tip": "Cần danh từ (一种…, 我的…, …的…) → 感觉; hỏi hoặc nêu ý kiến về một cách làm → 觉得.",
+      "tip": "Cần danh từ (一种…, 我的…, …的…) → 感觉; nêu hoặc phủ định ý kiến, nhất là 不觉得 → 觉得.",
       "questions": [
         { "q": "我对这个地方有一种很熟悉的___。", "answer": "感觉", "explain": "Sau 一种 cần danh từ “cảm giác” → 感觉; 觉得 chỉ là động từ." },
-        { "q": "你___这个办法怎么样？", "answer": "觉得", "explain": "Hỏi ý kiến, đánh giá một cách làm (không phải cảm nhận bằng giác quan) → 觉得; 感觉 thiên về cảm nhận nên ở đây nghe gượng." },
+        { "q": "你不___这样做有点儿不礼貌吗？", "answer": "觉得", "explain": "Phủ định ý kiến dùng 不觉得; 感觉 làm động từ hầu như không đi với 不 đứng trước (người ta nói 没感觉 / 感觉不到)." },
         { "q": "第一次上台表演是什么___？紧张吗？", "answer": "感觉", "explain": "Sau 什么 cần danh từ (“cảm giác gì”) → 感觉; 觉得 không làm danh từ." },
         { "q": "我的___告诉我，他没说真话。", "answer": "感觉", "explain": "Sau 我的 cần danh từ làm chủ ngữ → 感觉; không nói 我的觉得." },
-        { "q": "跟老朋友聊天的___真好。", "answer": "感觉", "explain": "Đứng sau 的, làm chủ ngữ → danh từ 感觉; 觉得 không làm danh từ." }
+        { "q": "大家都说这部电影很好看，可是我不___。", "answer": "觉得", "explain": "Không đồng ý với ý kiến của người khác → 我不觉得; 感觉 làm động từ hầu như không đi với 不 đứng trước (người ta nói 没感觉 / 感觉不到)." }
       ]
     },
     {
@@ -268,7 +268,7 @@
       "common": "Đều chỉ người hay sự vật ngoài cái đã nói, dịch là “khác, ngoài ra”.",
       "rows": [
         ["Từ loại", "Liên từ “ngoài ra” (另外，…); phó từ (另外买一个); đại từ đi với số + lượng từ", "Đại từ"],
-        ["Trước danh từ", "Cần số/lượng từ: 另外一个人, 另外两本书", "Đứng thẳng trước danh từ: 其他人, 其他问题"],
+        ["Trước danh từ", "Cần số/lượng từ hoặc 的: 另外一个人, 另外的人", "Đứng thẳng trước danh từ: 其他人, 其他问题"],
         ["Đứng đầu câu", "Được: 另外，我还想说…", "Không"],
         ["Phạm vi", "Thường chỉ một hay vài cái cụ thể khác", "Tất cả những cái còn lại"]
       ],
@@ -281,7 +281,7 @@
       "tip": "Đầu câu “ngoài ra”, trước số + lượng từ, hoặc trước động từ → 另外; đứng thẳng trước danh từ (其他人) → 其他.",
       "questions": [
         { "q": "___，我还想说一件事：明天的会改到下午了。", "answer": "另外", "explain": "Liên từ đầu câu “ngoài ra” → 另外; 其他 không đứng đầu câu làm liên từ." },
-        { "q": "除了他，___人都同意了。", "answer": "其他", "explain": "Đứng thẳng trước danh từ 人, chỉ tất cả những người còn lại → 其他; 另外 cần số + lượng từ (另外一个人)." },
+        { "q": "除了他，___人都同意了。", "answer": "其他", "explain": "Đứng thẳng trước danh từ 人, chỉ tất cả những người còn lại → 其他; 另外 phải có số + lượng từ hoặc 的 (另外一个人, 另外的人), không nói 另外人." },
         { "q": "这个房间太小了，我们换___一个吧。", "answer": "另外", "explain": "Trước số + lượng từ (一个) → 另外一个; không nói 其他一个." },
         { "q": "这家商店只卖水果，不卖___东西。", "answer": "其他", "explain": "Đứng thẳng trước danh từ 东西, chỉ mọi thứ còn lại → 其他; 另外 không đứng thẳng trước danh từ như vậy." },
         { "q": "这本书我借给别人了，我___给你买一本吧。", "answer": "另外", "explain": "Đứng trước động từ, nghĩa “làm thêm, làm cách khác” → 另外; 其他 không làm trạng ngữ trước động từ." }
@@ -409,7 +409,7 @@
         { "q": "___调查结果，我们发现很多年轻人喜欢晚睡。", "answer": "根据", "explain": "Dựa vào kết quả điều tra để rút ra kết luận (发现…) → 根据; 按照 là làm theo, không dùng để kết luận." },
         { "q": "请大家___顺序进来，一个一个来，不要着急。", "answer": "按照", "explain": "Hành động tuân theo thứ tự → 按照顺序; 根据 dùng để suy ra kết luận, không đi với 顺序." },
         { "q": "你就___我说的去做吧，不会有问题的。", "answer": "按照", "explain": "Làm theo lời người khác → 按照…去做; 根据 dùng để phán đoán, không dùng cho “làm theo lời tôi”." },
-        { "q": "___天气预报，明天有大雨。", "answer": "根据", "explain": "Dựa vào dự báo để nói điều sẽ xảy ra (một phán đoán, không phải hành động làm theo) → 根据; 按照 cần một hành động tuân theo phía sau." }
+        { "q": "你这个结论的___是什么？", "answer": "根据", "explain": "Cần danh từ “căn cứ” → 根据; 按照 không làm danh từ." }
       ]
     }
   ]
