@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { QUIZ_TYPES } from '../src/quiz.js';
-import { GRAMMAR_PAGES, PAGES, PAGE_TITLES, SECTIONS, matchRoute, sectionOf } from '../src/routes.js';
+import { COMPARE_PAGES, GRAMMAR_PAGES, PAGES, PAGE_TITLES, SECTIONS, matchRoute, sectionOf } from '../src/routes.js';
 
 const page = (p) => ({ page: p, params: {}, path: '/vocab/' + p });
 
@@ -32,6 +32,26 @@ test('GRAMMAR_PAGES lists the grammar tabs, and every page has a title', () => {
   assert.deepEqual(GRAMMAR_PAGES.map((p) => p.path), ['/grammar', '/grammar/practice']);
   for (const p of GRAMMAR_PAGES) assert.equal(matchRoute(p.path).page, p.page);
   for (const p of ['words', 'review', 'practice', 'exercise', 'grammar', 'grammar-practice', 'grammar-review']) assert.ok(PAGE_TITLES[p], p);
+});
+
+test('matchRoute() maps the compare pages', () => {
+  assert.deepEqual(matchRoute('/compare'), gpage('compare', '/compare'));
+  assert.deepEqual(matchRoute('/compare/'), gpage('compare', '/compare'));
+  assert.deepEqual(matchRoute('/compare/practice'), gpage('compare-practice', '/compare/practice'));
+  assert.deepEqual(matchRoute('/compare/review'), gpage('compare-review', '/compare/review'));
+  assert.deepEqual(matchRoute('//compare//review/'), gpage('compare-review', '/compare/review'));
+});
+
+test('matchRoute() sends unknown compare paths to /compare', () => {
+  for (const p of ['/compare/x', '/compare/practice/1', '/compare/Practice', '/compare/review/x', '/compare/grammar']) {
+    assert.deepEqual(matchRoute(p), gpage('compare', '/compare'), p);
+  }
+});
+
+test('COMPARE_PAGES lists the compare tabs, and every page has a title', () => {
+  assert.deepEqual(COMPARE_PAGES.map((p) => p.path), ['/compare', '/compare/practice']);
+  for (const p of COMPARE_PAGES) assert.equal(matchRoute(p.path).page, p.page);
+  for (const p of ['compare', 'compare-practice', 'compare-review']) assert.ok(PAGE_TITLES[p], p);
 });
 
 test('matchRoute() redirects the old pre-sidebar URLs into /vocab', () => {
@@ -67,11 +87,12 @@ test('matchRoute() sends an unknown or over-long practice path to /vocab/practic
 
 test('PAGES and SECTIONS list the navigation entries in order', () => {
   assert.deepEqual(PAGES.map((p) => p.path), ['/vocab/words', '/vocab/review', '/vocab/practice']);
-  assert.deepEqual(SECTIONS.map((s) => s.id), ['vocab', 'grammar']);
+  assert.deepEqual(SECTIONS.map((s) => s.id), ['vocab', 'grammar', 'compare']);
   for (const s of SECTIONS) assert.equal(matchRoute(s.path).path, s.path);
 });
 
 test('sectionOf() groups pages by section', () => {
   for (const p of ['grammar', 'grammar-practice', 'grammar-review']) assert.equal(sectionOf(p), 'grammar');
+  for (const p of ['compare', 'compare-practice', 'compare-review']) assert.equal(sectionOf(p), 'compare');
   for (const p of ['words', 'review', 'practice', 'exercise']) assert.equal(sectionOf(p), 'vocab');
 });

@@ -5,6 +5,7 @@ import { QUIZ_TYPES } from './quiz.js';
 export const SECTIONS = [
   { id: 'vocab', path: '/vocab/review', label: '📚 Từ vựng' },
   { id: 'grammar', path: '/grammar', label: '📖 Ngữ pháp' },
+  { id: 'compare', path: '/compare', label: '⚖️ Từ dễ nhầm' },
 ];
 
 // Tabs inside the vocabulary section.
@@ -20,6 +21,12 @@ export const GRAMMAR_PAGES = [
   { page: 'grammar-practice', path: '/grammar/practice', label: '📝 Luyện tập' },
 ];
 
+// Tabs inside the confusable-words section.
+export const COMPARE_PAGES = [
+  { page: 'compare', path: '/compare', label: '⚖️ So sánh' },
+  { page: 'compare-practice', path: '/compare/practice', label: '📝 Luyện tập' },
+];
+
 export const PAGE_TITLES = {
   words: 'Từ vựng',
   review: 'Ôn tập',
@@ -28,9 +35,12 @@ export const PAGE_TITLES = {
   grammar: 'Ngữ pháp',
   'grammar-practice': 'Luyện tập ngữ pháp',
   'grammar-review': 'Ôn ngữ pháp',
+  compare: 'Từ dễ nhầm',
+  'compare-practice': 'Luyện tập từ dễ nhầm',
+  'compare-review': 'Ôn từ dễ nhầm',
 };
 
-export const sectionOf = (page) => (page.startsWith('grammar') ? 'grammar' : 'vocab');
+export const sectionOf = (page) => (page.startsWith('compare') ? 'compare' : page.startsWith('grammar') ? 'grammar' : 'vocab');
 
 const EXERCISE_TYPES = QUIZ_TYPES.map(([t]) => t);
 const SIMPLE = ['words', 'review'];
@@ -52,11 +62,19 @@ function matchGrammar(parts) {
   return { page: 'grammar', params: {}, path: '/grammar' };
 }
 
+function matchCompare(parts) {
+  const [a, ...rest] = parts;
+  if (!rest.length && a === 'practice') return { page: 'compare-practice', params: {}, path: '/compare/practice' };
+  if (!rest.length && a === 'review') return { page: 'compare-review', params: {}, path: '/compare/review' };
+  return { page: 'compare', params: {}, path: '/compare' };
+}
+
 // Returns the page to render and the canonical path for it (the router replaces the URL with
 // `path` when they differ, so unknown URLs end up on a real page). The pre-sidebar URLs
 // (/words, /review, /practice/...) still work: they resolve to their /vocab/... page.
 export function matchRoute(pathname) {
   const parts = String(pathname).split('/').filter(Boolean);
+  if (parts[0] === 'compare') return matchCompare(parts.slice(1));
   if (parts[0] === 'grammar') return matchGrammar(parts.slice(1));
   return matchVocab(parts[0] === 'vocab' ? parts.slice(1) : parts);
 }
