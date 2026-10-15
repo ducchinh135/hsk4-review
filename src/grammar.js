@@ -41,19 +41,20 @@ export function saveGrammarFilter(f) {
 }
 
 // The points matching the filter; when none match, the whole lesson (fellBack), like the word lists.
-export function filterPoints(points, filter, getMark) {
+// `keyOf` maps a point id to its marks key (grammar by default; the compare section passes its own).
+export function filterPoints(points, filter, getMark, keyOf = grammarKey) {
   const list = points.filter((p) => {
-    const m = getMark(grammarKey(p.id));
+    const m = getMark(keyOf(p.id));
     return filter === 'all' || (filter === 'new' ? m === '' : m === filter);
   });
   return list.length || !points.length ? { points: list, fellBack: false } : { points, fellBack: true };
 }
 
-export function countPoints(points, getMark) {
+export function countPoints(points, getMark, keyOf = grammarKey) {
   let k = 0;
   let r = 0;
   points.forEach((p) => {
-    const m = getMark(grammarKey(p.id));
+    const m = getMark(keyOf(p.id));
     if (m === 'k') k++;
     else if (m === 'r') r++;
   });
@@ -91,10 +92,11 @@ function prepare(q, pointId, rng) {
   return { ...q, pointId, options: shuffle(q.options, rng) };
 }
 
-// Every question of the given points, shuffled. With `max`, questions are taken round-robin over the
-// points (in random order) so one point with many questions cannot fill the run.
-export function buildGrammarQuiz(points, { max = Infinity, rng = Math.random } = {}) {
-  const queues = shuffle(points, rng).map((p) => shuffle(p.questions, rng).map((q) => prepare(q, p.id, rng)));
+// Every question of the given items ({ id, questions }), each passed through prepare(q, id, rng), shuffled.
+// With `max`, questions are taken round-robin over the items (in random order) so one item with many
+// questions cannot fill the run.
+export function buildRoundRobin(items, prepare, { max = Infinity, rng = Math.random } = {}) {
+  const queues = shuffle(items, rng).map((it) => shuffle(it.questions, rng).map((q) => prepare(q, it.id, rng)));
   const picked = [];
   for (let round = 0; picked.length < max; round++) {
     const row = queues.filter((qs) => round < qs.length).map((qs) => qs[round]);
@@ -103,6 +105,8 @@ export function buildGrammarQuiz(points, { max = Infinity, rng = Math.random } =
   }
   return shuffle(picked, rng);
 }
+
+export const buildGrammarQuiz = (points, opts = {}) => buildRoundRobin(points, prepare, opts);
 
 // The same questions again (e.g. the wrong ones), in a new order with options and parts reshuffled.
 export const retryQuiz = (questions, rng = Math.random) => shuffle(questions, rng).map((q) => prepare(q, q.pointId, rng));

@@ -5,6 +5,7 @@ import VOCAB from '../src/data/vocab.json' with { type: 'json' };
 import {
   GRAMMAR,
   buildGrammarQuiz,
+  buildRoundRobin,
   checkOrder,
   countPoints,
   filterPoints,
@@ -347,4 +348,35 @@ test('choice distractors that also fit were replaced, and wrong rules corrected'
   assert.ok(point('8.2').meaning.includes('điều kiện đủ'), 'only-if vs enough');
   assert.ok(JSON.stringify(point('4.5').examples).includes('fēn bu qīng'), 'neutral tone in the potential complement');
   assert.ok(JSON.stringify(point('16.1').examples).includes('Zhè kě shì ge'), '可 + 是, not the conjunction 可是');
+});
+
+test('filterPoints() and countPoints() take another key function', () => {
+  const pts = lesson1();
+  const keyOf = (id) => 'c:' + id;
+  const getMark = marksOf({ 'c:1.1': 'k', 'c:1.2': 'r', 'g:1.3': 'r' });
+  assert.deepEqual(filterPoints(pts, 'r', getMark, keyOf).points.map((p) => p.id), ['1.2']);
+  assert.deepEqual(filterPoints(pts, 'k', getMark, keyOf).points.map((p) => p.id), ['1.1']);
+  assert.deepEqual(countPoints(pts, getMark, keyOf), { n: 5, k: 1, r: 1, fresh: 3 });
+  assert.deepEqual(countPoints(pts, getMark), { n: 5, k: 0, r: 1, fresh: 4 }, 'default key is still g:');
+});
+
+test('buildRoundRobin() prepares every question with its item id and spreads max over the items', () => {
+  const items = [
+    { id: 'a', questions: [1, 2, 3] },
+    { id: 'b', questions: [4] },
+  ];
+  const prep = (q, id) => ({ q, id });
+  const all = buildRoundRobin(items, prep, { rng: seeded(3) });
+  assert.deepEqual(all.map((x) => x.q).sort(), [1, 2, 3, 4]);
+  for (const x of all) assert.equal(x.id, x.q === 4 ? 'b' : 'a');
+  const two = buildRoundRobin(items, prep, { max: 2, rng: seeded(3) });
+  assert.deepEqual(two.map((x) => x.id).sort(), ['a', 'b']);
+  assert.deepEqual(buildRoundRobin([], prep, { max: 5 }), []);
+});
+
+test('buildGrammarQuiz() gives the same run as before for the same seed', () => {
+  const a = buildGrammarQuiz(lesson1(), { max: 7, rng: seeded(11) });
+  const b = buildGrammarQuiz(lesson1(), { max: 7, rng: seeded(11) });
+  assert.deepEqual(a, b);
+  assert.equal(a.length, 7);
 });
