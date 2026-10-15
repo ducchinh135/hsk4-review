@@ -72,6 +72,7 @@ test('searchPairs() matches hanzi or pinyin with or without tones, across every 
   assert.deepEqual(ids('所有'), []);
   assert.deepEqual(ids(''), []);
   assert.deepEqual(ids('   '), []);
+  for (const junk of ["'", '’', '́']) assert.deepEqual(ids(junk), [], JSON.stringify(junk));
 });
 
 test('buildCompareQuiz() offers exactly the group words, keeps the answer, tags the group', () => {
@@ -112,6 +113,13 @@ test('filterPairs(), countPairs() and compareProgress() use c: marks only', () =
   assert.deepEqual(countPairs(pts, getMark), { n: 3, k: 1, r: 1, fresh: 1 });
   assert.equal(filterPairs(pts, 'k', marksOf({})).fellBack, true);
   assert.deepEqual(compareProgress(getMark)('L99'), { done: 0, total: 0 }, 'unwritten lesson');
+});
+
+test('validateCompare() reports null groups and questions instead of throwing', () => {
+  assert.ok(validateCompare({ L1: [null, ...lesson1().slice(1)] }, FAKE_VOCAB).some((e) => e.includes('phải là object')));
+  const l = lesson1();
+  l[0].questions[1] = null;
+  assert.ok(validateCompare({ L1: l }, FAKE_VOCAB).some((e) => e.includes('câu 2: phải là object')));
 });
 
 test('validateCompare() accepts a well-formed lesson', () => {

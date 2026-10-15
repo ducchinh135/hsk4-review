@@ -61,6 +61,7 @@ export function searchPairs(query, pairs = ALL_PAIRS) {
   const q = String(query).trim();
   if (!q) return [];
   const plain = toneless(q);
+  if (!plain) return [];
   return pairs.filter((p) => p.words.some(([hz, py]) => hz.includes(q) || toneless(py).includes(plain)));
 }
 
@@ -107,12 +108,16 @@ function checkPair(p, lesson, home, order) {
   if (qs.length < 4 || qs.length > 6) e.push(`${at}: cần 4–6 câu hỏi`);
   qs.forEach((q, j) => {
     const qa = `${at} câu ${j + 1}`;
+    if (!q || typeof q !== 'object') {
+      e.push(`${qa}: phải là object`);
+      return;
+    }
     if (typeof q.q !== 'string' || q.q.split('___').length !== 2) e.push(`${qa}: q phải có đúng một ___`);
     if (!hanzi.includes(q.answer)) e.push(`${qa}: answer không phải từ của nhóm`);
     if (!isText(q.explain)) e.push(`${qa}: thiếu explain`);
   });
   hanzi.forEach((h) => {
-    if (isText(h) && !qs.some((q) => q.answer === h)) e.push(`${at}: ${h} chưa là đáp án câu nào`);
+    if (isText(h) && !qs.some((q) => q && q.answer === h)) e.push(`${at}: ${h} chưa là đáp án câu nào`);
   });
 
   // A group lives in the lesson of its newest HSK4 word (words outside vocab.json, e.g. HSK1-3, don't count).
@@ -137,6 +142,10 @@ export function validateCompare(data, vocab) {
     }
     if (pairs.length && (pairs.length < 3 || pairs.length > 5)) errors.push(`${lesson}: cần 3–5 nhóm, có ${pairs.length}`);
     pairs.forEach((p, i) => {
+      if (!p || typeof p !== 'object') {
+        errors.push(`${lesson}[${i}]: phải là object`);
+        return;
+      }
       const id = `${lesson.slice(1)}.${i + 1}`;
       if (p.id !== id) errors.push(`${lesson}[${i}]: id phải là "${id}", đang là "${p.id}"`);
       if (seen.has(p.id)) errors.push(`id trùng: ${p.id}`);

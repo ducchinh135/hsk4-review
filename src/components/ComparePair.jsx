@@ -25,7 +25,7 @@ export default function ComparePair({ pair, mark, open, onToggleOpen, onMark, sp
         <button type="button" className="word-toggle" aria-expanded={open} onClick={onToggleOpen}>
           <span className="cp-title">
             {pair.words.map(([hz, py], i) => (
-              <span key={hz} className="cp-word">
+              <span key={i} className="cp-word">
                 {i > 0 && <span className="cp-sep">⇄</span>}
                 <span className="cp-hz">{hz}</span>
                 <span className="cp-py">{py}</span>
@@ -44,8 +44,8 @@ export default function ComparePair({ pair, mark, open, onToggleOpen, onMark, sp
               <thead>
                 <tr>
                   <th scope="col">Tiêu chí</th>
-                  {pair.words.map(([hz, py]) => (
-                    <th key={hz} scope="col">
+                  {pair.words.map(([hz, py], i) => (
+                    <th key={i} scope="col">
                       <span className="cp-hz">{hz}</span> {speakBtn(hz, `cp-${pair.id}-${hz}`, 'Nghe ' + hz)}
                       <div className="gp-pinyin">{py}</div>
                     </th>
@@ -65,7 +65,7 @@ export default function ComparePair({ pair, mark, open, onToggleOpen, onMark, sp
             </table>
           </div>
           {pair.words.map(([hz], k) => (
-            <div key={hz} className="cp-examples">
+            <div key={k} className="cp-examples">
               <div className="quiz-label">Ví dụ với {hz}</div>
               {pair.examples.map(([zh, py, vi, w], i) =>
                 w !== k ? null : (

@@ -132,7 +132,7 @@ export default function ComparePage() {
             <div className="filter-bar">
               <div className="filter-chips" role="group" aria-label="Lọc nhóm từ theo trạng thái">
                 {COMPARE_FILTERS.map(([f, label]) => (
-                  <button key={f} className={'chip' + (f === filter ? ' active' : '')} onClick={() => pickFilter(f)}>
+                  <button key={f} type="button" className={'chip' + (f === filter ? ' active' : '')} onClick={() => pickFilter(f)}>
                     {label}
                     <span className="n">{n[f]}</span>
                   </button>
