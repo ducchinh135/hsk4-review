@@ -150,3 +150,17 @@ test('validateCompare() reports each kind of problem', () => {
 test('compare.json is valid', () => {
   assert.deepEqual(validateCompare(COMPARE, VOCAB), []);
 });
+
+// The groups of the first batch, in order (lesson -> words of each group).
+const PLANNED = {
+  L1: [['刚', '刚才'], ['从来', '一直'], ['即使', '虽然'], ['熟悉', '了解']],
+  L2: [['却', '而', '但是'], ['尽管', '即使'], ['理解', '了解'], ['专门', '特别']],
+  L3: [['改变', '变化'], ['感觉', '觉得'], ['另外', '其他'], ['不管', '尽管']],
+  L4: [['以为', '认为'], ['本来', '原来'], ['及时', '准时', '按时'], ['按照', '根据']],
+};
+
+test('lessons 1-4 have the planned groups, in order', () => {
+  for (const [l, groups] of Object.entries(PLANNED)) {
+    assert.deepEqual(COMPARE[l].map((p) => p.words.map((w) => w[0])), groups, l);
+  }
+});
