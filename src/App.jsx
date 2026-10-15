@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar.jsx';
 import { AppProvider, useApp } from './context/AppContext.jsx';
 import PracticeHub from './components/PracticeHub.jsx';
 import ComparePage from './pages/ComparePage.jsx';
+import ComparePracticePage from './pages/ComparePracticePage.jsx';
 import GrammarPage from './pages/GrammarPage.jsx';
 import GrammarPracticePage from './pages/GrammarPracticePage.jsx';
 import ExercisePage from './pages/ExercisePage.jsx';
@@ -20,6 +21,8 @@ import { PAGE_TITLES, sectionOf } from './routes.js';
 // their lists and positions are rebuilt.
 function Page({ route, viewVersion }) {
   if (route.page === 'compare') return <ComparePage />;
+  if (route.page === 'compare-practice') return <ComparePracticePage key={'lesson:' + viewVersion} scope="lesson" />;
+  if (route.page === 'compare-review') return <ComparePracticePage key={'review:' + viewVersion} scope="review" />;
   if (route.page === 'grammar') return <GrammarPage />;
   if (route.page === 'grammar-practice') return <GrammarPracticePage key={'lesson:' + viewVersion} scope="lesson" />;
   if (route.page === 'grammar-review') return <GrammarPracticePage key={'review:' + viewVersion} scope="review" />;

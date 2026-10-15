@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ChoiceBlank from '../components/ChoiceBlank.jsx';
 import LessonTabs from '../components/LessonTabs.jsx';
 import OrderQuestion from '../components/OrderQuestion.jsx';
 import { useApp } from '../context/AppContext.jsx';
@@ -20,34 +21,6 @@ import { Link } from '../router.jsx';
 
 const REVIEW_MAX = 30;
 const theoryLink = (id) => '/grammar#' + id;
-
-// Fill the blank with one of four options.
-function ChoiceBlank({ q, answered, onAnswer }) {
-  const [before, after] = q.q.split('___');
-  return (
-    <>
-      <div className="fb-sentence">
-        {before}
-        <span className="fb-blank">{answered ? q.answer : '＿＿＿'}</span>
-        {after}
-      </div>
-      <div className="fb-options">
-        {q.options.map((opt) => {
-          let cls = 'fb-opt';
-          if (answered) {
-            if (opt === q.answer) cls += ' correct';
-            else if (opt === answered.given) cls += ' wrong';
-          }
-          return (
-            <button key={opt} type="button" className={cls} onClick={() => !answered && onAnswer(opt)}>
-              {opt}
-            </button>
-          );
-        })}
-      </div>
-    </>
-  );
-}
 
 // One practice run: every question of the chosen lesson's points under the grammar filter (scope
 // "lesson"), or of every "needs review" point, at most 30 questions (scope "review"). Built once on
