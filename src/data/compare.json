@@ -650,9 +650,9 @@
     "explain": "Động vật quý hiếm thường đi với 珍贵."
    },
    {
-    "q": "他为国家牺牲了自己___的生命。",
+    "q": "我们要珍惜每一分每一秒，因为时间是最___的。",
     "answer": "宝贵",
-    "explain": "生命 là đối tượng trừu tượng, hợp với 宝贵."
+    "explain": "Thời gian là đối tượng trừu tượng, cách nói quen thuộc là 宝贵; 珍贵 nghiêng về cổ vật, động thực vật hiếm, tình bạn."
    },
    {
     "q": "这些几百年前的古董非常___。",
@@ -1157,9 +1157,9 @@
     "explain": "Tính từ “nhất định, khá” trước 的 chỉ 一定 có cách dùng này."
    },
    {
-    "q": "张老师知道你考上了大学，___很高兴。",
+    "q": "明天九点我在校门口等你，我___去。",
     "answer": "必定",
-    "explain": "Phán đoán chủ quan, văn phong sách vở nên dùng 必定 (一定 cũng thường gặp khi nói)."
+    "explain": "Là lời quyết tâm của ngôi thứ nhất nên 必然 (quy luật khách quan) không hợp; 必定 diễn đạt ý chí chắc chắn, văn viết, hơi trang trọng."
    },
    {
     "q": "他不___会同意，你先问问再说。",
@@ -1384,14 +1384,14 @@
     "explain": "别 + động từ/tính từ biểu thị ngăn cản, nghĩa “đừng”."
    },
    {
-    "q": "这个我不喜欢，我们看看___吧。",
+    "q": "这个颜色我不喜欢，有没有___什么颜色的？",
     "answer": "别的",
-    "explain": "别的 là đại từ đứng một mình thay cho “cái khác”."
+    "explain": "别的什么 là cách nói quen thuộc, đại từ 别的 đứng độc lập; 另外 không đi theo kiểu 另外什么."
    },
    {
-    "q": "只有这家旅馆有空房，___的都住满了。",
+    "q": "你到北京留学，要多当心。___，每个星期都要给家里打个电话。",
     "answer": "另外",
-    "explain": "Sau chỗ trống có 的 nên dùng 另外; 另 không đi với 的."
+    "explain": "Đứng đầu câu với dấu phẩy, mang nghĩa liên từ “ngoài ra”, chỉ 另外 làm được."
    },
    {
     "q": "这两件事性质不同，要___当别论。",
@@ -1642,14 +1642,14 @@
     "explain": "Chủ ngữ 你 đứng sau chỗ trống và có ý ngăn cản, chỉ 不用 làm được."
    },
    {
-    "q": "持有效证件者，___再办理其他手续。",
+    "q": "这点小事，你大可___着急。",
     "answer": "不必",
-    "explain": "Thông báo, văn phong trang trọng nên chọn 不必."
+    "explain": "大可不必 là cách nói cố định, chỉ đi với 不必."
    },
    {
-    "q": "凡已经报名的同学，___重复提交材料。",
-    "answer": "不必",
-    "explain": "Văn bản thông báo, nên dùng 不必 trang trọng (不用 thiên về khẩu ngữ)."
+    "q": "___你操心，我自己能解决。",
+    "answer": "不用",
+    "explain": "Chủ ngữ 你 đứng sau chỗ trống, chỉ 不用 có thể đứng trước chủ ngữ."
    },
    {
     "q": "这是我自己的事，___你多说！",
@@ -1743,24 +1743,24 @@
   "tip": "Có thể lặp thành 不仅仅 để nhấn mạnh; nối trực tiếp từ hoặc đoản ngữ thì chọn 不但, không chọn 不只.",
   "questions": [
    {
-    "q": "这种苹果___脆而且甜。",
-    "answer": "不但",
-    "explain": "Nối hai tính từ ngắn trực tiếp; 不只 không dùng để nối từ hoặc đoản ngữ kiểu này."
-   },
-   {
-    "q": "这个暑假，我___看完了借来的书，还看完了新买的书。",
+    "q": "这个难题___仅难倒了学生，连老师也被难住了。",
     "answer": "不仅",
-    "explain": "Vế sau có 还, đây là kiểu hay đi với 不仅."
+    "explain": "Chỉ 不仅 mới lặp thành 不仅仅 để nhấn mạnh; chữ 仅 theo sau chỗ trống cho thấy đây là 不仅仅."
    },
    {
-    "q": "他___会说汉语，而且会说日语，真了不起。",
+    "q": "这个问题我已经提醒过他___一次了。",
     "answer": "不只",
-    "explain": "Vế sau có 而且, chỉ phạm vi “không chỉ” (cả ba từ đều có thể; sách xếp 不只 ở kiểu này)."
+    "explain": "不只 + số lượng mang nghĩa “hơn, quá”; 不但 và 不仅 không đi với số lượng kiểu này."
    },
    {
-    "q": "这件事___关系到你，还关系到大家。",
-    "answer": "不仅",
-    "explain": "Phân câu đầu và vế sau có 还, là cách dùng điển hình của 不仅."
+    "q": "这种水果___脆而且甜。",
+    "answer": "不但",
+    "explain": "Nối hai tính từ ngắn trực tiếp; 不只 không dùng để nối từ hoặc đoản ngữ, nên chọn 不但 theo cách dùng sách nêu."
+   },
+   {
+    "q": "这座城市我来过___两次了。",
+    "answer": "不只",
+    "explain": "不只 + số lượng nghĩa “hơn hai lần”; hai từ còn lại không có cách dùng này."
    }
   ]
  },
@@ -1855,24 +1855,24 @@
   "tip": "Ý muốn của mình bị ép, không thể từ chối là 不得不; vế sau phủ định hoặc chủ ngữ đứng sau thì dùng 只得/只好.",
   "questions": [
    {
-    "q": "医生要求他卧床休息，他___听从。",
+    "q": "虽然不情愿，但我___承认他说得有道理。",
     "answer": "不得不",
-    "explain": "Nhấn mạnh ý muốn chủ quan bị ép buộc, đành phải nghe theo."
+    "explain": "不得不承认 là cách nói cố định “đành phải thừa nhận”."
    },
    {
-    "q": "既然你不愿意去，___我去了。",
-    "answer": "只好",
-    "explain": "Chủ ngữ 我 đứng sau chỗ trống nên 不得不 không dùng được; chọn 只好 (只得 cũng dùng được)."
-   },
-   {
-    "q": "末班车已经开走了，我___走路回家。",
+    "q": "山路被大雪封住了，车队无法前进，众人___原地等待救援。",
     "answer": "只得",
-    "explain": "Điều kiện khách quan thay đổi, đành đi bộ; dùng 只得 (只好 cũng dùng được)."
+    "explain": "Giọng kể chuyện, văn viết, điều kiện khách quan buộc phải thay đổi nên chọn 只得."
    },
    {
-    "q": "因为感冒了，今天下午我___不去上课了。",
+    "q": "好吧好吧，那就___这样了，明天再说。",
     "answer": "只好",
-    "explain": "Vế sau là câu phủ định, 不得不 không kết hợp; dùng 只好 (只得 cũng dùng được)."
+    "explain": "Lời nói miệng, chốt lại tình thế “đành vậy”, nghiêng về 只好."
+   },
+   {
+    "q": "他的实力太强了，大家都___佩服。",
+    "answer": "不得不",
+    "explain": "不得不佩服 là cách nói cố định “không thể không phục”."
    }
   ]
  },
@@ -1948,12 +1948,12 @@
    {
     "q": "他去不去还___呢。",
     "answer": "不一定",
-    "explain": "Câu chính phản 去不去 và làm vị ngữ chỉ dùng được 不一定."
+    "explain": "Câu chính phản 去不去 chỉ đi với 不一定."
    },
    {
-    "q": "A：他会同意吗？　B：___。",
+    "q": "你说他一定会来，我看___。",
     "answer": "不见得",
-    "explain": "Trả lời độc lập, ngữ khí mềm mại, thể hiện phán đoán riêng nên dùng 不见得 (不一定 cũng có thể trả lời độc lập)."
+    "explain": "Dùng để mềm mỏng không đồng ý với nhận định của người khác, hay đứng cuối câu: 我看不见得."
    },
    {
     "q": "他去哪个学校学汉语还___。",
@@ -1961,9 +1961,9 @@
     "explain": "Có đại từ nghi vấn 哪个 và làm vị ngữ, chỉ 不一定 dùng được."
    },
    {
-    "q": "运动太多了，___对身体好。",
-    "answer": "不见得",
-    "explain": "Làm trạng ngữ, nhận định mềm mại về chuyện chưa chắc, dùng 不见得 (不一定 cũng có thể)."
+    "q": "今天晚上的聚会谁去还___呢。",
+    "answer": "不一定",
+    "explain": "Đại từ nghi vấn 谁 kèm 呢 ở cuối câu chỉ đi với 不一定."
    }
   ]
  },
@@ -2128,9 +2128,9 @@
     "explain": "Nghĩa “không thể không”, đứng trước chủ ngữ 你, chỉ 不由得 có cách dùng này."
    },
    {
-    "q": "听了他的话，大家___笑了起来。",
+    "q": "看到孩子认真的样子，她___莞尔一笑。",
     "answer": "不禁",
-    "explain": "Hành động bất giác, đứng sau chủ ngữ, văn phong thiên về văn viết; dùng 不禁 (不由得 cũng có thể)."
+    "explain": "不禁莞尔 là cách nói cố định, mang sắc thái văn viết."
    },
    {
     "q": "这本书又好又便宜，___你不买。",
@@ -2138,9 +2138,9 @@
     "explain": "Cấu trúc 不由得 + 你 + 不 + động từ nhấn mạnh khẳng định."
    },
    {
-    "q": "看着窗外飘落的雪花，她___想起了远方的家人。",
+    "q": "听到这个消息，在场的人无不___为之动容。",
     "answer": "不禁",
-    "explain": "Trạng thái tâm lý bất giác, văn viết, dùng 不禁 (不由得 cũng có thể)."
+    "explain": "不禁为之动容 là cách nói cố định trong văn viết."
    }
   ]
  },
