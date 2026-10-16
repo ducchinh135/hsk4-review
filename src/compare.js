@@ -1,25 +1,72 @@
-// Confusable word groups and their practice logic, with no React so Node tests can use them.
+// Confusable word groups (the 125 groups of the reference book) and their practice logic, with no
+// React so Node tests can use them.
 import RAW from './data/compare.json' with { type: 'json' };
 import { GRAMMAR_FILTERS, buildRoundRobin, countPoints, filterPoints } from './grammar.js';
 import { shuffle } from './random.js';
 
-export { FILTER_NAMES, lessonOf } from './grammar.js';
+export { FILTER_NAMES } from './grammar.js';
 
-// lesson ('L1') -> its groups. Lessons not written yet have no key (or []).
-export const COMPARE = RAW;
-export const ALL_PAIRS = Object.values(COMPARE).flat();
+// Every group written so far, in id order ("001" … "125").
+export const ALL_PAIRS = RAW;
 export const PAIR_BY_ID = Object.fromEntries(ALL_PAIRS.map((p) => [p.id, p]));
+export const TOTAL_PAIRS = 125;
 
-const NONE = [];
-export const pairsOf = (lesson) => COMPARE[lesson] || NONE;
+// Initial letter of the pinyin, as in the book's table of contents -> [first id, last id].
+export const LETTER_RANGES = {
+  A: [1, 5],
+  B: [6, 23],
+  C: [24, 30],
+  D: [31, 41],
+  E: [42, 43],
+  F: [44, 49],
+  G: [50, 52],
+  H: [53, 56],
+  J: [57, 67],
+  K: [68, 71],
+  L: [72, 74],
+  M: [75, 81],
+  N: [82, 87],
+  O: [88, 88],
+  P: [89, 90],
+  Q: [91, 95],
+  R: [96, 98],
+  S: [99, 103],
+  T: [104, 106],
+  W: [107, 109],
+  X: [110, 115],
+  Y: [116, 119],
+  Z: [120, 125],
+};
+export const LETTER_ORDER = Object.keys(LETTER_RANGES);
+// Letters that have at least one group written.
+export const LETTERS = LETTER_ORDER.filter((l) => ALL_PAIRS.some((p) => p.letter === l));
+
+export function letterOf(id) {
+  if (!/^\d{3}$/.test(id)) return undefined;
+  const n = Number(id);
+  return LETTER_ORDER.find((l) => n >= LETTER_RANGES[l][0] && n <= LETTER_RANGES[l][1]);
+}
+
+export const pairsOfLetter = (letter, pairs = ALL_PAIRS) => pairs.filter((p) => p.letter === letter);
 
 // Group marks live in the vocabulary marks store; the prefix keeps them apart from hanzi and grammar.
 export const compareKey = (id) => 'c:' + id;
 export const pairTitle = (p) => p.words.map((w) => w[0]).join(' / ');
 
+// The group named by a URL hash ("#096"), or null when it is not a group written so far.
+export function pairIdFromHash(hash, byId = PAIR_BY_ID) {
+  try {
+    const id = decodeURIComponent(String(hash).replace(/^#/, ''));
+    return Object.hasOwn(byId, id) ? id : null;
+  } catch {
+    return null;
+  }
+}
+
 export const COMPARE_FILTERS = GRAMMAR_FILTERS;
 const FILTER_KEY = 'hsk4_compare_filter';
 const FILTER_IDS = GRAMMAR_FILTERS.map(([f]) => f);
+const LETTER_KEY = 'hsk4_compare_letter';
 
 export function loadCompareFilter() {
   try {
@@ -38,15 +85,36 @@ export function saveCompareFilter(f) {
   }
 }
 
+// The saved letter if it still has groups, else the first letter that does ('' when none is written yet).
+export function loadCompareLetter(letters = LETTERS) {
+  try {
+    const l = localStorage.getItem(LETTER_KEY);
+    if (letters.includes(l)) return l;
+  } catch {
+    /* private mode: fall through to the first letter */
+  }
+  return letters[0] || '';
+}
+
+export function saveCompareLetter(letter) {
+  try {
+    localStorage.setItem(LETTER_KEY, letter);
+  } catch {
+    /* private mode / quota: the letter just isn't remembered */
+  }
+}
+
 export const filterPairs = (pairs, filter, getMark) => filterPoints(pairs, filter, getMark, compareKey);
 export const countPairs = (pairs, getMark) => countPoints(pairs, getMark, compareKey);
-export const reviewPairs = (getMark) => ALL_PAIRS.filter((p) => getMark(compareKey(p.id)) === 'r');
+export const reviewPairs = (getMark, pairs = ALL_PAIRS) => pairs.filter((p) => getMark(compareKey(p.id)) === 'r');
 
-// For LessonTabs: known groups / groups of each lesson.
-export const compareProgress = (getMark) => (lesson) => {
-  const c = countPairs(pairsOf(lesson), getMark);
-  return { done: c.k, total: c.n };
-};
+// For LetterTabs: known groups / groups of each letter.
+export const compareProgress =
+  (getMark, pairs = ALL_PAIRS) =>
+  (letter) => {
+    const c = countPairs(pairsOfLetter(letter, pairs), getMark);
+    return { done: c.k, total: c.n };
+  };
 
 // Pinyin without tone marks, case, spaces or apostrophes ("Suǒ Yǒu" -> "suoyou", "lǜ" -> "lu").
 export const toneless = (s) =>
@@ -77,13 +145,14 @@ export const retryCompareQuiz = (questions, rng = Math.random) => shuffle(questi
 // ---------- data checks (used by the tests) ----------
 
 const isText = (s) => typeof s === 'string' && s.trim() !== '';
+const MAX_QUESTIONS = 8;
 
-function checkPair(p, lesson, home, order) {
+function checkPair(p) {
   const e = [];
   const at = p.id;
   const words = Array.isArray(p.words) ? p.words : [];
   const hanzi = words.map((w) => (Array.isArray(w) ? w[0] : undefined));
-  if (words.length < 2 || words.length > 3) e.push(`${at}: cần 2–3 từ`);
+  if (words.length < 2 || words.length > 5) e.push(`${at}: cần 2–5 từ`);
   if (!words.every((w) => Array.isArray(w) && w.length === 2 && w.every(isText))) e.push(`${at}: mỗi từ phải là [hán tự, pinyin]`);
   if (new Set(hanzi).size !== hanzi.length) e.push(`${at}: từ bị trùng`);
   for (const f of ['common', 'tip']) if (!isText(p[f])) e.push(`${at}: thiếu ${f}`);
@@ -105,7 +174,8 @@ function checkPair(p, lesson, home, order) {
   });
 
   const qs = Array.isArray(p.questions) ? p.questions : [];
-  if (qs.length < 4 || qs.length > 6) e.push(`${at}: cần 4–6 câu hỏi`);
+  const minQuestions = Math.max(4, words.length);
+  if (qs.length < minQuestions || qs.length > MAX_QUESTIONS) e.push(`${at}: cần ${minQuestions}–${MAX_QUESTIONS} câu hỏi`);
   qs.forEach((q, j) => {
     const qa = `${at} câu ${j + 1}`;
     if (!q || typeof q !== 'object') {
@@ -119,39 +189,28 @@ function checkPair(p, lesson, home, order) {
   hanzi.forEach((h) => {
     if (isText(h) && !qs.some((q) => q && q.answer === h)) e.push(`${at}: ${h} chưa là đáp án câu nào`);
   });
-
-  // A group lives in the lesson of its newest HSK4 word (words outside vocab.json, e.g. HSK1-3, don't count).
-  if (!hanzi.some((h) => home[h] === lesson)) e.push(`${at}: không từ nào thuộc từ vựng ${lesson}`);
-  const later = hanzi.filter((h) => home[h] && order.indexOf(home[h]) > order.indexOf(lesson));
-  if (later.length) e.push(`${at}: ${later.join(', ')} thuộc bài sau, nên chuyển nhóm sang bài đó`);
   return e;
 }
 
-// Every problem in the compare data, as readable messages; [] when it is valid. `vocab` is vocab.json.
-export function validateCompare(data, vocab) {
-  const order = Object.keys(vocab);
-  const home = {}; // hanzi -> first lesson whose vocabulary has it
-  for (const l of order) for (const w of vocab[l].words) home[w[0]] ??= l;
+// Every problem in the compare data, as readable messages; [] when it is valid.
+export function validateCompare(data) {
+  if (!Array.isArray(data)) return ['compare.json phải là mảng'];
   const errors = [];
-  const seen = new Set();
-  for (const [lesson, pairs] of Object.entries(data)) {
-    if (!order.includes(lesson)) errors.push(`${lesson}: không có trong vocab.json`);
-    if (!Array.isArray(pairs)) {
-      errors.push(`${lesson}: phải là mảng`);
-      continue;
+  let prev = 0;
+  data.forEach((p, i) => {
+    if (!p || typeof p !== 'object') {
+      errors.push(`[${i}]: phải là object`);
+      return;
     }
-    if (pairs.length && (pairs.length < 3 || pairs.length > 5)) errors.push(`${lesson}: cần 3–5 nhóm, có ${pairs.length}`);
-    pairs.forEach((p, i) => {
-      if (!p || typeof p !== 'object') {
-        errors.push(`${lesson}[${i}]: phải là object`);
-        return;
-      }
-      const id = `${lesson.slice(1)}.${i + 1}`;
-      if (p.id !== id) errors.push(`${lesson}[${i}]: id phải là "${id}", đang là "${p.id}"`);
-      if (seen.has(p.id)) errors.push(`id trùng: ${p.id}`);
-      seen.add(p.id);
-      errors.push(...checkPair(p, lesson, home, order));
-    });
-  }
+    const n = /^\d{3}$/.test(p.id) ? Number(p.id) : 0;
+    if (n < 1 || n > TOTAL_PAIRS) errors.push(`[${i}]: id phải là 3 chữ số 001–125, đang là ${JSON.stringify(p.id)}`);
+    else if (n === prev) errors.push(`id trùng: ${p.id}`);
+    else if (n < prev) errors.push(`${p.id}: id không tăng dần`);
+    if (n) {
+      prev = Math.max(prev, n);
+      if (p.letter !== letterOf(p.id)) errors.push(`${p.id}: letter phải là ${letterOf(p.id)}`);
+    }
+    errors.push(...checkPair(p));
+  });
   return errors;
 }
