@@ -2695,7 +2695,7 @@
    {
     "q": "这套房子坐北___南，冬天很暖和。",
     "answer": "朝",
-    "explain": "“坐北朝南” là cụm cố định nói hướng của nhà, dùng 朝."
+    "explain": "Phần lớn người ta nói “坐北朝南” như cụm cố định chỉ hướng nhà; 向 cũng có thể gặp (坐北向南) nhưng 朝 là cách nói chuẩn, quen dùng hơn cho hướng của nhà cửa; 往 không dùng."
    },
    {
     "q": "我们一路跑___老师那边。",
@@ -3029,7 +3029,7 @@
    {
     "q": "你们提出的要求，我们会在三天内书面___。",
     "answer": "答复",
-    "explain": "Đối tượng là yêu cầu, đề nghị và bằng văn bản nên dùng 答复."
+    "explain": "回答 cũng đúng ngữ pháp ở đây. 答复 là lựa chọn đúng hơn vì đối tượng là yêu cầu (要求) và trả lời bằng văn bản, mang tính chính thức; 回答 thiên về trả lời câu hỏi."
    },
    {
     "q": "这道题太难了，我___不上来。",
@@ -3039,7 +3039,7 @@
    {
     "q": "对于我们的咨询，对方至今没有给出明确的___。",
     "answer": "答复",
-    "explain": "Đối tượng là咨询 (xin tư vấn), dùng danh từ 答复."
+    "explain": "回答 cũng đúng ngữ pháp ở đây. 答复 hợp hơn vì đối tượng là咨询 (xin tư vấn) và là câu trả lời chính thức của phía đối tác."
    },
    {
     "q": "妈妈在问你话，为什么不___？",
@@ -3135,7 +3135,7 @@
    {
     "q": "这本书我已经看了一___，剩下的明天再看。",
     "answer": "大半",
-    "explain": "“一大半” là cách nói danh từ cố định (hơn một nửa); 大都 không đứng sau 一."
+    "explain": "“一大半” là cách nói danh từ chuẩn (hơn một nửa). 多半 cũng có thể thành “一多半” nhưng ít dùng hơn; 大都 không đứng sau 一."
    },
    {
     "q": "他的小说我___看过，只有最近一本没读。",
@@ -3148,9 +3148,9 @@
     "explain": "Đây là dự đoán khả năng cao nên không dùng 大都. 大半 cũng đúng ngữ pháp ở đây; 多半 là cách nói khẩu ngữ thông dụng hơn cho nghĩa “chắc là”."
    },
    {
-    "q": "这笔钱我已经花了一___。",
+    "q": "全班的作业，老师已经批改了一___。",
     "answer": "大半",
-    "explain": "“一大半” chỉ phần hơn một nửa; chọn 大半."
+    "explain": "Đây cũng là cách nói “一大半”. 多半 cũng có thể thành “一多半” nhưng hiếm; 大半 là đáp án thông dụng, còn 大都 không đứng sau 一."
    }
   ]
  },
@@ -3573,7 +3573,7 @@
    {
     "q": "___，他买到了那本找了很久的小说。",
     "answer": "终于",
-    "explain": "Từ mở đầu câu rồi ngắt bằng dấu phẩy mà vẫn nói được kết quả cuối cùng là 终于; 到底 và 毕竟 không đứng một mình như vậy."
+    "explain": "到底 cũng đúng ngữ pháp ở đây (到底买到了 = cuối cùng cũng mua được). 终于 là lựa chọn tự nhiên hơn: trung tính, diễn tả sự nhẹ nhõm sau thời gian chờ đợi và đứng được ngay đầu câu; 到底 thiên về khẩu ngữ và nhấn mạnh kết quả qua nhiều trắc trở."
    },
    {
     "q": "这件事你一定要坚持___，我们会支持你。",
@@ -3583,12 +3583,12 @@
    {
     "q": "和他的功劳比起来，他犯的错___不算大。",
     "answer": "毕竟",
-    "explain": "Nhấn mạnh kết luận “dù sao thì” là 毕竟; 终于 và 究竟 không có nghĩa này."
+    "explain": "到底 cũng có nghĩa “nói cho cùng” (到底是…), nhưng trong câu so sánh nhấn mạnh kết luận cuối cùng như thế này thì 毕竟 là từ được dùng; 终于 và 究竟 không có nghĩa này."
    },
    {
-    "q": "这次比赛___谁赢了？",
+    "q": "我一定要去探个___。",
     "answer": "究竟",
-    "explain": "Câu hỏi dò hỏi, loại trừ 毕竟 và 终于. 到底 cũng dùng được trong câu hỏi; 究竟 thiên về văn viết, trang trọng hơn."
+    "explain": "“探个究竟” là cụm cố định, 究竟 ở đây là danh từ nghĩa “đầu đuôi, sự thật”; 到底, 毕竟, 终于 không làm danh từ như vậy."
    }
   ]
  },
