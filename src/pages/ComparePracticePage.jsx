@@ -1,38 +1,56 @@
 import { useState } from 'react';
 import ChoiceBlank from '../components/ChoiceBlank.jsx';
-import LessonTabs from '../components/LessonTabs.jsx';
+import LetterTabs from '../components/LetterTabs.jsx';
 import { useApp } from '../context/AppContext.jsx';
 import {
   FILTER_NAMES,
   PAIR_BY_ID,
   buildCompareQuiz,
   compareKey,
-  compareProgress,
   filterPairs,
   loadCompareFilter,
+  loadCompareLetter,
   pairTitle,
-  pairsOf,
+  pairsOfLetter,
   retryCompareQuiz,
   reviewPairs,
+  saveCompareLetter,
 } from '../compare.js';
-import { LESSON_LABELS } from '../lessons.js';
 import { Link } from '../router.jsx';
 
 const REVIEW_MAX = 30;
 const compareLink = (id) => '/compare#' + id;
 
-// One practice run: every question of the chosen lesson's groups under the compare filter (scope
-// "lesson"), or of every "needs review" group, at most 30 questions (scope "review"). Built once on
-// mount; the shell remounts the page (key = viewVersion) when the lesson or account data changes.
+// A practice run over the chosen letter's groups (scope "lesson", under the compare filter) or over
+// every "needs review" group (scope "review"). Picking another letter rebuilds the run.
 export default function ComparePracticePage({ scope }) {
-  const { lesson, selectLesson, marks } = useApp();
+  const { marks } = useApp();
+  const review = scope === 'review';
+  const [letter, setLetter] = useState(loadCompareLetter);
+  const pickLetter = (l) => {
+    saveCompareLetter(l);
+    setLetter(l);
+  };
+  return (
+    <div className="panel">
+      {!review && <LetterTabs letter={letter} getMark={marks.getMark} onSelect={pickLetter} />}
+      <PracticeRun key={review ? 'review' : letter} scope={scope} letter={letter} />
+    </div>
+  );
+}
+
+// Every question of the chosen letter's groups under the compare filter, or of every "needs review"
+// group, at most 30 questions. Built once on mount; the shell remounts the page (key = viewVersion)
+// when account data changes, and the page above remounts this run when the letter changes.
+function PracticeRun({ scope, letter }) {
+  const { marks } = useApp();
   const { getMark, setMark, toggleMark } = marks;
   const review = scope === 'review';
   const max = review ? REVIEW_MAX : Infinity;
 
   const [source] = useState(() => {
     const filter = loadCompareFilter();
-    const picked = review ? { points: reviewPairs(getMark), fellBack: false } : filterPairs(pairsOf(lesson), filter, getMark);
+    const picked = review ? { points: reviewPairs(getMark), fellBack: false } : filterPairs(pairsOfLetter(letter), filter, getMark);
     return { ...picked, filter };
   });
   const fresh = (questions, run) => ({ questions, run, index: 0, answers: {}, showDone: false });
@@ -51,7 +69,7 @@ export default function ComparePracticePage({ scope }) {
   if (!n) {
     body = (
       <div className="fillblank-box quiz-done">
-        <div className="filter-note">{review ? 'Chưa có nhóm từ nào cần ôn. 🎉' : 'Nội dung bài này đang được soạn.'}</div>
+        <div className="filter-note">{review ? 'Chưa có nhóm từ nào cần ôn. 🎉' : 'Chưa có nhóm từ nào ở chữ này.'}</div>
         <div className="controls">
           <Link to="/compare" className="btn secondary">
             ⚖️ Về So sánh
@@ -165,17 +183,16 @@ export default function ComparePracticePage({ scope }) {
   }
 
   return (
-    <div className="panel">
-      {!review && <LessonTabs lesson={lesson} getMark={getMark} onSelect={selectLesson} progress={compareProgress(getMark)} />}
+    <>
       <div className="exercise-top">
         <Link to="/compare" className="link-btn">
           ← So sánh
         </Link>
         <span className="exercise-summary">
-          {review ? 'Ôn các nhóm cần ôn' : `${LESSON_LABELS[lesson]} · ${FILTER_NAMES[source.filter]}`} · {source.points.length} nhóm · {n} câu
+          {review ? 'Ôn các nhóm cần ôn' : `Chữ ${letter || '—'} · ${FILTER_NAMES[source.filter]}`} · {source.points.length} nhóm · {n} câu
         </span>
       </div>
-      {source.fellBack && <div className="filter-note">Chưa có nhóm nào ở mục “{FILTER_NAMES[source.filter]}” nên đang luyện cả bài.</div>}
+      {source.fellBack && <div className="filter-note">Chưa có nhóm nào ở mục “{FILTER_NAMES[source.filter]}” nên đang luyện cả chữ.</div>}
       {body}
       {n > 0 && (
         <div className="question-grid-wrap">
@@ -198,6 +215,6 @@ export default function ComparePracticePage({ scope }) {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

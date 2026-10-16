@@ -1,71 +1,62 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import ComparePair from '../components/ComparePair.jsx';
-import LessonTabs from '../components/LessonTabs.jsx';
+import LetterTabs from '../components/LetterTabs.jsx';
 import { useApp } from '../context/AppContext.jsx';
 import {
   COMPARE_FILTERS,
+  LETTERS,
   PAIR_BY_ID,
   compareKey,
-  compareProgress,
   countPairs,
   filterPairs,
-  lessonOf,
   loadCompareFilter,
-  pairsOf,
+  loadCompareLetter,
+  pairIdFromHash,
+  pairsOfLetter,
   reviewPairs,
   saveCompareFilter,
+  saveCompareLetter,
   searchPairs,
 } from '../compare.js';
-import { LESSON_COLORS, LESSON_LABELS, VOCAB } from '../lessons.js';
 import { Link } from '../router.jsx';
 
-// The group named by the URL hash (/compare#1.3), if it exists.
-function hashPair() {
-  try {
-    const id = decodeURIComponent(window.location.hash.slice(1));
-    return PAIR_BY_ID[id] ? id : null;
-  } catch {
-    return null;
-  }
-}
-
-// The confusable-word groups of the chosen lesson, filtered by mark, or the search results over every
-// lesson. A /compare#<id> link (from a practice run) switches to that group's lesson, shows and opens
+// The confusable-word groups of the chosen letter, filtered by mark, or the search results over every
+// group. A /compare#<id> link (from a practice run) switches to that group's letter, shows and opens
 // it even if the filter hides it, and scrolls to it.
 export default function ComparePage() {
-  const { lesson, selectLesson, marks, speech, viewVersion } = useApp();
+  const { marks, speech, viewVersion } = useApp();
   const { getMark, toggleMark, markRef } = marks;
+  const [initial] = useState(() => pairIdFromHash(window.location.hash));
   const [filter, setFilter] = useState(loadCompareFilter);
   const [query, setQuery] = useState('');
-  const [target, setTarget] = useState(hashPair);
-  const [open, setOpen] = useState(() => new Set(target ? [target] : []));
+  const [target, setTarget] = useState(initial);
+  const [letter, setLetter] = useState(() => (initial ? PAIR_BY_ID[initial].letter : loadCompareLetter()));
+  const [open, setOpen] = useState(() => new Set(initial ? [initial] : []));
   const scrolled = useRef(false);
 
   useEffect(() => {
-    if (target && lessonOf(target) !== lesson) selectLesson(lessonOf(target));
-    // only on mount
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    if (letter) saveCompareLetter(letter);
+  }, [letter]);
   // navigate() has already scrolled to the top, so scroll once the target card is rendered.
   useEffect(() => {
-    if (!target || scrolled.current || lessonOf(target) !== lesson) return;
+    if (!target || scrolled.current) return;
     scrolled.current = true;
     document.getElementById(target)?.scrollIntoView({ block: 'start' });
-  }, [target, lesson]);
+  }, [target]);
 
-  const all = pairsOf(lesson);
-  // Rebuilt when the lesson, filter or account data changes, not on every mark, so a card does not
+  const all = useMemo(() => pairsOfLetter(letter), [letter]);
+  // Rebuilt when the letter, filter or account data changes, not on every mark, so a card does not
   // vanish right after you mark it.
   const { points: pairs, fellBack } = useMemo(() => {
     const m = markRef.current;
     const res = filterPairs(all, filter, (k) => (m[k] && m[k].s) || '');
-    if (target && lessonOf(target) === lesson && !res.points.some((p) => p.id === target)) {
+    if (target && !res.points.some((p) => p.id === target) && all.some((p) => p.id === target)) {
       return { points: all.filter((p) => p.id === target || res.points.includes(p)), fellBack: res.fellBack };
     }
     return res;
     // marks are read on purpose only when the view is rebuilt
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [all, filter, target, lesson, viewVersion]);
+  }, [all, filter, target, viewVersion]);
 
   const searching = query.trim() !== '';
   const results = useMemo(() => (searching ? searchPairs(query) : []), [searching, query]);
@@ -79,10 +70,10 @@ export default function ComparePage() {
     saveCompareFilter(f);
     setTarget(null);
   };
-  const pickLesson = (l) => {
+  const pickLetter = (l) => {
     setTarget(null);
     setQuery('');
-    selectLesson(l);
+    setLetter(l);
   };
   const toggleOpen = (id) =>
     setOpen((s) => {
@@ -91,7 +82,7 @@ export default function ComparePage() {
       else next.add(id);
       return next;
     });
-  const card = (p, lessonLabel) => (
+  const card = (p, showLetter) => (
     <ComparePair
       key={p.id}
       pair={p}
@@ -100,34 +91,32 @@ export default function ComparePage() {
       onToggleOpen={() => toggleOpen(p.id)}
       onMark={(s) => toggleMark(compareKey(p.id), s)}
       speech={speech}
-      lessonLabel={lessonLabel}
+      showLetter={showLetter}
     />
   );
 
   return (
     <div className="panel">
-      <LessonTabs lesson={lesson} getMark={getMark} onSelect={pickLesson} progress={compareProgress(getMark)} />
+      {LETTERS.length > 0 && <LetterTabs letter={letter} getMark={getMark} onSelect={pickLetter} />}
       <div className="cp-search">
         <input
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Tìm từ trên cả 20 bài: 刚才, gangcai…"
+          placeholder="Tìm từ trên cả 125 nhóm: 刚才, gangcai…"
           aria-label="Tìm nhóm từ"
         />
       </div>
       {searching ? (
         <>
           <div className="filter-note">
-            {results.length ? `${results.length} nhóm khớp “${query.trim()}” trên cả 20 bài` : 'Không tìm thấy nhóm nào.'}
+            {results.length ? `${results.length} nhóm khớp “${query.trim()}” trên mọi chữ cái` : 'Không tìm thấy nhóm nào.'}
           </div>
-          <div className="grammar-list">{results.map((p) => card(p, LESSON_LABELS[lessonOf(p.id)]))}</div>
+          <div className="grammar-list">{results.map((p) => card(p, true))}</div>
         </>
       ) : (
         <>
-          <div className="lesson-title" style={{ color: LESSON_COLORS[lesson].a }}>
-            {VOCAB[lesson].title}
-          </div>
+          {all.length > 0 && <div className="lesson-title">Chữ {letter}</div>}
           {all.length > 0 && (
             <div className="filter-bar">
               <div className="filter-chips" role="group" aria-label="Lọc nhóm từ theo trạng thái">
@@ -138,10 +127,10 @@ export default function ComparePage() {
                   </button>
                 ))}
               </div>
-              {fellBack && <div className="audio-note filter-note">Chưa có nhóm nào ở mục này nên đang hiện cả bài.</div>}
+              {fellBack && <div className="audio-note filter-note">Chưa có nhóm nào ở mục này nên đang hiện cả chữ.</div>}
               <div className="filter-tools">
                 <span>
-                  Đã nắm {counts.k}/{counts.n} nhóm từ của bài này
+                  Đã nắm {counts.k}/{counts.n} nhóm từ của chữ {letter}
                 </span>
               </div>
             </div>
@@ -149,7 +138,7 @@ export default function ComparePage() {
           <div className="grammar-actions">
             {all.length > 0 && (
               <Link to="/compare/practice" className="btn">
-                📝 Luyện tập bài này
+                📝 Luyện tập chữ này
               </Link>
             )}
             {reviewCount > 0 && (
@@ -159,9 +148,9 @@ export default function ComparePage() {
             )}
           </div>
           {all.length === 0 ? (
-            <div className="grammar-empty">Nội dung bài này đang được soạn.</div>
+            <div className="grammar-empty">Nội dung đang được soạn.</div>
           ) : (
-            <div className="grammar-list">{pairs.map((p) => card(p))}</div>
+            <div className="grammar-list">{pairs.map((p) => card(p, false))}</div>
           )}
         </>
       )}

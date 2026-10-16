@@ -10,8 +10,9 @@ function highlight(zh, word) {
 
 // One group of confusable words. The title row toggles the details: what they share, the comparison
 // table (one column per word), examples per word (with speech), the tip and the marks. The element id
-// is the group id, for /compare#1.3 links. `lessonLabel` is shown on search results.
-export default function ComparePair({ pair, mark, open, onToggleOpen, onMark, speech, lessonLabel }) {
+// is the group id, for /compare#096 links. The group number is shown on the title row, with its letter
+// on search results (`showLetter`).
+export default function ComparePair({ pair, mark, open, onToggleOpen, onMark, speech, showLetter }) {
   const cls = 'word-row' + (open ? ' open' : '') + (mark === 'k' ? ' is-known' : mark === 'r' ? ' is-review' : '');
   const speakBtn = (text, id, label) =>
     speech.supported && (
@@ -32,7 +33,7 @@ export default function ComparePair({ pair, mark, open, onToggleOpen, onMark, sp
               </span>
             ))}
           </span>
-          {lessonLabel && <span className="cp-lesson">{lessonLabel}</span>}
+          <span className="cp-code">{showLetter ? `${pair.letter} · ${pair.id}` : pair.id}</span>
           {mark && <span className={'gp-status ' + mark}>{mark === 'k' ? '✅ Đã nắm' : '🔁 Cần ôn'}</span>}
         </button>
       </div>
@@ -40,7 +41,7 @@ export default function ComparePair({ pair, mark, open, onToggleOpen, onMark, sp
         <div className="word-detail">
           <div className="gp-meaning">{pair.common}</div>
           <div className="cp-table-wrap">
-            <table className="cp-table">
+            <table className="cp-table" style={{ minWidth: Math.max(420, 110 * (pair.words.length + 1)) }}>
               <thead>
                 <tr>
                   <th scope="col">Tiêu chí</th>

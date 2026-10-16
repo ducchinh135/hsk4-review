@@ -9,10 +9,11 @@ A grammar section follows the textbook lesson by lesson: each grammar point has 
 explanation in Vietnamese, examples with pronunciation and common mistakes, plus fill-in-the-blank and
 sentence-ordering exercises. Wrong answers mark the point "needs review" (synced like word marks).
 
-A confusable-words section compares groups of 2-3 near-synonyms lesson by lesson (e.g. 刚 / 刚才,
-以为 / 认为): what they share, a comparison table, examples per word with pronunciation and a tip,
-plus a search over every lesson (hanzi or toneless pinyin) and fill-in-the-blank exercises whose
-choices are the words of the group. Wrong answers mark the group "needs review".
+A confusable-words section compares the 125 groups of near-synonyms of a reference book, grouped by
+the initial letter of their pinyin (e.g. 刚 / 刚才, 认为 / 以为, 别 / 别的 / 另 / 另外): what they
+share, a comparison table, examples per word with pronunciation and a tip, plus a search over every
+group (hanzi or toneless pinyin) and fill-in-the-blank exercises whose choices are the words of the
+group. Wrong answers mark the group "needs review".
 
 - Without a backend (e.g. GitHub Pages) marks and review progress are stored in the browser only.
 - With the Cloudflare backend, users sign in (username + password, invite code to register) and
@@ -28,8 +29,8 @@ choices are the words of the group. Wrong answers mark the group "needs review".
 | `/grammar` | Grammar points of the chosen lesson, filtered by mark; `/grammar#1.3` opens and scrolls to a point |
 | `/grammar/practice` | A practice run over the chosen lesson's points (under the grammar filter) |
 | `/grammar/review` | A practice run over every "needs review" grammar point (at most 30 questions) |
-| `/compare` | Confusable-word groups of the chosen lesson, filtered by mark, with a search over every lesson; `/compare#1.3` opens and scrolls to a group |
-| `/compare/practice` | A practice run over the chosen lesson's groups (under the compare filter) |
+| `/compare` | Confusable-word groups of the chosen letter, filtered by mark, with a search over every group; `/compare#096` opens and scrolls to a group |
+| `/compare/practice` | A practice run over the chosen letter's groups (under the compare filter) |
 | `/compare/review` | A practice run over every "needs review" group (at most 30 questions) |
 
 Paths are real URLs (History API), so the host must serve `index.html` for them. Cloudflare Pages does
@@ -46,7 +47,7 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 | `src/grammar.js` | Grammar data access, filters, practice-run building, sentence-order checking, data validation |
 | `src/data/grammar.json` | Grammar points per lesson (see below) |
 | `src/compare.js` | Confusable-word data access, filters, search, practice-run building, data validation |
-| `src/data/compare.json` | Confusable-word groups per lesson (see below) |
+| `src/data/compare.json` | The confusable-word groups, as one flat list (see below) |
 | `src/data/vocab.json` | The vocabulary, one array per word: `[hanzi, pinyin, meaning, example zh, example vi]` |
 | `src/data/practice.json` | Expanded HSK 4 textbook/workbook collocations (`phrases`) and context sentences (`sentences`) per word |
 | `server/app.js` | The Hono API: middleware (no-store, CSRF guard) and routes |
@@ -83,25 +84,27 @@ question, parts that join into the answer).
 
 ### Confusable-words data
 
-`src/data/compare.json` maps a lesson key to 3-5 groups. A group lives in the lesson of its newest
-HSK4 word (at least one word is in that lesson's vocabulary, none in a later lesson's).
+`src/data/compare.json` is one flat list of groups in id order (`001` … `125`, the numbers of the
+book's table of contents; written in batches, so the list may stop before 125). `letter` is the
+initial of the pinyin as in the table of contents (the ranges live in `src/compare.js`).
 
 ```json
 {
-  "id": "1.1",
-  "words": [["刚", "gāng"], ["刚才", "gāngcái"]],
+  "id": "096",
+  "letter": "R",
+  "words": [["认为", "rènwéi"], ["以为", "yǐwéi"]],
   "common": "…",
-  "rows": [["Tiêu chí", "ô cho 刚", "ô cho 刚才"]],
+  "rows": [["Tiêu chí", "ô cho 认为", "ô cho 以为"]],
   "examples": [["中文。", "pīnyīn", "Nghĩa.", 0]],
   "tip": "…",
-  "questions": [{ "q": "…___…", "answer": "刚才", "explain": "…" }]
+  "questions": [{ "q": "…___…", "answer": "以为", "explain": "…" }]
 }
 ```
 
 The last item of an example is the index of the word it shows. The choices of a question are the
-group's words. Group marks are stored under `c:<id>`. `npm run test:unit` validates the file (2-3
-words, ≥ 2 rows, ≥ 2 examples per word containing it, 4-6 questions with one `___`, every word an
-answer at least once).
+group's words. Group marks are stored under `c:<id>`. `npm run test:unit` validates the file (2-5
+words, ≥ 2 rows, ≥ 2 examples per word containing it, max(4, words) to 8 questions with one `___`,
+every word an answer at least once, words equal to the book's index).
 
 `server/` has no Pages-specific code. When the API outgrows Pages Functions, export `app.fetch`
 from a Worker entry and point `/api/*` at it; the frontend does not change.

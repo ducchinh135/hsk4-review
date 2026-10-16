@@ -399,7 +399,7 @@ a.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .cp-hz{ font-size:clamp(20px,4vw,26px); font-weight:900; color:var(--accent-a,#333); }
 .cp-py{ font-size:14px; color:#777; }
 .cp-sep{ color:#aaa; font-weight:800; margin-right:6px; }
-.cp-lesson{ font-size:12px; font-weight:800; color:#555; background:#f0f0f5; border-radius:999px; padding:3px 8px; flex:0 0 auto; }
+.cp-code{ font-size:12px; font-weight:800; color:#555; background:#f0f0f5; border-radius:999px; padding:3px 8px; flex:0 0 auto; }
 .cp-table-wrap{ width:100%; max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; }
 .cp-table{ width:100%; min-width:420px; border-collapse:collapse; font-size:14px; }
 .cp-table th, .cp-table td{ border:1px solid #e4e4ec; padding:8px 10px; text-align:left; vertical-align:top; }
@@ -409,3 +409,8 @@ a.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .cp-examples{ width:100%; }
 .cp-examples .zh b{ color:var(--accent-a,#333); }
 .cp-tip{ background:#fff9db; border-radius:12px; padding:8px 12px; width:100%; box-sizing:border-box; font-size:15px; }
+.letter-tabs{ display:flex; gap:8px; overflow-x:auto; -webkit-overflow-scrolling:touch; padding:0 0 12px; max-width:100%; }
+.letter-tab{ flex:0 0 auto; min-width:58px; display:flex; flex-direction:column; align-items:center; gap:2px; font:inherit; font-weight:800; padding:8px 12px; border:2px solid #d0d0d8; border-radius:14px; background:#fff; color:var(--ink); cursor:pointer; }
+.letter-tab .letter-name{ font-size:18px; }
+.letter-tab .tab-sub{ font-size:11px; font-weight:700; opacity:.8; }
+.letter-tab.active{ background:var(--accent-a,#3d8bff); border-color:var(--accent-a,#3d8bff); color:#fff; }
