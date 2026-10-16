@@ -2229,5 +2229,1918 @@
     "explain": "Câu hỏi với tân ngữ 钱 dùng 不在乎; 无所谓 không mang tân ngữ kiểu này."
    }
   ]
+ },
+ {
+  "id": "024",
+  "letter": "C",
+  "words": [
+   [
+    "曾经",
+    "céngjīng"
+   ],
+   [
+    "曾",
+    "céng"
+   ],
+   [
+    "已经",
+    "yǐjīng"
+   ]
+  ],
+  "common": "Cả ba đều là phó từ chỉ việc đã xảy ra ở quá khứ, đứng trước động từ.",
+  "rows": [
+   [
+    "Nghĩa chính",
+    "Đã từng; việc đó không còn tiếp diễn đến giờ",
+    "Giống 曾经, hơi văn viết hơn",
+    "Đã; việc xong rồi hoặc tình trạng vẫn còn kéo dài đến giờ"
+   ],
+   [
+    "Phủ định",
+    "Bỏ 曾经, thêm 没(有) trước động từ",
+    "不曾、未曾",
+    "没(有), 还没"
+   ],
+   [
+    "Câu hỏi vặn",
+    "Không có cách dùng này",
+    "Có thể thêm 可、何、哪: 何曾、可曾",
+    "Không có cách dùng này"
+   ],
+   [
+    "Hiện tại và tương lai gần",
+    "Không dùng",
+    "Không dùng",
+    "Dùng được: 已经十二点了"
+   ],
+   [
+    "Thường đi với",
+    "过",
+    "过",
+    "了"
+   ]
+  ],
+  "examples": [
+   [
+    "她曾经养过一只小狗，后来送给朋友了。",
+    "Tā céngjīng yǎng guo yì zhī xiǎogǒu, hòulái sòng gěi péngyou le.",
+    "Cô ấy từng nuôi một con chó, sau đó cho bạn rồi.",
+    0
+   ],
+   [
+    "我们曾经是同班同学。",
+    "Wǒmen céngjīng shì tóngbān tóngxué.",
+    "Chúng tôi từng là bạn cùng lớp.",
+    0
+   ],
+   [
+    "他未曾向任何人提起过这件事。",
+    "Tā wèicéng xiàng rènhé rén tíqǐ guo zhè jiàn shì.",
+    "Anh ấy chưa từng nhắc chuyện này với ai.",
+    1
+   ],
+   [
+    "我曾在这家店打过两年工。",
+    "Wǒ céng zài zhè jiā diàn dǎ guo liǎng nián gōng.",
+    "Tôi từng làm thêm ở tiệm này hai năm.",
+    1
+   ],
+   [
+    "火车已经开走了。",
+    "Huǒchē yǐjīng kāi zǒu le.",
+    "Tàu đã chạy mất rồi.",
+    2
+   ],
+   [
+    "弟弟已经成了大学生。",
+    "Dìdi yǐjīng chéng le dàxuéshēng.",
+    "Em trai đã là sinh viên rồi.",
+    2
+   ]
+  ],
+  "tip": "Chỉ có 曾 mới đi với 未/不/何/可; còn 已经 dùng được cho tình trạng đến tận bây giờ, 曾经 và 曾 thì việc đã chấm dứt.",
+  "questions": [
+   {
+    "q": "我何___骗过你一次？",
+    "answer": "曾",
+    "explain": "Có 何 đứng trước thì chỉ dùng 曾 (何曾); 曾经 và 已经 không có cách dùng hỏi vặn này."
+   },
+   {
+    "q": "他未___见过那位老师。",
+    "answer": "曾",
+    "explain": "Phủ định bằng 未 chỉ ghép với 曾 thành 未曾; không nói 未曾经 hay 未已经."
+   },
+   {
+    "q": "现在___十二点了，快去吃饭吧。",
+    "answer": "已经",
+    "explain": "Nói về thời điểm hiện tại đã đến, chỉ 已经 dùng được; 曾经 chỉ việc đã chấm dứt."
+   },
+   {
+    "q": "那是我___的家，现在已经卖掉了。",
+    "answer": "曾经",
+    "explain": "Làm định ngữ trước 的 (曾经的家) là cách dùng của 曾经; 曾 không đứng trước 的."
+   },
+   {
+    "q": "这本书我___买了，你不用再给我买。",
+    "answer": "已经",
+    "explain": "Việc đã hoàn thành và đi với 了 là 已经."
+   }
+  ]
+ },
+ {
+  "id": "025",
+  "letter": "C",
+  "words": [
+   [
+    "差不多",
+    "chàbuduō"
+   ],
+   [
+    "差点儿",
+    "chàdiǎnr"
+   ],
+   [
+    "几乎",
+    "jīhū"
+   ]
+  ],
+  "common": "Cả ba đều biểu thị mức độ gần như, chỉ cách một chút; đứng trước động từ hoặc tính từ.",
+  "rows": [
+   [
+    "Nghĩa",
+    "Gần giống nhau; hầu như, đa số",
+    "Suýt nữa, xém chút nữa",
+    "Hầu như; suýt nữa (như 差点儿)"
+   ],
+   [
+    "Từ loại",
+    "Tính từ và phó từ: 长得差不多",
+    "Phó từ",
+    "Phó từ"
+   ],
+   [
+    "Làm vị ngữ",
+    "Được: 两个人差不多",
+    "Không",
+    "Không"
+   ],
+   [
+    "Khẳng định / phủ định",
+    "Thường dùng ở câu khẳng định",
+    "Dùng cả hai; nghĩa khác khi việc đó là điều mong muốn",
+    "Thường chỉ ở câu khẳng định (nghĩa “hầu như” còn đi với 没有)"
+   ],
+   [
+    "Trả lời độc lập",
+    "Không",
+    "Được: 差点儿。",
+    "Không"
+   ]
+  ],
+  "examples": [
+   [
+    "这两件衣服的颜色差不多。",
+    "Zhè liǎng jiàn yīfu de yánsè chàbuduō.",
+    "Màu của hai cái áo này gần giống nhau.",
+    0
+   ],
+   [
+    "我等了差不多一个小时。",
+    "Wǒ děng le chàbuduō yí ge xiǎoshí.",
+    "Tôi đã đợi gần một tiếng.",
+    0
+   ],
+   [
+    "他走得太急，差点儿摔倒了。",
+    "Tā zǒu de tài jí, chàdiǎnr shuāidǎo le.",
+    "Anh ấy đi vội quá, suýt nữa ngã.",
+    1
+   ],
+   [
+    "我差点儿忘了带钥匙。",
+    "Wǒ chàdiǎnr wàng le dài yàoshi.",
+    "Tôi suýt quên mang chìa khóa.",
+    1
+   ],
+   [
+    "这个周末我几乎没出门。",
+    "Zhè ge zhōumò wǒ jīhū méi chūmén.",
+    "Cuối tuần này tôi hầu như không ra khỏi nhà.",
+    2
+   ],
+   [
+    "教室里几乎坐满了人。",
+    "Jiàoshì lǐ jīhū zuò mǎn le rén.",
+    "Trong lớp gần như kín người.",
+    2
+   ]
+  ],
+  "tip": "Muốn nói “hai thứ giống nhau” thì 差不多; “suýt xảy ra” thì 差点儿; còn 几乎 làm được cả hai nghĩa nhưng không trả lời độc lập được.",
+  "questions": [
+   {
+    "q": "这两个孩子长得___高，不仔细看分不出谁大谁小。",
+    "answer": "差不多",
+    "explain": "Câu cần một từ đứng thẳng trước tính từ 高 để nói “gần như nhau”; chỉ 差不多 làm được, 几乎 phải có 一样 đi kèm."
+   },
+   {
+    "q": "A：你今天又迟到了吗？　B：___。",
+    "answer": "差点儿",
+    "explain": "Chỉ 差点儿 dùng độc lập làm câu trả lời; 几乎 và 差不多 không làm được."
+   },
+   {
+    "q": "夏天这里___没有风，热得受不了。",
+    "answer": "几乎",
+    "explain": "“几乎没有” là cách nói cố định cho nghĩa “hầu như không”; 差不多没有 hiếm dùng và 差点儿没有 đổi hẳn nghĩa."
+   },
+   {
+    "q": "他们的水平___，谁也不比谁强。",
+    "answer": "差不多",
+    "explain": "Làm vị ngữ nói “gần giống nhau” chỉ có 差不多; 差点儿 và 几乎 không làm vị ngữ."
+   }
+  ]
+ },
+ {
+  "id": "026",
+  "letter": "C",
+  "words": [
+   [
+    "常",
+    "cháng"
+   ],
+   [
+    "常常",
+    "chángcháng"
+   ],
+   [
+    "往往",
+    "wǎngwǎng"
+   ],
+   [
+    "经常",
+    "jīngcháng"
+   ]
+  ],
+  "common": "Cả bốn đều là phó từ chỉ việc xảy ra nhiều lần, đứng trước động từ.",
+  "rows": [
+   [
+    "Nghĩa",
+    "Thường",
+    "Thường thường (nhấn hơn 常)",
+    "Thường là, luôn luôn (có quy luật)",
+    "Thường xuyên (tần suất cao nhất)"
+   ],
+   [
+    "Phủ định",
+    "不常",
+    "不常",
+    "Không dùng 不往往",
+    "不常 hoặc 不经常"
+   ],
+   [
+    "Điều kiện đi kèm",
+    "Không cần",
+    "Không cần",
+    "Câu phải nêu rõ điều kiện hay quy luật",
+    "Không cần"
+   ],
+   [
+    "Việc ở tương lai, ý chủ quan",
+    "Được",
+    "Được: 以后我常常给你写信",
+    "Không dùng",
+    "Được"
+   ],
+   [
+    "Từ loại / ghép",
+    "Hay đi với từ một âm tiết: 常见、常来常往",
+    "Hay đi trước cụm hai âm tiết",
+    "Phó từ",
+    "Phó từ và tính từ: 是经常的事、最经常"
+   ]
+  ],
+  "examples": [
+   [
+    "你有空常来我家坐坐。",
+    "Nǐ yǒu kòng cháng lái wǒ jiā zuòzuo.",
+    "Rảnh thì hay ghé nhà mình chơi nhé.",
+    0
+   ],
+   [
+    "这种花在南方很常见。",
+    "Zhè zhǒng huā zài nánfāng hěn chángjiàn.",
+    "Loài hoa này ở miền Nam rất thường gặp.",
+    0
+   ],
+   [
+    "我们常常一起吃晚饭。",
+    "Wǒmen chángcháng yìqǐ chī wǎnfàn.",
+    "Chúng tôi thường ăn tối cùng nhau.",
+    1
+   ],
+   [
+    "她常常加班到很晚。",
+    "Tā chángcháng jiābān dào hěn wǎn.",
+    "Cô ấy thường làm thêm đến rất khuya.",
+    1
+   ],
+   [
+    "下雪的日子，路上往往很堵。",
+    "Xià xuě de rìzi, lù shang wǎngwǎng hěn dǔ.",
+    "Những hôm có tuyết, đường thường rất kẹt.",
+    2
+   ],
+   [
+    "越着急，往往越容易出错。",
+    "Yuè zháojí, wǎngwǎng yuè róngyì chūcuò.",
+    "Càng cuống thì càng dễ sai.",
+    2
+   ],
+   [
+    "他经常给家里打电话。",
+    "Tā jīngcháng gěi jiāli dǎ diànhuà.",
+    "Anh ấy thường xuyên gọi điện về nhà.",
+    3
+   ],
+   [
+    "学生们经常在操场上踢球。",
+    "Xuéshengmen jīngcháng zài cāochǎng shang tī qiú.",
+    "Học sinh thường xuyên đá bóng ngoài sân.",
+    3
+   ]
+  ],
+  "tip": "Nói quy luật có điều kiện thì chọn 往往; muốn làm định ngữ hay có 很/最 phía trước thì dùng 经常; các trường hợp còn lại 常 và 常常 thay nhau được.",
+  "questions": [
+   {
+    "q": "这种小鸟在南方很___见，不用特意去找。",
+    "answer": "常",
+    "explain": "“常见” là từ ghép với 常 đơn âm tiết; không nói 很常常见 hay 很往往见."
+   },
+   {
+    "q": "凡是有大树的地方，夏天___比较凉快。",
+    "answer": "往往",
+    "explain": "Câu nêu quy luật gắn với điều kiện (có cây lớn thì mát), đúng chỗ của 往往."
+   },
+   {
+    "q": "学汉语时说错句子是很___的事。",
+    "answer": "经常",
+    "explain": "Chỉ 经常 làm định ngữ trước 的 (经常的事); 常常 và 往往 không làm được."
+   },
+   {
+    "q": "刚来中国的时候我听不懂，所以___请老师再说一遍。",
+    "answer": "常常",
+    "explain": "Ở đây 常 và 经常 cũng đúng ngữ pháp (chỉ 往往 là không hợp vì đây là hành động chủ động, không phải quy luật). 常常 là cách nói khẩu ngữ thông dụng, nhấn mạnh hơn 常 và nhẹ hơn 经常."
+   }
+  ]
+ },
+ {
+  "id": "027",
+  "letter": "C",
+  "words": [
+   [
+    "朝",
+    "cháo"
+   ],
+   [
+    "向",
+    "xiàng"
+   ],
+   [
+    "往",
+    "wǎng"
+   ]
+  ],
+  "common": "Cả ba đều là giới từ chỉ phương hướng của hành động (hướng về, quay về), cũng có thể làm động từ.",
+  "rows": [
+   [
+    "Dùng chủ yếu cho",
+    "Trạng thái tĩnh: hướng của nhà, cửa, mặt",
+    "Hành động đang di chuyển theo một hướng",
+    "Hành động hướng tới người hay việc, kể cả nghĩa trừu tượng"
+   ],
+   [
+    "Đối tượng của động tác",
+    "Được, nếu là động tác của cơ thể: 朝他眨眼",
+    "Không chỉ đối tượng",
+    "Được: 向老师请教、向她学习"
+   ],
+   [
+    "Đứng sau động từ",
+    "Không",
+    "Được: 开往、寄往、飞往 (với động từ đơn âm tiết)",
+    "Được: 走向、跑向、飞向"
+   ],
+   [
+    "Danh từ theo sau",
+    "Chỉ phương hướng hoặc nơi chốn cụ thể",
+    "Phương hướng hoặc nơi chốn",
+    "Có thể là người hoặc khái niệm trừu tượng"
+   ],
+   [
+    "Nghĩa động từ",
+    "Quay về hướng nào, đối diện",
+    "Đi, qua lại: 一个往东一个往西",
+    "Hướng về; thiên về, bênh vực"
+   ]
+  ],
+  "examples": [
+   [
+    "她朝窗外看了一眼。",
+    "Tā cháo chuāng wài kàn le yì yǎn.",
+    "Cô ấy nhìn ra ngoài cửa sổ một cái.",
+    0
+   ],
+   [
+    "这间教室朝南，一天都很亮。",
+    "Zhè jiān jiàoshì cháo nán, yì tiān dōu hěn liàng.",
+    "Phòng học này quay hướng nam, cả ngày đều sáng.",
+    0
+   ],
+   [
+    "他向大家鞠了一躬。",
+    "Tā xiàng dàjiā jū le yì gōng.",
+    "Anh ấy cúi chào mọi người.",
+    1
+   ],
+   [
+    "孩子们跑向妈妈。",
+    "Háizimen pǎo xiàng māma.",
+    "Lũ trẻ chạy về phía mẹ.",
+    1
+   ],
+   [
+    "请一直往前走，到路口往右拐。",
+    "Qǐng yìzhí wǎng qián zǒu, dào lùkǒu wǎng yòu guǎi.",
+    "Xin cứ đi thẳng, đến ngã tư rẽ phải.",
+    2
+   ],
+   [
+    "这趟车开往河内。",
+    "Zhè tàng chē kāi wǎng Hénèi.",
+    "Chuyến xe này chạy đi Hà Nội.",
+    2
+   ]
+  ],
+  "tip": "Nhà cửa quay hướng nào thì 朝; hành động chạy hay đi theo hướng thì 往 hoặc 向; có đối tượng là người thì 向.",
+  "questions": [
+   {
+    "q": "我想___老师请教一个问题。",
+    "answer": "向",
+    "explain": "Đối tượng là người nhận hành động (hỏi xin chỉ dạy) thì chọn 向; 朝 và 往 không ghép với 请教 theo kiểu này."
+   },
+   {
+    "q": "这个包裹是寄___英国的。",
+    "answer": "往",
+    "explain": "“寄往 + nơi chốn” dùng 往 sau động từ đơn âm tiết; 朝 không đứng sau động từ."
+   },
+   {
+    "q": "这套房子坐北___南，冬天很暖和。",
+    "answer": "朝",
+    "explain": "“坐北朝南” là cụm cố định nói hướng của nhà, dùng 朝."
+   },
+   {
+    "q": "我们一路跑___老师那边。",
+    "answer": "向",
+    "explain": "“跑向” có 向 đứng sau động từ chỉ chuyển động; 朝 không đứng sau động từ, 往 không ghép với 跑 theo cách này."
+   }
+  ]
+ },
+ {
+  "id": "028",
+  "letter": "C",
+  "words": [
+   [
+    "处处",
+    "chùchù"
+   ],
+   [
+    "到处",
+    "dàochù"
+   ]
+  ],
+  "common": "Cả hai đều là phó từ nghĩa “nơi nơi, khắp nơi”.",
+  "rows": [
+   [
+    "Phạm vi",
+    "Mọi mặt, mọi nơi; cả nghĩa trừu tượng lẫn cụ thể",
+    "Chỉ các nơi cụ thể, không có nghĩa trừu tượng"
+   ],
+   [
+    "Ví dụ điển hình",
+    "处处关心、处处小心",
+    "到处是人、到处找"
+   ],
+   [
+    "Nghĩa “tùy tiện”",
+    "Không có",
+    "Có, trong câu chê trách: 到处乱扔"
+   ],
+   [
+    "Văn phong",
+    "Hay gặp trong văn viết",
+    "Hay gặp trong khẩu ngữ"
+   ]
+  ],
+  "examples": [
+   [
+    "这座城市处处充满活力。",
+    "Zhè zuò chéngshì chùchù chōngmǎn huólì.",
+    "Thành phố này nơi nơi đều tràn đầy sức sống.",
+    0
+   ],
+   [
+    "她做事处处小心。",
+    "Tā zuò shì chùchù xiǎoxīn.",
+    "Cô ấy làm việc gì cũng cẩn thận mọi mặt.",
+    0
+   ],
+   [
+    "院子里到处是落叶。",
+    "Yuànzi lǐ dàochù shì luòyè.",
+    "Trong sân khắp nơi là lá rụng.",
+    1
+   ],
+   [
+    "周末的商场里到处都是人。",
+    "Zhōumò de shāngchǎng lǐ dàochù dōu shì rén.",
+    "Cuối tuần trong trung tâm thương mại đâu cũng thấy người.",
+    1
+   ]
+  ],
+  "tip": "Nói về mọi mặt, mọi khía cạnh thì 处处; nói về các địa điểm cụ thể hoặc “bừa bãi” thì 到处.",
+  "questions": [
+   {
+    "q": "请不要___乱扔垃圾！",
+    "answer": "到处",
+    "explain": "“乱扔” mang nghĩa tùy tiện, chê trách, chỉ 到处 có nghĩa này."
+   },
+   {
+    "q": "老师___关心学生，大家都很感动。",
+    "answer": "处处",
+    "explain": "Quan tâm ở mọi mặt là nghĩa trừu tượng, chỉ 处处 dùng được."
+   },
+   {
+    "q": "他___为别人着想，从来不考虑自己。",
+    "answer": "处处",
+    "explain": "“Mọi việc, mọi mặt” là nghĩa trừu tượng nên chọn 处处."
+   },
+   {
+    "q": "我___找他也找不到，不知道他去哪儿了。",
+    "answer": "到处",
+    "explain": "Tìm ở các địa điểm cụ thể, khẩu ngữ, nên chọn 到处."
+   }
+  ]
+ },
+ {
+  "id": "029",
+  "letter": "C",
+  "words": [
+   [
+    "从不",
+    "cóngbù"
+   ],
+   [
+    "从未",
+    "cóngwèi"
+   ]
+  ],
+  "common": "Cả hai đều là phó từ phủ định nghĩa “từ trước đến nay không/chưa”, đứng trước động từ.",
+  "rows": [
+   [
+    "Nghĩa",
+    "Từ trước đến nay không làm hoặc không muốn làm (thói quen, ý muốn)",
+    "Từ trước đến nay chưa từng có, chưa từng làm"
+   ],
+   [
+    "Phạm vi thời gian",
+    "Cả quá khứ và lúc nói",
+    "Chỉ việc trước lúc nói"
+   ],
+   [
+    "Tính chủ quan",
+    "Cao, thiên về ý muốn của người nói",
+    "Khách quan, nêu sự việc chưa từng xảy ra"
+   ],
+   [
+    "Đi với 过",
+    "Thường không",
+    "Thường có: 从未去过"
+   ]
+  ],
+  "examples": [
+   [
+    "我从不吃辣的东西。",
+    "Wǒ cóng bù chī là de dōngxi.",
+    "Tôi xưa nay không ăn đồ cay.",
+    0
+   ],
+   [
+    "他从不迟到，大家都很佩服他。",
+    "Tā cóng bù chídào, dàjiā dōu hěn pèifú tā.",
+    "Anh ấy chưa bao giờ đi muộn, ai cũng nể.",
+    0
+   ],
+   [
+    "她从未离开过自己的家乡。",
+    "Tā cóngwèi líkāi guo zìjǐ de jiāxiāng.",
+    "Cô ấy chưa từng rời quê hương.",
+    1
+   ],
+   [
+    "这样的事我从未听说过。",
+    "Zhèyàng de shì wǒ cóngwèi tīngshuō guo.",
+    "Chuyện như thế tôi chưa từng nghe nói.",
+    1
+   ]
+  ],
+  "tip": "Thói quen hoặc ý muốn thì 从不; kinh nghiệm chưa từng có, đi với 过 thì 从未.",
+  "questions": [
+   {
+    "q": "他对牛奶过敏，所以___喝牛奶。",
+    "answer": "从不",
+    "explain": "Nói về thói quen không làm, không có 过, nên dùng 从不."
+   },
+   {
+    "q": "这是我第一次坐飞机，以前___坐过。",
+    "answer": "从未",
+    "explain": "Có 以前 và 过, nói về việc chưa từng xảy ra, đúng chỗ của 从未."
+   },
+   {
+    "q": "她说话一向直接，___拐弯抹角。",
+    "answer": "从不",
+    "explain": "Nói về tính cách, thói quen nên chọn 从不; 从未 cần có 过."
+   },
+   {
+    "q": "来中国之前，我___学过汉语。",
+    "answer": "从未",
+    "explain": "Có 过 và mốc thời gian trước đó, nên dùng 从未."
+   }
+  ]
+ },
+ {
+  "id": "030",
+  "letter": "C",
+  "words": [
+   [
+    "从前",
+    "cóngqián"
+   ],
+   [
+    "以前",
+    "yǐqián"
+   ]
+  ],
+  "common": "Cả hai đều là danh từ chỉ thời gian trước đây, đứng đầu câu, sau chủ ngữ hoặc trước vị ngữ.",
+  "rows": [
+   [
+    "Khoảng thời gian",
+    "Gần hay xa đều được, kể cả rất lâu",
+    "Không quá xa, so với mốc đang nói"
+   ],
+   [
+    "Đứng sau từ chỉ thời gian",
+    "Không dùng: 两年从前 sai",
+    "Được: 三天以前、来中国以前"
+   ],
+   [
+    "Mở đầu truyện kể",
+    "Được, nghĩa “ngày xửa ngày xưa”",
+    "Không dùng"
+   ],
+   [
+    "Đứng độc lập làm tân ngữ",
+    "Không: 忘了从前 sai",
+    "Được"
+   ]
+  ],
+  "examples": [
+   [
+    "这里从前是一块荒地，现在盖起了高楼。",
+    "Zhèlǐ cóngqián shì yí kuài huāngdì, xiànzài gài qǐ le gāolóu.",
+    "Chỗ này trước kia là bãi đất hoang, giờ đã xây nhà cao tầng.",
+    0
+   ],
+   [
+    "从前，山脚下住着一位老人。",
+    "Cóngqián, shān jiǎo xià zhù zhe yí wèi lǎorén.",
+    "Ngày xưa, dưới chân núi có một ông lão sống.",
+    0
+   ],
+   [
+    "三天以前我还见过他。",
+    "Sān tiān yǐqián wǒ hái jiàn guo tā.",
+    "Ba ngày trước tôi còn gặp anh ấy.",
+    1
+   ],
+   [
+    "吃饭以前请先洗手。",
+    "Chī fàn yǐqián qǐng xiān xǐ shǒu.",
+    "Trước khi ăn xin rửa tay trước.",
+    1
+   ]
+  ],
+  "tip": "Có từ chỉ thời gian đứng trước (三天、吃饭、来中国) thì 以前; mở đầu một câu chuyện cổ thì 从前.",
+  "questions": [
+   {
+    "q": "来中国___，我一句汉语也不会说。",
+    "answer": "以前",
+    "explain": "Đứng sau cụm 来中国 làm mốc thời gian, chỉ 以前 dùng được."
+   },
+   {
+    "q": "___，有一个猎人到山里打猎，碰到一只狼。",
+    "answer": "从前",
+    "explain": "Mở đầu truyện kể là cách dùng riêng của 从前."
+   },
+   {
+    "q": "三个月___我还在一家商店卖货。",
+    "answer": "以前",
+    "explain": "Sau cụm thời gian cụ thể (三个月) thì dùng 以前, không dùng 从前."
+   },
+   {
+    "q": "老人对孩子们说：“___，有一只小狐狸住在森林里……”",
+    "answer": "从前",
+    "explain": "Câu mở đầu một truyện kể thì dùng 从前; 以前 không dùng làm lời mở truyện."
+   }
+  ]
+ },
+ {
+  "id": "031",
+  "letter": "D",
+  "words": [
+   [
+    "答复",
+    "dáfù"
+   ],
+   [
+    "回答",
+    "huídá"
+   ]
+  ],
+  "common": "Cả hai đều là động từ và danh từ nghĩa “trả lời”, dùng cả bằng miệng lẫn văn bản.",
+  "rows": [
+   [
+    "Đối tượng cần trả lời",
+    "Yêu cầu, đề nghị xin ý kiến, thỉnh thị, tư vấn",
+    "Câu hỏi, vấn đề thắc mắc"
+   ],
+   [
+    "Văn phong",
+    "Trang trọng, hay dùng cho văn bản chính thức",
+    "Thông dụng, hay dùng cho nói miệng"
+   ],
+   [
+    "Kết hợp điển hình",
+    "答复请示、答复要求、书面答复",
+    "回答问题、回答不上来"
+   ],
+   [
+    "Từ loại",
+    "Động từ và danh từ",
+    "Động từ và danh từ"
+   ]
+  ],
+  "examples": [
+   [
+    "公司会在一周内答复你的申请。",
+    "Gōngsī huì zài yì zhōu nèi dáfù nǐ de shēnqǐng.",
+    "Công ty sẽ trả lời đơn của bạn trong vòng một tuần.",
+    0
+   ],
+   [
+    "对方的答复让我们很失望。",
+    "Duìfāng de dáfù ràng wǒmen hěn shīwàng.",
+    "Câu trả lời của phía đối tác làm chúng tôi thất vọng.",
+    0
+   ],
+   [
+    "请大声回答老师的问题。",
+    "Qǐng dàshēng huídá lǎoshī de wèntí.",
+    "Xin hãy trả lời to câu hỏi của thầy.",
+    1
+   ],
+   [
+    "他的回答很清楚。",
+    "Tā de huídá hěn qīngchu.",
+    "Câu trả lời của anh ấy rất rõ ràng.",
+    1
+   ]
+  ],
+  "tip": "Trả lời yêu cầu, thỉnh thị một cách chính thức thì 答复; trả lời câu hỏi thì 回答.",
+  "questions": [
+   {
+    "q": "你们提出的要求，我们会在三天内书面___。",
+    "answer": "答复",
+    "explain": "Đối tượng là yêu cầu, đề nghị và bằng văn bản nên dùng 答复."
+   },
+   {
+    "q": "这道题太难了，我___不上来。",
+    "answer": "回答",
+    "explain": "Trả lời câu hỏi bằng miệng, kết hợp “回答不上来”, không nói 答复不上来."
+   },
+   {
+    "q": "对于我们的咨询，对方至今没有给出明确的___。",
+    "answer": "答复",
+    "explain": "Đối tượng là咨询 (xin tư vấn), dùng danh từ 答复."
+   },
+   {
+    "q": "妈妈在问你话，为什么不___？",
+    "answer": "回答",
+    "explain": "Mẹ hỏi thì trả lời miệng, thông thường nên dùng 回答 chứ không dùng 答复 trang trọng."
+   }
+  ]
+ },
+ {
+  "id": "032",
+  "letter": "D",
+  "words": [
+   [
+    "大半",
+    "dàbàn"
+   ],
+   [
+    "大都",
+    "dàdōu"
+   ],
+   [
+    "多半",
+    "duōbàn"
+   ]
+  ],
+  "common": "Cả ba đều nghĩa “phần lớn, đa số” (vượt quá một nửa).",
+  "rows": [
+   [
+    "Nghĩa “đa số”",
+    "Có, cả danh từ (一大半) lẫn phó từ",
+    "Có, phó từ: 大都(大多)",
+    "Có, phó từ"
+   ],
+   [
+    "Dự đoán khả năng cao",
+    "Được: 大半不会来了",
+    "Không dùng",
+    "Được: 多半不会来了"
+   ],
+   [
+    "Nghĩa “thông thường”",
+    "Ít dùng",
+    "Có, khi nói thói quen chung",
+    "Có: 周末我多半回老家"
+   ],
+   [
+    "Từ trái nghĩa",
+    "小半",
+    "—",
+    "少半"
+   ]
+  ],
+  "examples": [
+   [
+    "这笔钱我已经花了一大半。",
+    "Zhè bǐ qián wǒ yǐjīng huā le yí dàbàn.",
+    "Khoản tiền này tôi đã tiêu hết phần lớn.",
+    0
+   ],
+   [
+    "天这么黑了，他大半不会来了。",
+    "Tiān zhème hēi le, tā dàbàn bú huì lái le.",
+    "Trời tối thế này, chắc anh ấy không đến nữa.",
+    0
+   ],
+   [
+    "这个小区的住户大都是年轻人。",
+    "Zhè ge xiǎoqū de zhùhù dàdōu shì niánqīngrén.",
+    "Cư dân khu này phần lớn là người trẻ.",
+    1
+   ],
+   [
+    "他写的书我大都读过。",
+    "Tā xiě de shū wǒ dàdōu dú guo.",
+    "Sách anh ấy viết tôi đa số đã đọc.",
+    1
+   ],
+   [
+    "周末我多半在家看书。",
+    "Zhōumò wǒ duōbàn zài jiā kàn shū.",
+    "Cuối tuần tôi thường ở nhà đọc sách.",
+    2
+   ],
+   [
+    "这个时间他多半睡了。",
+    "Zhè ge shíjiān tā duōbàn shuì le.",
+    "Giờ này chắc anh ấy ngủ rồi.",
+    2
+   ]
+  ],
+  "tip": "Muốn nói “chắc là, khả năng cao” thì chọn 大半 hoặc 多半; chỉ số lượng, sự thật thì 大都.",
+  "questions": [
+   {
+    "q": "这本书我已经看了一___，剩下的明天再看。",
+    "answer": "大半",
+    "explain": "“一大半” là cách nói danh từ cố định (hơn một nửa); 大都 không đứng sau 一."
+   },
+   {
+    "q": "他的小说我___看过，只有最近一本没读。",
+    "answer": "大都",
+    "explain": "Câu nêu số lượng sự thật (đa số đã đọc), không phải dự đoán; 大都 không dùng để dự đoán nhưng dùng tốt cho chỗ này."
+   },
+   {
+    "q": "下了大雨，路又堵，他___不会来了。",
+    "answer": "多半",
+    "explain": "Đây là dự đoán khả năng cao nên không dùng 大都. 大半 cũng đúng ngữ pháp ở đây; 多半 là cách nói khẩu ngữ thông dụng hơn cho nghĩa “chắc là”."
+   },
+   {
+    "q": "这笔钱我已经花了一___。",
+    "answer": "大半",
+    "explain": "“一大半” chỉ phần hơn một nửa; chọn 大半."
+   }
+  ]
+ },
+ {
+  "id": "033",
+  "letter": "D",
+  "words": [
+   [
+    "大概",
+    "dàgài"
+   ],
+   [
+    "大约",
+    "dàyuē"
+   ]
+  ],
+  "common": "Cả hai đều là phó từ biểu thị ước chừng, không chính xác lắm, nghĩa “khoảng, chắc là”.",
+  "rows": [
+   [
+    "Trọng tâm",
+    "Dự đoán tình hình, trạng thái",
+    "Dự đoán con số, thời gian"
+   ],
+   [
+    "Tính từ",
+    "Có: 大概的意思、大概情况",
+    "Không"
+   ],
+   [
+    "Làm trạng ngữ kiểu “sơ lược”",
+    "Được: 大概地介绍",
+    "Không"
+   ],
+   [
+    "Vị trí",
+    "Trạng ngữ, định ngữ",
+    "Chủ yếu trạng ngữ, không đứng trước tính từ"
+   ]
+  ],
+  "examples": [
+   [
+    "他大概已经到家了。",
+    "Tā dàgài yǐjīng dào jiā le.",
+    "Chắc anh ấy đã về đến nhà rồi.",
+    0
+   ],
+   [
+    "请你大概说一下计划。",
+    "Qǐng nǐ dàgài shuō yíxià jìhuà.",
+    "Xin bạn nói sơ qua về kế hoạch.",
+    0
+   ],
+   [
+    "这条路大约五公里长。",
+    "Zhè tiáo lù dàyuē wǔ gōnglǐ cháng.",
+    "Con đường này dài khoảng năm cây số.",
+    1
+   ],
+   [
+    "她大约三十岁。",
+    "Tā dàyuē sānshí suì.",
+    "Cô ấy khoảng ba mươi tuổi.",
+    1
+   ]
+  ],
+  "tip": "Có “sơ lược, đại khái” (làm định ngữ hay trạng ngữ) thì 大概; nhấn vào con số ước chừng thì 大约.",
+  "questions": [
+   {
+    "q": "我只看懂了___的意思，细节还不明白。",
+    "answer": "大概",
+    "explain": "Làm định ngữ nghĩa “đại khái”, chỉ 大概 là tính từ; 大约 không có cách dùng này."
+   },
+   {
+    "q": "老师给我们___地介绍了学校的情况。",
+    "answer": "大概",
+    "explain": "“大概地” là trạng ngữ nghĩa “sơ lược”; 大约 không dùng như vậy."
+   },
+   {
+    "q": "我想先了解一下这件事的___情况。",
+    "answer": "大概",
+    "explain": "Làm định ngữ trước 情况 nghĩa “tình hình chung”, chỉ 大概 làm được."
+   },
+   {
+    "q": "这箱书___有三十公斤重。",
+    "answer": "大约",
+    "explain": "Ước chừng một con số nên 大约 hợp hơn. 大概 cũng đúng ngữ pháp ở đây; 大约 nhấn vào con số, 大概 thiên về dự đoán tình hình."
+   }
+  ]
+ },
+ {
+  "id": "034",
+  "letter": "D",
+  "words": [
+   [
+    "但",
+    "dàn"
+   ],
+   [
+    "但是",
+    "dànshì"
+   ],
+   [
+    "可是",
+    "kěshì"
+   ],
+   [
+    "不过",
+    "bùguò"
+   ]
+  ],
+  "common": "Cả bốn đều là liên từ chỉ sự chuyển ý, nghĩa “nhưng, nhưng mà”.",
+  "rows": [
+   [
+    "Văn phong",
+    "Hay dùng trong văn viết",
+    "Khẩu ngữ và văn viết",
+    "Khẩu ngữ",
+    "Khẩu ngữ và văn viết"
+   ],
+   [
+    "Mức chuyển ý",
+    "Mạnh",
+    "Mạnh",
+    "Mạnh hơn 但是",
+    "Nhẹ"
+   ],
+   [
+    "Nghĩa thêm",
+    "“Chỉ”: 但愿、但求",
+    "Nối hai cụm từ như “mà” (而)",
+    "“Đúng là, đó là” (可是一个...)",
+    "“Chỉ là”: 不过是、不过而已"
+   ],
+   [
+    "Ngắt quãng sau từ",
+    "Không",
+    "Được",
+    "Được",
+    "Được"
+   ],
+   [
+    "Làm phó từ",
+    "Có: “chỉ”",
+    "Không",
+    "Không",
+    "Có: “chỉ, mới chỉ” (十八九岁)"
+   ]
+  ],
+  "examples": [
+   [
+    "东西不贵，但质量很好。",
+    "Dōngxi bú guì, dàn zhìliàng hěn hǎo.",
+    "Đồ không đắt nhưng chất lượng rất tốt.",
+    0
+   ],
+   [
+    "但愿明天天气好。",
+    "Dàn yuàn míngtiān tiānqì hǎo.",
+    "Chỉ mong ngày mai trời đẹp.",
+    0
+   ],
+   [
+    "他很累，但是还在工作。",
+    "Tā hěn lèi, dànshì hái zài gōngzuò.",
+    "Anh ấy rất mệt nhưng vẫn đang làm việc.",
+    1
+   ],
+   [
+    "我喜欢这件衣服，但是太贵了。",
+    "Wǒ xǐhuan zhè jiàn yīfu, dànshì tài guì le.",
+    "Tôi thích cái áo này nhưng đắt quá.",
+    1
+   ],
+   [
+    "我给他打了三次电话，可是没人接。",
+    "Wǒ gěi tā dǎ le sān cì diànhuà, kěshì méi rén jiē.",
+    "Tôi gọi anh ấy ba lần nhưng không ai nghe.",
+    2
+   ],
+   [
+    "她可是我们公司的老板啊！",
+    "Tā kěshì wǒmen gōngsī de lǎobǎn a!",
+    "Bà ấy chính là sếp của công ty chúng ta đó!",
+    2
+   ],
+   [
+    "这家店不大，不过菜很好吃。",
+    "Zhè jiā diàn bú dà, bùguò cài hěn hǎochī.",
+    "Quán không to, có điều món rất ngon.",
+    3
+   ],
+   [
+    "这不过是个小误会。",
+    "Zhè búguò shì ge xiǎo wùhuì.",
+    "Đây chẳng qua chỉ là một sự hiểu lầm nhỏ.",
+    3
+   ]
+  ],
+  "tip": "Có nghĩa “chỉ” thì 但 hoặc 不过; “đúng là” thì 可是; chuyển ý thông thường thì 但是 là lựa chọn trung tính nhất.",
+  "questions": [
+   {
+    "q": "这次考试我不求高分，___求及格就行。",
+    "answer": "但",
+    "explain": "“但求” nghĩa “chỉ cần”, chỉ 但 có nghĩa “chỉ” này; 但是 và 可是 không dùng như vậy."
+   },
+   {
+    "q": "你别小看她，她___我们公司的老板呢！",
+    "answer": "可是",
+    "explain": "Nghĩa “đúng là, chính là” chỉ 可是 có; 但是 và 不过 không có."
+   },
+   {
+    "q": "别责怪他，他只___是个孩子。",
+    "answer": "不过",
+    "explain": "“只不过是” nghĩa “chẳng qua chỉ là”; 但 và 可是 không ghép với 只 theo cách này."
+   },
+   {
+    "q": "我养了一只猫和一只狗，___它们老是打架。",
+    "answer": "但是",
+    "explain": "Ba từ còn lại 但、可是、不过 cũng chuyển ý được ở đây. 但是 là cách nói trung tính, đủ trang trọng và thông dụng nhất; 可是 mạnh hơn, 不过 nhẹ hơn."
+   }
+  ]
+ },
+ {
+  "id": "035",
+  "letter": "D",
+  "words": [
+   [
+    "当中",
+    "dāngzhōng"
+   ],
+   [
+    "其中",
+    "qízhōng"
+   ]
+  ],
+  "common": "Cả hai đều là danh từ nghĩa “trong đó, bên trong một phạm vi”, nhưng không thay thế được cho nhau.",
+  "rows": [
+   [
+    "Đứng sau danh từ",
+    "Được: 在这些学生当中",
+    "Không, vì 其 đã là đại từ “đó”"
+   ],
+   [
+    "Nghĩa “chính giữa”",
+    "Có: 院子当中",
+    "Không"
+   ],
+   [
+    "Nghĩa “một trong những”",
+    "Không",
+    "Có: 他是其中之一"
+   ],
+   [
+    "Cách dùng thường gặp",
+    "Trong phạm vi vừa nêu: N + 当中",
+    "Mở đầu một vế mới: …，其中…"
+   ]
+  ],
+  "examples": [
+   [
+    "在所有朋友当中，他最可靠。",
+    "Zài suǒyǒu péngyou dāngzhōng, tā zuì kěkào.",
+    "Trong số tất cả bạn bè, anh ấy đáng tin nhất.",
+    0
+   ],
+   [
+    "房间当中放着一张大桌子。",
+    "Fángjiān dāngzhōng fàng zhe yì zhāng dà zhuōzi.",
+    "Chính giữa phòng đặt một cái bàn lớn.",
+    0
+   ],
+   [
+    "公司有二十名员工，其中八人是女性。",
+    "Gōngsī yǒu èrshí míng yuángōng, qízhōng bā rén shì nǚxìng.",
+    "Công ty có hai mươi nhân viên, trong đó tám người là nữ.",
+    1
+   ],
+   [
+    "这几本书，其中两本我已经看过了。",
+    "Zhè jǐ běn shū, qízhōng liǎng běn wǒ yǐjīng kàn guo le.",
+    "Mấy cuốn sách này, trong đó hai cuốn tôi đã đọc rồi.",
+    1
+   ]
+  ],
+  "tip": "Đứng sau một cụm danh từ hoặc nói “chính giữa” thì 当中; nói “trong số đó, một trong” thì 其中.",
+  "questions": [
+   {
+    "q": "在这些学生___，小明学得最认真。",
+    "answer": "当中",
+    "explain": "Đứng sau cụm danh từ 这些学生 thì phải là 当中; 其中 không đứng sau danh từ."
+   },
+   {
+    "q": "院子___种着一棵梨树，春天开满白花。",
+    "answer": "当中",
+    "explain": "Nghĩa “chính giữa” chỉ 当中 có."
+   },
+   {
+    "q": "这所大学有三千多名学生，___有一半来自国外。",
+    "answer": "其中",
+    "explain": "“Trong số đó” ám chỉ cả nhóm đã nêu ở vế trước, dùng 其中."
+   },
+   {
+    "q": "十个人进了决赛，他是___之一。",
+    "answer": "其中",
+    "explain": "“其中之一” (một trong số đó) là cách nói cố định; không nói 当中之一."
+   }
+  ]
+ },
+ {
+  "id": "036",
+  "letter": "D",
+  "words": [
+   [
+    "到底",
+    "dàodǐ"
+   ],
+   [
+    "毕竟",
+    "bìjìng"
+   ],
+   [
+    "究竟",
+    "jiūjìng"
+   ],
+   [
+    "终于",
+    "zhōngyú"
+   ]
+  ],
+  "common": "Cả bốn đều là phó từ nghĩa “rốt cuộc, cuối cùng”, nhưng mỗi từ có phạm vi riêng.",
+  "rows": [
+   [
+    "Rốt cuộc, cuối cùng (sau nhiều biến đổi)",
+    "Được: 问题到底解决了",
+    "Được: 问题毕竟解决了",
+    "Không",
+    "Được, thường không cần 了 ở nghĩa này: 终于解决"
+   ],
+   [
+    "Nói cho cùng (bản chất)",
+    "Được: 到底是玻璃做的",
+    "Được, nhấn kết luận: 毕竟是玻璃做的",
+    "Được: 孩子究竟是孩子",
+    "Không"
+   ],
+   [
+    "Câu nghi vấn",
+    "Được: 你到底去不去？",
+    "Không",
+    "Được: 究竟是谁？",
+    "Không"
+   ],
+   [
+    "Nghĩa “đến cùng”",
+    "Có: 坚持到底",
+    "Không",
+    "Không",
+    "Không"
+   ],
+   [
+    "Văn phong",
+    "Khẩu ngữ",
+    "Văn viết",
+    "Văn viết",
+    "Khẩu ngữ và văn viết"
+   ]
+  ],
+  "examples": [
+   [
+    "你到底想不想去？",
+    "Nǐ dàodǐ xiǎng bu xiǎng qù?",
+    "Rốt cuộc bạn có muốn đi không?",
+    0
+   ],
+   [
+    "我们要把这件事做到底。",
+    "Wǒmen yào bǎ zhè jiàn shì zuò dàodǐ.",
+    "Chúng ta phải làm việc này đến cùng.",
+    0
+   ],
+   [
+    "他毕竟还年轻，难免会出错。",
+    "Tā bìjìng hái niánqīng, nánmiǎn huì chūcuò.",
+    "Anh ấy dù sao còn trẻ, khó tránh sai sót.",
+    1
+   ],
+   [
+    "毕竟是冬天了，早晚都很冷。",
+    "Bìjìng shì dōngtiān le, zǎowǎn dōu hěn lěng.",
+    "Dù sao cũng là mùa đông rồi, sáng tối đều lạnh.",
+    1
+   ],
+   [
+    "究竟是谁打碎了杯子？",
+    "Jiūjìng shì shéi dǎsuì le bēizi?",
+    "Rốt cuộc là ai làm vỡ cái cốc?",
+    2
+   ],
+   [
+    "这件事究竟是怎么回事？",
+    "Zhè jiàn shì jiūjìng shì zěnme huí shì?",
+    "Chuyện này rốt cuộc là thế nào?",
+    2
+   ],
+   [
+    "雨终于停了。",
+    "Yǔ zhōngyú tíng le.",
+    "Mưa cuối cùng cũng tạnh.",
+    3
+   ],
+   [
+    "等了很久，她终于回信了。",
+    "Děng le hěn jiǔ, tā zhōngyú huíxìn le.",
+    "Đợi rất lâu, cuối cùng cô ấy cũng trả lời thư.",
+    3
+   ]
+  ],
+  "tip": "Câu hỏi thì 到底 hoặc 究竟; “dù sao thì” thì 毕竟; “cuối cùng cũng xong” thì 终于; “đến cùng” thì 到底.",
+  "questions": [
+   {
+    "q": "___，他买到了那本找了很久的小说。",
+    "answer": "终于",
+    "explain": "Từ mở đầu câu rồi ngắt bằng dấu phẩy mà vẫn nói được kết quả cuối cùng là 终于; 到底 và 毕竟 không đứng một mình như vậy."
+   },
+   {
+    "q": "这件事你一定要坚持___，我们会支持你。",
+    "answer": "到底",
+    "explain": "“Đến cùng” là nghĩa động từ của 到底: 坚持到底."
+   },
+   {
+    "q": "和他的功劳比起来，他犯的错___不算大。",
+    "answer": "毕竟",
+    "explain": "Nhấn mạnh kết luận “dù sao thì” là 毕竟; 终于 và 究竟 không có nghĩa này."
+   },
+   {
+    "q": "这次比赛___谁赢了？",
+    "answer": "究竟",
+    "explain": "Câu hỏi dò hỏi, loại trừ 毕竟 và 终于. 到底 cũng dùng được trong câu hỏi; 究竟 thiên về văn viết, trang trọng hơn."
+   }
+  ]
+ },
+ {
+  "id": "037",
+  "letter": "D",
+  "words": [
+   [
+    "的",
+    "de"
+   ],
+   [
+    "得",
+    "de"
+   ],
+   [
+    "地",
+    "de"
+   ]
+  ],
+  "common": "Cả ba đều đọc là de, đều là trợ từ kết cấu nhưng khác nhau ở thành phần đứng trước và sau.",
+  "rows": [
+   [
+    "Thành phần phía trước",
+    "Định ngữ (danh từ, đại từ, tính từ…)",
+    "Động từ hoặc tính từ",
+    "Trạng ngữ (tính từ, cụm từ…)"
+   ],
+   [
+    "Thành phần phía sau",
+    "Trung tâm ngữ, thường là danh từ",
+    "Bổ ngữ trình độ hoặc kết quả",
+    "Động từ"
+   ],
+   [
+    "Khung chung",
+    "定语 + 的 + 名词",
+    "动词 + 得 + 补语",
+    "状语 + 地 + 动词"
+   ],
+   [
+    "Ví dụ ngắn",
+    "红色的裙子",
+    "跑得很快",
+    "慢慢地走"
+   ]
+  ],
+  "examples": [
+   [
+    "这是我哥哥的手机。",
+    "Zhè shì wǒ gēge de shǒujī.",
+    "Đây là điện thoại của anh trai tôi.",
+    0
+   ],
+   [
+    "她买了一条红色的裙子。",
+    "Tā mǎi le yì tiáo hóngsè de qúnzi.",
+    "Cô ấy mua một chiếc váy màu đỏ.",
+    0
+   ],
+   [
+    "他说汉语说得很流利。",
+    "Tā shuō Hànyǔ shuō de hěn liúlì.",
+    "Anh ấy nói tiếng Trung rất trôi chảy.",
+    1
+   ],
+   [
+    "今天我起得太早了。",
+    "Jīntiān wǒ qǐ de tài zǎo le.",
+    "Hôm nay tôi dậy quá sớm.",
+    1
+   ],
+   [
+    "孩子们高兴地唱起歌来。",
+    "Háizimen gāoxìng de chàng qǐ gē lái.",
+    "Bọn trẻ vui vẻ cất tiếng hát.",
+    2
+   ],
+   [
+    "他认真地听老师讲课。",
+    "Tā rènzhēn de tīng lǎoshī jiǎng kè.",
+    "Anh ấy chăm chú nghe thầy giảng.",
+    2
+   ]
+  ],
+  "tip": "Phía sau là danh từ thì 的; phía trước là động từ và phía sau là bổ ngữ thì 得; phía sau là động từ thì 地.",
+  "questions": [
+   {
+    "q": "湖边到处是绿绿___柳树。",
+    "answer": "的",
+    "explain": "Phía sau là danh từ 柳树, phía trước là định ngữ nên dùng 的."
+   },
+   {
+    "q": "他把房间打扫___干干净净。",
+    "answer": "得",
+    "explain": "Sau động từ 打扫 là bổ ngữ kết quả 干干净净, dùng 得."
+   },
+   {
+    "q": "妈妈非常热情___招待我的朋友。",
+    "answer": "地",
+    "explain": "Trước tính từ có phó từ 非常 làm trạng ngữ cho động từ 招待, phải dùng 地."
+   },
+   {
+    "q": "他跑___很快，一下子就追上了。",
+    "answer": "得",
+    "explain": "Sau 跑 là bổ ngữ trình độ 很快, dùng 得."
+   },
+   {
+    "q": "这是老师送给我___字典。",
+    "answer": "的",
+    "explain": "Sau chỗ trống là danh từ 字典 nên dùng 的."
+   },
+   {
+    "q": "他慢慢___走进教室，坐在最后一排。",
+    "answer": "地",
+    "explain": "Trạng ngữ 慢慢 đứng trước động từ 走进, dùng 地."
+   }
+  ]
+ },
+ {
+  "id": "038",
+  "letter": "D",
+  "words": [
+   [
+    "的确",
+    "díquè"
+   ],
+   [
+    "确实",
+    "quèshí"
+   ]
+  ],
+  "common": "Cả hai đều là phó từ nghĩa “quả thật, thật sự”, đứng trước động từ hoặc tính từ.",
+  "rows": [
+   [
+    "Sắc thái",
+    "Nhấn mạnh sự thật là tuyệt đối, không cần nghi ngờ",
+    "Nhấn mạnh sự thật tồn tại khách quan, có căn cứ"
+   ],
+   [
+    "Từ loại",
+    "Chỉ phó từ",
+    "Phó từ và tính từ"
+   ],
+   [
+    "Làm định ngữ, vị ngữ",
+    "Không",
+    "Được: 确实的消息、你说的情况确实吗"
+   ],
+   [
+    "Vị trí",
+    "Chỉ trước động từ hoặc tính từ làm trạng ngữ",
+    "Trạng ngữ, định ngữ, vị ngữ"
+   ]
+  ],
+  "examples": [
+   [
+    "这件事我的确不知道。",
+    "Zhè jiàn shì wǒ díquè bù zhīdào.",
+    "Chuyện này tôi thật sự không biết.",
+    0
+   ],
+   [
+    "这家店的饭菜的确不错。",
+    "Zhè jiā diàn de fàncài díquè búcuò.",
+    "Món ăn ở quán này quả thật không tệ.",
+    0
+   ],
+   [
+    "他确实来过这里。",
+    "Tā quèshí lái guo zhèlǐ.",
+    "Anh ấy đúng là đã đến đây.",
+    1
+   ],
+   [
+    "这个消息很确实，你可以放心。",
+    "Zhè ge xiāoxi hěn quèshí, nǐ kěyǐ fàngxīn.",
+    "Tin này rất xác thực, bạn cứ yên tâm.",
+    1
+   ]
+  ],
+  "tip": "Cần làm vị ngữ hoặc định ngữ (“xác thực, có thật”) thì chỉ có 确实; làm trạng ngữ thì 的确 hay 确实 đều được.",
+  "questions": [
+   {
+    "q": "你说的情况___吗？",
+    "answer": "确实",
+    "explain": "Làm vị ngữ trước 吗 nên cần tính từ, chỉ 确实 là tính từ; 的确 chỉ là phó từ."
+   },
+   {
+    "q": "我已经得到了___的消息，大家可以放心了。",
+    "answer": "确实",
+    "explain": "Làm định ngữ trước 的 chỉ 确实 làm được; 的确 không đứng trước 的."
+   },
+   {
+    "q": "这件事___不是他干的，你们冤枉他了。",
+    "answer": "的确",
+    "explain": "Cả 确实 cũng đúng ngữ pháp ở đây. 的确 nhấn mạnh sự thật là tuyệt đối, không còn nghi ngờ, hợp với lời bênh vực."
+   },
+   {
+    "q": "这个消息很___，你可以放心告诉大家。",
+    "answer": "确实",
+    "explain": "Sau 很 cần tính từ làm vị ngữ, nên chỉ 确实 dùng được."
+   }
+  ]
+ },
+ {
+  "id": "039",
+  "letter": "D",
+  "words": [
+   [
+    "懂",
+    "dǒng"
+   ],
+   [
+    "了解",
+    "liǎojiě"
+   ],
+   [
+    "明白",
+    "míngbai"
+   ],
+   [
+    "知道",
+    "zhīdào"
+   ]
+  ],
+  "common": "Cả bốn đều là động từ nghĩa “hiểu, biết”, nhưng mức độ và đối tượng khác nhau.",
+  "rows": [
+   [
+    "Mức độ hiểu",
+    "Hiểu được",
+    "Hiểu rõ ràng (cao)",
+    "Hiểu rõ đạo lý",
+    "Biết (nông nhất, có thể chỉ nghe qua)"
+   ],
+   [
+    "Tân ngữ thường gặp",
+    "Ngôn ngữ, kỹ thuật, quy tắc, lễ phép: 懂英语",
+    "Con người, tình hình, tìm hiểu một việc",
+    "Đạo lý, ý nghĩa: 明白道理; không dùng với ngôn ngữ",
+    "Sự việc, thông tin, số điện thoại"
+   ],
+   [
+    "Làm bổ ngữ kết quả",
+    "Có: 看懂、听懂",
+    "Có: 了解清楚",
+    "Có: 看明白、想明白、明白过来",
+    "Phải thêm 得: 知道得清楚"
+   ],
+   [
+    "Nghĩa khác",
+    "Không",
+    "Tìm hiểu (了解一下)",
+    "Tính từ: rõ ràng, thông minh",
+    "Không"
+   ]
+  ],
+  "examples": [
+   [
+    "他懂法语，也懂一点日语。",
+    "Tā dǒng Fǎyǔ, yě dǒng yìdiǎn Rìyǔ.",
+    "Anh ấy biết tiếng Pháp và hiểu chút ít tiếng Nhật.",
+    0
+   ],
+   [
+    "这道题我看了三遍才看懂。",
+    "Zhè dào tí wǒ kàn le sān biàn cái kàn dǒng.",
+    "Bài này tôi đọc ba lần mới hiểu.",
+    0
+   ],
+   [
+    "我很了解她的脾气。",
+    "Wǒ hěn liǎojiě tā de píqi.",
+    "Tôi rất hiểu tính cô ấy.",
+    1
+   ],
+   [
+    "出发前先了解一下当地的天气。",
+    "Chūfā qián xiān liǎojiě yíxià dāngdì de tiānqì.",
+    "Trước khi đi hãy tìm hiểu thời tiết nơi đó.",
+    1
+   ],
+   [
+    "我不明白你为什么生气。",
+    "Wǒ bù míngbai nǐ wèishénme shēngqì.",
+    "Tôi không hiểu sao bạn giận.",
+    2
+   ],
+   [
+    "你放明白点，别惹他。",
+    "Nǐ fàng míngbai diǎn, bié rě tā.",
+    "Cậu thông minh lên, đừng chọc anh ta.",
+    2
+   ],
+   [
+    "我知道他住在哪儿。",
+    "Wǒ zhīdào tā zhù zài nǎr.",
+    "Tôi biết anh ấy sống ở đâu.",
+    3
+   ],
+   [
+    "这件事你知道得比我多。",
+    "Zhè jiàn shì nǐ zhīdào de bǐ wǒ duō.",
+    "Chuyện này bạn biết nhiều hơn tôi.",
+    3
+   ]
+  ],
+  "tip": "Biết tin, biết điều gì thì 知道; hiểu ngôn ngữ thì 懂; hiểu đạo lý thì 明白; hiểu sâu hoặc tìm hiểu thì 了解.",
+  "questions": [
+   {
+    "q": "她在国外长大，___三种语言。",
+    "answer": "懂",
+    "explain": "Tân ngữ là ngôn ngữ thì dùng 懂; 明白、了解、知道 không ghép với ngôn ngữ theo nghĩa này."
+   },
+   {
+    "q": "听了他的解释，我一下子___过来了。",
+    "answer": "明白",
+    "explain": "“Hiểu ra” (___过来) chỉ có 明白过来, không nói 懂过来."
+   },
+   {
+    "q": "这件事我们必须___清楚，才能做决定。",
+    "answer": "了解",
+    "explain": "Bổ ngữ 清楚 gắn thẳng vào động từ nên dùng 了解清楚; 知道 phải thêm 得."
+   },
+   {
+    "q": "你___小明的电话号码吗？",
+    "answer": "知道",
+    "explain": "Biết một thông tin như số điện thoại chỉ có 知道; các từ khác không ghép với số điện thoại."
+   },
+   {
+    "q": "你放___点儿，别不识抬举。",
+    "answer": "明白",
+    "explain": "Cách dùng tính từ “thông minh, biết điều” sau 放 là của 明白."
+   },
+   {
+    "q": "我想去山区___农民的生活。",
+    "answer": "了解",
+    "explain": "Nghĩa “tìm hiểu” một lĩnh vực là cách dùng của 了解."
+   }
+  ]
+ },
+ {
+  "id": "040",
+  "letter": "D",
+  "words": [
+   [
+    "对",
+    "duì"
+   ],
+   [
+    "对于",
+    "duìyú"
+   ],
+   [
+    "关于",
+    "guānyú"
+   ]
+  ],
+  "common": "Cả ba đều là giới từ dẫn ra đối tượng, nghĩa “về, đối với”, thường làm trạng ngữ.",
+  "rows": [
+   [
+    "Nghĩa “với, cùng với” một người",
+    "Có: 对我说、对我笑",
+    "Không",
+    "Không"
+   ],
+   [
+    "Sắc thái",
+    "Đối với người hoặc việc, rộng nhất",
+    "Thái độ, quan điểm chủ quan về một việc",
+    "Phạm vi liên quan đến người hoặc việc"
+   ],
+   [
+    "Vị trí trong câu",
+    "Thường trước chủ ngữ",
+    "Trước hoặc sau chủ ngữ",
+    "Chỉ trước chủ ngữ"
+   ],
+   [
+    "Làm tựa bài, tựa sách",
+    "Không",
+    "Không",
+    "Có: 《关于…》"
+   ],
+   [
+    "Từ loại khác",
+    "Còn là động từ, tính từ, lượng từ",
+    "Chỉ giới từ",
+    "Chỉ giới từ"
+   ]
+  ],
+  "examples": [
+   [
+    "他对我很好。",
+    "Tā duì wǒ hěn hǎo.",
+    "Anh ấy đối xử với tôi rất tốt.",
+    0
+   ],
+   [
+    "我对老师说了声谢谢。",
+    "Wǒ duì lǎoshī shuō le shēng xièxie.",
+    "Tôi nói với thầy một tiếng cảm ơn.",
+    0
+   ],
+   [
+    "对于这个计划，大家都有不同的看法。",
+    "Duìyú zhè ge jìhuà, dàjiā dōu yǒu bùtóng de kànfǎ.",
+    "Về kế hoạch này, mọi người có cách nhìn khác nhau.",
+    1
+   ],
+   [
+    "对于孩子来说，玩就是学习。",
+    "Duìyú háizi lái shuō, wán jiù shì xuéxí.",
+    "Đối với trẻ em, chơi chính là học.",
+    1
+   ],
+   [
+    "我读了一本关于旅行的书。",
+    "Wǒ dú le yì běn guānyú lǚxíng de shū.",
+    "Tôi đã đọc một cuốn sách về du lịch.",
+    2
+   ],
+   [
+    "关于这件事，我们明天再谈。",
+    "Guānyú zhè jiàn shì, wǒmen míngtiān zài tán.",
+    "Về chuyện này, ngày mai chúng ta bàn tiếp.",
+    2
+   ]
+  ],
+  "tip": "Nói với ai, đối xử với ai thì 对; thái độ, ý kiến về việc gì thì 对于; nêu phạm vi, làm tựa đề thì 关于.",
+  "questions": [
+   {
+    "q": "他___我笑了笑，说：“谢谢！”",
+    "answer": "对",
+    "explain": "Có nghĩa “hướng về, nói với một người”, chỉ 对 dùng được; 对于 và 关于 không."
+   },
+   {
+    "q": "我想买一本___越南历史的书。",
+    "answer": "关于",
+    "explain": "Nêu phạm vi nội dung của cuốn sách, dùng 关于; 对 và 对于 không đứng sau lượng từ như vậy."
+   },
+   {
+    "q": "___老师提出的建议，我们全班同学都很赞成。",
+    "answer": "对于",
+    "explain": "Cả 对 cũng đúng ngữ pháp ở đây. 对于 nhấn vào thái độ, quan điểm về việc đó, trang trọng hơn."
+   },
+   {
+    "q": "他___人很热情，大家都喜欢他。",
+    "answer": "对",
+    "explain": "Thái độ với người ở mức đơn giản dùng 对; 关于 không dùng và 对于 không hợp."
+   },
+   {
+    "q": "我看了一篇《___越南文化的传承》的文章。",
+    "answer": "关于",
+    "explain": "Làm tựa bài chỉ có 关于."
+   }
+  ]
+ },
+ {
+  "id": "041",
+  "letter": "D",
+  "words": [
+   [
+    "多少",
+    "duōshao"
+   ],
+   [
+    "几",
+    "jǐ"
+   ]
+  ],
+  "common": "Cả hai đều là đại từ nghi vấn hỏi số lượng, cũng có thể chỉ số lượng không xác định.",
+  "rows": [
+   [
+    "Số lượng ước tính",
+    "Từ 10 trở lên",
+    "Dưới 10"
+   ],
+   [
+    "Lượng từ phía sau",
+    "Không cần: 多少人",
+    "Cần có: 几个人"
+   ],
+   [
+    "Đứng sau/ trước đơn vị",
+    "Chỉ trước 个、亿、万",
+    "Trước 个、十、百、千、万…; đứng sau số: 三千几"
+   ],
+   [
+    "Nghĩa thêm",
+    "“Rất nhiều” (多少果子啊!); “ít nhiều” khi làm phó từ",
+    "“Vài, mấy”: 休息几天"
+   ],
+   [
+    "Đi sau 哪",
+    "Không",
+    "Được: 哪几本"
+   ]
+  ],
+  "examples": [
+   [
+    "你们公司有多少员工？",
+    "Nǐmen gōngsī yǒu duōshao yuángōng?",
+    "Công ty các bạn có bao nhiêu nhân viên?",
+    0
+   ],
+   [
+    "不论多少人来，我们都欢迎。",
+    "Búlùn duōshao rén lái, wǒmen dōu huānyíng.",
+    "Bất kể bao nhiêu người đến, chúng tôi đều hoan nghênh.",
+    0
+   ],
+   [
+    "桌上有几个苹果？",
+    "Zhuō shang yǒu jǐ ge píngguǒ?",
+    "Trên bàn có mấy quả táo?",
+    1
+   ],
+   [
+    "我们等了几天才有消息。",
+    "Wǒmen děng le jǐ tiān cái yǒu xiāoxi.",
+    "Chúng tôi đợi mấy ngày mới có tin.",
+    1
+   ]
+  ],
+  "tip": "Số ước tính từ 10 trở lên, không có lượng từ thì 多少; dưới 10 hoặc có lượng từ thì 几.",
+  "questions": [
+   {
+    "q": "这件衬衫___钱？",
+    "answer": "多少",
+    "explain": "Hỏi giá, không có lượng từ đi kèm, chỉ 多少 dùng được (多少钱)."
+   },
+   {
+    "q": "你家有___口人？",
+    "answer": "几",
+    "explain": "Có lượng từ 口 phía sau, ước tính dưới 10 người, dùng 几."
+   },
+   {
+    "q": "这次旅行我花了三千___。",
+    "answer": "几",
+    "explain": "Đứng sau số 三千 biểu thị số lẻ chưa xác định, chỉ có 几 (三千几)."
+   },
+   {
+    "q": "不论遇到___困难，我都会勇往直前。",
+    "answer": "多少",
+    "explain": "Nghĩa “bất kể bao nhiêu” và không có lượng từ, dùng 多少."
+   },
+   {
+    "q": "最近太累了，我想休息___天。",
+    "answer": "几",
+    "explain": "Trong câu trần thuật, nghĩa “vài ngày” là cách dùng của 几."
+   }
+  ]
  }
 ]
