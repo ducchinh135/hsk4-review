@@ -1159,7 +1159,7 @@
    {
     "q": "明天九点我在校门口等你，我___去。",
     "answer": "必定",
-    "explain": "Là lời quyết tâm của ngôi thứ nhất nên 必然 (quy luật khách quan) không hợp; 必定 diễn đạt ý chí chắc chắn, văn viết, hơi trang trọng."
+    "explain": "一定 cũng đúng ngữ pháp ở đây; nhưng 必定 trang trọng hơn và nhấn mạnh sự chắc chắn về kết quả, hợp lời hứa, phán đoán văn viết."
    },
    {
     "q": "他不___会同意，你先问问再说。",
@@ -1755,7 +1755,7 @@
    {
     "q": "这种水果___脆而且甜。",
     "answer": "不但",
-    "explain": "Nối hai tính từ ngắn trực tiếp; 不只 không dùng để nối từ hoặc đoản ngữ, nên chọn 不但 theo cách dùng sách nêu."
+    "explain": "不仅 cũng đúng ở câu này; nhưng 不但 là từ mở vế đầu quen thuộc nhất của cặp 不但…而且, và nối trực tiếp hai tính từ ngắn."
    },
    {
     "q": "这座城市我来过___两次了。",
@@ -1862,12 +1862,12 @@
    {
     "q": "对方坚决不让步，这次合作___作罢了。",
     "answer": "只得",
-    "explain": "作罢 là cách kết hợp văn viết quen thuộc với 只得, diễn tả điều kiện khách quan buộc phải bỏ."
+    "explain": "只好 cũng đúng ở đây; nhưng 只得 hơi sách vở, gợi cảm giác không còn lựa chọn nào khác."
    },
    {
     "q": "末班车已经走了，那咱们___打车回去吧。",
     "answer": "只好",
-    "explain": "Câu đề nghị một hành động cụ thể với 吧 ở cuối, khẩu ngữ, hợp với 只好."
+    "explain": "只得 cũng đúng ở đây; nhưng 只好 mang ý chọn cách tốt nhất trong số lựa chọn ít ỏi, hợp lời đề nghị làm gì đó cụ thể."
    },
    {
     "q": "他的实力太强了，大家都___佩服。",
@@ -1953,7 +1953,7 @@
    {
     "q": "你说他一定会来，我看___。",
     "answer": "不见得",
-    "explain": "Dùng để mềm mỏng không đồng ý với nhận định của người khác, hay đứng cuối câu: 我看不见得."
+    "explain": "不一定 cũng đúng ở đây; nhưng 不见得 là cách nghi ngờ nhẹ nhàng hơn, hay dùng để không đồng ý với nhận định của người khác."
    },
    {
     "q": "他去哪个学校学汉语还___。",
