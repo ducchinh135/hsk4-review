@@ -4142,5 +4142,1479 @@
     "explain": "Trong câu trần thuật, nghĩa “vài ngày” là cách dùng của 几."
    }
   ]
+ },
+ {
+  "id": "042",
+  "letter": "E",
+  "words": [
+   [
+    "而且",
+    "érqiě"
+   ],
+   [
+    "并且",
+    "bìngqiě"
+   ]
+  ],
+  "common": "Cả hai đều là liên từ, nối tiếp ý ở vế trước và thêm một tầng nghĩa nữa; ở vế trước thường có 不但/不仅/不只.",
+  "rows": [
+   [
+    "Nối hai tính từ đơn âm tiết",
+    "Được: 厚而且贵",
+    "Không; cần từ hai âm tiết trở lên"
+   ],
+   [
+    "Nối hai động từ / cụm động từ",
+    "Thường nối phân câu, không nối hai cụm động từ",
+    "Nối được: hai hành động xảy ra cùng lúc hoặc lần lượt"
+   ],
+   [
+    "Nối hai phân câu",
+    "Rất hay dùng",
+    "Dùng được, nhất là khi bổ sung thêm nghĩa"
+   ]
+  ],
+  "examples": [
+   [
+    "这个杯子小而且轻。",
+    "Zhège bēizi xiǎo érqiě qīng.",
+    "Cái cốc này nhỏ mà lại nhẹ.",
+    0
+   ],
+   [
+    "他不但学习努力，而且很热情。",
+    "Tā búdàn xuéxí nǔlì, érqiě hěn rèqíng.",
+    "Anh ấy không chỉ học chăm mà còn rất nhiệt tình.",
+    0
+   ],
+   [
+    "经理听取了意见并且做出了决定。",
+    "Jīnglǐ tīngqǔ le yìjiàn bìngqiě zuòchū le juédìng.",
+    "Giám đốc lắng nghe ý kiến rồi đưa ra quyết định.",
+    1
+   ],
+   [
+    "这家店的菜不但好吃，并且价格也便宜。",
+    "Zhè jiā diàn de cài búdàn hǎochī, bìngqiě jiàgé yě piányi.",
+    "Món ăn quán này không chỉ ngon mà giá cũng rẻ.",
+    1
+   ]
+  ],
+  "tip": "Nối tính từ đơn âm tiết hoặc nối phân câu thì dùng 而且; nối hai cụm động từ thì dùng 并且.",
+  "questions": [
+   {
+    "q": "这把伞轻___小，很适合带去旅行。",
+    "answer": "而且",
+    "explain": "Nối hai tính từ đơn âm tiết 轻 và 小, chỉ 而且 làm được; 并且 cần từ hai âm tiết."
+   },
+   {
+    "q": "委员会认真研究___批准了这份计划。",
+    "answer": "并且",
+    "explain": "Nối hai cụm động từ (nghiên cứu rồi phê duyệt), dùng 并且; theo sách 而且 không nối hai cụm động từ."
+   },
+   {
+    "q": "她不但会做越南菜，___会做中国菜。",
+    "answer": "而且",
+    "explain": "Ở đây 并且 cũng đặt được (sách cho cả hai dùng để thêm nghĩa). Ưu tiên 而且 vì nối phân câu là chỗ dùng quen thuộc và phổ biến nhất của nó."
+   },
+   {
+    "q": "他拿起话筒___拨了那个号码。",
+    "answer": "并且",
+    "explain": "Hai hành động nối tiếp nhau của cùng một chủ ngữ, dùng 并且; 而且 mang nghĩa “hơn nữa” nên không hợp."
+   }
+  ]
+ },
+ {
+  "id": "043",
+  "letter": "E",
+  "words": [
+   [
+    "二",
+    "èr"
+   ],
+   [
+    "两",
+    "liǎng"
+   ]
+  ],
+  "common": "Cả hai đều biểu thị số 2; trước 千、万、亿 hoặc đơn vị 斤、两 thì dùng 二 hay 两 đều được (二万三千 / 两万三千).",
+  "rows": [
+   [
+    "Số đếm, số thứ tự, phân số, ngày tháng",
+    "Dùng: 第二、三分之二、二月二号",
+    "Không dùng"
+   ],
+   [
+    "Trước lượng từ",
+    "Không dùng (không nói 二个人)",
+    "Dùng: 两个人、两本书、两天"
+   ],
+   [
+    "Nghĩa song phương, đôi bên",
+    "Không có",
+    "Có: 两全其美、两情相悦"
+   ]
+  ],
+  "examples": [
+   [
+    "他是我家的老二。",
+    "Tā shì wǒ jiā de lǎo'èr.",
+    "Anh ấy là con thứ hai trong nhà tôi.",
+    0
+   ],
+   [
+    "今天是十二月二号。",
+    "Jīntiān shì shí'èr yuè èr hào.",
+    "Hôm nay là ngày mùng 2 tháng 12.",
+    0
+   ],
+   [
+    "桌子上有两本书。",
+    "Zhuōzi shang yǒu liǎng běn shū.",
+    "Trên bàn có hai quyển sách.",
+    1
+   ],
+   [
+    "这个办法两全其美。",
+    "Zhège bànfǎ liǎng quán qí měi.",
+    "Cách này vẹn cả đôi đường.",
+    1
+   ]
+  ],
+  "tip": "Đếm số, xếp thứ tự, ngày tháng thì 二; đứng trước lượng từ thì 两.",
+  "questions": [
+   {
+    "q": "这次比赛，我们队得了第___名。",
+    "answer": "二",
+    "explain": "Số thứ tự (第……) chỉ dùng 二."
+   },
+   {
+    "q": "他买了___张电影票。",
+    "answer": "两",
+    "explain": "Đứng trước lượng từ 张, dùng 两."
+   },
+   {
+    "q": "今年的十___月，我要去北京出差。",
+    "answer": "二",
+    "explain": "Tên tháng (十二月) là số đếm/ngày tháng, dùng 二."
+   },
+   {
+    "q": "这个办法对你对他都好，真是___全其美。",
+    "answer": "两",
+    "explain": "Thành ngữ 两全其美 có nghĩa đôi bên, chỉ dùng 两."
+   }
+  ]
+ },
+ {
+  "id": "044",
+  "letter": "F",
+  "words": [
+   [
+    "发达",
+    "fādá"
+   ],
+   [
+    "发展",
+    "fāzhǎn"
+   ]
+  ],
+  "common": "Cả hai đều mang nghĩa “phát triển” nhưng khác từ loại nên không thay thế được cho nhau.",
+  "rows": [
+   [
+    "Từ loại",
+    "Tính từ",
+    "Động từ"
+   ],
+   [
+    "Tân ngữ",
+    "Không mang tân ngữ",
+    "Mang được tân ngữ: 发展经济"
+   ],
+   [
+    "Phó từ mức độ 很、非常",
+    "Đứng trước được: 很发达",
+    "Không đứng trước: không nói 很发展"
+   ],
+   [
+    "Trọng tâm",
+    "Trạng thái đã ở trình độ cao, hoàn thiện",
+    "Quá trình đi lên từ nhỏ đến lớn, từ thấp đến cao"
+   ]
+  ],
+  "examples": [
+   [
+    "这个城市的交通很发达。",
+    "Zhège chéngshì de jiāotōng hěn fādá.",
+    "Giao thông của thành phố này rất phát triển.",
+    0
+   ],
+   [
+    "他常练举重，手臂的肌肉很发达。",
+    "Tā cháng liàn jǔzhòng, shǒubì de jīròu hěn fādá.",
+    "Anh ấy hay tập cử tạ nên cơ tay rất nở nang.",
+    0
+   ],
+   [
+    "我们要大力发展旅游业。",
+    "Wǒmen yào dàlì fāzhǎn lǚyóuyè.",
+    "Chúng ta cần ra sức phát triển ngành du lịch.",
+    1
+   ],
+   [
+    "他的公司很快发展到了全国各地。",
+    "Tā de gōngsī hěn kuài fāzhǎn dào le quánguó gèdì.",
+    "Công ty của anh ấy nhanh chóng mở rộng ra khắp cả nước.",
+    1
+   ]
+  ],
+  "tip": "Phía sau có 很/非常 hoặc không có tân ngữ thì 发达; cần mang tân ngữ hoặc nói về quá trình thì 发展.",
+  "questions": [
+   {
+    "q": "这座城市的交通非常___，到哪儿都很方便。",
+    "answer": "发达",
+    "explain": "Sau 非常 là tính từ, không có tân ngữ, dùng 发达; 发展 là động từ nên không đứng sau 非常."
+   },
+   {
+    "q": "政府决定大力___教育事业。",
+    "answer": "发展",
+    "explain": "Phía sau có tân ngữ 教育事业, dùng động từ 发展."
+   },
+   {
+    "q": "几年以后，这个小镇变得更___了，到处都是高楼。",
+    "answer": "发达",
+    "explain": "“变得更……了” cần một tính từ chỉ trạng thái, dùng 发达."
+   },
+   {
+    "q": "他的公司业务很快___到了全国各地。",
+    "answer": "发展",
+    "explain": "“……到 + nơi chốn” chỉ quá trình mở rộng quy mô, dùng 发展."
+   }
+  ]
+ },
+ {
+  "id": "045",
+  "letter": "F",
+  "words": [
+   [
+    "反而",
+    "fǎn'ér"
+   ],
+   [
+    "相反",
+    "xiāngfǎn"
+   ]
+  ],
+  "common": "Khi diễn tả kết quả trái với dự tính, cả hai có thể thay nhau: 不但没……，反而/相反还……",
+  "rows": [
+   [
+    "Từ loại",
+    "Phó từ, không làm vị ngữ hay định ngữ",
+    "Tính từ, làm được vị ngữ và định ngữ (thêm 的)"
+   ],
+   [
+    "Vị trí",
+    "Đứng sau chủ ngữ của vế sau, trước vị ngữ",
+    "Có thể đứng riêng giữa hai phân câu, cách bằng dấu phẩy"
+   ],
+   [
+    "Sắc thái",
+    "Nhấn mạnh trái với lẽ thường, ngoài dự tính",
+    "Nhấn mạnh sự đối lập, đối nghịch"
+   ]
+  ],
+  "examples": [
+   [
+    "我劝他休息，他反而工作得更晚。",
+    "Wǒ quàn tā xiūxi, tā fǎn'ér gōngzuò de gèng wǎn.",
+    "Tôi khuyên anh ấy nghỉ ngơi, anh ấy lại làm việc muộn hơn.",
+    0
+   ],
+   [
+    "越劝他，他反而越生气。",
+    "Yuè quàn tā, tā fǎn'ér yuè shēngqì.",
+    "Càng khuyên, anh ấy lại càng tức.",
+    0
+   ],
+   [
+    "他们俩的想法正好相反。",
+    "Tāmen liǎ de xiǎngfǎ zhènghǎo xiāngfǎn.",
+    "Suy nghĩ của hai người họ hoàn toàn trái ngược.",
+    1
+   ],
+   [
+    "汽车朝相反的方向开走了。",
+    "Qìchē cháo xiāngfǎn de fāngxiàng kāi zǒu le.",
+    "Chiếc xe chạy đi theo hướng ngược lại.",
+    1
+   ]
+  ],
+  "tip": "Làm vị ngữ hoặc định ngữ (có 的) thì 相反; làm trạng ngữ ngay trước vị ngữ, không có dấu phẩy thì 反而.",
+  "questions": [
+   {
+    "q": "吃了药，他的病___更严重了。",
+    "answer": "反而",
+    "explain": "Trạng ngữ đặt sau chủ ngữ, ngay trước vị ngữ, không có dấu phẩy: dùng 反而."
+   },
+   {
+    "q": "我的看法跟他的正好___。",
+    "answer": "相反",
+    "explain": "Chỗ này cần một vị ngữ (trái ngược nhau), chỉ tính từ 相反 làm được."
+   },
+   {
+    "q": "天气这么冷，他___只穿了一件衬衫。",
+    "answer": "反而",
+    "explain": "Việc trái lẽ thường, 反而 đứng sau chủ ngữ trước vị ngữ; 相反 không đứng chen vào như vậy."
+   },
+   {
+    "q": "汽车朝___的方向驶去。",
+    "answer": "相反",
+    "explain": "Làm định ngữ trước 的 chỉ có tính từ 相反."
+   }
+  ]
+ },
+ {
+  "id": "046",
+  "letter": "F",
+  "words": [
+   [
+    "返",
+    "fǎn"
+   ],
+   [
+    "回",
+    "huí"
+   ]
+  ],
+  "common": "Cả hai đều là động từ có nghĩa “trở về”.",
+  "rows": [
+   [
+    "Làm bổ ngữ",
+    "Không",
+    "Được: 拿回、借回来"
+   ],
+   [
+    "Đi với 来/去",
+    "Không: không nói 返来、返去",
+    "Được: 回来、回去"
+   ],
+   [
+    "Từ loại khác",
+    "Chỉ là động từ",
+    "Còn là lượng từ: 好几回、第二回"
+   ],
+   [
+    "Phong cách",
+    "Thiên về văn viết, hay đi với từ đơn âm tiết: 返京、返校、往返",
+    "Thiên về khẩu ngữ: 回家、回信"
+   ]
+  ],
+  "examples": [
+   [
+    "我们将在周日返校。",
+    "Wǒmen jiāng zài zhōurì fǎn xiào.",
+    "Chúng tôi sẽ trở lại trường vào Chủ nhật.",
+    0
+   ],
+   [
+    "他买了一张往返机票。",
+    "Tā mǎi le yì zhāng wǎngfǎn jīpiào.",
+    "Anh ấy mua một vé máy bay khứ hồi.",
+    0
+   ],
+   [
+    "下课后我就回家。",
+    "Xiàkè hòu wǒ jiù huí jiā.",
+    "Tan học là tôi về nhà.",
+    1
+   ],
+   [
+    "他去过杭州好几回。",
+    "Tā qù guo Hángzhōu hǎo jǐ huí.",
+    "Anh ấy đã đến Hàng Châu mấy lần.",
+    1
+   ]
+  ],
+  "tip": "Văn viết, từ cố định như 往返、返校 thì 返; làm bổ ngữ, đi với 来/去, hoặc nói “trả lời, mấy lần” thì 回.",
+  "questions": [
+   {
+    "q": "这家航空公司每天有十趟往___的航班。",
+    "answer": "返",
+    "explain": "往返 (đi và về) là cách nói cố định, chỉ có 返."
+   },
+   {
+    "q": "他从图书馆借___来三本书。",
+    "answer": "回",
+    "explain": "Bổ ngữ xu hướng 回来 chỉ có 回; 返 không đi với 来."
+   },
+   {
+    "q": "青春一去不复___，要好好珍惜。",
+    "answer": "返",
+    "explain": "Thành ngữ 一去不复返 dùng 返."
+   },
+   {
+    "q": "我马上给他___个电话，告诉他结果。",
+    "answer": "回",
+    "explain": "回电话 (gọi lại, đáp lời) dùng 回; 返 không có nghĩa này."
+   }
+  ]
+ },
+ {
+  "id": "047",
+  "letter": "F",
+  "words": [
+   [
+    "房间",
+    "fángjiān"
+   ],
+   [
+    "房子",
+    "fángzi"
+   ],
+   [
+    "房屋",
+    "fángwū"
+   ],
+   [
+    "屋子",
+    "wūzi"
+   ]
+  ],
+  "common": "Đều là danh từ chỉ nhà ở hoặc phòng ốc; khác nhau ở diện tích, ở tổng thể hay cục bộ.",
+  "rows": [
+   [
+    "Chỉ gì",
+    "Căn phòng, một phần của căn nhà",
+    "Từng căn nhà, căn hộ",
+    "Nhà cửa nói chung (tên gọi chung)",
+    "Căn phòng, gian phòng"
+   ],
+   [
+    "Lượng từ",
+    "间、个",
+    "间、所、栋、幢、套、些",
+    "Chỉ dùng 些",
+    "间"
+   ],
+   [
+    "Phong cách",
+    "Hay gặp ở khách sạn, thiết kế, mua bán cho thuê",
+    "Thông dụng",
+    "Tên gọi chung, đứng riêng không kèm lượng từ cá thể",
+    "Khẩu ngữ"
+   ]
+  ],
+  "examples": [
+   [
+    "这家宾馆有一百个单人房间。",
+    "Zhè jiā bīnguǎn yǒu yībǎi ge dānrén fángjiān.",
+    "Khách sạn này có một trăm phòng đơn.",
+    0
+   ],
+   [
+    "我想订一个能看到海的双人房间。",
+    "Wǒ xiǎng dìng yí ge néng kàndào hǎi de shuāngrén fángjiān.",
+    "Tôi muốn đặt một phòng đôi nhìn ra biển.",
+    0
+   ],
+   [
+    "他刚买了一套新房子。",
+    "Tā gāng mǎi le yí tào xīn fángzi.",
+    "Anh ấy vừa mua một căn nhà mới.",
+    1
+   ],
+   [
+    "这栋房子一共有六层。",
+    "Zhè dòng fángzi yígòng yǒu liù céng.",
+    "Toà nhà này có tất cả sáu tầng.",
+    1
+   ],
+   [
+    "这一带的房屋大多很古老。",
+    "Zhè yídài de fángwū dàduō hěn gǔlǎo.",
+    "Nhà cửa quanh khu này phần lớn rất cổ.",
+    2
+   ],
+   [
+    "这些房屋都需要重新检查。",
+    "Zhèxiē fángwū dōu xūyào chóngxīn jiǎnchá.",
+    "Những ngôi nhà này đều cần kiểm tra lại.",
+    2
+   ],
+   [
+    "你的屋子真干净。",
+    "Nǐ de wūzi zhēn gānjìng.",
+    "Phòng của bạn sạch quá.",
+    3
+   ],
+   [
+    "客人太多，屋子里挤得满满的。",
+    "Kèrén tài duō, wūzi lǐ jǐ de mǎnmǎn de.",
+    "Khách đông quá, trong phòng chật kín.",
+    3
+   ]
+  ],
+  "tip": "Căn nhà trọn vẹn thì 房子, nhà cửa nói chung thì 房屋; một phòng thì 房间 (khách sạn, văn viết) hoặc 屋子 (khẩu ngữ).",
+  "questions": [
+   {
+    "q": "他刚买了一套新___，下个月就搬进去。",
+    "answer": "房子",
+    "explain": "Lượng từ 套 đứng trước một căn nhà trọn vẹn, dùng 房子; 房屋 chỉ đi với 些."
+   },
+   {
+    "q": "我想订一个双人___，最好能看到海。",
+    "answer": "房间",
+    "explain": "Đặt phòng ở khách sạn là cách dùng đặc trưng của 房间."
+   },
+   {
+    "q": "他在公司负责___租赁和买卖的业务。",
+    "answer": "房屋",
+    "explain": "房子 cũng đặt được trong khẩu ngữ, nhưng 房屋租赁、房屋买卖 là cách nói chung, mang tính văn bản, nên chọn 房屋."
+   },
+   {
+    "q": "进了___，他先把窗户打开。",
+    "answer": "屋子",
+    "explain": "房间 cũng đặt được. 屋子 là khẩu ngữ, tự nhiên khi kể sinh hoạt thường ngày, nên ưu tiên 屋子."
+   }
+  ]
+ },
+ {
+  "id": "048",
+  "letter": "F",
+  "words": [
+   [
+    "仿佛",
+    "fǎngfú"
+   ],
+   [
+    "好像",
+    "hǎoxiàng"
+   ],
+   [
+    "似乎",
+    "sìhū"
+   ]
+  ],
+  "common": "Làm phó từ, cả ba đều nghĩa “hình như, dường như”, biểu thị phỏng đoán không chắc chắn; 仿佛 và 好像 còn là động từ nghĩa “giống như”.",
+  "rows": [
+   [
+    "Từ loại",
+    "Phó từ, động từ",
+    "Phó từ, động từ",
+    "Phó từ"
+   ],
+   [
+    "Thêm 相 phía trước",
+    "Được: 相仿佛 (gần giống nhau)",
+    "Không",
+    "Không"
+   ],
+   [
+    "Theo sau có 一样、一般、似的",
+    "Được",
+    "Được",
+    "Không"
+   ],
+   [
+    "Phong cách",
+    "Thường dùng trong văn viết",
+    "Cả khẩu ngữ lẫn văn viết",
+    "Thường dùng trong khẩu ngữ"
+   ]
+  ],
+  "examples": [
+   [
+    "这两个孩子的年龄相仿佛。",
+    "Zhè liǎng ge háizi de niánlíng xiāng fǎngfú.",
+    "Tuổi của hai đứa trẻ này xấp xỉ nhau.",
+    0
+   ],
+   [
+    "站在海边，我仿佛回到了童年。",
+    "Zhàn zài hǎibiān, wǒ fǎngfú huídào le tóngnián.",
+    "Đứng bên bờ biển, tôi như trở về tuổi thơ.",
+    0
+   ],
+   [
+    "这件事好像没有那么简单。",
+    "Zhè jiàn shì hǎoxiàng méiyǒu nàme jiǎndān.",
+    "Việc này hình như không đơn giản như vậy.",
+    1
+   ],
+   [
+    "她高兴得好像孩子一样。",
+    "Tā gāoxìng de hǎoxiàng háizi yíyàng.",
+    "Cô ấy vui như một đứa trẻ.",
+    1
+   ],
+   [
+    "她似乎不太高兴，一句话也没说。",
+    "Tā sìhū bú tài gāoxìng, yí jù huà yě méi shuō.",
+    "Hình như cô ấy không vui lắm, chẳng nói câu nào.",
+    2
+   ],
+   [
+    "天色暗下来，似乎要下雨了。",
+    "Tiānsè àn xiàlái, sìhū yào xià yǔ le.",
+    "Trời tối sầm lại, hình như sắp mưa.",
+    2
+   ]
+  ],
+  "tip": "Muốn nói “gần giống nhau” thì 相仿佛; có 似的/一样 theo sau thì 仿佛 hoặc 好像; chỉ phỏng đoán đơn giản, khẩu ngữ thì 似乎.",
+  "questions": [
+   {
+    "q": "这两个孩子的年龄相___，只差几个月。",
+    "answer": "仿佛",
+    "explain": "Chỉ 仿佛 kết hợp với 相 thành 相仿佛 (gần giống nhau)."
+   },
+   {
+    "q": "他高兴得___孩子似的，又唱又跳。",
+    "answer": "好像",
+    "explain": "仿佛 cũng đặt được vì cùng đi với 似的 (似乎 thì không). Chọn 好像 vì đây là câu so sánh khẩu ngữ, còn 仿佛 thiên về văn viết."
+   },
+   {
+    "q": "最近他___瘦了不少，大家都很担心。",
+    "answer": "似乎",
+    "explain": "好像 và 仿佛 cũng đặt được vì đây chỉ là phỏng đoán. Chọn 似乎 vì nó thiên về khẩu ngữ, dùng để nhận định đơn giản, không kèm so sánh."
+   },
+   {
+    "q": "站在山顶，我___整个世界都在脚下。",
+    "answer": "仿佛",
+    "explain": "好像 và 似乎 cũng đặt được. 仿佛 thiên về văn viết, gợi cảm giác tưởng tượng như thật nên được chọn."
+   }
+  ]
+ },
+ {
+  "id": "049",
+  "letter": "F",
+  "words": [
+   [
+    "非常",
+    "fēicháng"
+   ],
+   [
+    "很",
+    "hěn"
+   ],
+   [
+    "挺",
+    "tǐng"
+   ],
+   [
+    "十分",
+    "shífēn"
+   ],
+   [
+    "极",
+    "jí"
+   ]
+  ],
+  "common": "Đều là phó từ chỉ mức độ cao, đặt trước tính từ hoặc động từ chỉ tâm lý; mức độ tăng dần theo thứ tự 挺 < 很 < 十分 < 非常 < 极.",
+  "rows": [
+   [
+    "Làm bổ ngữ sau 得",
+    "Không",
+    "Được: 贵得很",
+    "Không",
+    "Không",
+    "Không, nhưng đi với 了 thành 极了: 好极了"
+   ],
+   [
+    "Cách dùng riêng",
+    "Đi với 之、地 (非常之美); lặp 非常非常; làm tính từ (非常时期)",
+    "Không",
+    "Không",
+    "Không",
+    "Không"
+   ],
+   [
+    "Đi với phủ định 不",
+    "Hầu như không (trừ 非常不好)",
+    "Được: 很不开心",
+    "Ít khi",
+    "Được",
+    "Không đứng sau 不"
+   ],
+   [
+    "Trước động từ",
+    "Không hạn chế",
+    "Không hạn chế",
+    "Động từ phải mang tân ngữ",
+    "Động từ phải mang tân ngữ",
+    "Động từ phải mang tân ngữ"
+   ]
+  ],
+  "examples": [
+   [
+    "这部电影非常好看。",
+    "Zhè bù diànyǐng fēicháng hǎokàn.",
+    "Bộ phim này rất hay.",
+    0
+   ],
+   [
+    "我非常想去北京留学。",
+    "Wǒ fēicháng xiǎng qù Běijīng liúxué.",
+    "Tôi rất muốn đi Bắc Kinh du học.",
+    0
+   ],
+   [
+    "我很喜欢这座城市。",
+    "Wǒ hěn xǐhuan zhè zuò chéngshì.",
+    "Tôi rất thích thành phố này.",
+    1
+   ],
+   [
+    "他的汉语好得很。",
+    "Tā de Hànyǔ hǎo de hěn.",
+    "Tiếng Trung của anh ấy giỏi lắm.",
+    1
+   ],
+   [
+    "这次考试挺难的。",
+    "Zhè cì kǎoshì tǐng nán de.",
+    "Kỳ thi lần này khá khó.",
+    2
+   ],
+   [
+    "我挺喜欢吃辣的。",
+    "Wǒ tǐng xǐhuan chī là de.",
+    "Tôi khá thích ăn cay.",
+    2
+   ],
+   [
+    "环境污染对健康十分不利。",
+    "Huánjìng wūrǎn duì jiànkāng shífēn búlì.",
+    "Ô nhiễm môi trường rất bất lợi cho sức khoẻ.",
+    3
+   ],
+   [
+    "我十分感谢你的帮助。",
+    "Wǒ shífēn gǎnxiè nǐ de bāngzhù.",
+    "Tôi vô cùng cảm ơn sự giúp đỡ của bạn.",
+    3
+   ],
+   [
+    "这个房间安静极了。",
+    "Zhège fángjiān ānjìng jí le.",
+    "Căn phòng này yên tĩnh cực kỳ.",
+    4
+   ],
+   [
+    "他写字极快。",
+    "Tā xiě zì jí kuài.",
+    "Anh ấy viết chữ cực nhanh.",
+    4
+   ]
+  ],
+  "tip": "Sau 得 thì 很; đi với 了 thành “极了” thì 极; làm tính từ (非常时期) thì 非常; 挺 khẩu ngữ nhẹ nhất, 十分 trang trọng hơn.",
+  "questions": [
+   {
+    "q": "听到好消息，她高兴___了。",
+    "answer": "极",
+    "explain": "Cấu trúc “tính từ + ___ + 了” chỉ có 极 (极了)."
+   },
+   {
+    "q": "这家商店的东西便宜得___，大家都爱去。",
+    "answer": "很",
+    "explain": "Làm bổ ngữ sau 得 chỉ có 很 (便宜得很)."
+   },
+   {
+    "q": "现在是___时期，请大家多注意安全。",
+    "answer": "非常",
+    "explain": "非常 còn là tính từ nghĩa “đặc biệt, bất thường”: 非常时期."
+   },
+   {
+    "q": "这家店的菜___好吃的，我常来。",
+    "answer": "挺",
+    "explain": "很、非常、十分 cũng đặt được về ngữ pháp. Chọn 挺 vì cấu trúc “挺……的” là khẩu ngữ đặc trưng, mức độ nhẹ."
+   },
+   {
+    "q": "他对这个结果___满意，笑个不停。",
+    "answer": "十分",
+    "explain": "很、非常 cũng đặt được. 十分 nhấn mức độ cao hơn 很 nhưng trang trọng, thường đi với từ chỉ cảm nhận như 满意."
+   }
+  ]
+ },
+ {
+  "id": "050",
+  "letter": "G",
+  "words": [
+   [
+    "赶紧",
+    "gǎnjǐn"
+   ],
+   [
+    "赶快",
+    "gǎnkuài"
+   ]
+  ],
+  "common": "Đều là phó từ làm trạng ngữ, nghĩa “nhanh lên, ngay, mau”, tận dụng thời gian để làm việc gì đó; cả hai dùng trong câu cầu khiến, biểu thị sự giục giã.",
+  "rows": [
+   [
+    "Trọng tâm",
+    "Nhấn mạnh nắm bắt thời gian, cơ hội để làm ngay",
+    "Nhấn mạnh đẩy nhanh tốc độ, hành động nhanh chóng"
+   ],
+   [
+    "Việc đã làm hay chưa làm",
+    "Dùng được cho cả việc đã làm lẫn chưa làm",
+    "Phần nhiều dùng cho việc chưa làm"
+   ],
+   [
+    "Câu cầu khiến",
+    "Dùng được",
+    "Dùng được: 赶快跑吧"
+   ]
+  ],
+  "examples": [
+   [
+    "听到电话响，他赶紧跑过去接。",
+    "Tīngdào diànhuà xiǎng, tā gǎnjǐn pǎo guòqù jiē.",
+    "Nghe điện thoại reo, anh ấy vội chạy lại nghe.",
+    0
+   ],
+   [
+    "发现钱包不见了，她赶紧回去找。",
+    "Fāxiàn qiánbāo bú jiàn le, tā gǎnjǐn huíqù zhǎo.",
+    "Phát hiện mất ví, cô ấy vội quay lại tìm.",
+    0
+   ],
+   [
+    "天快黑了，我们赶快回家吧！",
+    "Tiān kuài hēi le, wǒmen gǎnkuài huí jiā ba!",
+    "Trời sắp tối rồi, chúng ta mau về nhà thôi!",
+    1
+   ],
+   [
+    "赶快吃，菜要凉了。",
+    "Gǎnkuài chī, cài yào liáng le.",
+    "Ăn nhanh đi, đồ ăn sắp nguội rồi.",
+    1
+   ]
+  ],
+  "tip": "Việc đã xảy ra, nhấn bắt kịp thời cơ thì 赶紧; giục làm nhanh việc chưa làm thì 赶快.",
+  "questions": [
+   {
+    "q": "看到老人上车，他___站起来让座。",
+    "answer": "赶紧",
+    "explain": "赶快 cũng đặt được về ngữ pháp. Việc đã xảy ra nên 赶紧 hợp hơn, vì 赶快 phần nhiều dùng cho việc chưa làm."
+   },
+   {
+    "q": "时间不早了，你___上路吧！",
+    "answer": "赶快",
+    "explain": "赶紧 cũng đặt được. Câu giục làm việc chưa làm, nhấn đẩy nhanh tốc độ, nên chọn 赶快."
+   },
+   {
+    "q": "孩子一哭，妈妈就___跑了过去。",
+    "answer": "赶紧",
+    "explain": "赶快 cũng đặt được. Việc đã xảy ra, nhấn bắt kịp lúc, nên 赶紧 hợp hơn."
+   },
+   {
+    "q": "还有五分钟就开会了，你___去准备资料吧！",
+    "answer": "赶快",
+    "explain": "赶紧 cũng đặt được. Lời giục cho việc chưa làm, nhấn tăng tốc, nên chọn 赶快."
+   }
+  ]
+ },
+ {
+  "id": "051",
+  "letter": "G",
+  "words": [
+   [
+    "刚",
+    "gāng"
+   ],
+   [
+    "刚才",
+    "gāngcái"
+   ]
+  ],
+  "common": "Đều biểu thị việc vừa mới xảy ra không lâu. 刚刚 là dạng lặp của 刚, nghĩa và cách dùng như 刚 nhưng không kết hợp với 一 (刚一……就……).",
+  "rows": [
+   [
+    "Từ loại",
+    "Phó từ, chỉ đứng trước động từ, tính từ",
+    "Danh từ (chỉ thời gian), làm trạng ngữ hoặc định ngữ"
+   ],
+   [
+    "Làm định ngữ (trước 的)",
+    "Không",
+    "Được: 刚才的话"
+   ],
+   [
+    "Vị trí so với chủ ngữ",
+    "Chỉ đứng sau chủ ngữ: 你刚去哪儿了",
+    "Trước hoặc sau chủ ngữ đều được"
+   ],
+   [
+    "Từ chỉ thời gian, thời lượng",
+    "Không hạn chế: 刚来一个月",
+    "Trước không có từ chỉ thời gian, sau không có bổ ngữ thời lượng"
+   ],
+   [
+    "Phủ định phía sau",
+    "Không đi với phủ định",
+    "Đi được với phủ định: 刚才不买"
+   ]
+  ],
+  "examples": [
+   [
+    "我是今天早上刚到的。",
+    "Wǒ shì jīntiān zǎoshang gāng dào de.",
+    "Tôi mới đến sáng nay.",
+    0
+   ],
+   [
+    "他刚一进门，电话就响了。",
+    "Tā gāng yī jìn mén, diànhuà jiù xiǎng le.",
+    "Anh ấy vừa bước vào cửa thì điện thoại reo.",
+    0
+   ],
+   [
+    "你刚才去哪儿了？",
+    "Nǐ gāngcái qù nǎr le?",
+    "Vừa nãy bạn đi đâu vậy?",
+    1
+   ],
+   [
+    "刚才有人来找你。",
+    "Gāngcái yǒu rén lái zhǎo nǐ.",
+    "Vừa nãy có người đến tìm bạn.",
+    1
+   ]
+  ],
+  "tip": "Đứng sau chủ ngữ, có thể kèm thời lượng thì 刚; làm định ngữ hoặc đứng trước chủ ngữ thì 刚才.",
+  "questions": [
+   {
+    "q": "我___来中国一个月，汉语还说不太好。",
+    "answer": "刚",
+    "explain": "Phía sau có bổ ngữ thời lượng 一个月, chỉ 刚 dùng được."
+   },
+   {
+    "q": "老师___的话你记住了吗？",
+    "answer": "刚才",
+    "explain": "Làm định ngữ trước 的, chỉ danh từ 刚才 làm được."
+   },
+   {
+    "q": "这双鞋我穿___好，不大也不小。",
+    "answer": "刚",
+    "explain": "“刚好” nghĩa vừa vặn, chỉ có 刚; 刚才 không có nghĩa này."
+   },
+   {
+    "q": "___你去哪儿了？我到处都找不到你。",
+    "answer": "刚才",
+    "explain": "Đứng trước chủ ngữ chỉ có 刚才; 刚 chỉ đứng sau chủ ngữ."
+   }
+  ]
+ },
+ {
+  "id": "052",
+  "letter": "G",
+  "words": [
+   [
+    "跟",
+    "gēn"
+   ],
+   [
+    "和",
+    "hé"
+   ],
+   [
+    "及",
+    "jí"
+   ],
+   [
+    "与",
+    "yǔ"
+   ]
+  ],
+  "common": "Đều nghĩa “và, với, cùng”; khi chỉ ghép hai bên như A公司跟/和/与/及B公司 thì dùng cái nào cũng được.",
+  "rows": [
+   [
+    "Từ loại",
+    "Giới từ, liên từ",
+    "Giới từ, liên từ",
+    "Liên từ",
+    "Giới từ, liên từ"
+   ],
+   [
+    "Quan hệ hai vế",
+    "Có thể là phụ thuộc, không đổi chỗ được: 我跟她借书",
+    "Bình đẳng, đổi chỗ được",
+    "Vế trước quan trọng, chính yếu hơn; không đổi chỗ",
+    "Tương đương 跟/和"
+   ],
+   [
+    "Nối gì",
+    "Danh từ, đại từ, cụm danh từ",
+    "Không nối được câu hoặc phân câu",
+    "Chỉ nối danh từ hoặc cụm danh từ",
+    "Chỉ nối từ hoặc cụm từ"
+   ],
+   [
+    "Phong cách",
+    "Khẩu ngữ",
+    "Khẩu ngữ",
+    "Văn viết, nhất là tiêu đề, tựa sách",
+    "Văn viết, nhất là tiêu đề, tựa sách"
+   ]
+  ],
+  "examples": [
+   [
+    "这件衣服跟那件差不多。",
+    "Zhè jiàn yīfu gēn nà jiàn chàbuduō.",
+    "Cái áo này na ná cái kia.",
+    0
+   ],
+   [
+    "我不跟他去吃饭。",
+    "Wǒ bù gēn tā qù chīfàn.",
+    "Tôi không đi ăn cơm với anh ấy.",
+    0
+   ],
+   [
+    "我们这学期上口语、阅读和听力三门课。",
+    "Wǒmen zhè xuéqī shàng kǒuyǔ, yuèdú hé tīnglì sān mén kè.",
+    "Học kỳ này chúng tôi học ba môn: khẩu ngữ, đọc và nghe.",
+    1
+   ],
+   [
+    "我和弟弟一起去公园。",
+    "Wǒ hé dìdi yìqǐ qù gōngyuán.",
+    "Tôi cùng em trai đi công viên.",
+    1
+   ],
+   [
+    "学校领导及老师都出席了会议。",
+    "Xuéxiào lǐngdǎo jí lǎoshī dōu chūxí le huìyì.",
+    "Lãnh đạo nhà trường và các thầy cô đều có mặt trong cuộc họp.",
+    2
+   ],
+   [
+    "桌上放着课本、字典及铅笔。",
+    "Zhuō shang fàngzhe kèběn, zìdiǎn jí qiānbǐ.",
+    "Trên bàn có sách giáo khoa, từ điển và bút chì.",
+    2
+   ],
+   [
+    "他与同学一起去了图书馆。",
+    "Tā yǔ tóngxué yìqǐ qù le túshūguǎn.",
+    "Anh ấy cùng bạn học đi thư viện.",
+    3
+   ],
+   [
+    "这篇文章谈的是教与学的关系。",
+    "Zhè piān wénzhāng tán de shì jiào yǔ xué de guānxì.",
+    "Bài viết này nói về mối quan hệ giữa dạy và học.",
+    3
+   ]
+  ],
+  "tip": "Một bên phụ thuộc (mượn, học) thì 跟; ghép bình đẳng khẩu ngữ thì 和; vế trước quan trọng hơn thì 及; tiêu đề, văn viết thì 与.",
+  "questions": [
+   {
+    "q": "我___同事借了一支笔，明天就还。",
+    "answer": "跟",
+    "explain": "“借” là quan hệ phụ thuộc (mượn từ ai), dùng 跟; 和 sẽ hiểu thành cả hai cùng mượn."
+   },
+   {
+    "q": "我喜欢吃苹果、香蕉___葡萄。",
+    "answer": "和",
+    "explain": "与、及 cũng đặt được trong liệt kê. Chọn 和 vì liệt kê bình đẳng trong khẩu ngữ, 和 là từ thường dùng nhất."
+   },
+   {
+    "q": "父母___姐姐都来机场送我。",
+    "answer": "及",
+    "explain": "和 cũng đặt được. 及 hợp hơn vì vế trước (cha mẹ) quan trọng, chính yếu hơn vế sau, và hai vế không đổi chỗ được."
+   },
+   {
+    "q": "《战争___和平》是一部著名的小说。",
+    "answer": "与",
+    "explain": "和 cũng là liên từ tương đương, nhưng tựa sách ưa dùng 与, và 战争和和平 lặp 和 rất vướng."
+   }
+  ]
+ },
+ {
+  "id": "053",
+  "letter": "H",
+  "words": [
+   [
+    "还",
+    "hái"
+   ],
+   [
+    "再",
+    "zài"
+   ],
+   [
+    "又",
+    "yòu"
+   ]
+  ],
+  "common": "Đều là phó từ, đều có thể biểu thị hành động lặp lại; khác nhau ở chỗ việc đó đang tiếp diễn, đã xảy ra hay chưa xảy ra.",
+  "rows": [
+   [
+    "Nghĩa chính",
+    "Còn, vẫn: đang tiếp diễn; cũng nhấn mức độ",
+    "Lại, nữa: lặp lại chưa xảy ra, hoặc “sau đó”",
+    "Lại: lặp lại đã xảy ra"
+   ],
+   [
+    "Việc lặp lại",
+    "Chưa làm, sẽ làm sớm: 明天还要来",
+    "Chưa xong, sắp xảy ra: 下午再来一次",
+    "Đã xảy ra: 今天又来了"
+   ],
+   [
+    "Câu cầu khiến",
+    "Không dùng",
+    "Dùng được: 再喝要吐了",
+    "Không dùng"
+   ],
+   [
+    "Hai hành động lần lượt",
+    "Không có",
+    "Chưa/đang xảy ra, nghĩa “sau đó”: 洗好澡，再吃饭",
+    "Đã xảy ra, nghĩa “lại”: 签了名，又盖章"
+   ],
+   [
+    "Hai tính chất cùng lúc",
+    "Không dùng",
+    "Không dùng",
+    "Được: 又香又甜"
+   ]
+  ],
+  "examples": [
+   [
+    "已经很晚了，妈妈还在厨房忙着。",
+    "Yǐjīng hěn wǎn le, māma hái zài chúfáng mángzhe.",
+    "Đã khuya rồi mà mẹ vẫn bận trong bếp.",
+    0
+   ],
+   [
+    "明天我还要来这里上课。",
+    "Míngtiān wǒ hái yào lái zhèlǐ shàngkè.",
+    "Ngày mai tôi vẫn phải đến đây học.",
+    0
+   ],
+   [
+    "这本书我明年再看吧。",
+    "Zhè běn shū wǒ míngnián zài kàn ba.",
+    "Quyển sách này sang năm tôi đọc lại vậy.",
+    1
+   ],
+   [
+    "如果你再迟到，老师会生气的。",
+    "Rúguǒ nǐ zài chídào, lǎoshī huì shēngqì de.",
+    "Nếu bạn lại đi muộn, thầy sẽ giận đấy.",
+    1
+   ],
+   [
+    "他昨天迟到了，今天又迟到了。",
+    "Tā zuótiān chídào le, jīntiān yòu chídào le.",
+    "Hôm qua anh ấy đi muộn, hôm nay lại đi muộn.",
+    2
+   ],
+   [
+    "他写了又擦，擦了又写。",
+    "Tā xiě le yòu cā, cā le yòu xiě.",
+    "Anh ấy viết rồi xoá, xoá rồi lại viết.",
+    2
+   ]
+  ],
+  "tip": "Đang tiếp diễn thì 还; sẽ lặp lại hoặc “sau đó” thì 再; đã lặp lại thì 又.",
+  "questions": [
+   {
+    "q": "三个人___太少了，至少要六个人才能组团。",
+    "answer": "还",
+    "explain": "Nhấn mạnh mức độ (còn quá ít) chỉ có 还; 再 và 又 không đứng trước 太 theo nghĩa này."
+   },
+   {
+    "q": "今天太累了，我们明天___说吧。",
+    "answer": "再",
+    "explain": "Việc dời sang ngày mai, chưa xảy ra, dùng 再; 又 chỉ việc đã xảy ra."
+   },
+   {
+    "q": "我昨天刚买了一本书，今天___买了一本。",
+    "answer": "又",
+    "explain": "Hành động đã lặp lại (hôm qua rồi hôm nay), dùng 又."
+   },
+   {
+    "q": "这种苹果又香___甜。",
+    "answer": "又",
+    "explain": "Hai tính chất cùng lúc theo mẫu “又……又……”, 还 và 再 không dùng được."
+   },
+   {
+    "q": "先写完作业，___看电视。",
+    "answer": "再",
+    "explain": "Hai việc lần lượt, việc sau chưa xảy ra, nghĩa “sau đó”, dùng 再."
+   }
+  ]
+ },
+ {
+  "id": "054",
+  "letter": "H",
+  "words": [
+   [
+    "还是",
+    "háishi"
+   ],
+   [
+    "或者",
+    "huòzhě"
+   ]
+  ],
+  "common": "Khi làm liên từ, cả hai đều nghĩa “hay là, hoặc là”, nối hai hay nhiều từ, cụm từ hoặc phân câu để lựa chọn.",
+  "rows": [
+   [
+    "Loại câu",
+    "Thường dùng trong câu nghi vấn",
+    "Chỉ dùng trong câu trần thuật"
+   ],
+   [
+    "Từ loại",
+    "Phó từ, liên từ",
+    "Liên từ"
+   ],
+   [
+    "Nghĩa “vẫn còn”",
+    "Có: 今天还是有雨",
+    "Không có"
+   ]
+  ],
+  "examples": [
+   [
+    "周末你去爬山还是在家休息？",
+    "Zhōumò nǐ qù páshān háishi zài jiā xiūxi?",
+    "Cuối tuần bạn đi leo núi hay ở nhà nghỉ?",
+    0
+   ],
+   [
+    "多年不见，他还是那么年轻。",
+    "Duō nián bú jiàn, tā háishi nàme niánqīng.",
+    "Nhiều năm không gặp, anh ấy vẫn trẻ như thế.",
+    0
+   ],
+   [
+    "晚上我看书或者听音乐。",
+    "Wǎnshang wǒ kàn shū huòzhě tīng yīnyuè.",
+    "Buổi tối tôi đọc sách hoặc nghe nhạc.",
+    1
+   ],
+   [
+    "你明天或者后天再给我回信吧。",
+    "Nǐ míngtiān huòzhě hòutiān zài gěi wǒ huíxìn ba.",
+    "Bạn hồi âm cho tôi ngày mai hoặc ngày kia nhé.",
+    1
+   ]
+  ],
+  "tip": "Câu hỏi chọn một trong hai hoặc nghĩa “vẫn” thì 还是; câu kể liệt kê các khả năng thì 或者.",
+  "questions": [
+   {
+    "q": "你想去电影院___去咖啡馆？",
+    "answer": "还是",
+    "explain": "Câu hỏi lựa chọn dùng 还是; 或者 chỉ dùng trong câu trần thuật."
+   },
+   {
+    "q": "周末我常常看书___听音乐，很少出门。",
+    "answer": "或者",
+    "explain": "Câu trần thuật liệt kê các khả năng, dùng 或者."
+   },
+   {
+    "q": "他说不舒服，可是今天___来上班了。",
+    "answer": "还是",
+    "explain": "Nghĩa phó từ “vẫn”, chỉ 还是 có; 或者 không có cách dùng này."
+   },
+   {
+    "q": "坐地铁___打车去都可以，随你选。",
+    "answer": "或者",
+    "explain": "Câu trần thuật “A 或者 B 都可以”, dùng 或者."
+   }
+  ]
+ },
+ {
+  "id": "055",
+  "letter": "H",
+  "words": [
+   [
+    "好不容易",
+    "hǎo bù róngyì"
+   ],
+   [
+    "很不容易",
+    "hěn bù róngyì"
+   ]
+  ],
+  "common": "Đều nghĩa “rất khó khăn, khó lắm mới làm được”, phía sau hay có 才. Dạng khẳng định 好容易 có nghĩa và cách dùng y hệt 好不容易.",
+  "rows": [
+   [
+    "Làm vị ngữ",
+    "Không; chỉ làm trạng ngữ trước động từ",
+    "Được: 学好汉语很不容易"
+   ],
+   [
+    "Sắc thái",
+    "Nhấn mạnh cảm nhận chủ quan của người nói",
+    "Nhấn mạnh sự thật khách quan"
+   ],
+   [
+    "Trước động từ + 才",
+    "Được: 好不容易才做完",
+    "Được: 很不容易才做完"
+   ]
+  ],
+  "examples": [
+   [
+    "排了两个小时的队，我好不容易才买到票。",
+    "Pái le liǎng ge xiǎoshí de duì, wǒ hǎo bù róngyì cái mǎi dào piào.",
+    "Xếp hàng hai tiếng, tôi mới khó khăn lắm mua được vé.",
+    0
+   ],
+   [
+    "他好不容易才把孩子哄睡着。",
+    "Tā hǎo bù róngyì cái bǎ háizi hǒng shuìzháo.",
+    "Anh ấy phải vất vả lắm mới dỗ được đứa bé ngủ.",
+    0
+   ],
+   [
+    "要学好一门外语很不容易。",
+    "Yào xuéhǎo yì mén wàiyǔ hěn bù róngyì.",
+    "Học giỏi một ngoại ngữ không hề dễ.",
+    1
+   ],
+   [
+    "他一个人带三个孩子，真是很不容易。",
+    "Tā yí ge rén dài sān ge háizi, zhēn shì hěn bù róngyì.",
+    "Một mình anh ấy nuôi ba đứa con, thật không dễ dàng.",
+    1
+   ]
+  ],
+  "tip": "Làm vị ngữ, nói sự thật khách quan thì 很不容易; làm trạng ngữ, thể hiện cảm nhận của mình thì 好不容易.",
+  "questions": [
+   {
+    "q": "等了半个小时，___盼来了一辆公交车。",
+    "answer": "好不容易",
+    "explain": "Không có 才, 好不容易 làm trạng ngữ cho cả vế sau (nghĩa “mãi mới”); 很不容易 không dùng kiểu này, nó thường làm vị ngữ hoặc đi với 才."
+   },
+   {
+    "q": "要在一年内学好汉语，___。",
+    "answer": "很不容易",
+    "explain": "Chỗ trống cần một vị ngữ, chỉ 很不容易 làm được; 好不容易 chỉ làm trạng ngữ."
+   },
+   {
+    "q": "为了挤上这趟车，我___才找到一个座位。",
+    "answer": "好不容易",
+    "explain": "很不容易 cũng đặt được trước 才. Chọn 好不容易 vì câu nói cảm nhận chủ quan của “tôi”."
+   },
+   {
+    "q": "他能走到今天，___，我们都应该尊重他。",
+    "answer": "很不容易",
+    "explain": "Chỗ trống là vị ngữ nêu sự thật khách quan, dùng 很不容易."
+   }
+  ]
+ },
+ {
+  "id": "056",
+  "letter": "H",
+  "words": [
+   [
+    "忽然",
+    "hūrán"
+   ],
+   [
+    "突然",
+    "tūrán"
+   ],
+   [
+    "猛然",
+    "měngrán"
+   ]
+  ],
+  "common": "Làm phó từ, cả ba đều nghĩa “đột nhiên, bỗng nhiên”; mức bất ngờ tăng dần theo thứ tự 忽然 < 突然 < 猛然.",
+  "rows": [
+   [
+    "Từ loại",
+    "Phó từ",
+    "Phó từ, tính từ",
+    "Phó từ"
+   ],
+   [
+    "Vị trí làm trạng ngữ",
+    "Trước hoặc sau chủ ngữ",
+    "Trước hoặc sau chủ ngữ",
+    "Chỉ sau chủ ngữ"
+   ],
+   [
+    "Làm định ngữ, vị ngữ; đứng sau 很、太",
+    "Không",
+    "Được: 很突然、突然事件",
+    "Không"
+   ],
+   [
+    "Sắc thái",
+    "Xảy ra trong chốc lát, nhanh chóng",
+    "Bất ngờ ở mức cao hơn",
+    "Ập đến mạnh bạo nhất"
+   ]
+  ],
+  "examples": [
+   [
+    "我们正在聊天，忽然停电了。",
+    "Wǒmen zhèngzài liáotiān, hūrán tíngdiàn le.",
+    "Chúng tôi đang trò chuyện thì bỗng mất điện.",
+    0
+   ],
+   [
+    "早上还是晴天，下午忽然下起雨来。",
+    "Zǎoshang hái shì qíngtiān, xiàwǔ hūrán xià qǐ yǔ lái.",
+    "Sáng còn nắng, chiều bỗng đổ mưa.",
+    0
+   ],
+   [
+    "走着走着，他突然停了下来。",
+    "Zǒuzhe zǒuzhe, tā tūrán tíng le xiàlái.",
+    "Đang đi, anh ấy đột nhiên dừng lại.",
+    1
+   ],
+   [
+    "这个消息太突然了，我没有想到。",
+    "Zhège xiāoxi tài tūrán le, wǒ méiyǒu xiǎngdào.",
+    "Tin này đột ngột quá, tôi không ngờ tới.",
+    1
+   ],
+   [
+    "汽车猛然刹车，车里的人都晃了一下。",
+    "Qìchē měngrán shāchē, chē lǐ de rén dōu huàng le yíxià.",
+    "Xe phanh gấp, người trong xe đều chao đảo.",
+    2
+   ],
+   [
+    "他猛然站起来，冲出了教室。",
+    "Tā měngrán zhàn qǐlái, chōngchū le jiàoshì.",
+    "Anh ấy bật dậy, lao ra khỏi lớp.",
+    2
+   ]
+  ],
+  "tip": "Làm tính từ (很突然、突然事件) thì 突然; ập đến mạnh bạo, sau chủ ngữ thì 猛然; bất ngờ thông thường thì 忽然 hoặc 突然.",
+  "questions": [
+   {
+    "q": "上午还晴空万里，中午天___暗了下来。",
+    "answer": "忽然",
+    "explain": "突然 cũng đặt được. Chọn 忽然 vì chỉ sự thay đổi nhanh trong chốc lát, mức bất ngờ vừa phải; 猛然 mạnh quá cho cảnh trời tối dần."
+   },
+   {
+    "q": "听到有人喊他的名字，他___回过头来。",
+    "answer": "猛然",
+    "explain": "忽然、突然 cũng đặt được. Chọn 猛然 vì động tác dứt khoát, đột ngột ở mức mạnh nhất."
+   },
+   {
+    "q": "这件事发生得很___，我们都没有准备。",
+    "answer": "突然",
+    "explain": "Sau 很 cần tính từ, chỉ 突然 có cách dùng tính từ."
+   },
+   {
+    "q": "这是一个___事件，谁也没有想到。",
+    "answer": "突然",
+    "explain": "Làm định ngữ trước danh từ, chỉ tính từ 突然 làm được."
+   }
+  ]
  }
 ]
