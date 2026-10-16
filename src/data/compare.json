@@ -4999,19 +4999,19 @@
     "explain": "赶快 cũng đặt được về ngữ pháp. Việc đã xảy ra nên 赶紧 hợp hơn, vì 赶快 phần nhiều dùng cho việc chưa làm."
    },
    {
-    "q": "时间不早了，你___上路吧！",
+    "q": "你的手这么脏，___去洗洗吧！",
     "answer": "赶快",
-    "explain": "赶紧 cũng đặt được. Câu giục làm việc chưa làm, nhấn đẩy nhanh tốc độ, nên chọn 赶快."
+    "explain": "Cả 赶紧 cũng đặt được. Đây là lời giục làm một việc chưa làm, và 赶快 phần nhiều dùng cho việc chưa làm, nhấn mạnh làm cho nhanh."
    },
    {
-    "q": "孩子一哭，妈妈就___跑了过去。",
+    "q": "一听说奶奶住院了，他___订了回家的车票。",
     "answer": "赶紧",
-    "explain": "赶快 cũng đặt được. Việc đã xảy ra, nhấn bắt kịp lúc, nên 赶紧 hợp hơn."
+    "explain": "Cả 赶快 cũng đặt được. Việc đã xảy ra, nhấn mạnh bắt kịp lúc làm ngay, nên 赶紧 hợp hơn vì 赶快 phần nhiều dùng cho việc chưa làm."
    },
    {
-    "q": "还有五分钟就开会了，你___去准备资料吧！",
+    "q": "妈妈让我___把房间收拾干净。",
     "answer": "赶快",
-    "explain": "赶紧 cũng đặt được. Lời giục cho việc chưa làm, nhấn tăng tốc, nên chọn 赶快."
+    "explain": "Cả 赶紧 cũng đặt được. Đây là yêu cầu làm nhanh một việc chưa làm, nhấn mạnh tốc độ, nên chọn 赶快."
    }
   ]
  },
@@ -5424,9 +5424,9 @@
     "explain": "Nghĩa phó từ “vẫn”, chỉ 还是 có; 或者 không có cách dùng này."
    },
    {
-    "q": "坐地铁___打车去都可以，随你选。",
+    "q": "我可以坐地铁___打车去，你们看哪个方便。",
     "answer": "或者",
-    "explain": "Câu trần thuật “A 或者 B 都可以”, dùng 或者."
+    "explain": "Câu trần thuật nêu hai khả năng, dùng 或者; 还是 dùng để hỏi hoặc nghĩa “vẫn”, đặt ở đây là sai."
    }
   ]
  },
@@ -5500,9 +5500,9 @@
     "explain": "Chỗ trống cần một vị ngữ, chỉ 很不容易 làm được; 好不容易 chỉ làm trạng ngữ."
    },
    {
-    "q": "为了挤上这趟车，我___才找到一个座位。",
+    "q": "为了挤上这趟车，我___终于找到一个座位。",
     "answer": "好不容易",
-    "explain": "很不容易 cũng đặt được trước 才. Chọn 好不容易 vì câu nói cảm nhận chủ quan của “tôi”."
+    "explain": "Không có 才, 好不容易 đứng làm trạng ngữ với nghĩa “mãi mới” và đi với 终于; 很不容易 không dùng được ở vị trí này."
    },
    {
     "q": "他能走到今天，___，我们都应该尊重他。",
