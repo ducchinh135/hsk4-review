@@ -7729,7 +7729,7 @@
    {
     "q": "这家店的___越来越好，老板打算再开一家分店。",
     "answer": "生意",
-    "explain": "Tình hình làm ăn, kinh doanh tốt lên (越来越好) là nghĩa của 生意; 贸易 chỉ thương mại quy mô lớn, 交易 là giao dịch, 买卖 nghiêng về cửa hàng, mua bán nhỏ."
+    "explain": "Tình hình làm ăn, kinh doanh tốt lên (越来越好) là nghĩa của 生意; 贸易 chỉ thương mại quy mô lớn, 交易 là giao dịch, 买卖 nghiêng về cửa hàng, mua bán nhỏ. Theo R8: 买卖 cũng nói được ở đây, nhưng 生意 là cách nói thông dụng hơn."
    },
    {
     "q": "这个国家出口增长很快，___顺差也在扩大。",
@@ -7803,7 +7803,7 @@
   "tip": "Hài lòng, vừa ý, làm định ngữ được: 满意; thỏa mãn nhu cầu, yêu cầu hoặc 满足于…: 满足.",
   "questions": [
    {
-    "q": "我想换一份让自己___的工作。",
+    "q": "毕业后，他一直没找到一份___的工作。",
     "answer": "满意",
     "explain": "Chỉ 满意 làm định ngữ được (满意的工作); 满足 không làm định ngữ."
    },
@@ -8450,7 +8450,7 @@
   "tip": "Đau lòng thì dùng được cả hai; đời sống vất vả hoặc “khó vượt qua”: 难过; khó chịu trong cơ thể: 难受.",
   "questions": [
    {
-    "q": "家里负担重，收入又少，这几年的日子过得很___。",
+    "q": "孩子还小，老人又生病，他们一家的生活真___。",
     "answer": "难过",
     "explain": "Chỉ cuộc sống khó khăn, vất vả là nghĩa riêng của 难过; 难受 không dùng như vậy."
    },
