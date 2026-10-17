@@ -5616,5 +5616,1594 @@
     "explain": "Làm định ngữ trước danh từ, chỉ tính từ 突然 làm được."
    }
   ]
+ },
+ {
+  "id": "057",
+  "letter": "J",
+  "words": [
+   [
+    "急忙",
+    "jímáng"
+   ],
+   [
+    "连忙",
+    "liánmáng"
+   ],
+   [
+    "匆忙",
+    "cōngmáng"
+   ]
+  ],
+  "common": "Cả ba đều nghĩa “vội vàng”, chỉ hành động diễn ra gấp; làm trạng ngữ trước động từ trong câu trần thuật, không dùng trong câu cầu khiến.",
+  "rows": [
+   [
+    "Từ loại",
+    "Tính từ",
+    "Phó từ",
+    "Tính từ"
+   ],
+   [
+    "Làm bổ ngữ, hoặc đứng sau 很/太",
+    "Chủ yếu làm trạng ngữ",
+    "Không, chỉ đứng trước động từ",
+    "Được: 走得很匆忙"
+   ],
+   [
+    "Hình thức lặp",
+    "急急忙忙",
+    "Không lặp được",
+    "匆匆忙忙"
+   ],
+   [
+    "Sắc thái",
+    "Lo lắng, nôn nóng trong lòng",
+    "Hành động xảy ra ngay sau việc vừa rồi",
+    "Gấp gáp vì thời gian hoặc hoàn cảnh, mang tính khách quan"
+   ]
+  ],
+  "examples": [
+   [
+    "听说妈妈住院了，他急忙订了去北京的机票。",
+    "Tīngshuō māma zhùyuàn le, tā jímáng dìng le qù Běijīng de jīpiào.",
+    "Nghe tin mẹ nhập viện, anh vội đặt vé đi Bắc Kinh.",
+    0
+   ],
+   [
+    "她急忙把火关掉，生怕汤烧干了。",
+    "Tā jímáng bǎ huǒ guāndiào, shēngpà tāng shāo gān le.",
+    "Cô vội tắt bếp, sợ canh cạn khô.",
+    0
+   ],
+   [
+    "客人一进门，主人连忙请他们坐下。",
+    "Kèrén yí jìn mén, zhǔrén liánmáng qǐng tāmen zuòxià.",
+    "Khách vừa bước vào, chủ nhà liền mời ngồi.",
+    1
+   ],
+   [
+    "他踩了别人的脚，连忙说了声对不起。",
+    "Tā cǎi le biéren de jiǎo, liánmáng shuō le shēng duìbuqǐ.",
+    "Anh ấy giẫm phải chân người ta, vội nói xin lỗi.",
+    1
+   ],
+   [
+    "他走得很匆忙，连门都忘了锁。",
+    "Tā zǒu de hěn cōngmáng, lián mén dōu wàng le suǒ.",
+    "Anh đi rất vội, đến cửa cũng quên khóa.",
+    2
+   ],
+   [
+    "这次出差太匆忙，我什么都没准备。",
+    "Zhè cì chūchāi tài cōngmáng, wǒ shénme dōu méi zhǔnbèi.",
+    "Chuyến công tác này gấp quá, tôi chẳng chuẩn bị gì.",
+    2
+   ]
+  ],
+  "tip": "Có 很/太 đứng trước hoặc đứng sau 得 thì dùng 匆忙; nhấn lo lắng thì 急忙; phản ứng ngay sau việc trước thì 连忙.",
+  "questions": [
+   {
+    "q": "这次的婚礼办得太___，不少亲戚都没来得及赶到。",
+    "answer": "匆忙",
+    "explain": "Sau 得 + 太 cần tính từ làm bổ ngữ: sách ghi 匆忙 dùng được như vậy, còn 连忙 là phó từ nên không đứng ở đây. 急忙 chủ yếu làm trạng ngữ nên không phải lựa chọn tự nhiên."
+   },
+   {
+    "q": "这是一次很___的旅行，我连行李都没收拾好就出门了。",
+    "answer": "匆忙",
+    "explain": "Phía trước có 很, làm định ngữ cho danh từ: chỉ 匆忙 hợp (tính từ, kết hợp được với 很/太); 连忙 là phó từ không làm được."
+   },
+   {
+    "q": "听说女儿在学校晕倒了，她心里十分着急，___往学校赶。",
+    "answer": "急忙",
+    "explain": "连忙 cũng đặt được. Chọn 急忙 vì câu nhấn mạnh tâm trạng lo lắng, nôn nóng (十分着急)."
+   },
+   {
+    "q": "老师走进教室，同学们___把手机收了起来。",
+    "answer": "连忙",
+    "explain": "急忙 cũng đặt được. Chọn 连忙 vì nhấn mạnh động tác xảy ra ngay sau một việc vừa xảy ra (thầy cô bước vào), không nhấn nỗi lo."
+   }
+  ]
+ },
+ {
+  "id": "058",
+  "letter": "J",
+  "words": [
+   [
+    "急忙",
+    "jímáng"
+   ],
+   [
+    "连忙",
+    "liánmáng"
+   ],
+   [
+    "赶忙",
+    "gǎnmáng"
+   ]
+  ],
+  "common": "Cả ba đều nghĩa “vội vàng”, chỉ hành động diễn ra rất nhanh; thường làm trạng ngữ trước động từ, dùng trong câu trần thuật và miêu tả, không dùng trong câu cầu khiến.",
+  "rows": [
+   [
+    "Từ loại",
+    "Tính từ",
+    "Phó từ",
+    "Phó từ"
+   ],
+   [
+    "Nhấn mạnh",
+    "Tâm trạng lo lắng, nôn nóng",
+    "Tốc độ, hành động xảy ra ngay sau việc trước",
+    "Hành động thực hiện trong tình thế gấp rút, vội vàng"
+   ],
+   [
+    "Hình thức lặp",
+    "急急忙忙",
+    "Không lặp được",
+    "Không lặp được"
+   ]
+  ],
+  "examples": [
+   [
+    "听说客人要到了，妈妈急忙去买菜。",
+    "Tīngshuō kèrén yào dào le, māma jímáng qù mǎi cài.",
+    "Nghe nói khách sắp tới, mẹ vội đi chợ mua thức ăn.",
+    0
+   ],
+   [
+    "他急忙拿起电话，想告诉家人这个好消息。",
+    "Tā jímáng ná qǐ diànhuà, xiǎng gàosu jiārén zhège hǎo xiāoxi.",
+    "Anh vội cầm điện thoại, muốn báo tin vui cho gia đình.",
+    0
+   ],
+   [
+    "车一停，乘客们连忙下车。",
+    "Chē yì tíng, chéngkèmen liánmáng xià chē.",
+    "Xe vừa dừng, hành khách liền xuống xe.",
+    1
+   ],
+   [
+    "听见孩子哭了，爸爸连忙跑过去看。",
+    "Tīngjiàn háizi kū le, bàba liánmáng pǎo guòqù kàn.",
+    "Nghe con khóc, bố vội chạy qua xem.",
+    1
+   ],
+   [
+    "我看时间不早了，赶忙回家做饭。",
+    "Wǒ kàn shíjiān bù zǎo le, gǎnmáng huíjiā zuòfàn.",
+    "Tôi thấy trễ rồi, vội về nhà nấu cơm.",
+    2
+   ],
+   [
+    "天要下雨了，他赶忙把衣服收进屋里。",
+    "Tiān yào xià yǔ le, tā gǎnmáng bǎ yīfu shōu jìn wū lǐ.",
+    "Trời sắp mưa, anh vội thu quần áo vào nhà.",
+    2
+   ]
+  ],
+  "tip": "Lo lắng trong lòng thì 急忙; ngay sau việc trước thì 连忙; chạy đua với thời gian, phải kịp thì 赶忙.",
+  "questions": [
+   {
+    "q": "离火车开走只剩三分钟了，他___把行李塞进车厢。",
+    "answer": "赶忙",
+    "explain": "急忙, 连忙 cũng đặt được. Chọn 赶忙 vì câu nói về tình thế gấp, phải làm cho kịp thời gian (chỉ còn ba phút)."
+   },
+   {
+    "q": "听到老人说“谢谢”，小李___摆手说：“不客气。”",
+    "answer": "连忙",
+    "explain": "急忙, 赶忙 cũng đặt được. Chọn 连忙 vì động tác là phản ứng ngay lập tức sau lời của người khác, không có yếu tố lo lắng hay chạy đua với thời gian."
+   },
+   {
+    "q": "儿子打电话说出了车祸，父亲心急如焚，___往医院赶。",
+    "answer": "急忙",
+    "explain": "连忙, 赶忙 cũng đặt được. Chọn 急忙 vì nhấn mạnh tâm trạng lo lắng, nôn nóng (心急如焚)."
+   },
+   {
+    "q": "天快黑了，大家___收拾好东西下山。",
+    "answer": "赶忙",
+    "explain": "急忙, 连忙 cũng đặt được. Chọn 赶忙 vì cần kịp xuống núi trước khi trời tối, nhấn mạnh tính cấp bách của hành động."
+   }
+  ]
+ },
+ {
+  "id": "059",
+  "letter": "J",
+  "words": [
+   [
+    "既",
+    "jì"
+   ],
+   [
+    "既然",
+    "jìrán"
+   ]
+  ],
+  "common": "Cả hai đều là liên từ nghĩa “đã, đã vậy”, dùng ở vế trước của câu nhân quả; vế sau thường có 就, 也, 还… đi theo.",
+  "rows": [
+   [
+    "Từ loại",
+    "Liên từ",
+    "Liên từ"
+   ],
+   [
+    "Vị trí so với chủ ngữ",
+    "Chỉ đứng sau chủ ngữ",
+    "Đứng trước hoặc sau chủ ngữ đều được"
+   ],
+   [
+    "Cấu trúc 既……又/也……",
+    "Được: 既聪明又活泼",
+    "Không có cách dùng này"
+   ],
+   [
+    "Văn phong",
+    "Dùng trong văn viết",
+    "Dùng trong cả khẩu ngữ và văn viết"
+   ]
+  ],
+  "examples": [
+   [
+    "他既会开车，也会修车。",
+    "Tā jì huì kāichē, yě huì xiūchē.",
+    "Anh ấy vừa biết lái xe, cũng biết sửa xe.",
+    0
+   ],
+   [
+    "这个房间既宽敞又明亮。",
+    "Zhège fángjiān jì kuānchǎng yòu míngliàng.",
+    "Căn phòng này vừa rộng rãi vừa sáng sủa.",
+    0
+   ],
+   [
+    "既然下雨了，我们就改天再去吧。",
+    "Jìrán xià yǔ le, wǒmen jiù gǎitiān zài qù ba.",
+    "Đã mưa rồi thì để hôm khác ta đi vậy.",
+    1
+   ],
+   [
+    "你既然来了，就多住几天吧。",
+    "Nǐ jìrán lái le, jiù duō zhù jǐ tiān ba.",
+    "Đã đến rồi thì ở thêm vài hôm nhé.",
+    1
+   ]
+  ],
+  "tip": "Có 又/也 đi theo để nói “vừa… vừa…” thì 既; nêu lý do để rút ra kết luận “đã vậy thì…”, nhất là trước chủ ngữ, thì 既然.",
+  "questions": [
+   {
+    "q": "她___会唱歌，也会跳舞，是学校里的小明星。",
+    "answer": "既",
+    "explain": "Cấu trúc “既……也……” liệt kê hai điều đồng thời, chỉ 既 tạo được; 既然 không có cách dùng này."
+   },
+   {
+    "q": "___大家都同意了，那就这样定下来吧。",
+    "answer": "既然",
+    "explain": "Chỗ trống đứng trước chủ ngữ (大家); 既 chỉ đứng sau chủ ngữ nên chỉ 既然 đặt được. Câu cũng nêu lý do để rút ra kết luận."
+   },
+   {
+    "q": "新买的手机___轻又好用，价格还不贵。",
+    "answer": "既",
+    "explain": "Cấu trúc “既……又……” nối hai tính chất cùng có, chỉ dùng 既."
+   },
+   {
+    "q": "___你不喜欢这份工作，为什么不换一个呢？",
+    "answer": "既然",
+    "explain": "Chỗ trống đứng trước chủ ngữ (你) và nêu căn cứ để đề xuất; chỉ 既然 đứng được trước chủ ngữ."
+   }
+  ]
+ },
+ {
+  "id": "060",
+  "letter": "J",
+  "words": [
+   [
+    "将来",
+    "jiānglái"
+   ],
+   [
+    "未来",
+    "wèilái"
+   ]
+  ],
+  "common": "Cả hai đều là danh từ nghĩa “tương lai, mai sau”, làm tân ngữ và định ngữ được; ở những chỗ đó có thể đổi chỗ cho nhau.",
+  "rows": [
+   [
+    "Từ loại",
+    "Danh từ",
+    "Danh từ"
+   ],
+   [
+    "Làm trạng ngữ",
+    "Được: 将来你想做什么?",
+    "Không"
+   ],
+   [
+    "Nghĩa “hy vọng, tương lai của cả một tập thể”",
+    "Không có cách dùng này",
+    "Có: 国家的未来"
+   ],
+   [
+    "Văn phong",
+    "Dùng trong khẩu ngữ và văn viết",
+    "Thường dùng trong văn viết"
+   ]
+  ],
+  "examples": [
+   [
+    "将来我想去中国留学。",
+    "Jiānglái wǒ xiǎng qù Zhōngguó liúxué.",
+    "Sau này tôi muốn đi Trung Quốc du học.",
+    0
+   ],
+   [
+    "你将来打算住在哪儿？",
+    "Nǐ jiānglái dǎsuàn zhù zài nǎr?",
+    "Sau này bạn định sống ở đâu?",
+    0
+   ],
+   [
+    "我们对未来充满信心。",
+    "Wǒmen duì wèilái chōngmǎn xìnxīn.",
+    "Chúng tôi tràn đầy niềm tin vào tương lai.",
+    1
+   ],
+   [
+    "科技会改变人类的未来。",
+    "Kējì huì gǎibiàn rénlèi de wèilái.",
+    "Khoa học kỹ thuật sẽ thay đổi tương lai loài người.",
+    1
+   ]
+  ],
+  "tip": "Đứng đầu câu làm trạng ngữ chỉ thời gian thì 将来; nói tới tương lai của một tập thể, một đất nước, hoặc dùng khung “未来 + khoảng thời gian” thì 未来.",
+  "questions": [
+   {
+    "q": "___你想做什么样的工作？",
+    "answer": "将来",
+    "explain": "Chỗ trống làm trạng ngữ chỉ thời gian ở đầu câu; sách ghi 未来 không làm trạng ngữ."
+   },
+   {
+    "q": "孩子们是国家的___，我们要好好培养他们。",
+    "answer": "未来",
+    "explain": "Sách ghi cách dùng “tương lai của đất nước, tập thể” chỉ có ở 未来, còn 将来 thì không dùng như vậy."
+   },
+   {
+    "q": "天气预报说，___三天都会下雨。",
+    "answer": "未来",
+    "explain": "“未来 + khoảng thời gian” (未来三天, 未来二十四小时) nói về quãng thời gian sắp tới, là cách dùng của 未来; 将来 chỉ tương lai tương đối xa, không đi với khoảng thời gian cụ thể như vậy."
+   },
+   {
+    "q": "我___一定要当一名医生，帮助更多的人。",
+    "answer": "将来",
+    "explain": "Đứng giữa câu làm trạng ngữ chỉ thời gian: dùng 将来, còn 未来 không làm trạng ngữ."
+   }
+  ]
+ },
+ {
+  "id": "061",
+  "letter": "J",
+  "words": [
+   [
+    "讲",
+    "jiǎng"
+   ],
+   [
+    "说",
+    "shuō"
+   ],
+   [
+    "谈",
+    "tán"
+   ]
+  ],
+  "common": "Cả ba đều là động từ nghĩa “nói”, dùng lời nói để diễn đạt ý của mình.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ",
+    "Động từ",
+    "Động từ"
+   ],
+   [
+    "Trọng tâm",
+    "Một người nói, nhiều người nghe; giảng giải",
+    "Dùng lời nói để diễn đạt",
+    "Hai hay nhiều người trò chuyện, bàn bạc với nhau"
+   ],
+   [
+    "Dẫn trực tiếp lời người khác",
+    "Không dùng",
+    "Dùng được",
+    "Không dùng"
+   ],
+   [
+    "Tân ngữ thường gặp",
+    "讲课、讲故事、讲卫生",
+    "说笑话、说谜语、说他",
+    "谈生意、谈恋爱、谈心"
+   ]
+  ],
+  "examples": [
+   [
+    "王教授下个月要去上海讲学。",
+    "Wáng jiàoshòu xià gè yuè yào qù Shànghǎi jiǎngxué.",
+    "Giáo sư Vương tháng sau sẽ đi Thượng Hải giảng bài.",
+    0
+   ],
+   [
+    "我们要讲卫生，饭前一定要洗手。",
+    "Wǒmen yào jiǎng wèishēng, fàn qián yídìng yào xǐshǒu.",
+    "Chúng ta phải giữ vệ sinh, trước bữa ăn nhất định phải rửa tay.",
+    0
+   ],
+   [
+    "他说：“明天我们开会。”",
+    "Tā shuō: “Míngtiān wǒmen kāihuì.”",
+    "Anh ấy nói: “Ngày mai chúng ta họp.”",
+    1
+   ],
+   [
+    "爸爸说了他几句，他就不敢玩了。",
+    "Bàba shuō le tā jǐ jù, tā jiù bù gǎn wán le.",
+    "Bố mắng cậu ấy mấy câu, cậu liền không dám chơi nữa.",
+    1
+   ],
+   [
+    "我现在还不想谈恋爱。",
+    "Wǒ xiànzài hái bù xiǎng tán liàn'ài.",
+    "Bây giờ tôi vẫn chưa muốn yêu đương.",
+    2
+   ],
+   [
+    "经理正在跟客户谈生意。",
+    "Jīnglǐ zhèngzài gēn kèhù tán shēngyi.",
+    "Giám đốc đang bàn chuyện làm ăn với khách hàng.",
+    2
+   ]
+  ],
+  "tip": "Giảng cho nhiều người hoặc cụm cố định 讲学、讲信用 thì 讲; dẫn trực tiếp lời ai đó thì 说; bàn bạc qua lại, 谈恋爱、谈心 thì 谈.",
+  "questions": [
+   {
+    "q": "经理___：“大家今天必须把报告交上来。”",
+    "answer": "说",
+    "explain": "Dẫn trực tiếp lời người khác chỉ dùng 说; 讲 và 谈 không có cách dùng này."
+   },
+   {
+    "q": "那位专家每年都要去国外___学，介绍中国的经验。",
+    "answer": "讲",
+    "explain": "“讲学” là cụm cố định (đến giảng dạy), không có “说学” hay “谈学”."
+   },
+   {
+    "q": "他们俩___了三年恋爱，最后还是分手了。",
+    "answer": "谈",
+    "explain": "“谈恋爱” là cụm cố định; 讲 và 说 không kết hợp với 恋爱 theo nghĩa này."
+   },
+   {
+    "q": "做生意的人最重要的是___信用。",
+    "answer": "讲",
+    "explain": "“讲信用” là cụm cố định nghĩa “coi trọng, giữ chữ tín”; 说, 谈 không tạo thành nghĩa này."
+   },
+   {
+    "q": "周末的下午，母女俩坐在阳台上___心，一直聊到天黑。",
+    "answer": "谈",
+    "explain": "“谈心” là cụm cố định (tâm sự); 讲心, 说心 không tồn tại với nghĩa này."
+   }
+  ]
+ },
+ {
+  "id": "062",
+  "letter": "J",
+  "words": [
+   [
+    "尽管",
+    "jǐnguǎn"
+   ],
+   [
+    "即使",
+    "jíshǐ"
+   ],
+   [
+    "虽然",
+    "suīrán"
+   ]
+  ],
+  "common": "Cả ba đều là liên từ nhượng bộ, nghĩa như “dù, mặc dù”, có thể đứng ở vế trước hoặc vế sau.",
+  "rows": [
+   [
+    "Từ loại",
+    "Phó từ, liên từ",
+    "Liên từ",
+    "Liên từ"
+   ],
+   [
+    "Nội dung nhượng bộ",
+    "Thừa nhận một sự thật",
+    "Giả thiết, chưa chắc có thật",
+    "Thừa nhận một sự thật"
+   ],
+   [
+    "Kết hợp với 可是、但是",
+    "Được",
+    "Không",
+    "Được"
+   ],
+   [
+    "Làm phó từ “cứ việc”",
+    "Được: 有话尽管说",
+    "Không",
+    "Không"
+   ]
+  ],
+  "examples": [
+   [
+    "你有什么困难，尽管告诉我。",
+    "Nǐ yǒu shénme kùnnan, jǐnguǎn gàosu wǒ.",
+    "Bạn có khó khăn gì cứ nói với tôi.",
+    0
+   ],
+   [
+    "尽管时间很紧，我们还是完成了任务。",
+    "Jǐnguǎn shíjiān hěn jǐn, wǒmen háishi wánchéng le rènwu.",
+    "Dù thời gian rất gấp, chúng tôi vẫn hoàn thành nhiệm vụ.",
+    0
+   ],
+   [
+    "即使明天下大雪，我们也要出发。",
+    "Jíshǐ míngtiān xià dàxuě, wǒmen yě yào chūfā.",
+    "Dù ngày mai tuyết rơi dày, chúng tôi cũng phải lên đường.",
+    1
+   ],
+   [
+    "即使你不同意，我也不会改变主意。",
+    "Jíshǐ nǐ bù tóngyì, wǒ yě bú huì gǎibiàn zhǔyi.",
+    "Dù bạn không đồng ý, tôi cũng không đổi ý.",
+    1
+   ],
+   [
+    "虽然他年纪小，但是懂很多事。",
+    "Suīrán tā niánjì xiǎo, dànshì dǒng hěn duō shì.",
+    "Tuy cậu bé còn nhỏ nhưng hiểu nhiều chuyện.",
+    2
+   ],
+   [
+    "这家店虽然不大，可是菜做得很好。",
+    "Zhè jiā diàn suīrán bú dà, kěshì cài zuò de hěn hǎo.",
+    "Quán này tuy không lớn nhưng món ăn rất ngon.",
+    2
+   ]
+  ],
+  "tip": "Giả thiết chưa xảy ra (thường có 再…也…) thì 即使; “cứ việc” trước động từ thì 尽管; nhượng bộ một sự thật thông thường thì 虽然.",
+  "questions": [
+   {
+    "q": "我现在好困，___让我睡五分钟也好。",
+    "answer": "即使",
+    "explain": "Đây là giả thiết, ước muốn chưa xảy ra: chỉ 即使 diễn đạt được. 尽管, 虽然 thừa nhận sự thật nên không hợp."
+   },
+   {
+    "q": "要是需要帮忙，你___开口，我随时都在。",
+    "answer": "尽管",
+    "explain": "Đứng trước động từ với nghĩa “cứ việc” là phó từ 尽管; 即使, 虽然 không có cách dùng này."
+   },
+   {
+    "q": "___你再有钱，没有朋友也不会快乐。",
+    "answer": "即使",
+    "explain": "Cấu trúc “再……也……” biểu thị giả thiết, chỉ 即使 dùng được; 尽管 và 虽然 thừa nhận sự thật có thật."
+   },
+   {
+    "q": "___天气很冷，但是他还是坚持每天晨跑。",
+    "answer": "虽然",
+    "explain": "尽管 cũng đặt được. Chọn 虽然 vì đây chỉ nêu một sự thật thông thường rồi chuyển ý với 但是; 尽管 sắc thái nhấn mạnh hơn."
+   }
+  ]
+ },
+ {
+  "id": "063",
+  "letter": "J",
+  "words": [
+   [
+    "经历",
+    "jīnglì"
+   ],
+   [
+    "经过",
+    "jīngguò"
+   ],
+   [
+    "通过",
+    "tōngguò"
+   ]
+  ],
+  "common": "Cả ba đều có thể là động từ; 经历 và 经过 còn là danh từ, 经过 và 通过 còn là giới từ.",
+  "rows": [
+   [
+    "Từ loại",
+    "Danh từ, động từ",
+    "Danh từ, động từ, giới từ",
+    "Động từ, giới từ"
+   ],
+   [
+    "Làm danh từ",
+    "Những điều tự mình đã trải qua",
+    "Quá trình diễn ra của sự việc",
+    "Không làm danh từ"
+   ],
+   [
+    "Làm động từ",
+    "Trải qua (sự việc, thời kỳ)",
+    "Đi ngang qua; trải qua một khoảng thời gian",
+    "Đi xuyên qua; được thông qua, được chấp thuận"
+   ],
+   [
+    "Làm giới từ",
+    "Không có cách dùng này",
+    "Qua một quá trình, dẫn tới kết quả ở vế sau",
+    "Nêu phương tiện, phương pháp, người trung gian"
+   ]
+  ],
+  "examples": [
+   [
+    "这个国家经历过很多战争。",
+    "Zhège guójiā jīnglì guo hěn duō zhànzhēng.",
+    "Đất nước này đã trải qua nhiều cuộc chiến tranh.",
+    0
+   ],
+   [
+    "在国外工作的经历让我学到了很多。",
+    "Zài guówài gōngzuò de jīnglì ràng wǒ xuédào le hěn duō.",
+    "Trải nghiệm làm việc ở nước ngoài giúp tôi học được nhiều.",
+    0
+   ],
+   [
+    "请你说说这件事的经过。",
+    "Qǐng nǐ shuōshuo zhè jiàn shì de jīngguò.",
+    "Mời bạn kể lại diễn biến của việc này.",
+    1
+   ],
+   [
+    "经过三个月的训练，他的成绩提高了。",
+    "Jīngguò sān gè yuè de xùnliàn, tā de chéngjì tígāo le.",
+    "Qua ba tháng luyện tập, thành tích của anh ấy đã tăng.",
+    1
+   ],
+   [
+    "这个计划已经通过了。",
+    "Zhège jìhuà yǐjīng tōngguò le.",
+    "Kế hoạch này đã được thông qua.",
+    2
+   ],
+   [
+    "我是通过朋友找到这份工作的。",
+    "Wǒ shì tōngguò péngyou zhǎodào zhè fèn gōngzuò de.",
+    "Tôi tìm được công việc này qua bạn bè.",
+    2
+   ]
+  ],
+  "tip": "Trải nghiệm bản thân đã sống qua thì 经历; diễn biến hoặc “qua một quãng thời gian” thì 经过; được chấp thuận hoặc nhờ phương tiện, người trung gian thì 通过.",
+  "questions": [
+   {
+    "q": "他有过在国外工作的___，所以英语说得很好。",
+    "answer": "经历",
+    "explain": "“Có kinh nghiệm đã trải qua” chỉ dùng danh từ 经历; 经过 làm danh từ thì chỉ quá trình sự việc, 通过 không làm danh từ."
+   },
+   {
+    "q": "我们的方案终于在董事会上___了。",
+    "answer": "通过",
+    "explain": "Nghĩa “được thông qua, đạt” chỉ có ở động từ 通过; 经历 và 经过 không có nghĩa này."
+   },
+   {
+    "q": "请你把整件事情的___详细讲一讲。",
+    "answer": "经过",
+    "explain": "“Diễn biến, quá trình của sự việc” là danh từ 经过; 经历 chỉ trải nghiệm của bản thân, 通过 không làm danh từ."
+   },
+   {
+    "q": "___两年的努力，他终于完成了这本书。",
+    "answer": "经过",
+    "explain": "“经过 + khoảng thời gian” là cách dùng nêu thời gian đã trôi qua (theo sách); 经历 chỉ trải nghiệm bản thân, 通过 không chỉ thời gian."
+   },
+   {
+    "q": "这个国家曾经___过很多次战争，现在终于和平了。",
+    "answer": "经历",
+    "explain": "“曾经……过” (từng trải qua) với tân ngữ là các cuộc chiến tranh hợp với 经历; 经过 là “đi ngang qua, qua quá trình”, 通过 là “được thông qua” nên không đúng nghĩa."
+   },
+   {
+    "q": "我是___一位老同学才认识她的。",
+    "answer": "通过",
+    "explain": "Chỉ ra người trung gian dẫn tới việc quen biết: giới từ 通过 dùng cho phương tiện, phương pháp, người trung gian; 经过 chỉ quá trình."
+   }
+  ]
+ },
+ {
+  "id": "064",
+  "letter": "J",
+  "words": [
+   [
+    "净",
+    "jìng"
+   ],
+   [
+    "老是",
+    "lǎoshì"
+   ],
+   [
+    "总",
+    "zǒng"
+   ],
+   [
+    "总是",
+    "zǒngshì"
+   ]
+  ],
+  "common": "Cả bốn đều là phó từ, có nghĩa “luôn luôn, lúc nào cũng”; trong nghĩa này có thể thay cho nhau.",
+  "rows": [
+   [
+    "Từ loại",
+    "Phó từ",
+    "Phó từ",
+    "Phó từ",
+    "Phó từ"
+   ],
+   [
+    "Nghĩa khác",
+    "“Chỉ, toàn là”: 净是",
+    "Không có",
+    "“Chắc có, ước chừng”; “rốt cuộc sẽ”",
+    "“Chắc chắn sẽ”"
+   ],
+   [
+    "Cấu trúc 总 + 也 + 不/没 + động từ",
+    "Không",
+    "Không",
+    "Được: 总也不明白",
+    "Không"
+   ],
+   [
+    "Văn phong",
+    "Thường dùng trong khẩu ngữ",
+    "Dùng trong khẩu ngữ và văn viết",
+    "Dùng trong khẩu ngữ và văn viết",
+    "Dùng trong khẩu ngữ và văn viết"
+   ]
+  ],
+  "examples": [
+   [
+    "他的书包里净是漫画书。",
+    "Tā de shūbāo lǐ jìng shì mànhuà shū.",
+    "Trong cặp của cậu ấy toàn là truyện tranh.",
+    0
+   ],
+   [
+    "你说的净是些没用的话。",
+    "Nǐ shuō de jìng shì xiē méi yòng de huà.",
+    "Bạn nói toàn là những lời vô ích.",
+    0
+   ],
+   [
+    "她老是忘记带钥匙。",
+    "Tā lǎoshì wàngjì dài yàoshi.",
+    "Cô ấy cứ luôn quên mang chìa khóa.",
+    1
+   ],
+   [
+    "这几天老是下雨，衣服都干不了。",
+    "Zhè jǐ tiān lǎoshì xià yǔ, yīfu dōu gān bù liǎo.",
+    "Mấy hôm nay cứ mưa mãi, quần áo không khô nổi.",
+    1
+   ],
+   [
+    "这条路总要走一个小时吧。",
+    "Zhè tiáo lù zǒng yào zǒu yí gè xiǎoshí ba.",
+    "Con đường này chắc phải đi một tiếng.",
+    2
+   ],
+   [
+    "这个问题我总也解决不了。",
+    "Zhège wèntí wǒ zǒng yě jiějué bù liǎo.",
+    "Vấn đề này tôi mãi vẫn không giải quyết được.",
+    2
+   ],
+   [
+    "他对每个人总是很客气。",
+    "Tā duì měi gè rén zǒngshì hěn kèqi.",
+    "Anh ấy lúc nào cũng khách sáo với mọi người.",
+    3
+   ],
+   [
+    "每到周末，他总是去公园跑步。",
+    "Měi dào zhōumò, tā zǒngshì qù gōngyuán pǎobù.",
+    "Cứ đến cuối tuần là anh ấy đi công viên chạy bộ.",
+    3
+   ]
+  ],
+  "tip": "“Toàn là” thì 净 (净是); “chắc phải, chừng” hoặc khung 总 + 也 + không thì 总; còn lại “lúc nào cũng” thì 老是 (thường là điều phiền) hoặc 总是 (thói quen thông thường).",
+  "questions": [
+   {
+    "q": "桌子上___是灰尘，好久没人打扫了。",
+    "answer": "净",
+    "explain": "Cấu trúc “净 + 是” nghĩa “toàn là” chỉ có ở 净; 老是, 总, 总是 không dùng theo nghĩa này."
+   },
+   {
+    "q": "这棵树___有三百岁了吧。",
+    "answer": "总",
+    "explain": "Nghĩa “chắc có, ước chừng” (đi với 有 và 吧) chỉ có ở 总; 净, 老是, 总是 không có nghĩa này."
+   },
+   {
+    "q": "这道题我___也做不出来，只好去问老师。",
+    "answer": "总",
+    "explain": "Cấu trúc “总 + 也 + không + động từ” chỉ dùng 总; theo sách 净, 老是, 总是 không có cách dùng này."
+   },
+   {
+    "q": "你怎么___迟到？老师已经批评你好几次了。",
+    "answer": "老是",
+    "explain": "总是 cũng đặt được. Chọn 老是 vì câu trách móc một việc khó chịu lặp đi lặp lại; 老是 thiên về khẩu ngữ và sắc thái phàn nàn."
+   },
+   {
+    "q": "无论冬天多冷，奶奶___每天早上五点起床。",
+    "answer": "总是",
+    "explain": "老是, 总 cũng đặt được. Chọn 总是 vì đây là thói quen cố định, trung tính, không mang ý phàn nàn."
+   }
+  ]
+ },
+ {
+  "id": "065",
+  "letter": "J",
+  "words": [
+   [
+    "竟",
+    "jìng"
+   ],
+   [
+    "竟然",
+    "jìngrán"
+   ],
+   [
+    "不料",
+    "bùliào"
+   ],
+   [
+    "居然",
+    "jūrán"
+   ]
+  ],
+  "common": "Cả bốn đều là phó từ chỉ việc xảy ra bất ngờ, trái với lẽ thường hoặc với dự đoán của người nói; phía trước không dùng phó từ chỉ mức độ.",
+  "rows": [
+   [
+    "Từ loại",
+    "Phó từ, động từ",
+    "Phó từ",
+    "Phó từ",
+    "Phó từ"
+   ],
+   [
+    "Đứng trước chủ ngữ",
+    "Không",
+    "Không",
+    "Đôi khi được",
+    "Luôn đứng trước chủ ngữ"
+   ],
+   [
+    "Làm động từ “hoàn thành, xong”",
+    "Được: 未竟",
+    "Không",
+    "Không",
+    "Không"
+   ],
+   [
+    "Văn phong",
+    "Dùng nhiều trong văn viết",
+    "Dùng trong khẩu ngữ và văn viết",
+    "Dùng nhiều trong văn viết",
+    "Dùng trong khẩu ngữ và văn viết"
+   ]
+  ],
+  "examples": [
+   [
+    "他竟把手机忘在出租车上了。",
+    "Tā jìng bǎ shǒujī wàng zài chūzūchē shàng le.",
+    "Anh ta lại để quên điện thoại trên taxi.",
+    0
+   ],
+   [
+    "没想到她竟连一句谢谢都没说。",
+    "Méi xiǎngdào tā jìng lián yí jù xièxie dōu méi shuō.",
+    "Không ngờ cô ấy đến một câu cảm ơn cũng không nói.",
+    0
+   ],
+   [
+    "这么重要的会，他竟然迟到了。",
+    "Zhème zhòngyào de huì, tā jìngrán chídào le.",
+    "Cuộc họp quan trọng thế mà anh ấy lại đến trễ.",
+    1
+   ],
+   [
+    "小明竟然一个人完成了全部工作。",
+    "Xiǎo Míng jìngrán yí gè rén wánchéng le quánbù gōngzuò.",
+    "Tiểu Minh lại một mình làm xong toàn bộ công việc.",
+    1
+   ],
+   [
+    "我以为他不会来，不料他来得最早。",
+    "Wǒ yǐwéi tā bú huì lái, bùliào tā lái de zuì zǎo.",
+    "Tôi tưởng anh ấy sẽ không đến, ai ngờ anh đến sớm nhất.",
+    2
+   ],
+   [
+    "本想出去玩，不料突然下起大雨来了。",
+    "Běn xiǎng chūqù wán, bùliào tūrán xià qǐ dàyǔ lái le.",
+    "Đang định ra ngoài chơi, ai ngờ bỗng đổ mưa to.",
+    2
+   ],
+   [
+    "他居然当着大家的面撒谎。",
+    "Tā jūrán dāngzhe dàjiā de miàn sāhuǎng.",
+    "Anh ta lại dám nói dối ngay trước mặt mọi người.",
+    3
+   ],
+   [
+    "这么简单的题，居然没有人答对。",
+    "Zhème jiǎndān de tí, jūrán méiyǒu rén dáduì.",
+    "Câu đơn giản thế mà lại không ai trả lời đúng.",
+    3
+   ]
+  ],
+  "tip": "Nghĩa “hoàn thành” (未竟) thì 竟; mở đầu một vế, nối với dự đoán trước đó thì 不料; nếu phải đứng trước chủ ngữ thì 居然; còn lại “lại, vậy mà” thông dụng thì 竟然.",
+  "questions": [
+   {
+    "q": "这是父亲生前未___的心愿，我一定要替他完成。",
+    "answer": "竟",
+    "explain": "“未竟” (chưa hoàn thành) dùng 竟 với nghĩa động từ “xong, hoàn thành”; 竟然, 不料, 居然 đều không có nghĩa này."
+   },
+   {
+    "q": "我估计今天不会下雨，___半路就下起了大雨。",
+    "answer": "不料",
+    "explain": "竟然, 居然 cũng đặt được. Chọn 不料 vì nó mở đầu vế sau và nối trực tiếp với dự đoán đã nêu ở vế trước."
+   },
+   {
+    "q": "这么多人看着，___你一点儿也没发现？",
+    "answer": "居然",
+    "explain": "Chỗ trống đứng trước chủ ngữ (你); sách ghi 竟, 竟然 không đứng trước chủ ngữ, còn 居然 thì đôi khi được."
+   },
+   {
+    "q": "小明___把作业本落在家里了，我真服了他。",
+    "answer": "竟然",
+    "explain": "竟, 居然 cũng đặt được. Chọn 竟然 vì câu mang giọng nói chuyện hằng ngày, mà 竟然 dùng được cả khẩu ngữ lẫn văn viết, còn 竟 thiên về văn viết."
+   }
+  ]
+ },
+ {
+  "id": "066",
+  "letter": "J",
+  "words": [
+   [
+    "据说",
+    "jùshuō"
+   ],
+   [
+    "听说",
+    "tīngshuō"
+   ]
+  ],
+  "common": "Cả hai đều là động từ nghĩa “nghe nói”, dùng để dẫn ra một nguồn tin truyền lại.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ",
+    "Động từ"
+   ],
+   [
+    "Chủ ngữ phía trước",
+    "Không đặt người làm chủ ngữ trước nó",
+    "Có thể có đại từ, tên người làm chủ ngữ: 我听说"
+   ],
+   [
+    "Nghĩa khác",
+    "Không có",
+    "Còn nghĩa “khả năng nghe và nói”: 听说能力"
+   ],
+   [
+    "Nguồn tin",
+    "Có thể là tin đã đọc, đã xem: 据《人民日报》说",
+    "Là tin nghe được từ người khác: 听王经理说"
+   ]
+  ],
+  "examples": [
+   [
+    "这家店的蛋糕据说很好吃。",
+    "Zhè jiā diàn de dàngāo jùshuō hěn hǎochī.",
+    "Nghe nói bánh ở tiệm này rất ngon.",
+    0
+   ],
+   [
+    "据说那座山上以前有一座古庙。",
+    "Jùshuō nà zuò shān shàng yǐqián yǒu yí zuò gǔmiào.",
+    "Nghe nói trên ngọn núi đó trước kia có một ngôi chùa cổ.",
+    0
+   ],
+   [
+    "我听说他下个月要结婚了。",
+    "Wǒ tīngshuō tā xià gè yuè yào jiéhūn le.",
+    "Tôi nghe nói tháng sau anh ấy sắp cưới.",
+    1
+   ],
+   [
+    "这件事，大家都已经听说了。",
+    "Zhè jiàn shì, dàjiā dōu yǐjīng tīngshuō le.",
+    "Việc này mọi người đều đã nghe nói.",
+    1
+   ]
+  ],
+  "tip": "Có chủ ngữ người phía trước hoặc mang 了 thì 听说; “nghe nói” nêu tin chung, nhất là nguồn từ báo đài, thì 据说.",
+  "questions": [
+   {
+    "q": "我___他已经搬到上海去住了。",
+    "answer": "听说",
+    "explain": "Phía trước có đại từ làm chủ ngữ (我); sách ghi 据说 không dùng với chủ ngữ người như vậy."
+   },
+   {
+    "q": "这个好消息，我姐姐早就___了。",
+    "answer": "听说",
+    "explain": "Phía sau có 了 và đứng sau chủ ngữ; theo sách “据说了” không dùng, chỉ 听说 hợp."
+   },
+   {
+    "q": "___这家公司明年要在海外上市。",
+    "answer": "据说",
+    "explain": "听说 cũng đặt được. Chọn 据说 vì câu dẫn một tin chung, không có người nghe cụ thể; 听说 thiên về khẩu ngữ và thường gắn với người nghe."
+   },
+   {
+    "q": "这座古城___有两千多年的历史，但没有人能证实。",
+    "answer": "据说",
+    "explain": "听说 cũng đặt được. Chọn 据说 vì chỉ truyền lại một thông tin chung, không gắn với người nghe cụ thể."
+   }
+  ]
+ },
+ {
+  "id": "067",
+  "letter": "J",
+  "words": [
+   [
+    "决定",
+    "juédìng"
+   ],
+   [
+    "决心",
+    "juéxīn"
+   ]
+  ],
+  "common": "Cả hai đều có thể là động từ nghĩa “quyết”, chỉ việc hạ quyết tâm thực hiện; cũng đều là danh từ.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ, danh từ, phó từ",
+    "Động từ, danh từ"
+   ],
+   [
+    "Nghĩa",
+    "Quyết định thực hiện; văn bản quyết định",
+    "Ý chí kiên định, quyết tâm làm cho được"
+   ],
+   [
+    "Làm vị ngữ độc lập, không có tân ngữ",
+    "Được: 这件事太难决定了",
+    "Không dùng độc lập"
+   ],
+   [
+    "Mang 了",
+    "Được",
+    "Không"
+   ]
+  ],
+  "examples": [
+   [
+    "这件事你自己决定吧。",
+    "Zhè jiàn shì nǐ zìjǐ juédìng ba.",
+    "Việc này bạn tự quyết định đi.",
+    0
+   ],
+   [
+    "政府公布了新的决定。",
+    "Zhèngfǔ gōngbù le xīn de juédìng.",
+    "Chính phủ công bố quyết định mới.",
+    0
+   ],
+   [
+    "他决心要学好汉语。",
+    "Tā juéxīn yào xuéhǎo Hànyǔ.",
+    "Anh ấy quyết tâm học giỏi tiếng Hán.",
+    1
+   ],
+   [
+    "她下定决心每天跑步。",
+    "Tā xiàdìng juéxīn měitiān pǎobù.",
+    "Cô ấy hạ quyết tâm ngày nào cũng chạy bộ.",
+    1
+   ]
+  ],
+  "tip": "Có thể đứng một mình làm vị ngữ, mang 了, hoặc là văn bản “quyết định” thì 决定; nhấn mạnh ý chí kiên trì thì 决心.",
+  "questions": [
+   {
+    "q": "细节___成败，做事一定要认真。",
+    "answer": "决定",
+    "explain": "“A 决定 B” nghĩa A là yếu tố quyết định B; 决心 không có cách dùng này."
+   },
+   {
+    "q": "她下定___要考上清华大学，每天学习到深夜。",
+    "answer": "决心",
+    "explain": "“下定决心” là cụm cố định chỉ ý chí kiên định; 决定 không tạo cụm này."
+   },
+   {
+    "q": "这件事太难___了，我想了好几天也没想出来。",
+    "answer": "决定",
+    "explain": "Chỗ trống làm vị ngữ độc lập, không có tân ngữ; sách ghi 决心 không dùng độc lập."
+   },
+   {
+    "q": "我很佩服她的___和毅力。",
+    "answer": "决心",
+    "explain": "Đi đôi với 毅力 (nghị lực) nên chỉ ý chí kiên định, tức danh từ 决心; 决定 là “quyết định” nên không hợp."
+   },
+   {
+    "q": "会议已经通过了一项新的___。",
+    "answer": "决定",
+    "explain": "“Quyết định” làm danh từ chỉ văn bản hành chính, đi với 通过; 决心 không chỉ văn bản."
+   }
+  ]
+ },
+ {
+  "id": "068",
+  "letter": "K",
+  "words": [
+   [
+    "开始",
+    "kāishǐ"
+   ],
+   [
+    "起初",
+    "qǐchū"
+   ],
+   [
+    "最初",
+    "zuìchū"
+   ],
+   [
+    "当初",
+    "dāngchū"
+   ]
+  ],
+  "common": "Cả bốn đều chỉ thời điểm “lúc đầu”; ba từ sau là danh từ chỉ thời gian, đều làm trạng ngữ được.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ, danh từ",
+    "Danh từ",
+    "Danh từ",
+    "Danh từ"
+   ],
+   [
+    "Trọng tâm",
+    "Khởi đầu, bắt đầu một việc",
+    "Lúc đầu, thời kỳ mới đầu (thường đối với “sau này, bây giờ”)",
+    "Cái đầu tiên nhất: 最初印象",
+    "Hồi đó, thời quá khứ, giống 以前"
+   ],
+   [
+    "Đứng trước động từ",
+    "Chỉ việc bắt đầu thực hiện động tác",
+    "Không có cách dùng này",
+    "Không có cách dùng này",
+    "Không có cách dùng này"
+   ],
+   [
+    "Kết hợp thường gặp",
+    "开始的时候、新的开始",
+    "起初……后来……",
+    "最初印象、最初阶段",
+    "何必当初、如果当初"
+   ]
+  ],
+  "examples": [
+   [
+    "比赛八点开始，请大家准时到场。",
+    "Bǐsài bā diǎn kāishǐ, qǐng dàjiā zhǔnshí dàochǎng.",
+    "Trận đấu bắt đầu lúc tám giờ, mời mọi người đến đúng giờ.",
+    0
+   ],
+   [
+    "新的学期开始了，同学们都很高兴。",
+    "Xīn de xuéqī kāishǐ le, tóngxuémen dōu hěn gāoxìng.",
+    "Học kỳ mới bắt đầu rồi, các bạn đều rất vui.",
+    0
+   ],
+   [
+    "我起初不会游泳，后来慢慢学会了。",
+    "Wǒ qǐchū bú huì yóuyǒng, hòulái mànmàn xuéhuì le.",
+    "Lúc đầu tôi không biết bơi, sau từ từ học được.",
+    1
+   ],
+   [
+    "他起初不同意，现在却支持我们了。",
+    "Tā qǐchū bù tóngyì, xiànzài què zhīchí wǒmen le.",
+    "Lúc đầu anh ấy không đồng ý, giờ lại ủng hộ chúng tôi.",
+    1
+   ],
+   [
+    "她给我的最初印象是很安静。",
+    "Tā gěi wǒ de zuìchū yìnxiàng shì hěn ānjìng.",
+    "Ấn tượng đầu tiên cô ấy để lại cho tôi là rất trầm tĩnh.",
+    2
+   ],
+   [
+    "这个计划最初只有三个人参加。",
+    "Zhège jìhuà zuìchū zhǐyǒu sān gè rén cānjiā.",
+    "Kế hoạch này lúc đầu chỉ có ba người tham gia.",
+    2
+   ],
+   [
+    "当初你要是听我的话就好了。",
+    "Dāngchū nǐ yàoshi tīng wǒ de huà jiù hǎo le.",
+    "Giá như hồi đó bạn nghe lời tôi thì tốt.",
+    3
+   ],
+   [
+    "他当初来这里的时候，一个人也不认识。",
+    "Tā dāngchū lái zhèlǐ de shíhou, yí gè rén yě bú rènshi.",
+    "Hồi mới đến đây, anh ấy chẳng quen ai.",
+    3
+   ]
+  ],
+  "tip": "Đứng trước động từ, chỉ việc bắt đầu thì 开始; “lúc đầu… sau này…” thì 起初; “cái đầu tiên nhất” (印象, 决定) thì 最初; nhắc chuyện quá khứ, hay đi với 何必、如果 thì 当初.",
+  "questions": [
+   {
+    "q": "电影早就___了，我们现在进去已经晚了。",
+    "answer": "开始",
+    "explain": "Chỗ trống là động từ (bắt đầu); 起初, 最初, 当初 là danh từ chỉ thời gian nên không làm vị ngữ như vậy."
+   },
+   {
+    "q": "早知道今天会这样，___何必要答应他呢？",
+    "answer": "当初",
+    "explain": "Câu giả thiết nhắc lại quá khứ (早知道…何必…): đây là cách dùng của 当初; 起初, 最初 không dùng trong cấu trúc này."
+   },
+   {
+    "q": "她给我的___印象是爱笑，说话也很温柔。",
+    "answer": "最初",
+    "explain": "Sách nêu 最初 mang nghĩa “đầu tiên nhất” và hay đi với 印象, 决定 (最初印象); 起初, 当初 nhấn vào thời điểm hoặc quãng thời gian chứ không chỉ cái đầu tiên."
+   },
+   {
+    "q": "他___还坚决反对，现在怎么又同意了呢？",
+    "answer": "起初",
+    "explain": "当初, 最初 cũng đặt được. Chọn 起初 vì nó đi đôi với đối chiếu “lúc đầu… giờ…” (现在), nhấn mạnh sự thay đổi."
+   },
+   {
+    "q": "从下个月___，公司实行新的上班时间。",
+    "answer": "开始",
+    "explain": "Cấu trúc “从……开始” (kể từ…) dùng động từ 开始; ba danh từ còn lại không đứng ở vị trí này."
+   }
+  ]
+ },
+ {
+  "id": "069",
+  "letter": "K",
+  "words": [
+   [
+    "看",
+    "kàn"
+   ],
+   [
+    "看见",
+    "kànjiàn"
+   ]
+  ],
+  "common": "Cả hai đều là động từ liên quan đến việc nhìn bằng mắt; phủ định bằng 没.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ, trợ từ",
+    "Động từ"
+   ],
+   [
+    "Nghĩa chính",
+    "Nhìn, xem (hành động quan sát)",
+    "Thấy (kết quả của việc nhìn)"
+   ],
+   [
+    "Nghĩa khác",
+    "Thăm, khám bệnh, cho rằng",
+    "Không có cách dùng này"
+   ],
+   [
+    "Làm trợ từ sau động từ",
+    "Được: 试试看",
+    "Không có cách dùng này"
+   ]
+  ],
+  "examples": [
+   [
+    "我哥哥每天晚上都看书。",
+    "Wǒ gēge měitiān wǎnshang dōu kàn shū.",
+    "Anh tôi tối nào cũng đọc sách.",
+    0
+   ],
+   [
+    "你尝尝看，这个菜不辣。",
+    "Nǐ chángchang kàn, zhège cài bú là.",
+    "Bạn nếm thử xem, món này không cay.",
+    0
+   ],
+   [
+    "我在车站看见了一个老朋友。",
+    "Wǒ zài chēzhàn kànjiàn le yí gè lǎo péngyou.",
+    "Tôi thấy một người bạn cũ ở nhà ga.",
+    1
+   ],
+   [
+    "天太黑了，我什么也没看见。",
+    "Tiān tài hēi le, wǒ shénme yě méi kànjiàn.",
+    "Trời tối quá, tôi chẳng thấy gì cả.",
+    1
+   ]
+  ],
+  "tip": "Hành động nhìn, khám bệnh, thăm viếng, “thử xem” thì 看; nói đã nhìn thấy (kết quả) thì 看见.",
+  "questions": [
+   {
+    "q": "我感冒了，明天要去___医生。",
+    "answer": "看",
+    "explain": "“看医生” (đi khám bệnh) là nghĩa riêng của 看; 看见 không có cách dùng này."
+   },
+   {
+    "q": "这个菜我第一次做，你尝尝___，味道怎么样？",
+    "answer": "看",
+    "explain": "“Động từ lặp + 看” có nghĩa “thử xem” chỉ có ở 看 (trợ từ); 看见 không có cách dùng này."
+   },
+   {
+    "q": "我远远地___一个人影站在路边，走近了才发现是棵树。",
+    "answer": "看见",
+    "explain": "Câu nói kết quả “nhìn thấy” một bóng người; 看 chỉ hành động nhìn nên không diễn đạt đúng nghĩa này."
+   },
+   {
+    "q": "你自己___着办吧，我不干涉。",
+    "answer": "看",
+    "explain": "“看着办” (tùy cho rằng nên thế nào) dùng nghĩa “cho rằng, xem xét” của 看; 看见 không có nghĩa này."
+   },
+   {
+    "q": "今天路上人太多，我没___小王，不知道他来了没有。",
+    "answer": "看见",
+    "explain": "看 cũng đặt được về ngữ pháp, nhưng “没看小王” nghĩa là không xem/không thăm; ở đây nói không nhìn thấy, nên cần 看见."
+   }
+  ]
+ },
+ {
+  "id": "070",
+  "letter": "K",
+  "words": [
+   [
+    "看来",
+    "kànlái"
+   ],
+   [
+    "看起来",
+    "kàn qǐlái"
+   ],
+   [
+    "看样子",
+    "kàn yàngzi"
+   ],
+   [
+    "看上去",
+    "kànshàngqù"
+   ]
+  ],
+  "common": "Cả bốn đều nghĩa “xem ra”, nêu đánh giá, phán đoán của người nói dựa trên tình hình quan sát được bằng mắt thường.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ",
+    "Cụm động từ",
+    "Cụm động từ",
+    "Cụm động từ"
+   ],
+   [
+    "Cấu trúc đặc trưng",
+    "在……看来、从……看来",
+    "使……看起来",
+    "看……的样子 (chen tân ngữ vào giữa)",
+    "Chỉ dùng cho điều nhìn thấy bên ngoài"
+   ],
+   [
+    "Nghĩa “trông có vẻ”",
+    "Không phải nghĩa chính",
+    "Có: 他看起来很老实",
+    "Không phải nghĩa chính",
+    "Có: 他看上去很年轻"
+   ],
+   [
+    "Phạm vi",
+    "Đánh giá, phán đoán theo lập trường người nói",
+    "Vẻ bề ngoài hoặc phán đoán",
+    "Phán đoán từ tình hình, vẻ ngoài của sự việc",
+    "Chỉ vẻ ngoài nhìn thấy, không dùng để suy luận"
+   ]
+  ],
+  "examples": [
+   [
+    "在很多老师看来，这个办法很有用。",
+    "Zài hěn duō lǎoshī kànlái, zhège bànfǎ hěn yǒuyòng.",
+    "Theo nhiều thầy cô, cách này rất hữu ích.",
+    0
+   ],
+   [
+    "从他的表情看来，他不太高兴。",
+    "Cóng tā de biǎoqíng kànlái, tā bú tài gāoxìng.",
+    "Nhìn nét mặt thì thấy anh ấy không vui lắm.",
+    0
+   ],
+   [
+    "这条裙子使她看起来很年轻。",
+    "Zhè tiáo qúnzi shǐ tā kàn qǐlái hěn niánqīng.",
+    "Chiếc váy này khiến cô ấy trông rất trẻ.",
+    1
+   ],
+   [
+    "这家店看起来不大，里面却很干净。",
+    "Zhè jiā diàn kàn qǐlái bú dà, lǐmiàn què hěn gānjìng.",
+    "Quán này trông không lớn nhưng bên trong rất sạch.",
+    1
+   ],
+   [
+    "乌云这么厚，看样子要下雨了。",
+    "Wūyún zhème hòu, kàn yàngzi yào xià yǔ le.",
+    "Mây đen dày thế này, xem ra sắp mưa.",
+    2
+   ],
+   [
+    "看样子，他今天不会来了。",
+    "Kàn yàngzi, tā jīntiān bú huì lái le.",
+    "Xem ra hôm nay anh ấy sẽ không đến.",
+    2
+   ],
+   [
+    "他爸爸看上去不到五十岁。",
+    "Tā bàba kànshàngqù bú dào wǔshí suì.",
+    "Bố anh ấy trông chưa đến năm mươi tuổi.",
+    3
+   ],
+   [
+    "这个苹果看上去很新鲜。",
+    "Zhège píngguǒ kànshàngqù hěn xīnxiān.",
+    "Quả táo này trông rất tươi.",
+    3
+   ]
+  ],
+  "tip": "Có khung 在……/从……看来 thì 看来; khung 使……看起来 thì 看起来; chỉ nói về vẻ ngoài nhìn thấy thì 看上去; còn phán đoán chung từ tình hình thì 看样子.",
+  "questions": [
+   {
+    "q": "在爸爸___，学外语比学数学更重要。",
+    "answer": "看来",
+    "explain": "Khung “在……看来” (theo quan điểm của…) chỉ dùng 看来; ba từ còn lại không đứng trong khung này."
+   },
+   {
+    "q": "这件白衬衫使他___更精神了。",
+    "answer": "看起来",
+    "explain": "Khung “使……看起来” (khiến… trông có vẻ) chỉ dùng 看起来."
+   },
+   {
+    "q": "从他的口音___，他应该是南方人。",
+    "answer": "看来",
+    "explain": "Khung “从……看来” (xét từ… thì thấy) chỉ dùng 看来; 看起来, 看样子, 看上去 không đứng trong khung này."
+   },
+   {
+    "q": "天阴得这么厉害，___今天要下大雨了。",
+    "answer": "看样子",
+    "explain": "看来, 看起来, 看上去 cũng đặt được. Chọn 看样子 vì đây là phán đoán về cả tình hình thời tiết, không chỉ nhìn ngoại hình."
+   },
+   {
+    "q": "他奶奶___有八十岁了，其实才六十多。",
+    "answer": "看上去",
+    "explain": "看来, 看起来 cũng đặt được. Chọn 看上去 vì chỉ nói về vẻ ngoài nhìn thấy (trông già hơn tuổi), không phải suy luận."
+   }
+  ]
+ },
+ {
+  "id": "071",
+  "letter": "K",
+  "words": [
+   [
+    "靠",
+    "kào"
+   ],
+   [
+    "凭",
+    "píng"
+   ]
+  ],
+  "common": "Cả hai đều là động từ, giới từ nghĩa “dựa vào, nhờ vào”.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ, giới từ",
+    "Động từ, giới từ, liên từ"
+   ],
+   [
+    "Nghĩa “đáng tin cậy”",
+    "Có: 靠得住",
+    "Không có"
+   ],
+   [
+    "Tân ngữ",
+    "Cụ thể (山、墙) hoặc trừu tượng (努力、本事)",
+    "Chủ yếu là danh từ trừu tượng; cụ thể chỉ vài từ (凭窗、凭栏)"
+   ],
+   [
+    "Cách dùng cố định / liên từ",
+    "Không có",
+    "凭什么 (chất vấn); liên từ “bất kể”: 凭你怎么说"
+   ]
+  ],
+  "examples": [
+   [
+    "累了的时候，她靠在沙发上睡着了。",
+    "Lèi le de shíhou, tā kào zài shāfā shàng shuìzháo le.",
+    "Mệt quá, cô ấy tựa vào ghế sofa ngủ thiếp đi.",
+    0
+   ],
+   [
+    "你放心，他是个靠得住的人。",
+    "Nǐ fàngxīn, tā shì gè kàodezhù de rén.",
+    "Bạn yên tâm, anh ấy là người đáng tin.",
+    0
+   ],
+   [
+    "你凭什么说我做错了？",
+    "Nǐ píng shénme shuō wǒ zuò cuò le?",
+    "Dựa vào đâu bạn nói tôi làm sai?",
+    1
+   ],
+   [
+    "我是凭自己的努力考上大学的。",
+    "Wǒ shì píng zìjǐ de nǔlì kǎoshàng dàxué de.",
+    "Tôi thi đỗ đại học nhờ nỗ lực của chính mình.",
+    1
+   ]
+  ],
+  "tip": "Nghĩa “tựa, kề, đáng tin cậy” hoặc dựa vào cả người lẫn vật thì 靠; “凭什么” hoặc liên từ “bất kể” thì 凭.",
+  "questions": [
+   {
+    "q": "他们俩___在树上，聊了很长时间。",
+    "answer": "靠",
+    "explain": "Nghĩa “tựa vào” với tân ngữ cụ thể (树上); 凭 làm động từ nghĩa “tựa” chỉ đi với số ít danh từ cụ thể đơn âm tiết như 窗, 栏, nên chọn 靠."
+   },
+   {
+    "q": "有困难的时候，他是最___得住的朋友。",
+    "answer": "靠",
+    "explain": "“靠得住” (đáng tin cậy) là nghĩa riêng của 靠; 凭 không có nghĩa này."
+   },
+   {
+    "q": "你___什么不让我去？",
+    "answer": "凭",
+    "explain": "“凭什么” là cách dùng cố định để chất vấn, chỉ có ở 凭."
+   },
+   {
+    "q": "___你怎么解释，也改变不了事实。",
+    "answer": "凭",
+    "explain": "Nghĩa liên từ “bất kể… thì cũng…” chỉ có ở 凭; 靠 không làm liên từ."
+   },
+   {
+    "q": "我们的教室___着操场，窗外就是跑道。",
+    "answer": "靠",
+    "explain": "“Giáp với, kề bên” (chỉ vị trí) là nghĩa riêng của 靠; 凭 không có nghĩa này."
+   }
+  ]
  }
 ]
