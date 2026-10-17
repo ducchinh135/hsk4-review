@@ -7276,7 +7276,7 @@
     "explain": "合影留念 là cụm quen dùng: 留念 là động từ không mang tân ngữ, nghĩa là giữ lại làm kỷ niệm; theo sách, 纪念 cần có tân ngữ nên không dùng theo cách này."
    },
    {
-    "q": "为了___先人，人们在清明节那天去扫墓。",
+    "q": "每年这一天，全校师生都会举行仪式___老校长。",
     "answer": "纪念",
     "explain": "纪念 mang tân ngữ (先人) với nghĩa tưởng nhớ người đã mất; 留念 không mang tân ngữ."
    },
@@ -7477,12 +7477,12 @@
   "tip": "Đi xa nói chung: 旅行/旅游 (không tân ngữ); ngắm, tham quan một địa điểm cụ thể (có tân ngữ): 游览.",
   "questions": [
    {
-    "q": "质量好的___袋要两百多块一个。",
+    "q": "出差用的___袋要结实一点，我想买个大的。",
     "answer": "旅行",
     "explain": "旅行袋 (túi du lịch) là cụm chỉ đồ dùng mang theo khi đi xa, theo sách thuộc 旅行; 旅游 kết hợp với các từ của ngành du lịch, 游览 thì phải có tân ngữ."
    },
    {
-    "q": "现在不是___旺季，所以团费不太贵。",
+    "q": "暑假是___旺季，酒店的价格都涨了。",
     "answer": "旅游",
     "explain": "旅游旺季 là cụm thuộc ngành du lịch; theo sách đây là kiểu kết hợp của 旅游 (游览 thì phải có tân ngữ)."
    },
@@ -7594,9 +7594,9 @@
     "explain": "Chỉ 马上 có thể đứng độc lập làm câu đáp; 立刻 và 顿时 không có cách dùng này."
    },
    {
-    "q": "老师一走进教室，大家___安静了下来。",
+    "q": "宣布结果的那一刻，全场___一片寂静。",
     "answer": "顿时",
-    "explain": "Theo R8: 马上 và 立刻 cũng đúng ngữ pháp ở đây, nhưng 顿时 chỉ dùng cho việc đã xảy ra và nhấn mạnh tình huống thay đổi đột ngột do nguyên nhân vừa nói, nên 顿时 là lựa chọn sát nghĩa nhất."
+    "explain": "顿时 miêu tả trạng thái thay đổi bất ngờ trong quá khứ do nguyên nhân vừa nói (全场一片寂静); 马上 dùng cho việc sắp xảy ra hoặc xảy ra nhanh, 立刻 thiên về mệnh lệnh, gấp gáp."
    },
    {
     "q": "收到命令后，你们必须___出发，一分钟也不能等。",
@@ -7727,9 +7727,9 @@
     "explain": "Chỉ 买卖 còn có nghĩa “cửa hàng” và đi với lượng từ 家; 生意 dùng lượng từ 笔, 贸易 và 交易 không có nghĩa này."
    },
    {
-    "q": "祝你的新店开张大吉，___兴隆！",
+    "q": "这家店的___越来越好，老板打算再开一家分店。",
     "answer": "生意",
-    "explain": "Theo R8: 买卖兴隆 cũng nói được, nhưng 生意兴隆 là câu chúc làm ăn phát đạt phổ biến hơn hẳn; 贸易 và 交易 chỉ thương mại quy mô lớn hoặc giao dịch, không phải cách chúc thông dụng."
+    "explain": "Tình hình làm ăn, kinh doanh tốt lên (越来越好) là nghĩa của 生意; 贸易 chỉ thương mại quy mô lớn, 交易 là giao dịch, 买卖 nghiêng về cửa hàng, mua bán nhỏ."
    },
    {
     "q": "这个国家出口增长很快，___顺差也在扩大。",
@@ -7803,7 +7803,7 @@
   "tip": "Hài lòng, vừa ý, làm định ngữ được: 满意; thỏa mãn nhu cầu, yêu cầu hoặc 满足于…: 满足.",
   "questions": [
    {
-    "q": "他希望毕业后能找到一份___的工作。",
+    "q": "我想换一份让自己___的工作。",
     "answer": "满意",
     "explain": "Chỉ 满意 làm định ngữ được (满意的工作); 满足 không làm định ngữ."
    },
@@ -7818,9 +7818,9 @@
     "explain": "满足 phải kèm 于 khi mang tân ngữ (满足于…), với nghĩa thỏa mãn; 满意 mang tân ngữ trực tiếp hoặc dùng 对…满意."
    },
    {
-    "q": "老板很___他的工作态度，决定给他加薪。",
+    "q": "经理对这个方案非常___，当场就批准了。",
     "answer": "满意",
-    "explain": "满意 mang tân ngữ trực tiếp (满意他的工作态度) với nghĩa hài lòng; 满足 cần thêm 于 nên không hợp ở đây."
+    "explain": "满意 diễn đạt sự hài lòng, vừa ý, dùng được với 对…满意; 满足 nhấn mạnh thỏa mãn, đầy đủ và hay đi với 需求、要求."
    }
   ]
  },
@@ -7995,7 +7995,7 @@
   "tip": "Mỗi khi, mỗi ngày, mỗi lần (quy luật): 每; các loại khác nhau, mỗi bên một: 各.",
   "questions": [
    {
-    "q": "我爸爸___天晚上都要看新闻。",
+    "q": "他___天上班都骑自行车，从不坐公交车。",
     "answer": "每",
     "explain": "Danh từ chỉ thời gian như 天 đứng ngay sau 每 mà không cần lượng từ (每天); 各 không dùng với danh từ thời gian theo cách này."
    },
@@ -8101,7 +8101,7 @@
   "tip": "Phim, truyện hay: 好看; làm việc xuất sắc, bổ ngữ “đẹp mắt”: 漂亮; vẻ đẹp trữ tình của cảnh, người, câu chuyện: 美丽.",
   "questions": [
    {
-    "q": "这本小说真___，我看了好几遍也不腻。",
+    "q": "这本漫画书特别___，我同桌借去看了三遍。",
     "answer": "好看",
     "explain": "Nghĩa “hay, hấp dẫn” (nói về truyện, phim, kịch) chỉ có ở 好看; 美丽 và 漂亮 chỉ vẻ đẹp."
    },
@@ -8111,7 +8111,7 @@
     "explain": "漂亮 làm bổ ngữ với nghĩa “xuất sắc, đẹp mắt” (赢得漂亮); 美丽 không làm bổ ngữ."
    },
    {
-    "q": "听说云南的石林有一个很___的传说。",
+    "q": "海边的小渔村有一个很___的传说。",
     "answer": "美丽",
     "explain": "“美丽的传说” là cách nói quen thuộc, 美丽 mang sắc thái đẹp có chất thơ; 漂亮 và 好看 thiên về ngoại hình, đồ vật hoặc phim, truyện hay."
    },
@@ -8450,7 +8450,7 @@
   "tip": "Đau lòng thì dùng được cả hai; đời sống vất vả hoặc “khó vượt qua”: 难过; khó chịu trong cơ thể: 难受.",
   "questions": [
    {
-    "q": "物价越来越高，工资又不涨，日子越来越___。",
+    "q": "家里负担重，收入又少，这几年的日子过得很___。",
     "answer": "难过",
     "explain": "Chỉ cuộc sống khó khăn, vất vả là nghĩa riêng của 难过; 难受 không dùng như vậy."
    },
@@ -8460,7 +8460,7 @@
     "explain": "难过 làm động từ nghĩa “khó vượt qua” (难过美人关); 难受 không có cách dùng này."
    },
    {
-    "q": "你吃得太多了，肚子肯定觉得___。",
+    "q": "昨天吃坏了东西，现在胃里很___。",
     "answer": "难受",
     "explain": "Cảm giác khó chịu trong người (肚子难受) là nghĩa của 难受; 难过 không dùng cho cảm giác thân thể."
    },
@@ -8553,7 +8553,7 @@
    {
     "q": "看到孩子们进步这么大，老师___感到欣慰。",
     "answer": "不免",
-    "explain": "Theo R8: 难免 cũng đúng ngữ pháp, nhưng thường chỉ điều không mong muốn; ở đây là hệ quả tích cực, hiển nhiên nên 不免 hợp hơn."
+    "explain": "Theo sách, 不免 chỉ hệ quả hiển nhiên, hợp lý, còn 难免 thường chỉ điều không tốt, không mong muốn; 感到欣慰 là điều tích cực nên dùng 不免."
    }
   ]
  },
@@ -8675,7 +8675,7 @@
    ],
    [
     "Đối tượng",
-    "Người lớn tuổi là chủ yếu, hơi trang trọng; ít dùng cho tuổi còn nhỏ",
+    "Tuổi tác của người",
     "Người, cả động vật, thực vật, hành tinh",
     "Người, thường dùng trong khẩu ngữ",
     "Đứng sau số từ hoặc 几: 二十岁、几岁"
