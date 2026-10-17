@@ -10225,14 +10225,14 @@
     "explain": "Vế nhượng bộ đặt sau, nên 虽 và 别看 (chỉ nằm ở vế đầu) không dùng được. 虽说 cũng đúng ngữ pháp, nhưng chỉ dùng trong khẩu ngữ; câu này là giọng trang trọng nên chọn 虽然."
    },
    {
-    "q": "___他个子小，扛起东西来可有劲儿了。",
+    "q": "___这孩子才八岁，下起围棋来连大人都赢不了。",
     "answer": "别看",
-    "explain": "虽然 và 虽说 cũng đứng được ở đây; sách không phân biệt về ngữ pháp trong vị trí này, nên 别看 là đáp án chấp nhận được: 别看 đứng trước chủ ngữ, thuộc khẩu ngữ, hợp với giọng câu này."
+    "explain": "虽然 và 虽说 cũng đúng ngữ pháp ở đây; sách không chia khác biệt nào khác. 别看 được ưu tiên vì câu đối lập vẻ bề ngoài (còn nhỏ tuổi) với thực tế bất ngờ (giỏi hơn người lớn), đúng với sắc thái “đừng vội nhìn vẻ ngoài” của 别看, lại đứng trước chủ ngữ, thuộc khẩu ngữ."
    },
    {
     "q": "___早就说好了，到时候谁能来还不一定呢。",
     "answer": "虽说",
-    "explain": "虽然 và 别看 cũng đặt được ở đầu câu; sách không chia khác biệt ngữ pháp, nên 虽说 là đáp án chấp nhận được, vì đây là câu nói thuần khẩu ngữ."
+    "explain": "虽然 và 别看 cũng đặt được ở đầu câu; sách không chỉ ra khác biệt ngữ pháp nào giữa các từ này ở vị trí đó. Đây chỉ là chọn theo phong cách: 虽说 là cách nói khẩu ngữ, nên là đáp án chấp nhận được cho câu nói thường ngày này."
    }
   ]
  },
@@ -10253,7 +10253,7 @@
     "gēn"
    ]
   ],
-  "common": "Cả ba đều có thể làm giới từ mang nghĩa “theo”, và đều có nghĩa “đi theo” (随 và 跟), nhưng cách dùng khác nhau nhiều.",
+  "common": "Cả ba đều có thể làm giới từ: 随 và 随着 nghĩa “theo”, còn 跟 nghĩa “với” (dẫn đối tượng của hành động) hoặc dẫn đối tượng so sánh như 跟……相比; 随 và 跟 còn là động từ “đi theo”, nhưng cách dùng khác nhau nhiều.",
   "rows": [
    [
     "Từ loại",
@@ -10449,9 +10449,9 @@
     "explain": "Nêu bật một nhóm trong số nhiều người (特别是……); chỉ 特别 có cách dùng này."
    },
    {
-    "q": "听说同学住院了，我___坐了两个小时的车去医院看他。",
+    "q": "我今天___来给你送钥匙，送完就走。",
     "answer": "特地",
-    "explain": "特别 và 特意 cũng đúng ngữ pháp ở đây. 特地 nhấn mạnh hành động xuất phát từ một mục đích riêng (bỏ công đi thăm), chú trọng bản thân hành động nên được chọn."
+    "explain": "Câu chỉ nói việc làm vì một mục đích riêng (đến chỉ để đưa chìa khóa), không có ý quan tâm đặc biệt tới ai. 特别 và 特意 cũng đúng ngữ pháp; 特地 nhấn mạnh hành động xuất phát từ mục đích riêng, chú trọng bản thân hành động nên được chọn."
    },
    {
     "q": "她知道孩子对花生过敏，买点心时___叮嘱店员不要放花生。",
