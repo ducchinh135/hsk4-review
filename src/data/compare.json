@@ -7205,5 +7205,1568 @@
     "explain": "“Giáp với, kề bên” (chỉ vị trí) là nghĩa riêng của 靠; 凭 không có nghĩa này."
    }
   ]
+ },
+ {
+  "id": "072",
+  "letter": "L",
+  "words": [
+   [
+    "留念",
+    "liúniàn"
+   ],
+   [
+    "纪念",
+    "jìniàn"
+   ]
+  ],
+  "common": "Cả hai đều là động từ liên quan đến việc lưu giữ kỷ niệm, hay gặp khi nói về chụp ảnh, ký tên hoặc tặng vật.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ",
+    "Động từ, danh từ"
+   ],
+   [
+    "Nghĩa chính",
+    "Giữ lại làm kỷ niệm (chụp ảnh, ký tên, tặng vật)",
+    "Tưởng nhớ, hoài niệm một người hoặc một sự việc; làm danh từ là vật kỷ niệm"
+   ],
+   [
+    "Tân ngữ",
+    "Không mang tân ngữ",
+    "Có thể mang tân ngữ: 纪念先人"
+   ],
+   [
+    "Tạo cụm danh từ",
+    "Không tạo cụm như 留念品、留念日",
+    "Tạo được 纪念品、纪念碑、纪念日"
+   ]
+  ],
+  "examples": [
+   [
+    "大家站在长城上合影留念。",
+    "Dàjiā zhàn zài Chángchéng shàng héyǐng liúniàn.",
+    "Mọi người đứng trên Vạn Lý Trường Thành chụp ảnh chung để làm kỷ niệm.",
+    0
+   ],
+   [
+    "离开学校前，老师在我的本子上签了名留念。",
+    "Líkāi xuéxiào qián, lǎoshī zài wǒ de běnzi shàng qiān le míng liúniàn.",
+    "Trước khi rời trường, thầy ký tên vào vở của tôi để làm kỷ niệm.",
+    0
+   ],
+   [
+    "每年清明节，人们都去烈士陵园纪念英雄。",
+    "Měi nián Qīngmíng Jié, rénmen dōu qù lièshì língyuán jìniàn yīngxióng.",
+    "Mỗi dịp Thanh minh, mọi người đến nghĩa trang liệt sĩ để tưởng nhớ các anh hùng.",
+    1
+   ],
+   [
+    "这个纪念品是我在北京买的。",
+    "Zhège jìniànpǐn shì wǒ zài Běijīng mǎi de.",
+    "Món quà lưu niệm này tôi mua ở Bắc Kinh.",
+    1
+   ]
+  ],
+  "tip": "Chụp ảnh, ký tên để giữ làm kỷ niệm (không tân ngữ) thì 留念; tưởng nhớ người, việc hoặc cần cụm 纪念品、纪念日 thì 纪念.",
+  "questions": [
+   {
+    "q": "毕业那天，同学们在校门口合影___。",
+    "answer": "留念",
+    "explain": "合影留念 là cụm quen dùng: 留念 là động từ không mang tân ngữ, nghĩa là giữ lại làm kỷ niệm; theo sách, 纪念 cần có tân ngữ nên không dùng theo cách này."
+   },
+   {
+    "q": "为了___先人，人们在清明节那天去扫墓。",
+    "answer": "纪念",
+    "explain": "纪念 mang tân ngữ (先人) với nghĩa tưởng nhớ người đã mất; 留念 không mang tân ngữ."
+   },
+   {
+    "q": "这个___品是朋友从日本带回来的。",
+    "answer": "纪念",
+    "explain": "纪念品 (vật lưu niệm) là cụm của 纪念; 留念 không tạo được cụm danh từ kiểu này."
+   },
+   {
+    "q": "临走前，同学们互相在本子上签名___。",
+    "answer": "留念",
+    "explain": "签名留念: 留念 đứng sau hành động, không có tân ngữ, nghĩa là ký tên để giữ làm kỷ niệm; 纪念 cần tân ngữ là người hoặc việc được tưởng nhớ."
+   }
+  ]
+ },
+ {
+  "id": "073",
+  "letter": "L",
+  "words": [
+   [
+    "流传",
+    "liúchuán"
+   ],
+   [
+    "流行",
+    "liúxíng"
+   ],
+   [
+    "传播",
+    "chuánbō"
+   ]
+  ],
+  "common": "Cả ba đều là động từ chỉ việc lan rộng, truyền đi, nhưng mỗi từ nhấn mạnh một khía cạnh khác nhau nên ít khi thay cho nhau.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ",
+    "Động từ, tính từ",
+    "Động từ"
+   ],
+   [
+    "Trọng tâm",
+    "Truyền từ đời này sang đời khác, từ xưa đến nay",
+    "Thịnh hành nhanh, nhiều người chạy theo",
+    "Truyền bá, phổ biến cho nhiều người"
+   ],
+   [
+    "Từ thường đi kèm",
+    "故事、作品、说法、事迹",
+    "款式、颜色、歌曲、话语",
+    "知识、文化、理论、细菌"
+   ]
+  ],
+  "examples": [
+   [
+    "这个古老的传说已经流传了几百年。",
+    "Zhège gǔlǎo de chuánshuō yǐjīng liúchuán le jǐ bǎi nián.",
+    "Truyền thuyết cổ này đã lưu truyền mấy trăm năm.",
+    0
+   ],
+   [
+    "村里至今还流传着他勇敢救人的故事。",
+    "Cūn lǐ zhìjīn hái liúchuán zhe tā yǒnggǎn jiù rén de gùshi.",
+    "Trong làng đến nay vẫn còn lưu truyền câu chuyện anh ấy dũng cảm cứu người.",
+    0
+   ],
+   [
+    "今年流行的颜色是粉红色。",
+    "Jīnnián liúxíng de yánsè shì fěnhóngsè.",
+    "Màu thịnh hành năm nay là màu hồng.",
+    1
+   ],
+   [
+    "这种发型在年轻人中非常流行。",
+    "Zhè zhǒng fàxíng zài niánqīngrén zhōng fēicháng liúxíng.",
+    "Kiểu tóc này rất thịnh hành trong giới trẻ.",
+    1
+   ],
+   [
+    "记者的工作是向公众传播信息。",
+    "Jìzhě de gōngzuò shì xiàng gōngzhòng chuánbō xìnxī.",
+    "Công việc của phóng viên là truyền bá thông tin đến công chúng.",
+    2
+   ],
+   [
+    "这种细菌主要通过空气传播。",
+    "Zhè zhǒng xìjūn zhǔyào tōngguò kōngqì chuánbō.",
+    "Loại vi khuẩn này chủ yếu lây lan qua không khí.",
+    2
+   ]
+  ],
+  "tip": "Truyền qua các đời: 流传; đang là mốt, nhiều người theo: 流行; chủ động truyền bá, phổ biến: 传播.",
+  "questions": [
+   {
+    "q": "这个传统是一代一代___下来的。",
+    "answer": "流传",
+    "explain": "Truyền từ đời này sang đời khác thì dùng 流传; 流行 nhấn mạnh sự thịnh hành, 传播 nhấn mạnh việc truyền bá cho nhiều người."
+   },
+   {
+    "q": "蜜蜂的重要作用之一是___花粉。",
+    "answer": "传播",
+    "explain": "传播 mang tân ngữ như 花粉、知识、细菌; 流传 và 流行 không đi với tân ngữ kiểu này."
+   },
+   {
+    "q": "今年夏天，这种短裙特别___。",
+    "answer": "流行",
+    "explain": "Chỉ thứ đang được nhiều người ưa chuộng, làm vị ngữ tính từ (特别流行) là 流行."
+   },
+   {
+    "q": "这位老师一生都在向孩子们___科学知识。",
+    "answer": "传播",
+    "explain": "传播 + 知识 là kết hợp quen thuộc, chỉ việc truyền bá cho nhiều người; 流传 không mang tân ngữ chỉ tri thức như vậy."
+   }
+  ]
+ },
+ {
+  "id": "074",
+  "letter": "L",
+  "words": [
+   [
+    "旅行",
+    "lǚxíng"
+   ],
+   [
+    "旅游",
+    "lǚyóu"
+   ],
+   [
+    "游览",
+    "yóulǎn"
+   ]
+  ],
+  "common": "Cả ba đều là động từ liên quan đến việc đi chơi, đi xa; 旅行 và 旅游 không mang tân ngữ, còn 游览 phải có tân ngữ.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ",
+    "Động từ",
+    "Động từ"
+   ],
+   [
+    "Nghĩa",
+    "Đi xa, đi du lịch",
+    "Du ngoạn, du lịch",
+    "Ngắm cảnh, tham quan"
+   ],
+   [
+    "Tân ngữ",
+    "Không mang tân ngữ",
+    "Không mang tân ngữ",
+    "Phải mang tân ngữ chỉ nơi chốn: 游览故宫"
+   ],
+   [
+    "Cụm danh từ hay gặp",
+    "Đồ dùng khi đi xa: 旅行袋、旅行包、旅行社",
+    "Ngành du lịch: 旅游公司、旅游景点、旅游旺季",
+    "Ngắm cảnh: 游览路线、游览区"
+   ]
+  ],
+  "examples": [
+   [
+    "暑假我打算和朋友去云南旅行。",
+    "Shǔjià wǒ dǎsuàn hé péngyou qù Yúnnán lǚxíng.",
+    "Kỳ nghỉ hè tôi định cùng bạn đi du lịch Vân Nam.",
+    0
+   ],
+   [
+    "我买了一个新的旅行包。",
+    "Wǒ mǎi le yí gè xīn de lǚxíngbāo.",
+    "Tôi mua một chiếc túi du lịch mới.",
+    0
+   ],
+   [
+    "十一假期，很多人选择出国旅游。",
+    "Shíyī jiàqī, hěn duō rén xuǎnzé chūguó lǚyóu.",
+    "Kỳ nghỉ Quốc khánh, nhiều người chọn đi du lịch nước ngoài.",
+    1
+   ],
+   [
+    "这里是有名的旅游景点，游客特别多。",
+    "Zhèlǐ shì yǒumíng de lǚyóu jǐngdiǎn, yóukè tèbié duō.",
+    "Đây là điểm du lịch nổi tiếng, khách rất đông.",
+    1
+   ],
+   [
+    "上午我们游览了故宫。",
+    "Shàngwǔ wǒmen yóulǎn le Gùgōng.",
+    "Buổi sáng chúng tôi đã tham quan Cố Cung.",
+    2
+   ],
+   [
+    "请按照游览路线参观，不要走错。",
+    "Qǐng ànzhào yóulǎn lùxiàn cānguān, bú yào zǒu cuò.",
+    "Xin đi theo tuyến tham quan, đừng đi nhầm.",
+    2
+   ]
+  ],
+  "tip": "Đi xa nói chung: 旅行/旅游 (không tân ngữ); ngắm, tham quan một địa điểm cụ thể (có tân ngữ): 游览.",
+  "questions": [
+   {
+    "q": "质量好的___袋要两百多块一个。",
+    "answer": "旅行",
+    "explain": "旅行袋 (túi du lịch) là cụm chỉ đồ dùng mang theo khi đi xa, theo sách thuộc 旅行; 旅游 kết hợp với các từ của ngành du lịch, 游览 thì phải có tân ngữ."
+   },
+   {
+    "q": "现在不是___旺季，所以团费不太贵。",
+    "answer": "旅游",
+    "explain": "旅游旺季 là cụm thuộc ngành du lịch; theo sách đây là kiểu kết hợp của 旅游 (游览 thì phải có tân ngữ)."
+   },
+   {
+    "q": "今天下午，我们打算___天坛公园。",
+    "answer": "游览",
+    "explain": "Sau chỗ trống là địa điểm (天坛公园) làm tân ngữ; chỉ 游览 phải mang tân ngữ, 旅行 và 旅游 không mang tân ngữ."
+   },
+   {
+    "q": "这次去上海，你们___了哪些景点？",
+    "answer": "游览",
+    "explain": "Có tân ngữ 哪些景点 (các điểm tham quan) nên dùng 游览; 旅行 và 旅游 không mang tân ngữ."
+   }
+  ]
+ },
+ {
+  "id": "075",
+  "letter": "M",
+  "words": [
+   [
+    "马上",
+    "mǎshàng"
+   ],
+   [
+    "立刻",
+    "lìkè"
+   ],
+   [
+    "顿时",
+    "dùnshí"
+   ]
+  ],
+  "common": "Cả ba đều là phó từ, chỉ việc hoặc tình huống xảy ra nhanh, trong khoảng thời gian ngắn.",
+  "rows": [
+   [
+    "Từ loại",
+    "Phó từ",
+    "Phó từ",
+    "Phó từ"
+   ],
+   [
+    "Thời điểm",
+    "Sắp xảy ra hoặc xảy ra rất nhanh, mức độ “nhanh” theo cảm nhận người nói",
+    "Xảy ra ngay, sắc thái gấp gáp, dùng cả khẩu ngữ lẫn văn viết",
+    "Chỉ dùng cho việc đã xảy ra trong quá khứ"
+   ],
+   [
+    "Điều kiện",
+    "Không cần; hay đi với 就、就要",
+    "Thường sau một hành động, mệnh lệnh, thông báo",
+    "Không cần điều kiện"
+   ],
+   [
+    "Câu cầu khiến",
+    "Dùng được: 请你马上回来",
+    "Dùng được: 你们要立刻行动",
+    "Không dùng"
+   ],
+   [
+    "Dùng độc lập",
+    "Được: 好，马上！",
+    "Không",
+    "Không"
+   ]
+  ],
+  "examples": [
+   [
+    "你先坐一下，饭马上就好。",
+    "Nǐ xiān zuò yíxià, fàn mǎshàng jiù hǎo.",
+    "Bạn ngồi chút đi, cơm sắp xong ngay.",
+    0
+   ],
+   [
+    "电影马上就要开始了，我们快进去吧。",
+    "Diànyǐng mǎshàng jiù yào kāishǐ le, wǒmen kuài jìnqù ba.",
+    "Phim sắp bắt đầu rồi, chúng ta vào nhanh đi.",
+    0
+   ],
+   [
+    "听到警报声，大家立刻跑出了教学楼。",
+    "Tīngdào jǐngbào shēng, dàjiā lìkè pǎochū le jiàoxuélóu.",
+    "Nghe tiếng còi báo động, mọi người lập tức chạy ra khỏi tòa nhà học.",
+    1
+   ],
+   [
+    "医生说你要立刻去医院检查。",
+    "Yīshēng shuō nǐ yào lìkè qù yīyuàn jiǎnchá.",
+    "Bác sĩ bảo bạn phải đến bệnh viện kiểm tra ngay.",
+    1
+   ],
+   [
+    "灯一下子灭了，房间里顿时一片漆黑。",
+    "Dēng yíxiàzi miè le, fángjiān lǐ dùnshí yí piàn qīhēi.",
+    "Đèn bỗng tắt, trong phòng bỗng chốc tối đen.",
+    2
+   ],
+   [
+    "听到这个坏消息，他顿时说不出话来。",
+    "Tīngdào zhège huài xiāoxi, tā dùnshí shuō bu chū huà lái.",
+    "Nghe tin xấu này, anh ấy bỗng chốc không nói nên lời.",
+    2
+   ]
+  ],
+  "tip": "Sắp xảy ra, đi với 就要 hoặc đáp “vâng, ngay!”: 马上; mệnh lệnh, gấp gáp: 立刻; thay đổi bất ngờ trong quá khứ: 顿时.",
+  "questions": [
+   {
+    "q": "A：快点儿，客人都到了！ B：好，___！",
+    "answer": "马上",
+    "explain": "Chỉ 马上 có thể đứng độc lập làm câu đáp; 立刻 và 顿时 không có cách dùng này."
+   },
+   {
+    "q": "老师一走进教室，大家___安静了下来。",
+    "answer": "顿时",
+    "explain": "Theo R8: 马上 và 立刻 cũng đúng ngữ pháp ở đây, nhưng 顿时 chỉ dùng cho việc đã xảy ra và nhấn mạnh tình huống thay đổi đột ngột do nguyên nhân vừa nói, nên 顿时 là lựa chọn sát nghĩa nhất."
+   },
+   {
+    "q": "收到命令后，你们必须___出发，一分钟也不能等。",
+    "answer": "立刻",
+    "explain": "Theo R8: 马上 cũng đúng ngữ pháp trong câu cầu khiến này; 立刻 mang sắc thái gấp gáp, thường theo sau mệnh lệnh hoặc thông báo nên được chọn. 顿时 thì không dùng trong câu cầu khiến."
+   },
+   {
+    "q": "春节___就到了，火车票很难买。",
+    "answer": "马上",
+    "explain": "Việc sắp xảy ra thường đi với 马上 + 就; 顿时 chỉ dùng cho việc đã xảy ra nên không hợp với tương lai."
+   }
+  ]
+ },
+ {
+  "id": "076",
+  "letter": "M",
+  "words": [
+   [
+    "买卖",
+    "mǎimai"
+   ],
+   [
+    "生意",
+    "shēngyi"
+   ],
+   [
+    "贸易",
+    "màoyì"
+   ],
+   [
+    "交易",
+    "jiāoyì"
+   ]
+  ],
+  "common": "Cả bốn đều là danh từ chỉ hoạt động mua bán, làm ăn; riêng 交易 còn là động từ.",
+  "rows": [
+   [
+    "Từ loại",
+    "Danh từ",
+    "Danh từ",
+    "Danh từ",
+    "Động từ, danh từ"
+   ],
+   [
+    "Quy mô",
+    "Nhỏ, mua bán nhỏ",
+    "Làm ăn, kinh doanh nói chung",
+    "Lớn: cấp công ty, quốc gia",
+    "Giao dịch, trao đổi"
+   ],
+   [
+    "Nghĩa “cửa hàng”",
+    "Có (lượng từ 家)",
+    "Không",
+    "Không",
+    "Không"
+   ],
+   [
+    "Lượng từ 笔",
+    "Có",
+    "Có",
+    "Không",
+    "Có"
+   ],
+   [
+    "Cụm tiêu biểu",
+    "做买卖",
+    "做生意、生意好",
+    "对外贸易、贸易顺差",
+    "交易所、交易时间"
+   ]
+  ],
+  "examples": [
+   [
+    "他爸爸做了一辈子小买卖。",
+    "Tā bàba zuò le yí bèizi xiǎo mǎimai.",
+    "Ba anh ấy buôn bán nhỏ cả đời.",
+    0
+   ],
+   [
+    "街角那家买卖开了二十多年了。",
+    "Jiējiǎo nà jiā mǎimai kāi le èrshí duō nián le.",
+    "Cửa hàng ở góc phố đã mở hơn hai mươi năm.",
+    0
+   ],
+   [
+    "过年前后，这家饭店的生意特别好。",
+    "Guònián qiánhòu, zhè jiā fàndiàn de shēngyi tèbié hǎo.",
+    "Dịp Tết, việc làm ăn của nhà hàng này rất tốt.",
+    1
+   ],
+   [
+    "他在上海做生意已经十年了。",
+    "Tā zài Shànghǎi zuò shēngyi yǐjīng shí nián le.",
+    "Anh ấy làm ăn ở Thượng Hải đã mười năm.",
+    1
+   ],
+   [
+    "两国之间的贸易越来越频繁。",
+    "Liǎng guó zhījiān de màoyì yuèláiyuè pínfán.",
+    "Thương mại giữa hai nước ngày càng nhộn nhịp.",
+    2
+   ],
+   [
+    "这家公司主要从事对外贸易。",
+    "Zhè jiā gōngsī zhǔyào cóngshì duìwài màoyì.",
+    "Công ty này chủ yếu làm ngoại thương.",
+    2
+   ],
+   [
+    "这笔交易已经谈了三个月，终于成功了。",
+    "Zhè bǐ jiāoyì yǐjīng tán le sān gè yuè, zhōngyú chénggōng le.",
+    "Giao dịch này đàm phán ba tháng, cuối cùng đã thành.",
+    3
+   ],
+   [
+    "网上交易要注意安全。",
+    "Wǎngshàng jiāoyì yào zhùyì ānquán.",
+    "Giao dịch trên mạng cần chú ý an toàn.",
+    3
+   ]
+  ],
+  "tip": "Cửa hàng, buôn bán nhỏ: 买卖; làm ăn nói chung: 生意; thương mại quy mô lớn: 贸易; giao dịch, trao đổi: 交易.",
+  "questions": [
+   {
+    "q": "他在广州开了两家服装___，都在步行街上。",
+    "answer": "买卖",
+    "explain": "Chỉ 买卖 còn có nghĩa “cửa hàng” và đi với lượng từ 家; 生意 dùng lượng từ 笔, 贸易 và 交易 không có nghĩa này."
+   },
+   {
+    "q": "祝你的新店开张大吉，___兴隆！",
+    "answer": "生意",
+    "explain": "Theo R8: 买卖兴隆 cũng nói được, nhưng 生意兴隆 là câu chúc làm ăn phát đạt phổ biến hơn hẳn; 贸易 và 交易 chỉ thương mại quy mô lớn hoặc giao dịch, không phải cách chúc thông dụng."
+   },
+   {
+    "q": "这个国家出口增长很快，___顺差也在扩大。",
+    "answer": "贸易",
+    "explain": "贸易顺差 (thặng dư thương mại) là cụm chỉ thương mại quy mô lớn cấp quốc gia, chỉ đi với 贸易."
+   },
+   {
+    "q": "股票___所周末不开门，下周一再来吧。",
+    "answer": "交易",
+    "explain": "交易所 (sở giao dịch) là cụm của 交易, chỉ nơi diễn ra giao dịch."
+   }
+  ]
+ },
+ {
+  "id": "077",
+  "letter": "M",
+  "words": [
+   [
+    "满意",
+    "mǎnyì"
+   ],
+   [
+    "满足",
+    "mǎnzú"
+   ]
+  ],
+  "common": "Cả hai đều là động từ chỉ cảm giác vừa lòng; 满意 là hài lòng, vừa ý, còn 满足 là thỏa mãn, đầy đủ.",
+  "rows": [
+   [
+    "Trọng tâm",
+    "Hài lòng, vừa ý",
+    "Thỏa mãn, đầy đủ; làm thỏa mãn yêu cầu, nhu cầu"
+   ],
+   [
+    "Tân ngữ",
+    "Mang tân ngữ trực tiếp, hoặc 对…(不)满意",
+    "Phải kèm 于, hoặc 对…(不)满足; hay đi với 愿望、要求、需求"
+   ],
+   [
+    "Làm định ngữ",
+    "Được: 满意的工作",
+    "Không"
+   ]
+  ],
+  "examples": [
+   [
+    "顾客对这家酒店的服务非常满意。",
+    "Gùkè duì zhè jiā jiǔdiàn de fúwù fēicháng mǎnyì.",
+    "Khách rất hài lòng với dịch vụ của khách sạn này.",
+    0
+   ],
+   [
+    "我很满意这次旅行的安排。",
+    "Wǒ hěn mǎnyì zhè cì lǚxíng de ānpái.",
+    "Tôi rất hài lòng với sự sắp xếp của chuyến đi này.",
+    0
+   ],
+   [
+    "学校尽量满足学生的合理要求。",
+    "Xuéxiào jǐnliàng mǎnzú xuésheng de hélǐ yāoqiú.",
+    "Nhà trường cố gắng đáp ứng những yêu cầu hợp lý của học sinh.",
+    1
+   ],
+   [
+    "有一碗热汤面，他就感到很满足了。",
+    "Yǒu yì wǎn rè tāng miàn, tā jiù gǎndào hěn mǎnzú le.",
+    "Chỉ cần một bát mì nước nóng là anh ấy đã thấy mãn nguyện.",
+    1
+   ]
+  ],
+  "tip": "Hài lòng, vừa ý, làm định ngữ được: 满意; thỏa mãn nhu cầu, yêu cầu hoặc 满足于…: 满足.",
+  "questions": [
+   {
+    "q": "他希望毕业后能找到一份___的工作。",
+    "answer": "满意",
+    "explain": "Chỉ 满意 làm định ngữ được (满意的工作); 满足 không làm định ngữ."
+   },
+   {
+    "q": "我们公司的产品很丰富，能___不同客户的需求。",
+    "answer": "满足",
+    "explain": "满足 + 需求 (đáp ứng nhu cầu) là kết hợp đặc trưng của 满足; 满意 không đi với 需求 theo nghĩa này."
+   },
+   {
+    "q": "年轻人不要___于现在的成绩，还要继续努力。",
+    "answer": "满足",
+    "explain": "满足 phải kèm 于 khi mang tân ngữ (满足于…), với nghĩa thỏa mãn; 满意 mang tân ngữ trực tiếp hoặc dùng 对…满意."
+   },
+   {
+    "q": "老板很___他的工作态度，决定给他加薪。",
+    "answer": "满意",
+    "explain": "满意 mang tân ngữ trực tiếp (满意他的工作态度) với nghĩa hài lòng; 满足 cần thêm 于 nên không hợp ở đây."
+   }
+  ]
+ },
+ {
+  "id": "078",
+  "letter": "M",
+  "words": [
+   [
+    "没关系",
+    "méiguānxi"
+   ],
+   [
+    "没什么",
+    "méishénme"
+   ],
+   [
+    "没事儿",
+    "méishìr"
+   ]
+  ],
+  "common": "Cả ba đều dùng để đáp lại lời xin lỗi (对不起 - 没关系/没什么/没事儿), nhưng ở các trường hợp khác thì nghĩa và cách dùng khác nhau.",
+  "rows": [
+   [
+    "Đáp lời cảm ơn",
+    "Không",
+    "Có: 没什么，你太客气了",
+    "Không"
+   ],
+   [
+    "Nghĩa “không sao, không quan trọng”",
+    "Có: 去不了也没关系",
+    "Có: 去不了也没什么",
+    "Không dùng nghĩa này"
+   ],
+   [
+    "Nghĩa “rảnh rỗi”",
+    "Không",
+    "Không",
+    "Có: 没事儿的时候"
+   ],
+   [
+    "Nghĩa “không liên quan”",
+    "Có, đi với 跟、和: 跟你没关系",
+    "Không",
+    "Không"
+   ]
+  ],
+  "examples": [
+   [
+    "迟到五分钟没关系，我们等你。",
+    "Chídào wǔ fēnzhōng méiguānxi, wǒmen děng nǐ.",
+    "Muộn năm phút không sao, chúng tôi đợi bạn.",
+    0
+   ],
+   [
+    "这件事跟我没关系，你去问小李吧。",
+    "Zhè jiàn shì gēn wǒ méiguānxi, nǐ qù wèn Xiǎo Lǐ ba.",
+    "Việc này không liên quan đến tôi, bạn đi hỏi Tiểu Lý đi.",
+    0
+   ],
+   [
+    "A：谢谢你送我回家！ B：没什么，顺路而已。",
+    "A: Xièxie nǐ sòng wǒ huíjiā! B: Méishénme, shùnlù éryǐ.",
+    "A: Cảm ơn bạn đưa tôi về! B: Không có gì, tiện đường thôi.",
+    1
+   ],
+   [
+    "说错了没什么，大家都会理解的。",
+    "Shuō cuò le méishénme, dàjiā dōu huì lǐjiě de.",
+    "Nói sai cũng không sao, mọi người sẽ thông cảm.",
+    1
+   ],
+   [
+    "周末没事儿的时候，我喜欢去公园散步。",
+    "Zhōumò méishìr de shíhou, wǒ xǐhuan qù gōngyuán sànbù.",
+    "Cuối tuần rảnh rỗi, tôi thích ra công viên đi dạo.",
+    2
+   ],
+   [
+    "你别担心，他只是摔了一跤，没事儿。",
+    "Nǐ bié dānxīn, tā zhǐ shì shuāi le yì jiāo, méishìr.",
+    "Bạn đừng lo, anh ấy chỉ ngã một cái thôi, không sao.",
+    2
+   ]
+  ],
+  "tip": "Đáp lời cảm ơn: 没什么; rảnh rỗi hoặc không xảy ra sự cố: 没事儿; không liên quan (跟/和): 没关系.",
+  "questions": [
+   {
+    "q": "爷爷___的时候喜欢和邻居下棋。",
+    "answer": "没事儿",
+    "explain": "Nghĩa “rảnh rỗi, không có việc” chỉ có ở 没事儿."
+   },
+   {
+    "q": "这件事跟你___，你就别操心了。",
+    "answer": "没关系",
+    "explain": "“跟…没关系” (không liên quan đến…) là cách dùng của 没关系; 没什么 và 没事儿 không có nghĩa này."
+   },
+   {
+    "q": "A：谢谢你帮我拿行李！ B：___，举手之劳。",
+    "answer": "没什么",
+    "explain": "Đáp lại lời cảm ơn chỉ dùng 没什么; 没关系 và 没事儿 dùng để đáp lời xin lỗi."
+   },
+   {
+    "q": "听说那场车祸里，他们俩都___，已经回家了。",
+    "answer": "没事儿",
+    "explain": "没事儿 nói về việc không xảy ra sự cố, không gặp chuyện ngoài ý muốn; 没关系 và 没什么 không dùng theo cách này."
+   }
+  ]
+ },
+ {
+  "id": "079",
+  "letter": "M",
+  "words": [
+   [
+    "每",
+    "měi"
+   ],
+   [
+    "各",
+    "gè"
+   ]
+  ],
+  "common": "Cả hai đều là đại từ (và phó từ) chỉ “mỗi”, nhấn mạnh từng cá thể, và đều đứng trước lượng từ hoặc danh từ.",
+  "rows": [
+   [
+    "Từ loại",
+    "Đại từ, phó từ",
+    "Đại từ, phó từ"
+   ],
+   [
+    "Ý nghĩa",
+    "“Mỗi”, xét từng đơn vị nhỏ trong tổng thể, nét tương đồng",
+    "“Các, mỗi loại”, nhấn mạnh sự khác biệt giữa các đơn vị"
+   ],
+   [
+    "Danh từ không cần lượng từ",
+    "Chỉ 人、家 và từ chỉ thời gian: 每天、每年",
+    "Thường tạo cụm 各…各…: 各国各地、各种各样"
+   ],
+   [
+    "Khi làm phó từ",
+    "Quy luật “mỗi khi, mỗi lần”: 每到…",
+    "“Mỗi loại, mỗi cái”: 各要一斤"
+   ]
+  ],
+  "examples": [
+   [
+    "我爸爸每天晚上都要看新闻。",
+    "Wǒ bàba měi tiān wǎnshang dōu yào kàn xīnwén.",
+    "Ba tôi tối nào cũng xem tin tức.",
+    0
+   ],
+   [
+    "每到周末，我们全家都去爬山。",
+    "Měi dào zhōumò, wǒmen quánjiā dōu qù páshān.",
+    "Cứ đến cuối tuần là cả nhà chúng tôi đi leo núi.",
+    0
+   ],
+   [
+    "超市里摆满了各种各样的水果。",
+    "Chāoshì lǐ bǎi mǎn le gè zhǒng gè yàng de shuǐguǒ.",
+    "Siêu thị bày đầy đủ loại hoa quả.",
+    1
+   ],
+   [
+    "面条和米饭，我们俩各点了一份。",
+    "Miàntiáo hé mǐfàn, wǒmen liǎ gè diǎn le yí fèn.",
+    "Mì và cơm, hai đứa mỗi người gọi một phần.",
+    1
+   ]
+  ],
+  "tip": "Mỗi khi, mỗi ngày, mỗi lần (quy luật): 每; các loại khác nhau, mỗi bên một: 各.",
+  "questions": [
+   {
+    "q": "我爸爸___天晚上都要看新闻。",
+    "answer": "每",
+    "explain": "Danh từ chỉ thời gian như 天 đứng ngay sau 每 mà không cần lượng từ (每天); 各 không dùng với danh từ thời gian theo cách này."
+   },
+   {
+    "q": "节日里，大街上挂着___种各样的灯笼。",
+    "answer": "各",
+    "explain": "各种各样 là cụm cố định tạo bằng 各…各…, nhấn mạnh nhiều loại khác nhau; 每 không tạo cụm này."
+   },
+   {
+    "q": "___到夏天，这座海滨城市就挤满了游客。",
+    "answer": "每",
+    "explain": "每到… chỉ quy luật “mỗi khi, mỗi lần” lặp lại; đây là cách dùng của 每."
+   },
+   {
+    "q": "两家餐厅___有特色，你选哪家都行。",
+    "answer": "各",
+    "explain": "各 làm phó từ, nhấn mạnh mỗi cái có điểm riêng (各有特色); 每 không dùng làm phó từ theo nghĩa này."
+   }
+  ]
+ },
+ {
+  "id": "080",
+  "letter": "M",
+  "words": [
+   [
+    "美丽",
+    "měilì"
+   ],
+   [
+    "漂亮",
+    "piàoliang"
+   ],
+   [
+    "好看",
+    "hǎokàn"
+   ]
+  ],
+  "common": "Cả ba đều là tính từ chỉ vẻ đẹp, dùng cho phụ nữ, đồ dùng của phụ nữ và cảnh vật: 这件衣服很美丽/漂亮/好看.",
+  "rows": [
+   [
+    "Từ loại",
+    "Tính từ",
+    "Tính từ",
+    "Tính từ"
+   ],
+   [
+    "Đối tượng",
+    "Phụ nữ, đồ dùng của phụ nữ, phong cảnh",
+    "Cả nam và nữ, đồ vật, phong cảnh",
+    "Vẻ đẹp nói chung"
+   ],
+   [
+    "Phim, kịch, truyện (hay)",
+    "Không",
+    "Không",
+    "Có: 这部电影真好看"
+   ],
+   [
+    "Làm bổ ngữ",
+    "Không",
+    "Có, nghĩa “xuất sắc, đẹp mắt”: 赢得真漂亮",
+    "Có: 穿得很好看"
+   ]
+  ],
+  "examples": [
+   [
+    "那里的风景美丽极了。",
+    "Nàlǐ de fēngjǐng měilì jí le.",
+    "Phong cảnh ở đó đẹp vô cùng.",
+    0
+   ],
+   [
+    "她有一双美丽的眼睛。",
+    "Tā yǒu yì shuāng měilì de yǎnjing.",
+    "Cô ấy có đôi mắt đẹp.",
+    0
+   ],
+   [
+    "这个女孩子长得很漂亮。",
+    "Zhège nǚháizi zhǎng de hěn piàoliang.",
+    "Cô bé này xinh xắn.",
+    1
+   ],
+   [
+    "他的字写得真漂亮。",
+    "Tā de zì xiě de zhēn piàoliang.",
+    "Chữ anh ấy viết thật đẹp.",
+    1
+   ],
+   [
+    "这部电视剧非常好看，我一口气看完了。",
+    "Zhè bù diànshìjù fēicháng hǎokàn, wǒ yì kǒu qì kàn wán le.",
+    "Bộ phim truyền hình này rất hay, tôi xem một mạch hết luôn.",
+    2
+   ],
+   [
+    "这条裙子你穿着很好看。",
+    "Zhè tiáo qúnzi nǐ chuān zhe hěn hǎokàn.",
+    "Chiếc váy này bạn mặc rất đẹp.",
+    2
+   ]
+  ],
+  "tip": "Phim, truyện hay: 好看; làm việc xuất sắc, bổ ngữ “đẹp mắt”: 漂亮; vẻ đẹp trữ tình của cảnh, người, câu chuyện: 美丽.",
+  "questions": [
+   {
+    "q": "这本小说真___，我看了好几遍也不腻。",
+    "answer": "好看",
+    "explain": "Nghĩa “hay, hấp dẫn” (nói về truyện, phim, kịch) chỉ có ở 好看; 美丽 và 漂亮 chỉ vẻ đẹp."
+   },
+   {
+    "q": "昨天的比赛，我们队赢得很___。",
+    "answer": "漂亮",
+    "explain": "漂亮 làm bổ ngữ với nghĩa “xuất sắc, đẹp mắt” (赢得漂亮); 美丽 không làm bổ ngữ."
+   },
+   {
+    "q": "听说云南的石林有一个很___的传说。",
+    "answer": "美丽",
+    "explain": "“美丽的传说” là cách nói quen thuộc, 美丽 mang sắc thái đẹp có chất thơ; 漂亮 và 好看 thiên về ngoại hình, đồ vật hoặc phim, truyện hay."
+   },
+   {
+    "q": "这件事你办得真___，老板非常满意。",
+    "answer": "漂亮",
+    "explain": "漂亮 làm bổ ngữ nghĩa “xuất sắc, tròn trịa” (办得漂亮); 美丽 không làm bổ ngữ."
+   }
+  ]
+ },
+ {
+  "id": "081",
+  "letter": "M",
+  "words": [
+   [
+    "免得",
+    "miǎnde"
+   ],
+   [
+    "省得",
+    "shěngde"
+   ]
+  ],
+  "common": "Cả hai đều là liên từ, đặt ở vế sau, biểu thị tránh điều không mong muốn xảy ra.",
+  "rows": [
+   [
+    "Từ loại",
+    "Liên từ",
+    "Liên từ"
+   ],
+   [
+    "Vị trí",
+    "Vế sau của câu",
+    "Vế sau của câu"
+   ],
+   [
+    "Nghĩa “đỡ phải, tiết kiệm”",
+    "Không mang nghĩa này",
+    "Có: đỡ phải tốn công, tiền bạc"
+   ]
+  ],
+  "examples": [
+   [
+    "出门前检查一下门窗，免得小偷进来。",
+    "Chūmén qián jiǎnchá yíxià ménchuāng, miǎnde xiǎotōu jìnlái.",
+    "Trước khi ra ngoài hãy kiểm tra cửa, kẻo kẻ trộm vào.",
+    0
+   ],
+   [
+    "你给家里打个电话吧，免得爸妈着急。",
+    "Nǐ gěi jiā lǐ dǎ ge diànhuà ba, miǎnde bàmā zháojí.",
+    "Bạn gọi điện về nhà đi, kẻo bố mẹ sốt ruột.",
+    0
+   ],
+   [
+    "我把地址发给你，省得你再问别人。",
+    "Wǒ bǎ dìzhǐ fā gěi nǐ, shěngde nǐ zài wèn biérén.",
+    "Tôi gửi địa chỉ cho bạn, đỡ phải hỏi người khác nữa.",
+    1
+   ],
+   [
+    "晚上自己做饭吧，省得出去吃花钱。",
+    "Wǎnshang zìjǐ zuòfàn ba, shěngde chūqù chī huā qián.",
+    "Tối tự nấu cơm đi, đỡ phải ra ngoài ăn tốn tiền.",
+    1
+   ]
+  ],
+  "tip": "Chỉ “kẻo, tránh”: 免得; có thêm sắc thái “đỡ phải tốn công, tốn tiền”: 省得.",
+  "questions": [
+   {
+    "q": "我一直用哥哥的旧电脑，___再花钱买新的。",
+    "answer": "省得",
+    "explain": "Ý “đỡ phải tốn tiền” là sắc thái riêng của 省得; theo sách 免得 không dùng trong câu có nghĩa tiết kiệm này."
+   },
+   {
+    "q": "公司给员工安排了宿舍，___他们自己花钱租房。",
+    "answer": "省得",
+    "explain": "Câu nói về việc đỡ phải bỏ tiền, tốn công nên dùng 省得; theo sách 免得 không mang nghĩa “tiết kiệm” này."
+   },
+   {
+    "q": "出门前再检查一遍，___忘带钥匙。",
+    "answer": "免得",
+    "explain": "Theo R8: 省得 cũng đúng ngữ pháp ở đây, nhưng nó thường mang sắc thái “đỡ phải tốn công, tiền”; câu này chỉ là tránh một việc không mong muốn nên 免得 trung tính và hợp hơn."
+   },
+   {
+    "q": "这件事先别告诉她，___她不高兴。",
+    "answer": "免得",
+    "explain": "Theo R8: 省得 cũng đúng ngữ pháp, nhưng không có ý tiết kiệm công sức hay tiền bạc nào ở đây; chỉ tránh việc không mong muốn nên chọn 免得 trung tính hơn."
+   }
+  ]
+ },
+ {
+  "id": "082",
+  "letter": "N",
+  "words": [
+   [
+    "那",
+    "nà"
+   ],
+   [
+    "那么",
+    "nàme"
+   ]
+  ],
+  "common": "Cả hai đều là đại từ và liên từ; làm liên từ đều dẫn ra kết quả hoặc nhận định ở vế sau, hay đi với 既然、如果.",
+  "rows": [
+   [
+    "Từ loại",
+    "Đại từ, liên từ",
+    "Đại từ, liên từ"
+   ],
+   [
+    "Chỉ người, vật ở xa (“đó, kia”)",
+    "Có: 那个人、那时候; đứng độc lập làm chủ ngữ: 那是…",
+    "Không"
+   ],
+   [
+    "Chỉ mức độ, cách thức (“như vậy”)",
+    "Không",
+    "Có: đứng trước tính từ, động từ: 那么红、那么说"
+   ],
+   [
+    "Đứng trước số từ",
+    "Không",
+    "Có, nhấn mạnh nhiều hoặc ít: 那么五个人"
+   ],
+   [
+    "Làm liên từ (如果…，那/那么…)",
+    "Dùng như nhau",
+    "Dùng như nhau"
+   ]
+  ],
+  "examples": [
+   [
+    "那本书是谁的？",
+    "Nà běn shū shì shéi de?",
+    "Cuốn sách kia là của ai?",
+    0
+   ],
+   [
+    "那是我们的新老师。",
+    "Nà shì wǒmen de xīn lǎoshī.",
+    "Đó là thầy giáo mới của chúng tôi.",
+    0
+   ],
+   [
+    "他的汉语说得那么流利，一定学了很多年。",
+    "Tā de Hànyǔ shuō de nàme liúlì, yídìng xué le hěn duō nián.",
+    "Tiếng Hán anh ấy nói lưu loát thế, chắc học nhiều năm rồi.",
+    1
+   ],
+   [
+    "就那么几个人，一桌饭菜吃不完。",
+    "Jiù nàme jǐ gè rén, yì zhuō fàncài chī bu wán.",
+    "Chỉ chừng ấy người, cả bàn đồ ăn ăn không hết.",
+    1
+   ]
+  ],
+  "tip": "Chỉ người, vật ở xa hoặc đứng độc lập làm chủ ngữ: 那; chỉ mức độ, cách thức, đứng trước số từ: 那么.",
+  "questions": [
+   {
+    "q": "站在门口的___个人是我的老同学。",
+    "answer": "那",
+    "explain": "Chỉ người ở xa (“người kia”), đứng trước lượng từ: 那个人 là cách dùng của 那."
+   },
+   {
+    "q": "你听错了，我不是___说的。",
+    "answer": "那么",
+    "explain": "那么 đứng trước động từ chỉ cách thức (“như thế”): 那么说; 那 không dùng theo nghĩa này."
+   },
+   {
+    "q": "这座山没有你想的___高，一个小时就能爬上去。",
+    "answer": "那么",
+    "explain": "那么 đứng trước tính từ để chỉ mức độ; 那 không đứng trước tính từ theo nghĩa này."
+   },
+   {
+    "q": "___是我们学校的图书馆，旁边是体育馆。",
+    "answer": "那",
+    "explain": "Làm chủ ngữ đứng độc lập chỉ vật ở xa (“kia là…”) chỉ có 那; 那么 không đứng độc lập như vậy."
+   }
+  ]
+ },
+ {
+  "id": "083",
+  "letter": "N",
+  "words": [
+   [
+    "难怪",
+    "nánguài"
+   ],
+   [
+    "怪不得",
+    "guàibude"
+   ]
+  ],
+  "common": "Cả hai đều chỉ việc chợt hiểu ra nguyên nhân (thảo nào, hèn chi), hay đi với 原来; cũng có nghĩa “khó trách”, tức không nên oán trách.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ, phó từ",
+    "Kết cấu động - bổ"
+   ],
+   [
+    "Tân ngữ",
+    "Có hoặc không: 这也难怪",
+    "Phải có tân ngữ phía sau: 怪不得他"
+   ],
+   [
+    "Thêm 很 phía trước",
+    "Được: 很难怪他",
+    "Không"
+   ],
+   [
+    "Văn viết",
+    "Dùng được",
+    "Không dùng"
+   ]
+  ],
+  "examples": [
+   [
+    "他是第一次做这道菜，做得不好也难怪。",
+    "Tā shì dì-yī cì zuò zhè dào cài, zuò de bù hǎo yě nánguài.",
+    "Anh ấy lần đầu nấu món này, làm không ngon cũng dễ hiểu.",
+    0
+   ],
+   [
+    "难怪她这么高兴，原来她通过了考试。",
+    "Nánguài tā zhème gāoxìng, yuánlái tā tōngguò le kǎoshì.",
+    "Thảo nào cô ấy vui thế, hóa ra cô ấy đã thi đỗ.",
+    0
+   ],
+   [
+    "事情这么复杂，怪不得你。",
+    "Shìqing zhème fùzá, guàibude nǐ.",
+    "Việc phức tạp thế này, không trách bạn được.",
+    1
+   ],
+   [
+    "怪不得他不吃肉，原来他是素食者。",
+    "Guàibude tā bù chī ròu, yuánlái tā shì sùshízhě.",
+    "Thảo nào anh ấy không ăn thịt, hóa ra anh ấy ăn chay.",
+    1
+   ]
+  ],
+  "tip": "Có thể thêm 很, không tân ngữ hoặc dùng trong văn viết: 难怪; luôn kèm tân ngữ phía sau: 怪不得.",
+  "questions": [
+   {
+    "q": "这事儿也很___他，他当时并不知道情况。",
+    "answer": "难怪",
+    "explain": "Phía trước có 很 nên dùng 难怪; 怪不得 không đi sau 很."
+   },
+   {
+    "q": "他是个新手，把机器弄坏了也___。",
+    "answer": "难怪",
+    "explain": "这也难怪 không có tân ngữ nên dùng 难怪; theo sách 怪不得 phải kèm tân ngữ phía sau."
+   },
+   {
+    "q": "刚才的失误是我没提醒，这件事___你们。",
+    "answer": "怪不得",
+    "explain": "Theo R8: 难怪 cũng đúng ngữ pháp (难怪你们); 怪不得 + tân ngữ diễn đạt rõ “không nên trách ai”, cách nói khẩu ngữ tự nhiên khi tân ngữ là người, nên chọn 怪不得."
+   },
+   {
+    "q": "___他今天没来上课，原来他生病了。",
+    "answer": "怪不得",
+    "explain": "Theo R8: cả hai đều hợp với 原来 (thảo nào…, hóa ra…); 怪不得 là cách nói khẩu ngữ hơn, 难怪 thì dùng được cả trong văn viết, nên với câu nói thường ngày chọn 怪不得."
+   }
+  ]
+ },
+ {
+  "id": "084",
+  "letter": "N",
+  "words": [
+   [
+    "难过",
+    "nánguò"
+   ],
+   [
+    "难受",
+    "nánshòu"
+   ]
+  ],
+  "common": "Cả hai đều là tính từ, đều mang nghĩa đau lòng, buồn khổ.",
+  "rows": [
+   [
+    "Từ loại",
+    "Tính từ, động từ",
+    "Tính từ"
+   ],
+   [
+    "Buồn, đau lòng",
+    "Có",
+    "Có"
+   ],
+   [
+    "Cuộc sống khó khăn, vất vả",
+    "Có: 日子很难过",
+    "Không"
+   ],
+   [
+    "Khó chịu trong người",
+    "Không",
+    "Có: 发烧、肚子疼时觉得难受"
+   ],
+   [
+    "Động từ “khó vượt qua”",
+    "Có: 这一关很难过",
+    "Không"
+   ]
+  ],
+  "examples": [
+   [
+    "听到老朋友生病的消息，我心里很难过。",
+    "Tīngdào lǎo péngyou shēngbìng de xiāoxi, wǒ xīnlǐ hěn nánguò.",
+    "Nghe tin bạn cũ bị bệnh, trong lòng tôi rất buồn.",
+    0
+   ],
+   [
+    "那几年家里很穷，日子过得很难过。",
+    "Nà jǐ nián jiā lǐ hěn qióng, rìzi guò de hěn nánguò.",
+    "Mấy năm đó nhà nghèo, cuộc sống rất vất vả.",
+    0
+   ],
+   [
+    "感冒的时候，头疼得非常难受。",
+    "Gǎnmào de shíhou, tóu téng de fēicháng nánshòu.",
+    "Lúc cảm, đau đầu rất khó chịu.",
+    1
+   ],
+   [
+    "看到孩子哭，妈妈心里也很难受。",
+    "Kàndào háizi kū, māma xīnlǐ yě hěn nánshòu.",
+    "Thấy con khóc, mẹ cũng đau lòng.",
+    1
+   ]
+  ],
+  "tip": "Đau lòng thì dùng được cả hai; đời sống vất vả hoặc “khó vượt qua”: 难过; khó chịu trong cơ thể: 难受.",
+  "questions": [
+   {
+    "q": "物价越来越高，工资又不涨，日子越来越___。",
+    "answer": "难过",
+    "explain": "Chỉ cuộc sống khó khăn, vất vả là nghĩa riêng của 难过; 难受 không dùng như vậy."
+   },
+   {
+    "q": "自古英雄___美人关。",
+    "answer": "难过",
+    "explain": "难过 làm động từ nghĩa “khó vượt qua” (难过美人关); 难受 không có cách dùng này."
+   },
+   {
+    "q": "你吃得太多了，肚子肯定觉得___。",
+    "answer": "难受",
+    "explain": "Cảm giác khó chịu trong người (肚子难受) là nghĩa của 难受; 难过 không dùng cho cảm giác thân thể."
+   },
+   {
+    "q": "他发烧了，浑身都___，需要好好休息。",
+    "answer": "难受",
+    "explain": "Khó chịu trong người khi bị bệnh thì dùng 难受; 难过 không chỉ cảm giác thân thể."
+   }
+  ]
+ },
+ {
+  "id": "085",
+  "letter": "N",
+  "words": [
+   [
+    "难免",
+    "nánmiǎn"
+   ],
+   [
+    "不免",
+    "bùmiǎn"
+   ]
+  ],
+  "common": "Cả hai đều có thể làm trạng ngữ, biểu thị điều gì đó khó hoặc không tránh khỏi.",
+  "rows": [
+   [
+    "Từ loại",
+    "Tính từ",
+    "Phó từ"
+   ],
+   [
+    "Sắc thái",
+    "Khó tránh khỏi, thường là điều không tốt, không mong muốn",
+    "Không tránh khỏi, hệ quả hiển nhiên, hợp lý"
+   ],
+   [
+    "Từ phủ định phía sau",
+    "Được: 难免不高兴",
+    "Thường không đi với từ phủ định"
+   ],
+   [
+    "Cấu trúc 是…的, vị ngữ, định ngữ",
+    "Được: 是难免的",
+    "Không"
+   ]
+  ],
+  "examples": [
+   [
+    "刚开始学开车，难免会紧张。",
+    "Gāng kāishǐ xué kāichē, nánmiǎn huì jǐnzhāng.",
+    "Mới học lái xe, khó tránh khỏi căng thẳng.",
+    0
+   ],
+   [
+    "人多的地方，难免会吵闹一些。",
+    "Rén duō de dìfang, nánmiǎn huì chǎonào yìxiē.",
+    "Nơi đông người thì khó tránh khỏi ồn ào.",
+    0
+   ],
+   [
+    "离家这么远，她不免有些想念亲人。",
+    "Lí jiā zhème yuǎn, tā bùmiǎn yǒuxiē xiǎngniàn qīnrén.",
+    "Xa nhà thế này, cô ấy không khỏi nhớ người thân.",
+    1
+   ],
+   [
+    "听了这个故事，大家不免感到同情。",
+    "Tīng le zhège gùshi, dàjiā bùmiǎn gǎndào tóngqíng.",
+    "Nghe câu chuyện này, mọi người không khỏi thấy thương cảm.",
+    1
+   ]
+  ],
+  "tip": "Khó tránh, thường điều không tốt, làm vị ngữ hoặc đi với 是…的: 难免; hệ quả hiển nhiên, hợp lý, đứng trước động từ, tính từ: 不免.",
+  "questions": [
+   {
+    "q": "学外语的时候，说错话是___的。",
+    "answer": "难免",
+    "explain": "是…的 là cấu trúc chỉ dùng được với 难免 (是难免的); 不免 là phó từ, không làm vị ngữ."
+   },
+   {
+    "q": "你当着大家的面批评他，他___不高兴。",
+    "answer": "难免",
+    "explain": "Phía sau có từ phủ định (不高兴); 难免 đi với từ phủ định được, còn 不免 thường không đi với từ phủ định."
+   },
+   {
+    "q": "第一次一个人住在外地，她___有些想家。",
+    "answer": "不免",
+    "explain": "Theo R8: 难免 cũng đúng ngữ pháp; 不免 nhấn mạnh hệ quả hiển nhiên, hợp lý nên được chọn, còn 难免 thiên về nhấn việc khó tránh, thường là điều không mong muốn."
+   },
+   {
+    "q": "看到孩子们进步这么大，老师___感到欣慰。",
+    "answer": "不免",
+    "explain": "Theo R8: 难免 cũng đúng ngữ pháp, nhưng thường chỉ điều không mong muốn; ở đây là hệ quả tích cực, hiển nhiên nên 不免 hợp hơn."
+   }
+  ]
+ },
+ {
+  "id": "086",
+  "letter": "N",
+  "words": [
+   [
+    "难为",
+    "nánwéi"
+   ],
+   [
+    "为难",
+    "wéinán"
+   ]
+  ],
+  "common": "Cả hai đều có nghĩa làm cho người khác khó xử; ngoài ra 难为 còn dùng để cảm ơn, 为难 còn làm tính từ.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ",
+    "Động từ, tính từ"
+   ],
+   [
+    "Làm khó người khác",
+    "Có: 别难为他",
+    "Có: 别为难他"
+   ],
+   [
+    "Lời cảm ơn, “nhờ có”",
+    "Có: 难为你还为我着想",
+    "Không"
+   ],
+   [
+    "Làm tính từ “khó xử”",
+    "Không",
+    "Có: 感到很为难"
+   ]
+  ],
+  "examples": [
+   [
+    "他不会唱歌，你就别难为他了。",
+    "Tā bú huì chàng gē, nǐ jiù bié nánwéi tā le.",
+    "Anh ấy không biết hát, đừng làm khó anh ấy nữa.",
+    0
+   ],
+   [
+    "难为你每天接送孩子，太辛苦了。",
+    "Nánwéi nǐ měi tiān jiēsòng háizi, tài xīnkǔ le.",
+    "Cảm ơn bạn ngày nào cũng đưa đón con, vất vả quá.",
+    0
+   ],
+   [
+    "老师没有故意为难我们，题目是正常难度。",
+    "Lǎoshī méiyǒu gùyì wéinán wǒmen, tímù shì zhèngcháng nándù.",
+    "Thầy không cố ý làm khó chúng tôi, đề thi có độ khó bình thường.",
+    1
+   ],
+   [
+    "两个朋友都请我帮忙，我觉得很为难。",
+    "Liǎng gè péngyou dōu qǐng wǒ bāngmáng, wǒ juéde hěn wéinán.",
+    "Hai người bạn đều nhờ tôi giúp, tôi thấy rất khó xử.",
+    1
+   ]
+  ],
+  "tip": "Cảm ơn người đã vất vả giúp mình, hoặc “nhờ có”: 难为; làm tính từ “khó xử”: 为难.",
+  "questions": [
+   {
+    "q": "___你每天早起给我做早饭，真是太感谢了。",
+    "answer": "难为",
+    "explain": "Dùng để cảm ơn người đã vất vả giúp mình là cách dùng riêng của 难为; 为难 không có nghĩa này."
+   },
+   {
+    "q": "一边是工作，一边是家庭，他感到很___。",
+    "answer": "为难",
+    "explain": "Sau 很 là tính từ “khó xử”, chỉ 为难 làm tính từ; 难为 không làm tính từ."
+   },
+   {
+    "q": "我出国这一年，真___你照顾我父母。",
+    "answer": "难为",
+    "explain": "“真难为你” là lời cảm ơn (nhờ có bạn); 为难你 sẽ mang nghĩa làm khó bạn, sai ý của câu."
+   },
+   {
+    "q": "遇到这种让人___的事，我也不知道该怎么办。",
+    "answer": "为难",
+    "explain": "“让人为难的事” dùng 为难 như tính từ chỉ tình huống khó xử; 难为 không làm tính từ."
+   }
+  ]
+ },
+ {
+  "id": "087",
+  "letter": "N",
+  "words": [
+   [
+    "年纪",
+    "niánjì"
+   ],
+   [
+    "年龄",
+    "niánlíng"
+   ],
+   [
+    "岁数",
+    "suìshu"
+   ],
+   [
+    "岁",
+    "suì"
+   ]
+  ],
+  "common": "Cả bốn đều liên quan đến tuổi tác của con người; 年纪, 年龄, 岁数 là danh từ, còn 岁 là lượng từ đứng sau số từ.",
+  "rows": [
+   [
+    "Từ loại",
+    "Danh từ",
+    "Danh từ",
+    "Danh từ",
+    "Lượng từ"
+   ],
+   [
+    "Đối tượng",
+    "Người lớn tuổi là chủ yếu, hơi trang trọng; ít dùng cho tuổi còn nhỏ",
+    "Người, cả động vật, thực vật, hành tinh",
+    "Người, thường dùng trong khẩu ngữ",
+    "Đứng sau số từ hoặc 几: 二十岁、几岁"
+   ],
+   [
+    "Cụm quen dùng",
+    "上了年纪、一把年纪、年纪轻轻",
+    "入学年龄、结婚年龄、退休年龄",
+    "上了岁数、多大岁数",
+    "—"
+   ],
+   [
+    "Nghĩa “đủ tuổi”",
+    "Không",
+    "Không",
+    "Có: 岁数还不到、够岁数",
+    "—"
+   ]
+  ],
+  "examples": [
+   [
+    "爷爷上了年纪，不能走太远的路了。",
+    "Yéye shàng le niánjì, bù néng zǒu tài yuǎn de lù le.",
+    "Ông đã có tuổi, không đi xa được nữa.",
+    0
+   ],
+   [
+    "这个孩子年纪不大，却很懂事。",
+    "Zhège háizi niánjì bú dà, què hěn dǒngshì.",
+    "Đứa trẻ này tuổi không lớn nhưng rất hiểu chuyện.",
+    0
+   ],
+   [
+    "请在表格里填写姓名、性别和年龄。",
+    "Qǐng zài biǎogé lǐ tiánxiě xìngmíng, xìngbié hé niánlíng.",
+    "Hãy điền họ tên, giới tính và độ tuổi vào bảng.",
+    1
+   ],
+   [
+    "科学家用年轮来判断这棵树的年龄。",
+    "Kēxuéjiā yòng niánlún lái pànduàn zhè kē shù de niánlíng.",
+    "Nhà khoa học dùng vòng năm để xác định tuổi của cây này.",
+    1
+   ],
+   [
+    "您这么大岁数了，别提这么重的东西。",
+    "Nín zhème dà suìshu le, bié tí zhème zhòng de dōngxi.",
+    "Bác lớn tuổi thế rồi, đừng xách đồ nặng thế.",
+    2
+   ],
+   [
+    "他的岁数还不到，不能报名参军。",
+    "Tā de suìshu hái bú dào, bù néng bàomíng cānjūn.",
+    "Tuổi anh ấy còn chưa đủ, không thể đăng ký nhập ngũ.",
+    2
+   ],
+   [
+    "我女儿今年五岁了。",
+    "Wǒ nǚ'ér jīnnián wǔ suì le.",
+    "Con gái tôi năm nay năm tuổi.",
+    3
+   ],
+   [
+    "小明比我大三岁。",
+    "Xiǎo Míng bǐ wǒ dà sān suì.",
+    "Tiểu Minh lớn hơn tôi ba tuổi.",
+    3
+   ]
+  ],
+  "tip": "Đứng sau số từ: 岁; người có tuổi, 年纪轻轻: 年纪; khai báo, động vật, thực vật: 年龄; khẩu ngữ, “đủ tuổi”: 岁数.",
+  "questions": [
+   {
+    "q": "我外甥才三___，已经会背很多唐诗了。",
+    "answer": "岁",
+    "explain": "岁 là lượng từ, đứng ngay sau số từ (三岁); 年纪, 年龄, 岁数 là danh từ nên không đứng sau số từ như vậy."
+   },
+   {
+    "q": "他___轻轻就当上了公司经理，大家都很佩服他。",
+    "answer": "年纪",
+    "explain": "年纪轻轻 là cụm cố định chỉ tuổi còn trẻ, thuộc 年纪; 年龄 và 岁数 không tạo cụm này."
+   },
+   {
+    "q": "动物的___可以根据牙齿的情况来判断。",
+    "answer": "年龄",
+    "explain": "Theo sách, chỉ 年龄 dùng được cho động vật, thực vật và các vật có sự sống; 年纪 và 岁数 chỉ tuổi của người."
+   },
+   {
+    "q": "孩子，你的___也不小了，该找个对象了。",
+    "answer": "岁数",
+    "explain": "Theo R8: 年纪 và 年龄 cũng đúng ngữ pháp; 岁数 mang màu sắc khẩu ngữ nên hợp với lời khuyên thân mật như vậy, đây là lý do chọn 岁数."
+   }
+  ]
  }
 ]
