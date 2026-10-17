@@ -8959,7 +8959,7 @@
    [
     "Cố ý làm trái",
     "Đứng sau chủ ngữ: 我偏要去",
-    "Đứng sau chủ ngữ, nhấn mạnh hơn: 我偏偏要去"
+    "Đứng sau chủ ngữ: 我偏偏要去; có thể cả đầu vế câu"
    ],
    [
     "Thực tế trái mong muốn",
@@ -8970,11 +8970,6 @@
     "Nghĩa “riêng, chỉ”",
     "Đứng trước chủ ngữ được nhấn mạnh",
     "Đứng trước chủ ngữ được nhấn mạnh"
-   ],
-   [
-    "Số âm tiết",
-    "Một âm tiết, gọn",
-    "Hai âm tiết, nhấn mạnh hơn"
    ]
   ],
   "examples": [
@@ -9023,7 +9018,7 @@
    {
     "q": "大家都劝他别去，他___要去。",
     "answer": "偏",
-    "explain": "偏偏 cũng đúng ngữ pháp trong câu này; 偏 là dạng một âm tiết, gọn, dùng rất tự nhiên khi chỉ cố ý làm trái, nên chọn 偏."
+    "explain": "Cả hai đều dùng được sau chủ ngữ 他. Theo sách, 偏 chỉ đứng sau chủ ngữ khi diễn tả sự cố ý làm trái hoặc điều trái mong muốn, và ở đây 偏 đứng ngay sau 他 đúng như vậy, nên chọn 偏."
    }
   ]
  },
@@ -9099,17 +9094,17 @@
    {
     "q": "大家以为他不在乎，___他心里比谁都难过。",
     "answer": "其实",
-    "explain": "Cả 实际上 cũng đúng ngữ pháp; 其实 là cách nói đơn giản, quen dùng trong lời nói để nêu sự thật trái với suy đoán, nên chọn 其实."
+    "explain": "Cả hai đều dùng được trong câu này; sách không phân biệt 其实 và 实际上 ở chỗ này, nên 其实 chỉ là một đáp án chấp nhận được."
    },
    {
-    "q": "听起来像是大工程，___一个人半天就能做完。",
-    "answer": "其实",
-    "explain": "Cả hai đều có thể dùng ở đây; 其实 là từ thường gặp trong khẩu ngữ khi nêu sự thật khác với vẻ bên ngoài, nên đáp án là 其实."
+    "q": "他们___的收入比公布的数字低得多。",
+    "answer": "实际上",
+    "explain": "Cần một từ làm định ngữ trước 的 (“thực tế”); sách chỉ cho 实际上 làm định ngữ, còn 其实 thì không."
    },
    {
     "q": "从表面看他们是合作关系，___双方一直在竞争。",
     "answer": "实际上",
-    "explain": "Cả 其实 cũng đúng ngữ pháp; 实际上 nhấn vào tình hình thực tế đối lập với bề ngoài, hợp với câu có cấu trúc “nhìn bên ngoài … còn thực tế …”, nên chọn 实际上."
+    "explain": "Cả 其实 cũng đúng ngữ pháp; sách không phân biệt hai từ ở chỗ này. 实际上 nói về tình hình đúng như thực tế, hợp với câu nêu sự thật trái bề ngoài, nên chọn 实际上."
    }
   ]
  },
@@ -9624,7 +9619,7 @@
     "háishi"
    ]
   ],
-  "common": "Cả bốn đều có thể làm phó từ mang nghĩa “vẫn”, biểu thị tình hình không thay đổi, kể cả khi đã gián đoạn.",
+  "common": "Cả bốn đều có thể làm phó từ mang nghĩa “vẫn”, biểu thị tình hình không thay đổi; khi nói trạng thái vẫn như cũ dù có gián đoạn thì 仍, 仍然 và 还是 dùng được, còn 依然 thì không.",
   "rows": [
    [
     "Từ loại",
@@ -9657,7 +9652,7 @@
    [
     "Sắc thái",
     "Văn viết",
-    "Văn viết, trang trọng",
+    "Văn viết",
     "Văn viết, trang trọng",
     "Khẩu ngữ"
    ]
@@ -9732,12 +9727,12 @@
    {
     "q": "三十年过去了，故乡的老街___保持着旧时的模样。",
     "answer": "依然",
-    "explain": "仍然 và 还是 cũng đúng ngữ pháp; 依然 là từ trang trọng, hay gặp trong văn viết khi miêu tả cảnh vật vẫn y nguyên, nên chọn 依然."
+    "explain": "仍然 và 还是 cũng đúng ngữ pháp trong câu này; 依然 mang sắc thái trang trọng, dùng trong văn viết, hợp với câu văn như vậy nên chọn 依然."
    },
    {
     "q": "尽管天气很冷，孩子们___玩得很开心。",
     "answer": "仍然",
-    "explain": "仍, 依然 và 还是 cũng dùng được; 仍然 đi được với cả từ đơn lẫn từ hai âm tiết và là cách nói “vẫn” phổ biến nhất trong văn viết, trong khi 仍 thiên về từ đơn âm và 还是 thiên về khẩu ngữ, nên chọn 仍然."
+    "explain": "Cả bốn từ đều dùng được trong câu này, vì đều mang nghĩa “vẫn”; sách không phân biệt chúng ở đây. Đáp án chọn 仍然 là một cách nói trung tính."
    }
   ]
  },
