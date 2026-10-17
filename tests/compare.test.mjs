@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import {
   ALL_PAIRS,
   LETTER_ORDER,
+  LETTERS,
   LETTER_RANGES,
   TOTAL_PAIRS,
   buildCompareQuiz,
@@ -124,6 +125,11 @@ test('LETTER_RANGES cover 001-125 in order with no gap or overlap', () => {
     next = to + 1;
   }
   assert.equal(next, TOTAL_PAIRS + 1);
+});
+
+test('LETTERS lists the letters that have groups, in alphabet-of-the-book order', () => {
+  assert.deepEqual(LETTERS, LETTER_ORDER.filter((l) => ALL_PAIRS.some((p) => p.letter === l)));
+  assert.equal(LETTERS.length, LETTER_ORDER.length, 'every letter has at least one group now that all 125 are written');
 });
 
 test('BOOK has the 125 groups of the table of contents', () => {
