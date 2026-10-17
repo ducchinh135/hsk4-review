@@ -5704,7 +5704,7 @@
    {
     "q": "这次的婚礼办得太___，不少亲戚都没来得及赶到。",
     "answer": "匆忙",
-    "explain": "Sau 得 + 太 cần tính từ làm bổ ngữ: sách ghi 匆忙 dùng được như vậy, còn 连忙 là phó từ nên không đứng ở đây. 急忙 chủ yếu làm trạng ngữ nên không phải lựa chọn tự nhiên."
+    "explain": "Sau 得 + 太 cần tính từ làm bổ ngữ nên 连忙 (phó từ) không đặt được. 急忙 cũng có thể đặt, vì bảng ở tr.107 ghi 走得太急忙; chọn 匆忙 vì câu nhấn tình thế gấp do thời gian eo hẹp (không kịp mời họ hàng), đúng sắc thái của 匆忙, còn 急忙 thiên về nỗi lo lắng trong lòng."
    },
    {
     "q": "这是一次很___的旅行，我连行李都没收拾好就出门了。",
@@ -5714,12 +5714,12 @@
    {
     "q": "听说女儿在学校晕倒了，她心里十分着急，___往学校赶。",
     "answer": "急忙",
-    "explain": "连忙 cũng đặt được. Chọn 急忙 vì câu nhấn mạnh tâm trạng lo lắng, nôn nóng (十分着急)."
+    "explain": "连忙 và 匆忙 cũng đặt được. Chọn 急忙 vì câu nhấn mạnh tâm trạng lo lắng, nôn nóng (十分着急); 匆忙 thiên về thời gian eo hẹp, 连忙 về phản ứng ngay sau một việc."
    },
    {
     "q": "老师走进教室，同学们___把手机收了起来。",
     "answer": "连忙",
-    "explain": "急忙 cũng đặt được. Chọn 连忙 vì nhấn mạnh động tác xảy ra ngay sau một việc vừa xảy ra (thầy cô bước vào), không nhấn nỗi lo."
+    "explain": "急忙 và 匆忙 cũng đặt được. Chọn 连忙 vì động tác là phản ứng ngay sau một việc vừa xảy ra (thầy cô bước vào), không nhấn nỗi lo (急忙) hay thời gian eo hẹp (匆忙)."
    }
   ]
  },
@@ -5802,9 +5802,9 @@
   "tip": "Lo lắng trong lòng thì 急忙; ngay sau việc trước thì 连忙; chạy đua với thời gian, phải kịp thì 赶忙.",
   "questions": [
    {
-    "q": "离火车开走只剩三分钟了，他___把行李塞进车厢。",
+    "q": "末班车快开了，他___跑向车站。",
     "answer": "赶忙",
-    "explain": "急忙, 连忙 cũng đặt được. Chọn 赶忙 vì câu nói về tình thế gấp, phải làm cho kịp thời gian (chỉ còn ba phút)."
+    "explain": "急忙, 连忙 cũng đặt được. Chọn 赶忙 vì có một mốc thời gian phải đuổi kịp (末班车快开了): chữ 赶 mang nghĩa “chạy đua cho kịp”, còn 急忙 thiên về nỗi lo trong lòng và 连忙 về phản ứng ngay sau một việc, mà câu không nêu hai yếu tố đó."
    },
    {
     "q": "听到老人说“谢谢”，小李___摆手说：“不客气。”",
@@ -5817,9 +5817,9 @@
     "explain": "连忙, 赶忙 cũng đặt được. Chọn 急忙 vì nhấn mạnh tâm trạng lo lắng, nôn nóng (心急如焚)."
    },
    {
-    "q": "天快黑了，大家___收拾好东西下山。",
+    "q": "外面下雨了，我___去把晾在阳台上的衣服收进来。",
     "answer": "赶忙",
-    "explain": "急忙, 连忙 cũng đặt được. Chọn 赶忙 vì cần kịp xuống núi trước khi trời tối, nhấn mạnh tính cấp bách của hành động."
+    "explain": "急忙, 连忙 cũng đặt được. Chọn 赶忙 vì phải làm cho kịp trước khi quần áo bị ướt (chạy đua với tình thế); câu không có nỗi lo nội tâm rõ ràng (急忙) cũng không phải đáp lại lời hay việc của ai (连忙)."
    }
   ]
  },
@@ -6312,9 +6312,9 @@
     "explain": "“Diễn biến, quá trình của sự việc” là danh từ 经过; 经历 chỉ trải nghiệm của bản thân, 通过 không làm danh từ."
    },
    {
-    "q": "___两年的努力，他终于完成了这本书。",
+    "q": "公交车每天都从我们学校门口___，非常方便。",
     "answer": "经过",
-    "explain": "“经过 + khoảng thời gian” là cách dùng nêu thời gian đã trôi qua (theo sách); 经历 chỉ trải nghiệm bản thân, 通过 không chỉ thời gian."
+    "explain": "Nghĩa “đi ngang qua một nơi” (tuyến xe ghé ngang cổng trường) là động từ 经过; 经历 chỉ trải nghiệm bản thân, còn 通过 thiên về đi xuyên qua nơi chật hẹp (cầu, đường) hoặc “được thông qua” nên không phải lựa chọn ở đây."
    },
    {
     "q": "这个国家曾经___过很多次战争，现在终于和平了。",
@@ -6576,7 +6576,7 @@
    {
     "q": "这么多人看着，___你一点儿也没发现？",
     "answer": "居然",
-    "explain": "Chỗ trống đứng trước chủ ngữ (你); sách ghi 竟, 竟然 không đứng trước chủ ngữ, còn 居然 thì đôi khi được."
+    "explain": "Chỗ trống đứng trước chủ ngữ (你). Sách ghi 竟, 竟然 không đứng trước chủ ngữ, còn 居然 thì đôi khi được. 不料 cũng luôn đứng trước chủ ngữ nên về ngữ pháp có thể đặt, nhưng nó dùng để kể một kết quả bất ngờ trái dự đoán trước đó; đây là câu hỏi bày tỏ ngạc nhiên nên chọn 居然."
    },
    {
     "q": "小明___把作业本落在家里了，我真服了他。",
