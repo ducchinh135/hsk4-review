@@ -9821,5 +9821,846 @@
     "explain": "Trong câu có 但是 chỉ nghĩa “nhưng vẫn”, 仍旧 thường kết hợp với 但是; 依旧 cũng đúng ngữ pháp nhưng ít đi cùng 但是 hơn."
    }
   ]
+ },
+ {
+  "id": "099",
+  "letter": "S",
+  "words": [
+   [
+    "稍稍",
+    "shāoshāo"
+   ],
+   [
+    "稍微",
+    "shāowēi"
+   ],
+   [
+    "稍",
+    "shāo"
+   ]
+  ],
+  "common": "Cả ba đều là phó từ mang nghĩa “hơi, một chút”, biểu thị mức độ không cao, số lượng không nhiều hoặc thời gian không dài; đứng trước động từ, tính từ, phía sau thường có 一点儿、一些、一下 hoặc từ chỉ số lượng nhỏ.",
+  "rows": [
+   [
+    "Phong cách",
+    "Chủ yếu khẩu ngữ",
+    "Chủ yếu khẩu ngữ",
+    "Thiên về văn viết"
+   ],
+   [
+    "Từ đi cùng",
+    "Từ đơn âm tiết hoặc hai âm tiết",
+    "Từ đơn âm tiết hoặc hai âm tiết",
+    "Phần nhiều từ đơn âm tiết"
+   ],
+   [
+    "Cấu trúc cố định 稍有不慎、稍加修改",
+    "Không",
+    "Không",
+    "Có"
+   ],
+   [
+    "稍 / 稍微 + 不 + tính từ, động từ (thường với 注意、留神、小心)",
+    "Ít gặp",
+    "Có",
+    "Có"
+   ]
+  ],
+  "examples": [
+   [
+    "外面有点冷，你稍稍多穿一件吧。",
+    "Wàimiàn yǒudiǎn lěng, nǐ shāoshāo duō chuān yí jiàn ba.",
+    "Bên ngoài hơi lạnh, bạn mặc thêm một chút đi.",
+    0
+   ],
+   [
+    "和去年相比，今年的价格稍稍高了一点儿。",
+    "Hé qùnián xiāngbǐ, jīnnián de jiàgé shāoshāo gāo le yìdiǎnr.",
+    "So với năm ngoái, giá năm nay cao hơn một chút.",
+    0
+   ],
+   [
+    "请你稍微坐过去一点儿，我想放下包。",
+    "Qǐng nǐ shāowēi zuò guòqù yìdiǎnr, wǒ xiǎng fàngxià bāo.",
+    "Bạn ngồi dịch sang một chút, tôi muốn đặt cái túi xuống.",
+    1
+   ],
+   [
+    "他的病稍微好了一些，已经能下床走动了。",
+    "Tā de bìng shāowēi hǎo le yìxiē, yǐjīng néng xià chuáng zǒudòng le.",
+    "Bệnh của anh ấy đã đỡ hơn một chút, đã xuống giường đi lại được.",
+    1
+   ],
+   [
+    "你们先吃，我稍晚一点再来。",
+    "Nǐmen xiān chī, wǒ shāo wǎn yìdiǎn zài lái.",
+    "Các bạn cứ ăn trước, tôi sẽ đến muộn hơn một chút.",
+    2
+   ],
+   [
+    "这个计划稍加调整就可以实行了。",
+    "Zhège jìhuà shāo jiā tiáozhěng jiù kěyǐ shíxíng le.",
+    "Kế hoạch này chỉ cần chỉnh sửa chút ít là có thể thực hiện.",
+    2
+   ]
+  ],
+  "tip": "Cấu trúc cố định như 稍有不慎、稍加修改: chỉ dùng 稍; khẩu ngữ thì 稍稍 / 稍微; văn viết, đi với từ đơn âm tiết: 稍.",
+  "questions": [
+   {
+    "q": "开车时___有不慎，就可能出事故。",
+    "answer": "稍",
+    "explain": "稍有不慎 là cấu trúc cố định, chỉ dùng 稍; 稍稍 và 稍微 không có cách dùng này."
+   },
+   {
+    "q": "你太累了，先___休息一下，我们一会儿再接着做。",
+    "answer": "稍稍",
+    "explain": "稍微 cũng đúng ngữ pháp ở đây; sách không phân biệt 稍稍 và 稍微, nên 稍稍 là đáp án chấp nhận được. 稍 phần nhiều đi với từ đơn âm tiết và thiên về văn viết, còn 休息 có hai âm tiết trong câu khẩu ngữ."
+   },
+   {
+    "q": "这件衣服___大了一点儿，有没有小一号的？",
+    "answer": "稍微",
+    "explain": "稍稍 cũng đúng; sách không phân biệt hai từ này, nên 稍微 là đáp án chấp nhận được. 稍 cũng ghép được với 大 nhưng thiên về văn viết, còn đây là câu hỏi mua đồ mang tính khẩu ngữ."
+   },
+   {
+    "q": "先生，请___候片刻，我去叫一下负责人。",
+    "answer": "稍",
+    "explain": "稍 đi với động từ đơn âm tiết trong lời nói trang trọng (请稍候) là cách dùng quen thuộc; 稍稍 và 稍微 thường đi với khẩu ngữ hoặc từ hai âm tiết nên ít tự nhiên hơn ở đây."
+   }
+  ]
+ },
+ {
+  "id": "100",
+  "letter": "S",
+  "words": [
+   [
+    "似",
+    "sì"
+   ],
+   [
+    "像",
+    "xiàng"
+   ]
+  ],
+  "common": "Cả hai đều là động từ biểu thị sự giống hoặc gần giống nhau, như 长得像 / 似妈妈; cả hai cũng có thể làm phó từ với nghĩa “hình như”.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ, phó từ, giới từ",
+    "Danh từ, động từ, phó từ"
+   ],
+   [
+    "Đứng sau 很、非常、太",
+    "Không",
+    "Được"
+   ],
+   [
+    "Nêu ví dụ điển hình (“như, chẳng hạn như”)",
+    "Không",
+    "Có: 像这种情况……"
+   ],
+   [
+    "Cấu trúc đi cùng",
+    "似……非……、似……一般",
+    "像……一样、像……似的、像……一般"
+   ],
+   [
+    "Văn phong",
+    "Thường văn viết",
+    "Thường khẩu ngữ"
+   ]
+  ],
+  "examples": [
+   [
+    "他的笑容似春风一般温暖。",
+    "Tā de xiàoróng sì chūnfēng yìbān wēnnuǎn.",
+    "Nụ cười của anh ấy ấm áp như gió xuân.",
+    0
+   ],
+   [
+    "他似懂非懂地点了点头。",
+    "Tā sì dǒng fēi dǒng de diǎn le diǎn tóu.",
+    "Anh ấy gật đầu, nửa hiểu nửa không.",
+    0
+   ],
+   [
+    "弟弟长得很像爸爸。",
+    "Dìdi zhǎng de hěn xiàng bàba.",
+    "Em trai trông rất giống bố.",
+    1
+   ],
+   [
+    "像你这样认真的学生不多。",
+    "Xiàng nǐ zhèyàng rènzhēn de xuésheng bù duō.",
+    "Học sinh nghiêm túc như bạn không nhiều.",
+    1
+   ]
+  ],
+  "tip": "Sau 太/很, làm danh từ (画像), nêu ví dụ “như…”: 像; cấu trúc 似……非……、似曾相识: 似.",
+  "questions": [
+   {
+    "q": "老师讲了半天，他还是一副___懂非懂的样子。",
+    "answer": "似",
+    "explain": "Cấu trúc cố định 似……非…… (似懂非懂) dùng 似; 像 không dùng trong cấu trúc này."
+   },
+   {
+    "q": "这个地方我从没来过，却有一种___曾相识的感觉。",
+    "answer": "似",
+    "explain": "似曾相识 là thành ngữ cố định, dùng 似."
+   },
+   {
+    "q": "姐妹俩长得太___了，连邻居都分不清。",
+    "answer": "像",
+    "explain": "Phía trước là phó từ mức độ 太; 像 đứng được sau 很、非常、太, còn 似 thì không."
+   },
+   {
+    "q": "客厅的墙上挂着一幅爷爷的___，是请画家画的。",
+    "answer": "像",
+    "explain": "Ở đây cần danh từ chỉ hình ảnh (画像); chỉ 像 có nghĩa danh từ này, 似 thì không."
+   },
+   {
+    "q": "___这种小毛病，自己动手就能修好。",
+    "answer": "像",
+    "explain": "Câu nêu ví dụ điển hình “như loại… này”; chỉ 像 mang nghĩa nêu ví dụ, 似 không dùng như vậy."
+   }
+  ]
+ },
+ {
+  "id": "101",
+  "letter": "S",
+  "words": [
+   [
+    "舒服",
+    "shūfu"
+   ],
+   [
+    "舒适",
+    "shūshì"
+   ]
+  ],
+  "common": "Cả hai đều là tính từ, diễn tả cảm giác dễ chịu, thoải mái.",
+  "rows": [
+   [
+    "Từ loại",
+    "Tính từ",
+    "Tính từ"
+   ],
+   [
+    "Nhấn mạnh vào",
+    "Cảm giác thoải mái của cơ thể, tâm hồn",
+    "Sự thoải mái của môi trường, cuộc sống"
+   ],
+   [
+    "Lặp lại",
+    "Có thể: 舒舒服服",
+    "Không"
+   ],
+   [
+    "Ví dụ tiêu biểu",
+    "身体不舒服、躺着很舒服",
+    "环境舒适、生活条件舒适"
+   ]
+  ],
+  "examples": [
+   [
+    "我今天有点不舒服，想早点回家休息。",
+    "Wǒ jīntiān yǒudiǎn bù shūfu, xiǎng zǎodiǎn huí jiā xiūxi.",
+    "Hôm nay tôi hơi khó chịu trong người, muốn về nhà nghỉ sớm.",
+    0
+   ],
+   [
+    "坐了一天飞机，洗完澡真舒服。",
+    "Zuò le yì tiān fēijī, xǐ wán zǎo zhēn shūfu.",
+    "Ngồi máy bay cả ngày, tắm xong thật dễ chịu.",
+    0
+   ],
+   [
+    "这家宾馆的房间干净又舒适。",
+    "Zhè jiā bīnguǎn de fángjiān gānjìng yòu shūshì.",
+    "Phòng của khách sạn này vừa sạch vừa thoải mái.",
+    1
+   ],
+   [
+    "退休以后，他过着安静舒适的生活。",
+    "Tuìxiū yǐhòu, tā guò zhe ānjìng shūshì de shēnghuó.",
+    "Sau khi nghỉ hưu, ông sống một cuộc sống yên tĩnh, thoải mái.",
+    1
+   ]
+  ],
+  "tip": "Cảm giác của cơ thể, tâm hồn (có thể lặp 舒舒服服): 舒服; môi trường, điều kiện sống: 舒适.",
+  "questions": [
+   {
+    "q": "感冒了，浑身发冷，我觉得特别不___。",
+    "answer": "舒服",
+    "explain": "Nói về cảm giác của cơ thể; 舒服 nhấn mạnh cảm giác thoải mái của cơ thể, tâm hồn."
+   },
+   {
+    "q": "公司为员工提供了安静、___的办公环境。",
+    "answer": "舒适",
+    "explain": "Câu nói về môi trường làm việc, đúng phạm vi của 舒适; 舒服 thiên về cảm giác của cơ thể, tâm trạng hơn."
+   },
+   {
+    "q": "晒过的被子又暖又软，盖上以后全身都很___，一会儿就睡着了。",
+    "answer": "舒服",
+    "explain": "Câu tả cảm giác của cơ thể khi nằm; 舒服 nhấn mạnh cảm giác này."
+   },
+   {
+    "q": "这个小镇气候宜人、交通方便，居民的生活十分___。",
+    "answer": "舒适",
+    "explain": "Câu nói về điều kiện sống của cả một nơi, đúng phạm vi của 舒适 (môi trường, cuộc sống); 舒服 thiên về cảm giác của cơ thể."
+   }
+  ]
+ },
+ {
+  "id": "102",
+  "letter": "S",
+  "words": [
+   [
+    "虽",
+    "suī"
+   ],
+   [
+    "虽然",
+    "suīrán"
+   ],
+   [
+    "虽说",
+    "suīshuō"
+   ],
+   [
+    "别看",
+    "biékàn"
+   ]
+  ],
+  "common": "Cả bốn đều là liên từ nhượng bộ, nghĩa “tuy, tuy rằng”, đặt ở vế đầu và thường đi cùng 但是、可是、然而、而、却 ở vế sau; chỉ khác nhau về vị trí và phong cách.",
+  "rows": [
+   [
+    "Vị trí so với chủ ngữ",
+    "Đứng sau chủ ngữ",
+    "Trước hoặc sau chủ ngữ",
+    "Trước hoặc sau chủ ngữ",
+    "Đứng trước chủ ngữ"
+   ],
+   [
+    "Vế câu",
+    "Chỉ ở vế đầu",
+    "Vế đầu hoặc vế sau",
+    "Vế đầu hoặc vế sau",
+    "Chỉ ở vế đầu"
+   ],
+   [
+    "Phong cách",
+    "Văn viết",
+    "Khẩu ngữ và văn viết",
+    "Khẩu ngữ",
+    "Khẩu ngữ"
+   ],
+   [
+    "Cụm cố định như 虽败犹荣、虽死犹生",
+    "Có",
+    "Không",
+    "Không",
+    "Không"
+   ]
+  ],
+  "examples": [
+   [
+    "这家店虽小，东西却很齐全。",
+    "Zhè jiā diàn suī xiǎo, dōngxi què hěn qíquán.",
+    "Cửa hàng này tuy nhỏ nhưng hàng hóa rất đầy đủ.",
+    0
+   ],
+   [
+    "他虽年轻，却已经很有经验。",
+    "Tā suī niánqīng, què yǐjīng hěn yǒu jīngyàn.",
+    "Anh ấy tuy trẻ nhưng đã rất có kinh nghiệm.",
+    0
+   ],
+   [
+    "虽然天气很冷，但是大家都来了。",
+    "Suīrán tiānqì hěn lěng, dànshì dàjiā dōu lái le.",
+    "Tuy trời rất lạnh nhưng mọi người đều đến.",
+    1
+   ],
+   [
+    "我很想去，虽然时间有点紧。",
+    "Wǒ hěn xiǎng qù, suīrán shíjiān yǒudiǎn jǐn.",
+    "Tôi rất muốn đi, dù thời gian hơi gấp.",
+    1
+   ],
+   [
+    "虽说路不远，可是走起来也要半小时。",
+    "Suīshuō lù bù yuǎn, kěshì zǒu qǐlái yě yào bàn xiǎoshí.",
+    "Tuy đường không xa nhưng đi cũng mất nửa tiếng.",
+    2
+   ],
+   [
+    "这事虽说不大，我们也得认真对待。",
+    "Zhè shì suīshuō bú dà, wǒmen yě děi rènzhēn duìdài.",
+    "Việc này tuy không lớn, chúng ta cũng phải nghiêm túc.",
+    2
+   ],
+   [
+    "别看他话不多，心里什么都明白。",
+    "Bié kàn tā huà bù duō, xīnlǐ shénme dōu míngbai.",
+    "Đừng thấy anh ấy ít nói, trong lòng cái gì cũng rõ.",
+    3
+   ],
+   [
+    "别看这台机器旧了，用起来还挺顺手。",
+    "Bié kàn zhè tái jīqì jiù le, yòng qǐlái hái tǐng shùnshǒu.",
+    "Đừng thấy chiếc máy này cũ, dùng vẫn khá tiện.",
+    3
+   ]
+  ],
+  "tip": "Muốn đặt ở vế sau: 虽然 / 虽说; đặt sau chủ ngữ trong văn viết hoặc cụm cố định: 虽; khẩu ngữ, đứng trước chủ ngữ: 别看.",
+  "questions": [
+   {
+    "q": "他___死犹生，他留下的精神一直激励着我们。",
+    "answer": "虽",
+    "explain": "虽死犹生 là cụm cố định, chỉ dùng 虽; 虽然、虽说、别看 không có trong cụm này."
+   },
+   {
+    "q": "公司决定继续推进这个项目，___目前资金仍然紧张。",
+    "answer": "虽然",
+    "explain": "Vế nhượng bộ đặt sau, nên 虽 và 别看 (chỉ nằm ở vế đầu) không dùng được. 虽说 cũng đúng ngữ pháp, nhưng chỉ dùng trong khẩu ngữ; câu này là giọng trang trọng nên chọn 虽然."
+   },
+   {
+    "q": "___他个子小，扛起东西来可有劲儿了。",
+    "answer": "别看",
+    "explain": "虽然 và 虽说 cũng đứng được ở đây; sách không phân biệt về ngữ pháp trong vị trí này, nên 别看 là đáp án chấp nhận được: 别看 đứng trước chủ ngữ, thuộc khẩu ngữ, hợp với giọng câu này."
+   },
+   {
+    "q": "___早就说好了，到时候谁能来还不一定呢。",
+    "answer": "虽说",
+    "explain": "虽然 và 别看 cũng đặt được ở đầu câu; sách không chia khác biệt ngữ pháp, nên 虽说 là đáp án chấp nhận được, vì đây là câu nói thuần khẩu ngữ."
+   }
+  ]
+ },
+ {
+  "id": "103",
+  "letter": "S",
+  "words": [
+   [
+    "随",
+    "suí"
+   ],
+   [
+    "随着",
+    "suízhe"
+   ],
+   [
+    "跟",
+    "gēn"
+   ]
+  ],
+  "common": "Cả ba đều có thể làm giới từ mang nghĩa “theo”, và đều có nghĩa “đi theo” (随 và 跟), nhưng cách dùng khác nhau nhiều.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ, giới từ, phó từ, liên từ",
+    "Giới từ, phó từ",
+    "Động từ, giới từ, liên từ"
+   ],
+   [
+    "Nghĩa “đi theo”",
+    "Có, có thể thêm 着",
+    "Không",
+    "Có; 跟 còn nghĩa theo sát phía sau"
+   ],
+   [
+    "Nghĩa “tùy, thuận theo” (随你)",
+    "Có",
+    "Không",
+    "Không"
+   ],
+   [
+    "Khi làm giới từ",
+    "Dẫn chủ thể để hành động hoặc thay đổi theo (随风飘舞)",
+    "Dẫn nguyên nhân, điều kiện dẫn tới kết quả (随着社会的发展)",
+    "Dẫn đối tượng của hành động hoặc đối tượng so sánh (跟你商量)"
+   ],
+   [
+    "Đi với từ so sánh (一样、相比)",
+    "Không",
+    "Không",
+    "Có"
+   ]
+  ],
+  "examples": [
+   [
+    "树叶随风飘落在地上。",
+    "Shùyè suí fēng piāoluò zài dì shang.",
+    "Lá cây theo gió rơi xuống đất.",
+    0
+   ],
+   [
+    "去哪儿吃饭，随你选，我都可以。",
+    "Qù nǎr chī fàn, suí nǐ xuǎn, wǒ dōu kěyǐ.",
+    "Ăn ở đâu tùy bạn chọn, tôi đều được.",
+    0
+   ],
+   [
+    "随着天气变冷，街上的行人越来越少。",
+    "Suízhe tiānqì biàn lěng, jiē shang de xíngrén yuè lái yuè shǎo.",
+    "Trời càng lạnh, người đi trên phố càng ít.",
+    1
+   ],
+   [
+    "随着音乐的节奏，孩子们拍起手来。",
+    "Suízhe yīnyuè de jiézòu, háizimen pāi qǐ shǒu lái.",
+    "Theo nhịp nhạc, bọn trẻ vỗ tay.",
+    1
+   ],
+   [
+    "我想跟你商量一件事。",
+    "Wǒ xiǎng gēn nǐ shāngliang yí jiàn shì.",
+    "Tôi muốn bàn với bạn một việc.",
+    2
+   ],
+   [
+    "我的看法跟他的不一样。",
+    "Wǒ de kànfǎ gēn tā de bù yíyàng.",
+    "Cách nhìn của tôi không giống của anh ấy.",
+    2
+   ]
+  ],
+  "tip": "Dẫn đối tượng cùng làm hoặc để so sánh: 跟; nguyên nhân, điều kiện dẫn đến kết quả: 随着; “tùy, thuận theo”, 随手: 随.",
+  "questions": [
+   {
+    "q": "麻烦你出门时___手把灯关掉。",
+    "answer": "随",
+    "explain": "随手 (tiện tay) dùng 随; 随着 và 跟 không tạo thành cụm này."
+   },
+   {
+    "q": "___城市交通的改善，市民出行方便了许多。",
+    "answer": "随着",
+    "explain": "随 cũng có thể nói “theo” (thường trong 随……而……), nhưng khi nêu nguyên nhân, điều kiện dẫn đến một kết quả như ở đây thì 随着 là cách dùng quen thuộc hơn; 跟 không dẫn nguyên nhân."
+   },
+   {
+    "q": "我想___你商量一下周末的安排。",
+    "answer": "跟",
+    "explain": "Cần giới từ dẫn đối tượng cùng bàn bạc; 跟 làm được điều này, còn 随 và 随着 không dẫn đối tượng của hành động."
+   },
+   {
+    "q": "去哪家餐厅，___你定，我都没意见。",
+    "answer": "随",
+    "explain": "“Tùy bạn” là nghĩa của 随 (随你); 随着 và 跟 không có nghĩa này."
+   },
+   {
+    "q": "他的水平还不能___你相比。",
+    "answer": "跟",
+    "explain": "Dẫn đối tượng so sánh (跟……相比): chỉ 跟 dùng được, 随 và 随着 không đi với từ so sánh."
+   }
+  ]
+ },
+ {
+  "id": "104",
+  "letter": "T",
+  "words": [
+   [
+    "特别",
+    "tèbié"
+   ],
+   [
+    "特地",
+    "tèdì"
+   ],
+   [
+    "特意",
+    "tèyì"
+   ]
+  ],
+  "common": "Cả ba đều có thể làm phó từ bổ nghĩa cho động từ, mang nghĩa “làm việc gì đó vì riêng một mục đích hay đối tượng”; tân ngữ phía sau thường là ngữ động từ hoặc cả câu.",
+  "rows": [
+   [
+    "Từ loại",
+    "Tính từ, phó từ",
+    "Phó từ",
+    "Phó từ"
+   ],
+   [
+    "Mức độ cao (“rất, vô cùng”)",
+    "Có",
+    "Không",
+    "Không"
+   ],
+   [
+    "Nêu bật một việc trong số nhiều việc (特别是……)",
+    "Có",
+    "Không",
+    "Không"
+   ],
+   [
+    "Làm tính từ (特别的本领)",
+    "Có",
+    "Không",
+    "Không"
+   ],
+   [
+    "Làm việc vì một mục đích riêng",
+    "Có, bao gồm cả hai ý của 特地 và 特意",
+    "Nhấn mạnh hành động xuất phát từ mục đích riêng, chú trọng bản thân hành động",
+    "Thêm ý muốn chủ quan của người nói đối với ai hoặc việc gì"
+   ]
+  ],
+  "examples": [
+   [
+    "今天的天气特别好，我们去公园吧。",
+    "Jīntiān de tiānqì tèbié hǎo, wǒmen qù gōngyuán ba.",
+    "Hôm nay trời đặc biệt đẹp, chúng ta đi công viên đi.",
+    0
+   ],
+   [
+    "我爱吃水果，特别是芒果。",
+    "Wǒ ài chī shuǐguǒ, tèbié shì mángguǒ.",
+    "Tôi thích ăn trái cây, nhất là xoài.",
+    0
+   ],
+   [
+    "为了给你过生日，朋友们特地从外地赶来了。",
+    "Wèile gěi nǐ guò shēngrì, péngyoumen tèdì cóng wàidì gǎn lái le.",
+    "Để mừng sinh nhật bạn, bạn bè đã đặc biệt từ nơi khác tới.",
+    1
+   ],
+   [
+    "我特地带了一把伞，怕下雨。",
+    "Wǒ tèdì dài le yì bǎ sǎn, pà xià yǔ.",
+    "Tôi cố ý mang theo ô vì sợ trời mưa.",
+    1
+   ],
+   [
+    "这条围巾是妈妈特意给我织的。",
+    "Zhè tiáo wéijīn shì māma tèyì gěi wǒ zhī de.",
+    "Chiếc khăn này mẹ cố ý đan cho tôi.",
+    2
+   ],
+   [
+    "他特意提前半小时到，帮大家布置教室。",
+    "Tā tèyì tíqián bàn xiǎoshí dào, bāng dàjiā bùzhì jiàoshì.",
+    "Anh ấy cố ý đến sớm nửa tiếng để giúp mọi người bày trí lớp học.",
+    2
+   ]
+  ],
+  "tip": "Chỉ 特别 có nghĩa “rất” và 特别是; còn “làm vì một mục đích”: 特地 nhấn vào hành động, 特意 thêm tấm lòng với ai đó.",
+  "questions": [
+   {
+    "q": "我们班同学都爱踢球，___是男生们，天天放学后都去球场。",
+    "answer": "特别",
+    "explain": "Nêu bật một nhóm trong số nhiều người (特别是……); chỉ 特别 có cách dùng này."
+   },
+   {
+    "q": "听说同学住院了，我___坐了两个小时的车去医院看他。",
+    "answer": "特地",
+    "explain": "特别 và 特意 cũng đúng ngữ pháp ở đây. 特地 nhấn mạnh hành động xuất phát từ một mục đích riêng (bỏ công đi thăm), chú trọng bản thân hành động nên được chọn."
+   },
+   {
+    "q": "她知道孩子对花生过敏，买点心时___叮嘱店员不要放花生。",
+    "answer": "特意",
+    "explain": "特别 và 特地 cũng đúng ngữ pháp. 特意 thêm ý muốn chủ quan, sự quan tâm của người nói đối với đứa con, nên được chọn."
+   },
+   {
+    "q": "这家饭馆的汤___好喝，我们每次来都要点。",
+    "answer": "特别",
+    "explain": "Từ đứng trước tính từ 好喝 để chỉ mức độ cao “rất”; chỉ 特别 có nghĩa này, 特地 và 特意 không chỉ mức độ."
+   }
+  ]
+ },
+ {
+  "id": "105",
+  "letter": "T",
+  "words": [
+   [
+    "疼",
+    "téng"
+   ],
+   [
+    "痛",
+    "tòng"
+   ]
+  ],
+  "common": "Cả hai đều là động từ chỉ cảm giác đau đớn, nhất là đau do chấn thương hoặc bệnh tật, như 头疼 / 头痛, 嗓子疼 / 痛.",
+  "rows": [
+   [
+    "Từ loại",
+    "Động từ",
+    "Động từ"
+   ],
+   [
+    "Phạm vi nghĩa “đau”",
+    "Thường là đau thể xác",
+    "Đau thể xác lẫn tinh thần, tâm hồn"
+   ],
+   [
+    "Nghĩa “cưng, thương yêu” (疼孙子)",
+    "Có, mang được tân ngữ",
+    "Không"
+   ],
+   [
+    "Cụm chỉ mức độ sâu, nặng (痛饮、痛骂、痛不欲生)",
+    "Không (疼不欲生 sai)",
+    "Có"
+   ]
+  ],
+  "examples": [
+   [
+    "摔了一跤，我的膝盖现在还很疼。",
+    "Shuāi le yì jiāo, wǒ de xīgài xiànzài hái hěn téng.",
+    "Ngã một cú, đầu gối tôi bây giờ vẫn còn rất đau.",
+    0
+   ],
+   [
+    "外婆最疼这个外孙女，什么都舍得给她。",
+    "Wàipó zuì téng zhège wàisūnnǚ, shénme dōu shěde gěi tā.",
+    "Bà ngoại cưng cô cháu ngoại nhất, cái gì cũng nỡ cho.",
+    0
+   ],
+   [
+    "牙一痛起来，连饭都吃不下。",
+    "Yá yí tòng qǐlái, lián fàn dōu chī bú xià.",
+    "Răng mà đau lên thì cơm cũng không nuốt nổi.",
+    1
+   ],
+   [
+    "想到就要离别，她心里痛得厉害。",
+    "Xiǎngdào jiù yào líbié, tā xīnlǐ tòng de lìhai.",
+    "Nghĩ đến lúc sắp chia tay, lòng cô ấy đau dữ dội.",
+    1
+   ]
+  ],
+  "tip": "Cưng, thương yêu một người: 疼; đau tinh thần hoặc mức độ sâu (痛饮、痛不欲生): 痛.",
+  "questions": [
+   {
+    "q": "老师最___这个懂事的孩子，经常给他买书。",
+    "answer": "疼",
+    "explain": "Nghĩa “cưng, thương yêu” có tân ngữ là người; chỉ 疼 có nghĩa này, 痛 thì không."
+   },
+   {
+    "q": "失去了最亲的人，他伤心得___不欲生。",
+    "answer": "痛",
+    "explain": "痛不欲生 là cụm cố định chỉ nỗi đau rất sâu; dùng 痛, không dùng 疼."
+   },
+   {
+    "q": "难得老朋友聚在一起，今晚我们要___饮一回。",
+    "answer": "痛",
+    "explain": "痛饮 (uống thỏa thích) dùng 痛 để chỉ mức độ sâu, nặng; 疼 không có nghĩa này."
+   },
+   {
+    "q": "奶奶一向很___爱这个孙女。",
+    "answer": "疼",
+    "explain": "疼爱 (thương yêu, cưng chiều) dùng 疼; 痛 không có nghĩa “cưng, thương yêu”."
+   }
+  ]
+ },
+ {
+  "id": "106",
+  "letter": "T",
+  "words": [
+   [
+    "同样",
+    "tóngyàng"
+   ],
+   [
+    "一般",
+    "yībān"
+   ],
+   [
+    "一样",
+    "yīyàng"
+   ]
+  ],
+  "common": "Cả ba đều là tính từ, biểu thị sự tương đồng, không khác biệt. Khi mang nghĩa “giống” thì đều không nhận phó từ mức độ đứng trước.",
+  "rows": [
+   [
+    "Từ loại",
+    "Tính từ, liên từ",
+    "Tính từ, trợ từ",
+    "Tính từ, trợ từ"
+   ],
+   [
+    "Nối hai câu hoặc hai vế câu",
+    "Có (đứng đầu câu, sau có dấu phẩy)",
+    "Không",
+    "Không"
+   ],
+   [
+    "Làm vị ngữ độc lập (我们的分数一样)",
+    "Không",
+    "Không",
+    "Có"
+   ],
+   [
+    "Nghĩa “thông thường, thường” (一般来说)",
+    "Không",
+    "Có",
+    "Không"
+   ],
+   [
+    "Hình thức phủ định với 不、没",
+    "Không dùng",
+    "Dùng được",
+    "Dùng được"
+   ]
+  ],
+  "examples": [
+   [
+    "这两个房间同样宽敞。",
+    "Zhè liǎng gè fángjiān tóngyàng kuānchang.",
+    "Hai căn phòng này rộng như nhau.",
+    0
+   ],
+   [
+    "大人要守时，同样，孩子也要守时。",
+    "Dàrén yào shǒushí, tóngyàng, háizi yě yào shǒushí.",
+    "Người lớn phải đúng giờ, tương tự, trẻ con cũng phải đúng giờ.",
+    0
+   ],
+   [
+    "这家店的东西一般都不贵。",
+    "Zhè jiā diàn de dōngxi yìbān dōu bú guì.",
+    "Đồ ở tiệm này nhìn chung đều không đắt.",
+    1
+   ],
+   [
+    "他长得和哥哥一般高。",
+    "Tā zhǎng de hé gēge yìbān gāo.",
+    "Anh ấy cao bằng anh trai.",
+    1
+   ],
+   [
+    "这两个包的颜色一样。",
+    "Zhè liǎng gè bāo de yánsè yíyàng.",
+    "Màu của hai chiếc túi này giống nhau.",
+    2
+   ],
+   [
+    "我的想法和你一样。",
+    "Wǒ de xiǎngfǎ hé nǐ yíyàng.",
+    "Suy nghĩ của tôi giống bạn.",
+    2
+   ]
+  ],
+  "tip": "Nối hai câu: 同样; “thông thường” (一般来说): 一般; làm vị ngữ: 一样.",
+  "questions": [
+   {
+    "q": "我昨天迟到被批评了，___，他今天迟到也要被批评。",
+    "answer": "同样",
+    "explain": "Từ đứng đầu vế, sau có dấu phẩy, nối hai câu với nghĩa “tương tự”; chỉ 同样 làm liên từ, 一般 và 一样 thì không."
+   },
+   {
+    "q": "他们俩的身高、体重完全___。",
+    "answer": "一样",
+    "explain": "Cần từ làm vị ngữ độc lập; chỉ 一样 làm vị ngữ được, 同样 và 一般 thì không."
+   },
+   {
+    "q": "___来说，冬天白天比夏天短。",
+    "answer": "一般",
+    "explain": "一般来说 là cấu trúc cố định mang nghĩa “thông thường”; chỉ 一般 có nghĩa này."
+   },
+   {
+    "q": "周末我___睡到九点才起床。",
+    "answer": "一般",
+    "explain": "Ở đây cần từ nghĩa “thường, thông thường” chỉ thói quen; chỉ 一般 có nghĩa này, 同样 và 一样 thì không."
+   }
+  ]
  }
 ]
