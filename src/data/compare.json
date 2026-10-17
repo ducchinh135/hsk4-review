@@ -11006,7 +11006,7 @@
     "explain": "Tân ngữ là mệnh đề nghi vấn (去哪个国家旅行), không phải danh từ cụ thể; theo sách chỉ 喜欢 đi được với kiểu tân ngữ này."
    },
    {
-    "q": "孩子们都很___这只毛茸茸的小熊。",
+    "q": "老人们都很___这个乖巧的小孙女。",
     "answer": "喜爱",
     "explain": "Tân ngữ là vật cụ thể nên cả hai đều đúng ngữ pháp; sách không phân biệt ở đây. 喜爱 là đáp án chấp nhận được, hợp với tân ngữ cụ thể."
    },
@@ -11016,9 +11016,9 @@
     "explain": "Tân ngữ “空想” là điều trừu tượng; chỉ 喜欢 mang được, 喜爱 phải đi với tân ngữ cụ thể."
    },
    {
-    "q": "她从小就___小动物，家里养了三只猫。",
+    "q": "他从小就___种花，阳台上摆满了各种花盆。",
     "answer": "喜爱",
-    "explain": "Tân ngữ “小动物” là đối tượng cụ thể nên cả hai đều đúng; sách không phân biệt. 喜爱 là đáp án chấp nhận được, thể hiện sự yêu mến."
+    "explain": "Tân ngữ là một việc làm cụ thể nên cả hai đều đúng ngữ pháp; sách không phân biệt ở đây. 喜爱 là đáp án chấp nhận được, thể hiện sự yêu thích."
    }
   ]
  },
@@ -11348,12 +11348,12 @@
    {
     "q": "我长这么大，___没坐过飞机。",
     "answer": "从来",
-    "explain": "Cấu trúc “没……过” nói về trải nghiệm chưa từng có từ trước đến nay, hay đi với 从来. 向来 và 一向 thiên về thói quen, thái độ; 一直 thiên về trạng thái kéo dài liên tục, nên 从来 hợp nhất ở đây."
+    "explain": "Cấu trúc “没……过” nói về trải nghiệm chưa từng có từ trước đến nay; sách ghi 从来 dùng nhiều trong câu phủ định. 一直 và 向来 cũng có thể xuất hiện ở đây (一直没……过 rất tự nhiên), nhưng 从来 là lựa chọn được ưu tiên trong câu phủ định."
    },
    {
     "q": "他对待工作___很认真，所以老板很放心把任务交给他。",
     "answer": "向来",
-    "explain": "Đây là thái độ quen thuộc, ổn định từ xưa tới nay và không có mốc thời gian giới hạn. 一向 cũng đúng ngữ pháp và sách không phân biệt rõ hai từ này; 向来 là đáp án chấp nhận được."
+    "explain": "Đây là thái độ ổn định từ xưa đến nay, không có mốc thời gian giới hạn. 一向 và 一直 cũng đúng ngữ pháp (bảng của sách cho cả hai ghép với tính từ đứng một mình), và sách không phân biệt 向来 với 一向; 向来 là đáp án chấp nhận được."
    }
   ]
  },
@@ -11455,12 +11455,12 @@
    {
     "q": "我代表全体同学，向各位老师表示衷心的___。",
     "answer": "感谢",
-    "explain": "“表示衷心的感谢” là cách nói thông dụng và là kết cấu sách nêu cho 感谢. 感激 cũng có thể gặp (表示感激) nhưng không phổ biến bằng; 谢谢 là lời nói khách sáo, không làm tân ngữ như vậy."
+    "explain": "Sách ghi 感谢 là từ làm tân ngữ của 表示 (表示感谢), còn 谢谢 và 感激 không có cách dùng này, nên chọn 感谢."
    },
    {
-    "q": "A：我来帮你拿吧。 B：___，我自己拿得动。",
+    "q": "A：要不要我帮你叫辆车？ B：___，我走路回去就行。",
     "answer": "谢谢",
-    "explain": "Đây là lời cảm ơn kèm từ chối khách sáo trong hội thoại, đúng chỗ của 谢谢; 感谢 và 感激 không dùng như một câu đáp ngắn thế này."
+    "explain": "Sách nêu 谢谢 còn dùng để từ chối một cách lịch sự, đúng với câu đáp này. 感谢 và 感激 là lời bày tỏ lòng biết ơn, không được sách nêu cho cách từ chối khách sáo."
    },
    {
     "q": "他帮了我这么大的忙，我真是___不尽。",
@@ -11541,7 +11541,7 @@
    {
     "q": "___今天没下雪，路上才没出事故。",
     "answer": "幸亏",
-    "explain": "Điều may là một hoàn cảnh thuận lợi (thời tiết), không phải sự giúp đỡ của ai; 幸亏 hợp với trường hợp này, còn 多亏 thiên về nhờ người giúp đỡ."
+    "explain": "Điều may là một hoàn cảnh thuận lợi (thời tiết), không phải sự giúp đỡ của ai. 多亏 cũng có thể dùng về ngữ pháp, nhưng theo sách 多亏 phần lớn nhấn mạnh sự giúp đỡ của người lúc khó khăn, còn 幸亏 dùng cho mọi tình huống, kể cả hoàn cảnh có lợi; nên chọn 幸亏."
    },
    {
     "q": "我___带了现金，不然连饭都吃不上。",
@@ -11698,9 +11698,9 @@
     "explain": "后来 chỉ thời điểm sau một khoảng thời gian trong quá khứ, đối lập với “一开始”. 之后 cũng có thể nối tiếp ở đây về ngữ pháp, nhưng 后来 là cách quen dùng để kể sự thay đổi trong quá khứ."
    },
    {
-    "q": "别灰心，你还年轻，___还有很多机会。",
+    "q": "很久___，我才明白他的用意。",
     "answer": "以后",
-    "explain": "Nói về tương lai chung chung, không có sự việc nào làm mốc phía trước, nên dùng 以后; 后来 chỉ nói về quá khứ."
+    "explain": "Sau 很久 để chỉ khoảng thời gian rồi mới xảy ra việc gì, sách nêu cách dùng 很久以后; 之后 không có cách dùng này, còn 后来 và 以来 không ghép với 很久 như vậy."
    },
    {
     "q": "走进展厅，先看到的是一幅大油画，___是一排小雕塑。",
@@ -11864,7 +11864,7 @@
   "rows": [
    [
     "Tân ngữ",
-    "Danh từ trừu tượng hai âm tiết (知识、权力)",
+    "Danh từ hai âm tiết, thường là thứ trừu tượng hoặc có số lượng lớn, giá trị cao (知识、权力、人口)",
     "Danh từ cụ thể hoặc trừu tượng, một hay nhiều âm tiết"
    ],
    [
@@ -11919,7 +11919,7 @@
    {
     "q": "这座图书馆___上百万册藏书，是全市最大的。",
     "answer": "拥有",
-    "explain": "Cả hai đều đúng ngữ pháp vì tân ngữ là vật cụ thể. 拥有 được chọn vì nói về số lượng lớn, giá trị cao, đúng nghĩa sách nêu cho 拥有; 有 chỉ đơn giản là “có”."
+    "explain": "Theo sách, 拥有 là “có” những thứ số lượng nhiều, giá trị cao, rất hợp với “上百万册藏书”. 有 cũng đúng ngữ pháp (nghĩa “có” chung), nhưng 拥有 diễn đạt rõ ý sở hữu lớn nên được chọn."
    },
    {
     "q": "这棵老树___三百多岁了。",
@@ -12302,7 +12302,7 @@
     "explain": "“卖得最多的” dùng 最多 làm bổ ngữ rồi có 的; chỉ tính từ 最多 làm bổ ngữ, định ngữ như vậy."
    },
    {
-    "q": "这个手术很简单，___半个小时就能做完。",
+    "q": "做这道菜很简单，你___花二十分钟就够了。",
     "answer": "至多",
     "explain": "Chỗ trống làm trạng ngữ chỉ giới hạn tối đa của thời gian; sách xếp đây là cách dùng của phó từ 至多. 最多 trong khẩu ngữ cũng có thể nói như vậy."
    }
@@ -12378,7 +12378,7 @@
     "explain": "Chỗ trống đứng đầu câu với nghĩa “ít ra”; chỉ 至少 dùng như vậy, 最少 không đứng đầu câu."
    },
    {
-    "q": "我们几个人里，小李花的钱___。",
+    "q": "这几个班里，一班的学生___，只有十五个人。",
     "answer": "最少",
     "explain": "Chỗ trống làm vị ngữ chỉ số lượng ít nhất; chỉ tính từ 最少 làm vị ngữ được."
    },
