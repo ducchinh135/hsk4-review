@@ -286,3 +286,8 @@ test('compare.json is valid, follows the book index and has no gaps', () => {
     assert.deepEqual(p.words.map((w) => w[0]), BOOK[i], `${p.id} words must match the book index`);
   });
 });
+
+test('compare.json has every group of the book', () => {
+  assert.equal(ALL_PAIRS.length, TOTAL_PAIRS);
+  assert.deepEqual(ALL_PAIRS.map((p) => p.id), BOOK.map((_, i) => String(i + 1).padStart(3, '0')));
+});
