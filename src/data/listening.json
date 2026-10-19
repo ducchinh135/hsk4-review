@@ -5,13 +5,245 @@
       "name": "判断对错",
       "label": "Phán đoán đúng/sai",
       "desc": "Nghe một đoạn ngắn, xét câu ★ đúng hay sai.",
-      "tips": { "intro": "", "sections": [] },
+      "tips": {
+        "intro": "Phần 1 của đề nghe HSK 4 gồm 10 câu (câu 1–10). Mỗi câu bạn nghe một đoạn ngắn (1–3 câu, chỉ nghe một lần); trên giấy có sẵn một câu có dấu ★. Bạn phán đoán câu ★ đúng (√) hay sai (×) so với đoạn vừa nghe. Khoảng một nửa số câu là đúng, một nửa là sai.",
+        "sections": [
+          {
+            "title": "Đọc câu ★ trước khi nghe",
+            "body": "Dùng vài giây trước mỗi đoạn để đọc câu ★ và gạch chân từ khóa: số, thời gian, người, nơi chốn, từ phủ định. Khi nghe, bạn chỉ cần canh đúng những từ khóa đó thay vì cố hiểu từng chữ.",
+            "examples": [
+              [
+                "他这个周末要去爬山。",
+                "Tā zhège zhōumò yào qù páshān.",
+                "Từ khóa: 这个周末 (cuối tuần này) và 爬山 (leo núi)."
+              ]
+            ]
+          },
+          {
+            "title": "Bẫy số và thời gian",
+            "body": "Đoạn nghe thường nhắc nhiều số: giờ hiện tại, giờ dự định, giờ đã đổi. Chỉ con số gắn đúng với việc mà câu ★ nói mới là con số cần so.",
+            "examples": [
+              [
+                "已经九点了。你明天早上七点就得起床。",
+                "Yǐjīng jiǔ diǎn le. Nǐ míngtiān zǎoshang qī diǎn jiù děi qǐchuáng.",
+                "九点 là giờ hiện tại, 七点 mới là giờ phải dậy."
+              ]
+            ]
+          },
+          {
+            "title": "Kế hoạch đã đổi: 本来…可是…只好…",
+            "body": "本来 báo ý định ban đầu, 可是 báo điều ngược lại, 只好 là kết quả cuối cùng. Đáp án gần như luôn nằm sau 可是 và 只好, không phải ở phần 本来.",
+            "examples": [
+              [
+                "我本来想去，可是太忙了，只好不去了。",
+                "Wǒ běnlái xiǎng qù, kěshì tài máng le, zhǐhǎo bú qù le.",
+                "Định đi, nhưng bận quá nên đành không đi."
+              ]
+            ]
+          },
+          {
+            "title": "Phủ định và so sánh",
+            "body": "Chú ý 不, 没, 别, 不是…是…, và 比 (hơn). Câu ★ sai thường chỉ đảo ngược một chữ phủ định hoặc đổi chiều so sánh so với đoạn nghe.",
+            "examples": [
+              [
+                "他不是老师，是学生。",
+                "Tā bú shì lǎoshī, shì xuésheng.",
+                "Anh ấy không phải giáo viên mà là học sinh."
+              ],
+              [
+                "我妹妹比我小三岁。",
+                "Wǒ mèimei bǐ wǒ xiǎo sān suì.",
+                "Em gái tôi nhỏ hơn tôi ba tuổi (tôi lớn hơn)."
+              ]
+            ]
+          },
+          {
+            "title": "Từ đồng nghĩa thay cho từ trong bài",
+            "body": "Câu ★ ít khi lặp lại nguyên văn đoạn nghe. Hãy nghe ý rồi đối chiếu nghĩa, đừng chờ từ giống hệt: 常常 ↔ 经常, 二十多 ↔ 二十几, 已经…年 ↔ …多年.",
+            "examples": [
+              [
+                "我常常骑自行车去。",
+                "Wǒ chángcháng qí zìxíngchē qù.",
+                "≈ 他经常骑车上班。(常常 ≈ 经常)"
+              ]
+            ]
+          },
+          {
+            "title": "Lỡ một đoạn thì sao",
+            "body": "Đừng cố nhớ lại đoạn vừa qua. Chọn đáp án có vẻ đúng nhất rồi chuyển ngay sang câu ★ kế tiếp: đoạn sau bắt đầu chỉ sau vài giây, nghĩ lâu sẽ lỡ luôn câu sau.",
+            "examples": []
+          }
+        ]
+      },
       "types": [
-        { "id": "detail", "icon": "🔢", "name": "Chi tiết", "desc": "Câu ★ nói về thời gian, số lượng, người, nơi chốn — nghe đúng chi tiết là làm được.", "tip": "" },
-        { "id": "attitude", "icon": "💬", "name": "Thái độ, ý kiến", "desc": "Người nói thích hay không, đồng ý hay phản đối, khuyên điều gì.", "tip": "" },
-        { "id": "infer", "icon": "🧠", "name": "Suy luận, ý chính", "desc": "Câu ★ không lặp lại lời nghe, phải hiểu ý cả đoạn hoặc suy ra.", "tip": "" }
+        {
+          "id": "detail",
+          "icon": "🔢",
+          "name": "Chi tiết",
+          "desc": "Câu ★ nói về thời gian, số lượng, người, nơi chốn — nghe đúng chi tiết là làm được.",
+          "tip": "Gạch từ khóa số, thời gian, người, nơi chốn trong câu ★ rồi chỉ canh đúng chúng. Đoạn nghe thường nhắc 2–3 con số; câu sai hay lấy con số này gán cho việc khác (giờ hiện tại thay vì giờ dậy, giá một món thay vì giá tất cả). Với số lượng, nghe cả đơn vị (个, 天, 岁, 折)."
+        },
+        {
+          "id": "attitude",
+          "icon": "💬",
+          "name": "Thái độ, ý kiến",
+          "desc": "Người nói thích hay không, đồng ý hay phản đối, khuyên điều gì.",
+          "tip": "Tìm từ chỉ thái độ: 喜欢 / 不喜欢, 觉得, 希望, 打算, 同意, 建议, 最好, 别. Câu sai thường đảo thái độ (thích ↔ không thích) hoặc gán ý kiến của người này cho người khác. Nghe giọng điệu: câu hỏi tu từ như “怎么可能？” thường mang nghĩa phủ định."
+        },
+        {
+          "id": "infer",
+          "icon": "🧠",
+          "name": "Suy luận, ý chính",
+          "desc": "Câu ★ không lặp lại lời nghe, phải hiểu ý cả đoạn hoặc suy ra.",
+          "tip": "Câu ★ thường diễn đạt lại ý chung hoặc kết quả suy ra, không lặp lời nghe. Tự hỏi: nếu đoạn nghe là thật thì câu ★ có chắc chắn đúng không? Cảnh giác từ tuyệt đối trong câu ★ (总是, 都, 一定, 从来): chỉ đúng khi đoạn nghe nói rõ như vậy."
+        }
       ],
-      "questions": []
+      "questions": [
+        {
+          "id": "p1-001",
+          "type": "detail",
+          "voice": "f",
+          "text": "我本来打算这个周末和同事一起去爬山，可是天气预报说周六有大雨，山上路不好走，不太安全，只好改到下周了。",
+          "pinyin": "Wǒ běnlái dǎsuàn zhège zhōumò hé tóngshì yìqǐ qù páshān, kěshì tiānqì yùbào shuō zhōuliù yǒu dàyǔ, shān shàng lù bù hǎo zǒu, bù tài ānquán, zhǐhǎo gǎi dào xià zhōu le.",
+          "vi": "Tôi định cuối tuần này cùng đồng nghiệp đi leo núi, nhưng dự báo thời tiết nói thứ Bảy có mưa to, đường lên núi khó đi, không an toàn lắm, đành dời sang tuần sau.",
+          "statement": "他这个周末要去爬山。",
+          "statementPinyin": "Tā zhège zhōumò yào qù páshān.",
+          "answer": false,
+          "explain": "本来打算…可是…只好改到下周 = “định… nhưng… đành dời sang tuần sau” → cuối tuần này không đi leo núi, nên câu ★ sai."
+        },
+        {
+          "id": "p1-002",
+          "type": "detail",
+          "voice": "m",
+          "text": "这家饭馆的菜味道不错，价格也不贵，所以每到中午，门口都排着长长的队。我今天十一点就来了，还是等了二十多分钟才有座位。",
+          "pinyin": "Zhè jiā fànguǎn de cài wèidào búcuò, jiàgé yě bú guì, suǒyǐ měi dào zhōngwǔ, ménkǒu dōu páizhe chángcháng de duì. Wǒ jīntiān shíyī diǎn jiù lái le, háishi děng le èrshí duō fēnzhōng cái yǒu zuòwèi.",
+          "vi": "Món ăn ở quán này ngon, giá cũng không đắt, nên cứ đến trưa là trước cửa xếp hàng dài. Hôm nay tôi 11 giờ đã tới rồi mà vẫn phải đợi hơn 20 phút mới có chỗ.",
+          "statement": "他排队等了二十几分钟。",
+          "statementPinyin": "Tā páiduì děng le èrshí jǐ fēnzhōng.",
+          "answer": true,
+          "explain": "还是等了二十多分钟 = “vẫn phải đợi hơn 20 phút”; 二十多 ≈ 二十几 → câu ★ đúng."
+        },
+        {
+          "id": "p1-003",
+          "type": "detail",
+          "voice": "f",
+          "text": "小王，会议改到下午三点了，不是上午十点。地点也换了，不在二楼会议室，改到五楼了。请你通知一下大家，别走错了。",
+          "pinyin": "Xiǎo Wáng, huìyì gǎi dào xiàwǔ sān diǎn le, bú shì shàngwǔ shí diǎn. Dìdiǎn yě huàn le, bú zài èr lóu huìyìshì, gǎi dào wǔ lóu le. Qǐng nǐ tōngzhī yíxià dàjiā, bié zǒu cuò le.",
+          "vi": "Tiểu Vương, cuộc họp đổi sang 3 giờ chiều rồi, không phải 10 giờ sáng. Địa điểm cũng đổi, không ở phòng họp tầng 2 nữa mà chuyển lên tầng 5. Nhờ cậu báo mọi người một tiếng, đừng đi nhầm.",
+          "statement": "会议要在二楼会议室开。",
+          "statementPinyin": "Huìyì yào zài èr lóu huìyìshì kāi.",
+          "answer": false,
+          "explain": "不在二楼会议室，改到五楼了 = “không ở phòng họp tầng 2, chuyển lên tầng 5” → câu ★ sai."
+        },
+        {
+          "id": "p1-004",
+          "type": "detail",
+          "voice": "m",
+          "text": "我妹妹比我小三岁，今年刚上大学。她学的是中文，说想以后当翻译。我就不一样了，我已经工作五年了，每天都很忙。",
+          "pinyin": "Wǒ mèimei bǐ wǒ xiǎo sān suì, jīnnián gāng shàng dàxué. Tā xué de shì Zhōngwén, shuō xiǎng yǐhòu dāng fānyì. Wǒ jiù bù yíyàng le, wǒ yǐjīng gōngzuò wǔ nián le, měitiān dōu hěn máng.",
+          "vi": "Em gái tôi nhỏ hơn tôi ba tuổi, năm nay vừa vào đại học. Em học tiếng Trung, nói sau này muốn làm phiên dịch. Tôi thì khác, tôi đã đi làm năm năm rồi, ngày nào cũng rất bận.",
+          "statement": "他的妹妹现在还在上学。",
+          "statementPinyin": "Tā de mèimei xiànzài hái zài shàngxué.",
+          "answer": true,
+          "explain": "今年刚上大学 = “năm nay vừa vào đại học” → em gái vẫn đang đi học, câu ★ đúng. 已经工作五年 là chuyện của người nói, không phải em gái."
+        },
+        {
+          "id": "p1-005",
+          "type": "detail",
+          "voice": "f",
+          "text": "这个周末商场打折，所有衣服都是五折，鞋子打七折，不过只打三天。我打算明天下班后去看看，给儿子买两条裤子。",
+          "pinyin": "Zhège zhōumò shāngchǎng dǎzhé, suǒyǒu yīfu dōu shì wǔ zhé, xiézi dǎ qī zhé, búguò zhǐ dǎ sān tiān. Wǒ dǎsuàn míngtiān xiàbān hòu qù kànkan, gěi érzi mǎi liǎng tiáo kùzi.",
+          "vi": "Cuối tuần này trung tâm thương mại giảm giá, tất cả quần áo giảm còn năm phần mười, giày giảm còn bảy phần mười, nhưng chỉ giảm ba ngày. Tôi định mai tan làm đến xem, mua cho con trai hai cái quần.",
+          "statement": "商场里的鞋子也打五折。",
+          "statementPinyin": "Shāngchǎng lǐ de xiézi yě dǎ wǔ zhé.",
+          "answer": false,
+          "explain": "衣服都是五折，鞋子打七折 → chỉ quần áo được 五折; giày là 七折, nên câu ★ sai. (五折 = còn 50% giá, 七折 = còn 70% giá.)"
+        },
+        {
+          "id": "p1-006",
+          "type": "detail",
+          "voice": "m",
+          "text": "从我家到公司不太远，坐地铁只要二十分钟。可是早上上班的人多，地铁里很挤，所以我常常骑自行车去，二十五分钟就到了。",
+          "pinyin": "Cóng wǒ jiā dào gōngsī bú tài yuǎn, zuò dìtiě zhǐ yào èrshí fēnzhōng. Kěshì zǎoshang shàngbān de rén duō, dìtiě lǐ hěn jǐ, suǒyǐ wǒ chángcháng qí zìxíngchē qù, èrshíwǔ fēnzhōng jiù dào le.",
+          "vi": "Từ nhà tôi đến công ty không xa lắm, đi tàu điện ngầm chỉ mất 20 phút. Nhưng buổi sáng người đi làm đông, trên tàu rất chật, nên tôi thường đạp xe đi, 25 phút là tới.",
+          "statement": "他经常骑自行车去上班。",
+          "statementPinyin": "Tā jīngcháng qí zìxíngchē qù shàngbān.",
+          "answer": true,
+          "explain": "所以我常常骑自行车去 = “nên tôi thường đạp xe đi”; 常常 ≈ 经常 → câu ★ đúng."
+        },
+        {
+          "id": "p1-007",
+          "type": "detail",
+          "voice": "f",
+          "text": "儿子，你的作业写完了吗？别一直看电视，已经九点了。你明天早上七点就得起床，今天必须十点以前睡觉。",
+          "pinyin": "Érzi, nǐ de zuòyè xiě wán le ma? Bié yìzhí kàn diànshì, yǐjīng jiǔ diǎn le. Nǐ míngtiān zǎoshang qī diǎn jiù děi qǐchuáng, jīntiān bìxū shí diǎn yǐqián shuìjiào.",
+          "vi": "Con trai, bài tập con làm xong chưa? Đừng xem tivi mãi, đã 9 giờ rồi. Sáng mai con phải dậy lúc 7 giờ, tối nay nhất định phải ngủ trước 10 giờ.",
+          "statement": "儿子明天早上九点起床。",
+          "statementPinyin": "Érzi míngtiān zǎoshang jiǔ diǎn qǐchuáng.",
+          "answer": false,
+          "explain": "明天早上七点就得起床 = “sáng mai 7 giờ đã phải dậy”; 九点 chỉ là giờ hiện tại (已经九点了) → câu ★ sai (bẫy số)."
+        },
+        {
+          "id": "p1-008",
+          "type": "detail",
+          "voice": "m",
+          "text": "我们公司有一百二十多个员工，其中女员工比男员工多一些。经理说，下个月会再来十个新同事，都是刚毕业的大学生。",
+          "pinyin": "Wǒmen gōngsī yǒu yìbǎi èrshí duō ge yuángōng, qízhōng nǚ yuángōng bǐ nán yuángōng duō yìxiē. Jīnglǐ shuō, xià ge yuè huì zài lái shí ge xīn tóngshì, dōu shì gāng bìyè de dàxuéshēng.",
+          "vi": "Công ty chúng tôi có hơn 120 nhân viên, trong đó nhân viên nữ nhiều hơn nhân viên nam một chút. Giám đốc nói tháng sau sẽ có thêm 10 đồng nghiệp mới, đều là sinh viên mới tốt nghiệp.",
+          "statement": "下个月公司会有新同事来。",
+          "statementPinyin": "Xià ge yuè gōngsī huì yǒu xīn tóngshì lái.",
+          "answer": true,
+          "explain": "下个月会再来十个新同事 = “tháng sau sẽ có thêm 10 đồng nghiệp mới” → câu ★ đúng."
+        },
+        {
+          "id": "p1-009",
+          "type": "detail",
+          "voice": "f",
+          "text": "我家附近新开了一家书店，在地铁站旁边，一楼卖书，二楼是咖啡厅。每天晚上开到十一点，很适合下班后去坐坐。",
+          "pinyin": "Wǒ jiā fùjìn xīn kāi le yì jiā shūdiàn, zài dìtiězhàn pángbiān, yī lóu mài shū, èr lóu shì kāfēitīng. Měitiān wǎnshang kāi dào shíyī diǎn, hěn shìhé xiàbān hòu qù zuòzuo.",
+          "vi": "Gần nhà tôi mới mở một hiệu sách, ở cạnh ga tàu điện ngầm, tầng một bán sách, tầng hai là quán cà phê. Mỗi tối mở cửa đến 11 giờ, rất hợp để tan làm rồi ghé ngồi chơi.",
+          "statement": "这家书店的二楼卖书。",
+          "statementPinyin": "Zhè jiā shūdiàn de èr lóu mài shū.",
+          "answer": false,
+          "explain": "一楼卖书，二楼是咖啡厅 = “tầng một bán sách, tầng hai là quán cà phê” → câu ★ sai (đổi tầng)."
+        },
+        {
+          "id": "p1-010",
+          "type": "detail",
+          "voice": "m",
+          "text": "王老师是我们的汉语老师，他个子很高，戴着眼镜，总是笑着跟学生说话。他已经教了十五年书，同学们都很喜欢他。",
+          "pinyin": "Wáng lǎoshī shì wǒmen de Hànyǔ lǎoshī, tā gèzi hěn gāo, dàizhe yǎnjìng, zǒngshì xiàozhe gēn xuésheng shuōhuà. Tā yǐjīng jiāo le shíwǔ nián shū, tóngxuémen dōu hěn xǐhuan tā.",
+          "vi": "Thầy Vương là giáo viên tiếng Hán của chúng tôi, thầy dáng cao, đeo kính, lúc nào cũng cười khi nói chuyện với học sinh. Thầy đã dạy mười lăm năm, các bạn đều rất quý thầy.",
+          "statement": "王老师教书教了十几年。",
+          "statementPinyin": "Wáng lǎoshī jiāoshū jiāo le shíjǐ nián.",
+          "answer": true,
+          "explain": "已经教了十五年书 = “đã dạy mười lăm năm”; 十五年 thuộc “十几年” → câu ★ đúng."
+        },
+        {
+          "id": "p1-011",
+          "type": "detail",
+          "voice": "f",
+          "text": "我昨天在机场等了四个小时。飞机本来应该下午两点起飞，因为下大雪，到六点才起飞。最后我晚上九点多才到家。",
+          "pinyin": "Wǒ zuótiān zài jīchǎng děng le sì ge xiǎoshí. Fēijī běnlái yīnggāi xiàwǔ liǎng diǎn qǐfēi, yīnwèi xià dàxuě, dào liù diǎn cái qǐfēi. Zuìhòu wǒ wǎnshang jiǔ diǎn duō cái dào jiā.",
+          "vi": "Hôm qua tôi đợi ở sân bay bốn tiếng. Máy bay lẽ ra cất cánh lúc 2 giờ chiều, vì tuyết rơi dày nên đến 6 giờ mới cất cánh. Cuối cùng hơn 9 giờ tối tôi mới về đến nhà.",
+          "statement": "飞机比原来的时间晚了四个小时起飞。",
+          "statementPinyin": "Fēijī bǐ yuánlái de shíjiān wǎn le sì ge xiǎoshí qǐfēi.",
+          "answer": true,
+          "explain": "本来下午两点起飞…到六点才起飞 → từ 2 giờ đến 6 giờ là muộn 4 tiếng → câu ★ đúng. (Phải tự tính, không chỉ nghe “四个小时”.)"
+        },
+        {
+          "id": "p1-012",
+          "type": "detail",
+          "voice": "m",
+          "text": "这次旅行我们一共去了三个城市：先去北京，再去上海，最后到杭州。我们在每个城市都住了两天，一共玩儿了六天。",
+          "pinyin": "Zhè cì lǚxíng wǒmen yígòng qù le sān ge chéngshì: xiān qù Běijīng, zài qù Shànghǎi, zuìhòu dào Hángzhōu. Wǒmen zài měi ge chéngshì dōu zhù le liǎng tiān, yígòng wánr le liù tiān.",
+          "vi": "Chuyến du lịch này chúng tôi đi tổng cộng ba thành phố: trước tiên đến Bắc Kinh, rồi đến Thượng Hải, cuối cùng tới Hàng Châu. Ở mỗi thành phố chúng tôi ở hai ngày, tổng cộng chơi sáu ngày.",
+          "statement": "他们一共在三个城市玩儿了七天。",
+          "statementPinyin": "Tāmen yígòng zài sān ge chéngshì wánr le qī tiān.",
+          "answer": false,
+          "explain": "每个城市住了两天，一共玩儿了六天 (3 × 2 = 6) → không phải 七天, câu ★ sai."
+        }
+      ]
     }
   ]
 }
