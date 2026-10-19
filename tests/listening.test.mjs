@@ -1,6 +1,8 @@
 // Unit tests for the listening logic and data. Run: npm run test:unit
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { existsSync, statSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import RAW from '../src/data/listening.json' with { type: 'json' };
 import { buildMix, buildRun, listenKey, reviewQuestions, validateListening } from '../src/listening.js';
 
@@ -134,4 +136,13 @@ test('reviewQuestions() returns only the questions marked "r", in id order', () 
   const p = { questions: [q('p1-003', 'detail'), q('p1-001', 'detail'), q('p1-002', 'detail')] };
   const marks = { 'l:p1-002': 'r', 'l:p1-003': 'r', 'l:p1-001': 'k' };
   assert.deepEqual(reviewQuestions((k) => marks[k] || '', p).map((x) => x.id), ['p1-002', 'p1-003']);
+});
+
+test('every question has an mp3 in public/audio/listening', () => {
+  for (const part of RAW.parts) {
+    for (const { id } of part.questions) {
+      const file = fileURLToPath(new URL(`../public/audio/listening/${id}.mp3`, import.meta.url));
+      assert.ok(existsSync(file) && statSync(file).size > 1000, `${id}.mp3 missing or too small`);
+    }
+  }
 });
