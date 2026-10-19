@@ -3,4 +3,4 @@ node_modules/
 .dev.vars
 .DS_Store
 dist/
-.playwright-mcp
+.playwright-mcp.superpowers/
