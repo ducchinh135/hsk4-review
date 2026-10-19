@@ -93,6 +93,7 @@ Quy tắc soạn đề (cho người viết nội dung):
           "vi": "Tôi định cuối tuần này đi leo núi, nhưng dự báo thứ Bảy mưa to, đành dời sang tuần sau.",
           "statement": "他这个周末要去爬山。",
           "statementPinyin": "Tā zhège zhōumò yào qù páshān.",
+          "statementVi": "Anh ấy cuối tuần này sẽ đi leo núi.",
           "answer": false,
           "explain": "本来打算…可是…只好… = \"định… nhưng… đành…\" → kế hoạch đã đổi, nên câu ★ sai."
         }
@@ -168,7 +169,7 @@ Theo bản phác ②, cùng khung và lớp CSS với `ComparePracticePage` (`ex
 - Thanh audio (mục 4).
 - Câu ★ chữ to (cỡ chữ câu như `fb-sentence`). Không hiện pinyin câu ★ trước khi trả lời.
 - Hai nút `fb-opt` lớn: "✔ 对 · Đúng" và "✘ 错 · Sai". Phím tắt: `1`/`←` = 对, `2`/`→` = 错, `Enter` = câu tiếp sau khi đã trả lời.
-- Sau khi chọn: nút chọn tô `correct`/`wrong` như hiện có, nút đáp án đúng luôn tô `correct`; khung `quiz-reveal ok|bad` gồm: "✅ Đúng — đáp án: 错" / "❌ Sai — đáp án: 错"; transcript (chữ Hán, nút 🔊 phát lại file audio, pinyin bật/tắt), câu ★ kèm pinyin, dịch tiếng Việt, 💡 giải thích.
+- Sau khi chọn: nút chọn tô `correct`/`wrong` như hiện có, nút đáp án đúng luôn tô `correct`; khung `quiz-reveal ok|bad` gồm: "✅ Đúng — đáp án: 错" / "❌ Sai — đáp án: 错"; transcript (chữ Hán, nút 🔊 phát lại file audio, pinyin bật/tắt), câu ★ kèm pinyin và bản dịch tiếng Việt (`statementVi`), bản dịch đoạn nghe, 💡 giải thích.
 - Sai → `setMark('l:<id>', 'r')` nếu chưa là `r`.
 - `controls`: ◀ Câu trước · Câu tiếp ▶ / Xem kết quả ▶ · 🏁 Kết quả (đúng/đã làm) — như Từ dễ nhầm. Có thể quay lại câu đã làm để xem lời giải, không trả lời lại.
 - "Danh sách câu" có tô xanh/đỏ, bấm để nhảy câu.

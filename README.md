@@ -78,7 +78,7 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 `src/data/listening.json` has `parts` (only part I so far): `tips`, `types` (`detail`, `attitude`, `infer`)
 and `questions`, each with a fixed `id` (`p1-001`; it is the audio file name and the mark key `l:p1-001`,
 so never renumber a published question), `type`, `voice` (`f`/`m`, the passage voice; the ★ statement
-uses the other), the passage `text`/`pinyin`/`vi`, the `statement`/`statementPinyin`, `answer`
+uses the other), the passage `text`/`pinyin`/`vi`, the `statement`/`statementPinyin`/`statementVi`, `answer`
 (`true` = 对) and an `explain`. `npm run test:unit` validates the data and checks every question has
 its mp3.
 

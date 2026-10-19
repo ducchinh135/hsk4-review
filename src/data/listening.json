@@ -108,6 +108,7 @@
           "vi": "Tôi định cuối tuần này cùng đồng nghiệp đi leo núi, nhưng dự báo thời tiết nói thứ Bảy có mưa to, đường lên núi khó đi, không an toàn lắm, đành dời sang tuần sau.",
           "statement": "他这个周末要去爬山。",
           "statementPinyin": "Tā zhège zhōumò yào qù páshān.",
+          "statementVi": "Anh ấy cuối tuần này sẽ đi leo núi.",
           "answer": false,
           "explain": "本来打算…可是…只好改到下周 = “định… nhưng… đành dời sang tuần sau” → cuối tuần này không đi leo núi, nên câu ★ sai."
         },
@@ -120,6 +121,7 @@
           "vi": "Món ăn ở quán này ngon, giá cũng không đắt, nên cứ đến trưa là trước cửa xếp hàng dài. Hôm nay tôi 11 giờ đã tới rồi mà vẫn phải đợi hơn 20 phút mới có chỗ.",
           "statement": "他排队等了二十几分钟。",
           "statementPinyin": "Tā páiduì děng le èrshí jǐ fēnzhōng.",
+          "statementVi": "Anh ấy xếp hàng chờ hơn hai mươi phút.",
           "answer": true,
           "explain": "还是等了二十多分钟 = “vẫn phải đợi hơn 20 phút”; 二十多 ≈ 二十几 → câu ★ đúng."
         },
@@ -132,6 +134,7 @@
           "vi": "Tiểu Vương, cuộc họp đổi sang 3 giờ chiều rồi, không phải 10 giờ sáng. Địa điểm cũng đổi, không ở phòng họp tầng 2 nữa mà chuyển lên tầng 5. Nhờ cậu báo mọi người một tiếng, đừng đi nhầm.",
           "statement": "会议要在二楼会议室开。",
           "statementPinyin": "Huìyì yào zài èr lóu huìyìshì kāi.",
+          "statementVi": "Cuộc họp sẽ họp ở phòng họp tầng 2.",
           "answer": false,
           "explain": "不在二楼会议室，改到五楼了 = “không ở phòng họp tầng 2, chuyển lên tầng 5” → câu ★ sai."
         },
@@ -144,6 +147,7 @@
           "vi": "Em gái tôi nhỏ hơn tôi ba tuổi, năm nay vừa vào đại học. Em học tiếng Trung, nói sau này muốn làm phiên dịch. Tôi thì khác, tôi đã đi làm năm năm rồi, ngày nào cũng rất bận.",
           "statement": "他的妹妹现在还在上学。",
           "statementPinyin": "Tā de mèimei xiànzài hái zài shàngxué.",
+          "statementVi": "Em gái anh ấy bây giờ vẫn đang đi học.",
           "answer": true,
           "explain": "今年刚上大学 = “năm nay vừa vào đại học” → em gái vẫn đang đi học, câu ★ đúng. 已经工作五年 là chuyện của người nói, không phải em gái."
         },
@@ -156,6 +160,7 @@
           "vi": "Cuối tuần này trung tâm thương mại giảm giá, tất cả quần áo giảm còn năm phần mười, giày giảm còn bảy phần mười, nhưng chỉ giảm ba ngày. Tôi định mai tan làm đến xem, mua cho con trai hai cái quần.",
           "statement": "商场里的鞋子也打五折。",
           "statementPinyin": "Shāngchǎng lǐ de xiézi yě dǎ wǔ zhé.",
+          "statementVi": "Giày ở trung tâm thương mại cũng giảm 50% (五折).",
           "answer": false,
           "explain": "衣服都是五折，鞋子打七折 → chỉ quần áo được 五折; giày là 七折, nên câu ★ sai. (五折 = còn 50% giá, 七折 = còn 70% giá.)"
         },
@@ -168,6 +173,7 @@
           "vi": "Từ nhà tôi đến công ty không xa lắm, đi tàu điện ngầm chỉ mất 20 phút. Nhưng buổi sáng người đi làm đông, trên tàu rất chật, nên tôi thường đạp xe đi, 25 phút là tới.",
           "statement": "他经常骑自行车去上班。",
           "statementPinyin": "Tā jīngcháng qí zìxíngchē qù shàngbān.",
+          "statementVi": "Anh ấy thường đạp xe đi làm.",
           "answer": true,
           "explain": "所以我常常骑自行车去 = “nên tôi thường đạp xe đi”; 常常 ≈ 经常 → câu ★ đúng."
         },
@@ -180,6 +186,7 @@
           "vi": "Con trai, bài tập con làm xong chưa? Đừng xem tivi mãi, đã 9 giờ rồi. Sáng mai con phải dậy lúc 7 giờ, tối nay nhất định phải ngủ trước 10 giờ.",
           "statement": "儿子明天早上九点起床。",
           "statementPinyin": "Érzi míngtiān zǎoshang jiǔ diǎn qǐchuáng.",
+          "statementVi": "Sáng mai con trai dậy lúc 9 giờ.",
           "answer": false,
           "explain": "明天早上七点就得起床 = “sáng mai 7 giờ đã phải dậy”; 九点 chỉ là giờ hiện tại (已经九点了) → câu ★ sai (bẫy số)."
         },
@@ -192,6 +199,7 @@
           "vi": "Công ty chúng tôi có hơn 120 nhân viên, trong đó nhân viên nữ nhiều hơn nhân viên nam một chút. Giám đốc nói tháng sau sẽ có thêm 10 đồng nghiệp mới, đều là sinh viên mới tốt nghiệp.",
           "statement": "下个月公司会有新同事来。",
           "statementPinyin": "Xià ge yuè gōngsī huì yǒu xīn tóngshì lái.",
+          "statementVi": "Tháng sau công ty sẽ có đồng nghiệp mới đến.",
           "answer": true,
           "explain": "下个月会再来十个新同事 = “tháng sau sẽ có thêm 10 đồng nghiệp mới” → câu ★ đúng."
         },
@@ -204,6 +212,7 @@
           "vi": "Gần nhà tôi mới mở một hiệu sách, ở cạnh ga tàu điện ngầm, tầng một bán sách, tầng hai là quán cà phê. Mỗi tối mở cửa đến 11 giờ, rất hợp để tan làm rồi ghé ngồi chơi.",
           "statement": "这家书店的二楼卖书。",
           "statementPinyin": "Zhè jiā shūdiàn de èr lóu mài shū.",
+          "statementVi": "Tầng hai của hiệu sách này bán sách.",
           "answer": false,
           "explain": "一楼卖书，二楼是咖啡厅 = “tầng một bán sách, tầng hai là quán cà phê” → câu ★ sai (đổi tầng)."
         },
@@ -216,6 +225,7 @@
           "vi": "Thầy Vương là giáo viên tiếng Hán của chúng tôi, thầy dáng cao, đeo kính, lúc nào cũng cười khi nói chuyện với học sinh. Thầy đã dạy mười lăm năm, các bạn đều rất quý thầy.",
           "statement": "王老师教书教了十几年。",
           "statementPinyin": "Wáng lǎoshī jiāoshū jiāo le shíjǐ nián.",
+          "statementVi": "Thầy Vương đã dạy học hơn mười năm.",
           "answer": true,
           "explain": "已经教了十五年书 = “đã dạy mười lăm năm”; 十五年 thuộc “十几年” → câu ★ đúng."
         },
@@ -228,6 +238,7 @@
           "vi": "Hôm qua tôi đợi ở sân bay bốn tiếng. Máy bay lẽ ra cất cánh lúc 2 giờ chiều, vì tuyết rơi dày nên đến 6 giờ mới cất cánh. Cuối cùng hơn 9 giờ tối tôi mới về đến nhà.",
           "statement": "飞机比原来的时间晚了四个小时起飞。",
           "statementPinyin": "Fēijī bǐ yuánlái de shíjiān wǎn le sì ge xiǎoshí qǐfēi.",
+          "statementVi": "Máy bay cất cánh muộn hơn giờ ban đầu bốn tiếng.",
           "answer": true,
           "explain": "本来下午两点起飞…到六点才起飞 → từ 2 giờ đến 6 giờ là muộn 4 tiếng → câu ★ đúng. (Phải tự tính, không chỉ nghe “四个小时”.)"
         },
@@ -240,6 +251,7 @@
           "vi": "Chuyến du lịch này chúng tôi đi tổng cộng ba thành phố: trước tiên đến Bắc Kinh, rồi đến Thượng Hải, cuối cùng tới Hàng Châu. Ở mỗi thành phố chúng tôi ở hai ngày, tổng cộng chơi sáu ngày.",
           "statement": "他们一共在三个城市玩儿了七天。",
           "statementPinyin": "Tāmen yígòng zài sān ge chéngshì wánr le qī tiān.",
+          "statementVi": "Họ chơi ở ba thành phố, tổng cộng bảy ngày.",
           "answer": false,
           "explain": "每个城市住了两天，一共玩儿了六天 (3 × 2 = 6) → không phải 七天, câu ★ sai."
         }

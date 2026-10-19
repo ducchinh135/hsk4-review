@@ -15,6 +15,7 @@ const q = (id, type, answer = true) => ({
   vi: 'Ngày mai chúng tôi đi công viên chơi.',
   statement: '他们今天去公园。',
   statementPinyin: 'Tāmen jīntiān qù gōngyuán.',
+  statementVi: 'Hôm nay họ đi công viên.',
   answer,
   explain: '明天 = ngày mai, không phải hôm nay.',
 });
@@ -76,7 +77,7 @@ test('validateListening() reports a voice other than f or m', () => {
 });
 
 test('validateListening() reports each missing or empty text field', () => {
-  for (const f of ['text', 'pinyin', 'vi', 'statement', 'statementPinyin', 'explain']) {
+  for (const f of ['text', 'pinyin', 'vi', 'statement', 'statementPinyin', 'statementVi', 'explain']) {
     assert.ok(errorFor(dataWith([{ ...q('p1-001', 'detail'), [f]: '' }]), 'p1-001'), f + ' empty');
     const { [f]: _gone, ...rest } = q('p1-001', 'detail');
     assert.ok(errorFor(dataWith([rest]), 'p1-001'), f + ' missing');

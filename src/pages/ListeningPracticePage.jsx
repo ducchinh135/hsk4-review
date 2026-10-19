@@ -162,7 +162,8 @@ export default function ListeningPracticePage({ part: partId, scope, type }) {
               {showPinyin && <div className="py">{q.pinyin}</div>}
               <div className="hz">★ {q.statement}</div>
               {showPinyin && <div className="py">{q.statementPinyin}</div>}
-              <div className="quiz-reveal-sub">{q.vi}</div>
+              <div className="quiz-reveal-sub">Dịch đoạn nghe: {q.vi}</div>
+              <div className="quiz-reveal-sub">Dịch câu ★: {q.statementVi}</div>
               <div className="quiz-reveal-sub">💡 {q.explain}</div>
             </div>
           </div>

@@ -78,7 +78,7 @@ export function saveShowPinyin(b) {
   }
 }
 
-const TEXT_FIELDS = ['text', 'pinyin', 'vi', 'statement', 'statementPinyin', 'explain'];
+const TEXT_FIELDS = ['text', 'pinyin', 'vi', 'statement', 'statementPinyin', 'statementVi', 'explain'];
 const isText = (s) => typeof s === 'string' && s.trim() !== '';
 
 // Every problem in the listening data, as readable messages; [] when it is valid.
