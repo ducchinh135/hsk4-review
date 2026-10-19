@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import AudioPlayer from '../components/AudioPlayer.jsx';
 import TrueFalseQuestion from '../components/TrueFalseQuestion.jsx';
 import { useApp } from '../context/AppContext.jsx';
-import { audioUrl, buildMix, buildRun, listenKey, loadShowPinyin, partById, questionsOf, reviewQuestions, saveShowPinyin } from '../listening.js';
+import { audioUrl, buildMix, buildRun, keyAction, listenKey, loadShowPinyin, partById, questionsOf, reviewQuestions, saveShowPinyin } from '../listening.js';
 import { Link } from '../router.jsx';
 
 const REVIEW_MAX = 30;
@@ -57,12 +57,22 @@ export default function ListeningPracticePage({ part: partId, scope, type }) {
   useEffect(() => {
     if (!n || showDone) return undefined;
     const onKey = (e) => {
-      const t = e.target;
       if (e.isComposing || e.ctrlKey || e.metaKey || e.altKey) return;
-      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || t.isContentEditable)) return;
-      if (!answered && (e.key === '1' || e.key === 'ArrowLeft')) answer(true);
-      else if (!answered && (e.key === '2' || e.key === 'ArrowRight')) answer(false);
-      else if (answered && e.key === 'Enter' && !(t && (t.tagName === 'BUTTON' || t.tagName === 'A'))) next();
+      const t = e.target;
+      const tag = t && t.tagName;
+      const target =
+        tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || (t && t.isContentEditable)
+          ? 'field'
+          : t && t.closest && t.closest('.fb-opt')
+          ? 'answer'
+          : tag === 'BUTTON' || tag === 'A'
+          ? 'control'
+          : 'other';
+      const action = keyAction({ key: e.key, answered: !!answered, target });
+      if (!action) return;
+      e.preventDefault();
+      if (action === 'next') next();
+      else answer(action === 'true');
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);

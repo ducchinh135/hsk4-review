@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { existsSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import RAW from '../src/data/listening.json' with { type: 'json' };
-import { buildMix, buildRun, listenKey, reviewQuestions, validateListening } from '../src/listening.js';
+import { buildMix, buildRun, keyAction, listenKey, reviewQuestions, validateListening } from '../src/listening.js';
 
 const q = (id, type, answer = true) => ({
   id,
@@ -145,5 +145,27 @@ test('every question has an mp3 in public/audio/listening', () => {
       const file = fileURLToPath(new URL(`../public/audio/listening/${id}.mp3`, import.meta.url));
       assert.ok(existsSync(file) && statSync(file).size > 1000, `${id}.mp3 missing or too small`);
     }
+  }
+});
+
+test('keyAction() answers with 1/← (对) and 2/→ (错) before the question is answered', () => {
+  for (const key of ['1', 'ArrowLeft']) assert.equal(keyAction({ key, answered: false, target: 'other' }), 'true');
+  for (const key of ['2', 'ArrowRight']) assert.equal(keyAction({ key, answered: false, target: 'other' }), 'false');
+  assert.equal(keyAction({ key: 'Enter', answered: false, target: 'other' }), null);
+});
+
+test('keyAction() goes to the next question with Enter after answering, also right after clicking an answer button', () => {
+  assert.equal(keyAction({ key: 'Enter', answered: true, target: 'other' }), 'next');
+  assert.equal(keyAction({ key: 'Enter', answered: true, target: 'answer' }), 'next');
+});
+
+test('keyAction() leaves Enter to a focused control such as "Câu trước" and ignores answer keys once answered', () => {
+  assert.equal(keyAction({ key: 'Enter', answered: true, target: 'control' }), null);
+  assert.equal(keyAction({ key: '1', answered: true, target: 'other' }), null);
+});
+
+test('keyAction() ignores every key while typing in a field', () => {
+  for (const key of ['1', '2', 'ArrowLeft', 'ArrowRight', 'Enter']) {
+    for (const answered of [false, true]) assert.equal(keyAction({ key, answered, target: 'field' }), null, key);
   }
 });

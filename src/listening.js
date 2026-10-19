@@ -44,6 +44,16 @@ export function buildMix(part, n = 10, rng = Math.random) {
 export const reviewQuestions = (getMark, part) =>
   part.questions.filter((q) => getMark(listenKey(q.id)) === 'r').sort((a, b) => (a.id < b.id ? -1 : 1));
 
+// What a key press does in a run: 'true' / 'false' answers (1 or ← = 对, 2 or → = 错), 'next' moves on
+// once answered, null = ignore. `target` is where focus is: 'field' (typing), 'answer' (an answer
+// button, which keeps focus after a click), 'control' (another button or link, which handles Enter
+// itself) or 'other'.
+export function keyAction({ key, answered, target }) {
+  if (target === 'field') return null;
+  if (!answered) return key === '1' || key === 'ArrowLeft' ? 'true' : key === '2' || key === 'ArrowRight' ? 'false' : null;
+  return key === 'Enter' && target !== 'control' ? 'next' : null;
+}
+
 export const RATES = [0.8, 1, 1.25];
 const RATE_KEY = 'hsk4_listen_rate';
 const PINYIN_KEY = 'hsk4_listen_pinyin';
