@@ -1,0 +1,17 @@
+{
+  "parts": [
+    {
+      "id": "p1",
+      "name": "判断对错",
+      "label": "Phán đoán đúng/sai",
+      "desc": "Nghe một đoạn ngắn, xét câu ★ đúng hay sai.",
+      "tips": { "intro": "", "sections": [] },
+      "types": [
+        { "id": "detail", "icon": "🔢", "name": "Chi tiết", "desc": "Câu ★ nói về thời gian, số lượng, người, nơi chốn — nghe đúng chi tiết là làm được.", "tip": "" },
+        { "id": "attitude", "icon": "💬", "name": "Thái độ, ý kiến", "desc": "Người nói thích hay không, đồng ý hay phản đối, khuyên điều gì.", "tip": "" },
+        { "id": "infer", "icon": "🧠", "name": "Suy luận, ý chính", "desc": "Câu ★ không lặp lại lời nghe, phải hiểu ý cả đoạn hoặc suy ra.", "tip": "" }
+      ],
+      "questions": []
+    }
+  ]
+}
