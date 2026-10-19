@@ -87,7 +87,7 @@ test('matchRoute() sends an unknown or over-long practice path to /vocab/practic
 
 test('PAGES and SECTIONS list the navigation entries in order', () => {
   assert.deepEqual(PAGES.map((p) => p.path), ['/vocab/words', '/vocab/review', '/vocab/practice']);
-  assert.deepEqual(SECTIONS.map((s) => s.id), ['vocab', 'grammar', 'compare']);
+  assert.deepEqual(SECTIONS.map((s) => s.id), ['vocab', 'grammar', 'compare', 'listening']);
   for (const s of SECTIONS) assert.equal(matchRoute(s.path).path, s.path);
 });
 
@@ -95,4 +95,30 @@ test('sectionOf() groups pages by section', () => {
   for (const p of ['grammar', 'grammar-practice', 'grammar-review']) assert.equal(sectionOf(p), 'grammar');
   for (const p of ['compare', 'compare-practice', 'compare-review']) assert.equal(sectionOf(p), 'compare');
   for (const p of ['words', 'review', 'practice', 'exercise']) assert.equal(sectionOf(p), 'vocab');
+  for (const p of ['listening-hub', 'listening-tips', 'listening-practice', 'listening-review']) assert.equal(sectionOf(p), 'listening');
+});
+
+const lpage = (page, params, path) => ({ page, params, path });
+const HUB = lpage('listening-hub', { part: 'p1' }, '/listening/p1');
+
+test('matchRoute() maps the listening pages', () => {
+  assert.deepEqual(matchRoute('/listening'), HUB);
+  assert.deepEqual(matchRoute('/listening/'), HUB);
+  assert.deepEqual(matchRoute('/listening/p1'), HUB);
+  assert.deepEqual(matchRoute('/listening/p1/tips'), lpage('listening-tips', { part: 'p1' }, '/listening/p1/tips'));
+  assert.deepEqual(matchRoute('/listening/p1/review'), lpage('listening-review', { part: 'p1' }, '/listening/p1/review'));
+  for (const type of ['detail', 'attitude', 'infer', 'mix']) {
+    assert.deepEqual(matchRoute('/listening/p1/practice/' + type), lpage('listening-practice', { part: 'p1', type }, '/listening/p1/practice/' + type));
+  }
+  assert.deepEqual(matchRoute('//listening//p1//tips/'), lpage('listening-tips', { part: 'p1' }, '/listening/p1/tips'));
+});
+
+test('matchRoute() sends unknown listening paths to the Part 1 hub', () => {
+  for (const p of ['/listening/p2', '/listening/p1/practice/xyz', '/listening/p1/practice', '/listening/p1/tips/x', '/listening/P1', '/listening/p1/review/1', '/listening/x/y/z']) {
+    assert.deepEqual(matchRoute(p), HUB, p);
+  }
+});
+
+test('every listening page has a title', () => {
+  for (const p of ['listening-hub', 'listening-tips', 'listening-practice', 'listening-review']) assert.ok(PAGE_TITLES[p], p);
 });
