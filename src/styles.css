@@ -415,3 +415,7 @@ a.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .letter-tab .letter-name{ font-size:18px; }
 .letter-tab .tab-sub{ font-size:11px; font-weight:700; opacity:.8; }
 .letter-tab.active{ background:var(--accent-a,#3d8bff); border-color:var(--accent-a,#3d8bff); color:#fff; }
+
+.lp-tip{ text-align:left; display:flex; flex-direction:column; gap:14px; }
+.lp-tip h3{ margin:6px 0 2px; }
+.lp-tip-section{ display:flex; flex-direction:column; align-items:flex-start; gap:8px; padding-top:10px; border-top:1px solid #f0f0f5; }

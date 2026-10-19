@@ -13,6 +13,7 @@ import ComparePracticePage from './pages/ComparePracticePage.jsx';
 import GrammarPage from './pages/GrammarPage.jsx';
 import GrammarPracticePage from './pages/GrammarPracticePage.jsx';
 import ListeningHubPage from './pages/ListeningHubPage.jsx';
+import ListeningTipsPage from './pages/ListeningTipsPage.jsx';
 import ExercisePage from './pages/ExercisePage.jsx';
 import ReviewPage from './pages/ReviewPage.jsx';
 import WordsPage from './pages/WordsPage.jsx';
@@ -22,7 +23,8 @@ import { PAGE_TITLES, sectionOf } from './routes.js';
 // The study pages are remounted (via `key`) when the lesson, filter or account data changes, so
 // their lists and positions are rebuilt.
 function Page({ route, viewVersion }) {
-  // tips, practice and review pages come in later tasks; until then they show the hub
+  if (route.page === 'listening-tips') return <ListeningTipsPage key={route.params.part + ':' + viewVersion} part={route.params.part} />;
+  // practice and review pages come in the next task; until then they show the hub
   if (route.page.startsWith('listening')) return <ListeningHubPage key={route.params.part + ':' + viewVersion} part={route.params.part} />;
   if (route.page === 'compare') return <ComparePage />;
   if (route.page === 'compare-practice') return <ComparePracticePage key={'lesson:' + viewVersion} scope="lesson" />;
