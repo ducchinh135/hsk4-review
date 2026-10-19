@@ -419,3 +419,17 @@ a.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .lp-tip{ text-align:left; display:flex; flex-direction:column; gap:14px; }
 .lp-tip h3{ margin:6px 0 2px; }
 .lp-tip-section{ display:flex; flex-direction:column; align-items:flex-start; gap:8px; padding-top:10px; border-top:1px solid #f0f0f5; }
+
+/* listening practice */
+.lp-audio{ display:flex; align-items:center; gap:10px; justify-content:center; margin:6px 0 4px; flex-wrap:wrap; }
+.lp-track{ flex:0 1 380px; min-width:80px; height:6px; border-radius:3px; background:#e2e2ea; position:relative; }
+.lp-track i{ position:absolute; left:0; top:0; bottom:0; border-radius:3px; background:var(--accent-a,#ef6b7f); }
+.lp-time{ font-variant-numeric:tabular-nums; font-weight:700; color:#666; }
+.lp-star{ font-size:clamp(22px,4.5vw,30px); font-weight:700; margin:14px 0 18px; text-align:center; overflow-wrap:anywhere; }
+.lp-tf{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+.lp-tf .fb-opt{ min-width:150px; }
+.lp-trans{ text-align:left; margin-top:10px; background:#fff8f0; border-radius:14px; padding:10px 14px; font-weight:600; color:#333; }
+.lp-trans .hz{ font-size:20px; }
+.lp-trans .py{ color:#888; font-size:14px; }
+.lp-trans .quiz-label{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.link-btn.small{ font-size:13px; }

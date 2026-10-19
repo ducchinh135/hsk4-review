@@ -13,6 +13,7 @@ import ComparePracticePage from './pages/ComparePracticePage.jsx';
 import GrammarPage from './pages/GrammarPage.jsx';
 import GrammarPracticePage from './pages/GrammarPracticePage.jsx';
 import ListeningHubPage from './pages/ListeningHubPage.jsx';
+import ListeningPracticePage from './pages/ListeningPracticePage.jsx';
 import ListeningTipsPage from './pages/ListeningTipsPage.jsx';
 import ExercisePage from './pages/ExercisePage.jsx';
 import ReviewPage from './pages/ReviewPage.jsx';
@@ -24,8 +25,12 @@ import { PAGE_TITLES, sectionOf } from './routes.js';
 // their lists and positions are rebuilt.
 function Page({ route, viewVersion }) {
   if (route.page === 'listening-tips') return <ListeningTipsPage key={route.params.part + ':' + viewVersion} part={route.params.part} />;
-  // practice and review pages come in the next task; until then they show the hub
-  if (route.page.startsWith('listening')) return <ListeningHubPage key={route.params.part + ':' + viewVersion} part={route.params.part} />;
+  if (route.page === 'listening-practice') {
+    const { part, type } = route.params;
+    return <ListeningPracticePage key={`${part}:${type}:${viewVersion}`} part={part} scope={type === 'mix' ? 'mix' : 'type'} type={type} />;
+  }
+  if (route.page === 'listening-review') return <ListeningPracticePage key={`review:${route.params.part}:${viewVersion}`} part={route.params.part} scope="review" />;
+  if (route.page === 'listening-hub') return <ListeningHubPage key={route.params.part + ':' + viewVersion} part={route.params.part} />;
   if (route.page === 'compare') return <ComparePage />;
   if (route.page === 'compare-practice') return <ComparePracticePage key={'lesson:' + viewVersion} scope="lesson" />;
   if (route.page === 'compare-review') return <ComparePracticePage key={'review:' + viewVersion} scope="review" />;
