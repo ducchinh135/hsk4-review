@@ -15,6 +15,13 @@ share, a comparison table, examples per word with pronunciation and a tip, plus 
 group (hanzi or toneless pinyin) and fill-in-the-blank exercises whose choices are the words of the
 group. Wrong answers mark the group "needs review".
 
+A listening section practises the listening part of the HSK 4 exam one part at a time (part I,
+判断对错, is done; parts II and III are dimmed tabs): a tips page, three question types (details,
+attitude, inference), a mixed run and a review of the questions marked "needs review". Each question
+plays a pre-made mp3 (a passage, then the ★ statement), you pick 对 or 错, and the answer shows the
+transcript with pinyin, a Vietnamese translation and an explanation. Wrong answers mark the question
+"needs review".
+
 - Without a backend (e.g. GitHub Pages) marks and review progress are stored in the browser only.
 - With the Cloudflare backend, users sign in (username + password, invite code to register) and
   their marks sync across devices (last write wins per word).
@@ -32,6 +39,10 @@ group. Wrong answers mark the group "needs review".
 | `/compare` | Confusable-word groups of the chosen letter, filtered by mark, with a search over every group; `/compare#096` opens and scrolls to a group |
 | `/compare/practice` | A practice run over the chosen letter's groups (under the compare filter) |
 | `/compare/review` | A practice run over every "needs review" group (at most 30 questions) |
+| `/listening/p1` | Part I hub: tips, the three question types, mixed run, review (`/listening` redirects here) |
+| `/listening/p1/tips` | Tips for part I |
+| `/listening/p1/practice/<type>` | A run over one type (`detail`, `attitude`, `infer`) or `mix` (10 questions across the types) |
+| `/listening/p1/review` | A run over every "needs review" listening question (at most 30) |
 
 Paths are real URLs (History API), so the host must serve `index.html` for them. Cloudflare Pages does
 that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
@@ -48,6 +59,10 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 | `src/data/grammar.json` | Grammar points per lesson (see below) |
 | `src/compare.js` | Confusable-word data access, filters, search, practice-run building, data validation |
 | `src/data/compare.json` | The confusable-word groups, as one flat list (see below) |
+| `src/listening.js` | Listening data access, run building, remembered speed and pinyin choices, data validation |
+| `src/data/listening.json` | The listening parts: tips, question types and questions (see below) |
+| `public/audio/listening/` | One mp3 per question (`p1-001.mp3`…) and `manifest.json`, made by `scripts/tts.py` |
+| `scripts/tts.py` | Makes the listening audio with `edge-tts` (see below) |
 | `src/data/vocab.json` | The vocabulary, one array per word: `[hanzi, pinyin, meaning, example zh, example vi]` |
 | `src/data/practice.json` | Expanded HSK 4 textbook/workbook collocations (`phrases`) and context sentences (`sentences`) per word |
 | `server/app.js` | The Hono API: middleware (no-store, CSRF guard) and routes |
@@ -56,7 +71,30 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 | `functions/api/[[route]].js` | Mounts the Hono app on Cloudflare Pages Functions |
 | `migrations/` | D1 schema: `0001_init.sql` (`users`, `progress`, `attempts`), `0002_srs.sql` (`srs`, no longer used by the frontend) |
 | `tests/api.test.mjs` | Integration tests for the API |
-| `tests/quiz.test.mjs`, `tests/router.test.mjs`, `tests/grammar.test.mjs`, `tests/compare.test.mjs` | Unit tests for the quiz, URL matching, grammar and confusable-words logic and data (no server needed) |
+| `tests/quiz.test.mjs`, `tests/router.test.mjs`, `tests/grammar.test.mjs`, `tests/compare.test.mjs`, `tests/listening.test.mjs` | Unit tests for the quiz, URL matching, grammar, confusable-words and listening logic and data (no server needed) |
+
+### Listening data and audio
+
+`src/data/listening.json` has `parts` (only part I so far): `tips`, `types` (`detail`, `attitude`, `infer`)
+and `questions`, each with a fixed `id` (`p1-001`; it is the audio file name and the mark key `l:p1-001`,
+so never renumber a published question), `type`, `voice` (`f`/`m`, the passage voice; the ★ statement
+uses the other), the passage `text`/`pinyin`/`vi`, the `statement`/`statementPinyin`, `answer`
+(`true` = 对) and an `explain`. `npm run test:unit` validates the data and checks every question has
+its mp3.
+
+After adding or changing questions, make the audio (needs Python 3 and a network connection; the
+voices are the online neural voices of `edge-tts`, an unofficial use of Edge's read-aloud service, so it
+may stop working; existing mp3 files are unaffected):
+
+```sh
+python3 -m venv .venv && .venv/bin/pip install edge-tts   # once; .venv is not committed
+.venv/bin/python scripts/tts.py             # only new or changed questions
+.venv/bin/python scripts/tts.py --force --rate=-10%   # redo everything, slower (default -5%)
+```
+
+Each mp3 is the passage, 1.5 s of silence, then the statement. The parts are joined by concatenating
+the mp3 bytes (all are MPEG-2 layer III, 24 kHz), which plays and decodes in Chrome; if a browser ever
+glitches at the join, rebuild the file with `ffmpeg`.
 
 ### Grammar data
 
