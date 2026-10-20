@@ -579,8 +579,91 @@
       "desc": "Nghe một đoạn hội thoại ngắn và câu hỏi, chọn đáp án đúng.",
       "mixCount": 15,
       "tips": {
-        "intro": "",
-        "sections": []
+        "intro": "Phần 2 của đề nghe HSK 4 gồm 15 câu (câu 11–25). Mỗi câu bạn nghe một đoạn hội thoại ngắn giữa một người nam và một người nữ (mỗi người nói một lượt), rồi nghe một câu hỏi. Câu hỏi không in trên giấy, chỉ có 4 đáp án A–D in sẵn; bạn chọn một đáp án đúng. Mỗi câu chỉ nghe một lần.",
+        "sections": [
+          {
+            "title": "Đọc 4 đáp án trước khi nghe",
+            "body": "Trong vài giây trước mỗi câu, nhìn xem 4 đáp án cùng là loại gì (cùng là giờ, nơi chốn, lý do, việc làm…) để đoán câu hỏi sắp nghe, rồi chỉ canh đúng loại thông tin đó khi nghe hội thoại.",
+            "examples": [
+              [
+                "五点 / 六点 / 七点 / 八点",
+                "wǔ diǎn / liù diǎn / qī diǎn / bā diǎn",
+                "4 đáp án đều là giờ → câu hỏi sẽ hỏi “mấy giờ”, hãy canh các con số chỉ giờ."
+              ]
+            ]
+          },
+          {
+            "title": "Câu hỏi chỉ nghe, nên nhớ từ khóa ngay",
+            "body": "Câu hỏi được đọc sau hội thoại. Đừng đợi nghe câu hỏi mới chú ý: vừa nghe vừa ghi nhớ nhanh số, nơi chốn, tên, và ai nói câu nào. Câu hỏi hay có 男的 / 女的, tức là chỉ tính lời của người đó.",
+            "examples": [
+              [
+                "女的大概几点下班？",
+                "Nǚ de dàgài jǐ diǎn xiàbān?",
+                "“女的” → chỉ lấy giờ người nữ nói, không lấy giờ người nam nhắc đến."
+              ]
+            ]
+          },
+          {
+            "title": "Đáp án thường ở lượt 2 hoặc sau từ chuyển ý",
+            "body": "Lượt 1 thường là câu hỏi hoặc đề nghị; lượt 2 mới chứa thông tin quyết định. Sau 可是, 不过, 其实, 但是, 结果 thường là ý thật của người nói.",
+            "examples": [
+              [
+                "我想去，可是太忙了。",
+                "Wǒ xiǎng qù, kěshì tài máng le.",
+                "Muốn đi nhưng bận quá → đáp án nằm sau 可是 (không đi được)."
+              ]
+            ]
+          },
+          {
+            "title": "Bẫy: từ trong đáp án cũng xuất hiện trong hội thoại",
+            "body": "Đáp án nghe giống hệt từ trong hội thoại thường là đáp án nhiễu: người nói nhắc đến nó rồi phủ định, sửa lại hoặc nói về việc khác. Đáp án đúng hay diễn đạt lại bằng từ khác. Luôn đối chiếu với câu hỏi.",
+            "examples": [
+              [
+                "你是在学校买的吗？ —— 不，我在网上买的。",
+                "Nǐ shì zài xuéxiào mǎi de ma? — Bù, wǒ zài wǎngshàng mǎi de.",
+                "Nghe thấy 学校 nhưng bị phủ định → chọn “网上”, không chọn “学校”."
+              ]
+            ]
+          },
+          {
+            "title": "Số và thời gian: phải tính",
+            "body": "Nhiều câu cho số rồi hỏi kết quả: giảm giá (打八折 = còn 80%), còn bao lâu (现在七点五十，八点开会), hơn kém (比…早两天). Đừng chọn thẳng con số được nhắc đến.",
+            "examples": [
+              [
+                "原来三百块，现在打八折。",
+                "Yuánlái sānbǎi kuài, xiànzài dǎ bā zhé.",
+                "Giá gốc 300, giảm còn 80% → 300 × 0,8 = 240, không phải 300 hay 80."
+              ]
+            ]
+          },
+          {
+            "title": "Nhận ra quan hệ, nghề nghiệp, nơi chốn",
+            "body": "Câu suy luận không nói thẳng: hãy bắt các từ đặc trưng và cách xưng hô (您, 老师, 经理, 服务员), từ chỉ nơi (点菜 → nhà hàng, 挂号 → bệnh viện, 登机 → sân bay), và việc người nói đang làm.",
+            "examples": [
+              [
+                "请问，您想点什么？",
+                "Qǐngwèn, nín xiǎng diǎn shénme?",
+                "Hỏi gọi món, dùng 您 → người nói là phục vụ, nơi nói chuyện là nhà hàng."
+              ]
+            ]
+          },
+          {
+            "title": "Thái độ và lời khuyên",
+            "body": "Tìm 觉得, 认为, 建议, 最好, 应该, 别, 不如, 同意. Chú ý cả giọng điệu: đồng ý (对、是啊), do dự (可是), phản đối (不行、我不这么认为).",
+            "examples": [
+              [
+                "你最好早点儿睡。",
+                "Nǐ zuìhǎo zǎodiǎnr shuì.",
+                "最好 = tốt nhất nên → đây là lời khuyên."
+              ]
+            ]
+          },
+          {
+            "title": "Lỡ một câu thì sao",
+            "body": "Đừng cố nhớ lại câu vừa qua. Chọn đáp án hợp lý nhất theo cả câu hỏi và hội thoại rồi chuyển ngay: câu sau bắt đầu chỉ sau vài giây.",
+            "examples": []
+          }
+        ]
       },
       "types": [
         {
@@ -588,31 +671,512 @@
           "icon": "🔎",
           "name": "Chi tiết",
           "desc": "Câu hỏi về thời gian, số lượng, người, nơi chốn hoặc việc đang làm — nghe đúng chi tiết là chọn được.",
-          "tip": ""
+          "tip": "Có ba kiểu bẫy hay gặp: (1) nghe nhiều số ở cả hai lượt, nhưng chỉ lượt của người mà câu hỏi nhắc đến (男的 hay 女的) mới tính; (2) số phải tính (giảm giá, còn mấy phút, hơn kém); (3) từ trong đáp án được nhắc đến rồi bị phủ định hoặc sửa lại ở lượt sau. Câu hỏi thường dùng 几点, 多少, 哪儿, 谁, 做什么, nên đoán trước qua 4 đáp án."
         },
         {
           "id": "reason",
           "icon": "❓",
           "name": "Nguyên nhân, vấn đề",
           "desc": "Hỏi vì sao, chuyện gì đã xảy ra, có vấn đề gì — đáp án nằm ở lý do hoặc điểm bất ổn trong lời thoại.",
-          "tip": ""
+          "tip": "Tìm lý do sau 因为, 所以, 结果, 怎么了. Lượt 1 thường hỏi 为什么 hoặc 怎么了, lượt 2 trả lời. Cẩn thận khi có hai lý do trong hội thoại: lý do thật thường nằm sau 可是 hoặc 其实."
         },
         {
           "id": "attitude",
           "icon": "💬",
           "name": "Thái độ, đề nghị",
           "desc": "Người nói nghĩ gì, đồng ý hay không, khuyên làm gì.",
-          "tip": ""
+          "tip": "Nghe từ chỉ ý kiến và lời khuyên: 觉得, 认为, 建议, 最好, 应该, 别, 不如, 同意. Phân biệt người nam hay người nữ nói gì, và nghe giọng điệu: đồng ý (对, 是啊), do dự (可是), phản đối (不行, 我不这么认为)."
         },
         {
           "id": "infer",
           "icon": "🧠",
           "name": "Suy luận",
           "desc": "Không nói thẳng: phải đoán quan hệ, nghề nghiệp, nơi nói chuyện hoặc ý ngầm.",
-          "tip": ""
+          "tip": "Đáp án không nằm sẵn trong lời thoại. Dựa vào cách xưng hô (您, 老师, 经理), từ đặc trưng của nơi chốn (菜单, 挂号, 登机), đồ vật, hành động và thái độ để suy ra quan hệ, nghề nghiệp, nơi nói chuyện. Loại các đáp án mâu thuẫn trước rồi chọn đáp án hợp lý nhất."
         }
       ],
-      "questions": []
+      "questions": [
+        {
+          "id": "p2-001",
+          "type": "detail",
+          "lines": [
+            {
+              "v": "m",
+              "text": "你几点下班？晚上一起去吃饭吧。",
+              "pinyin": "Nǐ jǐ diǎn xiàbān? Wǎnshang yìqǐ qù chīfàn ba.",
+              "vi": "Mấy giờ cậu tan làm? Tối nay cùng đi ăn cơm nhé."
+            },
+            {
+              "v": "f",
+              "text": "平时我五点就下班了，今天要加班，大概七点才能走。",
+              "pinyin": "Píngshí wǒ wǔ diǎn jiù xiàbān le, jīntiān yào jiābān, dàgài qī diǎn cái néng zǒu.",
+              "vi": "Bình thường 5 giờ tôi đã tan làm rồi, hôm nay phải làm thêm, khoảng 7 giờ mới đi được."
+            }
+          ],
+          "question": {
+            "v": "m",
+            "text": "女的大概几点下班？",
+            "pinyin": "Nǚ de dàgài jǐ diǎn xiàbān?",
+            "vi": "Người nữ khoảng mấy giờ tan làm?"
+          },
+          "options": [
+            {
+              "text": "五点",
+              "pinyin": "wǔ diǎn",
+              "vi": "5 giờ"
+            },
+            {
+              "text": "六点",
+              "pinyin": "liù diǎn",
+              "vi": "6 giờ"
+            },
+            {
+              "text": "七点",
+              "pinyin": "qī diǎn",
+              "vi": "7 giờ"
+            },
+            {
+              "text": "八点",
+              "pinyin": "bā diǎn",
+              "vi": "8 giờ"
+            }
+          ],
+          "answer": 2,
+          "explain": "平时我五点就下班了 là giờ thường ngày (đáp án nhiễu A); 今天要加班，大概七点才能走 = “hôm nay phải làm thêm, khoảng 7 giờ mới đi được” → câu hỏi hỏi hôm nay → C."
+        },
+        {
+          "id": "p2-002",
+          "type": "detail",
+          "lines": [
+            {
+              "v": "f",
+              "text": "这件衣服真好看，多少钱？",
+              "pinyin": "Zhè jiàn yīfu zhēn hǎokàn, duōshao qián?",
+              "vi": "Chiếc áo này đẹp quá, bao nhiêu tiền?"
+            },
+            {
+              "v": "m",
+              "text": "原来三百块，不过现在打八折，所以只要二百四十块。",
+              "pinyin": "Yuánlái sānbǎi kuài, búguò xiànzài dǎ bā zhé, suǒyǐ zhǐ yào èrbǎi sìshí kuài.",
+              "vi": "Giá gốc 300 tệ, nhưng bây giờ giảm còn 80%, nên chỉ cần 240 tệ."
+            }
+          ],
+          "question": {
+            "v": "f",
+            "text": "这件衣服现在多少钱？",
+            "pinyin": "Zhè jiàn yīfu xiànzài duōshao qián?",
+            "vi": "Chiếc áo này bây giờ giá bao nhiêu?"
+          },
+          "options": [
+            {
+              "text": "二百四十块",
+              "pinyin": "èrbǎi sìshí kuài",
+              "vi": "240 tệ"
+            },
+            {
+              "text": "三百块",
+              "pinyin": "sānbǎi kuài",
+              "vi": "300 tệ"
+            },
+            {
+              "text": "二百块",
+              "pinyin": "èrbǎi kuài",
+              "vi": "200 tệ"
+            },
+            {
+              "text": "八十块",
+              "pinyin": "bāshí kuài",
+              "vi": "80 tệ"
+            }
+          ],
+          "answer": 0,
+          "explain": "原来三百块 là giá cũ (đáp án nhiễu B); 打八折 = còn 80% giá → 300 × 0,8 = 240 → A. D lẫn với số 八 trong 八折."
+        },
+        {
+          "id": "p2-003",
+          "type": "detail",
+          "lines": [
+            {
+              "v": "m",
+              "text": "小王，会议是明天上午十点吗？",
+              "pinyin": "Xiǎo Wáng, huìyì shì míngtiān shàngwǔ shí diǎn ma?",
+              "vi": "Tiểu Vương, cuộc họp là 10 giờ sáng mai đúng không?"
+            },
+            {
+              "v": "f",
+              "text": "不是，改到后天下午三点了，地点还在五楼会议室。",
+              "pinyin": "Bú shì, gǎi dào hòutiān xiàwǔ sān diǎn le, dìdiǎn hái zài wǔ lóu huìyìshì.",
+              "vi": "Không phải, đổi sang 3 giờ chiều ngày kia rồi, địa điểm vẫn ở phòng họp tầng 5."
+            }
+          ],
+          "question": {
+            "v": "m",
+            "text": "会议什么时候开？",
+            "pinyin": "Huìyì shénme shíhou kāi?",
+            "vi": "Khi nào họp?"
+          },
+          "options": [
+            {
+              "text": "明天上午十点",
+              "pinyin": "míngtiān shàngwǔ shí diǎn",
+              "vi": "10 giờ sáng mai"
+            },
+            {
+              "text": "明天下午三点",
+              "pinyin": "míngtiān xiàwǔ sān diǎn",
+              "vi": "3 giờ chiều mai"
+            },
+            {
+              "text": "后天上午十点",
+              "pinyin": "hòutiān shàngwǔ shí diǎn",
+              "vi": "10 giờ sáng ngày kia"
+            },
+            {
+              "text": "后天下午三点",
+              "pinyin": "hòutiān xiàwǔ sān diǎn",
+              "vi": "3 giờ chiều ngày kia"
+            }
+          ],
+          "answer": 3,
+          "explain": "不是 phủ định lịch cũ (明天上午十点, đáp án A); 改到后天下午三点 = “đổi sang 3 giờ chiều ngày kia” → D. B và C chỉ ghép lẫn các phần."
+        },
+        {
+          "id": "p2-004",
+          "type": "detail",
+          "lines": [
+            {
+              "v": "f",
+              "text": "你的生日是几月几号？快到了吧？",
+              "pinyin": "Nǐ de shēngrì shì jǐ yuè jǐ hào? Kuài dào le ba?",
+              "vi": "Sinh nhật của anh là ngày mấy tháng mấy? Sắp đến rồi nhỉ?"
+            },
+            {
+              "v": "m",
+              "text": "下个月二十号，不过我打算先和朋友一起过，就在这个星期六。",
+              "pinyin": "Xià ge yuè èrshí hào, búguò wǒ dǎsuàn xiān hé péngyou yìqǐ guò, jiù zài zhège xīngqīliù.",
+              "vi": "Ngày 20 tháng sau, nhưng tôi định đón trước cùng bạn bè, ngay thứ Bảy này."
+            }
+          ],
+          "question": {
+            "v": "f",
+            "text": "男的打算什么时候和朋友过生日？",
+            "pinyin": "Nán de dǎsuàn shénme shíhou hé péngyou guò shēngrì?",
+            "vi": "Người nam định khi nào đón sinh nhật cùng bạn bè?"
+          },
+          "options": [
+            {
+              "text": "下个月二十号",
+              "pinyin": "xià ge yuè èrshí hào",
+              "vi": "Ngày 20 tháng sau"
+            },
+            {
+              "text": "这个星期六",
+              "pinyin": "zhège xīngqīliù",
+              "vi": "Thứ Bảy này"
+            },
+            {
+              "text": "下个星期六",
+              "pinyin": "xià ge xīngqīliù",
+              "vi": "Thứ Bảy tuần sau"
+            },
+            {
+              "text": "明天晚上",
+              "pinyin": "míngtiān wǎnshang",
+              "vi": "Tối mai"
+            }
+          ],
+          "answer": 1,
+          "explain": "下个月二十号 là ngày sinh nhật thật (đáp án nhiễu A); 不过我打算先和朋友一起过，就在这个星期六 = “nhưng tôi định đón trước cùng bạn bè, ngay thứ Bảy này” → B."
+        },
+        {
+          "id": "p2-005",
+          "type": "detail",
+          "lines": [
+            {
+              "v": "m",
+              "text": "比赛三点开始，现在已经两点半了，你怎么还不出发？",
+              "pinyin": "Bǐsài sān diǎn kāishǐ, xiànzài yǐjīng liǎng diǎn bàn le, nǐ zěnme hái bù chūfā?",
+              "vi": "Trận đấu 3 giờ bắt đầu, bây giờ đã 2 giờ rưỡi rồi, sao cậu còn chưa xuất phát?"
+            },
+            {
+              "v": "f",
+              "text": "别着急，从这儿到体育馆走路只要十分钟。",
+              "pinyin": "Bié zháojí, cóng zhèr dào tǐyùguǎn zǒulù zhǐ yào shí fēnzhōng.",
+              "vi": "Đừng vội, từ đây đến nhà thi đấu đi bộ chỉ mất 10 phút."
+            }
+          ],
+          "question": {
+            "v": "m",
+            "text": "从这儿到体育馆要多长时间？",
+            "pinyin": "Cóng zhèr dào tǐyùguǎn yào duō cháng shíjiān?",
+            "vi": "Từ đây đến nhà thi đấu mất bao lâu?"
+          },
+          "options": [
+            {
+              "text": "五分钟",
+              "pinyin": "wǔ fēnzhōng",
+              "vi": "5 phút"
+            },
+            {
+              "text": "十分钟",
+              "pinyin": "shí fēnzhōng",
+              "vi": "10 phút"
+            },
+            {
+              "text": "半个小时",
+              "pinyin": "bàn ge xiǎoshí",
+              "vi": "Nửa tiếng"
+            },
+            {
+              "text": "一个小时",
+              "pinyin": "yí ge xiǎoshí",
+              "vi": "Một tiếng"
+            }
+          ],
+          "answer": 1,
+          "explain": "两点半 đến 三点 là khoảng thời gian còn lại (30 phút, đáp án nhiễu C), không phải thời gian đi đường; 走路只要十分钟 = “đi bộ chỉ mất 10 phút” → B."
+        },
+        {
+          "id": "p2-006",
+          "type": "detail",
+          "lines": [
+            {
+              "v": "f",
+              "text": "小李，你的手机找到了吗？",
+              "pinyin": "Xiǎo Lǐ, nǐ de shǒujī zhǎodào le ma?",
+              "vi": "Tiểu Lý, điện thoại của cậu tìm thấy chưa?"
+            },
+            {
+              "v": "m",
+              "text": "找到了，在椅子下面，我昨天还以为丢在公司了，找了半天。",
+              "pinyin": "Zhǎodào le, zài yǐzi xiàmiàn, wǒ zuótiān hái yǐwéi diū zài gōngsī le, zhǎo le bàntiān.",
+              "vi": "Tìm thấy rồi, ở dưới ghế, hôm qua tôi còn tưởng để quên ở công ty, tìm mãi."
+            }
+          ],
+          "question": {
+            "v": "f",
+            "text": "男的的手机在哪儿？",
+            "pinyin": "Nán de de shǒujī zài nǎr?",
+            "vi": "Điện thoại của người nam ở đâu?"
+          },
+          "options": [
+            {
+              "text": "公司",
+              "pinyin": "gōngsī",
+              "vi": "Công ty"
+            },
+            {
+              "text": "汽车里",
+              "pinyin": "qìchē lǐ",
+              "vi": "Trong xe"
+            },
+            {
+              "text": "桌子上",
+              "pinyin": "zhuōzi shang",
+              "vi": "Trên bàn"
+            },
+            {
+              "text": "椅子下面",
+              "pinyin": "yǐzi xiàmiàn",
+              "vi": "Dưới ghế"
+            }
+          ],
+          "answer": 3,
+          "explain": "我昨天还以为丢在公司了 = “hôm qua còn tưởng để quên ở công ty” (đáp án nhiễu A, chỉ là suy đoán sai); 找到了，在椅子下面 = “tìm thấy rồi, ở dưới ghế” → D."
+        },
+        {
+          "id": "p2-007",
+          "type": "detail",
+          "lines": [
+            {
+              "v": "m",
+              "text": "你们家有几口人？都有什么人？",
+              "pinyin": "Nǐmen jiā yǒu jǐ kǒu rén? Dōu yǒu shénme rén?",
+              "vi": "Nhà các bạn có mấy người? Gồm những ai?"
+            },
+            {
+              "v": "f",
+              "text": "五口人，有爸爸、妈妈、哥哥、姐姐和我，你家呢？",
+              "pinyin": "Wǔ kǒu rén, yǒu bàba, māma, gēge, jiějie hé wǒ, nǐ jiā ne?",
+              "vi": "Năm người, có bố, mẹ, anh trai, chị gái và tôi, nhà anh thì sao?"
+            }
+          ],
+          "question": {
+            "v": "m",
+            "text": "女的家有几口人？",
+            "pinyin": "Nǚ de jiā yǒu jǐ kǒu rén?",
+            "vi": "Nhà người nữ có mấy người?"
+          },
+          "options": [
+            {
+              "text": "五口人",
+              "pinyin": "wǔ kǒu rén",
+              "vi": "5 người"
+            },
+            {
+              "text": "四口人",
+              "pinyin": "sì kǒu rén",
+              "vi": "4 người"
+            },
+            {
+              "text": "六口人",
+              "pinyin": "liù kǒu rén",
+              "vi": "6 người"
+            },
+            {
+              "text": "三口人",
+              "pinyin": "sān kǒu rén",
+              "vi": "3 người"
+            }
+          ],
+          "answer": 0,
+          "explain": "Người nữ nói 五口人 rồi liệt kê: bố, mẹ, anh trai, chị gái và chính cô (我) = 5 người → A. Nếu quên tính cả 我 sẽ nhầm sang B."
+        },
+        {
+          "id": "p2-008",
+          "type": "detail",
+          "lines": [
+            {
+              "v": "f",
+              "text": "张经理在吗？我有份文件要给他。",
+              "pinyin": "Zhāng jīnglǐ zài ma? Wǒ yǒu fèn wénjiàn yào gěi tā.",
+              "vi": "Giám đốc Trương có ở đó không? Tôi có tập tài liệu cần đưa cho ông ấy."
+            },
+            {
+              "v": "m",
+              "text": "他去机场接客人了，下午三点才回来。你可以放在他的桌子上。",
+              "pinyin": "Tā qù jīchǎng jiē kèrén le, xiàwǔ sān diǎn cái huílái. Nǐ kěyǐ fàng zài tā de zhuōzi shang.",
+              "vi": "Ông ấy ra sân bay đón khách rồi, 3 giờ chiều mới về. Cô có thể để trên bàn ông ấy."
+            }
+          ],
+          "question": {
+            "v": "f",
+            "text": "张经理现在在哪儿？",
+            "pinyin": "Zhāng jīnglǐ xiànzài zài nǎr?",
+            "vi": "Giám đốc Trương bây giờ ở đâu?"
+          },
+          "options": [
+            {
+              "text": "公司",
+              "pinyin": "gōngsī",
+              "vi": "Công ty"
+            },
+            {
+              "text": "银行",
+              "pinyin": "yínháng",
+              "vi": "Ngân hàng"
+            },
+            {
+              "text": "机场",
+              "pinyin": "jīchǎng",
+              "vi": "Sân bay"
+            },
+            {
+              "text": "饭馆",
+              "pinyin": "fànguǎn",
+              "vi": "Nhà hàng"
+            }
+          ],
+          "answer": 2,
+          "explain": "他去机场接客人了 = “ông ấy ra sân bay đón khách” → hiện giờ ông ở sân bay (C). 公司 là nơi người nữ có thể đặt tài liệu lên bàn (đáp án nhiễu A), không phải chỗ ông đang ở."
+        },
+        {
+          "id": "p2-009",
+          "type": "detail",
+          "lines": [
+            {
+              "v": "m",
+              "text": "你周末有什么安排？",
+              "pinyin": "Nǐ zhōumò yǒu shénme ānpái?",
+              "vi": "Cuối tuần cậu có kế hoạch gì?"
+            },
+            {
+              "v": "f",
+              "text": "星期六我要陪妈妈去医院，星期天在家打扫房间。",
+              "pinyin": "Xīngqīliù wǒ yào péi māma qù yīyuàn, xīngqītiān zài jiā dǎsǎo fángjiān.",
+              "vi": "Thứ Bảy tôi phải đưa mẹ đến bệnh viện, Chủ nhật ở nhà dọn phòng."
+            }
+          ],
+          "question": {
+            "v": "m",
+            "text": "女的星期六要做什么？",
+            "pinyin": "Nǚ de xīngqīliù yào zuò shénme?",
+            "vi": "Thứ Bảy người nữ sẽ làm gì?"
+          },
+          "options": [
+            {
+              "text": "打扫房间",
+              "pinyin": "dǎsǎo fángjiān",
+              "vi": "Dọn phòng"
+            },
+            {
+              "text": "去公园",
+              "pinyin": "qù gōngyuán",
+              "vi": "Đi công viên"
+            },
+            {
+              "text": "在家休息",
+              "pinyin": "zài jiā xiūxi",
+              "vi": "Nghỉ ở nhà"
+            },
+            {
+              "text": "陪妈妈去医院",
+              "pinyin": "péi māma qù yīyuàn",
+              "vi": "Đưa mẹ đến bệnh viện"
+            }
+          ],
+          "answer": 3,
+          "explain": "星期六我要陪妈妈去医院 = “thứ Bảy tôi phải đưa mẹ đến bệnh viện” → D. 打扫房间 là việc của Chủ nhật (星期天), đáp án nhiễu A."
+        },
+        {
+          "id": "p2-010",
+          "type": "detail",
+          "lines": [
+            {
+              "v": "f",
+              "text": "听说你去年去了欧洲，一共去了几个国家？",
+              "pinyin": "Tīngshuō nǐ qùnián qù le Ōuzhōu, yígòng qù le jǐ ge guójiā?",
+              "vi": "Nghe nói năm ngoái cậu đi châu Âu, tổng cộng đi mấy nước?"
+            },
+            {
+              "v": "m",
+              "text": "去了四个，法国、德国、意大利，还有西班牙，我最喜欢意大利。",
+              "pinyin": "Qù le sì ge, Fǎguó, Déguó, Yìdàlì, hái yǒu Xībānyá, wǒ zuì xǐhuan Yìdàlì.",
+              "vi": "Đi bốn nước: Pháp, Đức, Ý và Tây Ban Nha, tôi thích nhất nước Ý."
+            }
+          ],
+          "question": {
+            "v": "f",
+            "text": "男的去年一共去了几个国家？",
+            "pinyin": "Nán de qùnián yígòng qù le jǐ ge guójiā?",
+            "vi": "Năm ngoái người nam đi tổng cộng mấy nước?"
+          },
+          "options": [
+            {
+              "text": "四个",
+              "pinyin": "sì ge",
+              "vi": "4 nước"
+            },
+            {
+              "text": "三个",
+              "pinyin": "sān ge",
+              "vi": "3 nước"
+            },
+            {
+              "text": "五个",
+              "pinyin": "wǔ ge",
+              "vi": "5 nước"
+            },
+            {
+              "text": "一个",
+              "pinyin": "yí ge",
+              "vi": "1 nước"
+            }
+          ],
+          "answer": 0,
+          "explain": "去了四个 = “đi bốn nước”, và người nam liệt kê đủ 4 nước: Pháp, Đức, Ý, Tây Ban Nha → A. Câu “我最喜欢意大利” chỉ là nước yêu thích, không làm giảm số nước."
+        }
+      ]
     }
   ]
 }

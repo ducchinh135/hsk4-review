@@ -296,3 +296,26 @@ test('Part 2 exists in the shipped data with its four question types', () => {
   for (const t of p2.types) assert.ok(t.name && t.desc && t.icon, t.id);
   assert.deepEqual(Object.keys(typeCount(p2)), ['detail', 'reason', 'attitude', 'infer']);
 });
+
+test('Part 2 stage 1 content: tips, a tip per type and 10 balanced detail questions', () => {
+  const p2 = partById('p2');
+  assert.ok(p2.tips.intro && p2.tips.sections.length >= 5);
+  for (const sec of p2.tips.sections) assert.ok(sec.title && sec.body, sec.title);
+  for (const t of p2.types) assert.ok(t.tip && t.tip.trim() !== '', t.id + ' tip');
+  const detail = p2.questions.filter((x) => x.type === 'detail');
+  assert.ok(detail.length >= 10, 'detail questions: ' + detail.length);
+  const perLetter = [0, 0, 0, 0];
+  for (const x of detail) perLetter[x.answer]++;
+  for (const n of perLetter) assert.ok(n >= 1 && n <= 4, 'answer letters ' + perLetter);
+});
+
+test('Part 2 questions follow the writing rules (lengths, two voices, distinct dialogue)', () => {
+  const han = (str) => (str.match(/[\u4e00-\u9fff]/g) || []).length;
+  for (const x of partById('p2').questions) {
+    const total = han(x.lines[0].text) + han(x.lines[1].text);
+    assert.ok(total >= 25 && total <= 60, `${x.id} dialogue ${total} hanzi`);
+    assert.notEqual(x.lines[0].v, x.lines[1].v, `${x.id} needs one male and one female voice`);
+    assert.ok(han(x.question.text) >= 6 && han(x.question.text) <= 15, `${x.id} question length`);
+    for (const o of x.options) assert.ok(han(o.text) >= 2 && han(o.text) <= 12, `${x.id} option ${o.text}`);
+  }
+});
