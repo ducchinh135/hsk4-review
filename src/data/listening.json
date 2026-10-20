@@ -570,6 +570,49 @@
           "explain": "一个学期以后，口语都进步了很多 → cách dạy giúp học sinh tiến bộ → câu ★ đúng."
         }
       ]
+    },
+    {
+      "id": "p2",
+      "format": "choice",
+      "name": "选择正确答案",
+      "label": "Chọn đáp án đúng",
+      "desc": "Nghe một đoạn hội thoại ngắn và câu hỏi, chọn đáp án đúng.",
+      "mixCount": 15,
+      "tips": {
+        "intro": "",
+        "sections": []
+      },
+      "types": [
+        {
+          "id": "detail",
+          "icon": "🔎",
+          "name": "Chi tiết",
+          "desc": "Câu hỏi về thời gian, số lượng, người, nơi chốn hoặc việc đang làm — nghe đúng chi tiết là chọn được.",
+          "tip": ""
+        },
+        {
+          "id": "reason",
+          "icon": "❓",
+          "name": "Nguyên nhân, vấn đề",
+          "desc": "Hỏi vì sao, chuyện gì đã xảy ra, có vấn đề gì — đáp án nằm ở lý do hoặc điểm bất ổn trong lời thoại.",
+          "tip": ""
+        },
+        {
+          "id": "attitude",
+          "icon": "💬",
+          "name": "Thái độ, đề nghị",
+          "desc": "Người nói nghĩ gì, đồng ý hay không, khuyên làm gì.",
+          "tip": ""
+        },
+        {
+          "id": "infer",
+          "icon": "🧠",
+          "name": "Suy luận",
+          "desc": "Không nói thẳng: phải đoán quan hệ, nghề nghiệp, nơi nói chuyện hoặc ý ngầm.",
+          "tip": ""
+        }
+      ],
+      "questions": []
     }
   ]
 }

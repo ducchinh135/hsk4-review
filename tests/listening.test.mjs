@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { existsSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import RAW from '../src/data/listening.json' with { type: 'json' };
-import { buildMix, buildRun, correctLabel, keyAction, listenKey, mixSize, partFormat, promptOf, reviewQuestions, validateListening } from '../src/listening.js';
+import { buildMix, buildRun, correctLabel, keyAction, listenKey, mixSize, partById, partFormat, promptOf, reviewQuestions, typeCount, validateListening } from '../src/listening.js';
 
 const q = (id, type, answer = true) => ({
   id,
@@ -285,4 +285,14 @@ test('keyAction() for choice questions: 1-4 and a-d choose, Enter moves on, fiel
   assert.equal(f('Enter', true, 'control'), null);
   assert.equal(f('1', true), null);
   for (const key of ['1', 'a', 'Enter']) for (const answered of [false, true]) assert.equal(f(key, answered, 'field'), null, key);
+});
+
+test('Part 2 exists in the shipped data with its four question types', () => {
+  const p2 = partById('p2');
+  assert.ok(p2);
+  assert.equal(partFormat(p2), 'choice');
+  assert.equal(mixSize(p2), 15);
+  assert.deepEqual(p2.types.map((t) => t.id), ['detail', 'reason', 'attitude', 'infer']);
+  for (const t of p2.types) assert.ok(t.name && t.desc && t.icon, t.id);
+  assert.deepEqual(Object.keys(typeCount(p2)), ['detail', 'reason', 'attitude', 'infer']);
 });

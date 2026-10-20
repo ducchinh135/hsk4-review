@@ -114,11 +114,22 @@ test('matchRoute() maps the listening pages', () => {
 });
 
 test('matchRoute() sends unknown listening paths to the Part 1 hub', () => {
-  for (const p of ['/listening/p2', '/listening/p1/practice/xyz', '/listening/p1/practice', '/listening/p1/tips/x', '/listening/P1', '/listening/p1/review/1', '/listening/x/y/z']) {
+  for (const p of ['/listening/p3', '/listening/p2/practice/xyz', '/listening/p1/practice/xyz', '/listening/p1/practice', '/listening/p1/tips/x', '/listening/P1', '/listening/p1/review/1', '/listening/x/y/z']) {
     assert.deepEqual(matchRoute(p), HUB, p);
   }
 });
 
 test('every listening page has a title', () => {
   for (const p of ['listening-hub', 'listening-tips', 'listening-practice', 'listening-review']) assert.ok(PAGE_TITLES[p], p);
+});
+
+test('matchRoute() maps the Part 2 listening pages', () => {
+  assert.deepEqual(matchRoute('/listening/p2'), lpage('listening-hub', { part: 'p2' }, '/listening/p2'));
+  assert.deepEqual(matchRoute('/listening/p2/tips'), lpage('listening-tips', { part: 'p2' }, '/listening/p2/tips'));
+  assert.deepEqual(matchRoute('/listening/p2/review'), lpage('listening-review', { part: 'p2' }, '/listening/p2/review'));
+  for (const type of ['detail', 'reason', 'attitude', 'infer', 'mix']) {
+    assert.deepEqual(matchRoute('/listening/p2/practice/' + type), lpage('listening-practice', { part: 'p2', type }, '/listening/p2/practice/' + type));
+  }
+  // Part 1 types are not Part 2 types
+  assert.deepEqual(matchRoute('/listening/p2/practice/xyz'), HUB);
 });
