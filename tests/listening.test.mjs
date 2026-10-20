@@ -352,3 +352,37 @@ test('validateListening() lets a part allow more (or fewer) lines through minLin
   assert.ok(mentions(withRange([a, b, a, b, a, b, a], { minLines: 1, maxLines: 6 }), 'p2-001'));
   assert.ok(mentions(withRange([a], {}), 'p2-001'), 'default stays exactly two');
 });
+
+test('Part 3 has 30 questions: 10 long dialogues and 20 passages, balanced answer letters per type', () => {
+  const p3 = partById('p3');
+  assert.equal(p3.questions.length, 30);
+  assert.deepEqual(p3.types.map((t) => t.id), ['dialogue', 'detail', 'gist']);
+  assert.deepEqual(p3.questions.map((x) => x.id), Array.from({ length: 30 }, (_, i) => 'p3-' + String(i + 1).padStart(3, '0')));
+  assert.ok(p3.tips.intro && p3.tips.sections.length >= 5);
+  for (const t of p3.types) {
+    const qs = p3.questions.filter((x) => x.type === t.id);
+    assert.equal(qs.length, 10, t.id + ' count');
+    assert.ok(t.tip && t.tip.trim() !== '', t.id + ' tip');
+    const perLetter = [0, 0, 0, 0];
+    for (const x of qs) perLetter[x.answer]++;
+    for (const n of perLetter) assert.ok(n >= 1 && n <= 4, `${t.id} answer letters ${perLetter}`);
+  }
+});
+
+test('Part 3 questions follow the writing rules (dialogue: 4 alternating turns; passage: one voice, 50-130 hanzi)', () => {
+  const han = (str) => (str.match(/[一-鿿]/g) || []).length;
+  for (const x of partById('p3').questions) {
+    const total = x.lines.reduce((n, l) => n + han(l.text), 0);
+    if (x.type === 'dialogue') {
+      assert.equal(x.lines.length, 4, x.id);
+      x.lines.forEach((l, i) => i && assert.notEqual(l.v, x.lines[i - 1].v, `${x.id} turns alternate`));
+      assert.ok(total >= 60 && total <= 130, `${x.id} dialogue ${total} hanzi`);
+    } else {
+      assert.equal(x.lines.length, 1, x.id);
+      assert.ok(total >= 50 && total <= 130, `${x.id} passage ${total} hanzi`);
+      assert.notEqual(x.question.v, x.lines[0].v, `${x.id} question is read by the other voice`);
+    }
+    assert.ok(han(x.question.text) >= 6 && han(x.question.text) <= 18, `${x.id} question length`);
+    for (const o of x.options) assert.ok(han(o.text) >= 2 && han(o.text) <= 14, `${x.id} option ${o.text}`);
+  }
+});

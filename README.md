@@ -44,8 +44,8 @@ translation and an explanation. Wrong answers mark the question "needs review".
 | `/listening/p1/tips` | Tips for part I |
 | `/listening/p1/practice/<type>` | A run over one type (`detail`, `attitude`, `infer`) or `mix` (10 questions across the types) |
 | `/listening/p1/review` | A run over every "needs review" listening question (at most 30) |
-| `/listening/p2`, `/listening/p2/tips`, `/listening/p2/review` | The same pages for part II |
-| `/listening/p2/practice/<type>` | A run over one part II type (`detail`, `reason`, `attitude`, `infer`) or `mix` (15 questions) |
+| `/listening/p2`, `/listening/p2/tips`, `/listening/p2/review` (and `p3`) | The same pages for parts II and III |
+| `/listening/p2/practice/<type>` | A run over one part II type (`detail`, `reason`, `attitude`, `infer`; part III: `dialogue`, `detail`, `gist`) or `mix` (15 questions) |
 
 Paths are real URLs (History API), so the host must serve `index.html` for them. Cloudflare Pages does
 that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
@@ -78,13 +78,13 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 
 ### Listening data and audio
 
-`src/data/listening.json` has `parts` (I and II so far), each with a `format` (`truefalse` or `choice`),
+`src/data/listening.json` has `parts` (I, II and III), each with a `format` (`truefalse` or `choice`),
 `tips`, `types` and `questions`; a part may set `mixCount` (size of its mixed run, default 10). Every
 question has a fixed `id` (`p1-001`, `p2-001`; it is the audio file name and the mark key `l:p2-001`, so
 never renumber a published question), a `type` and an `explain`. A `truefalse` question (part I) has
 `voice` (`f`/`m`, the passage voice; the ★ statement uses the other), the passage `text`/`pinyin`/`vi`, the
-`statement`/`statementPinyin`/`statementVi` and `answer` (`true` = 对). A `choice` question (part II) has
-exactly two `lines` (`{v, text, pinyin, vi}`, a man and a woman), the spoken `question` (same fields),
+`statement`/`statementPinyin`/`statementVi` and `answer` (`true` = 对). A `choice` question (part II and III) has
+`lines` (exactly two in part II; a part may set `minLines`/`maxLines`, part III allows 1–6: a 4-turn dialogue or a one-voice passage) (`{v, text, pinyin, vi}`), the spoken `question` (same fields),
 four `options` (`{text, pinyin, vi}`) and `answer` (0–3 = A–D). `npm run test:unit` validates the data
 (per format) and checks every question has its mp3.
 

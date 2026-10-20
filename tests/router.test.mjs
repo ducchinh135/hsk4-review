@@ -114,7 +114,7 @@ test('matchRoute() maps the listening pages', () => {
 });
 
 test('matchRoute() sends unknown listening paths to the Part 1 hub', () => {
-  for (const p of ['/listening/p3', '/listening/p2/practice/xyz', '/listening/p1/practice/xyz', '/listening/p1/practice', '/listening/p1/tips/x', '/listening/P1', '/listening/p1/review/1', '/listening/x/y/z']) {
+  for (const p of ['/listening/p4', '/listening/p3/practice/xyz', '/listening/p2/practice/xyz', '/listening/p1/practice/xyz', '/listening/p1/practice', '/listening/p1/tips/x', '/listening/P1', '/listening/p1/review/1', '/listening/x/y/z']) {
     assert.deepEqual(matchRoute(p), HUB, p);
   }
 });

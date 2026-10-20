@@ -157,7 +157,7 @@ export default function ListeningPracticePage({ part: partId, scope, type }) {
     body = (
       <div className="fillblank-box">
         <div className="progress">
-          Câu {index + 1} / {n} · {choice ? 'Nghe hội thoại rồi chọn đáp án đúng' : 'Nghe rồi chọn Đúng hay Sai'}
+          Câu {index + 1} / {n} · {choice ? 'Nghe rồi chọn đáp án đúng' : 'Nghe rồi chọn Đúng hay Sai'}
         </div>
         <AudioPlayer key={run + ':' + index} src={audioUrl(q.id)} autoPlay={!answered} />
         {choice ? (
