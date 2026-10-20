@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import AudioPlayer from '../components/AudioPlayer.jsx';
+import ChoiceQuestion from '../components/ChoiceQuestion.jsx';
 import TrueFalseQuestion from '../components/TrueFalseQuestion.jsx';
 import { useApp } from '../context/AppContext.jsx';
-import { audioUrl, buildMix, buildRun, keyAction, listenKey, loadShowPinyin, partById, questionsOf, reviewQuestions, saveShowPinyin } from '../listening.js';
+import { audioUrl, buildMix, buildRun, correctLabel, keyAction, listenKey, loadShowPinyin, mixSize, partById, partFormat, promptOf, questionsOf, reviewQuestions, saveShowPinyin } from '../listening.js';
 import { Link } from '../router.jsx';
 
 const REVIEW_MAX = 30;
-const MIX_COUNT = 10;
-const answerText = (q) => (q.answer ? '对' : '错');
+const LETTERS = ['A', 'B', 'C', 'D'];
+const speaker = (v) => (v === 'm' ? 'Nam' : 'Nữ');
 
 // A practice run over one question type of a part (scope "type"), a mix of all its types ("mix") or
 // every "needs review" question of the part ("review"). Built once on mount; the shell remounts the
@@ -18,12 +19,15 @@ export default function ListeningPracticePage({ part: partId, scope, type }) {
   const part = partById(partId);
   const hub = '/listening/' + part.id;
   const typeInfo = part.types.find((t) => t.id === type);
+  const choice = partFormat(part) === 'choice';
+  // how a question is named in lists: the ★ statement, or the spoken question
+  const promptLine = (qq) => (choice ? '❓ ' : '★ ') + promptOf(part, qq);
 
   const build = () =>
     scope === 'review'
       ? buildRun(reviewQuestions(getMark, part), { max: REVIEW_MAX })
       : scope === 'mix'
-      ? buildMix(part, MIX_COUNT)
+      ? buildMix(part, mixSize(part))
       : buildRun(questionsOf(part, type));
   const fresh = (questions, run) => ({ questions, run, index: 0, answers: {}, showDone: false });
   const [state, setState] = useState(() => fresh(build(), 0));
@@ -53,7 +57,7 @@ export default function ListeningPracticePage({ part: partId, scope, type }) {
   };
   const next = () => (index + 1 < n ? go(index + 1) : finish());
 
-  // 1 / ← = 对, 2 / → = 错, Enter = next once answered; never while typing in a field.
+  // True/false: 1 / ← = 对, 2 / → = 错. Choice: 1–4 or A–D. Enter = next once answered; never while typing in a field.
   useEffect(() => {
     if (!n || showDone) return undefined;
     const onKey = (e) => {
@@ -68,10 +72,11 @@ export default function ListeningPracticePage({ part: partId, scope, type }) {
           : tag === 'BUTTON' || tag === 'A'
           ? 'control'
           : 'other';
-      const action = keyAction({ key: e.key, answered: !!answered, target });
+      const action = keyAction({ key: e.key, answered: !!answered, target, format: partFormat(part) });
       if (!action) return;
       e.preventDefault();
       if (action === 'next') next();
+      else if (action.startsWith('choose:')) answer(Number(action.slice(7)));
       else answer(action === 'true');
     };
     window.addEventListener('keydown', onKey);
@@ -110,7 +115,7 @@ export default function ListeningPracticePage({ part: partId, scope, type }) {
             {wrong.map(([qq, i]) => (
               <div key={qq.id} className="quiz-reveal bad">
                 <button type="button" className="link-btn" onClick={() => go(i)}>
-                  ★ {qq.statement} → {answerText(qq)}
+                  {promptLine(qq)} → {correctLabel(part, qq)}
                 </button>
               </div>
             ))}
@@ -125,7 +130,7 @@ export default function ListeningPracticePage({ part: partId, scope, type }) {
             <div className="quiz-label">Đánh dấu “Đã nắm” để bỏ khỏi danh sách cần ôn</div>
             {questions.map((qq) => (
               <div key={qq.id} className="grammar-review-row">
-                <span>★ {qq.statement}</span>
+                <span>{promptLine(qq)}</span>
                 <button type="button" className={'mark-btn' + (getMark(listenKey(qq.id)) === 'k' ? ' active' : '')} data-s="k" onClick={() => toggleMark(listenKey(qq.id), 'k')}>
                   ✅ Đã nắm
                 </button>
@@ -152,14 +157,18 @@ export default function ListeningPracticePage({ part: partId, scope, type }) {
     body = (
       <div className="fillblank-box">
         <div className="progress">
-          Câu {index + 1} / {n} · Nghe rồi chọn Đúng hay Sai
+          Câu {index + 1} / {n} · {choice ? 'Nghe hội thoại rồi chọn đáp án đúng' : 'Nghe rồi chọn Đúng hay Sai'}
         </div>
         <AudioPlayer key={run + ':' + index} src={audioUrl(q.id)} autoPlay={!answered} />
-        <TrueFalseQuestion key={run + ':' + index + ':q'} q={q} answered={answered} onAnswer={answer} />
+        {choice ? (
+          <ChoiceQuestion key={run + ':' + index + ':q'} q={q} answered={answered} onAnswer={answer} />
+        ) : (
+          <TrueFalseQuestion key={run + ':' + index + ':q'} q={q} answered={answered} onAnswer={answer} />
+        )}
         {answered && (
           <div className={'quiz-reveal ' + (answered.ok ? 'ok' : 'bad')}>
             <div>
-              {answered.ok ? '✅ Đúng' : '❌ Sai'} — đáp án: {answerText(q)}
+              {answered.ok ? '✅ Đúng' : '❌ Sai'} — đáp án: {choice ? LETTERS[q.answer] : correctLabel(part, q)}
             </div>
             <div className="lp-trans">
               <div className="quiz-label">
@@ -168,12 +177,46 @@ export default function ListeningPracticePage({ part: partId, scope, type }) {
                   {showPinyin ? 'Ẩn pinyin' : 'Hiện pinyin'}
                 </button>
               </div>
-              <div className="hz">{q.text}</div>
-              {showPinyin && <div className="py">{q.pinyin}</div>}
-              <div className="hz">★ {q.statement}</div>
-              {showPinyin && <div className="py">{q.statementPinyin}</div>}
-              <div className="quiz-reveal-sub">Dịch đoạn nghe: {q.vi}</div>
-              <div className="quiz-reveal-sub">Dịch câu ★: {q.statementVi}</div>
+              {choice ? (
+                <>
+                  {q.lines.map((l, i) => (
+                    <div key={i} className="lp-line">
+                      <span className="lp-speaker">{speaker(l.v)}</span>
+                      <div>
+                        <div className="hz">{l.text}</div>
+                        {showPinyin && <div className="py">{l.pinyin}</div>}
+                        <div className="quiz-reveal-sub">{l.vi}</div>
+                      </div>
+                    </div>
+                  ))}
+                  <div className="lp-line">
+                    <span className="lp-speaker">❓</span>
+                    <div>
+                      <div className="hz">{q.question.text}</div>
+                      {showPinyin && <div className="py">{q.question.pinyin}</div>}
+                      <div className="quiz-reveal-sub">{q.question.vi}</div>
+                    </div>
+                  </div>
+                  <div className="lp-options">
+                    {q.options.map((o, i) => (
+                      <div key={i} className={'lp-option' + (i === q.answer ? ' right' : '')}>
+                        <b>{LETTERS[i]}.</b> {o.text} {i === q.answer && '✔'}
+                        {showPinyin && <span className="py"> {o.pinyin}</span>}
+                        <span className="quiz-reveal-sub"> — {o.vi}</span>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="hz">{q.text}</div>
+                  {showPinyin && <div className="py">{q.pinyin}</div>}
+                  <div className="hz">★ {q.statement}</div>
+                  {showPinyin && <div className="py">{q.statementPinyin}</div>}
+                  <div className="quiz-reveal-sub">Dịch đoạn nghe: {q.vi}</div>
+                  <div className="quiz-reveal-sub">Dịch câu ★: {q.statementVi}</div>
+                </>
+              )}
               <div className="quiz-reveal-sub">💡 {q.explain}</div>
             </div>
           </div>

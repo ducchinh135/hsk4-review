@@ -433,3 +433,14 @@ a.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .lp-trans .py{ color:#888; font-size:14px; }
 .lp-trans .quiz-label{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
 .link-btn.small{ font-size:13px; }
+
+/* listening: choice questions */
+.lp-peek{ text-align:center; margin:8px 0 0; min-height:22px; }
+.lp-peek-text{ font-size:20px; font-weight:700; }
+.lp-choices{ display:flex; flex-direction:column; gap:10px; margin:14px 0; width:100%; }
+.lp-choices .fb-opt{ width:100%; text-align:left; font-size:clamp(18px,3.8vw,24px); padding:14px 18px; }
+.lp-letter{ display:inline-block; min-width:28px; font-weight:800; opacity:.7; }
+.lp-line{ display:flex; gap:10px; align-items:flex-start; margin-top:8px; }
+.lp-speaker{ flex:0 0 auto; min-width:42px; text-align:center; font-size:12px; font-weight:800; background:#fff; border:1px solid #e4d8c8; border-radius:10px; padding:3px 6px; color:#777; }
+.lp-options{ margin-top:10px; padding-top:8px; border-top:1px dashed #e4d8c8; display:flex; flex-direction:column; gap:4px; font-size:15px; }
+.lp-option.right{ color:#2b8a3e; font-weight:800; }

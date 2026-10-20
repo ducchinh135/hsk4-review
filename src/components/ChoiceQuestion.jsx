@@ -1,58 +1,38 @@
-import { useEffect } from 'react';
+import { useState } from 'react';
 
-// Multiple choice: meaning, hanzi, listen and fill questions. Remount (via `key`) per question.
-export default function ChoiceQuestion({ q, answered, onAnswer, speech }) {
-  const target = q.target || q.word;
-  useEffect(() => {
-    if (q.type === 'listen') speech.speak(target[0], 'quiz-listen');
-    // play once when the question appears
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q]);
+const LETTERS = ['A', 'B', 'C', 'D'];
 
+// Four printed answers to pick from. The question itself is only heard (as in the exam); the
+// "Xem câu hỏi" link shows it as text for a learner who missed it. After answering, the right
+// answer is green and a wrong pick red. Remount (via `key`) per question.
+export default function ChoiceQuestion({ q, answered, onAnswer }) {
+  const [peek, setPeek] = useState(false);
   return (
     <>
-      <Prompt q={q} speech={speech} />
-      <div className="fb-options">
-        {q.options.map((opt) => {
-          let cls = 'fb-opt' + (q.type === 'meaning' ? ' text' : '');
+      {!answered && (
+        <div className="lp-peek">
+          {peek ? (
+            <span className="lp-peek-text">❓ {q.question.text}</span>
+          ) : (
+            <button type="button" className="link-btn small" onClick={() => setPeek(true)}>
+              👁 Xem câu hỏi
+            </button>
+          )}
+        </div>
+      )}
+      <div className="lp-choices">
+        {q.options.map((o, i) => {
+          let cls = 'fb-opt text';
           if (answered) {
-            if (opt === q.answer) cls += ' correct';
-            else if (opt === answered.given) cls += ' wrong';
+            if (i === q.answer) cls += ' correct';
+            else if (i === answered.given) cls += ' wrong';
           }
           return (
-            <button key={opt} className={cls} onClick={() => !answered && onAnswer(opt, opt === q.answer)}>
-              {opt}
+            <button key={i} type="button" className={cls} onClick={() => !answered && onAnswer(i)}>
+              <span className="lp-letter">{LETTERS[i]}.</span> {o.text}
             </button>
           );
         })}
-      </div>
-    </>
-  );
-}
-
-function Prompt({ q, speech }) {
-  const w = q.word;
-  const target = q.target || w;
-  if (q.type === 'meaning') return <div className="quiz-prompt hanzi">{target[0]}</div>;
-  if (q.type === 'hanzi') return <div className="quiz-prompt">{target[2]}</div>;
-  if (q.type === 'listen') {
-    return (
-      <div className="quiz-prompt">
-        <button className={'btn' + (speech.speakingId === 'quiz-listen' ? ' speaking' : '')} onClick={() => speech.speak(target[0], 'quiz-listen')}>
-          🔊 Nghe lại
-        </button>
-      </div>
-    );
-  }
-  const sentence = q.sentence || w[3];
-  const at = sentence.indexOf(w[0]);
-  return (
-    <>
-      <div className="fb-hint">💡 Gợi ý nghĩa của từ: {w[2]}</div>
-      <div className="fb-sentence">
-        {sentence.slice(0, at)}
-        <span className="fb-blank">＿＿＿</span>
-        {sentence.slice(at + w[0].length)}
       </div>
     </>
   );
