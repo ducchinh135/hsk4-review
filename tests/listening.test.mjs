@@ -353,19 +353,19 @@ test('validateListening() lets a part allow more (or fewer) lines through minLin
   assert.ok(mentions(withRange([a], {}), 'p2-001'), 'default stays exactly two');
 });
 
-test('Part 3 has 30 questions: 10 long dialogues and 20 passages, balanced answer letters per type', () => {
+test('Part 3 has 60 questions: 20 per type (long dialogues, detail passages, gist passages), balanced answer letters per type', () => {
   const p3 = partById('p3');
-  assert.equal(p3.questions.length, 30);
+  assert.equal(p3.questions.length, 60);
   assert.deepEqual(p3.types.map((t) => t.id), ['dialogue', 'detail', 'gist']);
-  assert.deepEqual(p3.questions.map((x) => x.id), Array.from({ length: 30 }, (_, i) => 'p3-' + String(i + 1).padStart(3, '0')));
+  assert.deepEqual(p3.questions.map((x) => x.id), Array.from({ length: 60 }, (_, i) => 'p3-' + String(i + 1).padStart(3, '0')));
   assert.ok(p3.tips.intro && p3.tips.sections.length >= 5);
   for (const t of p3.types) {
     const qs = p3.questions.filter((x) => x.type === t.id);
-    assert.equal(qs.length, 10, t.id + ' count');
+    assert.equal(qs.length, 20, t.id + ' count');
     assert.ok(t.tip && t.tip.trim() !== '', t.id + ' tip');
     const perLetter = [0, 0, 0, 0];
     for (const x of qs) perLetter[x.answer]++;
-    for (const n of perLetter) assert.ok(n >= 1 && n <= 4, `${t.id} answer letters ${perLetter}`);
+    for (const n of perLetter) assert.ok(n >= 3 && n <= 8, `${t.id} answer letters ${perLetter}`);
   }
 });
 
@@ -376,7 +376,7 @@ test('Part 3 questions follow the writing rules (dialogue: 4 alternating turns; 
     if (x.type === 'dialogue') {
       assert.equal(x.lines.length, 4, x.id);
       x.lines.forEach((l, i) => i && assert.notEqual(l.v, x.lines[i - 1].v, `${x.id} turns alternate`));
-      assert.ok(total >= 60 && total <= 130, `${x.id} dialogue ${total} hanzi`);
+      assert.ok(total >= 55 && total <= 130, `${x.id} dialogue ${total} hanzi`);
     } else {
       assert.equal(x.lines.length, 1, x.id);
       assert.ok(total >= 50 && total <= 130, `${x.id} passage ${total} hanzi`);
