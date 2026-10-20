@@ -1758,9 +1758,9 @@
           "lines": [
             {
               "v": "m",
-              "text": "我想不做现在的工作，自己开一家小饭馆，你支持我吗？",
-              "pinyin": "Wǒ xiǎng bú zuò xiànzài de gōngzuò, zìjǐ kāi yì jiā xiǎo fànguǎn, nǐ zhīchí wǒ ma?",
-              "vi": "Tôi muốn bỏ công việc hiện tại, tự mở một quán ăn nhỏ, em có ủng hộ anh không?"
+              "text": "我不想做现在的工作了，想自己开一家小饭馆，你支持我吗？",
+              "pinyin": "Wǒ bù xiǎng zuò xiànzài de gōngzuò le, xiǎng zìjǐ kāi yì jiā xiǎo fànguǎn, nǐ zhīchí wǒ ma?",
+              "vi": "Tôi không muốn làm công việc hiện tại nữa, muốn tự mở một quán ăn nhỏ, em có ủng hộ anh không?"
             },
             {
               "v": "f",

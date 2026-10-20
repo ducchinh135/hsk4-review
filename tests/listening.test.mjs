@@ -332,3 +332,9 @@ test('Part 2 has 10 questions per type (40 in all) with balanced answer letters 
   }
   assert.deepEqual(p2.questions.map((x) => x.id), Array.from({ length: 40 }, (_, i) => 'p2-' + String(i + 1).padStart(3, '0')));
 });
+
+test('p2-023 uses natural wording (not the unnatural 我想不做…)', () => {
+  const x = partById('p2').questions.find((y) => y.id === 'p2-023');
+  assert.ok(!x.lines[0].text.includes('我想不做'), x.lines[0].text);
+  assert.ok(x.lines[0].text.includes('我不想做'), x.lines[0].text);
+});
