@@ -15,12 +15,13 @@ share, a comparison table, examples per word with pronunciation and a tip, plus 
 group (hanzi or toneless pinyin) and fill-in-the-blank exercises whose choices are the words of the
 group. Wrong answers mark the group "needs review".
 
-A listening section practises the listening part of the HSK 4 exam one part at a time (part I,
-判断对错, is done; parts II and III are dimmed tabs): a tips page, three question types (details,
-attitude, inference), a mixed run and a review of the questions marked "needs review". Each question
-plays a pre-made mp3 (a passage, then the ★ statement), you pick 对 or 错, and the answer shows the
-transcript with pinyin, a Vietnamese translation and an explanation. Wrong answers mark the question
-"needs review".
+A listening section practises the listening part of the HSK 4 exam one part at a time (parts I,
+判断对错, and II, 选择正确答案, are done; part III is a dimmed tab): a tips page, question types, a
+mixed run and a review of the questions marked "needs review" for each part. Each question plays a
+pre-made mp3. Part I: a passage, then the ★ statement, and you pick 对 or 错. Part II: a two-line
+dialogue between a man and a woman, then a spoken question (shown as text only on request), and you
+pick one of four printed answers A–D. The answer shows the transcript with pinyin, a Vietnamese
+translation and an explanation. Wrong answers mark the question "needs review".
 
 - Without a backend (e.g. GitHub Pages) marks and review progress are stored in the browser only.
 - With the Cloudflare backend, users sign in (username + password, invite code to register) and
@@ -43,6 +44,8 @@ transcript with pinyin, a Vietnamese translation and an explanation. Wrong answe
 | `/listening/p1/tips` | Tips for part I |
 | `/listening/p1/practice/<type>` | A run over one type (`detail`, `attitude`, `infer`) or `mix` (10 questions across the types) |
 | `/listening/p1/review` | A run over every "needs review" listening question (at most 30) |
+| `/listening/p2`, `/listening/p2/tips`, `/listening/p2/review` | The same pages for part II |
+| `/listening/p2/practice/<type>` | A run over one part II type (`detail`, `reason`, `attitude`, `infer`) or `mix` (15 questions) |
 
 Paths are real URLs (History API), so the host must serve `index.html` for them. Cloudflare Pages does
 that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
@@ -75,12 +78,15 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 
 ### Listening data and audio
 
-`src/data/listening.json` has `parts` (only part I so far): `tips`, `types` (`detail`, `attitude`, `infer`)
-and `questions`, each with a fixed `id` (`p1-001`; it is the audio file name and the mark key `l:p1-001`,
-so never renumber a published question), `type`, `voice` (`f`/`m`, the passage voice; the ★ statement
-uses the other), the passage `text`/`pinyin`/`vi`, the `statement`/`statementPinyin`/`statementVi`, `answer`
-(`true` = 对) and an `explain`. `npm run test:unit` validates the data and checks every question has
-its mp3.
+`src/data/listening.json` has `parts` (I and II so far), each with a `format` (`truefalse` or `choice`),
+`tips`, `types` and `questions`; a part may set `mixCount` (size of its mixed run, default 10). Every
+question has a fixed `id` (`p1-001`, `p2-001`; it is the audio file name and the mark key `l:p2-001`, so
+never renumber a published question), a `type` and an `explain`. A `truefalse` question (part I) has
+`voice` (`f`/`m`, the passage voice; the ★ statement uses the other), the passage `text`/`pinyin`/`vi`, the
+`statement`/`statementPinyin`/`statementVi` and `answer` (`true` = 对). A `choice` question (part II) has
+exactly two `lines` (`{v, text, pinyin, vi}`, a man and a woman), the spoken `question` (same fields),
+four `options` (`{text, pinyin, vi}`) and `answer` (0–3 = A–D). `npm run test:unit` validates the data
+(per format) and checks every question has its mp3.
 
 After adding or changing questions, make the audio (needs Python 3 and a network connection; the
 voices are the online neural voices of `edge-tts`, an unofficial use of Edge's read-aloud service, so it
@@ -88,11 +94,12 @@ may stop working; existing mp3 files are unaffected):
 
 ```sh
 python3 -m venv .venv && .venv/bin/pip install edge-tts   # once; .venv is not committed
+.venv/bin/python scripts/tts.py --dry-run   # what would be made (no network, nothing written)
 .venv/bin/python scripts/tts.py             # only new or changed questions
 .venv/bin/python scripts/tts.py --force --rate=-10%   # redo everything, slower (default -5%)
 ```
 
-Each mp3 is the passage, 1.5 s of silence, then the statement. The parts are joined by concatenating
+Each part I mp3 is the passage, 1.5 s of silence, then the statement; each part II mp3 is the two dialogue lines 0.5 s apart, 1 s of silence, then the question. The pieces are joined by concatenating
 the mp3 bytes (all are MPEG-2 layer III, 24 kHz), which plays and decodes in Chrome; if a browser ever
 glitches at the join, rebuild the file with `ffmpeg`.
 
