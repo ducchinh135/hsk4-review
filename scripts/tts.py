@@ -4,11 +4,11 @@ src/data/listening.json.
 
 A true/false question ("truefalse" part) is the passage (voice of the question), 1.5 s of silence,
 then the ★ statement (the other voice), like the real exam. A "choice" question is the two lines of
-the dialogue (their own voices) 0.5 s apart, 1 s of silence, then the spoken question. Uses the online
+the dialogue (their own voices) 1 s apart, 2 s of silence, then the spoken question. Uses the online
 neural voices of `edge-tts` (pip install edge-tts, no account needed). Files whose text, voices and
 rate are unchanged are skipped. `--dry-run` only reports what would be created (no network, no writes).
 
-    python3 scripts/tts.py [--force] [--rate=-5%] [--dry-run]
+    python3 scripts/tts.py [--force] [--rate=-5%] [--male-voice=zh-CN-YunjianNeural] [--dry-run]
 """
 import asyncio
 import hashlib
@@ -26,15 +26,17 @@ DATA = ROOT / 'src' / 'data' / 'listening.json'
 OUT = ROOT / 'public' / 'audio' / 'listening'
 MANIFEST = OUT / 'manifest.json'
 
-VOICES = {'f': 'zh-CN-XiaoxiaoNeural', 'm': 'zh-CN-YunxiNeural'}
+# Yunyang (about 133 Hz) stands clearly apart from Xiaoxiao (about 255 Hz); the earlier Yunxi (about 167 Hz)
+# was too close to a woman's voice. `--male-voice=zh-CN-YunjianNeural` is deeper still (about 112 Hz).
+VOICES = {'f': 'zh-CN-XiaoxiaoNeural', 'm': 'zh-CN-YunyangNeural'}
 OTHER = {'f': 'm', 'm': 'f'}
 
 # edge-tts returns MPEG-2 layer III, 24 kHz, 48 kbps, mono: 144-byte frames of 576 samples (24 ms).
 # A frame with that header and an all-zero payload decodes as silence.
 FRAME = bytes.fromhex('fff364c4') + bytes(140)
 SILENCE = FRAME * 63  # 63 * 24 ms = 1.5 s
-GAP = FRAME * 21  # 0.5 s between the two lines of a dialogue
-BEFORE_QUESTION = FRAME * 42  # 1.0 s before the spoken question
+GAP = FRAME * 42  # 1.0 s between the two lines of a dialogue
+BEFORE_QUESTION = FRAME * 84  # 2.0 s before the spoken question
 
 
 async def speak(text, voice, rate):
@@ -53,11 +55,12 @@ async def speak(text, voice, rate):
 
 
 def digest(q, rate, fmt='truefalse'):
+    # Everything that shapes the audio goes in, so changing a voice or a pause remakes the file.
     if fmt == 'choice':
         a, b = q['lines']
-        parts = ['choice', a['v'], a['text'], b['v'], b['text'], q['question']['v'], q['question']['text'], rate]
-    else:  # unchanged, so the audio made for true/false questions is never redone
-        parts = [q['voice'], q['text'], q['statement'], rate]
+        parts = ['choice', VOICES[a['v']], a['text'], VOICES[b['v']], b['text'], VOICES[q['question']['v']], q['question']['text'], rate, str(len(GAP)), str(len(BEFORE_QUESTION))]
+    else:
+        parts = ['truefalse', VOICES[q['voice']], VOICES[OTHER[q['voice']]], q['text'], q['statement'], rate, str(len(SILENCE))]
     return hashlib.sha1('|'.join(parts).encode()).hexdigest()
 
 
@@ -78,6 +81,9 @@ async def main():
     args = sys.argv[1:]
     force = '--force' in args
     dry = '--dry-run' in args
+    male = next((a.split('=', 1)[1] for a in args if a.startswith('--male-voice=')), None)
+    if male:
+        VOICES['m'] = male
     rate = next((a.split('=', 1)[1] for a in args if a.startswith('--rate=')), '-5%')
     questions = [(part.get('format', 'truefalse'), q) for part in json.loads(DATA.read_text())['parts'] for q in part['questions']]
     OUT.mkdir(parents=True, exist_ok=True)

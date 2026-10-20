@@ -38,7 +38,7 @@ Part 3 (spec riêng sau), chế độ thi có hẹn giờ / nộp bài, đoạn 
 
 ## 2. Định dạng một câu Part 2 và quy tắc soạn đề
 
-Audio của một câu: lượt 1 (giọng A) → nghỉ ngắn → lượt 2 (giọng B) → nghỉ ~1 s → câu hỏi (đọc bằng một giọng, thường là giọng *khác* người nói lượt cuối để dễ phân biệt). Không in câu hỏi; in 4 đáp án.
+Audio của một câu: lượt 1 (giọng A) → nghỉ 1 s → lượt 2 (giọng B) → nghỉ 2 s → câu hỏi (đọc bằng một giọng, thường là giọng *khác* người nói lượt cuối để dễ phân biệt). Không in câu hỏi; in 4 đáp án.
 
 Quy tắc soạn (cho người viết nội dung):
 
@@ -102,9 +102,9 @@ Thêm phần tử thứ hai vào `parts` (Part 1 giữ nguyên). Mỗi part có 
 
 Mở rộng `scripts/tts.py` (cùng thư mục `public/audio/listening/`, cùng `manifest.json`):
 
-- Câu `choice`: ghép **lượt 1 (giọng `lines[0].v`) + im lặng 0.5 s + lượt 2 (giọng `lines[1].v`) + im lặng 1.0 s + câu hỏi (giọng `question.v`)**. Cùng cách nối byte mp3 và cùng khung im lặng như Part 1 (24 ms/khung: 21 khung ≈ 0.5 s, 42 khung ≈ 1.0 s).
+- Câu `choice`: ghép **lượt 1 (giọng `lines[0].v`) + im lặng 1.0 s + lượt 2 (giọng `lines[1].v`) + im lặng 2.0 s + câu hỏi (giọng `question.v`)** (đã tăng từ 0.5 s / 1.0 s sau lần nghe thử đầu). Cùng cách nối byte mp3 và cùng khung im lặng như Part 1 (24 ms/khung: 42 khung ≈ 1.0 s, 84 khung ≈ 2.0 s).
 - Băm cho câu `choice`: gồm tất cả giọng, chữ của hai lượt, chữ câu hỏi và `rate`. **Công thức băm của câu `truefalse` giữ nguyên** từng chữ để không tạo lại 36 file Part 1.
-- Giọng nữ `zh-CN-XiaoxiaoNeural`, nam `zh-CN-YunxiNeural`; `--rate` mặc định `-5%` như Part 1 (người dùng đã nghe và chấp nhận Part 1; nếu người dùng đổi `rate` thì áp cho phần mới, không tự tạo lại phần cũ trừ khi `--force`).
+- Giọng nữ `zh-CN-XiaoxiaoNeural`, nam `zh-CN-YunyangNeural` (đổi từ `YunxiNeural` sau lần nghe thử đầu vì Yunxi chỉ cách giọng nữ ~1.5× về cao độ, khó nhận ra là nam; Yunyang ~1.9×; áp cho cả Part 1; cờ `--male-voice=` để thử giọng khác, vd. `zh-CN-YunjianNeural` trầm hơn); `--rate` mặc định `-5%` như Part 1 (người dùng đã nghe và chấp nhận Part 1; nếu người dùng đổi `rate` thì áp cho phần mới, không tự tạo lại phần cũ trừ khi `--force`).
 - File dài khoảng 12–25 s, 70–140 KB; 40 file ≈ 4–5 MB, commit vào repo như Part 1.
 - Kiểm tra bắt buộc: mở thử vài file trong Chrome bằng thẻ `<audio>` (không lỗi, `duration` gần tổng các đoạn); dùng đúng cách đã chạy tốt ở Part 1.
 

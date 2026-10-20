@@ -99,7 +99,7 @@ python3 -m venv .venv && .venv/bin/pip install edge-tts   # once; .venv is not c
 .venv/bin/python scripts/tts.py --force --rate=-10%   # redo everything, slower (default -5%)
 ```
 
-Each part I mp3 is the passage, 1.5 s of silence, then the statement; each part II mp3 is the two dialogue lines 0.5 s apart, 1 s of silence, then the question. The pieces are joined by concatenating
+Each part I mp3 is the passage, 1.5 s of silence, then the statement; each part II mp3 is the two dialogue lines 1 s apart, 2 s of silence, then the question. The voices are Xiaoxiao (woman) and Yunyang (man, about 133 Hz against her 255 Hz; `--male-voice=zh-CN-YunjianNeural` is deeper still); changing a voice or a pause remakes the files. The pieces are joined by concatenating
 the mp3 bytes (all are MPEG-2 layer III, 24 kHz), which plays and decodes in Chrome; if a browser ever
 glitches at the join, rebuild the file with `ffmpeg`.
 
