@@ -4,7 +4,7 @@ src/data/listening.json.
 
 A true/false question ("truefalse" part) is the passage (voice of the question), 1.5 s of silence,
 then the ★ statement (the other voice), like the real exam. A "choice" question is the two lines of
-the dialogue (their own voices) 1 s apart, 2 s of silence, then the spoken question. Uses the online
+the dialogue (two lines, or more in Part 3; or one passage; each in its own voice) 1 s apart, 2 s of silence, then the spoken question. Uses the online
 neural voices of `edge-tts` (pip install edge-tts, no account needed). Files whose text, voices and
 rate are unchanged are skipped. `--dry-run` only reports what would be created (no network, no writes).
 
@@ -57,8 +57,8 @@ async def speak(text, voice, rate):
 def digest(q, rate, fmt='truefalse'):
     # Everything that shapes the audio goes in, so changing a voice or a pause remakes the file.
     if fmt == 'choice':
-        a, b = q['lines']
-        parts = ['choice', VOICES[a['v']], a['text'], VOICES[b['v']], b['text'], VOICES[q['question']['v']], q['question']['text'], rate, str(len(GAP)), str(len(BEFORE_QUESTION))]
+        lines = [x for l in q['lines'] for x in (VOICES[l['v']], l['text'])]
+        parts = ['choice', *lines, VOICES[q['question']['v']], q['question']['text'], rate, str(len(GAP)), str(len(BEFORE_QUESTION))]
     else:
         parts = ['truefalse', VOICES[q['voice']], VOICES[OTHER[q['voice']]], q['text'], q['statement'], rate, str(len(SILENCE))]
     return hashlib.sha1('|'.join(parts).encode()).hexdigest()
@@ -67,11 +67,9 @@ def digest(q, rate, fmt='truefalse'):
 async def build(q, rate, fmt):
     """The mp3 bytes of one question."""
     if fmt == 'choice':
-        a, b = q['lines']
-        first = await speak(a['text'], VOICES[a['v']], rate)
-        second = await speak(b['text'], VOICES[b['v']], rate)
+        spoken = [await speak(l['text'], VOICES[l['v']], rate) for l in q['lines']]
         question = await speak(q['question']['text'], VOICES[q['question']['v']], rate)
-        return first + GAP + second + BEFORE_QUESTION + question
+        return GAP.join(spoken) + BEFORE_QUESTION + question
     passage = await speak(q['text'], VOICES[q['voice']], rate)
     statement = await speak(q['statement'], VOICES[OTHER[q['voice']]], rate)
     return passage + SILENCE + statement

@@ -338,3 +338,17 @@ test('p2-023 uses natural wording (not the unnatural 我想不做…)', () => {
   assert.ok(!x.lines[0].text.includes('我想不做'), x.lines[0].text);
   assert.ok(x.lines[0].text.includes('我不想做'), x.lines[0].text);
 });
+
+// ---- Part 3 style (a "choice" part with longer dialogues and one-voice passages) ----
+test('validateListening() lets a part allow more (or fewer) lines through minLines/maxLines', () => {
+  const [a, b] = choiceQ('x', 'detail').lines;
+  const withRange = (lines, range) => {
+    const d = dataWithChoice([choiceQ('p2-001', 'detail', 2, { lines }), choiceQ('p2-002', 'detail', 1)]);
+    Object.assign(d.parts[0], range);
+    return validateListening(d);
+  };
+  assert.deepEqual(withRange([a, b, a, b], { minLines: 1, maxLines: 6 }), []);
+  assert.deepEqual(withRange([a], { minLines: 1, maxLines: 6 }), []);
+  assert.ok(mentions(withRange([a, b, a, b, a, b, a], { minLines: 1, maxLines: 6 }), 'p2-001'));
+  assert.ok(mentions(withRange([a], {}), 'p2-001'), 'default stays exactly two');
+});

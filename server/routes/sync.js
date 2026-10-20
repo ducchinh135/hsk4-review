@@ -1,7 +1,7 @@
 import { Hono } from 'hono';
 import { readJson, requireUser } from '../middleware.js';
 
-const MAX_WORDS = 1000;
+const MAX_WORDS = 2000;
 const STATUSES = new Set(['k', 'r', '']);
 const INVALID = { error: 'Dữ liệu không hợp lệ.' };
 const isInt = (x, lo, hi) => Number.isInteger(x) && x >= lo && x <= hi;

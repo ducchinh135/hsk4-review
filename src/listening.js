@@ -113,8 +113,8 @@ function checkTrueFalse(q, at, errors) {
   return q.answer;
 }
 
-function checkChoice(q, at, errors) {
-  if (!Array.isArray(q.lines) || q.lines.length !== 2) errors.push(`${at}: lines phải có đúng 2 lượt thoại`);
+function checkChoice(q, at, errors, min, max) {
+  if (!Array.isArray(q.lines) || q.lines.length < min || q.lines.length > max) errors.push(`${at}: lines phải có ${min === max ? `đúng ${min}` : `${min}–${max}`} lượt thoại`);
   else {
     q.lines.forEach((l, i) => {
       if (!l || !isVoice(l.v)) errors.push(`${at}: lines[${i}].v phải là "f" hoặc "m"`);
@@ -157,7 +157,7 @@ export function validateListening(data) {
       else if (seen.has(q.id)) errors.push(`id trùng: ${q.id}`);
       seen.add(q.id);
       if (!typeIds.includes(q.type)) errors.push(`${at}: type ${JSON.stringify(q.type)} không có trong types`);
-      const answer = part.format === 'choice' ? checkChoice(q, at, errors) : checkTrueFalse(q, at, errors);
+      const answer = part.format === 'choice' ? checkChoice(q, at, errors, part.minLines || 2, part.maxLines || 2) : checkTrueFalse(q, at, errors);
       (byType[q.type] ||= []).push(answer);
     }
     for (const [t, answers] of Object.entries(byType)) {
