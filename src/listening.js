@@ -25,6 +25,15 @@ export function typeCount(part) {
   return n;
 }
 
+export const partFormat = (part) => part.format;
+export const mixSize = (part) => part.mixCount || 10;
+const LETTERS = ['A', 'B', 'C', 'D'];
+
+// The correct answer as shown to the learner: 对 / 错, or "C. 七点".
+export const correctLabel = (part, q) => (partFormat(part) === 'choice' ? `${LETTERS[q.answer]}. ${q.options[q.answer].text}` : q.answer ? '对' : '错');
+// The text a learner would call "the question": the ★ statement, or the spoken question.
+export const promptOf = (part, q) => (partFormat(part) === 'choice' ? q.question.text : q.statement);
+
 // The questions in random order, at most `max` of them.
 export const buildRun = (questions, { max = Infinity, rng = Math.random } = {}) => shuffle(questions, rng).slice(0, max);
 
@@ -44,14 +53,18 @@ export function buildMix(part, n = 10, rng = Math.random) {
 export const reviewQuestions = (getMark, part) =>
   part.questions.filter((q) => getMark(listenKey(q.id)) === 'r').sort((a, b) => (a.id < b.id ? -1 : 1));
 
-// What a key press does in a run: 'true' / 'false' answers (1 or ← = 对, 2 or → = 错), 'next' moves on
-// once answered, null = ignore. `target` is where focus is: 'field' (typing), 'answer' (an answer
-// button, which keeps focus after a click), 'control' (another button or link, which handles Enter
-// itself) or 'other'.
-export function keyAction({ key, answered, target }) {
+// What a key press does in a run, or null to ignore it. True/false format: 'true' / 'false' (1 or ← =
+// 对, 2 or → = 错). Choice format: 'choose:0'…'choose:3' (1–4 or a–d). Both: 'next' with Enter once
+// answered. `target` is where focus is: 'field' (typing), 'answer' (an answer button, which keeps
+// focus after a click), 'control' (another button or link, which handles Enter itself) or 'other'.
+export function keyAction({ key, answered, target, format = 'truefalse' }) {
   if (target === 'field') return null;
-  if (!answered) return key === '1' || key === 'ArrowLeft' ? 'true' : key === '2' || key === 'ArrowRight' ? 'false' : null;
-  return key === 'Enter' && target !== 'control' ? 'next' : null;
+  if (answered) return key === 'Enter' && target !== 'control' ? 'next' : null;
+  if (format === 'choice') {
+    const i = '1234'.indexOf(key) >= 0 && key.length === 1 ? '1234'.indexOf(key) : 'abcd'.indexOf(String(key).toLowerCase());
+    return String(key).length === 1 && i >= 0 ? `choose:${i}` : null;
+  }
+  return key === '1' || key === 'ArrowLeft' ? 'true' : key === '2' || key === 'ArrowRight' ? 'false' : null;
 }
 
 export const RATES = [0.8, 1, 1.25];
@@ -88,8 +101,41 @@ export function saveShowPinyin(b) {
   }
 }
 
-const TEXT_FIELDS = ['text', 'pinyin', 'vi', 'statement', 'statementPinyin', 'statementVi', 'explain'];
+const FORMATS = ['truefalse', 'choice'];
+const TF_FIELDS = ['text', 'pinyin', 'vi', 'statement', 'statementPinyin', 'statementVi', 'explain'];
 const isText = (s) => typeof s === 'string' && s.trim() !== '';
+const isVoice = (v) => v === 'f' || v === 'm';
+
+function checkTrueFalse(q, at, errors) {
+  if (!isVoice(q.voice)) errors.push(`${at}: voice phải là "f" hoặc "m"`);
+  if (typeof q.answer !== 'boolean') errors.push(`${at}: answer phải là true/false`);
+  for (const f of TF_FIELDS) if (!isText(q[f])) errors.push(`${at}: thiếu ${f}`);
+  return q.answer;
+}
+
+function checkChoice(q, at, errors) {
+  if (!Array.isArray(q.lines) || q.lines.length !== 2) errors.push(`${at}: lines phải có đúng 2 lượt thoại`);
+  else {
+    q.lines.forEach((l, i) => {
+      if (!l || !isVoice(l.v)) errors.push(`${at}: lines[${i}].v phải là "f" hoặc "m"`);
+      for (const f of ['text', 'pinyin', 'vi']) if (!l || !isText(l[f])) errors.push(`${at}: lines[${i}] thiếu ${f}`);
+    });
+  }
+  const qq = q.question;
+  if (!qq || !isVoice(qq.v)) errors.push(`${at}: question.v phải là "f" hoặc "m"`);
+  for (const f of ['text', 'pinyin', 'vi']) if (!qq || !isText(qq[f])) errors.push(`${at}: question thiếu ${f}`);
+  if (!Array.isArray(q.options) || q.options.length !== 4) errors.push(`${at}: options phải có đúng 4 đáp án`);
+  else {
+    q.options.forEach((o, i) => {
+      for (const f of ['text', 'pinyin', 'vi']) if (!o || !isText(o[f])) errors.push(`${at}: options[${i}] thiếu ${f}`);
+    });
+    const texts = q.options.map((o) => o && o.text);
+    if (new Set(texts).size !== texts.length) errors.push(`${at}: các đáp án phải khác nhau`);
+  }
+  if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer > 3) errors.push(`${at}: answer phải là số nguyên 0–3`);
+  if (!isText(q.explain)) errors.push(`${at}: thiếu explain`);
+  return q.answer;
+}
 
 // Every problem in the listening data, as readable messages; [] when it is valid.
 export function validateListening(data) {
@@ -97,7 +143,9 @@ export function validateListening(data) {
   const errors = [];
   const seen = new Set();
   for (const part of data.parts) {
+    if (!FORMATS.includes(part.format)) errors.push(`${part.id}: format phải là một trong ${FORMATS.join(', ')}`);
     const typeIds = (part.types || []).map((t) => t.id);
+    const idPattern = new RegExp(`^${part.id}-\\d{3}$`);
     const byType = {};
     for (const [i, q] of (part.questions || []).entries()) {
       const at = q && q.id ? q.id : `${part.id}[${i}]`;
@@ -105,14 +153,12 @@ export function validateListening(data) {
         errors.push(`${at}: phải là object`);
         continue;
       }
-      if (!/^p1-\d{3}$/.test(q.id)) errors.push(`${at}: id phải dạng p1-001`);
+      if (!idPattern.test(q.id)) errors.push(`${at}: id phải dạng ${part.id}-001`);
       else if (seen.has(q.id)) errors.push(`id trùng: ${q.id}`);
       seen.add(q.id);
       if (!typeIds.includes(q.type)) errors.push(`${at}: type ${JSON.stringify(q.type)} không có trong types`);
-      if (q.voice !== 'f' && q.voice !== 'm') errors.push(`${at}: voice phải là "f" hoặc "m"`);
-      if (typeof q.answer !== 'boolean') errors.push(`${at}: answer phải là true/false`);
-      for (const f of TEXT_FIELDS) if (!isText(q[f])) errors.push(`${at}: thiếu ${f}`);
-      (byType[q.type] ||= []).push(q.answer);
+      const answer = part.format === 'choice' ? checkChoice(q, at, errors) : checkTrueFalse(q, at, errors);
+      (byType[q.type] ||= []).push(answer);
     }
     for (const [t, answers] of Object.entries(byType)) {
       if (answers.length >= 2 && answers.every((a) => a === answers[0])) errors.push(`dạng ${t}: mọi câu cùng đáp án ${answers[0]}`);

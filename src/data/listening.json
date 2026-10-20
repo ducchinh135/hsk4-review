@@ -2,9 +2,11 @@
   "parts": [
     {
       "id": "p1",
+      "format": "truefalse",
       "name": "判断对错",
       "label": "Phán đoán đúng/sai",
       "desc": "Nghe một đoạn ngắn, xét câu ★ đúng hay sai.",
+      "mixCount": 10,
       "tips": {
         "intro": "Phần 1 của đề nghe HSK 4 gồm 10 câu (câu 1–10). Mỗi câu bạn nghe một đoạn ngắn (1–3 câu, chỉ nghe một lần); trên giấy có sẵn một câu có dấu ★. Bạn phán đoán câu ★ đúng (√) hay sai (×) so với đoạn vừa nghe. Khoảng một nửa số câu là đúng, một nửa là sai.",
         "sections": [

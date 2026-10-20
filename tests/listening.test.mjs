@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { existsSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import RAW from '../src/data/listening.json' with { type: 'json' };
-import { buildMix, buildRun, keyAction, listenKey, reviewQuestions, validateListening } from '../src/listening.js';
+import { buildMix, buildRun, correctLabel, keyAction, listenKey, mixSize, partFormat, promptOf, reviewQuestions, validateListening } from '../src/listening.js';
 
 const q = (id, type, answer = true) => ({
   id,
@@ -25,6 +25,7 @@ const dataWith = (questions) => ({
   parts: [
     {
       id: 'p1',
+      format: 'truefalse',
       name: '判断对错',
       label: 'Phán đoán đúng/sai',
       desc: 'x',
@@ -168,4 +169,120 @@ test('keyAction() ignores every key while typing in a field', () => {
   for (const key of ['1', '2', 'ArrowLeft', 'ArrowRight', 'Enter']) {
     for (const answered of [false, true]) assert.equal(keyAction({ key, answered, target: 'field' }), null, key);
   }
+});
+
+// ---- Part 2 style (format "choice") ----
+const opt = (text) => ({ text, pinyin: 'pinyin ' + text, vi: 'nghĩa ' + text });
+const choiceQ = (id, type, answer = 0, over = {}) => ({
+  id,
+  type,
+  lines: [
+    { v: 'm', text: '你几点下班？', pinyin: 'Nǐ jǐ diǎn xiàbān?', vi: 'Mấy giờ cậu tan làm?' },
+    { v: 'f', text: '大概七点。', pinyin: 'Dàgài qī diǎn.', vi: 'Khoảng bảy giờ.' },
+  ],
+  question: { v: 'f', text: '女的几点下班？', pinyin: 'Nǚ de jǐ diǎn xiàbān?', vi: 'Người nữ mấy giờ tan làm?' },
+  options: [opt('五点'), opt('六点'), opt('七点'), opt('八点')],
+  answer,
+  explain: '大概七点 = khoảng bảy giờ.',
+  ...over,
+});
+const dataWithChoice = (questions) => ({
+  parts: [
+    {
+      id: 'p2',
+      format: 'choice',
+      name: '选择正确答案',
+      label: 'Chọn đáp án đúng',
+      desc: 'x',
+      mixCount: 15,
+      tips: { intro: '', sections: [] },
+      types: [
+        { id: 'detail', icon: '🔎', name: 'Chi tiết', desc: 'x', tip: '' },
+        { id: 'reason', icon: '❓', name: 'Nguyên nhân', desc: 'x', tip: '' },
+      ],
+      questions,
+    },
+  ],
+});
+const goodPair = () => [choiceQ('p2-001', 'detail', 2), choiceQ('p2-002', 'detail', 1)];
+const choiceErrors = (over, id = 'p2-001') => validateListening(dataWithChoice([choiceQ(id, 'detail', 2, over), choiceQ('p2-002', 'detail', 1)]));
+const mentions = (errors, id) => errors.some((e) => e.includes(id));
+
+test('validateListening() accepts valid choice questions and the shipped data keeps passing', () => {
+  assert.deepEqual(validateListening(dataWithChoice(goodPair())), []);
+  assert.deepEqual(validateListening(RAW), []);
+});
+
+test('validateListening() rejects a part without a known format', () => {
+  const d = dataWith([q('p1-001', 'detail', true), q('p1-002', 'detail', false)]);
+  delete d.parts[0].format;
+  assert.ok(validateListening(d).some((e) => e.includes('format')));
+  d.parts[0].format = 'nope';
+  assert.ok(validateListening(d).some((e) => e.includes('format')));
+});
+
+test('validateListening() reports a choice answer outside 0-3 or not an integer', () => {
+  for (const answer of [4, -1, '2', 1.5, null]) assert.ok(mentions(choiceErrors({ answer }), 'p2-001'), String(answer));
+});
+
+test('validateListening() reports duplicate, missing or incomplete options', () => {
+  assert.ok(mentions(choiceErrors({ options: [opt('五点'), opt('五点'), opt('七点'), opt('八点')] }), 'p2-001'));
+  assert.ok(mentions(choiceErrors({ options: [opt('五点'), opt('六点'), opt('七点')] }), 'p2-001'));
+  assert.ok(mentions(choiceErrors({ options: [opt('五点'), opt('六点'), opt('七点'), opt('八点'), opt('九点')] }), 'p2-001'));
+  assert.ok(mentions(choiceErrors({ options: [opt('五点'), { ...opt('六点'), pinyin: '' }, opt('七点'), opt('八点')] }), 'p2-001'));
+  const noVi = { ...opt('六点') };
+  delete noVi.vi;
+  assert.ok(mentions(choiceErrors({ options: [opt('五点'), noVi, opt('七点'), opt('八点')] }), 'p2-001'));
+});
+
+test('validateListening() reports a dialogue that is not exactly two lines, or a bad voice', () => {
+  const [a, b] = choiceQ('x', 'detail').lines;
+  assert.ok(mentions(choiceErrors({ lines: [a] }), 'p2-001'));
+  assert.ok(mentions(choiceErrors({ lines: [a, b, a] }), 'p2-001'));
+  assert.ok(mentions(choiceErrors({ lines: [{ ...a, v: 'x' }, b] }), 'p2-001'));
+  assert.ok(mentions(choiceErrors({ lines: [a, { ...b, text: '' }] }), 'p2-001'));
+  assert.ok(mentions(choiceErrors({ question: { v: 'x', text: '？', pinyin: 'p', vi: 'v' } }), 'p2-001'));
+  assert.ok(mentions(choiceErrors({ question: { v: 'f', text: '', pinyin: 'p', vi: 'v' } }), 'p2-001'));
+});
+
+test('validateListening() reports an id from another part, a duplicate id and an unknown type', () => {
+  assert.ok(mentions(choiceErrors({}, 'p1-001'), 'p1-001'));
+  const dup = validateListening(dataWithChoice([choiceQ('p2-001', 'detail', 0), choiceQ('p2-001', 'detail', 1)]));
+  assert.ok(dup.some((e) => e.includes('p2-001') && e.includes('trùng')));
+  assert.ok(mentions(validateListening(dataWithChoice([choiceQ('p2-001', 'nope', 0)])), 'p2-001'));
+});
+
+test('validateListening() reports a choice type whose correct answers all share one letter', () => {
+  const e = validateListening(dataWithChoice([choiceQ('p2-001', 'detail', 2), choiceQ('p2-002', 'detail', 2)]));
+  assert.ok(e.some((m) => m.includes('detail')));
+});
+
+test('partFormat(), mixSize(), correctLabel() and promptOf() follow the part format', () => {
+  const tf = dataWith([q('p1-001', 'detail')]).parts[0];
+  const ch = dataWithChoice(goodPair()).parts[0];
+  assert.equal(partFormat(tf), 'truefalse');
+  assert.equal(partFormat(ch), 'choice');
+  assert.equal(mixSize(ch), 15);
+  assert.equal(mixSize(tf), 10);
+  assert.equal(mixSize({ mixCount: 7 }), 7);
+  assert.equal(correctLabel(tf, q('p1-001', 'detail', true)), '对');
+  assert.equal(correctLabel(tf, q('p1-002', 'detail', false)), '错');
+  assert.equal(correctLabel(ch, ch.questions[0]), 'C. 七点');
+  assert.equal(promptOf(tf, tf.questions[0]), '他们今天去公园。');
+  assert.equal(promptOf(ch, ch.questions[0]), '女的几点下班？');
+});
+
+test('keyAction() for choice questions: 1-4 and a-d choose, Enter moves on, fields are ignored', () => {
+  const f = (key, answered = false, target = 'other') => keyAction({ key, answered, target, format: 'choice' });
+  assert.equal(f('1'), 'choose:0');
+  assert.equal(f('4'), 'choose:3');
+  assert.equal(f('a'), 'choose:0');
+  assert.equal(f('D'), 'choose:3');
+  assert.equal(f('b'), 'choose:1');
+  for (const key of ['5', '0', 'e', 'ArrowLeft', 'ArrowRight', 'Enter']) assert.equal(f(key), null, key);
+  assert.equal(f('Enter', true, 'answer'), 'next');
+  assert.equal(f('Enter', true, 'other'), 'next');
+  assert.equal(f('Enter', true, 'control'), null);
+  assert.equal(f('1', true), null);
+  for (const key of ['1', 'a', 'Enter']) for (const answered of [false, true]) assert.equal(f(key, answered, 'field'), null, key);
 });
