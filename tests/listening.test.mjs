@@ -319,3 +319,16 @@ test('Part 2 questions follow the writing rules (lengths, two voices, distinct d
     for (const o of x.options) assert.ok(han(o.text) >= 2 && han(o.text) <= 12, `${x.id} option ${o.text}`);
   }
 });
+
+test('Part 2 has 10 questions per type (40 in all) with balanced answer letters in every type', () => {
+  const p2 = partById('p2');
+  assert.equal(p2.questions.length, 40);
+  for (const t of p2.types) {
+    const qs = p2.questions.filter((x) => x.type === t.id);
+    assert.equal(qs.length, 10, t.id + ' count');
+    const perLetter = [0, 0, 0, 0];
+    for (const x of qs) perLetter[x.answer]++;
+    for (const n of perLetter) assert.ok(n >= 1 && n <= 4, `${t.id} answer letters ${perLetter}`);
+  }
+  assert.deepEqual(p2.questions.map((x) => x.id), Array.from({ length: 40 }, (_, i) => 'p2-' + String(i + 1).padStart(3, '0')));
+});
