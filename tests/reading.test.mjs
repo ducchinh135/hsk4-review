@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import RAW from '../src/data/reading.json' with { type: 'json' };
-import { typeCount, unitsOf, validateReading } from '../src/reading.js';
+import { buildMix, buildRun, clearSlot, emptyFill, filledText, fillKeyAction, gradeSet, isFull, placeWord, readKey, reviewUnits, selectSlot, typeCount, unitsOf, usedWords, validateReading } from '../src/reading.js';
 
 const WORDS = [
   ['堵车', 'dǔchē', 'tắc đường'],
@@ -162,4 +162,98 @@ test('unitsOf() and typeCount() group the sets by type', () => {
   assert.equal(unitsOf(part).length, 3);
   assert.deepEqual(typeCount(part), { sentence: 1, dialogue: 2 });
   assert.deepEqual(typeCount(dataWith([]).parts[0]), { sentence: 0, dialogue: 0 });
+});
+
+// Places the words in order, starting from slot 0.
+const filled = (set, words) => words.reduce((f, w) => placeWord(f, w, set), emptyFill());
+
+test('placeWord() fills the current slot and moves to the next empty one', () => {
+  const set = fillSet('p1-001');
+  let f = placeWord(emptyFill(), 3, set);
+  assert.equal(f.slots[0], 3);
+  assert.equal(f.cur, 1);
+  f = placeWord(f, 0, set);
+  assert.equal(f.cur, 2);
+});
+
+test('placeWord() moves a word already placed elsewhere and wraps to the first empty slot', () => {
+  const set = fillSet('p1-001');
+  let f = placeWord(placeWord(emptyFill(), 3, set), 0, set);
+  f = placeWord(selectSlot(f, 4), 3, set);
+  assert.deepEqual(f.slots, [null, 0, null, null, 3]);
+  assert.equal(f.cur, 0);
+});
+
+test('placeWord() ignores the example word', () => {
+  const set = fillSet('p1-001');
+  const f = placeWord(emptyFill(), 3, set);
+  assert.deepEqual(placeWord(f, 2, set), f);
+});
+
+test('placeWord() on a full set takes the word from its slot and drops the replaced word', () => {
+  const set = fillSet('p1-001');
+  const f = placeWord(selectSlot(filled(set, ANSWERS), 1), 4, set);
+  assert.deepEqual(f.slots, [3, 4, 5, 1, null]);
+  assert.equal(f.cur, 4);
+});
+
+test('clearSlot(), isFull() and usedWords()', () => {
+  const set = fillSet('p1-001');
+  const full = filled(set, ANSWERS);
+  assert.equal(isFull(full), true);
+  assert.equal(isFull(emptyFill()), false);
+  const cleared = clearSlot(selectSlot(full, 2));
+  assert.equal(cleared.slots[2], null);
+  assert.equal(isFull(cleared), false);
+  assert.deepEqual([...usedWords(set, emptyFill().slots)], [2]);
+  assert.deepEqual([...usedWords(set, cleared.slots)].sort(), [0, 1, 2, 3, 4]);
+});
+
+test('gradeSet() scores each blank', () => {
+  const set = fillSet('p1-001');
+  assert.deepEqual(gradeSet(set, ANSWERS), { results: [true, true, true, true, true], score: 5 });
+  assert.deepEqual(gradeSet(set, [0, 3, 5, 1, 4]), { results: [false, false, true, true, true], score: 3 });
+});
+
+test('fillKeyAction() while filling', () => {
+  const k = (key, full = false, target = 'other') => fillKeyAction({ key, graded: false, full, target });
+  assert.equal(k('C'), 'word:2');
+  assert.equal(k('f'), 'word:5');
+  assert.equal(k('g'), null);
+  assert.equal(k('3'), 'slot:2');
+  assert.equal(k('6'), null);
+  assert.equal(k('0'), null);
+  assert.equal(k('Backspace'), 'clear');
+  assert.equal(k('Enter'), null);
+  assert.equal(k('Enter', true), 'submit');
+  assert.equal(k('Enter', true, 'control'), null);
+  assert.equal(k('ArrowLeft'), null);
+});
+
+test('fillKeyAction() once graded, and never while typing', () => {
+  assert.equal(fillKeyAction({ key: 'Enter', graded: true, full: true, target: 'other' }), 'next');
+  assert.equal(fillKeyAction({ key: 'Enter', graded: true, full: true, target: 'control' }), null);
+  assert.equal(fillKeyAction({ key: 'a', graded: true, full: true, target: 'other' }), null);
+  for (const key of ['a', '1', 'Enter', 'Backspace']) assert.equal(fillKeyAction({ key, graded: false, full: true, target: 'field' }), null);
+});
+
+test('buildMix() takes one set of each type in type order', () => {
+  const part = dataWith([fillSet('p1-001', 'dialogue'), fillSet('p1-002'), fillSet('p1-003', 'dialogue'), fillSet('p1-004')]).parts[0];
+  const mix = buildMix(part);
+  assert.deepEqual(mix.map((s) => s.type), ['sentence', 'dialogue']);
+  const noDialogue = dataWith([fillSet('p1-001'), fillSet('p1-002')]).parts[0];
+  assert.deepEqual(buildMix(noDialogue).map((s) => s.type), ['sentence']);
+});
+
+test('reviewUnits() returns the marked sets in id order; buildRun() caps the run', () => {
+  const part = dataWith([fillSet('p1-003'), fillSet('p1-001'), fillSet('p1-002')]).parts[0];
+  const marks = { [readKey('p1-003')]: 'r', [readKey('p1-001')]: 'r', [readKey('p1-002')]: 'k' };
+  assert.deepEqual(reviewUnits((k) => marks[k], part).map((s) => s.id), ['p1-001', 'p1-003']);
+  const many = Array.from({ length: 9 }, (_, i) => ({ id: i }));
+  assert.equal(buildRun(many, { max: 6 }).length, 6);
+  assert.equal(buildRun(many).length, 9);
+});
+
+test('filledText() puts the word in the blank', () => {
+  assert.equal(filledText('他___了。', '走'), '他走了。');
 });

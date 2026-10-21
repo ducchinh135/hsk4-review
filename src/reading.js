@@ -1,6 +1,7 @@
 // Reading practice (HSK4 exam parts 选词填空, 排列顺序 and 阅读理解): sets, runs and validation, with
 // no React so Node tests can use them.
 import RAW from './data/reading.json' with { type: 'json' };
+import { shuffle } from './random.js';
 
 // The three parts of the exam's reading section; only those in reading.json have content.
 export const PART_TABS = [
@@ -13,6 +14,7 @@ export const PARTS = RAW.parts;
 export const partById = (id) => PARTS.find((p) => p.id === id);
 
 export const readKey = (id) => 'r:' + id;
+const BLANK = '___';
 export const LETTERS6 = ['A', 'B', 'C', 'D', 'E', 'F'];
 
 // What a run steps through: the sets of a fill part.
@@ -27,8 +29,85 @@ export function typeCount(part) {
   return n;
 }
 
+// The units in random order, at most `max` of them.
+export const buildRun = (units, { max = Infinity, rng = Math.random } = {}) => shuffle(units, rng).slice(0, max);
+
+// The mixed run of a fill part: one random set of each type that has sets, in type order (as in the
+// exam: sentences, then dialogues).
+export const buildMix = (part, rng = Math.random) => part.types.map((t) => shuffle(unitsOf(part, t.id), rng)[0]).filter(Boolean);
+
+export const REVIEW_MAX = { p1: 6, p2: 30, p3: 20 };
+export const reviewUnits = (getMark, part) =>
+  unitsOf(part)
+    .filter((u) => getMark(readKey(u.id)) === 'r')
+    .sort((a, b) => (a.id < b.id ? -1 : 1));
+
+// Filling a set: `slots[i]` is the word index (0–5) placed in blank i, or null; `cur` is the blank
+// that the next word goes to.
+export const emptyFill = () => ({ slots: [null, null, null, null, null], cur: 0 });
+export const selectSlot = (fill, i) => ({ ...fill, cur: i });
+export const clearSlot = (fill) => ({ ...fill, slots: fill.slots.map((w, i) => (i === fill.cur ? null : w)) });
+export const isFull = (fill) => fill.slots.every((w) => w !== null);
+
+// Puts word `w` in the current blank (taking it out of any other blank), then moves to the next
+// empty blank after it, wrapping round; stays put when none is empty. The example's word is used.
+export function placeWord(fill, w, set) {
+  if (w === set.example.answer) return fill;
+  const slots = fill.slots.map((x, i) => (i === fill.cur ? w : x === w ? null : x));
+  const n = slots.length;
+  let cur = fill.cur;
+  for (let k = 1; k <= n; k++) {
+    const i = (fill.cur + k) % n;
+    if (slots[i] === null) {
+      cur = i;
+      break;
+    }
+  }
+  return { slots, cur };
+}
+
+export const usedWords = (set, slots) => new Set([set.example.answer, ...slots.filter((w) => w !== null)]);
+
+export function gradeSet(set, slots) {
+  const results = set.items.map((item, i) => slots[i] === item.answer);
+  return { results, score: results.filter(Boolean).length };
+}
+
+export const filledText = (text, word) => text.replace(BLANK, word);
+
+// What a key press does on a fill set, or null to ignore it: 'word:0'…'word:5' (a–f), 'slot:0'…
+// 'slot:4' (1–5), 'clear' (Backspace), 'submit' (Enter once every blank is filled) and, once graded,
+// 'next' (Enter). `target` is as in listening's keyAction: 'field', 'control' (a button or link that
+// handles Enter itself) or 'other'.
+export function fillKeyAction({ key, graded, full, target }) {
+  if (target === 'field') return null;
+  if (graded) return key === 'Enter' && target !== 'control' ? 'next' : null;
+  if (key === 'Enter') return full && target !== 'control' ? 'submit' : null;
+  if (key === 'Backspace') return 'clear';
+  if (String(key).length !== 1) return null;
+  const w = 'abcdef'.indexOf(key.toLowerCase());
+  if (w >= 0) return 'word:' + w;
+  const s = '12345'.indexOf(key);
+  return s >= 0 ? 'slot:' + s : null;
+}
+
+const PINYIN_KEY = 'hsk4_read_pinyin';
+export function loadShowPinyin() {
+  try {
+    return localStorage.getItem(PINYIN_KEY) !== '0';
+  } catch {
+    return true;
+  }
+}
+export function saveShowPinyin(b) {
+  try {
+    localStorage.setItem(PINYIN_KEY, b ? '1' : '0');
+  } catch {
+    /* storage unavailable */
+  }
+}
+
 const FORMATS = ['fill'];
-const BLANK = '___';
 const isText = (s) => typeof s === 'string' && s.trim() !== '';
 const blanks = (s) => (typeof s === 'string' ? s.split(BLANK).length - 1 : 0);
 const isWordIndex = (a) => Number.isInteger(a) && a >= 0 && a < 6;
