@@ -68,6 +68,11 @@ export default function FillSet({ set, fill, graded, showPinyin, onTogglePinyin,
           );
         })}
       </div>
+      {!graded && (
+        <div className="rd-note">
+          {LETTERS6[set.example.answer]} đã dùng ở câu 例如 · điền 5 từ còn lại vào 5 chỗ trống
+        </div>
+      )}
 
       {graded && (
         <div className={'quiz-reveal ' + (graded.score === 5 ? 'ok' : 'bad')}>
