@@ -18,6 +18,7 @@ import ListeningPracticePage from './pages/ListeningPracticePage.jsx';
 import ListeningTipsPage from './pages/ListeningTipsPage.jsx';
 import ExercisePage from './pages/ExercisePage.jsx';
 import ReadingHubPage from './pages/ReadingHubPage.jsx';
+import ReadingPracticePage from './pages/ReadingPracticePage.jsx';
 import ReadingTipsPage from './pages/ReadingTipsPage.jsx';
 import ReviewPage from './pages/ReviewPage.jsx';
 import WordsPage from './pages/WordsPage.jsx';
@@ -35,7 +36,12 @@ function Page({ route, viewVersion }) {
   if (route.page === 'listening-review') return <ListeningPracticePage key={`review:${route.params.part}:${viewVersion}`} part={route.params.part} scope="review" />;
   if (route.page === 'listening-hub') return <ListeningHubPage key={route.params.part + ':' + viewVersion} part={route.params.part} />;
   if (route.page === 'reading-tips') return <ReadingTipsPage key={route.params.part + ':' + viewVersion} part={route.params.part} />;
-  if (route.page.startsWith('reading')) return <ReadingHubPage key={route.params.part + ':' + viewVersion} part={route.params.part} />;
+  if (route.page === 'reading-practice') {
+    const { part, type } = route.params;
+    return <ReadingPracticePage key={`${part}:${type}:${viewVersion}`} part={part} scope={type === 'mix' ? 'mix' : 'type'} type={type} />;
+  }
+  if (route.page === 'reading-review') return <ReadingPracticePage key={`review:${route.params.part}:${viewVersion}`} part={route.params.part} scope="review" />;
+  if (route.page === 'reading-hub') return <ReadingHubPage key={route.params.part + ':' + viewVersion} part={route.params.part} />;
   if (route.page === 'compare') return <ComparePage />;
   if (route.page === 'compare-practice') return <ComparePracticePage key={'lesson:' + viewVersion} scope="lesson" />;
   if (route.page === 'compare-review') return <ComparePracticePage key={'review:' + viewVersion} scope="review" />;
