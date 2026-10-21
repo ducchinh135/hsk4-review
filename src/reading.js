@@ -77,12 +77,15 @@ export const filledText = (text, word) => text.replace(BLANK, word);
 
 // What a key press does on a fill set, or null to ignore it: 'word:0'…'word:5' (a–f), 'slot:0'…
 // 'slot:4' (1–5), 'clear' (Backspace), 'submit' (Enter once every blank is filled) and, once graded,
-// 'next' (Enter). `target` is as in listening's keyAction: 'field', 'control' (a button or link that
-// handles Enter itself) or 'other'.
+// 'next' (Enter). `target` is as in listening's keyAction: 'field', 'answer' (a word or blank button,
+// which keeps focus after a click), 'control' (another button or link, which handles Enter itself) or
+// 'other'. On an answer button Enter and Space would click it again and move a word, so they give
+// 'none' (swallow the key) unless Enter submits.
 export function fillKeyAction({ key, graded, full, target }) {
   if (target === 'field') return null;
   if (graded) return key === 'Enter' && target !== 'control' ? 'next' : null;
-  if (key === 'Enter') return full && target !== 'control' ? 'submit' : null;
+  if (key === 'Enter') return full && target !== 'control' ? 'submit' : target === 'answer' ? 'none' : null;
+  if (key === ' ') return target === 'answer' ? 'none' : null;
   if (key === 'Backspace') return 'clear';
   if (String(key).length !== 1) return null;
   const w = 'abcdef'.indexOf(key.toLowerCase());

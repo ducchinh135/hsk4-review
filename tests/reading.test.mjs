@@ -257,3 +257,13 @@ test('reviewUnits() returns the marked sets in id order; buildRun() caps the run
 test('filledText() puts the word in the blank', () => {
   assert.equal(filledText('他___了。', '走'), '他走了。');
 });
+
+test('fillKeyAction() swallows Enter and Space on a focused word or blank button', () => {
+  const k = (key, full, graded = false) => fillKeyAction({ key, graded, full, target: 'answer' });
+  assert.equal(k('Enter', false), 'none');
+  assert.equal(k(' ', false), 'none');
+  assert.equal(k(' ', true), 'none');
+  assert.equal(k('Enter', true), 'submit');
+  assert.equal(k('c', false), 'word:2');
+  assert.equal(k('Enter', true, true), 'next');
+});

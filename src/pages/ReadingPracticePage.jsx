@@ -72,7 +72,8 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
   const next = () => (index + 1 < n ? go(index + 1) : finish());
 
   // A–F place a word, 1–5 pick a blank, Backspace empties it, Enter submits a full set or moves on
-  // once graded; never while typing in a field. The blank and word buttons keep the letter keys.
+  // once graded; never while typing in a field. Enter and Space on a focused word or blank button do
+  // not click it again.
   useEffect(() => {
     if (!n || showDone) return undefined;
     const onKey = (e) => {
@@ -83,13 +84,14 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
         tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || (t && t.isContentEditable)
           ? 'field'
           : t && t.closest && t.closest('[data-fill]')
-          ? 'other'
+          ? 'answer'
           : tag === 'BUTTON' || tag === 'A'
           ? 'control'
           : 'other';
       const action = fillKeyAction({ key: e.key, graded: !!done, full: isFull(fill), target });
       if (!action) return;
       e.preventDefault();
+      if (action === 'none') return;
       if (action === 'next') next();
       else if (action === 'submit') submit();
       else if (action === 'clear') update(clearSlot);
