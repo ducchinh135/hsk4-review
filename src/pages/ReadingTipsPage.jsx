@@ -24,7 +24,7 @@ export default function ReadingTipsPage({ part: partId }) {
         </Link>
         <span className="exercise-summary">Mẹo làm bài · {part.name}</span>
       </div>
-      <div className="fillblank-box lp-tip">
+      <div className="fillblank-box lp-tip rd-tip">
         {intro && <p className="gp-meaning">{intro}</p>}
         {sections.map((s, i) => (
           <section key={i} className="lp-tip-section">

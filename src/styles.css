@@ -467,3 +467,4 @@ a.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .rd-item-explain .quiz-reveal-sub{ white-space:pre-line; }
 .rd-set .quiz-reveal{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
 @media (max-width:480px){ .rd-word{ font-size:17px; padding:6px 10px; } .rd-blank{ min-width:64px; } }
+.rd-tip .word-sentence-item .zh, .rd-tip .word-sentence-item .gp-pinyin, .rd-tip .word-sentence-item .vi{ white-space:pre-line; }
