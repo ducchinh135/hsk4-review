@@ -23,6 +23,13 @@ dialogue between a man and a woman, then a spoken question (shown as text only o
 pick one of four printed answers A–D. The answer shows the transcript with pinyin, a Vietnamese
 translation and an explanation. Wrong answers mark the question "needs review".
 
+A reading section practises the reading part of the HSK 4 exam one part at a time (part I, 选词填空, is
+done; parts II and III are dimmed tabs). Part I works in sets as in the exam: six words A–F, one of
+them already used by the 例如 example, and five blanks (single sentences, or two-line A/B dialogues).
+Pick a blank, then a word (or type A–F, 1–5, Backspace); once the five blanks are filled, submit the
+set to see each sentence in full with pinyin, a Vietnamese translation and an explanation. A set
+with a wrong blank is marked "needs review" as a whole.
+
 - Without a backend (e.g. GitHub Pages) marks and review progress are stored in the browser only.
 - With the Cloudflare backend, users sign in (username + password, invite code to register) and
   their marks sync across devices (last write wins per word).
@@ -46,6 +53,10 @@ translation and an explanation. Wrong answers mark the question "needs review".
 | `/listening/p1/review` | A run over every "needs review" listening question (at most 30) |
 | `/listening/p2`, `/listening/p2/tips`, `/listening/p2/review` (and `p3`) | The same pages for parts II and III |
 | `/listening/p2/practice/<type>` | A run over one part II type (`detail`, `reason`, `attitude`, `infer`; part III: `dialogue`, `detail`, `gist`) or `mix` (15 questions) |
+| `/reading/p1` | Reading part I hub: tips, the two set types, mixed run, review (`/reading` redirects here) |
+| `/reading/p1/tips` | Tips for reading part I |
+| `/reading/p1/practice/<type>` | A run over one type (`sentence`, `dialogue`) or `mix` (one set of each, 10 blanks) |
+| `/reading/p1/review` | A run over every "needs review" set (at most 6) |
 
 Paths are real URLs (History API), so the host must serve `index.html` for them. Cloudflare Pages does
 that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
@@ -64,6 +75,8 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 | `src/data/compare.json` | The confusable-word groups, as one flat list (see below) |
 | `src/listening.js` | Listening data access, run building, remembered speed and pinyin choices, data validation |
 | `src/data/listening.json` | The listening parts: tips, question types and questions (see below) |
+| `src/reading.js` | Reading data access, run building, filling and grading a set, keys, data validation |
+| `src/data/reading.json` | The reading parts: tips, types and sets (see below) |
 | `public/audio/listening/` | One mp3 per question (`p1-001.mp3`…) and `manifest.json`, made by `scripts/tts.py` |
 | `scripts/tts.py` | Makes the listening audio with `edge-tts` (see below) |
 | `src/data/vocab.json` | The vocabulary, one array per word: `[hanzi, pinyin, meaning, example zh, example vi]` |
@@ -74,7 +87,7 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 | `functions/api/[[route]].js` | Mounts the Hono app on Cloudflare Pages Functions |
 | `migrations/` | D1 schema: `0001_init.sql` (`users`, `progress`, `attempts`), `0002_srs.sql` (`srs`, no longer used by the frontend) |
 | `tests/api.test.mjs` | Integration tests for the API |
-| `tests/quiz.test.mjs`, `tests/router.test.mjs`, `tests/grammar.test.mjs`, `tests/compare.test.mjs`, `tests/listening.test.mjs` | Unit tests for the quiz, URL matching, grammar, confusable-words and listening logic and data (no server needed) |
+| `tests/quiz.test.mjs`, `tests/router.test.mjs`, `tests/grammar.test.mjs`, `tests/compare.test.mjs`, `tests/listening.test.mjs`, `tests/reading.test.mjs` | Unit tests for the quiz, URL matching, grammar, confusable-words, listening and reading logic and data (no server needed) |
 
 ### Listening data and audio
 
@@ -102,6 +115,16 @@ python3 -m venv .venv && .venv/bin/pip install edge-tts   # once; .venv is not c
 Each part I mp3 is the passage, 1.5 s of silence, then the statement; each part II mp3 is the two dialogue lines 1 s apart, 2 s of silence, then the question. The voices are Xiaoxiao (woman) and Yunyang (man, about 133 Hz against her 255 Hz; `--male-voice=zh-CN-YunjianNeural` is deeper still); changing a voice or a pause remakes the files. The pieces are joined by concatenating
 the mp3 bytes (all are MPEG-2 layer III, 24 kHz), which plays and decodes in Chrome; if a browser ever
 glitches at the join, rebuild the file with `ffmpeg`.
+
+### Reading data
+
+`src/data/reading.json` has `parts` (only part I so far), each with a `format` (`fill`), `tips` and
+`types`. A `fill` part has `sets`; every set has a fixed `id` (`p1-001`; it is the mark key `r:p1-001`,
+so never renumber a published set), a `type` (`sentence` or `dialogue`), six `words` (`{text, pinyin,
+vi}`, shown as A–F in this order), an `example` (`{text, answer}`, text with one `___`) and five
+`items` (`{text, pinyin, vi, answer, explain}`). `answer` is the index of a word (0–5); the example
+and the five items use the six words once each. A dialogue item's `text`, `pinyin` and `vi` are two
+lines (`A：…\nB：…`). `npm run test:unit` validates the file.
 
 ### Grammar data
 

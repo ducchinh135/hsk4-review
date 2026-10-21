@@ -389,6 +389,1238 @@
               "explain": "Sau 应该 cần động từ, tân ngữ là 选择 → 尊重…的选择 (tôn trọng lựa chọn). 打扰 cũng là động từ nhưng nghĩa \"làm phiền\" không hợp."
             }
           ]
+        },
+        {
+          "id": "p1-005",
+          "type": "sentence",
+          "words": [
+            {
+              "text": "压力",
+              "pinyin": "yālì",
+              "vi": "áp lực"
+            },
+            {
+              "text": "适应",
+              "pinyin": "shìyìng",
+              "vi": "thích nghi, quen với"
+            },
+            {
+              "text": "偶尔",
+              "pinyin": "ǒu'ěr",
+              "vi": "thỉnh thoảng"
+            },
+            {
+              "text": "热闹",
+              "pinyin": "rènao",
+              "vi": "náo nhiệt"
+            },
+            {
+              "text": "举办",
+              "pinyin": "jǔbàn",
+              "vi": "tổ chức"
+            },
+            {
+              "text": "及时",
+              "pinyin": "jíshí",
+              "vi": "kịp thời"
+            }
+          ],
+          "example": {
+            "text": "刚来中国的时候，我不太___这里的天气。",
+            "answer": 1
+          },
+          "items": [
+            {
+              "text": "最近工作太多，他觉得___特别大，晚上经常睡不着。",
+              "pinyin": "Zuìjìn gōngzuò tài duō, tā juéde yālì tèbié dà, wǎnshang jīngcháng shuì bu zháo.",
+              "vi": "Dạo này việc quá nhiều, anh ấy thấy áp lực rất lớn, buổi tối thường mất ngủ.",
+              "answer": 0,
+              "explain": "Chỗ trống làm chủ ngữ của 特别大 → cần danh từ. Cụm quen thuộc: 压力大 (áp lực lớn), đi với 工作太多 và 睡不着. 热闹 là tính từ, không làm chủ ngữ của 大."
+            },
+            {
+              "text": "学校下个月要___一场篮球比赛，欢迎大家报名参加。",
+              "pinyin": "Xuéxiào xià ge yuè yào jǔbàn yì chǎng lánqiú bǐsài, huānyíng dàjiā bàomíng cānjiā.",
+              "vi": "Tháng sau trường sẽ tổ chức một trận đấu bóng rổ, mời mọi người đăng ký tham gia.",
+              "answer": 4,
+              "explain": "Sau 要 cần động từ, tân ngữ là 比赛 → 举办比赛 (tổ chức cuộc thi). 适应 cũng là động từ nhưng đã dùng ở câu 例如 và không đi với 比赛."
+            },
+            {
+              "text": "我平时很少喝咖啡，只是___喝一杯。",
+              "pinyin": "Wǒ píngshí hěn shǎo hē kāfēi, zhǐshì ǒu'ěr hē yì bēi.",
+              "vi": "Bình thường tôi rất ít uống cà phê, chỉ thỉnh thoảng uống một cốc.",
+              "answer": 2,
+              "explain": "Chỗ trống đứng trước động từ 喝 → phó từ; 很少 (rất ít) ở vế trước khớp với 偶尔 (thỉnh thoảng). 及时 cũng đứng trước động từ được nhưng nghĩa là \"kịp thời\", không hợp với việc uống cà phê."
+            },
+            {
+              "text": "春节的时候，街上到处都是人，非常___。",
+              "pinyin": "Chūnjié de shíhou, jiē shang dàochù dōu shì rén, fēicháng rènao.",
+              "vi": "Dịp Tết, ngoài phố đâu đâu cũng là người, vô cùng náo nhiệt.",
+              "answer": 3,
+              "explain": "Sau 非常 cần tính từ; 到处都是人 (đâu cũng là người) → 热闹 (náo nhiệt). 压力 là danh từ, không đứng sau 非常."
+            },
+            {
+              "text": "发现问题要___解决，不能等到问题变大了再说。",
+              "pinyin": "Fāxiàn wèntí yào jíshí jiějué, bù néng děngdào wèntí biàn dà le zài shuō.",
+              "vi": "Phát hiện vấn đề thì phải giải quyết kịp thời, không thể đợi vấn đề lớn lên rồi mới tính.",
+              "answer": 5,
+              "explain": "Chỗ trống đứng trước động từ 解决; vế sau 不能等到… (không được đợi) cho thấy cần 及时 (kịp thời). 偶尔解决 (thỉnh thoảng giải quyết) không hợp nghĩa."
+            }
+          ]
+        },
+        {
+          "id": "p1-006",
+          "type": "sentence",
+          "words": [
+            {
+              "text": "估计",
+              "pinyin": "gūjì",
+              "vi": "ước chừng, đoán"
+            },
+            {
+              "text": "规定",
+              "pinyin": "guīdìng",
+              "vi": "quy định"
+            },
+            {
+              "text": "仔细",
+              "pinyin": "zǐxì",
+              "vi": "cẩn thận, kỹ"
+            },
+            {
+              "text": "甚至",
+              "pinyin": "shènzhì",
+              "vi": "thậm chí"
+            },
+            {
+              "text": "竞争",
+              "pinyin": "jìngzhēng",
+              "vi": "cạnh tranh"
+            },
+            {
+              "text": "由于",
+              "pinyin": "yóuyú",
+              "vi": "do, bởi vì"
+            }
+          ],
+          "example": {
+            "text": "___天气不好，比赛推迟到了下周。",
+            "answer": 5
+          },
+          "items": [
+            {
+              "text": "这道题很复杂，你要___看清楚题目再回答。",
+              "pinyin": "Zhè dào tí hěn fùzá, nǐ yào zǐxì kàn qīngchu tímù zài huídá.",
+              "vi": "Bài này rất phức tạp, em phải đọc kỹ đề rồi hãy trả lời.",
+              "answer": 2,
+              "explain": "Chỗ trống đứng trước động từ 看 → cần từ chỉ cách làm: 仔细看 (xem kỹ). 估计 cũng là động từ nhưng nghĩa là \"đoán\", không hợp với việc đọc đề."
+            },
+            {
+              "text": "天这么黑，___马上要下雨了，我们快回家吧。",
+              "pinyin": "Tiān zhème hēi, gūjì mǎshàng yào xià yǔ le, wǒmen kuài huí jiā ba.",
+              "vi": "Trời tối thế này, chắc sắp mưa rồi, chúng ta mau về nhà thôi.",
+              "answer": 0,
+              "explain": "Người nói dựa vào trời tối để đoán chuyện sắp xảy ra → 估计 (đoán là, chắc là). 规定 là quy định, không dùng để phỏng đoán."
+            },
+            {
+              "text": "学校___，考试的时候不能使用手机。",
+              "pinyin": "Xuéxiào guīdìng, kǎoshì de shíhou bù néng shǐyòng shǒujī.",
+              "vi": "Nhà trường quy định khi thi không được dùng điện thoại.",
+              "answer": 1,
+              "explain": "Chủ ngữ là 学校, vế sau là điều không được làm → 学校规定… (nhà trường quy định). 估计 không hợp: trường không \"đoán\" điều cấm."
+            },
+            {
+              "text": "上个月我特别忙，每天都加班，___周末也没休息过。",
+              "pinyin": "Shàng ge yuè wǒ tèbié máng, měitiān dōu jiābān, shènzhì zhōumò yě méi xiūxi guo.",
+              "vi": "Tháng trước tôi cực kỳ bận, ngày nào cũng làm thêm, thậm chí cuối tuần cũng không được nghỉ.",
+              "answer": 3,
+              "explain": "Vế sau đưa ra mức độ cao hơn vế trước (ngày nào cũng làm thêm → thậm chí cuối tuần cũng không nghỉ) → 甚至. 估计 (đoán) không hợp vì người nói kể lại việc của chính mình đã xảy ra; 由于 nêu nguyên nhân, không hợp ở vị trí này."
+            },
+            {
+              "text": "现在找工作的人越来越多，___也越来越厉害。",
+              "pinyin": "Xiànzài zhǎo gōngzuò de rén yuè lái yuè duō, jìngzhēng yě yuè lái yuè lìhai.",
+              "vi": "Bây giờ người tìm việc ngày càng nhiều, cạnh tranh cũng ngày càng gay gắt.",
+              "answer": 4,
+              "explain": "Chỗ trống làm chủ ngữ của 越来越厉害 → danh từ; người tìm việc nhiều → 竞争 (cạnh tranh) gay gắt. 规定 cũng là danh từ nhưng không \"ngày càng gay gắt\"."
+            }
+          ]
+        },
+        {
+          "id": "p1-007",
+          "type": "sentence",
+          "words": [
+            {
+              "text": "继续",
+              "pinyin": "jìxù",
+              "vi": "tiếp tục"
+            },
+            {
+              "text": "普遍",
+              "pinyin": "pǔbiàn",
+              "vi": "phổ biến"
+            },
+            {
+              "text": "互相",
+              "pinyin": "hùxiāng",
+              "vi": "lẫn nhau"
+            },
+            {
+              "text": "到底",
+              "pinyin": "dàodǐ",
+              "vi": "rốt cuộc"
+            },
+            {
+              "text": "增加",
+              "pinyin": "zēngjiā",
+              "vi": "tăng thêm"
+            },
+            {
+              "text": "主意",
+              "pinyin": "zhǔyi",
+              "vi": "ý kiến, ý tưởng"
+            }
+          ],
+          "example": {
+            "text": "这家店的顾客越来越多，收入也___了不少。",
+            "answer": 4
+          },
+          "items": [
+            {
+              "text": "同学之间应该___帮助。",
+              "pinyin": "Tóngxué zhījiān yīnggāi hùxiāng bāngzhù.",
+              "vi": "Bạn học với nhau nên giúp đỡ lẫn nhau.",
+              "answer": 2,
+              "explain": "同学之间 (giữa các bạn học) + động từ 帮助 → 互相帮助 (giúp đỡ lẫn nhau). 继续 cũng đứng trước động từ nhưng không hợp với 之间."
+            },
+            {
+              "text": "休息了十分钟以后，大家又___开会。",
+              "pinyin": "Xiūxile shí fēnzhōng yǐhòu, dàjiā yòu jìxù kāihuì.",
+              "vi": "Nghỉ mười phút xong, mọi người lại tiếp tục họp.",
+              "answer": 0,
+              "explain": "Sau khi nghỉ thì làm tiếp việc đang dở → 又继续开会. 互相开会 không ai nói; 到底 dùng trong câu hỏi."
+            },
+            {
+              "text": "你___想不想去？快点儿决定吧。",
+              "pinyin": "Nǐ dàodǐ xiǎng bu xiǎng qù? Kuài diǎnr juédìng ba.",
+              "vi": "Rốt cuộc cậu có muốn đi không? Mau quyết định đi.",
+              "answer": 3,
+              "explain": "Câu hỏi chính phản 想不想 kèm sự sốt ruột (快点儿决定吧) → 到底 (rốt cuộc). 继续想不想去 không thành câu."
+            },
+            {
+              "text": "我们周末去哪儿玩儿好呢？你有什么好___吗？",
+              "pinyin": "Wǒmen zhōumò qù nǎr wánr hǎo ne? Nǐ yǒu shénme hǎo zhǔyi ma?",
+              "vi": "Cuối tuần chúng ta đi chơi đâu thì hay nhỉ? Cậu có ý gì hay không?",
+              "answer": 5,
+              "explain": "Sau 好 (tính từ) ở cuối cụm 有什么好___ cần danh từ → 好主意 (ý hay). Đây là danh từ duy nhất trong bộ."
+            },
+            {
+              "text": "现在用手机买东西已经非常___了。",
+              "pinyin": "Xiànzài yòng shǒujī mǎi dōngxi yǐjīng fēicháng pǔbiàn le.",
+              "vi": "Bây giờ mua đồ bằng điện thoại đã rất phổ biến rồi.",
+              "answer": 1,
+              "explain": "Sau 非常 cần tính từ; nói về một việc nhiều người làm → 普遍 (phổ biến). 增加 là động từ, đã dùng ở câu 例如."
+            }
+          ]
+        },
+        {
+          "id": "p1-008",
+          "type": "sentence",
+          "words": [
+            {
+              "text": "准确",
+              "pinyin": "zhǔnquè",
+              "vi": "chính xác"
+            },
+            {
+              "text": "安排",
+              "pinyin": "ānpái",
+              "vi": "sắp xếp"
+            },
+            {
+              "text": "结果",
+              "pinyin": "jiéguǒ",
+              "vi": "kết quả là"
+            },
+            {
+              "text": "稍微",
+              "pinyin": "shāowēi",
+              "vi": "hơi, một chút"
+            },
+            {
+              "text": "允许",
+              "pinyin": "yǔnxǔ",
+              "vi": "cho phép"
+            },
+            {
+              "text": "既然",
+              "pinyin": "jìrán",
+              "vi": "đã… thì"
+            }
+          ],
+          "example": {
+            "text": "这件衣服___有点儿大，你换一件小一点儿的吧。",
+            "answer": 3
+          },
+          "items": [
+            {
+              "text": "___你已经决定了，我就不再说什么了。",
+              "pinyin": "Jìrán nǐ yǐjīng juédìng le, wǒ jiù bú zài shuō shénme le.",
+              "vi": "Cậu đã quyết định rồi thì tớ không nói gì thêm nữa.",
+              "answer": 5,
+              "explain": "Vế sau có 就, vế trước nêu một sự thật đã có → cặp 既然…就… (đã… thì…). 结果 nêu kết quả, không đứng đầu vế điều kiện."
+            },
+            {
+              "text": "这里是图书馆，不___大声说话。",
+              "pinyin": "Zhèlǐ shì túshūguǎn, bù yǔnxǔ dàshēng shuōhuà.",
+              "vi": "Đây là thư viện, không được phép nói to.",
+              "answer": 4,
+              "explain": "不 + động từ + 大声说话: nói về điều bị cấm ở nơi công cộng → 不允许 (không cho phép). 不安排 không hợp nghĩa."
+            },
+            {
+              "text": "他每天只睡四个小时，___身体越来越差。",
+              "pinyin": "Tā měitiān zhǐ shuì sì ge xiǎoshí, jiéguǒ shēntǐ yuè lái yuè chà.",
+              "vi": "Anh ấy mỗi ngày chỉ ngủ bốn tiếng, kết quả là sức khoẻ ngày càng kém.",
+              "answer": 2,
+              "explain": "Vế sau là hậu quả của vế trước → 结果 (kết quả là). 既然 đứng ở vế trước, không đứng ở vế kết quả."
+            },
+            {
+              "text": "这次旅行导游已经___好了，我们只要按时出发就行。",
+              "pinyin": "Zhè cì lǚxíng dǎoyóu yǐjīng ānpái hǎo le, wǒmen zhǐyào ànshí chūfā jiù xíng.",
+              "vi": "Chuyến du lịch này hướng dẫn viên đã sắp xếp xong rồi, chúng ta chỉ cần xuất phát đúng giờ là được.",
+              "answer": 1,
+              "explain": "Động từ + 好 (làm xong): 安排好 (sắp xếp xong). 允许好 không ai nói."
+            },
+            {
+              "text": "翻译的时候，最重要的是意思要___。",
+              "pinyin": "Fānyì de shíhou, zuì zhòngyào de shì yìsi yào zhǔnquè.",
+              "vi": "Khi dịch, quan trọng nhất là ý phải chính xác.",
+              "answer": 0,
+              "explain": "意思要 + tính từ: ý nghĩa phải chính xác → 准确. 稍微 là phó từ, đã dùng ở câu 例如."
+            }
+          ]
+        },
+        {
+          "id": "p1-009",
+          "type": "dialogue",
+          "words": [
+            {
+              "text": "正好",
+              "pinyin": "zhènghǎo",
+              "vi": "vừa đúng, vừa khéo"
+            },
+            {
+              "text": "麻烦",
+              "pinyin": "máfan",
+              "vi": "làm phiền; phiền phức"
+            },
+            {
+              "text": "随便",
+              "pinyin": "suíbiàn",
+              "vi": "tuỳ ý"
+            },
+            {
+              "text": "商量",
+              "pinyin": "shāngliang",
+              "vi": "bàn bạc"
+            },
+            {
+              "text": "抱歉",
+              "pinyin": "bàoqiàn",
+              "vi": "xin lỗi, áy náy"
+            },
+            {
+              "text": "打折",
+              "pinyin": "dǎzhé",
+              "vi": "giảm giá"
+            }
+          ],
+          "example": {
+            "text": "A：你有零钱吗？\nB：有，我这儿___有十块。",
+            "answer": 0
+          },
+          "items": [
+            {
+              "text": "A：这件事你自己决定吧。\nB：这么重要的事，我还是跟家人___一下吧。",
+              "pinyin": "A: Zhè jiàn shì nǐ zìjǐ juédìng ba.\nB: Zhème zhòngyào de shì, wǒ háishi gēn jiārén shāngliang yíxià ba.",
+              "vi": "A: Việc này cậu tự quyết đi.\nB: Việc quan trọng thế này, tớ vẫn nên bàn với người nhà một chút.",
+              "answer": 3,
+              "explain": "跟 + người + động từ + 一下: 跟家人商量一下 (bàn với người nhà). B không muốn tự quyết nên muốn bàn bạc. 麻烦 không đi với 跟家人."
+            },
+            {
+              "text": "A：今天晚上吃什么？\nB：___，你做什么我就吃什么。",
+              "pinyin": "A: Jīntiān wǎnshang chī shénme?\nB: Suíbiàn, nǐ zuò shénme wǒ jiù chī shénme.",
+              "vi": "A: Tối nay ăn gì?\nB: Tuỳ cậu, cậu nấu gì tớ ăn nấy.",
+              "answer": 2,
+              "explain": "Câu đứng một mình để trả lời, vế sau 你做什么我就吃什么 → 随便 (tuỳ, sao cũng được). 正好 đã dùng ở câu 例如."
+            },
+            {
+              "text": "A：这双鞋本来八百块，现在___，只要四百。\nB：那真便宜！",
+              "pinyin": "A: Zhè shuāng xié běnlái bābǎi kuài, xiànzài dǎzhé, zhǐ yào sìbǎi.\nB: Nà zhēn piányi!",
+              "vi": "A: Đôi giày này vốn 800 tệ, giờ giảm giá, chỉ còn 400.\nB: Thế thì rẻ thật!",
+              "answer": 5,
+              "explain": "Giá từ 800 xuống 400, B khen rẻ → 打折 (giảm giá). Các từ khác không nói về giá."
+            },
+            {
+              "text": "A：真___，让你等了这么久。\nB：没关系，我也刚到。",
+              "pinyin": "A: Zhēn bàoqiàn, ràng nǐ děngle zhème jiǔ.\nB: Méi guānxi, wǒ yě gāng dào.",
+              "vi": "A: Thật xin lỗi, để cậu đợi lâu thế.\nB: Không sao, tớ cũng vừa đến.",
+              "answer": 4,
+              "explain": "A xin lỗi vì để người khác đợi, B đáp 没关系 → 真抱歉. 真麻烦 là than phiền phức, không phải lời xin lỗi."
+            },
+            {
+              "text": "A：___你帮我把这个箱子搬到楼上，好吗？\nB：好的，没问题。",
+              "pinyin": "A: Máfan nǐ bāng wǒ bǎ zhège xiāngzi bān dào lóu shang, hǎo ma?\nB: Hǎo de, méi wèntí.",
+              "vi": "A: Phiền cậu giúp tớ chuyển cái thùng này lên tầng trên được không?\nB: Được, không vấn đề gì.",
+              "answer": 1,
+              "explain": "Câu nhờ vả lịch sự: 麻烦你 + 帮我… (phiền bạn giúp tôi…). 抱歉你 không thành câu."
+            }
+          ]
+        },
+        {
+          "id": "p1-010",
+          "type": "dialogue",
+          "words": [
+            {
+              "text": "怀疑",
+              "pinyin": "huáiyí",
+              "vi": "nghi ngờ"
+            },
+            {
+              "text": "难道",
+              "pinyin": "nándào",
+              "vi": "lẽ nào"
+            },
+            {
+              "text": "安全",
+              "pinyin": "ānquán",
+              "vi": "an toàn"
+            },
+            {
+              "text": "合适",
+              "pinyin": "héshì",
+              "vi": "vừa, phù hợp"
+            },
+            {
+              "text": "推迟",
+              "pinyin": "tuīchí",
+              "vi": "hoãn, lùi lại"
+            },
+            {
+              "text": "恐怕",
+              "pinyin": "kǒngpà",
+              "vi": "e rằng"
+            }
+          ],
+          "example": {
+            "text": "A：飞机几点起飞？\nB：因为天气不好，航班___了两个小时。",
+            "answer": 4
+          },
+          "items": [
+            {
+              "text": "A：这条裤子我穿怎么样？\nB：颜色不错，大小也很___。",
+              "pinyin": "A: Zhè tiáo kùzi wǒ chuān zěnmeyàng?\nB: Yánsè búcuò, dàxiǎo yě hěn héshì.",
+              "vi": "A: Tớ mặc chiếc quần này thế nào?\nB: Màu đẹp, cỡ cũng rất vừa.",
+              "answer": 3,
+              "explain": "很 + tính từ, chủ ngữ là 大小 (cỡ) → 大小合适 (vừa cỡ). 安全 cũng là tính từ nhưng không nói về cỡ quần áo."
+            },
+            {
+              "text": "A：都十点了，小王怎么还没来？\nB：路上车这么多，他___要迟到了。",
+              "pinyin": "A: Dōu shí diǎn le, Xiǎo Wáng zěnme hái méi lái?\nB: Lùshang chē zhème duō, tā kǒngpà yào chídào le.",
+              "vi": "A: Mười giờ rồi, sao Tiểu Vương còn chưa đến?\nB: Đường đông xe thế này, e là cậu ấy sẽ muộn.",
+              "answer": 5,
+              "explain": "B phỏng đoán một điều không hay sắp xảy ra → 恐怕 (e rằng). 难道 dùng trong câu hỏi tu từ, câu này không phải câu hỏi."
+            },
+            {
+              "text": "A：我觉得这个人说的话不太对。\nB：我也___他没说真话。",
+              "pinyin": "A: Wǒ juéde zhège rén shuō de huà bú tài duì.\nB: Wǒ yě huáiyí tā méi shuō zhēn huà.",
+              "vi": "A: Tớ thấy lời người này nói không đúng lắm.\nB: Tớ cũng nghi anh ta không nói thật.",
+              "answer": 0,
+              "explain": "Động từ + một mệnh đề (他没说真话): 怀疑 + việc mình nghi là thật (nghi rằng…). B đồng ý với sự nghi ngờ của A. 推迟 không có tân ngữ là mệnh đề."
+            },
+            {
+              "text": "A：我出门了。\nB：路上开车慢点儿，注意___！",
+              "pinyin": "A: Wǒ chūmén le.\nB: Lùshang kāichē màn diǎnr, zhùyì ānquán!",
+              "vi": "A: Tớ ra ngoài đây.\nB: Lái xe chậm thôi, chú ý an toàn nhé!",
+              "answer": 2,
+              "explain": "Cụm cố định 注意安全 (chú ý an toàn), lời dặn khi ai đó lái xe ra ngoài. 注意合适 không ai nói."
+            },
+            {
+              "text": "A：我不想去参加明天的考试了。\nB：___你不想毕业了吗？",
+              "pinyin": "A: Wǒ bù xiǎng qù cānjiā míngtiān de kǎoshì le.\nB: Nándào nǐ bù xiǎng bìyè le ma?",
+              "vi": "A: Tớ không muốn đi thi ngày mai nữa.\nB: Lẽ nào cậu không muốn tốt nghiệp nữa à?",
+              "answer": 1,
+              "explain": "Câu hỏi tu từ kết thúc bằng 吗, B không đồng tình → 难道…吗? (lẽ nào…?). 恐怕 không đi với câu hỏi 吗 kiểu này."
+            }
+          ]
+        },
+        {
+          "id": "p1-011",
+          "type": "dialogue",
+          "words": [
+            {
+              "text": "习惯",
+              "pinyin": "xíguàn",
+              "vi": "quen; thói quen"
+            },
+            {
+              "text": "失望",
+              "pinyin": "shīwàng",
+              "vi": "thất vọng"
+            },
+            {
+              "text": "节约",
+              "pinyin": "jiéyuē",
+              "vi": "tiết kiệm"
+            },
+            {
+              "text": "可惜",
+              "pinyin": "kěxī",
+              "vi": "đáng tiếc"
+            },
+            {
+              "text": "表扬",
+              "pinyin": "biǎoyáng",
+              "vi": "khen ngợi"
+            },
+            {
+              "text": "熟悉",
+              "pinyin": "shúxī",
+              "vi": "quen thuộc"
+            }
+          ],
+          "example": {
+            "text": "A：你认识路吗？\nB：放心，这儿我很___。",
+            "answer": 5
+          },
+          "items": [
+            {
+              "text": "A：今天老师在全班同学面前___了我。\nB：真棒！你最近确实很努力。",
+              "pinyin": "A: Jīntiān lǎoshī zài quán bān tóngxué miànqián biǎoyángle wǒ.\nB: Zhēn bàng! Nǐ zuìjìn quèshí hěn nǔlì.",
+              "vi": "A: Hôm nay cô giáo khen tớ trước cả lớp.\nB: Giỏi quá! Dạo này cậu đúng là rất chăm chỉ.",
+              "answer": 4,
+              "explain": "Động từ + 了 + 我, B đáp 真棒 → việc tốt: 表扬了我 (khen tôi). 节约 không có tân ngữ là người."
+            },
+            {
+              "text": "A：这些菜还能吃，别扔了。\nB：好吧，扔了确实挺___的。",
+              "pinyin": "A: Zhèxiē cài hái néng chī, bié rēng le.\nB: Hǎo ba, rēngle quèshí tǐng kěxī de.",
+              "vi": "A: Mấy món này vẫn ăn được, đừng vứt.\nB: Được rồi, vứt đi đúng là khá phí.",
+              "answer": 3,
+              "explain": "挺…的 + tính từ, nói về việc vứt đồ còn dùng được → 可惜 (đáng tiếc, phí). 失望 là cảm xúc của người bị phụ lòng, không dùng cho việc vứt đồ."
+            },
+            {
+              "text": "A：小李又没按时完成任务。\nB：是啊，他这次真让大家___。",
+              "pinyin": "A: Xiǎo Lǐ yòu méi ànshí wánchéng rènwu.\nB: Shì a, tā zhè cì zhēn ràng dàjiā shīwàng.",
+              "vi": "A: Tiểu Lý lại không hoàn thành nhiệm vụ đúng hạn.\nB: Đúng vậy, lần này cậu ấy thật khiến mọi người thất vọng.",
+              "answer": 1,
+              "explain": "Mẫu 让 + người + cảm xúc: 让大家失望 (khiến mọi người thất vọng). Không nói 让大家可惜."
+            },
+            {
+              "text": "A：用完水记得关好。\nB：知道了，我们要___用水。",
+              "pinyin": "A: Yòngwán shuǐ jìde guānhǎo.\nB: Zhīdào le, wǒmen yào jiéyuē yòng shuǐ.",
+              "vi": "A: Dùng nước xong nhớ khoá lại.\nB: Biết rồi, chúng ta phải tiết kiệm nước.",
+              "answer": 2,
+              "explain": "Cụm cố định 节约用水 (tiết kiệm nước). 习惯用水 không hợp nghĩa."
+            },
+            {
+              "text": "A：你来中国一年了，中国菜吃得___吗？\nB：开始不太行，现在很喜欢了。",
+              "pinyin": "A: Nǐ lái Zhōngguó yì nián le, Zhōngguó cài chī de xíguàn ma?\nB: Kāishǐ bú tài xíng, xiànzài hěn xǐhuan le.",
+              "vi": "A: Cậu đến Trung Quốc một năm rồi, ăn món Trung đã quen chưa?\nB: Lúc đầu không ổn lắm, giờ thì thích rồi.",
+              "answer": 0,
+              "explain": "吃得习惯 = ăn quen (động từ + 得 + 习惯). 熟悉 đã dùng ở câu 例如 và không nói 吃得熟悉."
+            }
+          ]
+        },
+        {
+          "id": "p1-012",
+          "type": "dialogue",
+          "words": [
+            {
+              "text": "大概",
+              "pinyin": "dàgài",
+              "vi": "khoảng, chắc là"
+            },
+            {
+              "text": "来不及",
+              "pinyin": "láibují",
+              "vi": "không kịp"
+            },
+            {
+              "text": "引起",
+              "pinyin": "yǐnqǐ",
+              "vi": "gây ra, thu hút"
+            },
+            {
+              "text": "礼貌",
+              "pinyin": "lǐmào",
+              "vi": "lễ phép, phép lịch sự"
+            },
+            {
+              "text": "干杯",
+              "pinyin": "gānbēi",
+              "vi": "cạn ly"
+            },
+            {
+              "text": "害羞",
+              "pinyin": "hàixiū",
+              "vi": "xấu hổ, ngại ngùng"
+            }
+          ],
+          "example": {
+            "text": "A：见到老师要主动打招呼。\nB：知道了，这样才有___。",
+            "answer": 3
+          },
+          "items": [
+            {
+              "text": "A：现在去机场还来得及吗？\nB：恐怕___了，飞机还有二十分钟就起飞了。",
+              "pinyin": "A: Xiànzài qù jīchǎng hái láidejí ma?\nB: Kǒngpà láibují le, fēijī hái yǒu èrshí fēnzhōng jiù qǐfēi le.",
+              "vi": "A: Giờ ra sân bay còn kịp không?\nB: E là không kịp rồi, còn hai mươi phút nữa máy bay cất cánh.",
+              "answer": 1,
+              "explain": "A hỏi 来得及吗, B trả lời phủ định vì chỉ còn 20 phút → 来不及了. 大概 cũng đứng sau 恐怕 được nhưng câu sẽ thiếu vị ngữ."
+            },
+            {
+              "text": "A：为我们的友谊，___！\nB：好，大家一起喝！",
+              "pinyin": "A: Wèi wǒmen de yǒuyì, gānbēi!\nB: Hǎo, dàjiā yìqǐ hē!",
+              "vi": "A: Vì tình bạn của chúng ta, cạn ly!\nB: Được, mọi người cùng uống!",
+              "answer": 4,
+              "explain": "为… + 干杯: lời nâng ly (vì… cạn ly), B đáp 一起喝 → 干杯."
+            },
+            {
+              "text": "A：你家离公司多远？\nB：___十公里吧，开车二十分钟。",
+              "pinyin": "A: Nǐ jiā lí gōngsī duō yuǎn?\nB: Dàgài shí gōnglǐ ba, kāichē èrshí fēnzhōng.",
+              "vi": "A: Nhà cậu cách công ty bao xa?\nB: Khoảng mười cây số, lái xe hai mươi phút.",
+              "answer": 0,
+              "explain": "Đứng trước con số, cuối câu có 吧 (không chắc chắn) → 大概 (khoảng). Không từ nào khác đứng trước 十公里."
+            },
+            {
+              "text": "A：你女儿怎么不说话？\nB：她有点儿___，跟不认识的人说话会脸红。",
+              "pinyin": "A: Nǐ nǚ'ér zěnme bù shuōhuà?\nB: Tā yǒudiǎnr hàixiū, gēn bú rènshi de rén shuōhuà huì liǎnhóng.",
+              "vi": "A: Con gái chị sao không nói gì?\nB: Con bé hơi ngại, nói chuyện với người lạ là đỏ mặt.",
+              "answer": 5,
+              "explain": "有点儿 + tính từ, vế sau 脸红 (đỏ mặt) → 害羞 (ngại ngùng). 礼貌 đã dùng ở câu 例如, và \"有点儿礼貌\" không giải thích được việc đỏ mặt."
+            },
+            {
+              "text": "A：他的话___了大家的注意。\nB：是啊，大家都在讨论这件事。",
+              "pinyin": "A: Tā de huà yǐnqǐle dàjiā de zhùyì.\nB: Shì a, dàjiā dōu zài tǎolùn zhè jiàn shì.",
+              "vi": "A: Lời anh ấy đã thu hút sự chú ý của mọi người.\nB: Đúng vậy, mọi người đều đang bàn tán chuyện này.",
+              "answer": 2,
+              "explain": "Cụm cố định 引起注意 (thu hút/gây sự chú ý); sau chỗ trống là 了 + tân ngữ → động từ. 干杯 không có tân ngữ."
+            }
+          ]
+        },
+        {
+          "id": "p1-013",
+          "type": "sentence",
+          "words": [
+            {
+              "text": "浪费",
+              "pinyin": "làngfèi",
+              "vi": "lãng phí"
+            },
+            {
+              "text": "获得",
+              "pinyin": "huòdé",
+              "vi": "giành được, đạt được"
+            },
+            {
+              "text": "专门",
+              "pinyin": "zhuānmén",
+              "vi": "chuyên, riêng (để)"
+            },
+            {
+              "text": "激动",
+              "pinyin": "jīdòng",
+              "vi": "xúc động"
+            },
+            {
+              "text": "页",
+              "pinyin": "yè",
+              "vi": "trang (lượng từ)"
+            },
+            {
+              "text": "往往",
+              "pinyin": "wǎngwǎng",
+              "vi": "thường thường"
+            }
+          ],
+          "example": {
+            "text": "这本书一共有三百多___，我一个星期就看完了。",
+            "answer": 4
+          },
+          "items": [
+            {
+              "text": "买了不用的东西放在家里，真是___钱。",
+              "pinyin": "Mǎile bú yòng de dōngxi fàng zài jiā li, zhēn shì làngfèi qián.",
+              "vi": "Mua đồ không dùng rồi để ở nhà, đúng là phí tiền.",
+              "answer": 0,
+              "explain": "Động từ + tân ngữ 钱: 浪费钱 (phí tiền), đúng với \"mua đồ không dùng\". 获得 cũng là động từ nhưng nghĩa là \"giành được\", không hợp."
+            },
+            {
+              "text": "他在这次比赛中___了第一名。",
+              "pinyin": "Tā zài zhè cì bǐsài zhōng huòdéle dì-yī míng.",
+              "vi": "Anh ấy đã giành giải nhất trong cuộc thi này.",
+              "answer": 1,
+              "explain": "Sau chỗ trống là 了 + 第一名 → động từ: 获得第一名 (giành hạng nhất). 浪费第一名 không có nghĩa."
+            },
+            {
+              "text": "听到自己考上大学的消息，她___得哭了。",
+              "pinyin": "Tīngdào zìjǐ kǎoshàng dàxué de xiāoxi, tā jīdòng de kū le.",
+              "vi": "Nghe tin mình đỗ đại học, cô ấy xúc động đến bật khóc.",
+              "answer": 3,
+              "explain": "Tính từ + 得 + kết quả (哭了): 激动得哭了 (xúc động đến phát khóc). 激动 là tính từ chỉ cảm xúc duy nhất trong bộ; 专门 là phó từ, không đứng trước 得 + kết quả."
+            },
+            {
+              "text": "这家饭馆是___为老人开的，菜都不太咸。",
+              "pinyin": "Zhè jiā fànguǎn shì zhuānmén wèi lǎorén kāi de, cài dōu bú tài xián.",
+              "vi": "Quán ăn này được mở riêng cho người già, món nào cũng không mặn lắm.",
+              "answer": 2,
+              "explain": "Cụm 专门为… + động từ (chuyên làm cho ai). 往往 cũng là phó từ nhưng chỉ việc thường xảy ra, không đi với 是…的 nói mục đích."
+            },
+            {
+              "text": "越是简单的问题，___越容易出错。",
+              "pinyin": "Yuè shì jiǎndān de wèntí, wǎngwǎng yuè róngyì chūcuò.",
+              "vi": "Càng là câu hỏi đơn giản thì thường càng dễ sai.",
+              "answer": 5,
+              "explain": "Câu nêu một quy luật hay gặp → 往往 (thường thường), đứng trước 越. 专门 không nói về quy luật."
+            }
+          ]
+        },
+        {
+          "id": "p1-014",
+          "type": "sentence",
+          "words": [
+            {
+              "text": "收拾",
+              "pinyin": "shōushi",
+              "vi": "dọn dẹp"
+            },
+            {
+              "text": "吃惊",
+              "pinyin": "chījīng",
+              "vi": "ngạc nhiên"
+            },
+            {
+              "text": "讨论",
+              "pinyin": "tǎolùn",
+              "vi": "thảo luận"
+            },
+            {
+              "text": "永远",
+              "pinyin": "yǒngyuǎn",
+              "vi": "mãi mãi"
+            },
+            {
+              "text": "一切",
+              "pinyin": "yíqiè",
+              "vi": "tất cả, mọi thứ"
+            },
+            {
+              "text": "酸",
+              "pinyin": "suān",
+              "vi": "chua"
+            }
+          ],
+          "example": {
+            "text": "客人马上就到了，快把房间___一下。",
+            "answer": 0
+          },
+          "items": [
+            {
+              "text": "这个问题很重要，我们明天开会再___。",
+              "pinyin": "Zhège wèntí hěn zhòngyào, wǒmen míngtiān kāihuì zài tǎolùn.",
+              "vi": "Vấn đề này rất quan trọng, mai họp chúng ta sẽ thảo luận tiếp.",
+              "answer": 2,
+              "explain": "Sau 再 cần động từ; nói về vấn đề và cuộc họp → 讨论 (thảo luận). 收拾 cũng là động từ nhưng đã dùng ở câu 例如 và không đi với 问题."
+            },
+            {
+              "text": "他平时很少运动，这次竟然跑了第一，大家都很___。",
+              "pinyin": "Tā píngshí hěn shǎo yùndòng, zhè cì jìngrán pǎole dì-yī, dàjiā dōu hěn chījīng.",
+              "vi": "Anh ấy bình thường ít vận động, lần này vậy mà chạy về nhất, mọi người đều rất ngạc nhiên.",
+              "answer": 1,
+              "explain": "很 + tính từ chỉ cảm xúc; 竟然 báo hiệu chuyện bất ngờ → 吃惊 (ngạc nhiên). 酸 cũng là tính từ nhưng chỉ vị chua."
+            },
+            {
+              "text": "不管发生什么事，我都会___支持你。",
+              "pinyin": "Bùguǎn fāshēng shénme shì, wǒ dōu huì yǒngyuǎn zhīchí nǐ.",
+              "vi": "Dù có chuyện gì xảy ra, tớ cũng sẽ mãi mãi ủng hộ cậu.",
+              "answer": 3,
+              "explain": "Chỗ trống giữa 会 và động từ 支持 → phó từ: 永远支持 (mãi mãi ủng hộ). 一切 là đại từ, không đứng trước động từ để bổ nghĩa."
+            },
+            {
+              "text": "这个葡萄太___了，我不想吃。",
+              "pinyin": "Zhège pútao tài suān le, wǒ bù xiǎng chī.",
+              "vi": "Nho này chua quá, tôi không muốn ăn.",
+              "answer": 5,
+              "explain": "太…了 + tính từ, nói về vị của nho → 酸 (chua). 吃惊 là cảm xúc của người, không dùng cho đồ ăn."
+            },
+            {
+              "text": "来到新的城市，___都要重新开始。",
+              "pinyin": "Láidào xīn de chéngshì, yíqiè dōu yào chóngxīn kāishǐ.",
+              "vi": "Đến một thành phố mới, mọi thứ đều phải bắt đầu lại.",
+              "answer": 4,
+              "explain": "Chỗ trống làm chủ ngữ, đi với 都 → 一切都… (mọi thứ đều…). 永远 là phó từ, không làm chủ ngữ."
+            }
+          ]
+        },
+        {
+          "id": "p1-015",
+          "type": "sentence",
+          "words": [
+            {
+              "text": "拒绝",
+              "pinyin": "jùjué",
+              "vi": "từ chối"
+            },
+            {
+              "text": "首先",
+              "pinyin": "shǒuxiān",
+              "vi": "trước tiên"
+            },
+            {
+              "text": "精彩",
+              "pinyin": "jīngcǎi",
+              "vi": "đặc sắc, hay"
+            },
+            {
+              "text": "仍然",
+              "pinyin": "réngrán",
+              "vi": "vẫn"
+            },
+            {
+              "text": "污染",
+              "pinyin": "wūrǎn",
+              "vi": "ô nhiễm"
+            },
+            {
+              "text": "误会",
+              "pinyin": "wùhuì",
+              "vi": "hiểu lầm"
+            }
+          ],
+          "example": {
+            "text": "做菜的时候，___要把菜洗干净。",
+            "answer": 1
+          },
+          "items": [
+            {
+              "text": "昨天的比赛非常___，观众们都很满意。",
+              "pinyin": "Zuótiān de bǐsài fēicháng jīngcǎi, guānzhòngmen dōu hěn mǎnyì.",
+              "vi": "Trận đấu hôm qua rất hay, khán giả đều rất hài lòng.",
+              "answer": 2,
+              "explain": "非常 + tính từ, nói về trận đấu khiến khán giả hài lòng → 精彩 (hay, đặc sắc). Các từ còn lại không phải tính từ khen ngợi."
+            },
+            {
+              "text": "我请他帮忙，他想都没想就___了。",
+              "pinyin": "Wǒ qǐng tā bāngmáng, tā xiǎng dōu méi xiǎng jiù jùjué le.",
+              "vi": "Tôi nhờ anh ấy giúp, anh ấy chẳng nghĩ ngợi gì đã từ chối.",
+              "answer": 0,
+              "explain": "Phản ứng với lời nhờ giúp → 拒绝了 (từ chối). 误会了 không phải phản ứng với lời nhờ."
+            },
+            {
+              "text": "虽然已经过去十年了，他___记得那天发生的事。",
+              "pinyin": "Suīrán yǐjīng guòqu shí nián le, tā réngrán jìde nà tiān fāshēng de shì.",
+              "vi": "Tuy đã qua mười năm, anh ấy vẫn nhớ chuyện xảy ra hôm đó.",
+              "answer": 3,
+              "explain": "虽然…, + 仍然 (tuy… vẫn…): việc không thay đổi dù thời gian trôi qua. 首先 đã dùng ở câu 例如 và chỉ thứ tự bước."
+            },
+            {
+              "text": "城市里的车越来越多，空气___也越来越严重了。",
+              "pinyin": "Chéngshì li de chē yuè lái yuè duō, kōngqì wūrǎn yě yuè lái yuè yánzhòng le.",
+              "vi": "Xe trong thành phố ngày càng nhiều, ô nhiễm không khí cũng ngày càng nghiêm trọng.",
+              "answer": 4,
+              "explain": "空气污染 (ô nhiễm không khí) làm chủ ngữ của 严重; nhiều xe → không khí bẩn. 误会 cũng có thể là danh từ nhưng không đi với 空气."
+            },
+            {
+              "text": "你___了，我不是这个意思。",
+              "pinyin": "Nǐ wùhuì le, wǒ bú shì zhège yìsi.",
+              "vi": "Cậu hiểu lầm rồi, tớ không có ý đó.",
+              "answer": 5,
+              "explain": "Vế sau 我不是这个意思 (tớ không có ý đó) → 你误会了 (cậu hiểu lầm rồi). 你拒绝了 không khớp với vế sau."
+            }
+          ]
+        },
+        {
+          "id": "p1-016",
+          "type": "sentence",
+          "words": [
+            {
+              "text": "鼓励",
+              "pinyin": "gǔlì",
+              "vi": "khích lệ, động viên"
+            },
+            {
+              "text": "轻松",
+              "pinyin": "qīngsōng",
+              "vi": "thoải mái, nhẹ nhõm"
+            },
+            {
+              "text": "好像",
+              "pinyin": "hǎoxiàng",
+              "vi": "hình như"
+            },
+            {
+              "text": "毕业",
+              "pinyin": "bìyè",
+              "vi": "tốt nghiệp"
+            },
+            {
+              "text": "关键",
+              "pinyin": "guānjiàn",
+              "vi": "then chốt, quan trọng nhất"
+            },
+            {
+              "text": "方法",
+              "pinyin": "fāngfǎ",
+              "vi": "phương pháp"
+            }
+          ],
+          "example": {
+            "text": "他大学___以后就回老家工作了。",
+            "answer": 3
+          },
+          "items": [
+            {
+              "text": "考完试以后，大家都觉得很___。",
+              "pinyin": "Kǎowán shì yǐhòu, dàjiā dōu juéde hěn qīngsōng.",
+              "vi": "Thi xong, mọi người đều thấy rất nhẹ nhõm.",
+              "answer": 1,
+              "explain": "觉得很 + tính từ chỉ cảm giác; thi xong → 轻松 (nhẹ nhõm). 关键 cũng có thể là tính từ nhưng không chỉ cảm giác của người."
+            },
+            {
+              "text": "他今天一句话也不说，___不太高兴。",
+              "pinyin": "Tā jīntiān yí jù huà yě bù shuō, hǎoxiàng bú tài gāoxìng.",
+              "vi": "Hôm nay anh ấy không nói một câu nào, hình như không vui lắm.",
+              "answer": 2,
+              "explain": "Người nói đoán tâm trạng dựa vào việc anh ấy im lặng → 好像 (hình như). Đây là phó từ duy nhất trong bộ."
+            },
+            {
+              "text": "在最___的时候，他一点儿也不紧张。",
+              "pinyin": "Zài zuì guānjiàn de shíhou, tā yìdiǎnr yě bù jǐnzhāng.",
+              "vi": "Vào lúc then chốt nhất, anh ấy không hề căng thẳng.",
+              "answer": 4,
+              "explain": "最 + tính từ + 的时候; khen một người không căng thẳng vào lúc quan trọng nhất → 关键 (then chốt). 最轻松的时候 thì không căng thẳng là chuyện đương nhiên, câu không còn ý nghĩa."
+            },
+            {
+              "text": "老师常常___我们多说汉语，不要怕说错。",
+              "pinyin": "Lǎoshī chángcháng gǔlì wǒmen duō shuō Hànyǔ, bú yào pà shuōcuò.",
+              "vi": "Thầy giáo thường động viên chúng tôi nói nhiều tiếng Trung, đừng sợ nói sai.",
+              "answer": 0,
+              "explain": "Động từ + người + làm gì: 鼓励我们多说… (khích lệ chúng tôi…); vế sau 不要怕 là lời động viên. 毕业 không có tân ngữ là người."
+            },
+            {
+              "text": "学汉语要找到适合自己的___。",
+              "pinyin": "Xué Hànyǔ yào zhǎodào shìhé zìjǐ de fāngfǎ.",
+              "vi": "Học tiếng Trung phải tìm được phương pháp phù hợp với mình.",
+              "answer": 5,
+              "explain": "Sau 的 cần danh từ, đi với 找到 và 适合自己 → 方法 (phương pháp). 关键 không đi với 适合自己的."
+            }
+          ]
+        },
+        {
+          "id": "p1-017",
+          "type": "dialogue",
+          "words": [
+            {
+              "text": "联系",
+              "pinyin": "liánxì",
+              "vi": "liên lạc"
+            },
+            {
+              "text": "弄",
+              "pinyin": "nòng",
+              "vi": "làm (cho)"
+            },
+            {
+              "text": "尽管",
+              "pinyin": "jǐnguǎn",
+              "vi": "cứ việc"
+            },
+            {
+              "text": "紧张",
+              "pinyin": "jǐnzhāng",
+              "vi": "căng thẳng, gấp gáp"
+            },
+            {
+              "text": "肯定",
+              "pinyin": "kěndìng",
+              "vi": "chắc chắn"
+            },
+            {
+              "text": "趟",
+              "pinyin": "tàng",
+              "vi": "chuyến, lượt (lượng từ)"
+            }
+          ],
+          "example": {
+            "text": "A：你去过上海吗？\nB：去过，去年去了一___。",
+            "answer": 5
+          },
+          "items": [
+            {
+              "text": "A：你的衣服怎么___脏了？\nB：刚才不小心把咖啡倒在上面了。",
+              "pinyin": "A: Nǐ de yīfu zěnme nòng zāng le?\nB: Gāngcái bù xiǎoxīn bǎ kāfēi dào zài shàngmian le.",
+              "vi": "A: Áo cậu sao lại bẩn thế?\nB: Lúc nãy không cẩn thận làm đổ cà phê lên.",
+              "answer": 1,
+              "explain": "Động từ + kết quả 脏: 弄脏 (làm bẩn). 联系 không kết hợp với 脏."
+            },
+            {
+              "text": "A：最近工作忙吗？\nB：很忙，时间特别___，周末也要加班。",
+              "pinyin": "A: Zuìjìn gōngzuò máng ma?\nB: Hěn máng, shíjiān tèbié jǐnzhāng, zhōumò yě yào jiābān.",
+              "vi": "A: Dạo này công việc bận không?\nB: Rất bận, thời gian rất gấp, cuối tuần cũng phải làm thêm.",
+              "answer": 3,
+              "explain": "时间紧张 = thời gian gấp gáp; 特别 + tính từ. 紧张 ngoài nghĩa \"hồi hộp\" còn dùng cho thời gian, công việc. 肯定 là phó từ, không làm vị ngữ ở đây."
+            },
+            {
+              "text": "A：这件事真的没问题吗？\nB：___没问题，我已经问过经理了。",
+              "pinyin": "A: Zhè jiàn shì zhēn de méi wèntí ma?\nB: Kěndìng méi wèntí, wǒ yǐjīng wènguo jīnglǐ le.",
+              "vi": "A: Việc này thật sự không có vấn đề gì chứ?\nB: Chắc chắn không có vấn đề gì, tôi đã hỏi giám đốc rồi.",
+              "answer": 4,
+              "explain": "A hỏi 真的没问题吗 (thật sự ổn chứ), B khẳng định chắc chắn → 肯定没问题. 尽管没问题 không thành câu."
+            },
+            {
+              "text": "A：有问题可以给我打电话。\nB：好的，有什么事我再跟你___。",
+              "pinyin": "A: Yǒu wèntí kěyǐ gěi wǒ dǎ diànhuà.\nB: Hǎo de, yǒu shénme shì wǒ zài gēn nǐ liánxì.",
+              "vi": "A: Có vấn đề gì cứ gọi điện cho tôi.\nB: Vâng, có chuyện gì tôi sẽ liên lạc với anh.",
+              "answer": 0,
+              "explain": "跟 + người + 联系 (liên lạc với ai), đáp lại lời dặn gọi điện. 跟你弄 không thành câu."
+            },
+            {
+              "text": "A：我什么时候来找你比较方便？\nB：我这几天都在家，你有空儿___来。",
+              "pinyin": "A: Wǒ shénme shíhou lái zhǎo nǐ bǐjiào fāngbiàn?\nB: Wǒ zhè jǐ tiān dōu zài jiā, nǐ yǒu kòngr jǐnguǎn lái.",
+              "vi": "A: Lúc nào tôi đến tìm anh thì tiện?\nB: Mấy hôm nay tôi đều ở nhà, anh rảnh lúc nào cứ đến.",
+              "answer": 2,
+              "explain": "尽管 + động từ = cứ việc làm, đừng ngại (dùng khi mời mọc). 肯定来 là khẳng định sẽ đến, không phải lời mời."
+            }
+          ]
+        },
+        {
+          "id": "p1-018",
+          "type": "dialogue",
+          "words": [
+            {
+              "text": "修理",
+              "pinyin": "xiūlǐ",
+              "vi": "sửa chữa"
+            },
+            {
+              "text": "骄傲",
+              "pinyin": "jiāo'ào",
+              "vi": "kiêu ngạo"
+            },
+            {
+              "text": "粗心",
+              "pinyin": "cūxīn",
+              "vi": "cẩu thả, sơ ý"
+            },
+            {
+              "text": "原谅",
+              "pinyin": "yuánliàng",
+              "vi": "tha thứ"
+            },
+            {
+              "text": "本来",
+              "pinyin": "běnlái",
+              "vi": "vốn dĩ, ban đầu"
+            },
+            {
+              "text": "停",
+              "pinyin": "tíng",
+              "vi": "dừng, tạnh"
+            }
+          ],
+          "example": {
+            "text": "A：你的自行车怎么了？\nB：坏了，我正要拿去___。",
+            "answer": 0
+          },
+          "items": [
+            {
+              "text": "A：这个题你又算错了。\nB：我太___了，又看错了一个数字。",
+              "pinyin": "A: Zhège tí nǐ yòu suàncuò le.\nB: Wǒ tài cūxīn le, yòu kàncuòle yí ge shùzì.",
+              "vi": "A: Bài này cậu lại tính sai rồi.\nB: Tớ sơ ý quá, lại nhìn nhầm một con số.",
+              "answer": 2,
+              "explain": "太…了 + tính từ; nhìn nhầm số → 粗心 (sơ ý). 骄傲 cũng là tính từ nhưng không giải thích việc nhìn nhầm."
+            },
+            {
+              "text": "A：对不起，我把你的书弄丢了，你能___我吗？\nB：没关系，我再买一本就行了。",
+              "pinyin": "A: Duìbuqǐ, wǒ bǎ nǐ de shū nòngdiū le, nǐ néng yuánliàng wǒ ma?\nB: Méi guānxi, wǒ zài mǎi yì běn jiù xíng le.",
+              "vi": "A: Xin lỗi, tớ làm mất sách của cậu rồi, cậu tha thứ cho tớ được không?\nB: Không sao, tớ mua lại một quyển là được.",
+              "answer": 3,
+              "explain": "Sau lời xin lỗi, hỏi 你能原谅我吗 (cậu tha thứ cho tớ được không). Động từ có tân ngữ là người. 修理我 không có nghĩa này."
+            },
+            {
+              "text": "A：我这次考了第一名！\nB：祝贺你！不过别___，还要继续努力。",
+              "pinyin": "A: Wǒ zhè cì kǎole dì-yī míng!\nB: Zhùhè nǐ! Búguò bié jiāo'ào, hái yào jìxù nǔlì.",
+              "vi": "A: Lần này tớ thi được hạng nhất!\nB: Chúc mừng cậu! Nhưng đừng kiêu ngạo, còn phải tiếp tục cố gắng.",
+              "answer": 1,
+              "explain": "Sau thành công, lời khuyên 别骄傲 (đừng kiêu ngạo) đi với 还要继续努力. 别粗心 không liên quan đến việc vừa đạt hạng nhất."
+            },
+            {
+              "text": "A：你怎么来了？\nB：我___不想来，可是朋友一定要我陪他。",
+              "pinyin": "A: Nǐ zěnme lái le?\nB: Wǒ běnlái bù xiǎng lái, kěshì péngyou yídìng yào wǒ péi tā.",
+              "vi": "A: Sao cậu lại đến?\nB: Ban đầu tớ không định đến, nhưng bạn tớ nhất định muốn tớ đi cùng.",
+              "answer": 4,
+              "explain": "本来…可是… (vốn dĩ… nhưng…): ý định ban đầu bị thay đổi. Đây là phó từ duy nhất trong bộ."
+            },
+            {
+              "text": "A：外面还在下雨吗？\nB：已经___了，我们走吧。",
+              "pinyin": "A: Wàimian hái zài xià yǔ ma?\nB: Yǐjīng tíng le, wǒmen zǒu ba.",
+              "vi": "A: Ngoài trời còn mưa không?\nB: Tạnh rồi, chúng ta đi thôi.",
+              "answer": 5,
+              "explain": "Hỏi mưa còn không, B bảo đi được → 已经停了 (đã tạnh). Các động từ khác không nói về mưa."
+            }
+          ]
+        },
+        {
+          "id": "p1-019",
+          "type": "dialogue",
+          "words": [
+            {
+              "text": "提醒",
+              "pinyin": "tíxǐng",
+              "vi": "nhắc nhở"
+            },
+            {
+              "text": "将来",
+              "pinyin": "jiānglái",
+              "vi": "tương lai, sau này"
+            },
+            {
+              "text": "负责",
+              "pinyin": "fùzé",
+              "vi": "phụ trách"
+            },
+            {
+              "text": "正式",
+              "pinyin": "zhèngshì",
+              "vi": "trang trọng, chính thức"
+            },
+            {
+              "text": "差不多",
+              "pinyin": "chàbuduō",
+              "vi": "gần xong, xấp xỉ"
+            },
+            {
+              "text": "兴奋",
+              "pinyin": "xīngfèn",
+              "vi": "phấn khích"
+            }
+          ],
+          "example": {
+            "text": "A：饭做好了吗？\nB：___了，再等五分钟。",
+            "answer": 4
+          },
+          "items": [
+            {
+              "text": "A：听说你要去北京旅游了？\nB：是啊，我太___了，昨天晚上都没睡着。",
+              "pinyin": "A: Tīngshuō nǐ yào qù Běijīng lǚyóu le?\nB: Shì a, wǒ tài xīngfèn le, zuótiān wǎnshang dōu méi shuìzháo.",
+              "vi": "A: Nghe nói cậu sắp đi Bắc Kinh du lịch à?\nB: Đúng vậy, tớ phấn khích quá, tối qua còn không ngủ được.",
+              "answer": 5,
+              "explain": "太…了 + tính từ chỉ cảm xúc; sắp đi chơi nên mất ngủ → 兴奋 (phấn khích). 正式 cũng là tính từ nhưng không chỉ cảm xúc."
+            },
+            {
+              "text": "A：这次活动由谁___？\nB：小王，有问题你可以找他。",
+              "pinyin": "A: Zhè cì huódòng yóu shéi fùzé?\nB: Xiǎo Wáng, yǒu wèntí nǐ kěyǐ zhǎo tā.",
+              "vi": "A: Hoạt động lần này do ai phụ trách?\nB: Tiểu Vương, có vấn đề gì cậu có thể tìm cậu ấy.",
+              "answer": 2,
+              "explain": "由 + người + 负责 (do ai phụ trách); B trả lời bằng tên người và bảo có gì cứ tìm → 负责. 提醒 cần có người được nhắc."
+            },
+            {
+              "text": "A：明天要早起，你记得___我。\nB：放心，我六点叫你。",
+              "pinyin": "A: Míngtiān yào zǎo qǐ, nǐ jìde tíxǐng wǒ.\nB: Fàngxīn, wǒ liù diǎn jiào nǐ.",
+              "vi": "A: Mai phải dậy sớm, cậu nhớ nhắc tớ nhé.\nB: Yên tâm, sáu giờ tớ gọi cậu.",
+              "answer": 0,
+              "explain": "Động từ + tân ngữ 我, B đáp sẽ gọi dậy → 提醒我 (nhắc tôi). 负责我 không hợp nghĩa."
+            },
+            {
+              "text": "A：明天的会要穿得___一点儿。\nB：好，我不穿运动服了。",
+              "pinyin": "A: Míngtiān de huì yào chuān de zhèngshì yìdiǎnr.\nB: Hǎo, wǒ bù chuān yùndòngfú le.",
+              "vi": "A: Cuộc họp mai phải ăn mặc trang trọng một chút.\nB: Được, tớ không mặc đồ thể thao nữa.",
+              "answer": 3,
+              "explain": "穿得 + tính từ + 一点儿; trái với đồ thể thao → 正式 (trang trọng). 兴奋 không mô tả cách ăn mặc."
+            },
+            {
+              "text": "A：你___想做什么工作？\nB：我想当一名律师。",
+              "pinyin": "A: Nǐ jiānglái xiǎng zuò shénme gōngzuò?\nB: Wǒ xiǎng dāng yì míng lǜshī.",
+              "vi": "A: Sau này cậu muốn làm công việc gì?\nB: Tớ muốn làm luật sư.",
+              "answer": 1,
+              "explain": "Từ chỉ thời gian đứng sau chủ ngữ, hỏi về nghề nghiệp sau này → 将来 (tương lai). 差不多 đã dùng ở câu 例如."
+            }
+          ]
+        },
+        {
+          "id": "p1-020",
+          "type": "dialogue",
+          "words": [
+            {
+              "text": "回忆",
+              "pinyin": "huíyì",
+              "vi": "kỷ niệm, hồi ức"
+            },
+            {
+              "text": "速度",
+              "pinyin": "sùdù",
+              "vi": "tốc độ"
+            },
+            {
+              "text": "敢",
+              "pinyin": "gǎn",
+              "vi": "dám"
+            },
+            {
+              "text": "幽默",
+              "pinyin": "yōumò",
+              "vi": "hài hước"
+            },
+            {
+              "text": "不得不",
+              "pinyin": "bùdébù",
+              "vi": "đành phải, buộc phải"
+            },
+            {
+              "text": "顺利",
+              "pinyin": "shùnlì",
+              "vi": "thuận lợi"
+            }
+          ],
+          "example": {
+            "text": "A：祝你一路___！\nB：谢谢！",
+            "answer": 5
+          },
+          "items": [
+            {
+              "text": "A：你们的新老师怎么样？\nB：他很___，上课的时候常常让我们笑。",
+              "pinyin": "A: Nǐmen de xīn lǎoshī zěnmeyàng?\nB: Tā hěn yōumò, shàngkè de shíhou chángcháng ràng wǒmen xiào.",
+              "vi": "A: Thầy giáo mới của các cậu thế nào?\nB: Thầy rất hài hước, lúc lên lớp thường làm bọn tớ cười.",
+              "answer": 3,
+              "explain": "很 + tính từ miêu tả tính cách; làm học sinh cười → 幽默 (hài hước). 顺利 cũng là tính từ nhưng đã dùng ở câu 例如 và không tả người."
+            },
+            {
+              "text": "A：你开得太快了，慢一点儿！\nB：好，我把___降下来。",
+              "pinyin": "A: Nǐ kāi de tài kuài le, màn yìdiǎnr!\nB: Hǎo, wǒ bǎ sùdù jiàng xiàlai.",
+              "vi": "A: Cậu lái nhanh quá, chậm lại một chút!\nB: Được, tớ giảm tốc độ xuống.",
+              "answer": 1,
+              "explain": "把 + danh từ + 降下来; A chê lái nhanh → 速度 (tốc độ). 回忆 cũng là danh từ nhưng không \"giảm xuống\" được."
+            },
+            {
+              "text": "A：这么晚了，你一个人___回家吗？\nB：没事，我家很近。",
+              "pinyin": "A: Zhème wǎn le, nǐ yí ge rén gǎn huí jiā ma?\nB: Méi shì, wǒ jiā hěn jìn.",
+              "vi": "A: Muộn thế này rồi, cậu dám về nhà một mình à?\nB: Không sao, nhà tớ gần lắm.",
+              "answer": 2,
+              "explain": "Động từ năng nguyện trước 回家; trời tối, A lo B sợ, B đáp 没事 → hỏi về can đảm: 敢 (dám). 不得不 chỉ việc bắt buộc, không hợp với lời đáp \"không sao, nhà gần\"."
+            },
+            {
+              "text": "A：你怎么又加班？\nB：工作太多了，我___加班。",
+              "pinyin": "A: Nǐ zěnme yòu jiābān?\nB: Gōngzuò tài duō le, wǒ bùdébù jiābān.",
+              "vi": "A: Sao cậu lại làm thêm giờ?\nB: Việc nhiều quá, tớ buộc phải làm thêm.",
+              "answer": 4,
+              "explain": "Vế trước là lý do bắt buộc (việc quá nhiều) → 不得不 (buộc phải). 敢加班 không giải thích được \"vì việc nhiều\"."
+            },
+            {
+              "text": "A：这些照片你还留着啊？\nB：是啊，它们是我大学时最美的___。",
+              "pinyin": "A: Zhèxiē zhàopiàn nǐ hái liúzhe a?\nB: Shì a, tāmen shì wǒ dàxué shí zuì měi de huíyì.",
+              "vi": "A: Mấy tấm ảnh này cậu vẫn giữ à?\nB: Đúng vậy, chúng là kỷ niệm đẹp nhất thời đại học của tớ.",
+              "answer": 0,
+              "explain": "最美的 + danh từ, nói về ảnh cũ → 回忆 (kỷ niệm). 速度 không đi với 最美的."
+            }
+          ]
         }
       ]
     }
