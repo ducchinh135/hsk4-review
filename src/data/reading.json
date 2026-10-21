@@ -1,0 +1,17 @@
+{
+  "parts": [
+    {
+      "id": "p1",
+      "format": "fill",
+      "name": "选词填空",
+      "label": "Chọn từ điền vào chỗ trống",
+      "desc": "Chọn từ trong danh sách cho sẵn để điền vào chỗ trống.",
+      "tips": { "intro": "", "sections": [] },
+      "types": [
+        { "id": "sentence", "icon": "✏️", "name": "Câu đơn", "desc": "", "tip": "" },
+        { "id": "dialogue", "icon": "💬", "name": "Hội thoại", "desc": "", "tip": "" }
+      ],
+      "sets": []
+    }
+  ]
+}
