@@ -5,6 +5,7 @@ import CompareNav from './components/CompareNav.jsx';
 import GrammarNav from './components/GrammarNav.jsx';
 import ListeningNav from './components/ListeningNav.jsx';
 import NavBar from './components/NavBar.jsx';
+import ReadingNav from './components/ReadingNav.jsx';
 import Sidebar from './components/Sidebar.jsx';
 import { AppProvider, useApp } from './context/AppContext.jsx';
 import PracticeHub from './components/PracticeHub.jsx';
@@ -16,6 +17,8 @@ import ListeningHubPage from './pages/ListeningHubPage.jsx';
 import ListeningPracticePage from './pages/ListeningPracticePage.jsx';
 import ListeningTipsPage from './pages/ListeningTipsPage.jsx';
 import ExercisePage from './pages/ExercisePage.jsx';
+import ReadingHubPage from './pages/ReadingHubPage.jsx';
+import ReadingTipsPage from './pages/ReadingTipsPage.jsx';
 import ReviewPage from './pages/ReviewPage.jsx';
 import WordsPage from './pages/WordsPage.jsx';
 import { useRoute } from './router.jsx';
@@ -31,6 +34,8 @@ function Page({ route, viewVersion }) {
   }
   if (route.page === 'listening-review') return <ListeningPracticePage key={`review:${route.params.part}:${viewVersion}`} part={route.params.part} scope="review" />;
   if (route.page === 'listening-hub') return <ListeningHubPage key={route.params.part + ':' + viewVersion} part={route.params.part} />;
+  if (route.page === 'reading-tips') return <ReadingTipsPage key={route.params.part + ':' + viewVersion} part={route.params.part} />;
+  if (route.page.startsWith('reading')) return <ReadingHubPage key={route.params.part + ':' + viewVersion} part={route.params.part} />;
   if (route.page === 'compare') return <ComparePage />;
   if (route.page === 'compare-practice') return <ComparePracticePage key={'lesson:' + viewVersion} scope="lesson" />;
   if (route.page === 'compare-review') return <ComparePracticePage key={'review:' + viewVersion} scope="review" />;
@@ -72,6 +77,8 @@ function Shell() {
             <CompareNav page={route.page} />
           ) : section === 'listening' ? (
             <ListeningNav part={route.params.part} />
+          ) : section === 'reading' ? (
+            <ReadingNav part={route.params.part} />
           ) : (
             <NavBar page={route.page} />
           )}

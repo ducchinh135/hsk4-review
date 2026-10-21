@@ -87,7 +87,7 @@ test('matchRoute() sends an unknown or over-long practice path to /vocab/practic
 
 test('PAGES and SECTIONS list the navigation entries in order', () => {
   assert.deepEqual(PAGES.map((p) => p.path), ['/vocab/words', '/vocab/review', '/vocab/practice']);
-  assert.deepEqual(SECTIONS.map((s) => s.id), ['vocab', 'grammar', 'compare', 'listening']);
+  assert.deepEqual(SECTIONS.map((s) => s.id), ['vocab', 'grammar', 'compare', 'listening', 'reading']);
   for (const s of SECTIONS) assert.equal(matchRoute(s.path).path, s.path);
 });
 
@@ -132,4 +132,32 @@ test('matchRoute() maps the Part 2 listening pages', () => {
   }
   // Part 1 types are not Part 2 types
   assert.deepEqual(matchRoute('/listening/p2/practice/xyz'), HUB);
+});
+
+const RHUB = lpage('reading-hub', { part: 'p1' }, '/reading/p1');
+
+test('sectionOf() puts the reading pages in the reading section', () => {
+  for (const p of ['reading-hub', 'reading-tips', 'reading-practice', 'reading-review']) assert.equal(sectionOf(p), 'reading');
+});
+
+test('matchRoute() maps the reading pages', () => {
+  assert.deepEqual(matchRoute('/reading'), RHUB);
+  assert.deepEqual(matchRoute('/reading/'), RHUB);
+  assert.deepEqual(matchRoute('/reading/p1'), RHUB);
+  assert.deepEqual(matchRoute('/reading/p1/tips'), lpage('reading-tips', { part: 'p1' }, '/reading/p1/tips'));
+  assert.deepEqual(matchRoute('/reading/p1/review'), lpage('reading-review', { part: 'p1' }, '/reading/p1/review'));
+  for (const type of ['sentence', 'dialogue', 'mix']) {
+    assert.deepEqual(matchRoute('/reading/p1/practice/' + type), lpage('reading-practice', { part: 'p1', type }, '/reading/p1/practice/' + type));
+  }
+  assert.deepEqual(matchRoute('//reading//p1//tips/'), lpage('reading-tips', { part: 'p1' }, '/reading/p1/tips'));
+});
+
+test('matchRoute() sends unknown reading paths to the Part 1 hub', () => {
+  for (const p of ['/reading/p2', '/reading/p4', '/reading/p1/practice/xyz', '/reading/p1/practice', '/reading/p1/tips/x', '/reading/P1', '/reading/p1/review/1', '/reading/x/y/z']) {
+    assert.deepEqual(matchRoute(p), RHUB, p);
+  }
+});
+
+test('every reading page has a title', () => {
+  for (const p of ['reading-hub', 'reading-tips', 'reading-practice', 'reading-review']) assert.ok(PAGE_TITLES[p], p);
 });
