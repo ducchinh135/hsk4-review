@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import RAW from '../src/data/reading.json' with { type: 'json' };
-import { buildMix, buildRun, gradeOrder, highlightClues, mixSize, orderKeyAction, orderString, orderedSentences, pickSentence, unitNoun, unpickSentence, clearSlot, emptyFill, filledText, fillKeyAction, gradeSet, isFull, placeWord, readKey, reviewUnits, selectSlot, typeCount, unitsOf, usedWords, validateReading } from '../src/reading.js';
+import { buildMix, buildRun, gradeOrder, orderResultLabel, highlightClues, mixSize, orderKeyAction, orderString, orderedSentences, pickSentence, unitNoun, unpickSentence, clearSlot, emptyFill, filledText, fillKeyAction, gradeSet, isFull, placeWord, readKey, reviewUnits, selectSlot, typeCount, unitsOf, usedWords, validateReading } from '../src/reading.js';
 
 const WORDS = [
   ['堵车', 'dǔchē', 'tắc đường'],
@@ -410,4 +410,8 @@ test('unitNoun() and mixSize()', () => {
   assert.equal(unitNoun(dataWithOrder([]).parts[0]), 'câu');
   assert.equal(mixSize(dataWithOrder([]).parts[0]), 10);
   assert.equal(mixSize({ format: 'order' }), 10);
+});
+
+test('orderResultLabel() shows the learner order and the right one', () => {
+  assert.equal(orderResultLabel(orderQ('p2-001'), 'ABC'), 'Bạn xếp A → B → C · Đúng B → C → A');
 });

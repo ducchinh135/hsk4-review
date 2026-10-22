@@ -119,6 +119,9 @@ export function gradeOrder(q, picked) {
   const given = orderString(picked);
   return { given, ok: given === q.answer };
 }
+const arrows = (order) => [...order].join(' → ');
+// How a wrong order reads in the results list.
+export const orderResultLabel = (q, given) => `Bạn xếp ${arrows(given)} · Đúng ${arrows(q.answer)}`;
 export const orderedSentences = (q) => [...q.answer].map((l) => q.sentences[LETTERS3.indexOf(l)]);
 
 // `text` cut into consecutive pieces, `hit` where a clue matches (the longer clue wins where two

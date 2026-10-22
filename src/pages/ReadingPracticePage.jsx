@@ -14,6 +14,7 @@ import {
   isFull,
   loadShowPinyin,
   orderKeyAction,
+  orderResultLabel,
   orderedSentences,
   partById,
   pickSentence,
@@ -173,7 +174,7 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
             {wrong.map(([u, i]) => (
               <div key={u.id} className="quiz-reveal bad">
                 <button type="button" className="link-btn" onClick={() => go(i)}>
-                  {typeName(u)} · {kit.line(u)} → {part.format === 'fill' ? `${graded[i].score}/5` : [...u.answer].join(' → ')}
+                  {typeName(u)} · {kit.line(u)} · {part.format === 'fill' ? `${graded[i].score}/5` : orderResultLabel(u, graded[i].given)}
                 </button>
               </div>
             ))}
