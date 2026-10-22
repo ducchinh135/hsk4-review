@@ -481,3 +481,16 @@ a.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .rd-clue{ background:#ffe8a3; color:inherit; border-radius:4px; padding:0 2px; font-weight:800; }
 .rd-sent-explain{ margin-bottom:6px; }
 .rd-sent-explain .py{ margin-left:4px; }
+
+/* Reading: 阅读理解 passages */
+.rd-passage-tools{ display:flex; gap:14px; justify-content:flex-end; margin:4px 0 6px; }
+.rd-passage-tools .link-btn:disabled{ opacity:.4; cursor:default; text-decoration:none; }
+.rd-passage{ background:#fafafa; border-radius:14px; padding:12px 16px; text-align:left; }
+.rd-passage .hz{ font-size:clamp(18px,3.8vw,21px); line-height:1.9; overflow-wrap:anywhere; }
+.rd-passage .py{ color:#888; font-size:14px; line-height:1.6; margin-top:8px; }
+.rd-passage .vi{ font-size:15px; font-weight:600; color:#555; line-height:1.6; margin-top:8px; padding-top:8px; border-top:1px dashed #e0e0e8; }
+.rd-q{ margin-top:16px; text-align:left; }
+.rd-q-text{ font-size:clamp(17px,3.6vw,20px); font-weight:800; }
+.rd-q .lp-trans .py{ display:block; }
+.rd-q .lp-option .py{ display:inline; }
+.rd-q .quiz-reveal{ display:block; }
