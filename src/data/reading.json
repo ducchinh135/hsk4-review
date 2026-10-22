@@ -4328,6 +4328,626 @@
               "explain": "Bài nói vận động không cần đến trung tâm thể thao, không cần tốn tiền, đi dạo hay leo núi đều được, rồi kết: 重要的是要坚持 → C. A, B ngược với 不一定. D nói quá: leo núi chỉ là ví dụ."
             }
           ]
+        },
+        {
+          "id": "p3-031",
+          "type": "infer",
+          "text": "欢迎欢迎！我们这里的菜都是今天早上刚买的，特别新鲜。今天还有活动，两个人来吃，送一个小菜。请问您几位？",
+          "pinyin": "Huānyíng huānyíng! Wǒmen zhèlǐ de cài dōu shì jīntiān zǎoshang gāng mǎi de, tèbié xīnxiān. Jīntiān hái yǒu huódòng, liǎng ge rén lái chī, sòng yí ge xiǎo cài. Qǐngwèn nín jǐ wèi?",
+          "vi": "Chào mừng quý khách! Thức ăn ở đây đều là sáng nay mới mua, rất tươi. Hôm nay còn có khuyến mãi, hai người đến ăn được tặng một món nhỏ. Xin hỏi quý khách đi mấy người?",
+          "questions": [
+            {
+              "text": "说话人最可能是：",
+              "pinyin": "Shuōhuàrén zuì kěnéng shì:",
+              "vi": "Người nói nhiều khả năng là:",
+              "options": [
+                {
+                  "text": "卖菜的",
+                  "pinyin": "mài cài de",
+                  "vi": "người bán rau"
+                },
+                {
+                  "text": "导游",
+                  "pinyin": "dǎoyóu",
+                  "vi": "hướng dẫn viên du lịch"
+                },
+                {
+                  "text": "司机",
+                  "pinyin": "sījī",
+                  "vi": "tài xế"
+                },
+                {
+                  "text": "服务员",
+                  "pinyin": "fúwùyuán",
+                  "vi": "nhân viên phục vụ"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "我们这里的菜都是今天早上刚买的",
+                "请问您几位"
+              ],
+              "explain": "Người nói giới thiệu món ăn của quán (我们这里的菜), khuyến mãi khi ăn, và hỏi 您几位 (quý khách mấy người) như khi đón khách vào nhà hàng → nhân viên phục vụ (D). Bài không có chi tiết nào về khám bệnh, dẫn tour hay lái xe. A là bẫy dùng chữ 菜, nhưng người bán rau không hỏi khách 几位 hay mời khách ngồi ăn."
+            }
+          ]
+        },
+        {
+          "id": "p3-032",
+          "type": "infer",
+          "text": "我本来以为这次考试会很难，所以准备了一个多月。没想到题目这么简单，不到一个小时我就做完了。",
+          "pinyin": "Wǒ běnlái yǐwéi zhè cì kǎoshì huì hěn nán, suǒyǐ zhǔnbèile yí ge duō yuè. Méi xiǎngdào tímù zhème jiǎndān, bú dào yí ge xiǎoshí wǒ jiù zuòwán le.",
+          "vi": "Tôi vốn tưởng kỳ thi lần này sẽ rất khó, nên đã ôn hơn một tháng. Không ngờ đề lại dễ như vậy, chưa đến một tiếng tôi đã làm xong.",
+          "questions": [
+            {
+              "text": "根据这段话，可以知道：",
+              "pinyin": "Gēnjù zhè duàn huà, kěyǐ zhīdào:",
+              "vi": "Theo đoạn văn, có thể biết:",
+              "options": [
+                {
+                  "text": "说话人没有准备",
+                  "pinyin": "shuōhuàrén méiyǒu zhǔnbèi",
+                  "vi": "người nói không ôn tập"
+                },
+                {
+                  "text": "考试比说话人想的容易",
+                  "pinyin": "kǎoshì bǐ shuōhuàrén xiǎng de róngyì",
+                  "vi": "kỳ thi dễ hơn người nói nghĩ"
+                },
+                {
+                  "text": "考试时间很长",
+                  "pinyin": "kǎoshì shíjiān hěn cháng",
+                  "vi": "thời gian thi rất dài"
+                },
+                {
+                  "text": "说话人考得不好",
+                  "pinyin": "shuōhuàrén kǎo de bù hǎo",
+                  "vi": "người nói thi không tốt"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "没想到题目这么简单"
+              ],
+              "explain": "本来以为…很难 rồi 没想到…这么简单: đề dễ hơn điều người nói tưởng (B). A ngược với 准备了一个多月. C sai: 一个小时 là thời gian người nói làm xong bài. D bài không nói, và làm xong nhanh vì đề dễ."
+            }
+          ]
+        },
+        {
+          "id": "p3-033",
+          "type": "infer",
+          "text": "小王最近每天都加班到很晚，周末也不休息。他说，等这个工作完成了，就能拿到奖金，然后带父母出去旅游。",
+          "pinyin": "Xiǎo Wáng zuìjìn měitiān dōu jiābān dào hěn wǎn, zhōumò yě bù xiūxi. Tā shuō, děng zhège gōngzuò wánchéng le, jiù néng nádào jiǎngjīn, ránhòu dài fùmǔ chūqu lǚyóu.",
+          "vi": "Gần đây ngày nào Tiểu Vương cũng làm thêm đến rất muộn, cuối tuần cũng không nghỉ. Anh ấy nói đợi việc này xong sẽ được thưởng, rồi đưa bố mẹ đi du lịch.",
+          "questions": [
+            {
+              "text": "根据这段话，可以知道小王：",
+              "pinyin": "Gēnjù zhè duàn huà, kěyǐ zhīdào Xiǎo Wáng:",
+              "vi": "Theo đoạn văn, có thể biết Tiểu Vương:",
+              "options": [
+                {
+                  "text": "很关心父母",
+                  "pinyin": "hěn guānxīn fùmǔ",
+                  "vi": "rất quan tâm đến bố mẹ"
+                },
+                {
+                  "text": "不喜欢旅游",
+                  "pinyin": "bù xǐhuan lǚyóu",
+                  "vi": "không thích du lịch"
+                },
+                {
+                  "text": "工作很轻松",
+                  "pinyin": "gōngzuò hěn qīngsōng",
+                  "vi": "công việc rất nhẹ nhàng"
+                },
+                {
+                  "text": "已经拿到奖金了",
+                  "pinyin": "yǐjīng nádào jiǎngjīn le",
+                  "vi": "đã nhận được tiền thưởng"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "带父母出去旅游"
+              ],
+              "explain": "Anh ấy làm thêm vất vả để có tiền thưởng rồi 带父母出去旅游 → có thể suy ra anh quan tâm đến bố mẹ (A). C ngược với 每天都加班. D sai: 等…完成了，就能拿到 là chuyện sau này. B bài không nói."
+            }
+          ]
+        },
+        {
+          "id": "p3-034",
+          "type": "infer",
+          "text": "这是我第三次来这里了。前两次都是跟同事一起来开会，没有时间到处看看。这次我请了几天假，终于可以好好玩一玩了。",
+          "pinyin": "Zhè shì wǒ dì-sān cì lái zhèlǐ le. Qián liǎng cì dōu shì gēn tóngshì yìqǐ lái kāihuì, méiyǒu shíjiān dàochù kànkan. Zhè cì wǒ qǐngle jǐ tiān jià, zhōngyú kěyǐ hǎohǎo wán yi wán le.",
+          "vi": "Đây là lần thứ ba tôi đến đây. Hai lần trước đều đi họp cùng đồng nghiệp, không có thời gian đi tham quan đây đó. Lần này tôi xin nghỉ mấy ngày, cuối cùng cũng có thể chơi cho thoả.",
+          "questions": [
+            {
+              "text": "根据这段话，可以知道说话人：",
+              "pinyin": "Gēnjù zhè duàn huà, kěyǐ zhīdào shuōhuàrén:",
+              "vi": "Theo đoạn văn, có thể biết người nói:",
+              "options": [
+                {
+                  "text": "是第一次来",
+                  "pinyin": "shì dì-yī cì lái",
+                  "vi": "đến lần đầu"
+                },
+                {
+                  "text": "这次是来开会的",
+                  "pinyin": "zhè cì shì lái kāihuì de",
+                  "vi": "lần này đến để họp"
+                },
+                {
+                  "text": "这次是来玩儿的",
+                  "pinyin": "zhè cì shì lái wánr de",
+                  "vi": "lần này đến để chơi"
+                },
+                {
+                  "text": "不喜欢这里",
+                  "pinyin": "bù xǐhuan zhèlǐ",
+                  "vi": "không thích nơi này"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "这次我请了几天假，终于可以好好玩一玩了"
+              ],
+              "explain": "Lần này người nói xin nghỉ phép và 终于可以好好玩一玩了 → đến để chơi (C). B là bẫy: họp là chuyện hai lần trước. A sai vì đây là 第三次. D ngược với giọng vui mừng của 终于."
+            }
+          ]
+        },
+        {
+          "id": "p3-035",
+          "type": "infer",
+          "text": "先生，您的行李箱太重了，超过了规定，需要另外交钱。如果不想多交钱，您也可以拿出一些东西，放到别的包里。",
+          "pinyin": "Xiānsheng, nín de xínglixiāng tài zhòng le, chāoguòle guīdìng, xūyào lìngwài jiāo qián. Rúguǒ bù xiǎng duō jiāo qián, nín yě kěyǐ náchū yìxiē dōngxi, fàng dào bié de bāo li.",
+          "vi": "Thưa ông, va li của ông nặng quá, vượt quá quy định, cần trả thêm tiền. Nếu không muốn trả thêm, ông cũng có thể lấy bớt một ít đồ ra, cho vào túi khác.",
+          "questions": [
+            {
+              "text": "说话人最可能在哪儿？",
+              "pinyin": "Shuōhuàrén zuì kěnéng zài nǎr?",
+              "vi": "Người nói nhiều khả năng đang ở đâu?",
+              "options": [
+                {
+                  "text": "医院",
+                  "pinyin": "yīyuàn",
+                  "vi": "bệnh viện"
+                },
+                {
+                  "text": "银行",
+                  "pinyin": "yínháng",
+                  "vi": "ngân hàng"
+                },
+                {
+                  "text": "超市",
+                  "pinyin": "chāoshì",
+                  "vi": "siêu thị"
+                },
+                {
+                  "text": "机场",
+                  "pinyin": "jīchǎng",
+                  "vi": "sân bay"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "行李箱太重了，超过了规定"
+              ],
+              "explain": "Va li quá cân, vượt quy định thì phải trả thêm tiền: đây là việc ở quầy làm thủ tục tại sân bay (D). B là bẫy vì có chữ 交钱, nhưng ngân hàng không cân hành lý."
+            }
+          ]
+        },
+        {
+          "id": "p3-036",
+          "type": "infer",
+          "text": "妈妈，我知道您是为我好，可是学什么专业应该由我自己决定。我对法律一点儿兴趣也没有，我真正喜欢的是历史。",
+          "pinyin": "Māma, wǒ zhīdào nín shì wèi wǒ hǎo, kěshì xué shénme zhuānyè yīnggāi yóu wǒ zìjǐ juédìng. Wǒ duì fǎlǜ yìdiǎnr xìngqù yě méiyǒu, wǒ zhēnzhèng xǐhuan de shì lìshǐ.",
+          "vi": "Mẹ ơi, con biết mẹ muốn tốt cho con, nhưng học chuyên ngành gì nên do con tự quyết định. Con không có chút hứng thú nào với luật, cái con thật sự thích là lịch sử.",
+          "questions": [
+            {
+              "text": "关于说话人，可以知道：",
+              "pinyin": "Guānyú shuōhuàrén, kěyǐ zhīdào:",
+              "vi": "Về người nói, có thể biết:",
+              "options": [
+                {
+                  "text": "不想学法律",
+                  "pinyin": "bù xiǎng xué fǎlǜ",
+                  "vi": "không muốn học luật"
+                },
+                {
+                  "text": "想当律师",
+                  "pinyin": "xiǎng dāng lǜshī",
+                  "vi": "muốn làm luật sư"
+                },
+                {
+                  "text": "跟妈妈关系不好",
+                  "pinyin": "gēn māma guānxi bù hǎo",
+                  "vi": "quan hệ với mẹ không tốt"
+                },
+                {
+                  "text": "喜欢的专业是法律",
+                  "pinyin": "xǐhuan de zhuānyè shì fǎlǜ",
+                  "vi": "chuyên ngành yêu thích là luật"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "我对法律一点儿兴趣也没有"
+              ],
+              "explain": "对法律一点儿兴趣也没有 → không muốn học luật (A); có thể suy ra mẹ muốn con học luật. B, D dùng lại chữ 法律 nhưng ngược ý. C nói quá: người nói chỉ không đồng ý chuyện chọn ngành, còn hiểu mẹ 是为我好."
+            }
+          ]
+        },
+        {
+          "id": "p3-037",
+          "type": "infer",
+          "text": "王经理，这是我写的下个月的计划书，您有时间的话帮我看看。哪里写得不好，您直接告诉我，我马上改。",
+          "pinyin": "Wáng jīnglǐ, zhè shì wǒ xiě de xià ge yuè de jìhuàshū, nín yǒu shíjiān dehuà bāng wǒ kànkan. Nǎlǐ xiě de bù hǎo, nín zhíjiē gàosu wǒ, wǒ mǎshàng gǎi.",
+          "vi": "Giám đốc Vương, đây là bản kế hoạch cho tháng sau em viết, khi nào giám đốc rảnh thì xem giúp em ạ. Chỗ nào viết chưa tốt giám đốc cứ nói thẳng, em sửa ngay.",
+          "questions": [
+            {
+              "text": "说话人和王经理最可能是什么关系？",
+              "pinyin": "Shuōhuàrén hé Wáng jīnglǐ zuì kěnéng shì shénme guānxi?",
+              "vi": "Người nói và giám đốc Vương nhiều khả năng có quan hệ gì?",
+              "options": [
+                {
+                  "text": "夫妻",
+                  "pinyin": "fūqī",
+                  "vi": "vợ chồng"
+                },
+                {
+                  "text": "同事",
+                  "pinyin": "tóngshì",
+                  "vi": "đồng nghiệp"
+                },
+                {
+                  "text": "老师和学生",
+                  "pinyin": "lǎoshī hé xuésheng",
+                  "vi": "thầy và trò"
+                },
+                {
+                  "text": "邻居",
+                  "pinyin": "línjū",
+                  "vi": "hàng xóm"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "王经理",
+                "计划书"
+              ],
+              "explain": "Người nói gọi 王经理 (giám đốc Vương) và nhờ xem bản kế hoạch công việc → họ làm cùng một công ty: đồng nghiệp (B). C là bẫy vì có việc \"xem bài, sửa lỗi\", nhưng cách xưng hô 经理 cho biết đây là nơi làm việc."
+            }
+          ]
+        },
+        {
+          "id": "p3-038",
+          "type": "infer",
+          "text": "这件事我想了很久，最后还是决定不去了。不是因为工资不高，而是那个城市离家太远，我不想离开父母。",
+          "pinyin": "Zhè jiàn shì wǒ xiǎngle hěn jiǔ, zuìhòu háishi juédìng bú qù le. Bú shì yīnwèi gōngzī bù gāo, ér shì nàge chéngshì lí jiā tài yuǎn, wǒ bù xiǎng líkāi fùmǔ.",
+          "vi": "Chuyện này tôi nghĩ rất lâu, cuối cùng vẫn quyết định không đi. Không phải vì lương không cao, mà vì thành phố đó quá xa nhà, tôi không muốn xa bố mẹ.",
+          "questions": [
+            {
+              "text": "根据这段话，可以知道说话人：",
+              "pinyin": "Gēnjù zhè duàn huà, kěyǐ zhīdào shuōhuàrén:",
+              "vi": "Theo đoạn văn, có thể biết người nói:",
+              "options": [
+                {
+                  "text": "觉得工资太低",
+                  "pinyin": "juéde gōngzī tài dī",
+                  "vi": "thấy lương quá thấp"
+                },
+                {
+                  "text": "很快就做了决定",
+                  "pinyin": "hěn kuài jiù zuòle juédìng",
+                  "vi": "quyết định rất nhanh"
+                },
+                {
+                  "text": "想留在父母身边",
+                  "pinyin": "xiǎng liú zài fùmǔ shēnbiān",
+                  "vi": "muốn ở gần bố mẹ"
+                },
+                {
+                  "text": "要搬到那个城市去",
+                  "pinyin": "yào bān dào nàge chéngshì qù",
+                  "vi": "sắp chuyển đến thành phố đó"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "我不想离开父母"
+              ],
+              "explain": "不是…而是…: lý do thật là 不想离开父母 → muốn ở gần bố mẹ (C). A là bẫy: bài nói rõ 不是因为工资不高. B ngược với 想了很久. D ngược với 决定不去了."
+            }
+          ]
+        },
+        {
+          "id": "p3-039",
+          "type": "infer",
+          "text": "你怎么又把衣服扔在沙发上了？跟你说过多少次了，脱下来的衣服要挂好。你看看，客厅都乱成什么样子了！",
+          "pinyin": "Nǐ zěnme yòu bǎ yīfu rēng zài shāfā shang le? Gēn nǐ shuōguo duōshao cì le, tuō xiàlai de yīfu yào guàhǎo. Nǐ kànkan, kètīng dōu luàn chéng shénme yàngzi le!",
+          "vi": "Sao lại vứt quần áo lên sofa nữa rồi? Nói bao nhiêu lần rồi, quần áo cởi ra phải treo lên. Xem kìa, phòng khách bừa bộn thành ra thế nào rồi!",
+          "questions": [
+            {
+              "text": "说话人是什么态度？",
+              "pinyin": "Shuōhuàrén shì shénme tàidu?",
+              "vi": "Thái độ của người nói thế nào?",
+              "options": [
+                {
+                  "text": "不满意",
+                  "pinyin": "bù mǎnyì",
+                  "vi": "không hài lòng"
+                },
+                {
+                  "text": "很高兴",
+                  "pinyin": "hěn gāoxìng",
+                  "vi": "rất vui"
+                },
+                {
+                  "text": "很吃惊",
+                  "pinyin": "hěn chījīng",
+                  "vi": "rất ngạc nhiên"
+                },
+                {
+                  "text": "很担心",
+                  "pinyin": "hěn dānxīn",
+                  "vi": "rất lo lắng"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "你怎么又",
+                "跟你说过多少次了"
+              ],
+              "explain": "怎么又… (sao lại… nữa) và 跟你说过多少次了 (nói bao nhiêu lần rồi) cho thấy người nói bực mình, không hài lòng (A). C sai: chữ 又 cho thấy chuyện này xảy ra nhiều lần, nên không có gì bất ngờ."
+            }
+          ]
+        },
+        {
+          "id": "p3-040",
+          "type": "infer",
+          "text": "张教授在这所大学教了三十多年书，他的很多学生现在都成了有名的医生。虽然今年他已经七十岁了，可是每个星期还会来学校给学生上课。",
+          "pinyin": "Zhāng jiàoshòu zài zhè suǒ dàxué jiāole sānshí duō nián shū, tā de hěn duō xuésheng xiànzài dōu chéngle yǒumíng de yīshēng. Suīrán jīnnián tā yǐjīng qīshí suì le, kěshì měi ge xīngqī hái huì lái xuéxiào gěi xuésheng shàngkè.",
+          "vi": "Giáo sư Trương đã dạy ở trường đại học này hơn ba mươi năm, nhiều học trò của ông giờ đã thành bác sĩ nổi tiếng. Tuy năm nay ông đã bảy mươi tuổi, nhưng tuần nào ông cũng vẫn đến trường lên lớp.",
+          "questions": [
+            {
+              "text": "关于张教授，可以知道：",
+              "pinyin": "Guānyú Zhāng jiàoshòu, kěyǐ zhīdào:",
+              "vi": "Về giáo sư Trương, có thể biết:",
+              "options": [
+                {
+                  "text": "是一位医生",
+                  "pinyin": "shì yí wèi yīshēng",
+                  "vi": "là một bác sĩ"
+                },
+                {
+                  "text": "已经不上课了",
+                  "pinyin": "yǐjīng bú shàngkè le",
+                  "vi": "đã không dạy nữa"
+                },
+                {
+                  "text": "刚来这所大学",
+                  "pinyin": "gāng lái zhè suǒ dàxué",
+                  "vi": "mới đến trường này"
+                },
+                {
+                  "text": "很喜欢教书",
+                  "pinyin": "hěn xǐhuan jiāoshū",
+                  "vi": "rất thích dạy học"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "每个星期还会来学校给学生上课"
+              ],
+              "explain": "Đã bảy mươi tuổi mà 每个星期还会来学校给学生上课 → có thể suy ra ông rất yêu nghề dạy học (D). A là bẫy: bác sĩ là học trò của ông. B ngược với 还会…上课; C ngược với 三十多年."
+            }
+          ]
+        },
+        {
+          "id": "p3-041",
+          "type": "infer",
+          "text": "您好，我想要一个房间，住三个晚上。最好是安静一点儿的房间，能看到海就更好了。对了，早饭几点开始？",
+          "pinyin": "Nín hǎo, wǒ xiǎng yào yí ge fángjiān, zhù sān ge wǎnshang. Zuìhǎo shì ānjìng yìdiǎnr de fángjiān, néng kàndào hǎi jiù gèng hǎo le. Duì le, zǎofàn jǐ diǎn kāishǐ?",
+          "vi": "Chào anh/chị, tôi muốn một phòng, ở ba đêm. Tốt nhất là phòng yên tĩnh một chút, nhìn được ra biển thì càng tốt. À phải rồi, bữa sáng bắt đầu lúc mấy giờ?",
+          "questions": [
+            {
+              "text": "说话人最可能在哪儿？",
+              "pinyin": "Shuōhuàrén zuì kěnéng zài nǎr?",
+              "vi": "Người nói nhiều khả năng đang ở đâu?",
+              "options": [
+                {
+                  "text": "饭馆",
+                  "pinyin": "fànguǎn",
+                  "vi": "nhà hàng"
+                },
+                {
+                  "text": "宾馆",
+                  "pinyin": "bīnguǎn",
+                  "vi": "khách sạn"
+                },
+                {
+                  "text": "学校",
+                  "pinyin": "xuéxiào",
+                  "vi": "trường học"
+                },
+                {
+                  "text": "公园",
+                  "pinyin": "gōngyuán",
+                  "vi": "công viên"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "我想要一个房间，住三个晚上"
+              ],
+              "explain": "Muốn một phòng để 住三个晚上 (ở ba đêm) → đang ở khách sạn (B). A là bẫy dùng chữ 早饭, nhưng người nói hỏi giờ ăn sáng ở nơi mình sẽ ở."
+            }
+          ]
+        },
+        {
+          "id": "p3-042",
+          "type": "infer",
+          "text": "他汉语说得这么好，我还以为他是中国人呢。后来才知道，他是韩国人，两年前来中国的时候，一句汉语也不会说。",
+          "pinyin": "Tā Hànyǔ shuō de zhème hǎo, wǒ hái yǐwéi tā shì Zhōngguórén ne. Hòulái cái zhīdào, tā shì Hánguórén, liǎng nián qián lái Zhōngguó de shíhou, yí jù Hànyǔ yě bú huì shuō.",
+          "vi": "Anh ấy nói tiếng Trung giỏi như vậy, tôi còn tưởng anh ấy là người Trung Quốc. Sau này mới biết anh ấy là người Hàn Quốc, hai năm trước khi đến Trung Quốc, anh ấy một câu tiếng Trung cũng không biết nói.",
+          "questions": [
+            {
+              "text": "根据这段话，可以知道他：",
+              "pinyin": "Gēnjù zhè duàn huà, kěyǐ zhīdào tā:",
+              "vi": "Theo đoạn văn, có thể biết anh ấy:",
+              "options": [
+                {
+                  "text": "是中国人",
+                  "pinyin": "shì Zhōngguórén",
+                  "vi": "là người Trung Quốc"
+                },
+                {
+                  "text": "在韩国学过两年汉语",
+                  "pinyin": "zài Hánguó xuéguo liǎng nián Hànyǔ",
+                  "vi": "đã học tiếng Trung hai năm ở Hàn Quốc"
+                },
+                {
+                  "text": "汉语学得很快",
+                  "pinyin": "Hànyǔ xué de hěn kuài",
+                  "vi": "học tiếng Trung rất nhanh"
+                },
+                {
+                  "text": "不太会说汉语",
+                  "pinyin": "bú tài huì shuō Hànyǔ",
+                  "vi": "nói tiếng Trung chưa giỏi"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "他汉语说得这么好",
+                "两年前来中国的时候，一句汉语也不会说"
+              ],
+              "explain": "Hai năm trước còn không nói được câu nào mà nay nói giỏi đến mức bị tưởng là người Trung Quốc → học rất nhanh (C). A là điều người nói 以为 (tưởng nhầm). B ngược với 一句汉语也不会说. D ngược với 说得这么好."
+            }
+          ]
+        },
+        {
+          "id": "p3-043",
+          "type": "infer",
+          "text": "来，尝尝我做的鱼。这是我第一次做，是在网上学的，不知道味道怎么样。要是太咸了，你一定要告诉我。",
+          "pinyin": "Lái, chángchang wǒ zuò de yú. Zhè shì wǒ dì-yī cì zuò, shì zài wǎngshang xué de, bù zhīdào wèidào zěnmeyàng. Yàoshi tài xián le, nǐ yídìng yào gàosu wǒ.",
+          "vi": "Nào, nếm thử món cá tớ làm đi. Đây là lần đầu tớ làm, học trên mạng, không biết vị thế nào. Nếu mặn quá thì cậu nhất định phải nói với tớ nhé.",
+          "questions": [
+            {
+              "text": "说话人现在的心情可能是：",
+              "pinyin": "Shuōhuàrén xiànzài de xīnqíng kěnéng shì:",
+              "vi": "Tâm trạng của người nói lúc này có thể là:",
+              "options": [
+                {
+                  "text": "有点儿担心",
+                  "pinyin": "yǒudiǎnr dānxīn",
+                  "vi": "hơi lo"
+                },
+                {
+                  "text": "很生气",
+                  "pinyin": "hěn shēngqì",
+                  "vi": "rất tức giận"
+                },
+                {
+                  "text": "很失望",
+                  "pinyin": "hěn shīwàng",
+                  "vi": "rất thất vọng"
+                },
+                {
+                  "text": "很骄傲",
+                  "pinyin": "hěn jiāo'ào",
+                  "vi": "rất tự hào"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "不知道味道怎么样"
+              ],
+              "explain": "Lần đầu nấu, 不知道味道怎么样 và dặn mặn quá thì phải nói → người nói hơi lo (A). C sai vì món ăn chưa được nếm. D không hợp với lời nói khiêm tốn, không chắc chắn."
+            }
+          ]
+        },
+        {
+          "id": "p3-044",
+          "type": "infer",
+          "text": "小刘，你这几天每天都加班，今天这么晚了怎么还在办公室？明天的会议材料不是已经准备好了吗？早点儿回家休息吧。",
+          "pinyin": "Xiǎo Liú, nǐ zhè jǐ tiān měitiān dōu jiābān, jīntiān zhème wǎn le zěnme hái zài bàngōngshì? Míngtiān de huìyì cáiliào bú shì yǐjīng zhǔnbèihǎo le ma? Zǎo diǎnr huí jiā xiūxi ba.",
+          "vi": "Tiểu Lưu, mấy hôm nay ngày nào cậu cũng làm thêm, muộn thế này rồi sao hôm nay vẫn còn ở văn phòng? Tài liệu cho cuộc họp ngày mai chẳng phải đã chuẩn bị xong rồi sao? Về nhà nghỉ sớm đi.",
+          "questions": [
+            {
+              "text": "根据这段话，可以知道：",
+              "pinyin": "Gēnjù zhè duàn huà, kěyǐ zhīdào:",
+              "vi": "Theo đoạn văn, có thể biết:",
+              "options": [
+                {
+                  "text": "小刘还没准备好材料",
+                  "pinyin": "Xiǎo Liú hái méi zhǔnbèihǎo cáiliào",
+                  "vi": "Tiểu Lưu chưa chuẩn bị xong tài liệu"
+                },
+                {
+                  "text": "说话人很关心小刘",
+                  "pinyin": "shuōhuàrén hěn guānxīn Xiǎo Liú",
+                  "vi": "người nói rất quan tâm Tiểu Lưu"
+                },
+                {
+                  "text": "会议是今天开",
+                  "pinyin": "huìyì shì jīntiān kāi",
+                  "vi": "cuộc họp diễn ra hôm nay"
+                },
+                {
+                  "text": "小刘明天不上班",
+                  "pinyin": "Xiǎo Liú míngtiān bú shàngbān",
+                  "vi": "ngày mai Tiểu Lưu không đi làm"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "早点儿回家休息吧"
+              ],
+              "explain": "Người nói hỏi sao còn ở lại muộn và khuyên 早点儿回家休息吧 → quan tâm Tiểu Lưu (B). A là bẫy: câu hỏi tu từ 不是已经准备好了吗 nghĩa là tài liệu đã xong rồi. C sai vì họp là 明天. D bài không nói."
+            }
+          ]
+        },
+        {
+          "id": "p3-045",
+          "type": "infer",
+          "text": "这本书我看了好几遍，每次看都有新的想法。所以我又买了好几本，送给我的朋友们，希望他们也能喜欢。",
+          "pinyin": "Zhè běn shū wǒ kànle hǎo jǐ biàn, měi cì kàn dōu yǒu xīn de xiǎngfǎ. Suǒyǐ wǒ yòu mǎile hǎo jǐ běn, sòng gěi wǒ de péngyoumen, xīwàng tāmen yě néng xǐhuan.",
+          "vi": "Cuốn sách này tôi đọc mấy lượt rồi, lần nào đọc cũng có suy nghĩ mới. Vì vậy tôi mua thêm mấy cuốn tặng bạn bè, mong họ cũng thích.",
+          "questions": [
+            {
+              "text": "说话人觉得这本书：",
+              "pinyin": "Shuōhuàrén juéde zhè běn shū:",
+              "vi": "Người nói thấy cuốn sách này:",
+              "options": [
+                {
+                  "text": "太难懂了",
+                  "pinyin": "tài nán dǒng le",
+                  "vi": "quá khó hiểu"
+                },
+                {
+                  "text": "很便宜",
+                  "pinyin": "hěn piányi",
+                  "vi": "rất rẻ"
+                },
+                {
+                  "text": "只能看一遍",
+                  "pinyin": "zhǐ néng kàn yí biàn",
+                  "vi": "chỉ đọc được một lần"
+                },
+                {
+                  "text": "很值得看",
+                  "pinyin": "hěn zhídé kàn",
+                  "vi": "rất đáng đọc"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "每次看都有新的想法",
+                "希望他们也能喜欢"
+              ],
+              "explain": "Đọc nhiều lần, lần nào cũng có suy nghĩ mới, còn mua tặng bạn bè → người nói thấy sách rất đáng đọc (D). C ngược với 看了好几遍. A, B bài không nói; mua nhiều cuốn là để tặng chứ không phải vì rẻ."
+            }
+          ]
         }
       ]
     }
