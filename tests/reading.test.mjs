@@ -415,3 +415,90 @@ test('unitNoun() and mixSize()', () => {
 test('orderResultLabel() shows the learner order and the right one', () => {
   assert.equal(orderResultLabel(orderQ('p2-001'), 'ABC'), 'Bạn xếp A → B → C · Đúng B → C → A');
 });
+
+// Part 3 (阅读理解)
+const readQ = (answer = 1, over = {}) => ({
+  text: '根据这段话，可以知道：',
+  pinyin: 'Gēnjù zhè duàn huà, kěyǐ zhīdào:',
+  vi: 'Theo đoạn văn, có thể biết:',
+  options: ['小王刚来公司', '大家认为小王会被选上', '小王不想去上海', '领导对小王不满意'].map((t, i) => ({ text: t, pinyin: 'p' + i, vi: 'v' + i })),
+  answer,
+  evidence: ['大家都觉得这次一定是他'],
+  explain: 'Giải thích.',
+  ...over,
+});
+const readP = (id, type = 'detail', over = {}) => ({
+  id,
+  type,
+  text: '小王做事一直很认真。这次公司要选一个人去上海工作一年，大家都觉得这次一定是他。',
+  pinyin: 'Xiǎo Wáng zuò shì yìzhí hěn rènzhēn.',
+  vi: 'Tiểu Vương làm việc luôn rất chăm chỉ.',
+  questions: type === 'long' ? [readQ(1), readQ(2, { evidence: ['小王做事一直很认真'] })] : [readQ(1)],
+  ...over,
+});
+const dataWithRead = (passages) => ({
+  parts: [
+    {
+      id: 'p3',
+      format: 'read',
+      name: '阅读理解',
+      label: 'Đọc hiểu',
+      desc: 'x',
+      tips: { intro: '', sections: [] },
+      types: ['detail', 'gist', 'infer', 'word', 'long'].map((id) => ({ id, icon: '🔎', name: id, desc: 'x', tip: '' })),
+      passages,
+    },
+  ],
+});
+const readError = (over, type = 'detail') => errorFor(dataWithRead([readP('p3-001', type, over)]), 'p3-001');
+const withQ = (over, type = 'detail') => {
+  const p = readP('p3-001', type);
+  return { questions: [{ ...p.questions[0], ...over }, ...p.questions.slice(1)] };
+};
+
+test('validateReading() accepts valid short and long passages', () => {
+  assert.deepEqual(validateReading(dataWithRead([readP('p3-001'), readP('p3-002', 'long')])), []);
+});
+
+test('validateReading() reports a bad passage id or type and a missing passage field', () => {
+  assert.ok(errorFor(dataWithRead([readP('p3-1')]), 'p3-1'));
+  assert.ok(readError({ type: 'nope' }));
+  assert.ok(readError({ vi: '' }));
+});
+
+test('validateReading() reports the wrong number of questions for the type', () => {
+  assert.ok(readError({ questions: [readQ(1), readQ(2)] }));
+  assert.ok(readError({ questions: [readQ(1)] }, 'long'));
+});
+
+test('validateReading() reports bad options and answers', () => {
+  const o = readQ().options;
+  assert.ok(readError(withQ({ options: o.slice(0, 3) })));
+  assert.ok(readError(withQ({ options: [o[0], o[0], o[2], o[3]] })));
+  assert.ok(readError(withQ({ options: [o[0], { ...o[1], pinyin: '' }, o[2], o[3]] })));
+  assert.ok(readError(withQ({ answer: 4 })));
+  assert.ok(readError(withQ({ answer: '1' })));
+});
+
+test('validateReading() reports bad evidence, a missing explain and a missing question text', () => {
+  assert.ok(readError(withQ({ evidence: [] })));
+  assert.ok(readError(withQ({ evidence: ['不在这段话里'] })));
+  assert.ok(readError(withQ({ explain: '' })));
+  assert.ok(readError(withQ({ text: '' })));
+});
+
+test('validateReading() reports passages of one type that all share the same answers', () => {
+  const e = validateReading(dataWithRead([readP('p3-001'), readP('p3-002')]));
+  assert.ok(e.some((m) => m.includes('detail')));
+});
+
+test('validateReading() reports two identical sentences in an order question', () => {
+  const s = orderQ('x').sentences;
+  assert.ok(orderError({ sentences: [s[0], s[1], { ...s[2], text: s[1].text }] }));
+});
+
+test('unitsOf() picks the units by format', () => {
+  assert.deepEqual(unitsOf(dataWithRead([readP('p3-001')]).parts[0]).map((p) => p.id), ['p3-001']);
+  const order = { ...dataWithOrder([orderQ('p2-001')]).parts[0], sets: [] };
+  assert.deepEqual(unitsOf(order).map((q) => q.id), ['p2-001']);
+});

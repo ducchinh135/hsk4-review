@@ -153,7 +153,7 @@ test('matchRoute() maps the reading pages', () => {
 });
 
 test('matchRoute() sends unknown reading paths to the Part 1 hub', () => {
-  for (const p of ['/reading/p3', '/reading/p4', '/reading/p2/practice/sentence', '/reading/p1/practice/xyz', '/reading/p1/practice', '/reading/p1/tips/x', '/reading/P1', '/reading/p1/review/1', '/reading/x/y/z']) {
+  for (const p of ['/reading/p4', '/reading/p2/practice/sentence', '/reading/p3/practice/pair', '/reading/p1/practice/xyz', '/reading/p1/practice', '/reading/p1/tips/x', '/reading/P1', '/reading/p1/review/1', '/reading/x/y/z']) {
     assert.deepEqual(matchRoute(p), RHUB, p);
   }
 });
@@ -168,5 +168,14 @@ test('matchRoute() maps the reading Part 2 pages', () => {
   assert.deepEqual(matchRoute('/reading/p2/review'), lpage('reading-review', { part: 'p2' }, '/reading/p2/review'));
   for (const type of ['pair', 'ref', 'time', 'topic', 'mix']) {
     assert.deepEqual(matchRoute('/reading/p2/practice/' + type), lpage('reading-practice', { part: 'p2', type }, '/reading/p2/practice/' + type));
+  }
+});
+
+test('matchRoute() maps the reading Part 3 pages', () => {
+  assert.deepEqual(matchRoute('/reading/p3'), lpage('reading-hub', { part: 'p3' }, '/reading/p3'));
+  assert.deepEqual(matchRoute('/reading/p3/tips'), lpage('reading-tips', { part: 'p3' }, '/reading/p3/tips'));
+  assert.deepEqual(matchRoute('/reading/p3/review'), lpage('reading-review', { part: 'p3' }, '/reading/p3/review'));
+  for (const type of ['detail', 'gist', 'infer', 'word', 'long', 'mix']) {
+    assert.deepEqual(matchRoute('/reading/p3/practice/' + type), lpage('reading-practice', { part: 'p3', type }, '/reading/p3/practice/' + type));
   }
 });

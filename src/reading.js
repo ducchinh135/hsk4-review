@@ -17,9 +17,11 @@ export const readKey = (id) => 'r:' + id;
 const BLANK = '___';
 export const LETTERS6 = ['A', 'B', 'C', 'D', 'E', 'F'];
 
-// What a run steps through: the sets of a fill part, the questions of an order part.
+// What a run steps through: the sets of a fill part, the questions of an order part, the passages
+// of a read part.
+const UNITS = { fill: 'sets', order: 'questions', read: 'passages' };
 export function unitsOf(part, typeId) {
-  const all = part.sets || part.questions || [];
+  const all = part[UNITS[part.format]] || [];
   return typeId ? all.filter((u) => u.type === typeId) : all;
 }
 
@@ -173,7 +175,7 @@ export function saveShowPinyin(b) {
   }
 }
 
-const FORMATS = ['fill', 'order'];
+const FORMATS = ['fill', 'order', 'read'];
 const isText = (s) => typeof s === 'string' && s.trim() !== '';
 const blanks = (s) => (typeof s === 'string' ? s.split(BLANK).length - 1 : 0);
 const isWordIndex = (a) => Number.isInteger(a) && a >= 0 && a < 6;
@@ -228,6 +230,7 @@ function checkOrder(q, at, errors) {
       for (const f of ['text', 'pinyin', 'vi']) if (!x || !isText(x[f])) errors.push(`${at}: sentences[${i}] thiếu ${f}`);
     });
   }
+  if (Array.isArray(ss) && new Set(ss.map((x) => x && x.text)).size !== ss.length) errors.push(`${at}: ba câu phải khác nhau`);
   const okAnswer = ORDERS.includes(q.answer);
   if (!okAnswer) errors.push(`${at}: answer phải là một thứ tự của A, B, C khác "ABC"`);
   if (!Array.isArray(q.clues) || !q.clues.length) errors.push(`${at}: clues phải có ít nhất một manh mối`);
@@ -240,6 +243,32 @@ function checkOrder(q, at, errors) {
     if (last && isText(last.text) && !/[。！？]$/.test(last.text)) errors.push(`${at}: câu cuối đoạn phải kết thúc bằng 。！？`);
   }
   return q.answer;
+}
+
+// Checks one read passage; returns its answers (one per question) for the per-type check.
+function checkPassage(p, at, errors) {
+  for (const f of ['text', 'pinyin', 'vi']) if (!isText(p[f])) errors.push(`${at}: thiếu ${f}`);
+  const want = p.type === 'long' ? 2 : 1;
+  if (!Array.isArray(p.questions) || p.questions.length !== want) {
+    errors.push(`${at}: dạng ${p.type} phải có đúng ${want} câu hỏi`);
+    return '';
+  }
+  p.questions.forEach((q, i) => {
+    const qat = `${at} câu hỏi ${i + 1}`;
+    if (!q || typeof q !== 'object') return errors.push(`${qat}: phải là object`);
+    for (const f of ['text', 'pinyin', 'vi', 'explain']) if (!isText(q[f])) errors.push(`${qat}: thiếu ${f}`);
+    if (!Array.isArray(q.options) || q.options.length !== 4) errors.push(`${qat}: options phải có đúng 4 đáp án`);
+    else {
+      q.options.forEach((o, k) => {
+        for (const f of ['text', 'pinyin', 'vi']) if (!o || !isText(o[f])) errors.push(`${qat}: options[${k}] thiếu ${f}`);
+      });
+      if (new Set(q.options.map((o) => o && o.text)).size !== 4) errors.push(`${qat}: các đáp án phải khác nhau`);
+    }
+    if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer > 3) errors.push(`${qat}: answer phải là số nguyên 0–3`);
+    if (!Array.isArray(q.evidence) || !q.evidence.length) errors.push(`${qat}: evidence phải có ít nhất một đoạn`);
+    else for (const e of q.evidence) if (!isText(e) || !String(p.text).includes(e)) errors.push(`${qat}: evidence ${JSON.stringify(e)} không có trong bài`);
+  });
+  return p.questions.map((q) => q && q.answer).join(',');
 }
 
 // Every problem in the reading data, as readable messages; [] when it is valid.
@@ -265,10 +294,12 @@ export function validateReading(data) {
       else if (seen.has(u.id)) errors.push(`id trùng: ${u.id}`);
       seen.add(u.id);
       if (!typeIds.includes(u.type)) errors.push(`${at}: type ${JSON.stringify(u.type)} không có trong types`);
-      (byType[u.type] ||= []).push(part.format === 'order' ? checkOrder(u, at, errors) : checkFill(u, at, errors, u.type === 'dialogue'));
+      (byType[u.type] ||= []).push(
+        part.format === 'order' ? checkOrder(u, at, errors) : part.format === 'read' ? checkPassage(u, at, errors) : checkFill(u, at, errors, u.type === 'dialogue')
+      );
     }
     for (const [t, answers] of Object.entries(byType)) {
-      if (answers.length >= 2 && answers.every((a) => a === answers[0])) errors.push(`dạng ${t}: mọi ${part.format === 'order' ? 'câu' : 'bộ'} cùng một đáp án`);
+      if (answers.length >= 2 && answers.every((a) => a === answers[0])) errors.push(`dạng ${t}: mọi ${{ fill: 'bộ', order: 'câu', read: 'đoạn' }[part.format]} cùng một đáp án`);
     }
   }
   return errors;

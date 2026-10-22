@@ -2986,6 +2986,55 @@
           }
         }
       ]
+    },
+    {
+      "id": "p3",
+      "format": "read",
+      "name": "阅读理解",
+      "label": "Đọc hiểu",
+      "desc": "Đọc đoạn văn rồi chọn đáp án đúng.",
+      "tips": {
+        "intro": "",
+        "sections": []
+      },
+      "types": [
+        {
+          "id": "detail",
+          "icon": "🔎",
+          "name": "Chi tiết",
+          "desc": "Ai, khi nào, ở đâu, bao nhiêu, vì sao: đáp án nằm trong bài nhưng được diễn đạt lại.",
+          "tip": ""
+        },
+        {
+          "id": "gist",
+          "icon": "📌",
+          "name": "Ý chính, mục đích",
+          "desc": "这段话主要谈… / 作者想告诉我们…: ý chính thường ở câu đầu hoặc câu cuối.",
+          "tip": ""
+        },
+        {
+          "id": "infer",
+          "icon": "🧠",
+          "name": "Suy luận, thái độ",
+          "desc": "根据这段话可以知道… / 他是什么态度: bài không nói thẳng.",
+          "tip": ""
+        },
+        {
+          "id": "word",
+          "icon": "🔤",
+          "name": "Nghĩa của từ / câu",
+          "desc": "“……”的意思是…: đoán nghĩa từ, cụm từ hay câu nói ngầm theo ngữ cảnh.",
+          "tip": ""
+        },
+        {
+          "id": "long",
+          "icon": "📄",
+          "name": "Đoạn dài",
+          "desc": "Một đoạn dài với hai câu hỏi, như câu 80–85.",
+          "tip": ""
+        }
+      ],
+      "passages": []
     }
   ]
 }
