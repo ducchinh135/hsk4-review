@@ -40,6 +40,10 @@ export const unitNoun = (part) => ({ fill: 'bộ', order: 'câu', read: 'đoạn
 // to some of its questions (in a review) still marks the right ones.
 export const numbered = (p) => ({ ...p, questions: p.questions.map((q, i) => ({ ...q, n: i + 1 })) });
 export const questionKey = (p, q, i) => readKey(p.id + '.' + (q.n ?? i + 1));
+// How a passage's question is named in lists: the start of the passage (many questions share the
+// same wording) and the question, numbered in a long passage.
+export const questionLabel = (p, q) =>
+  `${p.text.length > 14 ? p.text.slice(0, 14) + '…' : p.text} — ${p.type === 'long' ? q.n + '. ' : ''}${q.text}`;
 export const mixSize = (part) => part.mixCount || 10;
 
 // The mixed run. A fill part: one random set of each type that has sets, in type order (as in the

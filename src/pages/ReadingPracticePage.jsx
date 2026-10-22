@@ -22,6 +22,7 @@ import {
   pickSentence,
   placeWord,
   questionKey,
+  questionLabel,
   readKey,
   readKeyAction,
   reviewUnits,
@@ -216,7 +217,7 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
             {wrongQs.map(([u, i, q, k]) => (
               <div key={u.id + '.' + k} className="quiz-reveal bad">
                 <button type="button" className="link-btn" onClick={() => go(i)}>
-                  {typeName(u)} · {q.text} → {LETTERS[q.answer]}. {q.options[q.answer].text}
+                  {typeName(u)} · {questionLabel(u, q)} → {LETTERS[q.answer]}. {q.options[q.answer].text}
                 </button>
               </div>
             ))}
@@ -237,7 +238,7 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
           <div className="grammar-review-marks">
             <div className="quiz-label">Đánh dấu “Đã nắm” để bỏ khỏi danh sách cần ôn</div>
             {units
-              .flatMap((u) => (read ? u.questions.map((q, k) => [u, questionKey(u, q, k), q.text]) : [[u, readKey(u.id), kit.line(u)]]))
+              .flatMap((u) => (read ? u.questions.map((q, k) => [u, questionKey(u, q, k), questionLabel(u, q)]) : [[u, readKey(u.id), kit.line(u)]]))
               .map(([u, key, label]) => (
                 <div key={key} className="grammar-review-row">
                   <span>

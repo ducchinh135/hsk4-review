@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import RAW from '../src/data/reading.json' with { type: 'json' };
-import { buildMix, buildRun, gradeOrder, numbered, orderResultLabel, questionKey, readKeyAction, reviewCount, highlightClues, mixSize, orderKeyAction, orderString, orderedSentences, pickSentence, unitNoun, unpickSentence, clearSlot, emptyFill, filledText, fillKeyAction, gradeSet, isFull, placeWord, readKey, reviewUnits, selectSlot, typeCount, unitsOf, usedWords, validateReading } from '../src/reading.js';
+import { buildMix, buildRun, gradeOrder, numbered, questionLabel, orderResultLabel, questionKey, readKeyAction, reviewCount, highlightClues, mixSize, orderKeyAction, orderString, orderedSentences, pickSentence, unitNoun, unpickSentence, clearSlot, emptyFill, filledText, fillKeyAction, gradeSet, isFull, placeWord, readKey, reviewUnits, selectSlot, typeCount, unitsOf, usedWords, validateReading } from '../src/reading.js';
 
 const WORDS = [
   ['堵车', 'dǔchē', 'tắc đường'],
@@ -572,4 +572,11 @@ test('readKeyAction()', () => {
   assert.equal(k('Enter', false), null);
   assert.equal(k(' ', false, 'answer'), 'none');
   for (const key of ['1', 'a', 'Enter']) assert.equal(k(key, false, 'field'), null);
+});
+
+test('questionLabel() tells passages with the same question apart', () => {
+  const short = numbered(readP('p3-001'));
+  assert.equal(questionLabel(short, short.questions[0]), '小王做事一直很认真。这次公司… — 根据这段话，可以知道：');
+  const long = numbered(readP('p3-002', 'long'));
+  assert.equal(questionLabel(long, long.questions[1]), '小王做事一直很认真。这次公司… — 2. 根据这段话，可以知道：');
 });
