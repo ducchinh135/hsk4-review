@@ -32,9 +32,25 @@ export function typeCount(part) {
 // The units in random order, at most `max` of them.
 export const buildRun = (units, { max = Infinity, rng = Math.random } = {}) => shuffle(units, rng).slice(0, max);
 
-// The mixed run of a fill part: one random set of each type that has sets, in type order (as in the
-// exam: sentences, then dialogues).
-export const buildMix = (part, rng = Math.random) => part.types.map((t) => shuffle(unitsOf(part, t.id), rng)[0]).filter(Boolean);
+export const unitNoun = (part) => (part.format === 'fill' ? 'bộ' : 'câu');
+export const mixSize = (part) => part.mixCount || 10;
+
+// The mixed run. A fill part: one random set of each type that has sets, in type order (as in the
+// exam: sentences, then dialogues). Otherwise `mixSize` units taken in turn from each type that has
+// units (types and units shuffled).
+export function buildMix(part, rng = Math.random) {
+  if (part.format === 'fill') return part.types.map((t) => shuffle(unitsOf(part, t.id), rng)[0]).filter(Boolean);
+  const queues = shuffle(
+    part.types.map((t) => shuffle(unitsOf(part, t.id), rng)).filter((us) => us.length),
+    rng
+  );
+  const out = [];
+  const n = mixSize(part);
+  for (let i = 0; out.length < n && queues.some((us) => i < us.length); i++) {
+    for (const us of queues) if (i < us.length && out.length < n) out.push(us[i]);
+  }
+  return out;
+}
 
 export const REVIEW_MAX = { p1: 6, p2: 30, p3: 20 };
 export const reviewUnits = (getMark, part) =>
@@ -92,6 +108,50 @@ export function fillKeyAction({ key, graded, full, target }) {
   if (w >= 0) return 'word:' + w;
   const s = '12345'.indexOf(key);
   return s >= 0 ? 'slot:' + s : null;
+}
+
+// Ordering three sentences: `picked` lists the sentences (0–2 = A–C) in the order placed.
+export const LETTERS3 = ['A', 'B', 'C'];
+export const pickSentence = (picked, k) => (picked.includes(k) ? picked : [...picked, k]);
+export const unpickSentence = (picked, k) => picked.filter((x) => x !== k);
+export const orderString = (picked) => picked.map((k) => LETTERS3[k]).join('');
+export function gradeOrder(q, picked) {
+  const given = orderString(picked);
+  return { given, ok: given === q.answer };
+}
+export const orderedSentences = (q) => [...q.answer].map((l) => q.sentences[LETTERS3.indexOf(l)]);
+
+// `text` cut into consecutive pieces, `hit` where a clue matches (the longer clue wins where two
+// overlap); the pieces join back into `text`.
+export function highlightClues(text, clues) {
+  const sorted = [...clues].filter(Boolean).sort((a, b) => b.length - a.length);
+  const out = [];
+  let plain = '';
+  for (let i = 0; i < text.length; ) {
+    const c = sorted.find((x) => text.startsWith(x, i));
+    if (c) {
+      if (plain) out.push({ text: plain, hit: false });
+      plain = '';
+      out.push({ text: c, hit: true });
+      i += c.length;
+    } else plain += text[i++];
+  }
+  if (plain || !out.length) out.push({ text: plain, hit: false });
+  return out;
+}
+
+// What a key press does on an order question, or null to ignore it: 'pick:0'…'pick:2' (a–c), 'pop'
+// (Backspace), 'check' (Enter once three are placed), 'next' (Enter once graded) and 'none' (Enter or
+// Space on a focused sentence button, swallowed). `target` as in fillKeyAction.
+export function orderKeyAction({ key, graded, full, target }) {
+  if (target === 'field') return null;
+  if (graded) return key === 'Enter' && target !== 'control' ? 'next' : null;
+  if (key === 'Enter') return full && target !== 'control' ? 'check' : target === 'answer' ? 'none' : null;
+  if (key === ' ') return target === 'answer' ? 'none' : null;
+  if (key === 'Backspace') return 'pop';
+  if (String(key).length !== 1) return null;
+  const k = 'abc'.indexOf(key.toLowerCase());
+  return k >= 0 ? 'pick:' + k : null;
 }
 
 const PINYIN_KEY = 'hsk4_read_pinyin';

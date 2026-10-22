@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import RAW from '../src/data/reading.json' with { type: 'json' };
-import { buildMix, buildRun, clearSlot, emptyFill, filledText, fillKeyAction, gradeSet, isFull, placeWord, readKey, reviewUnits, selectSlot, typeCount, unitsOf, usedWords, validateReading } from '../src/reading.js';
+import { buildMix, buildRun, gradeOrder, highlightClues, mixSize, orderKeyAction, orderString, orderedSentences, pickSentence, unitNoun, unpickSentence, clearSlot, emptyFill, filledText, fillKeyAction, gradeSet, isFull, placeWord, readKey, reviewUnits, selectSlot, typeCount, unitsOf, usedWords, validateReading } from '../src/reading.js';
 
 const WORDS = [
   ['堵车', 'dǔchē', 'tắc đường'],
@@ -342,4 +342,72 @@ test('unitsOf() returns the questions of an order part', () => {
   const part = dataWithOrder([orderQ('p2-001'), orderQ('p2-002', 'ref')]).parts[0];
   assert.deepEqual(unitsOf(part).map((q) => q.id), ['p2-001', 'p2-002']);
   assert.deepEqual(unitsOf(part, 'ref').map((q) => q.id), ['p2-002']);
+});
+
+test('pickSentence() appends a sentence once; unpickSentence() closes the gap', () => {
+  assert.deepEqual(pickSentence([], 1), [1]);
+  assert.deepEqual(pickSentence([1], 1), [1]);
+  assert.deepEqual(pickSentence([1, 2], 0), [1, 2, 0]);
+  assert.deepEqual(unpickSentence([1, 2, 0], 1), [2, 0]);
+});
+
+test('orderString(), gradeOrder() and orderedSentences()', () => {
+  const q = orderQ('p2-001');
+  assert.equal(orderString([1, 2, 0]), 'BCA');
+  assert.deepEqual(gradeOrder(q, [1, 2, 0]), { given: 'BCA', ok: true });
+  assert.deepEqual(gradeOrder(q, [0, 1, 2]), { given: 'ABC', ok: false });
+  assert.deepEqual(orderedSentences(q).map((x) => x.text), [q.sentences[1].text, q.sentences[2].text, q.sentences[0].text]);
+});
+
+test('highlightClues() marks every clue and keeps the text', () => {
+  const join = (parts) => parts.map((x) => x.text).join('');
+  const a = highlightClues('虽然远，但是好。', ['虽然', '但是']);
+  assert.deepEqual(a, [
+    { text: '虽然', hit: true },
+    { text: '远，', hit: false },
+    { text: '但是', hit: true },
+    { text: '好。', hit: false },
+  ]);
+  const b = highlightClues('但是但是', ['但']);
+  assert.deepEqual(b, [
+    { text: '但', hit: true },
+    { text: '是', hit: false },
+    { text: '但', hit: true },
+    { text: '是', hit: false },
+  ]);
+  assert.deepEqual(highlightClues('但是', ['但', '但是']), [{ text: '但是', hit: true }]);
+  assert.deepEqual(highlightClues('他走了。', ['因为']), [{ text: '他走了。', hit: false }]);
+  for (const [t, c] of [['虽然远，但是好。', ['虽然', '但是']], ['但是但是', ['但']], ['但是', ['但', '但是']]]) assert.equal(join(highlightClues(t, c)), t);
+});
+
+test('orderKeyAction()', () => {
+  const k = (key, full = false, target = 'other', graded = false) => orderKeyAction({ key, graded, full, target });
+  assert.equal(k('b'), 'pick:1');
+  assert.equal(k('C'), 'pick:2');
+  assert.equal(k('d'), null);
+  assert.equal(k('Backspace'), 'pop');
+  assert.equal(k('Enter'), null);
+  assert.equal(k('Enter', false, 'answer'), 'none');
+  assert.equal(k(' ', false, 'answer'), 'none');
+  assert.equal(k('Enter', true), 'check');
+  assert.equal(k('Enter', true, 'control'), null);
+  assert.equal(k('Enter', true, 'other', true), 'next');
+  assert.equal(k('a', true, 'other', true), null);
+  for (const key of ['a', 'Enter', 'Backspace']) assert.equal(k(key, true, 'field'), null);
+});
+
+test('buildMix() on an order part takes mixCount questions in turn from each type', () => {
+  const qs = ['pair', 'ref', 'time', 'topic'].flatMap((t, i) => [0, 1, 2].map((j) => orderQ(`p2-${i}0${j}`, t)));
+  const mix = buildMix(dataWithOrder(qs).parts[0]);
+  assert.equal(mix.length, 10);
+  assert.equal(new Set(mix.map((q) => q.id)).size, 10);
+  assert.deepEqual([...new Set(mix.map((q) => q.type))].sort(), ['pair', 'ref', 'time', 'topic']);
+  assert.equal(buildMix(dataWithOrder([orderQ('p2-001'), orderQ('p2-002')]).parts[0]).length, 2);
+});
+
+test('unitNoun() and mixSize()', () => {
+  assert.equal(unitNoun(dataWith([]).parts[0]), 'bộ');
+  assert.equal(unitNoun(dataWithOrder([]).parts[0]), 'câu');
+  assert.equal(mixSize(dataWithOrder([]).parts[0]), 10);
+  assert.equal(mixSize({ format: 'order' }), 10);
 });
