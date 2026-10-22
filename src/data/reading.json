@@ -3707,6 +3707,627 @@
               "explain": "现在已经能上台表演了 → bây giờ bác đã múa khá (D). A ngược với 从来没跳过舞; B ngược với 学得很认真; C ngược với 能上台表演."
             }
           ]
+        },
+        {
+          "id": "p3-016",
+          "type": "gist",
+          "text": "很多人觉得睡得越多越好，其实不是这样。一般人每天睡七到八个小时就够了。睡得太多，人也会觉得没有精神。",
+          "pinyin": "Hěn duō rén juéde shuì de yuè duō yuè hǎo, qíshí bú shì zhèyàng. Yìbān rén měitiān shuì qī dào bā ge xiǎoshí jiù gòu le. Shuì de tài duō, rén yě huì juéde méiyǒu jīngshen.",
+          "vi": "Nhiều người cho rằng ngủ càng nhiều càng tốt, thật ra không phải vậy. Người bình thường mỗi ngày ngủ bảy đến tám tiếng là đủ. Ngủ quá nhiều, người ta cũng sẽ thấy uể oải.",
+          "questions": [
+            {
+              "text": "这段话主要谈的是：",
+              "pinyin": "Zhè duàn huà zhǔyào tán de shì:",
+              "vi": "Đoạn văn này chủ yếu nói về:",
+              "options": [
+                {
+                  "text": "怎样睡得更快",
+                  "pinyin": "zěnyàng shuì de gèng kuài",
+                  "vi": "làm sao ngủ nhanh hơn"
+                },
+                {
+                  "text": "晚上几点睡觉好",
+                  "pinyin": "wǎnshang jǐ diǎn shuìjiào hǎo",
+                  "vi": "buổi tối mấy giờ đi ngủ thì tốt"
+                },
+                {
+                  "text": "睡得多不一定好",
+                  "pinyin": "shuì de duō bù yídìng hǎo",
+                  "vi": "ngủ nhiều chưa chắc đã tốt"
+                },
+                {
+                  "text": "大家要多运动",
+                  "pinyin": "dàjiā yào duō yùndòng",
+                  "vi": "mọi người nên vận động nhiều"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "其实不是这样",
+                "睡得太多，人也会觉得没有精神"
+              ],
+              "explain": "Câu 其实不是这样 phủ định ý \"ngủ càng nhiều càng tốt\", các câu sau giải thích thêm → ý chính là C. A, B, D bài không bàn tới."
+            }
+          ]
+        },
+        {
+          "id": "p3-017",
+          "type": "gist",
+          "text": "学习一门语言，最好的方法就是多用。你可以每天用汉语写日记，跟中国朋友聊天，看中文电影。用得越多，进步就越快。",
+          "pinyin": "Xuéxí yì mén yǔyán, zuì hǎo de fāngfǎ jiù shì duō yòng. Nǐ kěyǐ měitiān yòng Hànyǔ xiě rìjì, gēn Zhōngguó péngyou liáotiān, kàn Zhōngwén diànyǐng. Yòng de yuè duō, jìnbù jiù yuè kuài.",
+          "vi": "Học một ngôn ngữ, cách tốt nhất là dùng nhiều. Bạn có thể mỗi ngày viết nhật ký bằng tiếng Trung, trò chuyện với bạn Trung Quốc, xem phim tiếng Trung. Dùng càng nhiều, tiến bộ càng nhanh.",
+          "questions": [
+            {
+              "text": "这段话主要想告诉我们：",
+              "pinyin": "Zhè duàn huà zhǔyào xiǎng gàosu wǒmen:",
+              "vi": "Đoạn văn này chủ yếu muốn nói với chúng ta:",
+              "options": [
+                {
+                  "text": "常用才能学好语言",
+                  "pinyin": "cháng yòng cái néng xuéhǎo yǔyán",
+                  "vi": "có thường dùng mới học giỏi được ngôn ngữ"
+                },
+                {
+                  "text": "写日记很重要",
+                  "pinyin": "xiě rìjì hěn zhòngyào",
+                  "vi": "viết nhật ký rất quan trọng"
+                },
+                {
+                  "text": "要多交中国朋友",
+                  "pinyin": "yào duō jiāo Zhōngguó péngyou",
+                  "vi": "nên kết bạn nhiều với người Trung Quốc"
+                },
+                {
+                  "text": "看电影能放松",
+                  "pinyin": "kàn diànyǐng néng fàngsōng",
+                  "vi": "xem phim giúp thư giãn"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "最好的方法就是多用",
+                "用得越多，进步就越快"
+              ],
+              "explain": "Câu đầu nêu ý chính (最好的方法就是多用), câu cuối nhắc lại (用得越多，进步就越快) → A. B và C chỉ là ví dụ trong bài, không phải ý chính; D bài không nói."
+            }
+          ]
+        },
+        {
+          "id": "p3-018",
+          "type": "gist",
+          "text": "有的父母总是帮孩子做所有的事，其实这样对孩子没有好处。孩子需要自己去试，即使做错了，也能学到东西。",
+          "pinyin": "Yǒu de fùmǔ zǒngshì bāng háizi zuò suǒyǒu de shì, qíshí zhèyàng duì háizi méiyǒu hǎochù. Háizi xūyào zìjǐ qù shì, jíshǐ zuòcuò le, yě néng xuédào dōngxi.",
+          "vi": "Có những bố mẹ lúc nào cũng làm hết mọi việc giúp con, thật ra như vậy không có lợi cho trẻ. Trẻ cần tự mình thử, dù làm sai cũng học được điều gì đó.",
+          "questions": [
+            {
+              "text": "作者认为父母应该：",
+              "pinyin": "Zuòzhě rènwéi fùmǔ yīnggāi:",
+              "vi": "Tác giả cho rằng bố mẹ nên:",
+              "options": [
+                {
+                  "text": "多陪孩子玩儿",
+                  "pinyin": "duō péi háizi wánr",
+                  "vi": "chơi với con nhiều hơn"
+                },
+                {
+                  "text": "帮孩子做事",
+                  "pinyin": "bāng háizi zuò shì",
+                  "vi": "làm việc giúp con"
+                },
+                {
+                  "text": "不让孩子做错",
+                  "pinyin": "bú ràng háizi zuòcuò",
+                  "vi": "không để con làm sai"
+                },
+                {
+                  "text": "让孩子自己去做",
+                  "pinyin": "ràng háizi zìjǐ qù zuò",
+                  "vi": "để con tự làm"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "孩子需要自己去试"
+              ],
+              "explain": "Tác giả nói 帮孩子做所有的事…没有好处, và 孩子需要自己去试 → bố mẹ nên để con tự làm (D). B là điều tác giả phê phán. C ngược với 即使做错了，也能学到东西."
+            }
+          ]
+        },
+        {
+          "id": "p3-019",
+          "type": "gist",
+          "text": "现在越来越多的年轻人选择骑自行车上班。这样不仅能锻炼身体，而且不用担心堵车，还能减少空气污染。",
+          "pinyin": "Xiànzài yuè lái yuè duō de niánqīngrén xuǎnzé qí zìxíngchē shàngbān. Zhèyàng bùjǐn néng duànliàn shēntǐ, érqiě bú yòng dānxīn dǔchē, hái néng jiǎnshǎo kōngqì wūrǎn.",
+          "vi": "Bây giờ ngày càng nhiều người trẻ chọn đạp xe đi làm. Như vậy không chỉ rèn luyện được sức khoẻ mà còn không phải lo tắc đường, lại có thể giảm ô nhiễm không khí.",
+          "questions": [
+            {
+              "text": "这段话主要谈的是：",
+              "pinyin": "Zhè duàn huà zhǔyào tán de shì:",
+              "vi": "Đoạn văn này chủ yếu nói về:",
+              "options": [
+                {
+                  "text": "年轻人喜欢锻炼身体",
+                  "pinyin": "niánqīngrén xǐhuan duànliàn shēntǐ",
+                  "vi": "người trẻ thích rèn luyện sức khoẻ"
+                },
+                {
+                  "text": "骑自行车上班的好处",
+                  "pinyin": "qí zìxíngchē shàngbān de hǎochù",
+                  "vi": "lợi ích của việc đạp xe đi làm"
+                },
+                {
+                  "text": "怎样减少空气污染",
+                  "pinyin": "zěnyàng jiǎnshǎo kōngqì wūrǎn",
+                  "vi": "làm sao giảm ô nhiễm không khí"
+                },
+                {
+                  "text": "城市为什么会堵车",
+                  "pinyin": "chéngshì wèishénme huì dǔchē",
+                  "vi": "vì sao thành phố bị tắc đường"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "不仅能锻炼身体",
+                "还能减少空气污染"
+              ],
+              "explain": "Bài liệt kê bằng 不仅…而且…还…: rèn luyện sức khoẻ, không lo tắc đường, giảm ô nhiễm → đều là lợi ích của việc đạp xe đi làm (B). A, C, D dùng lại chữ trong bài (锻炼身体, 空气污染, 堵车) nhưng mỗi cái chỉ là một lợi ích riêng lẻ, không phải ý chính."
+            }
+          ]
+        },
+        {
+          "id": "p3-020",
+          "type": "gist",
+          "text": "第一次见面时，别人对你的印象往往决定了你们以后的关系。所以，见面时要注意自己穿的衣服和说话的方式。",
+          "pinyin": "Dì-yī cì jiànmiàn shí, biérén duì nǐ de yìnxiàng wǎngwǎng juédìngle nǐmen yǐhòu de guānxi. Suǒyǐ, jiànmiàn shí yào zhùyì zìjǐ chuān de yīfu hé shuōhuà de fāngshì.",
+          "vi": "Lần đầu gặp mặt, ấn tượng của người khác về bạn thường quyết định mối quan hệ sau này của hai người. Vì vậy khi gặp mặt phải chú ý quần áo mình mặc và cách nói chuyện.",
+          "questions": [
+            {
+              "text": "这段话主要说明：",
+              "pinyin": "Zhè duàn huà zhǔyào shuōmíng:",
+              "vi": "Đoạn văn này chủ yếu nói rõ:",
+              "options": [
+                {
+                  "text": "第一印象很重要",
+                  "pinyin": "dì-yī yìnxiàng hěn zhòngyào",
+                  "vi": "ấn tượng đầu tiên rất quan trọng"
+                },
+                {
+                  "text": "衣服要穿得漂亮",
+                  "pinyin": "yīfu yào chuān de piàoliang",
+                  "vi": "phải ăn mặc đẹp"
+                },
+                {
+                  "text": "说话要大声",
+                  "pinyin": "shuōhuà yào dàshēng",
+                  "vi": "nói chuyện phải to"
+                },
+                {
+                  "text": "要多认识朋友",
+                  "pinyin": "yào duō rènshi péngyou",
+                  "vi": "nên quen nhiều bạn"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "别人对你的印象往往决定了你们以后的关系"
+              ],
+              "explain": "Câu đầu nói ấn tượng lần đầu quyết định quan hệ về sau; câu sau (所以…) là lời khuyên rút ra từ đó → ý chính là A. B dùng lại chữ 衣服 nhưng chỉ là một chi tiết, và bài nói \"chú ý\" chứ không nói \"đẹp\". C, D bài không nói."
+            }
+          ]
+        },
+        {
+          "id": "p3-021",
+          "type": "gist",
+          "text": "遇到困难的时候，有人会马上放弃，有人会想办法解决。其实，困难并不是最大的问题，最大的问题是不敢去解决它。",
+          "pinyin": "Yùdào kùnnan de shíhou, yǒu rén huì mǎshàng fàngqì, yǒu rén huì xiǎng bànfǎ jiějué. Qíshí, kùnnan bìng bú shì zuì dà de wèntí, zuì dà de wèntí shì bù gǎn qù jiějué tā.",
+          "vi": "Khi gặp khó khăn, có người bỏ cuộc ngay, có người tìm cách giải quyết. Thật ra, khó khăn không phải là vấn đề lớn nhất, vấn đề lớn nhất là không dám giải quyết nó.",
+          "questions": [
+            {
+              "text": "这段话主要想告诉我们：",
+              "pinyin": "Zhè duàn huà zhǔyào xiǎng gàosu wǒmen:",
+              "vi": "Đoạn văn này chủ yếu muốn nói với chúng ta:",
+              "options": [
+                {
+                  "text": "困难很容易解决",
+                  "pinyin": "kùnnan hěn róngyì jiějué",
+                  "vi": "khó khăn rất dễ giải quyết"
+                },
+                {
+                  "text": "遇到困难要放弃",
+                  "pinyin": "yùdào kùnnan yào fàngqì",
+                  "vi": "gặp khó khăn thì nên bỏ cuộc"
+                },
+                {
+                  "text": "遇到困难要勇敢一些",
+                  "pinyin": "yùdào kùnnan yào yǒnggǎn yìxiē",
+                  "vi": "gặp khó khăn phải dũng cảm lên"
+                },
+                {
+                  "text": "要多帮助别人",
+                  "pinyin": "yào duō bāngzhù biérén",
+                  "vi": "nên giúp đỡ người khác nhiều"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "最大的问题是不敢去解决它"
+              ],
+              "explain": "Câu sau 其实 là ý người viết: vấn đề lớn nhất là 不敢去解决 (không dám giải quyết) → gặp khó khăn phải dũng cảm (C). A sai: bài không nói khó khăn dễ giải quyết. B dùng lại chữ 放弃 nhưng ngược ý."
+            }
+          ]
+        },
+        {
+          "id": "p3-022",
+          "type": "gist",
+          "text": "网上购物虽然方便，但是也有不少问题。比如东西的质量不一定好，大小可能不合适，换起来也比较麻烦。",
+          "pinyin": "Wǎngshang gòuwù suīrán fāngbiàn, dànshì yě yǒu bù shǎo wèntí. Bǐrú dōngxi de zhìliàng bù yídìng hǎo, dàxiǎo kěnéng bù héshì, huàn qǐlai yě bǐjiào máfan.",
+          "vi": "Mua sắm trên mạng tuy tiện lợi nhưng cũng có không ít vấn đề. Ví dụ chất lượng hàng không chắc đã tốt, cỡ có thể không vừa, đổi hàng cũng khá phiền.",
+          "questions": [
+            {
+              "text": "这段话主要谈网上购物的：",
+              "pinyin": "Zhè duàn huà zhǔyào tán wǎngshang gòuwù de:",
+              "vi": "Đoạn văn chủ yếu nói về … của mua sắm trên mạng:",
+              "options": [
+                {
+                  "text": "好处",
+                  "pinyin": "hǎochù",
+                  "vi": "lợi ích"
+                },
+                {
+                  "text": "缺点",
+                  "pinyin": "quēdiǎn",
+                  "vi": "nhược điểm"
+                },
+                {
+                  "text": "价格",
+                  "pinyin": "jiàgé",
+                  "vi": "giá cả"
+                },
+                {
+                  "text": "质量",
+                  "pinyin": "zhìliàng",
+                  "vi": "chất lượng"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "但是也有不少问题"
+              ],
+              "explain": "Ý chính nằm sau 但是: 也有不少问题, các câu sau (比如…) là ví dụ về những điểm chưa tốt → nhược điểm (B). A là bẫy: 方便 chỉ được nhắc ở vế 虽然 để chuyển sang ý chính. D 质量 chỉ là một ví dụ trong các 问题 (= 缺点)."
+            }
+          ]
+        },
+        {
+          "id": "p3-023",
+          "type": "gist",
+          "text": "做事以前先做好计划很重要。有了计划，你就知道先做什么、后做什么，不会到最后才发现时间不够用。",
+          "pinyin": "Zuò shì yǐqián xiān zuòhǎo jìhuà hěn zhòngyào. Yǒule jìhuà, nǐ jiù zhīdào xiān zuò shénme, hòu zuò shénme, bú huì dào zuìhòu cái fāxiàn shíjiān bú gòu yòng.",
+          "vi": "Trước khi làm việc, lập kế hoạch trước là rất quan trọng. Có kế hoạch rồi, bạn sẽ biết làm gì trước, làm gì sau, không đến cuối cùng mới phát hiện không đủ thời gian.",
+          "questions": [
+            {
+              "text": "作者认为：",
+              "pinyin": "Zuòzhě rènwéi:",
+              "vi": "Tác giả cho rằng:",
+              "options": [
+                {
+                  "text": "计划常常没有用",
+                  "pinyin": "jìhuà chángcháng méiyǒu yòng",
+                  "vi": "kế hoạch thường vô dụng"
+                },
+                {
+                  "text": "做事要快",
+                  "pinyin": "zuò shì yào kuài",
+                  "vi": "làm việc phải nhanh"
+                },
+                {
+                  "text": "时间总是不够",
+                  "pinyin": "shíjiān zǒngshì bú gòu",
+                  "vi": "thời gian lúc nào cũng không đủ"
+                },
+                {
+                  "text": "做事前要先想好怎么做",
+                  "pinyin": "zuò shì qián yào xiān xiǎnghǎo zěnme zuò",
+                  "vi": "trước khi làm phải nghĩ kỹ cách làm"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "做事以前先做好计划很重要"
+              ],
+              "explain": "Câu đầu là quan điểm của tác giả: lập kế hoạch trước rất quan trọng → D. C là bẫy dùng lại chữ 时间不够, nhưng bài nói có kế hoạch thì sẽ không bị thiếu thời gian."
+            }
+          ]
+        },
+        {
+          "id": "p3-024",
+          "type": "gist",
+          "text": "很多人以为只有花很多钱才能过得幸福。其实幸福很简单：跟家人一起吃顿饭，和朋友聊聊天，都能让人感到快乐。",
+          "pinyin": "Hěn duō rén yǐwéi zhǐyǒu huā hěn duō qián cái néng guò de xìngfú. Qíshí xìngfú hěn jiǎndān: gēn jiārén yìqǐ chī dùn fàn, hé péngyou liáoliao tiān, dōu néng ràng rén gǎndào kuàilè.",
+          "vi": "Nhiều người tưởng phải tiêu nhiều tiền mới sống hạnh phúc được. Thật ra hạnh phúc rất đơn giản: cùng gia đình ăn một bữa cơm, trò chuyện với bạn bè, đều có thể khiến người ta thấy vui.",
+          "questions": [
+            {
+              "text": "这段话主要想说明：",
+              "pinyin": "Zhè duàn huà zhǔyào xiǎng shuōmíng:",
+              "vi": "Đoạn văn chủ yếu muốn nói rõ:",
+              "options": [
+                {
+                  "text": "不用花很多钱也能幸福",
+                  "pinyin": "bú yòng huā hěn duō qián yě néng xìngfú",
+                  "vi": "không cần tiêu nhiều tiền cũng có thể hạnh phúc"
+                },
+                {
+                  "text": "钱越多越幸福",
+                  "pinyin": "qián yuè duō yuè xìngfú",
+                  "vi": "càng nhiều tiền càng hạnh phúc"
+                },
+                {
+                  "text": "要常跟朋友吃饭",
+                  "pinyin": "yào cháng gēn péngyou chīfàn",
+                  "vi": "nên thường ăn cơm với bạn bè"
+                },
+                {
+                  "text": "家人最重要",
+                  "pinyin": "jiārén zuì zhòngyào",
+                  "vi": "gia đình quan trọng nhất"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "只有花很多钱才能过得幸福",
+                "其实幸福很简单"
+              ],
+              "explain": "以为… cho biết đó là cách nghĩ sai; câu sau 其实 là ý chính: 幸福很简单 (A). B chính là cách nghĩ bị phủ định. C, D chỉ là ví dụ, và C ghép sai (bài nói ăn cơm với gia đình)."
+            }
+          ]
+        },
+        {
+          "id": "p3-025",
+          "type": "gist",
+          "text": "喝水对身体很重要，但是喝水也有方法。最好不要等到口渴了再喝，而是每天分几次喝，每次喝一杯左右。",
+          "pinyin": "Hē shuǐ duì shēntǐ hěn zhòngyào, dànshì hē shuǐ yě yǒu fāngfǎ. Zuìhǎo bú yào děngdào kǒu kě le zài hē, ér shì měitiān fēn jǐ cì hē, měi cì hē yì bēi zuǒyòu.",
+          "vi": "Uống nước rất quan trọng với cơ thể, nhưng uống nước cũng có cách. Tốt nhất đừng đợi đến khi khát mới uống, mà mỗi ngày chia ra uống nhiều lần, mỗi lần khoảng một cốc.",
+          "questions": [
+            {
+              "text": "这段话主要谈的是：",
+              "pinyin": "Zhè duàn huà zhǔyào tán de shì:",
+              "vi": "Đoạn văn này chủ yếu nói về:",
+              "options": [
+                {
+                  "text": "喝什么水最好",
+                  "pinyin": "hē shénme shuǐ zuì hǎo",
+                  "vi": "uống loại nước nào tốt nhất"
+                },
+                {
+                  "text": "怎样喝水比较好",
+                  "pinyin": "zěnyàng hē shuǐ bǐjiào hǎo",
+                  "vi": "uống nước thế nào thì tốt"
+                },
+                {
+                  "text": "每天应该喝几杯水",
+                  "pinyin": "měitiān yīnggāi hē jǐ bēi shuǐ",
+                  "vi": "mỗi ngày nên uống mấy cốc nước"
+                },
+                {
+                  "text": "口渴的原因",
+                  "pinyin": "kǒu kě de yuányīn",
+                  "vi": "nguyên nhân bị khát"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "但是喝水也有方法"
+              ],
+              "explain": "Sau 但是 là ý chính: 喝水也有方法 (uống nước cũng có cách), rồi bài nói cách uống → B. C là bẫy: bài nói mỗi lần một cốc, không nói mỗi ngày mấy cốc. A, D bài không bàn."
+            }
+          ]
+        },
+        {
+          "id": "p3-026",
+          "type": "gist",
+          "text": "有的人买东西只看价格，什么便宜买什么。可是便宜的东西质量常常不太好，用不了多久就坏了，最后花的钱更多。",
+          "pinyin": "Yǒu de rén mǎi dōngxi zhǐ kàn jiàgé, shénme piányi mǎi shénme. Kěshì piányi de dōngxi zhìliàng chángcháng bú tài hǎo, yòng bu liǎo duō jiǔ jiù huài le, zuìhòu huā de qián gèng duō.",
+          "vi": "Có người mua đồ chỉ nhìn giá, cái gì rẻ thì mua cái đó. Nhưng đồ rẻ chất lượng thường không tốt lắm, dùng chẳng được bao lâu đã hỏng, cuối cùng lại tốn nhiều tiền hơn.",
+          "questions": [
+            {
+              "text": "作者的意思是：",
+              "pinyin": "Zuòzhě de yìsi shì:",
+              "vi": "Ý của tác giả là:",
+              "options": [
+                {
+                  "text": "买东西只要看价格",
+                  "pinyin": "mǎi dōngxi zhǐ yào kàn jiàgé",
+                  "vi": "mua đồ chỉ cần nhìn giá"
+                },
+                {
+                  "text": "贵的东西都很好",
+                  "pinyin": "guì de dōngxi dōu hěn hǎo",
+                  "vi": "đồ đắt đều tốt"
+                },
+                {
+                  "text": "便宜的东西不一定省钱",
+                  "pinyin": "piányi de dōngxi bù yídìng shěng qián",
+                  "vi": "đồ rẻ chưa chắc đã tiết kiệm"
+                },
+                {
+                  "text": "不要常买东西",
+                  "pinyin": "bú yào cháng mǎi dōngxi",
+                  "vi": "đừng mua sắm thường xuyên"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "便宜的东西质量常常不太好",
+                "最后花的钱更多"
+              ],
+              "explain": "Đồ rẻ nhanh hỏng nên 最后花的钱更多 (cuối cùng tốn tiền hơn) → đồ rẻ chưa chắc tiết kiệm (C). A là cách làm bị phê phán. B nói quá: bài không nói đồ đắt đều tốt."
+            }
+          ]
+        },
+        {
+          "id": "p3-027",
+          "type": "gist",
+          "text": "每个人都会做错事。重要的是做错了以后，不要怕别人知道，要认真总结原因，下次别再出同样的问题。",
+          "pinyin": "Měi ge rén dōu huì zuòcuò shì. Zhòngyào de shì zuòcuò le yǐhòu, bú yào pà biérén zhīdào, yào rènzhēn zǒngjié yuányīn, xià cì bié zài chū tóngyàng de wèntí.",
+          "vi": "Ai cũng có lúc làm sai. Điều quan trọng là sau khi làm sai, đừng sợ người khác biết, phải nghiêm túc tìm ra nguyên nhân, lần sau đừng mắc lại lỗi như vậy.",
+          "questions": [
+            {
+              "text": "这段话主要想告诉我们：",
+              "pinyin": "Zhè duàn huà zhǔyào xiǎng gàosu wǒmen:",
+              "vi": "Đoạn văn này chủ yếu muốn nói với chúng ta:",
+              "options": [
+                {
+                  "text": "做错事很不好意思",
+                  "pinyin": "zuòcuò shì hěn bù hǎoyìsi",
+                  "vi": "làm sai thì rất ngại"
+                },
+                {
+                  "text": "不要让别人知道",
+                  "pinyin": "bú yào ràng biérén zhīdào",
+                  "vi": "đừng để người khác biết"
+                },
+                {
+                  "text": "少做事就不会错",
+                  "pinyin": "shǎo zuò shì jiù bú huì cuò",
+                  "vi": "làm ít thì không sai"
+                },
+                {
+                  "text": "做错以后要想想为什么错",
+                  "pinyin": "zuòcuò yǐhòu yào xiǎngxiang wèishénme cuò",
+                  "vi": "làm sai rồi phải nghĩ xem vì sao sai"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "要认真总结原因"
+              ],
+              "explain": "Ý chính nằm sau 重要的是: làm sai rồi phải 认真总结原因 → D. B là bẫy dùng lại chữ 别人知道 nhưng ngược ý (bài nói đừng sợ người khác biết). A, C bài không nói."
+            }
+          ]
+        },
+        {
+          "id": "p3-028",
+          "type": "gist",
+          "text": "现在很多孩子一回家就玩儿手机，很少到外面去玩儿。医生说，孩子每天至少应该在外面活动一个小时，这对眼睛和身体都有好处。",
+          "pinyin": "Xiànzài hěn duō háizi yì huí jiā jiù wánr shǒujī, hěn shǎo dào wàimian qù wánr. Yīshēng shuō, háizi měitiān zhìshǎo yīnggāi zài wàimian huódòng yí ge xiǎoshí, zhè duì yǎnjing hé shēntǐ dōu yǒu hǎochù.",
+          "vi": "Bây giờ nhiều trẻ em vừa về nhà là chơi điện thoại, rất ít ra ngoài chơi. Bác sĩ nói mỗi ngày trẻ nên hoạt động ngoài trời ít nhất một tiếng, việc này tốt cho cả mắt lẫn cơ thể.",
+          "questions": [
+            {
+              "text": "这段话主要想说明：",
+              "pinyin": "Zhè duàn huà zhǔyào xiǎng shuōmíng:",
+              "vi": "Đoạn văn chủ yếu muốn nói rõ:",
+              "options": [
+                {
+                  "text": "孩子要多出去运动运动",
+                  "pinyin": "háizi yào duō chūqu yùndòng yùndòng",
+                  "vi": "trẻ nên ra ngoài vận động nhiều hơn"
+                },
+                {
+                  "text": "孩子不应该有手机",
+                  "pinyin": "háizi bù yīnggāi yǒu shǒujī",
+                  "vi": "trẻ không nên có điện thoại"
+                },
+                {
+                  "text": "医生的工作很忙",
+                  "pinyin": "yīshēng de gōngzuò hěn máng",
+                  "vi": "công việc bác sĩ rất bận"
+                },
+                {
+                  "text": "眼睛不好的原因",
+                  "pinyin": "yǎnjing bù hǎo de yuányīn",
+                  "vi": "nguyên nhân mắt kém"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "孩子每天至少应该在外面活动一个小时"
+              ],
+              "explain": "Bài nêu vấn đề (ít ra ngoài) rồi đưa lời khuyên của bác sĩ: mỗi ngày nên hoạt động ngoài trời → A. B nói quá: bài không nói trẻ không nên có điện thoại. C, D dùng lại chữ 医生, 眼睛 nhưng không phải ý chính."
+            }
+          ]
+        },
+        {
+          "id": "p3-029",
+          "type": "gist",
+          "text": "不同的国家有不同的习惯。比如在中国，别人给你东西的时候，最好用两只手接。所以去别的国家以前，应该先了解一下那里的习惯。",
+          "pinyin": "Bùtóng de guójiā yǒu bùtóng de xíguàn. Bǐrú zài Zhōngguó, biérén gěi nǐ dōngxi de shíhou, zuìhǎo yòng liǎng zhī shǒu jiē. Suǒyǐ qù bié de guójiā yǐqián, yīnggāi xiān liǎojiě yíxià nàli de xíguàn.",
+          "vi": "Các nước khác nhau có những thói quen khác nhau. Ví dụ ở Trung Quốc, khi người khác đưa đồ cho bạn, tốt nhất nên nhận bằng hai tay. Vì vậy trước khi đến nước khác, nên tìm hiểu thói quen ở đó trước.",
+          "questions": [
+            {
+              "text": "这段话主要想告诉我们：",
+              "pinyin": "Zhè duàn huà zhǔyào xiǎng gàosu wǒmen:",
+              "vi": "Đoạn văn này chủ yếu muốn nói với chúng ta:",
+              "options": [
+                {
+                  "text": "接东西要用两只手",
+                  "pinyin": "jiē dōngxi yào yòng liǎng zhī shǒu",
+                  "vi": "nhận đồ phải dùng hai tay"
+                },
+                {
+                  "text": "出国以前要先知道别人的习惯",
+                  "pinyin": "chūguó yǐqián yào xiān zhīdào biérén de xíguàn",
+                  "vi": "trước khi ra nước ngoài nên biết thói quen của người ta"
+                },
+                {
+                  "text": "准备一些礼物",
+                  "pinyin": "zhǔnbèi yìxiē lǐwù",
+                  "vi": "chuẩn bị ít quà"
+                },
+                {
+                  "text": "先学好外语",
+                  "pinyin": "xiān xuéhǎo wàiyǔ",
+                  "vi": "học giỏi ngoại ngữ trước"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "应该先了解一下那里的习惯"
+              ],
+              "explain": "Câu cuối (所以…) là kết luận: đi nước khác thì 应该先了解一下那里的习惯 → B. A là bẫy: dùng hai tay nhận đồ chỉ là một ví dụ về thói quen ở Trung Quốc. C, D bài không nói."
+            }
+          ]
+        },
+        {
+          "id": "p3-030",
+          "type": "gist",
+          "text": "运动不一定要去体育馆，也不一定要花很多钱。每天下班以后散散步，周末爬爬山，都是很好的运动。重要的是要坚持。",
+          "pinyin": "Yùndòng bù yídìng yào qù tǐyùguǎn, yě bù yídìng yào huā hěn duō qián. Měitiān xiàbān yǐhòu sànsan bù, zhōumò pápa shān, dōu shì hěn hǎo de yùndòng. Zhòngyào de shì yào jiānchí.",
+          "vi": "Vận động không nhất thiết phải đến trung tâm thể thao, cũng không nhất thiết phải tốn nhiều tiền. Mỗi ngày tan làm đi dạo một chút, cuối tuần leo núi một chút, đều là vận động tốt. Điều quan trọng là phải kiên trì.",
+          "questions": [
+            {
+              "text": "这段话主要想告诉我们：",
+              "pinyin": "Zhè duàn huà zhǔyào xiǎng gàosu wǒmen:",
+              "vi": "Đoạn văn này chủ yếu muốn nói với chúng ta:",
+              "options": [
+                {
+                  "text": "要去体育馆运动",
+                  "pinyin": "yào qù tǐyùguǎn yùndòng",
+                  "vi": "phải đến trung tâm thể thao tập luyện"
+                },
+                {
+                  "text": "运动要花很多钱",
+                  "pinyin": "yùndòng yào huā hěn duō qián",
+                  "vi": "vận động phải tốn nhiều tiền"
+                },
+                {
+                  "text": "运动简单，关键是坚持",
+                  "pinyin": "yùndòng jiǎndān, guānjiàn shì jiānchí",
+                  "vi": "vận động đơn giản, then chốt là kiên trì"
+                },
+                {
+                  "text": "周末一定要爬山",
+                  "pinyin": "zhōumò yídìng yào páshān",
+                  "vi": "cuối tuần nhất định phải leo núi"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "不一定要去体育馆",
+                "重要的是要坚持"
+              ],
+              "explain": "Bài nói vận động không cần đến trung tâm thể thao, không cần tốn tiền, đi dạo hay leo núi đều được, rồi kết: 重要的是要坚持 → C. A, B ngược với 不一定. D nói quá: leo núi chỉ là ví dụ."
+            }
+          ]
         }
       ]
     }
