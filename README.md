@@ -23,15 +23,18 @@ dialogue between a man and a woman, then a spoken question (shown as text only o
 pick one of four printed answers A–D. The answer shows the transcript with pinyin, a Vietnamese
 translation and an explanation. Wrong answers mark the question "needs review".
 
-A reading section practises the reading part of the HSK 4 exam one part at a time (parts I, 选词填空,
-and II, 排列顺序, are done; part III is a dimmed tab). Part I works in sets as in the exam: six words A–F, one of
+A reading section practises the reading part of the HSK 4 exam one part at a time: I, 选词填空; II,
+排列顺序; III, 阅读理解. Part I works in sets as in the exam: six words A–F, one of
 them already used by the 例如 example, and five blanks (single sentences, or two-line A/B dialogues).
 Pick a blank, then a word (or type A–F, 1–5, Backspace); once the five blanks are filled, submit the
 set to see each sentence in full with pinyin, a Vietnamese translation and an explanation. A set
 with a wrong blank is marked "needs review" as a whole.
 Part II gives three sentences A, B and C to put in order (tap or type A–C, Backspace takes the last
 one out); checking shows the joined paragraph with its clue words marked, pinyin, a translation and a
-three-step explanation (which sentence opens, which follows, which closes).
+three-step explanation (which sentence opens, which follows, which closes). Part III shows a passage
+(short with one question, or long with two) with a Pinyin switch; each answer is graded at once, the
+words that decide it are marked in the passage, and the translation opens once every question is
+answered. Wrong answers are marked "needs review" per question.
 
 - Without a backend (e.g. GitHub Pages) marks and review progress are stored in the browser only.
 - With the Cloudflare backend, users sign in (username + password, invite code to register) and
@@ -62,6 +65,8 @@ three-step explanation (which sentence opens, which follows, which closes).
 | `/reading/p1/review` | A run over every "needs review" set (at most 6) |
 | `/reading/p2`, `/reading/p2/tips`, `/reading/p2/review` | The same pages for reading part II (review: at most 30 questions) |
 | `/reading/p2/practice/<type>` | A run over one part II type (`pair`, `ref`, `time`, `topic`) or `mix` (10 questions across the types) |
+| `/reading/p3`, `/reading/p3/tips`, `/reading/p3/review` | The same pages for reading part III (review: at most 20 passages, each with only its questions marked "needs review") |
+| `/reading/p3/practice/<type>` | A run over one part III type (`detail`, `gist`, `infer`, `word`, `long`) or `mix` (14 short passages and 3 long ones, 20 questions) |
 
 Paths are real URLs (History API), so the host must serve `index.html` for them. Cloudflare Pages does
 that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
@@ -123,7 +128,7 @@ glitches at the join, rebuild the file with `ffmpeg`.
 
 ### Reading data
 
-`src/data/reading.json` has `parts` (parts I and II so far), each with a `format` (`fill` or `order`),
+`src/data/reading.json` has `parts` (I, II and III), each with a `format` (`fill`, `order` or `read`),
 `tips` and `types`; a part may set `mixCount` (size of its mixed run, default 10; a `fill` mix is one
 set of each type). A `fill` part has `sets`; every set has a fixed `id` (`p1-001`; it is the mark key `r:p1-001`,
 so never renumber a published set), a `type` (`sentence` or `dialogue`), six `words` (`{text, pinyin,
@@ -134,7 +139,10 @@ lines (`A：…\nB：…`). An `order` part has `questions`: a fixed `id` (`p2-0
 a `type`, three `sentences` (`{text, pinyin, vi}`, shown as A–C in this order, each with its own
 punctuation), `answer` (an order of A, B, C other than `ABC`, e.g. `BCA`), `clues` (words marked in
 the joined paragraph; each must appear in a sentence) and `explain` (`{first, next, last}`).
-`npm run test:unit` validates the file.
+A `read` part has `passages`: a fixed `id` (`p3-001`), a `type`, the passage `text`/`pinyin`/`vi` and
+`questions` (one; two for `long`), each with `text`/`pinyin`/`vi`, four `options` (`{text, pinyin, vi}`),
+`answer` (0–3), `evidence` (passage substrings marked once the question is answered) and `explain`. A
+question's mark key is `r:p3-001.1` (its number in the passage). `npm run test:unit` validates the file.
 
 ### Grammar data
 
