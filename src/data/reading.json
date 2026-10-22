@@ -2994,8 +2994,63 @@
       "label": "Đọc hiểu",
       "desc": "Đọc đoạn văn rồi chọn đáp án đúng.",
       "tips": {
-        "intro": "",
-        "sections": []
+        "intro": "Phần 3 của đề đọc HSK 4 gồm 20 câu (câu 66–85). Câu 66–79: mỗi câu là một đoạn ngắn với một câu hỏi có dấu ★. Câu 80–85: ba đoạn dài hơn, mỗi đoạn có hai câu hỏi. Câu hỏi nào cũng có bốn đáp án A–D. Phần đọc có 40 phút cho 40 câu, nên trung bình mỗi đoạn chỉ có khoảng một phút.",
+        "sections": [
+          {
+            "title": "Đọc câu hỏi và đáp án trước",
+            "body": "Đọc câu hỏi và bốn đáp án trước khi đọc đoạn văn để biết cần tìm gì: một con số, một lý do, một nơi chốn hay ý chính. Sau đó đọc đoạn văn và dừng lại ở chỗ có thông tin đó.",
+            "examples": [
+              [
+                "★ 他为什么没去上课？",
+                "Tā wèishénme méi qù shàngkè?",
+                "Câu hỏi về lý do → tìm các từ như 因为, 所以, 由于, 是因为 trong bài."
+              ]
+            ]
+          },
+          {
+            "title": "Đáp án đúng thường được nói khác đi",
+            "body": "Đáp án đúng ít khi chép nguyên câu trong bài; nó dùng từ đồng nghĩa hoặc nói gọn lại. Ví dụ bài viết 没有及格, đáp án viết 考得不好; bài viết 从来没去过, đáp án viết 第一次去.",
+            "examples": [
+              [
+                "他已经在北京住了十年了。",
+                "Tā yǐjīng zài Běijīng zhùle shí nián le.",
+                "Đáp án đúng có thể là 他来北京很久了."
+              ]
+            ]
+          },
+          {
+            "title": "Cẩn thận với đáp án chép đúng chữ trong bài",
+            "body": "Đáp án nhiễu hay lấy nguyên một từ trong bài nhưng gắn sai người, sai thời gian hoặc sai việc. Thấy một đáp án có đúng chữ trong bài, hãy kiểm tra lại xem nó nói về cùng một việc không.",
+            "examples": [
+              [
+                "我哥哥喜欢打篮球，我更喜欢游泳。",
+                "Wǒ gēge xǐhuan dǎ lánqiú, wǒ gèng xǐhuan yóuyǒng.",
+                "Hỏi \"tôi\" thích gì: 打篮球 có trong bài nhưng là của anh trai, đáp án là 游泳."
+              ]
+            ]
+          },
+          {
+            "title": "Đừng chọn điều bài không nói",
+            "body": "Một đáp án nghe hợp lý nhưng bài không hề nhắc tới vẫn là sai. Chỉ chọn điều có trong bài hoặc suy ra chắc chắn từ bài.",
+            "examples": []
+          },
+          {
+            "title": "Ý chính thường ở câu đầu hoặc câu cuối",
+            "body": "Với câu hỏi 这段话主要谈… hay 作者想告诉我们…, đọc kỹ câu đầu và câu cuối; các câu giữa thường là ví dụ. Những từ như 总之, 所以, 其实, 因此 hay báo hiệu kết luận.",
+            "examples": [
+              [
+                "其实，健康最重要的是好心情。",
+                "Qíshí, jiànkāng zuì zhòngyào de shì hǎo xīnqíng.",
+                "Câu có 其实 ở cuối đoạn thường là ý người viết muốn nói."
+              ]
+            ]
+          },
+          {
+            "title": "Thái độ và nghĩa ngầm",
+            "body": "Thái độ thể hiện qua các từ như 竟然, 难道, 只好, 可惜, 千万. Khi hỏi nghĩa một từ hay một câu trong bài, đọc câu trước và câu sau nó, rồi thay từng đáp án vào xem nghĩa có khớp không.",
+            "examples": []
+          }
+        ]
       },
       "types": [
         {
@@ -3003,38 +3058,657 @@
           "icon": "🔎",
           "name": "Chi tiết",
           "desc": "Ai, khi nào, ở đâu, bao nhiêu, vì sao: đáp án nằm trong bài nhưng được diễn đạt lại.",
-          "tip": ""
+          "tip": "Xác định câu hỏi hỏi gì (ai, khi nào, ở đâu, bao nhiêu, vì sao), tìm đúng câu đó trong bài rồi so với đáp án. Coi chừng đáp án dùng đúng chữ trong bài nhưng nói về người khác hay lúc khác. Câu hỏi về số có thể cần cộng trừ."
         },
         {
           "id": "gist",
           "icon": "📌",
           "name": "Ý chính, mục đích",
           "desc": "这段话主要谈… / 作者想告诉我们…: ý chính thường ở câu đầu hoặc câu cuối.",
-          "tip": ""
+          "tip": "Tìm câu nêu ý chung, thường ở đầu hoặc cuối đoạn, sau 其实, 总之, 所以. Loại đáp án chỉ nói một chi tiết nhỏ, hoặc nói rộng hơn nội dung bài."
         },
         {
           "id": "infer",
           "icon": "🧠",
           "name": "Suy luận, thái độ",
           "desc": "根据这段话可以知道… / 他是什么态度: bài không nói thẳng.",
-          "tip": ""
+          "tip": "Bài không nói thẳng; hãy dựa vào chi tiết để suy ra. Đáp án đúng phải được bài chứng minh, không phải chỉ \"có thể\". Thái độ lộ ra qua 竟然, 可惜, 只好, 没想到, 难道."
         },
         {
           "id": "word",
           "icon": "🔤",
           "name": "Nghĩa của từ / câu",
           "desc": "“……”的意思是…: đoán nghĩa từ, cụm từ hay câu nói ngầm theo ngữ cảnh.",
-          "tip": ""
+          "tip": "Đọc câu chứa từ được hỏi và câu trước, câu sau nó. Thay từng đáp án vào chỗ từ đó: đáp án đúng làm cả đoạn vẫn hợp nghĩa. Nghĩa thường gặp của từ chưa chắc là nghĩa trong bài."
         },
         {
           "id": "long",
           "icon": "📄",
           "name": "Đoạn dài",
           "desc": "Một đoạn dài với hai câu hỏi, như câu 80–85.",
-          "tip": ""
+          "tip": "Đọc lướt cả đoạn một lần để nắm ý chính, rồi đọc câu hỏi và quay lại tìm chỗ có đáp án. Câu hỏi đầu thường hỏi chi tiết, câu sau thường hỏi ý chính hoặc suy luận."
         }
       ],
-      "passages": []
+      "passages": [
+        {
+          "id": "p3-001",
+          "type": "detail",
+          "text": "我家附近新开了一家书店。这家书店不但书多，而且还有一个小咖啡厅。周末的时候，很多年轻人喜欢来这里，一边喝咖啡一边看书。",
+          "pinyin": "Wǒ jiā fùjìn xīn kāile yì jiā shūdiàn. Zhè jiā shūdiàn búdàn shū duō, érqiě hái yǒu yí ge xiǎo kāfēitīng. Zhōumò de shíhou, hěn duō niánqīngrén xǐhuan lái zhèlǐ, yìbiān hē kāfēi yìbiān kàn shū.",
+          "vi": "Gần nhà tôi mới mở một hiệu sách. Hiệu sách này không những nhiều sách mà còn có một quán cà phê nhỏ. Cuối tuần, nhiều người trẻ thích đến đây, vừa uống cà phê vừa đọc sách.",
+          "questions": [
+            {
+              "text": "关于这家书店，可以知道：",
+              "pinyin": "Guānyú zhè jiā shūdiàn, kěyǐ zhīdào:",
+              "vi": "Về hiệu sách này, có thể biết:",
+              "options": [
+                {
+                  "text": "开了很多年",
+                  "pinyin": "kāile hěn duō nián",
+                  "vi": "đã mở nhiều năm"
+                },
+                {
+                  "text": "店里能买到饮料",
+                  "pinyin": "diàn li néng mǎidào yǐnliào",
+                  "vi": "trong tiệm mua được đồ uống"
+                },
+                {
+                  "text": "书比较少",
+                  "pinyin": "shū bǐjiào shǎo",
+                  "vi": "sách khá ít"
+                },
+                {
+                  "text": "只有周末开门",
+                  "pinyin": "zhǐyǒu zhōumò kāimén",
+                  "vi": "chỉ mở cửa cuối tuần"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "还有一个小咖啡厅",
+                "一边喝咖啡一边看书"
+              ],
+              "explain": "Bài nói 还有一个小咖啡厅 và 一边喝咖啡一边看书 → trong tiệm có đồ uống (B). A sai: 新开 là mới mở. C ngược với 书多. D là bẫy: bài chỉ nói cuối tuần nhiều người đến, không nói chỉ mở cửa cuối tuần."
+            }
+          ]
+        },
+        {
+          "id": "p3-002",
+          "type": "detail",
+          "text": "平时小李坐地铁上班，八点半就能到公司。昨天地铁出了问题，他只好坐出租车，结果路上堵车，到公司的时候已经九点了。",
+          "pinyin": "Píngshí Xiǎo Lǐ zuò dìtiě shàngbān, bā diǎn bàn jiù néng dào gōngsī. Zuótiān dìtiě chūle wèntí, tā zhǐhǎo zuò chūzūchē, jiéguǒ lùshang dǔchē, dào gōngsī de shíhou yǐjīng jiǔ diǎn le.",
+          "vi": "Bình thường Tiểu Lý đi làm bằng tàu điện ngầm, tám rưỡi là đến công ty. Hôm qua tàu điện ngầm gặp sự cố, anh ấy đành bắt taxi, kết quả đường bị tắc, lúc đến công ty đã chín giờ.",
+          "questions": [
+            {
+              "text": "小李昨天为什么到得比平时晚？",
+              "pinyin": "Xiǎo Lǐ zuótiān wèishénme dào de bǐ píngshí wǎn?",
+              "vi": "Vì sao hôm qua Tiểu Lý đến muộn hơn mọi ngày?",
+              "options": [
+                {
+                  "text": "起床晚了",
+                  "pinyin": "qǐchuáng wǎn le",
+                  "vi": "dậy muộn"
+                },
+                {
+                  "text": "地铁里人太多",
+                  "pinyin": "dìtiě li rén tài duō",
+                  "vi": "tàu điện ngầm quá đông người"
+                },
+                {
+                  "text": "忘了时间",
+                  "pinyin": "wàngle shíjiān",
+                  "vi": "quên mất giờ"
+                },
+                {
+                  "text": "路上车太多",
+                  "pinyin": "lùshang chē tài duō",
+                  "vi": "trên đường quá nhiều xe"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "结果路上堵车"
+              ],
+              "explain": "Anh ấy đi taxi (坐出租车) và 路上堵车 (đường tắc) → nói cách khác là trên đường quá nhiều xe (D). B dùng lại chữ 地铁 nhưng bài nói tàu gặp sự cố, không nói đông người. A, C bài không nhắc."
+            }
+          ]
+        },
+        {
+          "id": "p3-003",
+          "type": "detail",
+          "text": "我姐姐是一名护士，在一家大医院工作。她的工作很辛苦，经常晚上也要上班。不过她很喜欢这份工作，她说能帮助病人是一件很幸福的事。",
+          "pinyin": "Wǒ jiějie shì yì míng hùshi, zài yì jiā dà yīyuàn gōngzuò. Tā de gōngzuò hěn xīnkǔ, jīngcháng wǎnshang yě yào shàngbān. Búguò tā hěn xǐhuan zhè fèn gōngzuò, tā shuō néng bāngzhù bìngrén shì yí jiàn hěn xìngfú de shì.",
+          "vi": "Chị tôi là y tá, làm ở một bệnh viện lớn. Công việc của chị rất vất vả, thường buổi tối cũng phải đi làm. Nhưng chị rất thích công việc này, chị nói được giúp đỡ người bệnh là một điều rất hạnh phúc.",
+          "questions": [
+            {
+              "text": "姐姐为什么喜欢她的工作？",
+              "pinyin": "Jiějie wèishénme xǐhuan tā de gōngzuò?",
+              "vi": "Vì sao chị thích công việc của mình?",
+              "options": [
+                {
+                  "text": "能帮助别人",
+                  "pinyin": "néng bāngzhù biérén",
+                  "vi": "có thể giúp đỡ người khác"
+                },
+                {
+                  "text": "工资很高",
+                  "pinyin": "gōngzī hěn gāo",
+                  "vi": "lương rất cao"
+                },
+                {
+                  "text": "工作不太辛苦",
+                  "pinyin": "gōngzuò bú tài xīnkǔ",
+                  "vi": "công việc không vất vả lắm"
+                },
+                {
+                  "text": "医院离家很近",
+                  "pinyin": "yīyuàn lí jiā hěn jìn",
+                  "vi": "bệnh viện gần nhà"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "能帮助病人是一件很幸福的事"
+              ],
+              "explain": "Chị nói 能帮助病人是一件很幸福的事 → lý do là được giúp người khác (A). C ngược với 很辛苦 trong bài. B, D bài không nhắc tới."
+            }
+          ]
+        },
+        {
+          "id": "p3-004",
+          "type": "detail",
+          "text": "这次旅行我们一共去了三个城市：先在北京玩了四天，然后在西安玩了两天，最后在上海住了三天才回家。",
+          "pinyin": "Zhè cì lǚxíng wǒmen yígòng qùle sān ge chéngshì: xiān zài Běijīng wánle sì tiān, ránhòu zài Xī'ān wánle liǎng tiān, zuìhòu zài Shànghǎi zhùle sān tiān cái huí jiā.",
+          "vi": "Chuyến du lịch lần này chúng tôi đi tất cả ba thành phố: trước tiên chơi ở Bắc Kinh bốn ngày, sau đó chơi ở Tây An hai ngày, cuối cùng ở Thượng Hải ba ngày rồi mới về nhà.",
+          "questions": [
+            {
+              "text": "这次旅行一共用了多长时间？",
+              "pinyin": "Zhè cì lǚxíng yígòng yòngle duō cháng shíjiān?",
+              "vi": "Chuyến du lịch này tổng cộng mất bao lâu?",
+              "options": [
+                {
+                  "text": "三天",
+                  "pinyin": "sān tiān",
+                  "vi": "ba ngày"
+                },
+                {
+                  "text": "四天",
+                  "pinyin": "sì tiān",
+                  "vi": "bốn ngày"
+                },
+                {
+                  "text": "九天",
+                  "pinyin": "jiǔ tiān",
+                  "vi": "chín ngày"
+                },
+                {
+                  "text": "两天",
+                  "pinyin": "liǎng tiān",
+                  "vi": "hai ngày"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "在北京玩了四天",
+                "在西安玩了两天",
+                "在上海住了三天"
+              ],
+              "explain": "Phải cộng: Bắc Kinh 4 ngày + Tây An 2 ngày + Thượng Hải 3 ngày = 9 ngày (C). Các đáp án còn lại đều là những con số có trong bài nhưng chỉ là một phần của chuyến đi."
+            }
+          ]
+        },
+        {
+          "id": "p3-005",
+          "type": "detail",
+          "text": "王老师上课很有意思，他常常给我们讲他年轻时在国外留学的故事。虽然他的作业有点儿多，但是同学们都很喜欢上他的课。",
+          "pinyin": "Wáng lǎoshī shàngkè hěn yǒu yìsi, tā chángcháng gěi wǒmen jiǎng tā niánqīng shí zài guówài liúxué de gùshi. Suīrán tā de zuòyè yǒudiǎnr duō, dànshì tóngxuémen dōu hěn xǐhuan shàng tā de kè.",
+          "vi": "Thầy Vương dạy rất thú vị, thầy thường kể cho chúng tôi nghe chuyện thầy du học ở nước ngoài hồi trẻ. Tuy bài tập của thầy hơi nhiều, nhưng các bạn đều rất thích giờ học của thầy.",
+          "questions": [
+            {
+              "text": "关于王老师，可以知道：",
+              "pinyin": "Guānyú Wáng lǎoshī, kěyǐ zhīdào:",
+              "vi": "Về thầy Vương, có thể biết:",
+              "options": [
+                {
+                  "text": "留的作业很少",
+                  "pinyin": "liú de zuòyè hěn shǎo",
+                  "vi": "giao rất ít bài tập"
+                },
+                {
+                  "text": "在国外读过书",
+                  "pinyin": "zài guówài dúguo shū",
+                  "vi": "từng học ở nước ngoài"
+                },
+                {
+                  "text": "不爱讲故事",
+                  "pinyin": "bú ài jiǎng gùshi",
+                  "vi": "không thích kể chuyện"
+                },
+                {
+                  "text": "刚开始当老师",
+                  "pinyin": "gāng kāishǐ dāng lǎoshī",
+                  "vi": "mới bắt đầu làm giáo viên"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "在国外留学"
+              ],
+              "explain": "Thầy kể chuyện 年轻时在国外留学 → từng học ở nước ngoài (B, nói khác đi). A ngược với 作业有点儿多; C ngược với 常常…讲…故事. D bài không nhắc tới."
+            }
+          ]
+        },
+        {
+          "id": "p3-006",
+          "type": "detail",
+          "text": "这家超市每天晚上八点以后，面包和蛋糕都打五折。所以很多人喜欢下班以后再来买，又新鲜又便宜。",
+          "pinyin": "Zhè jiā chāoshì měitiān wǎnshang bā diǎn yǐhòu, miànbāo hé dàngāo dōu dǎ wǔ zhé. Suǒyǐ hěn duō rén xǐhuan xiàbān yǐhòu zài lái mǎi, yòu xīnxiān yòu piányi.",
+          "vi": "Siêu thị này mỗi tối sau tám giờ, bánh mì và bánh ngọt đều giảm năm mươi phần trăm. Vì vậy nhiều người thích tan làm rồi mới đến mua, vừa tươi vừa rẻ.",
+          "questions": [
+            {
+              "text": "为什么很多人晚上来买面包？",
+              "pinyin": "Wèishénme hěn duō rén wǎnshang lái mǎi miànbāo?",
+              "vi": "Vì sao nhiều người đến mua bánh mì vào buổi tối?",
+              "options": [
+                {
+                  "text": "晚上的面包更新鲜",
+                  "pinyin": "wǎnshang de miànbāo gèng xīnxiān",
+                  "vi": "bánh mì buổi tối tươi hơn"
+                },
+                {
+                  "text": "晚上人比较少",
+                  "pinyin": "wǎnshang rén bǐjiào shǎo",
+                  "vi": "buổi tối ít người hơn"
+                },
+                {
+                  "text": "晚上价格便宜一半",
+                  "pinyin": "wǎnshang jiàgé piányi yíbàn",
+                  "vi": "buổi tối giá rẻ một nửa"
+                },
+                {
+                  "text": "白天超市不开门",
+                  "pinyin": "báitiān chāoshì bù kāimén",
+                  "vi": "ban ngày siêu thị không mở cửa"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "面包和蛋糕都打五折"
+              ],
+              "explain": "打五折 = giảm 50%, tức rẻ một nửa (C). A là bẫy: bài có chữ 新鲜 nhưng không nói bánh buổi tối tươi hơn. B, D bài không nhắc tới."
+            }
+          ]
+        },
+        {
+          "id": "p3-007",
+          "type": "detail",
+          "text": "我们公司下个月要招聘两名翻译，要求大学毕业，汉语和英语都说得很流利，而且至少要有两年的工作经验。",
+          "pinyin": "Wǒmen gōngsī xià ge yuè yào zhāopìn liǎng míng fānyì, yāoqiú dàxué bìyè, Hànyǔ hé Yīngyǔ dōu shuō de hěn liúlì, érqiě zhìshǎo yào yǒu liǎng nián de gōngzuò jīngyàn.",
+          "vi": "Tháng sau công ty chúng tôi sẽ tuyển hai phiên dịch, yêu cầu tốt nghiệp đại học, nói tiếng Trung và tiếng Anh đều lưu loát, hơn nữa phải có ít nhất hai năm kinh nghiệm làm việc.",
+          "questions": [
+            {
+              "text": "这份工作有什么要求？",
+              "pinyin": "Zhè fèn gōngzuò yǒu shénme yāoqiú?",
+              "vi": "Công việc này có yêu cầu gì?",
+              "options": [
+                {
+                  "text": "会说三种语言",
+                  "pinyin": "huì shuō sān zhǒng yǔyán",
+                  "vi": "nói được ba thứ tiếng"
+                },
+                {
+                  "text": "刚毕业也可以",
+                  "pinyin": "gāng bìyè yě kěyǐ",
+                  "vi": "mới tốt nghiệp cũng được"
+                },
+                {
+                  "text": "只要会说英语",
+                  "pinyin": "zhǐyào huì shuō Yīngyǔ",
+                  "vi": "chỉ cần biết nói tiếng Anh"
+                },
+                {
+                  "text": "工作过两年以上",
+                  "pinyin": "gōngzuòguo liǎng nián yǐshàng",
+                  "vi": "đã đi làm từ hai năm trở lên"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "至少要有两年的工作经验"
+              ],
+              "explain": "至少要有两年的工作经验 → đã đi làm hai năm trở lên (D). B mâu thuẫn với yêu cầu kinh nghiệm. C sai vì cần cả tiếng Trung. A: bài chỉ nói hai thứ tiếng."
+            }
+          ]
+        },
+        {
+          "id": "p3-008",
+          "type": "detail",
+          "text": "弟弟以前特别不喜欢吃西红柿。后来妈妈想了一个办法，把西红柿做成各种好看的样子。现在他每天都吃得很开心。",
+          "pinyin": "Dìdi yǐqián tèbié bù xǐhuan chī xīhóngshì. Hòulái māma xiǎngle yí ge bànfǎ, bǎ xīhóngshì zuòchéng gè zhǒng hǎokàn de yàngzi. Xiànzài tā měitiān dōu chī de hěn kāixīn.",
+          "vi": "Trước đây em trai cực kỳ ghét ăn cà chua. Sau đó mẹ nghĩ ra một cách, làm cà chua thành đủ kiểu hình dáng đẹp mắt. Bây giờ ngày nào em cũng ăn rất vui vẻ.",
+          "questions": [
+            {
+              "text": "弟弟现在怎么样？",
+              "pinyin": "Dìdi xiànzài zěnmeyàng?",
+              "vi": "Em trai bây giờ thế nào?",
+              "options": [
+                {
+                  "text": "愿意吃西红柿了",
+                  "pinyin": "yuànyì chī xīhóngshì le",
+                  "vi": "đã chịu ăn cà chua"
+                },
+                {
+                  "text": "还是不爱吃西红柿",
+                  "pinyin": "háishi bú ài chī xīhóngshì",
+                  "vi": "vẫn không thích ăn cà chua"
+                },
+                {
+                  "text": "会自己做饭了",
+                  "pinyin": "huì zìjǐ zuòfàn le",
+                  "vi": "đã biết tự nấu ăn"
+                },
+                {
+                  "text": "喜欢看妈妈做饭",
+                  "pinyin": "xǐhuan kàn māma zuòfàn",
+                  "vi": "thích xem mẹ nấu ăn"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "现在他每天都吃得很开心"
+              ],
+              "explain": "现在他每天都吃得很开心 → bây giờ em đã chịu ăn cà chua (A). B là chuyện 以前 (trước đây). C, D bài không nói; người làm món ăn là mẹ."
+            }
+          ]
+        },
+        {
+          "id": "p3-009",
+          "type": "detail",
+          "text": "打乒乓球是我爸爸最大的爱好。他年轻的时候参加过很多比赛，还得过第一名。现在虽然年纪大了，他还是每个星期去打两次。",
+          "pinyin": "Dǎ pīngpāngqiú shì wǒ bàba zuì dà de àihào. Tā niánqīng de shíhou cānjiāguo hěn duō bǐsài, hái déguo dì-yī míng. Xiànzài suīrán niánjì dà le, tā háishi měi ge xīngqī qù dǎ liǎng cì.",
+          "vi": "Chơi bóng bàn là sở thích lớn nhất của bố tôi. Hồi trẻ bố từng tham gia nhiều cuộc thi, còn từng giành giải nhất. Bây giờ tuy đã lớn tuổi, bố vẫn đi chơi mỗi tuần hai lần.",
+          "questions": [
+            {
+              "text": "关于爸爸，可以知道：",
+              "pinyin": "Guānyú bàba, kěyǐ zhīdào:",
+              "vi": "Về bố, có thể biết:",
+              "options": [
+                {
+                  "text": "现在不打球了",
+                  "pinyin": "xiànzài bù dǎ qiú le",
+                  "vi": "bây giờ không chơi bóng nữa"
+                },
+                {
+                  "text": "以前拿过第一名",
+                  "pinyin": "yǐqián náguo dì-yī míng",
+                  "vi": "trước đây từng đạt hạng nhất"
+                },
+                {
+                  "text": "每天都去打球",
+                  "pinyin": "měitiān dōu qù dǎ qiú",
+                  "vi": "ngày nào cũng đi chơi bóng"
+                },
+                {
+                  "text": "年轻时不爱运动",
+                  "pinyin": "niánqīng shí bú ài yùndòng",
+                  "vi": "hồi trẻ không thích vận động"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "还得过第一名"
+              ],
+              "explain": "年轻的时候…还得过第一名 → trước đây từng đạt hạng nhất (B). C là bẫy: bố chơi 每个星期两次 (mỗi tuần hai lần), không phải mỗi ngày. A, D ngược với bài."
+            }
+          ]
+        },
+        {
+          "id": "p3-010",
+          "type": "detail",
+          "text": "现在很多人习惯用手机看新闻，很少买报纸了。我爷爷却不一样，他每天早上还是要去楼下买一份报纸，一边喝茶一边看。",
+          "pinyin": "Xiànzài hěn duō rén xíguàn yòng shǒujī kàn xīnwén, hěn shǎo mǎi bàozhǐ le. Wǒ yéye què bù yíyàng, tā měitiān zǎoshang háishi yào qù lóuxià mǎi yí fèn bàozhǐ, yìbiān hē chá yìbiān kàn.",
+          "vi": "Bây giờ nhiều người quen đọc tin tức bằng điện thoại, rất ít mua báo nữa. Ông nội tôi lại khác, sáng nào ông cũng vẫn xuống dưới nhà mua một tờ báo, vừa uống trà vừa đọc.",
+          "questions": [
+            {
+              "text": "爷爷每天早上做什么？",
+              "pinyin": "Yéye měitiān zǎoshang zuò shénme?",
+              "vi": "Mỗi sáng ông nội làm gì?",
+              "options": [
+                {
+                  "text": "用手机看新闻",
+                  "pinyin": "yòng shǒujī kàn xīnwén",
+                  "vi": "đọc tin tức bằng điện thoại"
+                },
+                {
+                  "text": "去楼下散步",
+                  "pinyin": "qù lóuxià sànbù",
+                  "vi": "xuống dưới nhà đi dạo"
+                },
+                {
+                  "text": "买报纸看",
+                  "pinyin": "mǎi bàozhǐ kàn",
+                  "vi": "mua báo về đọc"
+                },
+                {
+                  "text": "跟朋友聊天",
+                  "pinyin": "gēn péngyou liáotiān",
+                  "vi": "trò chuyện với bạn bè"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "他每天早上还是要去楼下买一份报纸"
+              ],
+              "explain": "Ông 每天早上…去楼下买一份报纸 rồi đọc (C). A là thói quen của 很多人, còn ông 却不一样 (lại khác). B dùng lại chữ 去楼下 nhưng ông xuống dưới nhà để mua báo, không phải đi dạo."
+            }
+          ]
+        },
+        {
+          "id": "p3-011",
+          "type": "detail",
+          "text": "明天的会议改到下午三点开始，地点也从三楼换到了五楼的大会议室。请大家互相通知一下，不要走错了。",
+          "pinyin": "Míngtiān de huìyì gǎi dào xiàwǔ sān diǎn kāishǐ, dìdiǎn yě cóng sān lóu huàn dàole wǔ lóu de dà huìyìshì. Qǐng dàjiā hùxiāng tōngzhī yíxià, bú yào zǒucuò le.",
+          "vi": "Cuộc họp ngày mai đổi sang bắt đầu lúc ba giờ chiều, địa điểm cũng đổi từ tầng ba sang phòng họp lớn ở tầng năm. Mọi người báo cho nhau một tiếng, đừng đi nhầm chỗ.",
+          "questions": [
+            {
+              "text": "明天的会议在哪儿开？",
+              "pinyin": "Míngtiān de huìyì zài nǎr kāi?",
+              "vi": "Cuộc họp ngày mai họp ở đâu?",
+              "options": [
+                {
+                  "text": "三楼",
+                  "pinyin": "sān lóu",
+                  "vi": "tầng ba"
+                },
+                {
+                  "text": "四楼",
+                  "pinyin": "sì lóu",
+                  "vi": "tầng bốn"
+                },
+                {
+                  "text": "二楼",
+                  "pinyin": "èr lóu",
+                  "vi": "tầng hai"
+                },
+                {
+                  "text": "五楼",
+                  "pinyin": "wǔ lóu",
+                  "vi": "tầng năm"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "换到了五楼的大会议室"
+              ],
+              "explain": "从三楼换到了五楼 → giờ họp ở tầng năm (D). A là bẫy: tầng ba là địa điểm cũ. B, C bài không nhắc tới."
+            }
+          ]
+        },
+        {
+          "id": "p3-012",
+          "type": "detail",
+          "text": "小张在网上买了一件衬衫，收到以后发现颜色跟照片上的不一样。他马上联系了商店，商店同意给他换一件新的。",
+          "pinyin": "Xiǎo Zhāng zài wǎngshang mǎile yí jiàn chènshān, shōudào yǐhòu fāxiàn yánsè gēn zhàopiàn shang de bù yíyàng. Tā mǎshàng liánxìle shāngdiàn, shāngdiàn tóngyì gěi tā huàn yí jiàn xīn de.",
+          "vi": "Tiểu Trương mua một chiếc áo sơ mi trên mạng, nhận hàng xong thì thấy màu không giống trong ảnh. Anh ấy lập tức liên lạc với cửa hàng, cửa hàng đồng ý đổi cho anh một chiếc mới.",
+          "questions": [
+            {
+              "text": "小张为什么联系商店？",
+              "pinyin": "Xiǎo Zhāng wèishénme liánxì shāngdiàn?",
+              "vi": "Vì sao Tiểu Trương liên lạc với cửa hàng?",
+              "options": [
+                {
+                  "text": "衬衫颜色不对",
+                  "pinyin": "chènshān yánsè bú duì",
+                  "vi": "màu áo không đúng"
+                },
+                {
+                  "text": "衬衫太小了",
+                  "pinyin": "chènshān tài xiǎo le",
+                  "vi": "áo quá nhỏ"
+                },
+                {
+                  "text": "没收到衬衫",
+                  "pinyin": "méi shōudào chènshān",
+                  "vi": "không nhận được áo"
+                },
+                {
+                  "text": "想再买一件",
+                  "pinyin": "xiǎng zài mǎi yí jiàn",
+                  "vi": "muốn mua thêm một chiếc"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "颜色跟照片上的不一样"
+              ],
+              "explain": "颜色跟照片上的不一样 → màu áo không đúng (A). C ngược với 收到以后 (sau khi nhận được). B, D bài không nhắc tới."
+            }
+          ]
+        },
+        {
+          "id": "p3-013",
+          "type": "detail",
+          "text": "我和丈夫是在一次聚会上认识的。那天他坐在我旁边，我们聊了很多，发现两个人都喜欢京剧。一年以后，我们就结婚了。",
+          "pinyin": "Wǒ hé zhàngfu shì zài yí cì jùhuì shang rènshi de. Nà tiān tā zuò zài wǒ pángbiān, wǒmen liáole hěn duō, fāxiàn liǎng ge rén dōu xǐhuan jīngjù. Yì nián yǐhòu, wǒmen jiù jiéhūn le.",
+          "vi": "Tôi và chồng quen nhau ở một buổi họp mặt. Hôm đó anh ngồi cạnh tôi, chúng tôi nói chuyện rất nhiều, phát hiện cả hai đều thích Kinh kịch. Một năm sau, chúng tôi kết hôn.",
+          "questions": [
+            {
+              "text": "他们是怎么认识的？",
+              "pinyin": "Tāmen shì zěnme rènshi de?",
+              "vi": "Họ quen nhau như thế nào?",
+              "options": [
+                {
+                  "text": "一起看京剧",
+                  "pinyin": "yìqǐ kàn jīngjù",
+                  "vi": "cùng đi xem Kinh kịch"
+                },
+                {
+                  "text": "参加同一个聚会",
+                  "pinyin": "cānjiā tóng yí ge jùhuì",
+                  "vi": "cùng dự một buổi họp mặt"
+                },
+                {
+                  "text": "朋友介绍的",
+                  "pinyin": "péngyou jièshào de",
+                  "vi": "bạn bè giới thiệu"
+                },
+                {
+                  "text": "在网上聊天",
+                  "pinyin": "zài wǎngshang liáotiān",
+                  "vi": "trò chuyện trên mạng"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "在一次聚会上认识的"
+              ],
+              "explain": "是在一次聚会上认识的 → quen nhau khi cùng dự một buổi họp mặt (B). A là bẫy: thích Kinh kịch là điều họ phát hiện ra khi nói chuyện, không phải nơi gặp nhau. C, D bài không nhắc tới."
+            }
+          ]
+        },
+        {
+          "id": "p3-014",
+          "type": "detail",
+          "text": "这个城市的冬天很冷，最低温度能到零下二十度。不过这里的夏天很凉快，所以每年七八月都有很多人来旅游。",
+          "pinyin": "Zhège chéngshì de dōngtiān hěn lěng, zuì dī wēndù néng dào líng xià èrshí dù. Búguò zhèlǐ de xiàtiān hěn liángkuai, suǒyǐ měi nián qī-bā yuè dōu yǒu hěn duō rén lái lǚyóu.",
+          "vi": "Mùa đông ở thành phố này rất lạnh, nhiệt độ thấp nhất có thể xuống âm hai mươi độ. Nhưng mùa hè ở đây rất mát mẻ, vì vậy tháng bảy, tháng tám hằng năm có rất nhiều người đến du lịch.",
+          "questions": [
+            {
+              "text": "人们一般什么时候来这里旅游？",
+              "pinyin": "Rénmen yìbān shénme shíhou lái zhèlǐ lǚyóu?",
+              "vi": "Mọi người thường đến đây du lịch vào lúc nào?",
+              "options": [
+                {
+                  "text": "冬天",
+                  "pinyin": "dōngtiān",
+                  "vi": "mùa đông"
+                },
+                {
+                  "text": "春天",
+                  "pinyin": "chūntiān",
+                  "vi": "mùa xuân"
+                },
+                {
+                  "text": "夏天",
+                  "pinyin": "xiàtiān",
+                  "vi": "mùa hè"
+                },
+                {
+                  "text": "秋天",
+                  "pinyin": "qiūtiān",
+                  "vi": "mùa thu"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "每年七八月都有很多人来旅游"
+              ],
+              "explain": "七八月 (tháng bảy, tháng tám) là mùa hè, và bài nói mùa hè ở đây mát → mọi người đến vào mùa hè (C). A là bẫy: bài có nhắc mùa đông nhưng để nói trời rất lạnh."
+            }
+          ]
+        },
+        {
+          "id": "p3-015",
+          "type": "detail",
+          "text": "李阿姨今年六十岁了，最近报名参加了一个跳舞班。虽然她以前从来没跳过舞，但是她学得很认真，现在已经能上台表演了。",
+          "pinyin": "Lǐ āyí jīnnián liùshí suì le, zuìjìn bàomíng cānjiāle yí ge tiàowǔ bān. Suīrán tā yǐqián cónglái méi tiàoguo wǔ, dànshì tā xué de hěn rènzhēn, xiànzài yǐjīng néng shàng tái biǎoyǎn le.",
+          "vi": "Bác Lý năm nay sáu mươi tuổi, gần đây đăng ký tham gia một lớp múa. Tuy trước đây bác chưa từng nhảy múa, nhưng bác học rất chăm chỉ, bây giờ đã có thể lên sân khấu biểu diễn.",
+          "questions": [
+            {
+              "text": "关于李阿姨，可以知道：",
+              "pinyin": "Guānyú Lǐ āyí, kěyǐ zhīdào:",
+              "vi": "Về bác Lý, có thể biết:",
+              "options": [
+                {
+                  "text": "以前教过跳舞",
+                  "pinyin": "yǐqián jiāoguo tiàowǔ",
+                  "vi": "trước đây từng dạy múa"
+                },
+                {
+                  "text": "学得很马虎",
+                  "pinyin": "xué de hěn mǎhu",
+                  "vi": "học rất qua loa"
+                },
+                {
+                  "text": "不敢上台表演",
+                  "pinyin": "bù gǎn shàng tái biǎoyǎn",
+                  "vi": "không dám lên sân khấu"
+                },
+                {
+                  "text": "现在跳得不错了",
+                  "pinyin": "xiànzài tiào de búcuò le",
+                  "vi": "bây giờ đã múa khá rồi"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "现在已经能上台表演了"
+              ],
+              "explain": "现在已经能上台表演了 → bây giờ bác đã múa khá (D). A ngược với 从来没跳过舞; B ngược với 学得很认真; C ngược với 能上台表演."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
