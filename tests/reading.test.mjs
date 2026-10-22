@@ -267,3 +267,79 @@ test('fillKeyAction() swallows Enter and Space on a focused word or blank button
   assert.equal(k('c', false), 'word:2');
   assert.equal(k('Enter', true, true), 'next');
 });
+
+// Part 2 (排列顺序)
+const orderQ = (id, type = 'pair', over = {}) => ({
+  id,
+  type,
+  sentences: [
+    { text: '所以我们全家经常开车过去吃。', pinyin: 'Suǒyǐ wǒmen quán jiā jīngcháng kāichē guòqu chī.', vi: 'nên cả nhà tôi hay lái xe đến ăn.' },
+    { text: '虽然这家饭馆离我家有点儿远，', pinyin: 'Suīrán zhè jiā fànguǎn lí wǒ jiā yǒudiǎnr yuǎn,', vi: 'Tuy quán này hơi xa nhà tôi,' },
+    { text: '但是菜做得特别好吃，价格也不贵，', pinyin: 'dànshì cài zuò de tèbié hǎochī, jiàgé yě bú guì,', vi: 'nhưng món rất ngon, giá cũng không đắt,' },
+  ],
+  answer: 'BCA',
+  clues: ['虽然', '但是', '所以'],
+  explain: { first: 'B có 虽然.', next: 'C có 但是.', last: 'A có 所以.' },
+  ...over,
+});
+
+const dataWithOrder = (questions) => ({
+  parts: [
+    {
+      id: 'p2',
+      format: 'order',
+      name: '排列顺序',
+      label: 'Sắp xếp câu',
+      desc: 'x',
+      mixCount: 10,
+      tips: { intro: '', sections: [] },
+      types: ['pair', 'ref', 'time', 'topic'].map((id) => ({ id, icon: '🔗', name: id, desc: 'x', tip: '' })),
+      questions,
+    },
+  ],
+});
+const orderError = (over) => errorFor(dataWithOrder([orderQ('p2-001', 'pair', over)]), 'p2-001');
+
+test('validateReading() accepts valid order questions', () => {
+  assert.deepEqual(validateReading(dataWithOrder([orderQ('p2-001')])), []);
+  const other = orderQ('p2-002', 'pair', { answer: 'CBA', sentences: [orderQ('x').sentences[0], orderQ('x').sentences[2], orderQ('x').sentences[1]] });
+  assert.deepEqual(validateReading(dataWithOrder([orderQ('p2-001'), other])), []);
+});
+
+test('validateReading() reports 2 or 4 sentences and a sentence without pinyin', () => {
+  const s = orderQ('x').sentences;
+  assert.ok(orderError({ sentences: s.slice(0, 2) }));
+  assert.ok(orderError({ sentences: [...s, s[0]] }));
+  assert.ok(orderError({ sentences: [s[0], { ...s[1], pinyin: '' }, s[2]] }));
+});
+
+test('validateReading() reports an answer that is ABC or not an order of A, B, C', () => {
+  for (const answer of ['ABC', 'ABD', 'AAB', 'BC', 'bca']) assert.ok(orderError({ answer }), answer);
+});
+
+test('validateReading() reports empty clues, a clue not in the sentences and a missing explain step', () => {
+  assert.ok(orderError({ clues: [] }));
+  assert.ok(orderError({ clues: ['虽然', '因为'] }));
+  assert.ok(orderError({ explain: { first: 'x', next: 'y' } }));
+});
+
+test('validateReading() reports a paragraph that does not end with 。！？', () => {
+  const s = orderQ('x').sentences;
+  assert.ok(orderError({ sentences: [{ ...s[0], text: '所以我们全家经常开车过去吃，' }, s[1], s[2]] }));
+});
+
+test('validateReading() reports a bad order id or type', () => {
+  assert.ok(errorFor(dataWithOrder([orderQ('p2-1')]), 'p2-1'));
+  assert.ok(orderError({ type: 'nope' }));
+});
+
+test('validateReading() reports order questions of one type that all share the same answer', () => {
+  const e = validateReading(dataWithOrder([orderQ('p2-001'), orderQ('p2-002')]));
+  assert.ok(e.some((m) => m.includes('pair')));
+});
+
+test('unitsOf() returns the questions of an order part', () => {
+  const part = dataWithOrder([orderQ('p2-001'), orderQ('p2-002', 'ref')]).parts[0];
+  assert.deepEqual(unitsOf(part).map((q) => q.id), ['p2-001', 'p2-002']);
+  assert.deepEqual(unitsOf(part, 'ref').map((q) => q.id), ['p2-002']);
+});

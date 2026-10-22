@@ -17,9 +17,9 @@ export const readKey = (id) => 'r:' + id;
 const BLANK = '___';
 export const LETTERS6 = ['A', 'B', 'C', 'D', 'E', 'F'];
 
-// What a run steps through: the sets of a fill part.
+// What a run steps through: the sets of a fill part, the questions of an order part.
 export function unitsOf(part, typeId) {
-  const all = part.sets || [];
+  const all = part.sets || part.questions || [];
   return typeId ? all.filter((u) => u.type === typeId) : all;
 }
 
@@ -110,7 +110,7 @@ export function saveShowPinyin(b) {
   }
 }
 
-const FORMATS = ['fill'];
+const FORMATS = ['fill', 'order'];
 const isText = (s) => typeof s === 'string' && s.trim() !== '';
 const blanks = (s) => (typeof s === 'string' ? s.split(BLANK).length - 1 : 0);
 const isWordIndex = (a) => Number.isInteger(a) && a >= 0 && a < 6;
@@ -154,6 +154,31 @@ function checkFill(set, at, errors, isDialogue) {
   return answers.join(',');
 }
 
+const ORDERS = ['ACB', 'BAC', 'BCA', 'CAB', 'CBA'];
+
+// Checks one order question; returns its answer for the per-type check.
+function checkOrder(q, at, errors) {
+  const ss = q.sentences;
+  if (!Array.isArray(ss) || ss.length !== 3) errors.push(`${at}: sentences phải có đúng 3 câu`);
+  else {
+    ss.forEach((x, i) => {
+      for (const f of ['text', 'pinyin', 'vi']) if (!x || !isText(x[f])) errors.push(`${at}: sentences[${i}] thiếu ${f}`);
+    });
+  }
+  const okAnswer = ORDERS.includes(q.answer);
+  if (!okAnswer) errors.push(`${at}: answer phải là một thứ tự của A, B, C khác "ABC"`);
+  if (!Array.isArray(q.clues) || !q.clues.length) errors.push(`${at}: clues phải có ít nhất một manh mối`);
+  else if (Array.isArray(ss)) {
+    for (const c of q.clues) if (!isText(c) || !ss.some((x) => x && String(x.text).includes(c))) errors.push(`${at}: manh mối ${JSON.stringify(c)} không có trong câu nào`);
+  }
+  for (const f of ['first', 'next', 'last']) if (!q.explain || !isText(q.explain[f])) errors.push(`${at}: explain thiếu ${f}`);
+  if (okAnswer && Array.isArray(ss) && ss.length === 3) {
+    const last = ss['ABC'.indexOf(q.answer[2])];
+    if (last && isText(last.text) && !/[。！？]$/.test(last.text)) errors.push(`${at}: câu cuối đoạn phải kết thúc bằng 。！？`);
+  }
+  return q.answer;
+}
+
 // Every problem in the reading data, as readable messages; [] when it is valid.
 export function validateReading(data) {
   if (!data || !Array.isArray(data.parts)) return ['reading.json phải có mảng parts'];
@@ -177,10 +202,10 @@ export function validateReading(data) {
       else if (seen.has(u.id)) errors.push(`id trùng: ${u.id}`);
       seen.add(u.id);
       if (!typeIds.includes(u.type)) errors.push(`${at}: type ${JSON.stringify(u.type)} không có trong types`);
-      (byType[u.type] ||= []).push(checkFill(u, at, errors, u.type === 'dialogue'));
+      (byType[u.type] ||= []).push(part.format === 'order' ? checkOrder(u, at, errors) : checkFill(u, at, errors, u.type === 'dialogue'));
     }
     for (const [t, answers] of Object.entries(byType)) {
-      if (answers.length >= 2 && answers.every((a) => a === answers[0])) errors.push(`dạng ${t}: mọi bộ cùng một dãy đáp án`);
+      if (answers.length >= 2 && answers.every((a) => a === answers[0])) errors.push(`dạng ${t}: mọi ${part.format === 'order' ? 'câu' : 'bộ'} cùng một đáp án`);
     }
   }
   return errors;

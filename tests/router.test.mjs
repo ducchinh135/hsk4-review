@@ -153,11 +153,20 @@ test('matchRoute() maps the reading pages', () => {
 });
 
 test('matchRoute() sends unknown reading paths to the Part 1 hub', () => {
-  for (const p of ['/reading/p2', '/reading/p4', '/reading/p1/practice/xyz', '/reading/p1/practice', '/reading/p1/tips/x', '/reading/P1', '/reading/p1/review/1', '/reading/x/y/z']) {
+  for (const p of ['/reading/p3', '/reading/p4', '/reading/p2/practice/sentence', '/reading/p1/practice/xyz', '/reading/p1/practice', '/reading/p1/tips/x', '/reading/P1', '/reading/p1/review/1', '/reading/x/y/z']) {
     assert.deepEqual(matchRoute(p), RHUB, p);
   }
 });
 
 test('every reading page has a title', () => {
   for (const p of ['reading-hub', 'reading-tips', 'reading-practice', 'reading-review']) assert.ok(PAGE_TITLES[p], p);
+});
+
+test('matchRoute() maps the reading Part 2 pages', () => {
+  assert.deepEqual(matchRoute('/reading/p2'), lpage('reading-hub', { part: 'p2' }, '/reading/p2'));
+  assert.deepEqual(matchRoute('/reading/p2/tips'), lpage('reading-tips', { part: 'p2' }, '/reading/p2/tips'));
+  assert.deepEqual(matchRoute('/reading/p2/review'), lpage('reading-review', { part: 'p2' }, '/reading/p2/review'));
+  for (const type of ['pair', 'ref', 'time', 'topic', 'mix']) {
+    assert.deepEqual(matchRoute('/reading/p2/practice/' + type), lpage('reading-practice', { part: 'p2', type }, '/reading/p2/practice/' + type));
+  }
 });

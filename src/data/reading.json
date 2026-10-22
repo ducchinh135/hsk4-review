@@ -1623,6 +1623,49 @@
           ]
         }
       ]
+    },
+    {
+      "id": "p2",
+      "format": "order",
+      "name": "排列顺序",
+      "label": "Sắp xếp câu",
+      "desc": "Sắp xếp ba câu thành một đoạn văn hợp lý.",
+      "mixCount": 10,
+      "tips": {
+        "intro": "",
+        "sections": []
+      },
+      "types": [
+        {
+          "id": "pair",
+          "icon": "🔗",
+          "name": "Từ nối thành cặp",
+          "desc": "Ghép các cặp liên từ như 虽然…但是, 因为…所以, 不但…而且.",
+          "tip": ""
+        },
+        {
+          "id": "ref",
+          "icon": "👉",
+          "name": "Đại từ, từ chỉ",
+          "desc": "Câu có 他/她/这/那 phải đứng sau câu nêu người hoặc việc đó.",
+          "tip": ""
+        },
+        {
+          "id": "time",
+          "icon": "⏱",
+          "name": "Trình tự thời gian",
+          "desc": "Sắp theo thứ tự việc xảy ra: 先…然后…最后, 刚…就, 后来.",
+          "tip": ""
+        },
+        {
+          "id": "topic",
+          "icon": "💡",
+          "name": "Chủ đề → giải thích",
+          "desc": "Câu nêu chủ đề hay nhận xét đứng trước, câu giải thích hoặc ví dụ theo sau.",
+          "tip": ""
+        }
+      ],
+      "questions": []
     }
   ]
 }
