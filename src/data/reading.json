@@ -4948,6 +4948,624 @@
               "explain": "Đọc nhiều lần, lần nào cũng có suy nghĩ mới, còn mua tặng bạn bè → người nói thấy sách rất đáng đọc (D). C ngược với 看了好几遍. A, B bài không nói; mua nhiều cuốn là để tặng chứ không phải vì rẻ."
             }
           ]
+        },
+        {
+          "id": "p3-046",
+          "type": "word",
+          "text": "明天上午就要考试了，可是书里很多内容我还没复习。看来今天晚上又得开夜车了，希望明天早上别起晚。",
+          "pinyin": "Míngtiān shàngwǔ jiù yào kǎoshì le, kěshì shū li hěn duō nèiróng wǒ hái méi fùxí. Kànlái jīntiān wǎnshang yòu děi kāi yèchē le, xīwàng míngtiān zǎoshang bié qǐ wǎn.",
+          "vi": "Sáng mai là thi rồi, mà nhiều nội dung trong sách tôi còn chưa ôn. Xem ra tối nay lại phải thức khuya rồi, mong là sáng mai đừng dậy muộn.",
+          "questions": [
+            {
+              "text": "“开夜车”的意思是：",
+              "pinyin": "“开夜车” de yìsi shì:",
+              "vi": "“开夜车” có nghĩa là:",
+              "options": [
+                {
+                  "text": "晚上开车出去",
+                  "pinyin": "wǎnshang kāichē chūqu",
+                  "vi": "buổi tối lái xe ra ngoài"
+                },
+                {
+                  "text": "晚上很晚不睡觉学习",
+                  "pinyin": "wǎnshang hěn wǎn bú shuìjiào xuéxí",
+                  "vi": "thức khuya để học"
+                },
+                {
+                  "text": "坐晚上的火车",
+                  "pinyin": "zuò wǎnshang de huǒchē",
+                  "vi": "đi tàu đêm"
+                },
+                {
+                  "text": "晚上去公司工作",
+                  "pinyin": "wǎnshang qù gōngsī gōngzuò",
+                  "vi": "tối đến công ty làm việc"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "很多内容我还没复习"
+              ],
+              "explain": "Mai thi mà nhiều phần 还没复习 → tối nay phải thức khuya để học: 开夜车 nghĩa là thức đêm làm việc/học (B). A, C là bẫy hiểu theo từng chữ (开车, 夜). D sai vì người nói đang ôn thi chứ không đi làm."
+            }
+          ]
+        },
+        {
+          "id": "p3-047",
+          "type": "word",
+          "text": "别看小李才二十岁，做菜还真有两下子。他做的菜，连饭馆的师傅都说好吃，朋友们也常常来他家吃饭。",
+          "pinyin": "Bié kàn Xiǎo Lǐ cái èrshí suì, zuò cài hái zhēn yǒu liǎng xiàzi. Tā zuò de cài, lián fànguǎn de shīfu dōu shuō hǎochī, péngyoumen yě chángcháng lái tā jiā chīfàn.",
+          "vi": "Đừng thấy Tiểu Lý mới hai mươi tuổi, nấu ăn đúng là có nghề đấy. Món cậu ấy nấu, đến đầu bếp nhà hàng cũng khen ngon, bạn bè cũng hay đến nhà cậu ấy ăn cơm.",
+          "questions": [
+            {
+              "text": "“有两下子”的意思是：",
+              "pinyin": "“有两下子” de yìsi shì:",
+              "vi": "“有两下子” có nghĩa là:",
+              "options": [
+                {
+                  "text": "做了两次",
+                  "pinyin": "zuòle liǎng cì",
+                  "vi": "đã làm hai lần"
+                },
+                {
+                  "text": "只会做两个菜",
+                  "pinyin": "zhǐ huì zuò liǎng ge cài",
+                  "vi": "chỉ biết nấu hai món"
+                },
+                {
+                  "text": "做得很不错",
+                  "pinyin": "zuò de hěn búcuò",
+                  "vi": "làm rất giỏi"
+                },
+                {
+                  "text": "动作很快",
+                  "pinyin": "dòngzuò hěn kuài",
+                  "vi": "động tác rất nhanh"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "连饭馆的师傅都说好吃"
+              ],
+              "explain": "Câu sau 连饭馆的师傅都说好吃 cho thấy cậu ấy nấu rất giỏi → 有两下子 = có tài, giỏi (C). A, B là bẫy hiểu theo chữ 两 (hai). D bài không nói tới tốc độ."
+            }
+          ]
+        },
+        {
+          "id": "p3-048",
+          "type": "word",
+          "text": "你看外面的天这么阴，说不定一会儿就要下雨了。你出门的时候最好带上伞，否则到时候下雨了就麻烦了。",
+          "pinyin": "Nǐ kàn wàimian de tiān zhème yīn, shuōbudìng yíhuìr jiù yào xià yǔ le. Nǐ chūmén de shíhou zuìhǎo dàishang sǎn, fǒuzé dào shíhou xià yǔ le jiù máfan le.",
+          "vi": "Cậu xem trời bên ngoài âm u thế này, không chừng lát nữa sẽ mưa. Lúc ra ngoài cậu nên mang theo ô, không thì đến lúc mưa lại phiền.",
+          "questions": [
+            {
+              "text": "“说不定”的意思是：",
+              "pinyin": "“说不定” de yìsi shì:",
+              "vi": "“说不定” có nghĩa là:",
+              "options": [
+                {
+                  "text": "可能",
+                  "pinyin": "kěnéng",
+                  "vi": "có thể, có khi"
+                },
+                {
+                  "text": "不能说",
+                  "pinyin": "bù néng shuō",
+                  "vi": "không được nói"
+                },
+                {
+                  "text": "一定不会",
+                  "pinyin": "yídìng bú huì",
+                  "vi": "chắc chắn không"
+                },
+                {
+                  "text": "说得不对",
+                  "pinyin": "shuō de bú duì",
+                  "vi": "nói không đúng"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "天这么阴",
+                "你出门的时候最好带上伞"
+              ],
+              "explain": "Trời âm u và lời khuyên mang ô cho thấy đây là một khả năng → 说不定 = có thể, không chừng (A). C ngược nghĩa. B, D là bẫy hiểu theo chữ 说 và 不."
+            }
+          ]
+        },
+        {
+          "id": "p3-049",
+          "type": "word",
+          "text": "这份工作每天要工作十二个小时，周末也常常加班。我干了一个月，身体实在吃不消了，打算下个月换一份工作。",
+          "pinyin": "Zhè fèn gōngzuò měitiān yào gōngzuò shí'èr ge xiǎoshí, zhōumò yě chángcháng jiābān. Wǒ gànle yí ge yuè, shēntǐ shízài chī bu xiāo le, dǎsuàn xià ge yuè huàn yí fèn gōngzuò.",
+          "vi": "Công việc này mỗi ngày phải làm mười hai tiếng, cuối tuần cũng hay phải làm thêm. Tôi làm một tháng rồi, cơ thể thật sự không chịu nổi nữa, định tháng sau đổi việc khác.",
+          "questions": [
+            {
+              "text": "“吃不消”的意思是：",
+              "pinyin": "“吃不消” de yìsi shì:",
+              "vi": "“吃不消” có nghĩa là:",
+              "options": [
+                {
+                  "text": "吃不下饭",
+                  "pinyin": "chī bu xià fàn",
+                  "vi": "ăn không vô"
+                },
+                {
+                  "text": "不想吃东西",
+                  "pinyin": "bù xiǎng chī dōngxi",
+                  "vi": "không muốn ăn gì"
+                },
+                {
+                  "text": "工资太少",
+                  "pinyin": "gōngzī tài shǎo",
+                  "vi": "lương quá ít"
+                },
+                {
+                  "text": "受不了",
+                  "pinyin": "shòu bu liǎo",
+                  "vi": "không chịu nổi"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "每天要工作十二个小时"
+              ],
+              "explain": "Làm mười hai tiếng mỗi ngày, cuối tuần cũng làm thêm, nên 身体…吃不消 = cơ thể không chịu nổi (D). A, B là bẫy theo chữ 吃. C bài không nói."
+            }
+          ]
+        },
+        {
+          "id": "p3-050",
+          "type": "word",
+          "text": "他做作业总是马马虎虎的，字写得很乱，还常常算错。老师已经说过他很多次了，可是他到现在也没改。",
+          "pinyin": "Tā zuò zuòyè zǒngshì mǎmahūhū de, zì xiě de hěn luàn, hái chángcháng suàncuò. Lǎoshī yǐjīng shuōguo tā hěn duō cì le, kěshì tā dào xiànzài yě méi gǎi.",
+          "vi": "Cậu ấy làm bài tập lúc nào cũng qua loa, chữ viết rất lộn xộn, còn hay tính sai. Thầy giáo đã nhắc cậu ấy nhiều lần rồi, nhưng đến giờ cậu ấy vẫn chưa sửa.",
+          "questions": [
+            {
+              "text": "“马马虎虎”的意思是：",
+              "pinyin": "“马马虎虎” de yìsi shì:",
+              "vi": "“马马虎虎” có nghĩa là:",
+              "options": [
+                {
+                  "text": "很认真",
+                  "pinyin": "hěn rènzhēn",
+                  "vi": "rất cẩn thận"
+                },
+                {
+                  "text": "很快",
+                  "pinyin": "hěn kuài",
+                  "vi": "rất nhanh"
+                },
+                {
+                  "text": "不认真",
+                  "pinyin": "bú rènzhēn",
+                  "vi": "không cẩn thận"
+                },
+                {
+                  "text": "很慢",
+                  "pinyin": "hěn màn",
+                  "vi": "rất chậm"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "字写得很乱，还常常算错"
+              ],
+              "explain": "Chữ lộn xộn, hay tính sai, bị thầy nhắc nhiều lần → làm bài 马马虎虎 = qua loa, không cẩn thận (C). A ngược nghĩa. B, D bài không nói tới tốc độ."
+            }
+          ]
+        },
+        {
+          "id": "p3-051",
+          "type": "word",
+          "text": "这两件衣服我都很喜欢，可是只能买一件。我站在那儿想了半天，还是拿不定主意，最后只好打电话问我妈妈。",
+          "pinyin": "Zhè liǎng jiàn yīfu wǒ dōu hěn xǐhuan, kěshì zhǐ néng mǎi yí jiàn. Wǒ zhàn zài nàr xiǎngle bàntiān, háishi ná bu dìng zhǔyi, zuìhòu zhǐhǎo dǎ diànhuà wèn wǒ māma.",
+          "vi": "Hai chiếc áo này tôi đều rất thích, nhưng chỉ mua được một chiếc. Tôi đứng đó nghĩ mãi mà vẫn không quyết được, cuối cùng đành gọi điện hỏi mẹ.",
+          "questions": [
+            {
+              "text": "“拿不定主意”的意思是：",
+              "pinyin": "“拿不定主意” de yìsi shì:",
+              "vi": "“拿不定主意” có nghĩa là:",
+              "options": [
+                {
+                  "text": "不知道选哪个",
+                  "pinyin": "bù zhīdào xuǎn nǎge",
+                  "vi": "không biết chọn cái nào"
+                },
+                {
+                  "text": "拿不动衣服",
+                  "pinyin": "ná bu dòng yīfu",
+                  "vi": "không cầm nổi quần áo"
+                },
+                {
+                  "text": "没有带钱",
+                  "pinyin": "méiyǒu dài qián",
+                  "vi": "không mang tiền"
+                },
+                {
+                  "text": "两件都不喜欢",
+                  "pinyin": "liǎng jiàn dōu bù xǐhuan",
+                  "vi": "không thích cả hai"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "可是只能买一件"
+              ],
+              "explain": "Thích cả hai mà chỉ mua được một, nghĩ mãi vẫn 拿不定主意 = không quyết được chọn cái nào (A). B là bẫy theo chữ 拿. D ngược với 都很喜欢."
+            }
+          ]
+        },
+        {
+          "id": "p3-052",
+          "type": "word",
+          "text": "他家里虽然不富，可是他从来不觉得自己比别人差。他最讨厌那些看不起穷人的人，觉得每个人都应该受到尊重。",
+          "pinyin": "Tā jiāli suīrán bú fù, kěshì tā cónglái bù juéde zìjǐ bǐ biérén chà. Tā zuì tǎoyàn nàxiē kàn bu qǐ qióngrén de rén, juéde měi ge rén dōu yīnggāi shòudào zūnzhòng.",
+          "vi": "Nhà anh ấy tuy không giàu, nhưng anh ấy chưa bao giờ thấy mình kém người khác. Anh ấy ghét nhất những người coi thường người nghèo, cho rằng ai cũng đáng được tôn trọng.",
+          "questions": [
+            {
+              "text": "“看不起”的意思是：",
+              "pinyin": "“看不起” de yìsi shì:",
+              "vi": "“看不起” có nghĩa là:",
+              "options": [
+                {
+                  "text": "看不清楚",
+                  "pinyin": "kàn bu qīngchu",
+                  "vi": "nhìn không rõ"
+                },
+                {
+                  "text": "觉得别人比自己差",
+                  "pinyin": "juéde biérén bǐ zìjǐ chà",
+                  "vi": "cho rằng người khác kém mình"
+                },
+                {
+                  "text": "没时间看",
+                  "pinyin": "méi shíjiān kàn",
+                  "vi": "không có thời gian xem"
+                },
+                {
+                  "text": "看不到",
+                  "pinyin": "kàn bu dào",
+                  "vi": "không nhìn thấy"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "不觉得自己比别人差"
+              ],
+              "explain": "Câu trước nói anh ấy không thấy mình 比别人差 (kém người khác); người anh ghét thì ngược lại, coi người nghèo là kém → 看不起 = coi thường (B). A, C, D là bẫy hiểu theo chữ 看."
+            }
+          ]
+        },
+        {
+          "id": "p3-053",
+          "type": "word",
+          "text": "今天早上我起晚了，跑到车站的时候，车正要开。我差点儿没赶上，上车以后才发现自己出了一身汗，现在想起来还有点儿紧张。",
+          "pinyin": "Jīntiān zǎoshang wǒ qǐ wǎn le, pǎo dào chēzhàn de shíhou, chē zhèng yào kāi. Wǒ chàdiǎnr méi gǎnshàng, shàng chē yǐhòu cái fāxiàn zìjǐ chūle yì shēn hàn, xiànzài xiǎng qǐlai hái yǒudiǎnr jǐnzhāng.",
+          "vi": "Sáng nay tôi dậy muộn, chạy đến bến xe thì xe vừa định chạy. Tôi suýt nữa thì không kịp, lên xe rồi mới thấy mình toát cả mồ hôi, giờ nghĩ lại vẫn còn hơi hồi hộp.",
+          "questions": [
+            {
+              "text": "“差点儿没赶上”的意思是：",
+              "pinyin": "“差点儿没赶上” de yìsi shì:",
+              "vi": "“差点儿没赶上” có nghĩa là:",
+              "options": [
+                {
+                  "text": "没坐上车",
+                  "pinyin": "méi zuòshàng chē",
+                  "vi": "không lên được xe"
+                },
+                {
+                  "text": "跑得很慢",
+                  "pinyin": "pǎo de hěn màn",
+                  "vi": "chạy rất chậm"
+                },
+                {
+                  "text": "不想坐车",
+                  "pinyin": "bù xiǎng zuò chē",
+                  "vi": "không muốn đi xe"
+                },
+                {
+                  "text": "最后赶上了",
+                  "pinyin": "zuìhòu gǎnshàng le",
+                  "vi": "cuối cùng vẫn kịp"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "车正要开",
+                "上车以后"
+              ],
+              "explain": "差点儿没… = suýt nữa thì không…, tức là cuối cùng vẫn kịp (D). Xe 正要开 (vừa định chạy) thì người nói đến nơi. A là bẫy hiểu theo chữ 没赶上. B bài không nói, người nói còn chạy đến bến."
+            }
+          ]
+        },
+        {
+          "id": "p3-054",
+          "type": "word",
+          "text": "大家都说那家饭馆的菜很好吃。我昨天去尝了尝，觉得不怎么样，还没有我妈妈做的好吃呢。我以后不会再去了。",
+          "pinyin": "Dàjiā dōu shuō nà jiā fànguǎn de cài hěn hǎochī. Wǒ zuótiān qù chángle cháng, juéde bù zěnmeyàng, hái méiyǒu wǒ māma zuò de hǎochī ne. Wǒ yǐhòu bú huì zài qù le.",
+          "vi": "Ai cũng nói món ở quán đó rất ngon. Hôm qua tôi đến nếm thử, thấy chẳng ra sao, còn không ngon bằng mẹ tôi nấu. Sau này tôi sẽ không đến nữa.",
+          "questions": [
+            {
+              "text": "“不怎么样”的意思是：",
+              "pinyin": "“不怎么样” de yìsi shì:",
+              "vi": "“不怎么样” có nghĩa là:",
+              "options": [
+                {
+                  "text": "很好吃",
+                  "pinyin": "hěn hǎochī",
+                  "vi": "rất ngon"
+                },
+                {
+                  "text": "一般，不太好",
+                  "pinyin": "yìbān, bú tài hǎo",
+                  "vi": "bình thường, không ngon lắm"
+                },
+                {
+                  "text": "太贵了",
+                  "pinyin": "tài guì le",
+                  "vi": "quá đắt"
+                },
+                {
+                  "text": "很特别",
+                  "pinyin": "hěn tèbié",
+                  "vi": "rất đặc biệt"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "还没有我妈妈做的好吃"
+              ],
+              "explain": "Câu sau 还没有我妈妈做的好吃 cho thấy người nói không đánh giá cao → 不怎么样 = chẳng ra sao, bình thường (B). A là ý của 大家, không phải của người nói. C, D bài không nói."
+            }
+          ]
+        },
+        {
+          "id": "p3-055",
+          "type": "word",
+          "text": "爸爸头疼是老毛病了，十几年来，一累就疼。医生让他晚上早点儿睡，别再到半夜才睡，可是他总是不听。",
+          "pinyin": "Bàba tóu téng shì lǎo máobing le, shí jǐ nián lái, yí lèi jiù téng. Yīshēng ràng tā wǎnshang zǎo diǎnr shuì, bié zài dào bànyè cái shuì, kěshì tā zǒngshì bù tīng.",
+          "vi": "Bố bị đau đầu là bệnh cũ rồi, hơn mười năm nay cứ mệt là đau. Bác sĩ bảo bố tối ngủ sớm một chút, đừng thức đến nửa đêm nữa, nhưng bố chẳng bao giờ nghe.",
+          "questions": [
+            {
+              "text": "“老毛病”在这里是什么意思？",
+              "pinyin": "“老毛病” zài zhèlǐ shì shénme yìsi?",
+              "vi": "“老毛病” ở đây có nghĩa là gì?",
+              "options": [
+                {
+                  "text": "老人得的病",
+                  "pinyin": "lǎorén dé de bìng",
+                  "vi": "bệnh người già hay mắc"
+                },
+                {
+                  "text": "很严重的病",
+                  "pinyin": "hěn yánzhòng de bìng",
+                  "vi": "bệnh rất nặng"
+                },
+                {
+                  "text": "很久以前就有的问题",
+                  "pinyin": "hěn jiǔ yǐqián jiù yǒu de wèntí",
+                  "vi": "vấn đề đã có từ lâu"
+                },
+                {
+                  "text": "刚得的病",
+                  "pinyin": "gāng dé de bìng",
+                  "vi": "bệnh mới mắc"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "十几年来，一累就疼"
+              ],
+              "explain": "老毛病 = tật cũ, vấn đề có từ lâu và hay lặp lại (C); 十几年来，一累就疼 cho thấy nó có từ lâu và tái đi tái lại. A là bẫy theo chữ 老. B bài không nói bệnh nặng. D ngược nghĩa."
+            }
+          ]
+        },
+        {
+          "id": "p3-056",
+          "type": "word",
+          "text": "在这个城市，堵车是家常便饭。每天早上和晚上，路上的车都特别多，从我家到公司要一个多小时，大家早就习惯了。",
+          "pinyin": "Zài zhège chéngshì, dǔchē shì jiāchángbiànfàn. Měitiān zǎoshang hé wǎnshang, lùshang de chē dōu tèbié duō, cóng wǒ jiā dào gōngsī yào yí ge duō xiǎoshí, dàjiā zǎo jiù xíguàn le.",
+          "vi": "Ở thành phố này, tắc đường là chuyện cơm bữa. Sáng và tối ngày nào xe trên đường cũng rất đông, từ nhà tôi đến công ty mất hơn một tiếng, mọi người đã quen từ lâu.",
+          "questions": [
+            {
+              "text": "“家常便饭”在这里是什么意思？",
+              "pinyin": "“家常便饭” zài zhèlǐ shì shénme yìsi?",
+              "vi": "“家常便饭” ở đây có nghĩa là gì?",
+              "options": [
+                {
+                  "text": "很平常的事",
+                  "pinyin": "hěn píngcháng de shì",
+                  "vi": "chuyện rất bình thường"
+                },
+                {
+                  "text": "在家吃的饭",
+                  "pinyin": "zài jiā chī de fàn",
+                  "vi": "bữa cơm ăn ở nhà"
+                },
+                {
+                  "text": "很简单的饭菜",
+                  "pinyin": "hěn jiǎndān de fàncài",
+                  "vi": "món ăn rất đơn giản"
+                },
+                {
+                  "text": "让人高兴的事",
+                  "pinyin": "ràng rén gāoxìng de shì",
+                  "vi": "chuyện khiến người ta vui"
+                }
+              ],
+              "answer": 0,
+              "evidence": [
+                "每天早上和晚上，路上的车都特别多",
+                "大家早就习惯了"
+              ],
+              "explain": "Sáng tối ngày nào cũng đông xe, mọi người 早就习惯了 → tắc đường là chuyện thường ngày: 家常便饭 ở đây = chuyện rất bình thường (A). B, C là nghĩa đen (cơm nhà, món đơn giản), không hợp với 堵车. D bài không nói."
+            }
+          ]
+        },
+        {
+          "id": "p3-057",
+          "type": "word",
+          "text": "我到了图书馆才发现今天是星期一，图书馆不开门。我只好又回家了，白跑了一趟。下次出门以前，我一定先查一下它哪天开门。",
+          "pinyin": "Wǒ dàole túshūguǎn cái fāxiàn jīntiān shì xīngqīyī, túshūguǎn bù kāimén. Wǒ zhǐhǎo yòu huí jiā le, bái pǎole yí tàng. Xià cì chūmén yǐqián, wǒ yídìng xiān chá yíxià tā nǎ tiān kāimén.",
+          "vi": "Đến thư viện rồi tôi mới phát hiện hôm nay là thứ Hai, thư viện không mở cửa. Tôi đành quay về nhà, mất công đi một chuyến. Lần sau trước khi ra ngoài, tôi nhất định phải tra trước xem hôm nào mở cửa.",
+          "questions": [
+            {
+              "text": "“白跑了一趟”的意思是：",
+              "pinyin": "“白跑了一趟” de yìsi shì:",
+              "vi": "“白跑了一趟” có nghĩa là:",
+              "options": [
+                {
+                  "text": "是跑步去的",
+                  "pinyin": "shì pǎobù qù de",
+                  "vi": "chạy bộ đến đó"
+                },
+                {
+                  "text": "去了却没办成事",
+                  "pinyin": "qùle què méi bànchéng shì",
+                  "vi": "đi rồi mà không làm được việc"
+                },
+                {
+                  "text": "跑得很快",
+                  "pinyin": "pǎo de hěn kuài",
+                  "vi": "chạy rất nhanh"
+                },
+                {
+                  "text": "去了很多次",
+                  "pinyin": "qùle hěn duō cì",
+                  "vi": "đi rất nhiều lần"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "图书馆不开门"
+              ],
+              "explain": "Thư viện 不开门 nên phải quay về → đi mà không được việc: 白跑一趟 = mất công đi một chuyến (B). A, C là bẫy theo chữ 跑 (chạy). D sai vì 一趟 là một chuyến."
+            }
+          ]
+        },
+        {
+          "id": "p3-058",
+          "type": "word",
+          "text": "我在商店门口等了你半天，打你的电话也没人接，还以为你出什么事了呢。你怎么现在才来？电影都快开始了。",
+          "pinyin": "Wǒ zài shāngdiàn ménkǒu děngle nǐ bàntiān, dǎ nǐ de diànhuà yě méi rén jiē, hái yǐwéi nǐ chū shénme shì le ne. Nǐ zěnme xiànzài cái lái? Diànyǐng dōu kuài kāishǐ le.",
+          "vi": "Tớ đứng đợi cậu trước cửa hàng cả buổi, gọi điện cũng không ai nghe, còn tưởng cậu gặp chuyện gì rồi. Sao bây giờ cậu mới đến? Phim sắp bắt đầu rồi.",
+          "questions": [
+            {
+              "text": "“半天”在这里是什么意思？",
+              "pinyin": "“半天” zài zhèlǐ shì shénme yìsi?",
+              "vi": "“半天” ở đây có nghĩa là gì?",
+              "options": [
+                {
+                  "text": "半个上午",
+                  "pinyin": "bàn ge shàngwǔ",
+                  "vi": "nửa buổi sáng"
+                },
+                {
+                  "text": "十二个小时",
+                  "pinyin": "shí'èr ge xiǎoshí",
+                  "vi": "mười hai tiếng"
+                },
+                {
+                  "text": "一会儿",
+                  "pinyin": "yíhuìr",
+                  "vi": "một lát"
+                },
+                {
+                  "text": "很长时间",
+                  "pinyin": "hěn cháng shíjiān",
+                  "vi": "rất lâu"
+                }
+              ],
+              "answer": 3,
+              "evidence": [
+                "你怎么现在才来"
+              ],
+              "explain": "Đợi lâu đến mức lo bạn gặp chuyện, rồi trách 你怎么现在才来 → 半天 ở đây = rất lâu (D), không phải đúng nửa ngày. A, B là bẫy hiểu theo nghĩa đen; C ngược nghĩa."
+            }
+          ]
+        },
+        {
+          "id": "p3-059",
+          "type": "word",
+          "text": "我和小张约好明天早上八点在学校门口见面，谁也不能迟到。他笑着说：“一言为定！”第二天早上，我们两个人都准时到了。",
+          "pinyin": "Wǒ hé Xiǎo Zhāng yuēhǎo míngtiān zǎoshang bā diǎn zài xuéxiào ménkǒu jiànmiàn, shéi yě bù néng chídào. Tā xiàozhe shuō: “Yìyánwéidìng!” Dì-èr tiān zǎoshang, wǒmen liǎng ge rén dōu zhǔnshí dào le.",
+          "vi": "Tôi và Tiểu Trương hẹn sáng mai tám giờ gặp nhau ở cổng trường, không ai được đến muộn. Cậu ấy cười nói: “Quyết vậy nhé!” Sáng hôm sau, cả hai chúng tôi đều đến đúng giờ.",
+          "questions": [
+            {
+              "text": "“一言为定”的意思是：",
+              "pinyin": "“一言为定” de yìsi shì:",
+              "vi": "“一言为定” có nghĩa là:",
+              "options": [
+                {
+                  "text": "只说一句话",
+                  "pinyin": "zhǐ shuō yí jù huà",
+                  "vi": "chỉ nói một câu"
+                },
+                {
+                  "text": "就这么说好了",
+                  "pinyin": "jiù zhème shuōhǎo le",
+                  "vi": "cứ quyết như vậy nhé"
+                },
+                {
+                  "text": "还没有决定",
+                  "pinyin": "hái méiyǒu juédìng",
+                  "vi": "vẫn chưa quyết định"
+                },
+                {
+                  "text": "不想去了",
+                  "pinyin": "bù xiǎng qù le",
+                  "vi": "không muốn đi nữa"
+                }
+              ],
+              "answer": 1,
+              "evidence": [
+                "约好明天早上八点在学校门口见面"
+              ],
+              "explain": "Hai người đã 约好 (hẹn xong) và Tiểu Trương vui vẻ đồng ý → 一言为定 = đã nói là giữ lời, cứ thế nhé (B). A là bẫy theo chữ 一言 (một lời). C, D ngược với việc đã hẹn và câu cười đồng ý."
+            }
+          ]
+        },
+        {
+          "id": "p3-060",
+          "type": "word",
+          "text": "第一次一个人做饭，我手忙脚乱的，一会儿忘了放盐，一会儿又找不到勺子，最后饭也做得不好吃。原来做饭没有我想的那么容易。",
+          "pinyin": "Dì-yī cì yí ge rén zuòfàn, wǒ shǒumángjiǎoluàn de, yíhuìr wàngle fàng yán, yíhuìr yòu zhǎo bu dào sháozi, zuìhòu fàn yě zuò de bù hǎochī. Yuánlái zuòfàn méiyǒu wǒ xiǎng de nàme róngyì.",
+          "vi": "Lần đầu một mình nấu cơm, tôi luống cuống tay chân, lúc thì quên cho muối, lúc lại không tìm thấy thìa, cuối cùng cơm nấu cũng chẳng ngon. Hoá ra nấu ăn không dễ như tôi nghĩ.",
+          "questions": [
+            {
+              "text": "“手忙脚乱”的意思是：",
+              "pinyin": "“手忙脚乱” de yìsi shì:",
+              "vi": "“手忙脚乱” có nghĩa là:",
+              "options": [
+                {
+                  "text": "手和脚受伤了",
+                  "pinyin": "shǒu hé jiǎo shòushāng le",
+                  "vi": "tay chân bị thương"
+                },
+                {
+                  "text": "做得又快又好",
+                  "pinyin": "zuò de yòu kuài yòu hǎo",
+                  "vi": "làm vừa nhanh vừa tốt"
+                },
+                {
+                  "text": "很着急，不知道先做什么",
+                  "pinyin": "hěn zháojí, bù zhīdào xiān zuò shénme",
+                  "vi": "cuống lên, không biết làm gì trước"
+                },
+                {
+                  "text": "一点儿也不累",
+                  "pinyin": "yìdiǎnr yě bú lèi",
+                  "vi": "chẳng mệt chút nào"
+                }
+              ],
+              "answer": 2,
+              "evidence": [
+                "一会儿忘了放盐，一会儿又找不到勺子"
+              ],
+              "explain": "Lúc quên muối, lúc không tìm thấy thìa → luống cuống, rối lên: 手忙脚乱 (C). A là bẫy theo chữ 手, 脚. B ngược với 做得不好吃."
+            }
+          ]
         }
       ]
     }
