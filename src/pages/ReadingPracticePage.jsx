@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import FillSet from '../components/FillSet.jsx';
+import OrderSentences from '../components/OrderSentences.jsx';
 import { useApp } from '../context/AppContext.jsx';
 import {
   REVIEW_MAX,
@@ -8,30 +9,66 @@ import {
   clearSlot,
   emptyFill,
   fillKeyAction,
+  gradeOrder,
   gradeSet,
   isFull,
   loadShowPinyin,
+  orderKeyAction,
+  orderedSentences,
   partById,
+  pickSentence,
   placeWord,
   readKey,
   reviewUnits,
   saveShowPinyin,
   selectSlot,
+  unitNoun,
   unitsOf,
+  unpickSentence,
 } from '../reading.js';
 import { Link } from '../router.jsx';
 
+const cut = (s, n) => (s.length > n ? s.slice(0, n) + '…' : s);
+
+// What differs between formats: the work on one unit before grading, grading it (a result with
+// `score` out of `max` sentences), the keys and how a unit is named in lists.
+const KITS = {
+  fill: {
+    max: 5,
+    empty: emptyFill,
+    full: isFull,
+    grade: (u, w) => ({ slots: w.slots, ...gradeSet(u, w.slots) }),
+    keyAction: fillKeyAction,
+    progress: 'Bộ',
+    line: (u) => u.words.map((w) => w.text).join('、'),
+  },
+  order: {
+    max: 1,
+    empty: () => [],
+    full: (w) => w.length === 3,
+    grade: (u, w) => {
+      const g = gradeOrder(u, w);
+      return { ...g, score: g.ok ? 1 : 0 };
+    },
+    keyAction: orderKeyAction,
+    progress: 'Câu',
+    line: (u) => cut(orderedSentences(u)[0].text, 20),
+  },
+};
+
 // A practice run over one type of a reading part (scope "type"), a mix of its types ("mix") or every
-// "needs review" set of the part ("review"). Built once on mount; the shell remounts the page
+// "needs review" unit of the part ("review"). Built once on mount; the shell remounts the page
 // (key = viewVersion) when account data changes.
 export default function ReadingPracticePage({ part: partId, scope, type }) {
   const { marks } = useApp();
   const { getMark, setMark, toggleMark } = marks;
   const part = partById(partId);
+  const kit = KITS[part.format];
+  const noun = unitNoun(part);
+  const Noun = noun[0].toUpperCase() + noun.slice(1);
   const hub = '/reading/' + part.id;
   const typeInfo = part.types.find((t) => t.id === type);
   const typeName = (u) => part.types.find((t) => t.id === u.type).name;
-  const setLine = (u) => u.words.map((w) => w.text).join('、');
 
   const build = () =>
     scope === 'review'
@@ -39,7 +76,7 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
       : scope === 'mix'
       ? buildMix(part)
       : buildRun(unitsOf(part, type));
-  const fresh = (units, run) => ({ units, run, index: 0, fills: {}, graded: {}, showDone: false });
+  const fresh = (units, run) => ({ units, run, index: 0, work: {}, graded: {}, showDone: false });
   const [state, setState] = useState(() => fresh(build(), 0));
   const [showPinyin, setShowPinyin] = useState(loadShowPinyin);
   const restart = (units) => setState((s) => fresh(units, s.run + 1));
@@ -50,29 +87,28 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
     setShowPinyin(!showPinyin);
   };
 
-  const { units, run, index, fills, graded, showDone } = state;
+  const { units, run, index, work, graded, showDone } = state;
   const n = units.length;
   const gradedList = Object.values(graded);
   const doneCount = gradedList.length;
   const score = gradedList.reduce((t, g) => t + g.score, 0);
-  const set = units[index];
-  const fill = fills[index] || emptyFill();
+  const unit = units[index];
+  const w = work[index] || kit.empty();
   const done = graded[index] || null;
 
-  const update = (f) => setState((s) => ({ ...s, fills: { ...s.fills, [s.index]: f(s.fills[s.index] || emptyFill()) } }));
-  const place = (w) => !done && update((f) => placeWord(f, w, set));
-  const select = (i) => !done && update((f) => selectSlot(f, i));
+  const update = (f) => !done && setState((s) => ({ ...s, work: { ...s.work, [s.index]: f(s.work[s.index] || kit.empty()) } }));
   const submit = () => {
-    if (done || !isFull(fill)) return;
-    const g = { slots: fill.slots, ...gradeSet(set, fill.slots) };
-    const key = readKey(set.id);
-    if (g.score < 5 && getMark(key) !== 'r') setMark(key, 'r');
+    if (done || !kit.full(w)) return;
+    const g = kit.grade(unit, w);
+    const key = readKey(unit.id);
+    if (g.score < kit.max && getMark(key) !== 'r') setMark(key, 'r');
     setState((s) => ({ ...s, graded: { ...s.graded, [index]: g } }));
   };
   const next = () => (index + 1 < n ? go(index + 1) : finish());
 
-  // A–F place a word, 1–5 pick a blank, Backspace empties it, Enter submits a full set or moves on
-  // once graded; never while typing in a field. Enter and Space on a focused word or blank button do
+  // Fill: A–F place a word, 1–5 pick a blank, Backspace empties it. Order: A–C place a sentence,
+  // Backspace takes the last one out. Both: Enter submits once complete or moves on once graded;
+  // never while typing in a field. Enter and Space on a focused word, blank or sentence button do
   // not click it again.
   useEffect(() => {
     if (!n || showDone) return undefined;
@@ -88,15 +124,18 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
           : tag === 'BUTTON' || tag === 'A'
           ? 'control'
           : 'other';
-      const action = fillKeyAction({ key: e.key, graded: !!done, full: isFull(fill), target });
+      const action = kit.keyAction({ key: e.key, graded: !!done, full: kit.full(w), target });
       if (!action) return;
       e.preventDefault();
+      const arg = Number(action.split(':')[1]);
       if (action === 'none') return;
       if (action === 'next') next();
-      else if (action === 'submit') submit();
+      else if (action === 'submit' || action === 'check') submit();
       else if (action === 'clear') update(clearSlot);
-      else if (action.startsWith('word:')) place(Number(action.slice(5)));
-      else select(Number(action.slice(5)));
+      else if (action === 'pop') update((p) => p.slice(0, -1));
+      else if (action.startsWith('word:')) update((f) => placeWord(f, arg, unit));
+      else if (action.startsWith('slot:')) update((f) => selectSlot(f, arg));
+      else if (action.startsWith('pick:')) update((p) => pickSentence(p, arg));
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
@@ -104,16 +143,16 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
 
   const summary =
     scope === 'review'
-      ? `Part ${part.id.slice(1)} · 🔁 Ôn câu sai · ${n} bộ`
+      ? `Part ${part.id.slice(1)} · 🔁 Ôn câu sai · ${n} ${noun}`
       : scope === 'mix'
-      ? `Part ${part.id.slice(1)} · 🎯 Luyện tổng hợp · ${n} bộ`
-      : `Part ${part.id.slice(1)} · ${typeInfo.icon} ${typeInfo.name} · ${n} bộ`;
+      ? `Part ${part.id.slice(1)} · 🎯 Luyện tổng hợp · ${n} ${noun}`
+      : `Part ${part.id.slice(1)} · ${typeInfo.icon} ${typeInfo.name} · ${n} ${noun}`;
 
   let body;
   if (!n) {
     body = (
       <div className="fillblank-box quiz-done">
-        <div className="filter-note">{scope === 'review' ? 'Chưa có bộ nào cần ôn. 🎉' : 'Dạng này đang được soạn.'}</div>
+        <div className="filter-note">{scope === 'review' ? `Chưa có ${noun} nào cần ôn. 🎉` : 'Dạng này đang được soạn.'}</div>
         <div className="controls">
           <Link to={hub} className="btn secondary">
             ← Part {part.id.slice(1)}
@@ -122,19 +161,19 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
       </div>
     );
   } else if (showDone) {
-    const wrong = units.map((u, i) => [u, i]).filter(([, i]) => graded[i] && graded[i].score < 5);
+    const wrong = units.map((u, i) => [u, i]).filter(([, i]) => graded[i] && graded[i].score < kit.max);
     body = (
       <div className="fillblank-box quiz-done">
         <h2>
-          Kết quả: {score} / {5 * doneCount} câu (Đã nộp {doneCount} / {n} bộ)
+          Kết quả: {score} / {kit.max * doneCount} câu (Đã làm {doneCount} / {n} {noun})
         </h2>
         {wrong.length ? (
           <div className="quiz-wrong">
-            <div className="quiz-label">Bộ có câu sai</div>
+            <div className="quiz-label">{part.format === 'fill' ? 'Bộ có câu sai' : 'Câu làm sai'}</div>
             {wrong.map(([u, i]) => (
               <div key={u.id} className="quiz-reveal bad">
                 <button type="button" className="link-btn" onClick={() => go(i)}>
-                  {typeName(u)} · {setLine(u)} → {graded[i].score}/5
+                  {typeName(u)} · {kit.line(u)} → {part.format === 'fill' ? `${graded[i].score}/5` : [...u.answer].join(' → ')}
                 </button>
               </div>
             ))}
@@ -142,7 +181,7 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
         ) : doneCount > 0 ? (
           <div className="srs-note">🎉 Không sai câu nào!</div>
         ) : (
-          <div className="filter-note">Bạn chưa nộp bộ nào.</div>
+          <div className="filter-note">Bạn chưa làm {noun} nào.</div>
         )}
         {scope === 'review' && (
           <div className="grammar-review-marks">
@@ -150,7 +189,7 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
             {units.map((u) => (
               <div key={u.id} className="grammar-review-row">
                 <span>
-                  {typeName(u)} · {setLine(u)}
+                  {typeName(u)} · {kit.line(u)}
                 </span>
                 <button type="button" className={'mark-btn' + (getMark(readKey(u.id)) === 'k' ? ' active' : '')} data-s="k" onClick={() => toggleMark(readKey(u.id), 'k')}>
                   ✅ Đã nắm
@@ -162,7 +201,7 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
         <div className="controls">
           {wrong.length > 0 && (
             <button className="btn" onClick={() => restart(buildRun(wrong.map(([u]) => u)))}>
-              🔁 Làm lại bộ sai
+              🔁 Làm lại {noun} sai
             </button>
           )}
           <button className="btn" onClick={() => restart(build())}>
@@ -178,26 +217,40 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
     body = (
       <div className="fillblank-box">
         <div className="progress">
-          Bộ {index + 1} / {n} · {typeName(set)}
+          {kit.progress} {index + 1} / {n} · {part.format === 'fill' ? typeName(unit) : 'Sắp xếp ba câu thành đoạn văn'}
         </div>
-        <FillSet
-          key={run + ':' + index}
-          set={set}
-          fill={fill}
-          graded={done}
-          showPinyin={showPinyin}
-          onTogglePinyin={togglePinyin}
-          onSelect={select}
-          onPlace={place}
-          onSubmit={submit}
-        />
+        {part.format === 'fill' ? (
+          <FillSet
+            key={run + ':' + index}
+            set={unit}
+            fill={w}
+            graded={done}
+            showPinyin={showPinyin}
+            onTogglePinyin={togglePinyin}
+            onSelect={(i) => update((f) => selectSlot(f, i))}
+            onPlace={(k) => update((f) => placeWord(f, k, unit))}
+            onSubmit={submit}
+          />
+        ) : (
+          <OrderSentences
+            key={run + ':' + index}
+            q={unit}
+            picked={w}
+            graded={done}
+            showPinyin={showPinyin}
+            onTogglePinyin={togglePinyin}
+            onPick={(k) => update((p) => pickSentence(p, k))}
+            onUnpick={(k) => update((p) => unpickSentence(p, k))}
+            onCheck={submit}
+          />
+        )}
         <div className="controls">
           <button className="btn secondary" onClick={() => go((index - 1 + n) % n)}>
-            ◀ Bộ trước
+            ◀ {Noun} trước
           </button>
           {index + 1 < n ? (
             <button key={'next' + index} className="btn" autoFocus={!!done} onClick={next}>
-              Bộ tiếp ▶
+              {Noun} tiếp ▶
             </button>
           ) : (
             <button key={'done' + index} className="btn" autoFocus={!!done} onClick={next}>
@@ -206,12 +259,12 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
           )}
           {doneCount > 0 && index + 1 < n && (
             <button className="btn secondary" onClick={finish}>
-              🏁 Kết quả ({score}/{5 * doneCount})
+              🏁 Kết quả ({score}/{kit.max * doneCount})
             </button>
           )}
         </div>
         <div className="fb-score">
-          Đã nộp: {doneCount} / {n} bộ · Đúng: {score} câu
+          Đã làm: {doneCount} / {n} {noun} · Đúng: {score} câu
         </div>
       </div>
     );
@@ -229,17 +282,17 @@ export default function ReadingPracticePage({ part: partId, scope, type }) {
       {n > 0 && (
         <div className="question-grid-wrap">
           <div className="question-grid-header">
-            <span className="quiz-label">Danh sách bộ</span>
+            <span className="quiz-label">Danh sách {noun}</span>
             <span className="question-grid-stat">
-              Đã nộp {doneCount}/{n} (Đúng {score} câu)
+              Đã làm {doneCount}/{n} (Đúng {score} câu)
             </span>
           </div>
           <div className="question-grid">
             {units.map((_, i) => {
               const g = graded[i];
-              const cls = 'q-num' + (i === index && !showDone ? ' current' : '') + (g ? (g.score === 5 ? ' correct' : ' wrong') : '');
+              const cls = 'q-num' + (i === index && !showDone ? ' current' : '') + (g ? (g.score === kit.max ? ' correct' : ' wrong') : '');
               return (
-                <button key={i} type="button" className={cls} onClick={() => go(i)} aria-label={`Bộ ${i + 1}`}>
+                <button key={i} type="button" className={cls} onClick={() => go(i)} aria-label={`${Noun} ${i + 1}`}>
                   {i + 1}
                 </button>
               );

@@ -469,3 +469,15 @@ a.exercise-card:hover{ border-color:var(--accent-a,#333); }
 @media (max-width:480px){ .rd-word{ font-size:17px; padding:6px 10px; } .rd-blank{ min-width:64px; } }
 .rd-tip .word-sentence-item .zh, .rd-tip .word-sentence-item .gp-pinyin, .rd-tip .word-sentence-item .vi{ white-space:pre-line; }
 .rd-note{ text-align:center; font-size:13px; font-weight:600; color:#999; margin:-6px 0 8px; }
+
+/* Reading: 排列顺序 questions */
+.rd-slots{ display:flex; flex-direction:column; gap:8px; margin:12px 0; }
+.rd-slot{ display:block; width:100%; text-align:left; border:3px solid var(--accent-a,#ef6b7f); background:var(--accent-bg,#fff0f3); border-radius:14px; padding:10px 14px; font:inherit; font-size:clamp(17px,3.6vw,20px); font-weight:700; color:inherit; cursor:pointer; overflow-wrap:anywhere; }
+.rd-slot.empty{ border:3px dashed #ddd; background:transparent; color:#bbb; cursor:default; font-size:15px; }
+.rd-pool{ display:flex; flex-direction:column; gap:8px; margin:6px 0 4px; }
+.rd-sent{ display:block; width:100%; text-align:left; border:3px solid #ddd; background:#fafafa; border-radius:14px; padding:10px 14px; font:inherit; font-size:clamp(17px,3.6vw,20px); font-weight:700; color:inherit; cursor:pointer; overflow-wrap:anywhere; }
+.rd-letter{ display:inline-block; min-width:24px; opacity:.6; }
+.rd-para{ font-size:clamp(18px,3.8vw,22px); line-height:1.9; margin:12px 0; overflow-wrap:anywhere; }
+.rd-clue{ background:#ffe8a3; color:inherit; border-radius:4px; padding:0 2px; font-weight:800; }
+.rd-sent-explain{ margin-bottom:6px; }
+.rd-sent-explain .py{ margin-left:4px; }
