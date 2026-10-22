@@ -1632,8 +1632,69 @@
       "desc": "Sắp xếp ba câu thành một đoạn văn hợp lý.",
       "mixCount": 10,
       "tips": {
-        "intro": "",
-        "sections": []
+        "intro": "Phần 2 của đề đọc HSK 4 gồm 10 câu (câu 56–65). Mỗi câu cho ba câu A, B, C bị xáo trộn; bạn xếp chúng thành một đoạn văn hợp lý và viết thứ tự, ví dụ BAC. Ba câu luôn ghép được thành một đoạn hoàn chỉnh, và chỉ có một thứ tự đúng.",
+        "sections": [
+          {
+            "title": "Tìm câu không thể đứng đầu",
+            "body": "Câu bắt đầu bằng từ nối vế sau (但是, 所以, 而且, 可是, 然后, 也, 还) hoặc bằng đại từ (他, 她, 它, 这, 那, 这样) gần như không bao giờ đứng đầu. Loại được hai câu như vậy là bạn đã biết câu đầu.",
+            "examples": [
+              [
+                "A 所以我决定明天再去。\nB 但是商店今天关门了，\nC 我本来打算今天去买手机，",
+                "A Suǒyǐ wǒ juédìng míngtiān zài qù.\nB Dànshì shāngdiàn jīntiān guānmén le,\nC Wǒ běnlái dǎsuàn jīntiān qù mǎi shǒujī,",
+                "A (所以) và B (但是) đều là vế sau → C đứng đầu: C B A."
+              ]
+            ]
+          },
+          {
+            "title": "Ghép các cặp từ nối",
+            "body": "Nhiều câu có cặp liên từ chia ra hai câu: 虽然…但是/可是, 因为…所以, 不但…而且, 如果/要是…就, 只有…才, 不管…都, 即使…也. Câu có vế đầu của cặp đứng trước câu có vế sau.",
+            "examples": [
+              [
+                "只有多听多说，才能把汉语学好。",
+                "Zhǐyǒu duō tīng duō shuō, cái néng bǎ Hànyǔ xuéhǎo.",
+                "只有 (chỉ có) đứng trước, 才 (mới) đứng sau."
+              ]
+            ]
+          },
+          {
+            "title": "Đại từ phải có người hoặc việc để trỏ về",
+            "body": "他, 她, 这个人, 那里, 这样… chỉ dùng được khi câu trước đã nhắc đến người, nơi chốn hay việc đó. Câu giới thiệu tên người hoặc sự việc thường đứng trước câu có đại từ.",
+            "examples": [
+              [
+                "我认识一位律师，他工作特别认真。",
+                "Wǒ rènshi yí wèi lǜshī, tā gōngzuò tèbié rènzhēn.",
+                "Câu nêu 一位律师 phải đứng trước câu có 他."
+              ]
+            ]
+          },
+          {
+            "title": "Theo dõi trình tự thời gian",
+            "body": "Các từ 先, 然后, 接着, 最后, 刚…就, 以后, 后来, 一开始 cho biết việc nào xảy ra trước. Sắp các câu theo đúng thứ tự việc xảy ra.",
+            "examples": [
+              [
+                "我们先吃饭，然后去看电影，最后坐地铁回家。",
+                "Wǒmen xiān chīfàn, ránhòu qù kàn diànyǐng, zuìhòu zuò dìtiě huí jiā.",
+                "先 → 然后 → 最后."
+              ]
+            ]
+          },
+          {
+            "title": "Chủ đề trước, giải thích sau",
+            "body": "Câu nêu nhận xét chung hoặc chủ đề (…有很多好处, …很重要) đứng trước; câu ví dụ (比如, 例如), câu giải thích lý do, hoặc các ý liệt kê (一是…二是…) theo sau.",
+            "examples": [
+              [
+                "这个城市很适合旅游，比如这里的交通很方便。",
+                "Zhège chéngshì hěn shìhé lǚyóu, bǐrú zhèli de jiāotōng hěn fāngbiàn.",
+                "Câu chủ đề (很适合旅游) đứng trước câu ví dụ (比如…)."
+              ]
+            ]
+          },
+          {
+            "title": "Nhìn dấu câu và đọc lại cả đoạn",
+            "body": "Câu kết thúc bằng 。！？ thường là câu cuối; câu kết thúc bằng dấu phẩy chưa xong ý. Xếp xong, đọc lại cả đoạn một lượt xem có trôi chảy không.",
+            "examples": []
+          }
+        ]
       },
       "types": [
         {
@@ -1641,31 +1702,1290 @@
           "icon": "🔗",
           "name": "Từ nối thành cặp",
           "desc": "Ghép các cặp liên từ như 虽然…但是, 因为…所以, 不但…而且.",
-          "tip": ""
+          "tip": "Tìm cặp liên từ bị tách ra hai câu. Câu có vế đầu (虽然, 因为, 不但, 如果, 不管, 只有, 即使) đứng trước câu có vế sau (但是, 所以, 而且, 就, 都, 才, 也). Câu chỉ có vế sau thì không thể đứng đầu."
         },
         {
           "id": "ref",
           "icon": "👉",
           "name": "Đại từ, từ chỉ",
           "desc": "Câu có 他/她/这/那 phải đứng sau câu nêu người hoặc việc đó.",
-          "tip": ""
+          "tip": "Gạch chân đại từ và từ chỉ (他, 她, 它, 这, 那, 这样, 那里). Câu chứa chúng phải đứng sau câu đã nêu rõ người hoặc việc được nhắc tới; câu giới thiệu thường đứng đầu."
         },
         {
           "id": "time",
           "icon": "⏱",
           "name": "Trình tự thời gian",
           "desc": "Sắp theo thứ tự việc xảy ra: 先…然后…最后, 刚…就, 后来.",
-          "tip": ""
+          "tip": "Xếp theo thứ tự việc xảy ra: chú ý 先, 然后, 接着, 最后, 刚…就, 以后, 一开始…后来, và các mốc thời gian (去年, 三年, 现在)."
         },
         {
           "id": "topic",
           "icon": "💡",
           "name": "Chủ đề → giải thích",
           "desc": "Câu nêu chủ đề hay nhận xét đứng trước, câu giải thích hoặc ví dụ theo sau.",
-          "tip": ""
+          "tip": "Câu nêu chủ đề hay nhận xét chung đứng đầu; sau đó là câu ví dụ (比如), câu giải thích, câu liệt kê (一是…二是…) hoặc câu bổ sung (更重要的是, 关键是)."
         }
       ],
-      "questions": []
+      "questions": [
+        {
+          "id": "p2-001",
+          "type": "pair",
+          "sentences": [
+            {
+              "text": "观众们也都按时来了。",
+              "pinyin": "guānzhòngmen yě dōu ànshí lái le.",
+              "vi": "khán giả cũng đều đến đúng giờ."
+            },
+            {
+              "text": "虽然今天下了很大的雨，",
+              "pinyin": "Suīrán jīntiān xiàle hěn dà de yǔ,",
+              "vi": "Tuy hôm nay mưa rất to,"
+            },
+            {
+              "text": "但是比赛并没有推迟，",
+              "pinyin": "dànshì bǐsài bìng méiyǒu tuīchí,",
+              "vi": "nhưng trận đấu không hề bị hoãn,"
+            }
+          ],
+          "answer": "BCA",
+          "clues": [
+            "虽然",
+            "但是",
+            "也"
+          ],
+          "explain": {
+            "first": "B mở đầu bằng 虽然, vế đầu của cặp 虽然…但是. C (但是) và A (也) đều là vế nối tiếp nên không đứng đầu được.",
+            "next": "C có 但是, nối với 虽然 ở B: tuy mưa to nhưng trận đấu không bị hoãn.",
+            "last": "A có 也 (cũng): thêm một việc nữa diễn ra bình thường, khán giả cũng đến đúng giờ. A kết thúc bằng dấu chấm nên đứng cuối."
+          }
+        },
+        {
+          "id": "p2-002",
+          "type": "pair",
+          "sentences": [
+            {
+              "text": "小王都会每天给父母打个电话，",
+              "pinyin": "Xiǎo Wáng dōu huì měitiān gěi fùmǔ dǎ ge diànhuà,",
+              "vi": "Tiểu Vương cũng gọi điện cho bố mẹ mỗi ngày,"
+            },
+            {
+              "text": "问问他们身体怎么样。",
+              "pinyin": "wènwen tāmen shēntǐ zěnmeyàng.",
+              "vi": "hỏi xem sức khoẻ của họ thế nào."
+            },
+            {
+              "text": "不管工作有多忙，",
+              "pinyin": "Bùguǎn gōngzuò yǒu duō máng,",
+              "vi": "Dù công việc bận đến đâu,"
+            }
+          ],
+          "answer": "CAB",
+          "clues": [
+            "不管",
+            "都",
+            "他们"
+          ],
+          "explain": {
+            "first": "C có 不管, vế đầu của cặp 不管…都. A (都) cần 不管 đứng trước; B có 他们 (họ) cần có người được nhắc trước đó.",
+            "next": "A có 都, nối với 不管 ở C: dù bận đến đâu cũng gọi điện mỗi ngày.",
+            "last": "B có 他们, trỏ về 父母 ở A; B nói mục đích của cuộc gọi nên đứng cuối."
+          }
+        },
+        {
+          "id": "p2-003",
+          "type": "pair",
+          "sentences": [
+            {
+              "text": "因为这次考试他准备得很认真，",
+              "pinyin": "Yīnwèi zhè cì kǎoshì tā zhǔnbèi de hěn rènzhēn,",
+              "vi": "Vì kỳ thi này cậu ấy chuẩn bị rất chăm chỉ,"
+            },
+            {
+              "text": "老师还在班上表扬了他。",
+              "pinyin": "lǎoshī hái zài bān shang biǎoyángle tā.",
+              "vi": "thầy giáo còn khen cậu ấy trước lớp."
+            },
+            {
+              "text": "所以成绩比上次提高了不少，",
+              "pinyin": "suǒyǐ chéngjì bǐ shàng cì tígāole bù shǎo,",
+              "vi": "nên điểm cao hơn lần trước khá nhiều,"
+            }
+          ],
+          "answer": "ACB",
+          "clues": [
+            "因为",
+            "所以",
+            "还"
+          ],
+          "explain": {
+            "first": "A có 因为, nêu nguyên nhân, mở đầu cặp 因为…所以. C (所以) là kết quả, B (还) là ý bổ sung, đều không đứng đầu.",
+            "next": "C có 所以: kết quả của việc chuẩn bị chăm chỉ là điểm tăng.",
+            "last": "B có 还 (còn): thêm một kết quả nữa, thầy khen trước lớp; B kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-004",
+          "type": "pair",
+          "sentences": [
+            {
+              "text": "我们就去爬山，",
+              "pinyin": "wǒmen jiù qù páshān,",
+              "vi": "chúng ta sẽ đi leo núi,"
+            },
+            {
+              "text": "如果明天天气好的话，",
+              "pinyin": "Rúguǒ míngtiān tiānqì hǎo dehuà,",
+              "vi": "Nếu ngày mai trời đẹp,"
+            },
+            {
+              "text": "要是下雨，就在家看电影吧。",
+              "pinyin": "yàoshi xià yǔ, jiù zài jiā kàn diànyǐng ba.",
+              "vi": "còn nếu mưa thì ở nhà xem phim nhé."
+            }
+          ],
+          "answer": "BAC",
+          "clues": [
+            "如果",
+            "就",
+            "要是"
+          ],
+          "explain": {
+            "first": "B có 如果 (nếu), vế điều kiện đứng đầu. A bắt đầu bằng 我们就, là vế kết quả của 如果.",
+            "next": "A có 就, nối với 如果 ở B: nếu trời đẹp thì đi leo núi.",
+            "last": "C nêu khả năng ngược lại (要是下雨, nếu mưa) và kết thúc bằng 吧。, nên đứng cuối."
+          }
+        },
+        {
+          "id": "p2-005",
+          "type": "pair",
+          "sentences": [
+            {
+              "text": "所以同学们都很愿意跟他交朋友。",
+              "pinyin": "suǒyǐ tóngxuémen dōu hěn yuànyì gēn tā jiāo péngyou.",
+              "vi": "nên các bạn đều rất muốn kết bạn với cậu ấy."
+            },
+            {
+              "text": "而且很喜欢帮助别人，",
+              "pinyin": "érqiě hěn xǐhuan bāngzhù biérén,",
+              "vi": "mà còn rất thích giúp đỡ người khác,"
+            },
+            {
+              "text": "小李不但学习好，",
+              "pinyin": "Xiǎo Lǐ búdàn xuéxí hǎo,",
+              "vi": "Tiểu Lý không những học giỏi,"
+            }
+          ],
+          "answer": "CBA",
+          "clues": [
+            "不但",
+            "而且",
+            "所以"
+          ],
+          "explain": {
+            "first": "C nêu tên người (小李) và có 不但, vế đầu của cặp 不但…而且. B (而且) và A (所以) đều là vế sau.",
+            "next": "B có 而且, nối với 不但 ở C: không những học giỏi mà còn thích giúp người.",
+            "last": "A có 所以, nêu kết quả của cả hai ưu điểm: các bạn muốn kết bạn với cậu ấy."
+          }
+        },
+        {
+          "id": "p2-006",
+          "type": "ref",
+          "sentences": [
+            {
+              "text": "他是一名医生，工作特别忙，",
+              "pinyin": "tā shì yì míng yīshēng, gōngzuò tèbié máng,",
+              "vi": "anh ấy là bác sĩ, công việc rất bận,"
+            },
+            {
+              "text": "我们一个月只能见一次面。",
+              "pinyin": "wǒmen yí ge yuè zhǐ néng jiàn yí cì miàn.",
+              "vi": "chúng tôi mỗi tháng chỉ gặp nhau được một lần."
+            },
+            {
+              "text": "我有一个好朋友叫王明，",
+              "pinyin": "Wǒ yǒu yí ge hǎo péngyou jiào Wáng Míng,",
+              "vi": "Tôi có một người bạn thân tên là Vương Minh,"
+            }
+          ],
+          "answer": "CAB",
+          "clues": [
+            "他"
+          ],
+          "explain": {
+            "first": "C giới thiệu người bạn tên 王明, nên đứng đầu. A bắt đầu bằng 他, cần có người được nhắc trước.",
+            "next": "A có 他, trỏ về 王明 ở C, nói anh ấy là bác sĩ và rất bận.",
+            "last": "B nêu hệ quả của việc bận: mỗi tháng chỉ gặp một lần. B kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-007",
+          "type": "ref",
+          "sentences": [
+            {
+              "text": "我家附近新开了一家超市，",
+              "pinyin": "Wǒ jiā fùjìn xīn kāile yì jiā chāoshì,",
+              "vi": "Gần nhà tôi mới mở một siêu thị,"
+            },
+            {
+              "text": "所以每天都有很多人去买。",
+              "pinyin": "suǒyǐ měitiān dōu yǒu hěn duō rén qù mǎi.",
+              "vi": "nên ngày nào cũng có rất nhiều người đến mua."
+            },
+            {
+              "text": "那里的水果又新鲜又便宜，",
+              "pinyin": "nàli de shuǐguǒ yòu xīnxiān yòu piányi,",
+              "vi": "hoa quả ở đó vừa tươi vừa rẻ,"
+            }
+          ],
+          "answer": "ACB",
+          "clues": [
+            "那里",
+            "所以"
+          ],
+          "explain": {
+            "first": "A nêu nơi chốn (一家超市) nên đứng đầu. C có 那里 (ở đó) cần trỏ về một nơi đã nhắc; B có 所以 là vế kết quả.",
+            "next": "C có 那里, trỏ về siêu thị ở A: hoa quả ở đó vừa tươi vừa rẻ.",
+            "last": "B có 所以: vì tươi và rẻ nên nhiều người đến mua."
+          }
+        },
+        {
+          "id": "p2-008",
+          "type": "ref",
+          "sentences": [
+            {
+              "text": "我只用了两天就看完了。",
+              "pinyin": "wǒ zhǐ yòngle liǎng tiān jiù kànwán le.",
+              "vi": "tôi chỉ mất hai ngày đã đọc xong."
+            },
+            {
+              "text": "上个星期我买了一本小说，",
+              "pinyin": "Shàng ge xīngqī wǒ mǎile yì běn xiǎoshuō,",
+              "vi": "Tuần trước tôi mua một cuốn tiểu thuyết,"
+            },
+            {
+              "text": "这本书写得非常有意思，",
+              "pinyin": "zhè běn shū xiě de fēicháng yǒu yìsi,",
+              "vi": "cuốn sách này viết rất hay,"
+            }
+          ],
+          "answer": "BCA",
+          "clues": [
+            "这本书"
+          ],
+          "explain": {
+            "first": "B nhắc đến cuốn tiểu thuyết lần đầu (一本小说) nên đứng đầu. C có 这本书 (cuốn sách này) trỏ về cuốn đã nhắc.",
+            "next": "C có 这本书, trỏ về cuốn tiểu thuyết ở B, nhận xét sách rất hay.",
+            "last": "A nêu kết quả: vì hay nên đọc xong trong hai ngày. A kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-009",
+          "type": "ref",
+          "sentences": [
+            {
+              "text": "学生们都很喜欢她。",
+              "pinyin": "xuéshengmen dōu hěn xǐhuan tā.",
+              "vi": "học sinh đều rất quý cô."
+            },
+            {
+              "text": "她对每个学生都非常耐心，",
+              "pinyin": "tā duì měi ge xuésheng dōu fēicháng nàixīn,",
+              "vi": "cô rất kiên nhẫn với từng học sinh,"
+            },
+            {
+              "text": "张老师教了三十年书，",
+              "pinyin": "Zhāng lǎoshī jiāole sānshí nián shū,",
+              "vi": "Cô Trương đã dạy học ba mươi năm,"
+            }
+          ],
+          "answer": "CBA",
+          "clues": [
+            "她"
+          ],
+          "explain": {
+            "first": "C nêu tên người (张老师) nên đứng đầu. B bắt đầu bằng 她, A kết thúc bằng 她, đều cần có người được nhắc trước.",
+            "next": "B có 她, trỏ về 张老师 ở C, kể cô kiên nhẫn với học sinh.",
+            "last": "A là kết quả: vì cô kiên nhẫn nên học sinh quý cô. A kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-010",
+          "type": "ref",
+          "sentences": [
+            {
+              "text": "但是空着肚子这样做对身体不好，",
+              "pinyin": "dànshì kōngzhe dùzi zhèyàng zuò duì shēntǐ bù hǎo,",
+              "vi": "nhưng làm như vậy khi bụng đói thì không tốt cho sức khoẻ,"
+            },
+            {
+              "text": "很多人喜欢早上一起床就喝咖啡，",
+              "pinyin": "Hěn duō rén xǐhuan zǎoshang yì qǐchuáng jiù hē kāfēi,",
+              "vi": "Nhiều người thích vừa ngủ dậy là uống cà phê ngay,"
+            },
+            {
+              "text": "最好先吃点儿东西再喝。",
+              "pinyin": "zuìhǎo xiān chī diǎnr dōngxi zài hē.",
+              "vi": "tốt nhất nên ăn chút gì trước rồi hãy uống."
+            }
+          ],
+          "answer": "BAC",
+          "clues": [
+            "这样",
+            "但是"
+          ],
+          "explain": {
+            "first": "B nêu việc nhiều người làm (một dậy là uống cà phê) nên đứng đầu. A có 但是 và 这样 (như vậy), cần một việc được nhắc trước.",
+            "next": "A có 这样做, trỏ về việc uống cà phê lúc bụng đói ở B; 但是 nêu ý ngược lại: không tốt cho sức khoẻ.",
+            "last": "C là lời khuyên rút ra: nên ăn trước rồi uống. C kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-011",
+          "type": "time",
+          "sentences": [
+            {
+              "text": "我每天早上六点半起床，",
+              "pinyin": "Wǒ měitiān zǎoshang liù diǎn bàn qǐchuáng,",
+              "vi": "Mỗi sáng tôi dậy lúc sáu rưỡi,"
+            },
+            {
+              "text": "然后回家吃早饭、上班。",
+              "pinyin": "ránhòu huí jiā chī zǎofàn, shàngbān.",
+              "vi": "sau đó về nhà ăn sáng rồi đi làm."
+            },
+            {
+              "text": "先去公园跑半个小时步，",
+              "pinyin": "xiān qù gōngyuán pǎo bàn ge xiǎoshí bù,",
+              "vi": "trước tiên ra công viên chạy bộ nửa tiếng,"
+            }
+          ],
+          "answer": "ACB",
+          "clues": [
+            "先",
+            "然后"
+          ],
+          "explain": {
+            "first": "A có chủ ngữ 我 và mốc thời gian (六点半起床), là việc đầu tiên trong ngày. C (先) và B (然后) đều thiếu chủ ngữ, phải nối sau.",
+            "next": "C có 先 (trước tiên): việc đầu tiên sau khi dậy là chạy bộ.",
+            "last": "B có 然后 (sau đó): về nhà ăn sáng, đi làm. 先 → 然后."
+          }
+        },
+        {
+          "id": "p2-012",
+          "type": "time",
+          "sentences": [
+            {
+              "text": "就给家里打了个电话，",
+              "pinyin": "jiù gěi jiāli dǎle ge diànhuà,",
+              "vi": "liền gọi điện về nhà,"
+            },
+            {
+              "text": "小张刚下飞机，",
+              "pinyin": "Xiǎo Zhāng gāng xià fēijī,",
+              "vi": "Tiểu Trương vừa xuống máy bay,"
+            },
+            {
+              "text": "告诉妈妈自己已经安全到了。",
+              "pinyin": "gàosu māma zìjǐ yǐjīng ānquán dào le.",
+              "vi": "báo với mẹ rằng mình đã đến nơi an toàn."
+            }
+          ],
+          "answer": "BAC",
+          "clues": [
+            "刚",
+            "就"
+          ],
+          "explain": {
+            "first": "B có chủ ngữ 小张 và 刚 (vừa), mở đầu cặp 刚…就. A bắt đầu bằng 就, C bắt đầu bằng 告诉, đều thiếu chủ ngữ.",
+            "next": "A có 就, nối với 刚 ở B: vừa xuống máy bay liền gọi điện.",
+            "last": "C nói nội dung cuộc gọi, nên theo sau A. C kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-013",
+          "type": "time",
+          "sentences": [
+            {
+              "text": "后来慢慢就习惯了。",
+              "pinyin": "hòulái mànmàn jiù xíguàn le.",
+              "vi": "về sau dần dần cũng quen."
+            },
+            {
+              "text": "一开始大家都觉得太热了，",
+              "pinyin": "yì kāishǐ dàjiā dōu juéde tài rè le,",
+              "vi": "lúc đầu mọi người đều thấy nóng quá,"
+            },
+            {
+              "text": "去年夏天我们去了一趟海南，",
+              "pinyin": "Qùnián xiàtiān wǒmen qùle yí tàng Hǎinán,",
+              "vi": "Mùa hè năm ngoái chúng tôi đi một chuyến Hải Nam,"
+            }
+          ],
+          "answer": "CBA",
+          "clues": [
+            "一开始",
+            "后来"
+          ],
+          "explain": {
+            "first": "C nêu thời gian và sự việc (去年夏天…去了海南) nên đứng đầu. B (一开始) và A (后来) kể diễn biến sau đó.",
+            "next": "B có 一开始 (lúc đầu): cảm giác ban đầu là quá nóng.",
+            "last": "A có 后来 (về sau): sau đó quen dần. 一开始 → 后来."
+          }
+        },
+        {
+          "id": "p2-014",
+          "type": "time",
+          "sentences": [
+            {
+              "text": "吃完晚饭以后就去了电影院，",
+              "pinyin": "chīwán wǎnfàn yǐhòu jiù qùle diànyǐngyuàn,",
+              "vi": "ăn tối xong thì đến rạp chiếu phim,"
+            },
+            {
+              "text": "看完电影出来的时候已经十一点了。",
+              "pinyin": "kànwán diànyǐng chūlai de shíhou yǐjīng shíyī diǎn le.",
+              "vi": "lúc xem phim xong đi ra thì đã mười một giờ."
+            },
+            {
+              "text": "我们先在网上买好了电影票，",
+              "pinyin": "Wǒmen xiān zài wǎngshang mǎihǎole diànyǐng piào,",
+              "vi": "Chúng tôi mua vé xem phim trên mạng trước,"
+            }
+          ],
+          "answer": "CAB",
+          "clues": [
+            "先",
+            "以后"
+          ],
+          "explain": {
+            "first": "C có chủ ngữ 我们 và 先 (trước tiên), là việc đầu tiên. A bắt đầu bằng 吃完…以后, B bắt đầu bằng 看完电影, đều là việc xảy ra sau.",
+            "next": "A: ăn tối xong (以后) thì đến rạp, sau khi đã mua vé.",
+            "last": "B: xem phim xong đi ra đã mười một giờ, việc cuối cùng. B kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-015",
+          "type": "time",
+          "sentences": [
+            {
+              "text": "现在她已经是公司的经理了。",
+              "pinyin": "xiànzài tā yǐjīng shì gōngsī de jīnglǐ le.",
+              "vi": "bây giờ cô ấy đã là giám đốc của công ty."
+            },
+            {
+              "text": "小林大学毕业以后，在北京找了一份工作，",
+              "pinyin": "Xiǎo Lín dàxué bìyè yǐhòu, zài Běijīng zhǎole yí fèn gōngzuò,",
+              "vi": "Sau khi tốt nghiệp đại học, Tiểu Lâm tìm được một công việc ở Bắc Kinh,"
+            },
+            {
+              "text": "工作了三年，有了很多经验，",
+              "pinyin": "gōngzuòle sān nián, yǒule hěn duō jīngyàn,",
+              "vi": "làm ba năm, có được nhiều kinh nghiệm,"
+            }
+          ],
+          "answer": "BCA",
+          "clues": [
+            "以后",
+            "三年",
+            "现在"
+          ],
+          "explain": {
+            "first": "B nêu tên người (小林) và mốc đầu tiên (毕业以后). C thiếu chủ ngữ; A có 她 cần người được nhắc trước.",
+            "next": "C: làm việc ba năm, có thêm kinh nghiệm, nối tiếp sau khi tìm được việc.",
+            "last": "A: 现在 (bây giờ) là mốc muộn nhất, cô ấy đã là giám đốc. A kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-016",
+          "type": "topic",
+          "sentences": [
+            {
+              "text": "比如可以让人睡得更好，",
+              "pinyin": "bǐrú kěyǐ ràng rén shuì de gèng hǎo,",
+              "vi": "ví dụ như giúp ngủ ngon hơn,"
+            },
+            {
+              "text": "运动对身体有很多好处，",
+              "pinyin": "Yùndòng duì shēntǐ yǒu hěn duō hǎochù,",
+              "vi": "Vận động có nhiều lợi ích cho cơ thể,"
+            },
+            {
+              "text": "还能减少生病的机会。",
+              "pinyin": "hái néng jiǎnshǎo shēngbìng de jīhuì.",
+              "vi": "còn có thể giảm khả năng bị ốm."
+            }
+          ],
+          "answer": "BAC",
+          "clues": [
+            "好处",
+            "比如",
+            "还"
+          ],
+          "explain": {
+            "first": "B nêu chủ đề (运动有很多好处) nên đứng đầu. A (比如) là ví dụ, C (还) là ý thêm, đều cần chủ đề đứng trước.",
+            "next": "A có 比如 (ví dụ): lợi ích thứ nhất là ngủ ngon hơn.",
+            "last": "C có 还 (còn): thêm một lợi ích nữa. C kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-017",
+          "type": "topic",
+          "sentences": [
+            {
+              "text": "而且能让我们更了解这个世界。",
+              "pinyin": "érqiě néng ràng wǒmen gèng liǎojiě zhège shìjiè.",
+              "vi": "mà còn giúp chúng ta hiểu thế giới này hơn."
+            },
+            {
+              "text": "它不但能让我们学到知识，",
+              "pinyin": "tā búdàn néng ràng wǒmen xuédào zhīshi,",
+              "vi": "nó không những giúp chúng ta học được kiến thức,"
+            },
+            {
+              "text": "读书的好处很多，",
+              "pinyin": "Dúshū de hǎochù hěn duō,",
+              "vi": "Đọc sách có rất nhiều lợi ích,"
+            }
+          ],
+          "answer": "CBA",
+          "clues": [
+            "好处",
+            "它",
+            "不但",
+            "而且"
+          ],
+          "explain": {
+            "first": "C nêu chủ đề (读书的好处很多) nên đứng đầu. B bắt đầu bằng 它 (nó) cần trỏ về một việc đã nhắc; A có 而且 là vế sau.",
+            "next": "B có 它, trỏ về 读书 ở C, và 不但 mở đầu cặp 不但…而且.",
+            "last": "A có 而且, nối với 不但 ở B. A kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-018",
+          "type": "topic",
+          "sentences": [
+            {
+              "text": "选择工作的时候，收入并不是最重要的，",
+              "pinyin": "Xuǎnzé gōngzuò de shíhou, shōurù bìng bú shì zuì zhòngyào de,",
+              "vi": "Khi chọn công việc, thu nhập không phải là điều quan trọng nhất,"
+            },
+            {
+              "text": "只有喜欢，才能把工作做好。",
+              "pinyin": "zhǐyǒu xǐhuan, cái néng bǎ gōngzuò zuòhǎo.",
+              "vi": "chỉ khi yêu thích mới làm tốt công việc được."
+            },
+            {
+              "text": "更重要的是自己喜不喜欢这份工作，",
+              "pinyin": "gèng zhòngyào de shì zìjǐ xǐ bu xǐhuan zhè fèn gōngzuò,",
+              "vi": "quan trọng hơn là bản thân có thích công việc đó hay không,"
+            }
+          ],
+          "answer": "ACB",
+          "clues": [
+            "并不是",
+            "更重要的是",
+            "只有",
+            "才"
+          ],
+          "explain": {
+            "first": "A nêu chủ đề (chọn công việc) và nhận xét đầu tiên (thu nhập không phải quan trọng nhất). C bắt đầu bằng 更重要的是, phải so với một điều đã nói.",
+            "next": "C có 更重要的是 (quan trọng hơn là), đối lập với 并不是最重要的 ở A.",
+            "last": "B có 只有…才, giải thích vì sao sự yêu thích quan trọng: chỉ khi thích mới làm tốt công việc. B kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-019",
+          "type": "topic",
+          "sentences": [
+            {
+              "text": "即使每天只学十分钟也有用。",
+              "pinyin": "jíshǐ měitiān zhǐ xué shí fēnzhōng yě yǒu yòng.",
+              "vi": "dù mỗi ngày chỉ học mười phút cũng có ích."
+            },
+            {
+              "text": "学好一门外语并不难，",
+              "pinyin": "Xuéhǎo yì mén wàiyǔ bìng bù nán,",
+              "vi": "Học giỏi một ngoại ngữ không hề khó,"
+            },
+            {
+              "text": "关键是要每天坚持练习，",
+              "pinyin": "guānjiàn shì yào měitiān jiānchí liànxí,",
+              "vi": "điều then chốt là phải kiên trì luyện tập mỗi ngày,"
+            }
+          ],
+          "answer": "BCA",
+          "clues": [
+            "关键是",
+            "即使",
+            "也"
+          ],
+          "explain": {
+            "first": "B nêu chủ đề và nhận xét chung (学好外语并不难). C (关键是) và A (即使…也) giải thích thêm, không đứng đầu được.",
+            "next": "C có 关键是 (then chốt là): giải thích vì sao không khó, đó là kiên trì mỗi ngày.",
+            "last": "A có 即使…也, nói rõ thêm về \"mỗi ngày\": dù chỉ mười phút cũng có ích. A kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-020",
+          "type": "topic",
+          "sentences": [
+            {
+              "text": "一是菜的味道好，",
+              "pinyin": "yī shì cài de wèidao hǎo,",
+              "vi": "một là món ăn ngon,"
+            },
+            {
+              "text": "二是服务员都很热情。",
+              "pinyin": "èr shì fúwùyuán dōu hěn rèqíng.",
+              "vi": "hai là nhân viên phục vụ đều rất nhiệt tình."
+            },
+            {
+              "text": "我很喜欢这家饭馆，",
+              "pinyin": "Wǒ hěn xǐhuan zhè jiā fànguǎn,",
+              "vi": "Tôi rất thích quán ăn này,"
+            }
+          ],
+          "answer": "CAB",
+          "clues": [
+            "一是",
+            "二是"
+          ],
+          "explain": {
+            "first": "C nêu nhận xét chung (我很喜欢这家饭馆) nên đứng đầu. A (一是) và B (二是) là các lý do được liệt kê.",
+            "next": "A có 一是 (một là): lý do thứ nhất.",
+            "last": "B có 二是 (hai là): lý do thứ hai, đứng sau 一是. B kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-021",
+          "type": "pair",
+          "sentences": [
+            {
+              "text": "我们也要按时出发，",
+              "pinyin": "wǒmen yě yào ànshí chūfā,",
+              "vi": "chúng ta cũng phải xuất phát đúng giờ,"
+            },
+            {
+              "text": "因为飞机是早上八点的。",
+              "pinyin": "yīnwèi fēijī shì zǎoshang bā diǎn de.",
+              "vi": "vì máy bay cất cánh lúc tám giờ sáng."
+            },
+            {
+              "text": "即使明天下大雪，",
+              "pinyin": "Jíshǐ míngtiān xià dà xuě,",
+              "vi": "Dù ngày mai có tuyết rơi dày,"
+            }
+          ],
+          "answer": "CAB",
+          "clues": [
+            "即使",
+            "也",
+            "因为"
+          ],
+          "explain": {
+            "first": "C có 即使 (dù cho), vế đầu của cặp 即使…也. A bắt đầu bằng 我们也, là vế sau của 即使; B là câu giải thích lý do và kết thúc bằng dấu chấm.",
+            "next": "A có 也, nối với 即使 ở C: dù tuyết rơi cũng phải đi đúng giờ.",
+            "last": "B có 因为, giải thích vì sao phải đi đúng giờ: máy bay lúc tám giờ. B kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-022",
+          "type": "pair",
+          "sentences": [
+            {
+              "text": "只有坚持运动，",
+              "pinyin": "zhǐyǒu jiānchí yùndòng,",
+              "vi": "chỉ có kiên trì vận động,"
+            },
+            {
+              "text": "想要减肥，只少吃东西是不够的，",
+              "pinyin": "Xiǎng yào jiǎnféi, zhǐ shǎo chī dōngxi shì bú gòu de,",
+              "vi": "Muốn giảm cân thì chỉ ăn ít thôi là không đủ,"
+            },
+            {
+              "text": "才能真正减肥成功。",
+              "pinyin": "cái néng zhēnzhèng jiǎnféi chénggōng.",
+              "vi": "mới thật sự giảm cân thành công được."
+            }
+          ],
+          "answer": "BAC",
+          "clues": [
+            "只有",
+            "才"
+          ],
+          "explain": {
+            "first": "B nêu ý chung (muốn giảm cân thì chỉ ăn ít là không đủ) nên đứng đầu. C có 才, là vế sau; A có 只有 phải đứng ngay trước C.",
+            "next": "A có 只有, vế đầu của cặp 只有…才: chỉ có kiên trì vận động…",
+            "last": "C có 才, nối với 只有 ở A: …mới giảm cân thành công. C kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-023",
+          "type": "pair",
+          "sentences": [
+            {
+              "text": "可是穿起来有点儿小，",
+              "pinyin": "kěshì chuān qǐlai yǒudiǎnr xiǎo,",
+              "vi": "nhưng mặc vào hơi chật,"
+            },
+            {
+              "text": "我昨天买了一件衣服，虽然颜色我很喜欢，",
+              "pinyin": "Wǒ zuótiān mǎile yí jiàn yīfu, suīrán yánsè wǒ hěn xǐhuan,",
+              "vi": "Hôm qua tôi mua một chiếc áo, tuy màu thì tôi rất thích,"
+            },
+            {
+              "text": "我只好换了一件大一号的。",
+              "pinyin": "wǒ zhǐhǎo huànle yí jiàn dà yí hào de.",
+              "vi": "tôi đành đổi sang một chiếc lớn hơn một cỡ."
+            }
+          ],
+          "answer": "BAC",
+          "clues": [
+            "虽然",
+            "可是",
+            "只好"
+          ],
+          "explain": {
+            "first": "B nêu sự việc (mua một chiếc áo) và có 虽然, vế đầu của cặp 虽然…可是. A bắt đầu bằng 可是 là vế sau; C có 只好 là kết quả.",
+            "next": "A có 可是, nối với 虽然 ở B: tuy thích màu nhưng mặc hơi chật.",
+            "last": "C có 只好 (đành phải): vì chật nên đành đổi cỡ lớn hơn. C kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-024",
+          "type": "pair",
+          "sentences": [
+            {
+              "text": "在家好好休息一天吧。",
+              "pinyin": "zài jiā hǎohǎo xiūxi yì tiān ba.",
+              "vi": "ở nhà nghỉ ngơi một ngày cho khoẻ đi."
+            },
+            {
+              "text": "就别去上班了，",
+              "pinyin": "jiù bié qù shàngbān le,",
+              "vi": "thì đừng đi làm nữa,"
+            },
+            {
+              "text": "既然你身体不舒服，",
+              "pinyin": "Jìrán nǐ shēntǐ bù shūfu,",
+              "vi": "Cậu đã thấy trong người không khoẻ,"
+            }
+          ],
+          "answer": "CBA",
+          "clues": [
+            "既然",
+            "就"
+          ],
+          "explain": {
+            "first": "C có 既然 (đã… thì), vế đầu của cặp 既然…就. B bắt đầu bằng 就, là vế sau; A là lời khuyên cuối, kết thúc bằng 吧。.",
+            "next": "B có 就, nối với 既然 ở C: đã không khoẻ thì đừng đi làm.",
+            "last": "A nói nên làm gì thay vào đó (ở nhà nghỉ ngơi), kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-025",
+          "type": "pair",
+          "sentences": [
+            {
+              "text": "特别是京剧和中国菜。",
+              "pinyin": "tèbié shì jīngjù hé Zhōngguó cài.",
+              "vi": "nhất là Kinh kịch và món ăn Trung Quốc."
+            },
+            {
+              "text": "我学习汉语不是为了找工作，",
+              "pinyin": "Wǒ xuéxí Hànyǔ bú shì wèile zhǎo gōngzuò,",
+              "vi": "Tôi học tiếng Trung không phải để tìm việc,"
+            },
+            {
+              "text": "而是因为我对中国文化很感兴趣，",
+              "pinyin": "ér shì yīnwèi wǒ duì Zhōngguó wénhuà hěn gǎn xìngqù,",
+              "vi": "mà vì tôi rất thích văn hoá Trung Quốc,"
+            }
+          ],
+          "answer": "BCA",
+          "clues": [
+            "不是",
+            "而是",
+            "特别是"
+          ],
+          "explain": {
+            "first": "B có 不是 (không phải), vế đầu của cặp 不是…而是. C bắt đầu bằng 而是, là vế sau; A (特别是) nói rõ thêm một ý đã có.",
+            "next": "C có 而是, nối với 不是 ở B: không phải để tìm việc mà vì thích văn hoá.",
+            "last": "A có 特别是 (nhất là), nêu ví dụ cụ thể về văn hoá Trung Quốc ở C. A kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-026",
+          "type": "ref",
+          "sentences": [
+            {
+              "text": "我们班新来了一个同学，",
+              "pinyin": "Wǒmen bān xīn láile yí ge tóngxué,",
+              "vi": "Lớp chúng tôi có một bạn mới đến,"
+            },
+            {
+              "text": "很快就跟大家成了好朋友。",
+              "pinyin": "hěn kuài jiù gēn dàjiā chéngle hǎo péngyou.",
+              "vi": "chẳng mấy chốc đã kết bạn với mọi người."
+            },
+            {
+              "text": "她是从上海来的，性格很活泼，",
+              "pinyin": "tā shì cóng Shànghǎi lái de, xìnggé hěn huópō,",
+              "vi": "bạn ấy đến từ Thượng Hải, tính tình rất hoạt bát,"
+            }
+          ],
+          "answer": "ACB",
+          "clues": [
+            "她"
+          ],
+          "explain": {
+            "first": "A giới thiệu người mới (一个同学) nên đứng đầu. C bắt đầu bằng 她, cần người được nhắc trước; B thiếu chủ ngữ.",
+            "next": "C có 她, trỏ về bạn mới ở A, kể bạn ấy đến từ Thượng Hải và tính tình hoạt bát.",
+            "last": "B nêu kết quả của tính hoạt bát: nhanh chóng kết bạn với mọi người. B kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-027",
+          "type": "ref",
+          "sentences": [
+            {
+              "text": "每天都去楼下散步。",
+              "pinyin": "měitiān dōu qù lóu xià sànbù.",
+              "vi": "ngày nào cũng xuống dưới nhà đi dạo."
+            },
+            {
+              "text": "我爷爷今年八十岁了，",
+              "pinyin": "Wǒ yéye jīnnián bāshí suì le,",
+              "vi": "Ông nội tôi năm nay tám mươi tuổi,"
+            },
+            {
+              "text": "可是他的身体还很健康，",
+              "pinyin": "kěshì tā de shēntǐ hái hěn jiànkāng,",
+              "vi": "nhưng sức khoẻ của ông vẫn rất tốt,"
+            }
+          ],
+          "answer": "BCA",
+          "clues": [
+            "他",
+            "可是"
+          ],
+          "explain": {
+            "first": "B nêu người (我爷爷) nên đứng đầu. C có 他 và 可是, cần câu nói về ông đứng trước; A thiếu chủ ngữ.",
+            "next": "C có 他, trỏ về ông nội ở B; 可是 nối ý \"tám mươi tuổi\" với \"vẫn khoẻ\".",
+            "last": "A là ví dụ cho việc ông còn khoẻ: ngày nào cũng đi dạo. A kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-028",
+          "type": "ref",
+          "sentences": [
+            {
+              "text": "不用出门就能买到想要的东西。",
+              "pinyin": "bú yòng chūmén jiù néng mǎidào xiǎng yào de dōngxi.",
+              "vi": "không cần ra khỏi nhà cũng mua được thứ mình muốn."
+            },
+            {
+              "text": "因为这样既方便又便宜，",
+              "pinyin": "yīnwèi zhèyàng jì fāngbiàn yòu piányi,",
+              "vi": "vì như vậy vừa tiện vừa rẻ,"
+            },
+            {
+              "text": "很多年轻人喜欢在网上买东西，",
+              "pinyin": "Hěn duō niánqīngrén xǐhuan zài wǎngshang mǎi dōngxi,",
+              "vi": "Nhiều người trẻ thích mua đồ trên mạng,"
+            }
+          ],
+          "answer": "CBA",
+          "clues": [
+            "这样",
+            "因为"
+          ],
+          "explain": {
+            "first": "C nêu sự việc (nhiều người trẻ mua đồ trên mạng) nên đứng đầu. B có 这样 (như vậy) trỏ về việc đó; A thiếu chủ ngữ.",
+            "next": "B có 因为 và 这样: giải thích lý do của việc mua trên mạng ở C.",
+            "last": "A nói rõ thêm cái tiện: không cần ra ngoài cũng mua được. A kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-029",
+          "type": "ref",
+          "sentences": [
+            {
+              "text": "那里的书又多又新，",
+              "pinyin": "nàli de shū yòu duō yòu xīn,",
+              "vi": "sách ở đó vừa nhiều vừa mới,"
+            },
+            {
+              "text": "我们学校有一个很大的图书馆，",
+              "pinyin": "Wǒmen xuéxiào yǒu yí ge hěn dà de túshūguǎn,",
+              "vi": "Trường chúng tôi có một thư viện rất lớn,"
+            },
+            {
+              "text": "周末我常常去那儿看书。",
+              "pinyin": "zhōumò wǒ chángcháng qù nàr kàn shū.",
+              "vi": "cuối tuần tôi thường đến đó đọc sách."
+            }
+          ],
+          "answer": "BAC",
+          "clues": [
+            "那里",
+            "那儿"
+          ],
+          "explain": {
+            "first": "B nêu nơi chốn (一个很大的图书馆) nên đứng đầu. A (那里) và C (那儿) đều trỏ về một nơi đã nhắc.",
+            "next": "A có 那里, trỏ về thư viện ở B: sách ở đó vừa nhiều vừa mới.",
+            "last": "C có 那儿: vì sách nhiều và mới nên cuối tuần tôi hay đến đó. C kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-030",
+          "type": "ref",
+          "sentences": [
+            {
+              "text": "里面有一些现金和一张银行卡，",
+              "pinyin": "lǐmiàn yǒu yìxiē xiànjīn hé yì zhāng yínhángkǎ,",
+              "vi": "bên trong có ít tiền mặt và một thẻ ngân hàng,"
+            },
+            {
+              "text": "我马上把它交给了司机。",
+              "pinyin": "wǒ mǎshàng bǎ tā jiāogěile sījī.",
+              "vi": "tôi lập tức đưa nó cho tài xế."
+            },
+            {
+              "text": "昨天我在出租车上发现了一个钱包，",
+              "pinyin": "Zuótiān wǒ zài chūzūchē shang fāxiànle yí ge qiánbāo,",
+              "vi": "Hôm qua tôi thấy một chiếc ví trên xe taxi,"
+            }
+          ],
+          "answer": "CAB",
+          "clues": [
+            "里面",
+            "它"
+          ],
+          "explain": {
+            "first": "C nhắc chiếc ví lần đầu (一个钱包) nên đứng đầu. A (里面, bên trong) và B (它, nó) đều trỏ về chiếc ví.",
+            "next": "A có 里面, nói những gì bên trong chiếc ví ở C.",
+            "last": "B có 它, trỏ về chiếc ví; việc đưa cho tài xế là hành động cuối cùng. B kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-031",
+          "type": "time",
+          "sentences": [
+            {
+              "text": "来了半年以后，已经能简单地聊天了，",
+              "pinyin": "láile bàn nián yǐhòu, yǐjīng néng jiǎndān de liáotiān le,",
+              "vi": "đến được nửa năm thì đã có thể trò chuyện đơn giản,"
+            },
+            {
+              "text": "来中国以前，我一句汉语也不会说，",
+              "pinyin": "Lái Zhōngguó yǐqián, wǒ yí jù Hànyǔ yě bú huì shuō,",
+              "vi": "Trước khi đến Trung Quốc, tôi không nói được câu tiếng Trung nào,"
+            },
+            {
+              "text": "现在我还能用汉语写文章了。",
+              "pinyin": "xiànzài wǒ hái néng yòng Hànyǔ xiě wénzhāng le.",
+              "vi": "bây giờ tôi còn viết được bài bằng tiếng Trung."
+            }
+          ],
+          "answer": "BAC",
+          "clues": [
+            "以前",
+            "以后",
+            "现在"
+          ],
+          "explain": {
+            "first": "B có 以前 (trước khi đến), là mốc sớm nhất. A (半年以后) và C (现在) là các mốc muộn hơn.",
+            "next": "A có 半年以后 (nửa năm sau): đã trò chuyện đơn giản được.",
+            "last": "C có 现在 (bây giờ), mốc muộn nhất, và 还 (còn) cho thấy tiến bộ thêm. C kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-032",
+          "type": "time",
+          "sentences": [
+            {
+              "text": "马上穿好衣服出了门，",
+              "pinyin": "mǎshàng chuānhǎo yīfu chūle mén,",
+              "vi": "lập tức mặc quần áo rồi ra khỏi nhà,"
+            },
+            {
+              "text": "二十分钟后就到了医院。",
+              "pinyin": "èrshí fēnzhōng hòu jiù dàole yīyuàn.",
+              "vi": "hai mươi phút sau đã đến bệnh viện."
+            },
+            {
+              "text": "李医生接到电话以后，",
+              "pinyin": "Lǐ yīshēng jiēdào diànhuà yǐhòu,",
+              "vi": "Sau khi nhận được điện thoại, bác sĩ Lý"
+            }
+          ],
+          "answer": "CAB",
+          "clues": [
+            "以后",
+            "马上",
+            "二十分钟后"
+          ],
+          "explain": {
+            "first": "C có chủ ngữ 李医生 và việc xảy ra đầu tiên (接到电话以后). A (马上) và B (二十分钟后) đều thiếu chủ ngữ, là việc xảy ra sau.",
+            "next": "A có 马上 (lập tức): ngay sau cuộc gọi thì mặc đồ ra ngoài.",
+            "last": "B có 二十分钟后 (hai mươi phút sau): đến bệnh viện, việc cuối cùng. B kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-033",
+          "type": "time",
+          "sentences": [
+            {
+              "text": "昨天我们提前两个小时到了机场，",
+              "pinyin": "Zuótiān wǒmen tíqián liǎng ge xiǎoshí dàole jīchǎng,",
+              "vi": "Hôm qua chúng tôi đến sân bay sớm hai tiếng,"
+            },
+            {
+              "text": "航班推迟到了第二天早上。",
+              "pinyin": "hángbān tuīchí dàole dì-èr tiān zǎoshang.",
+              "vi": "chuyến bay bị hoãn đến sáng hôm sau."
+            },
+            {
+              "text": "可是登机以前才知道，",
+              "pinyin": "kěshì dēngjī yǐqián cái zhīdào,",
+              "vi": "nhưng đến trước lúc lên máy bay mới biết,"
+            }
+          ],
+          "answer": "ACB",
+          "clues": [
+            "可是",
+            "以前",
+            "才知道"
+          ],
+          "explain": {
+            "first": "A có chủ ngữ 我们 và mốc 昨天, kể việc đến sân bay, việc đầu tiên. C bắt đầu bằng 可是, B kể tin nhận được, đều không đứng đầu.",
+            "next": "C có 登机以前 (trước khi lên máy bay): xảy ra sau khi đã đến sân bay; 才知道 dẫn tới nội dung ở B.",
+            "last": "B nói điều được biết: chuyến bay hoãn đến 第二天早上. B kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-034",
+          "type": "time",
+          "sentences": [
+            {
+              "text": "最后才开始准备晚饭。",
+              "pinyin": "zuìhòu cái kāishǐ zhǔnbèi wǎnfàn.",
+              "vi": "cuối cùng mới bắt đầu chuẩn bị bữa tối."
+            },
+            {
+              "text": "我先把房间收拾干净，",
+              "pinyin": "Wǒ xiān bǎ fángjiān shōushi gānjìng,",
+              "vi": "Trước tiên tôi dọn phòng sạch sẽ,"
+            },
+            {
+              "text": "接着去超市买了些水果，",
+              "pinyin": "jiēzhe qù chāoshì mǎile xiē shuǐguǒ,",
+              "vi": "tiếp đó đi siêu thị mua ít hoa quả,"
+            }
+          ],
+          "answer": "BCA",
+          "clues": [
+            "先",
+            "接着",
+            "最后"
+          ],
+          "explain": {
+            "first": "B có chủ ngữ 我 và 先 (trước tiên). C (接着) và A (最后) là các bước sau.",
+            "next": "C có 接着 (tiếp đó): bước thứ hai.",
+            "last": "A có 最后 (cuối cùng): bước cuối. 先 → 接着 → 最后."
+          }
+        },
+        {
+          "id": "p2-035",
+          "type": "time",
+          "sentences": [
+            {
+              "text": "现在游泳已经成了我最大的爱好。",
+              "pinyin": "xiànzài yóuyǒng yǐjīng chéngle wǒ zuì dà de àihào.",
+              "vi": "bây giờ bơi lội đã thành sở thích lớn nhất của tôi."
+            },
+            {
+              "text": "上中学的时候才学会游泳，",
+              "pinyin": "shàng zhōngxué de shíhou cái xuéhuì yóuyǒng,",
+              "vi": "lên trung học mới biết bơi,"
+            },
+            {
+              "text": "小时候我很怕水，",
+              "pinyin": "Xiǎoshíhou wǒ hěn pà shuǐ,",
+              "vi": "Hồi nhỏ tôi rất sợ nước,"
+            }
+          ],
+          "answer": "CBA",
+          "clues": [
+            "小时候",
+            "上中学的时候",
+            "现在"
+          ],
+          "explain": {
+            "first": "C có 小时候 (hồi nhỏ), mốc sớm nhất, và có chủ ngữ 我. B (上中学) và A (现在) là các mốc muộn hơn.",
+            "next": "B có 上中学的时候 (khi lên trung học) và 才 (mới): sau thời gian sợ nước mới học được bơi.",
+            "last": "A có 现在 (bây giờ), mốc muộn nhất. A kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-036",
+          "type": "topic",
+          "sentences": [
+            {
+              "text": "并且努力去改变。",
+              "pinyin": "bìngqiě nǔlì qù gǎibiàn.",
+              "vi": "và cố gắng thay đổi."
+            },
+            {
+              "text": "重要的是要发现它们，",
+              "pinyin": "zhòngyào de shì yào fāxiàn tāmen,",
+              "vi": "điều quan trọng là phải nhận ra chúng,"
+            },
+            {
+              "text": "每个人都有自己的缺点，",
+              "pinyin": "Měi ge rén dōu yǒu zìjǐ de quēdiǎn,",
+              "vi": "Ai cũng có khuyết điểm của riêng mình,"
+            }
+          ],
+          "answer": "CBA",
+          "clues": [
+            "重要的是",
+            "它们",
+            "并且"
+          ],
+          "explain": {
+            "first": "C nêu nhận xét chung (ai cũng có khuyết điểm) nên đứng đầu. B có 它们 (chúng) cần trỏ về điều đã nhắc; A bắt đầu bằng 并且 (và).",
+            "next": "B có 重要的是 và 它们, trỏ về 缺点 ở C: quan trọng là nhận ra khuyết điểm của mình.",
+            "last": "A có 并且, thêm việc cần làm tiếp theo: cố gắng thay đổi. A kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-037",
+          "type": "topic",
+          "sentences": [
+            {
+              "text": "在中国，送礼物时有一些需要注意的地方，",
+              "pinyin": "Zài Zhōngguó, sòng lǐwù shí yǒu yìxiē xūyào zhùyì de dìfang,",
+              "vi": "Ở Trung Quốc, khi tặng quà có một vài điều cần chú ý,"
+            },
+            {
+              "text": "也不要送伞给朋友。",
+              "pinyin": "yě bú yào sòng sǎn gěi péngyou.",
+              "vi": "cũng không nên tặng ô cho bạn bè."
+            },
+            {
+              "text": "比如不能送钟给老人，",
+              "pinyin": "bǐrú bù néng sòng zhōng gěi lǎorén,",
+              "vi": "ví dụ không được tặng đồng hồ cho người già,"
+            }
+          ],
+          "answer": "ACB",
+          "clues": [
+            "比如",
+            "也"
+          ],
+          "explain": {
+            "first": "A nêu chủ đề (tặng quà có điều cần chú ý) nên đứng đầu. C (比如) là ví dụ, B (也) là ví dụ thêm.",
+            "next": "C có 比如 (ví dụ): điều cần chú ý thứ nhất.",
+            "last": "B có 也 (cũng): thêm một điều nữa. B kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-038",
+          "type": "topic",
+          "sentences": [
+            {
+              "text": "主要原因是不管什么时候都能学，",
+              "pinyin": "zhǔyào yuányīn shì bùguǎn shénme shíhou dōu néng xué,",
+              "vi": "lý do chính là học lúc nào cũng được,"
+            },
+            {
+              "text": "现在越来越多的人选择在网上学习，",
+              "pinyin": "Xiànzài yuè lái yuè duō de rén xuǎnzé zài wǎngshang xuéxí,",
+              "vi": "Bây giờ ngày càng nhiều người chọn học trên mạng,"
+            },
+            {
+              "text": "而且价格也比较便宜。",
+              "pinyin": "érqiě jiàgé yě bǐjiào piányi.",
+              "vi": "hơn nữa giá cũng khá rẻ."
+            }
+          ],
+          "answer": "BAC",
+          "clues": [
+            "原因是",
+            "而且"
+          ],
+          "explain": {
+            "first": "B nêu hiện tượng (nhiều người học trên mạng) nên đứng đầu. A (主要原因是) giải thích hiện tượng đó; C (而且) bổ sung.",
+            "next": "A có 主要原因是 (lý do chính là): giải thích vì sao nhiều người chọn học trên mạng.",
+            "last": "C có 而且 (hơn nữa): thêm một lý do. C kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-039",
+          "type": "topic",
+          "sentences": [
+            {
+              "text": "还要看他是否努力，",
+              "pinyin": "hái yào kàn tā shìfǒu nǔlì,",
+              "vi": "mà còn phải xem người đó có cố gắng hay không,"
+            },
+            {
+              "text": "这两个方面都很重要。",
+              "pinyin": "zhè liǎng ge fāngmiàn dōu hěn zhòngyào.",
+              "vi": "cả hai mặt này đều rất quan trọng."
+            },
+            {
+              "text": "一个人能不能成功，不仅要看能力，",
+              "pinyin": "Yí ge rén néng bu néng chénggōng, bùjǐn yào kàn nénglì,",
+              "vi": "Một người có thành công hay không, không chỉ phải xem năng lực,"
+            }
+          ],
+          "answer": "CAB",
+          "clues": [
+            "不仅",
+            "还",
+            "这两个方面"
+          ],
+          "explain": {
+            "first": "C nêu chủ đề (một người có thành công hay không) và yếu tố đầu tiên (năng lực). A bổ sung yếu tố thứ hai bằng 还; B tổng kết cả hai nên phải đứng sau chúng.",
+            "next": "A có 还, nối với 不仅 ở C: không chỉ năng lực mà còn sự cố gắng.",
+            "last": "B có 这两个方面 (hai mặt này), trỏ về năng lực và sự cố gắng, tổng kết cả đoạn. B kết thúc bằng dấu chấm."
+          }
+        },
+        {
+          "id": "p2-040",
+          "type": "topic",
+          "sentences": [
+            {
+              "text": "父母应该多鼓励，少批评。",
+              "pinyin": "fùmǔ yīnggāi duō gǔlì, shǎo pīpíng.",
+              "vi": "bố mẹ nên động viên nhiều, phê bình ít."
+            },
+            {
+              "text": "我认为每个孩子都需要鼓励，",
+              "pinyin": "Wǒ rènwéi měi ge háizi dōu xūyào gǔlì,",
+              "vi": "Tôi cho rằng đứa trẻ nào cũng cần được khích lệ,"
+            },
+            {
+              "text": "例如孩子考得不好的时候，",
+              "pinyin": "lìrú háizi kǎo de bù hǎo de shíhou,",
+              "vi": "ví dụ khi con thi không tốt,"
+            }
+          ],
+          "answer": "BCA",
+          "clues": [
+            "例如",
+            "的时候"
+          ],
+          "explain": {
+            "first": "B nêu quan điểm chung (我认为…需要鼓励) nên đứng đầu. C bắt đầu bằng 例如 (ví dụ), cần một ý chung đứng trước.",
+            "next": "C có 例如: đưa ra một tình huống cụ thể, khi con thi không tốt.",
+            "last": "A nói nên làm gì trong tình huống ở C: động viên nhiều, phê bình ít. A kết thúc bằng dấu chấm."
+          }
+        }
+      ]
     }
   ]
 }
