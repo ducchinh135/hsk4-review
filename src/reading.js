@@ -34,31 +34,54 @@ export function typeCount(part) {
 // The units in random order, at most `max` of them.
 export const buildRun = (units, { max = Infinity, rng = Math.random } = {}) => shuffle(units, rng).slice(0, max);
 
-export const unitNoun = (part) => (part.format === 'fill' ? 'bộ' : 'câu');
+export const unitNoun = (part) => ({ fill: 'bộ', order: 'câu', read: 'đoạn' })[part.format];
+
+// A read passage's questions carry their number in the passage (`n`, from 1), so a passage cut down
+// to some of its questions (in a review) still marks the right ones.
+export const numbered = (p) => ({ ...p, questions: p.questions.map((q, i) => ({ ...q, n: i + 1 })) });
+export const questionKey = (p, q, i) => readKey(p.id + '.' + (q.n ?? i + 1));
 export const mixSize = (part) => part.mixCount || 10;
 
 // The mixed run. A fill part: one random set of each type that has sets, in type order (as in the
 // exam: sentences, then dialogues). Otherwise `mixSize` units taken in turn from each type that has
 // units (types and units shuffled).
-export function buildMix(part, rng = Math.random) {
-  if (part.format === 'fill') return part.types.map((t) => shuffle(unitsOf(part, t.id), rng)[0]).filter(Boolean);
+// A read part: 14 short passages taken in turn from the short types, then up to 3 long ones (as in
+// the exam: 20 questions).
+function roundRobin(part, types, n, rng) {
   const queues = shuffle(
-    part.types.map((t) => shuffle(unitsOf(part, t.id), rng)).filter((us) => us.length),
+    types.map((t) => shuffle(unitsOf(part, t.id), rng)).filter((us) => us.length),
     rng
   );
   const out = [];
-  const n = mixSize(part);
   for (let i = 0; out.length < n && queues.some((us) => i < us.length); i++) {
     for (const us of queues) if (i < us.length && out.length < n) out.push(us[i]);
   }
   return out;
 }
+export function buildMix(part, rng = Math.random) {
+  if (part.format === 'fill') return part.types.map((t) => shuffle(unitsOf(part, t.id), rng)[0]).filter(Boolean);
+  if (part.format === 'read') {
+    const short = roundRobin(part, part.types.filter((t) => t.id !== 'long'), 14, rng);
+    return [...short, ...shuffle(unitsOf(part, 'long'), rng).slice(0, 3)].map(numbered);
+  }
+  return roundRobin(part, part.types, mixSize(part), rng);
+}
 
 export const REVIEW_MAX = { p1: 6, p2: 30, p3: 20 };
-export const reviewUnits = (getMark, part) =>
-  unitsOf(part)
-    .filter((u) => getMark(readKey(u.id)) === 'r')
-    .sort((a, b) => (a.id < b.id ? -1 : 1));
+// The units marked "needs review", in id order. A read passage counts when one of its questions is
+// marked, and keeps only those questions.
+export function reviewUnits(getMark, part) {
+  const units =
+    part.format === 'read'
+      ? unitsOf(part)
+          .map(numbered)
+          .map((p) => ({ ...p, questions: p.questions.filter((q, i) => getMark(questionKey(p, q, i)) === 'r') }))
+          .filter((p) => p.questions.length)
+      : unitsOf(part).filter((u) => getMark(readKey(u.id)) === 'r');
+  return units.sort((a, b) => (a.id < b.id ? -1 : 1));
+}
+// How many things are marked "needs review": sets, questions (order) or passage questions (read).
+export const reviewCount = (getMark, part) => reviewUnits(getMark, part).reduce((t, u) => t + (part.format === 'read' ? u.questions.length : 1), 0);
 
 // Filling a set: `slots[i]` is the word index (0–5) placed in blank i, or null; `cur` is the blank
 // that the next word goes to.
@@ -126,23 +149,21 @@ const arrows = (order) => [...order].join(' → ');
 export const orderResultLabel = (q, given) => `Bạn xếp ${arrows(given)} · Đúng ${arrows(q.answer)}`;
 export const orderedSentences = (q) => [...q.answer].map((l) => q.sentences[LETTERS3.indexOf(l)]);
 
-// `text` cut into consecutive pieces, `hit` where a clue matches (the longer clue wins where two
-// overlap); the pieces join back into `text`.
+// `text` cut into consecutive pieces, `hit` where any clue matches (every occurrence of every clue,
+// overlapping ones merged); the pieces join back into `text`.
 export function highlightClues(text, clues) {
-  const sorted = [...clues].filter(Boolean).sort((a, b) => b.length - a.length);
-  const out = [];
-  let plain = '';
-  for (let i = 0; i < text.length; ) {
-    const c = sorted.find((x) => text.startsWith(x, i));
-    if (c) {
-      if (plain) out.push({ text: plain, hit: false });
-      plain = '';
-      out.push({ text: c, hit: true });
-      i += c.length;
-    } else plain += text[i++];
+  const hit = Array(text.length).fill(false);
+  for (const c of clues) {
+    if (!c) continue;
+    for (let i = text.indexOf(c); i >= 0; i = text.indexOf(c, i + 1)) hit.fill(true, i, i + c.length);
   }
-  if (plain || !out.length) out.push({ text: plain, hit: false });
-  return out;
+  const out = [];
+  for (let i = 0; i < text.length; i++) {
+    const last = out[out.length - 1];
+    if (last && last.hit === hit[i]) last.text += text[i];
+    else out.push({ text: text[i], hit: hit[i] });
+  }
+  return out.length ? out : [{ text, hit: false }];
 }
 
 // What a key press does on an order question, or null to ignore it: 'pick:0'…'pick:2' (a–c), 'pop'
@@ -157,6 +178,18 @@ export function orderKeyAction({ key, graded, full, target }) {
   if (String(key).length !== 1) return null;
   const k = 'abc'.indexOf(key.toLowerCase());
   return k >= 0 ? 'pick:' + k : null;
+}
+
+// What a key press does on a read passage, or null to ignore it: 'choose:0'…'choose:3' (1–4 or a–d,
+// answers the first unanswered question), 'next' (Enter once every question is answered) and 'none'
+// (Enter or Space on a focused answer button before that, swallowed). `target` as in fillKeyAction.
+export function readKeyAction({ key, done, target }) {
+  if (target === 'field') return null;
+  if (key === 'Enter') return done ? (target !== 'control' ? 'next' : null) : target === 'answer' ? 'none' : null;
+  if (key === ' ') return !done && target === 'answer' ? 'none' : null;
+  if (done || String(key).length !== 1) return null;
+  const i = '1234'.includes(key) ? '1234'.indexOf(key) : 'abcd'.indexOf(key.toLowerCase());
+  return i >= 0 ? 'choose:' + i : null;
 }
 
 const PINYIN_KEY = 'hsk4_read_pinyin';

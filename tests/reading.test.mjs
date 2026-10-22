@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import RAW from '../src/data/reading.json' with { type: 'json' };
-import { buildMix, buildRun, gradeOrder, orderResultLabel, highlightClues, mixSize, orderKeyAction, orderString, orderedSentences, pickSentence, unitNoun, unpickSentence, clearSlot, emptyFill, filledText, fillKeyAction, gradeSet, isFull, placeWord, readKey, reviewUnits, selectSlot, typeCount, unitsOf, usedWords, validateReading } from '../src/reading.js';
+import { buildMix, buildRun, gradeOrder, numbered, orderResultLabel, questionKey, readKeyAction, reviewCount, highlightClues, mixSize, orderKeyAction, orderString, orderedSentences, pickSentence, unitNoun, unpickSentence, clearSlot, emptyFill, filledText, fillKeyAction, gradeSet, isFull, placeWord, readKey, reviewUnits, selectSlot, typeCount, unitsOf, usedWords, validateReading } from '../src/reading.js';
 
 const WORDS = [
   ['堵车', 'dǔchē', 'tắc đường'],
@@ -501,4 +501,75 @@ test('unitsOf() picks the units by format', () => {
   assert.deepEqual(unitsOf(dataWithRead([readP('p3-001')]).parts[0]).map((p) => p.id), ['p3-001']);
   const order = { ...dataWithOrder([orderQ('p2-001')]).parts[0], sets: [] };
   assert.deepEqual(unitsOf(order).map((q) => q.id), ['p2-001']);
+});
+
+test('highlightClues() marks clues that overlap from the left or sit side by side', () => {
+  assert.deepEqual(highlightClues('可以后', ['可以', '以后']), [{ text: '可以后', hit: true }]);
+  assert.deepEqual(highlightClues('他明天来，后天走。', ['明天来', '后天走']), [
+    { text: '他', hit: false },
+    { text: '明天来', hit: true },
+    { text: '，', hit: false },
+    { text: '后天走', hit: true },
+    { text: '。', hit: false },
+  ]);
+  assert.equal(highlightClues('可以后', ['可以', '以后']).map((x) => x.text).join(''), '可以后');
+});
+
+test('numbered() and questionKey() number the questions from 1', () => {
+  const p = readP('p3-001', 'long');
+  const n = numbered(p);
+  assert.deepEqual(n.questions.map((q) => q.n), [1, 2]);
+  assert.equal(p.questions[0].n, undefined);
+  assert.equal(questionKey(p, p.questions[1], 1), 'r:p3-001.2');
+  assert.equal(questionKey(p, { ...p.questions[1], n: 2 }, 0), 'r:p3-001.2');
+});
+
+test('reviewUnits() on a read part keeps only the questions marked for review', () => {
+  const part = dataWithRead([readP('p3-003'), readP('p3-002', 'long'), readP('p3-001')]).parts[0];
+  const marks = { 'r:p3-002.2': 'r', 'r:p3-003.1': 'r', 'r:p3-001.1': 'k' };
+  const units = reviewUnits((k) => marks[k], part);
+  assert.deepEqual(units.map((u) => u.id), ['p3-002', 'p3-003']);
+  assert.equal(units[0].questions.length, 1);
+  assert.equal(units[0].questions[0].n, 2);
+});
+
+test('reviewCount() counts questions on a read part and units otherwise', () => {
+  const part = dataWithRead([readP('p3-001'), readP('p3-002', 'long')]).parts[0];
+  const marks = { 'r:p3-001.1': 'r', 'r:p3-002.1': 'r', 'r:p3-002.2': 'r', 'r:p3-009.1': 'k' };
+  assert.equal(reviewCount((k) => marks[k], part), 3);
+  const fill = dataWith([fillSet('p1-001'), fillSet('p1-002', 'dialogue')]).parts[0];
+  assert.equal(reviewCount((k) => (k === 'r:p1-002' ? 'r' : undefined), fill), 1);
+});
+
+test('buildMix() on a read part gives 14 short passages, then up to 3 long ones', () => {
+  const short = ['detail', 'gist', 'infer', 'word'].flatMap((t, i) => [0, 1, 2, 3, 4].map((j) => readP(`p3-${i}0${j}`, t)));
+  const long = [0, 1, 2, 3].map((j) => readP(`p3-90${j}`, 'long'));
+  const mix = buildMix(dataWithRead([...short, ...long]).parts[0]);
+  assert.equal(mix.length, 17);
+  assert.ok(mix.slice(0, 14).every((p) => p.type !== 'long'));
+  assert.deepEqual([...new Set(mix.slice(0, 14).map((p) => p.type))].sort(), ['detail', 'gist', 'infer', 'word']);
+  assert.ok(mix.slice(14).every((p) => p.type === 'long'));
+  assert.equal(mix.reduce((t, p) => t + p.questions.length, 0), 20);
+  assert.ok(mix.every((p) => p.questions.every((q) => q.n)));
+  assert.equal(buildMix(dataWithRead([...short, ...long.slice(0, 2)]).parts[0]).length, 16);
+  assert.equal(buildMix(dataWithRead(short).parts[0]).length, 14);
+});
+
+test('unitNoun() of a read part', () => {
+  assert.equal(unitNoun(dataWithRead([]).parts[0]), 'đoạn');
+});
+
+test('readKeyAction()', () => {
+  const k = (key, done = false, target = 'other') => readKeyAction({ key, done, target });
+  assert.equal(k('2'), 'choose:1');
+  assert.equal(k('D'), 'choose:3');
+  assert.equal(k('5'), null);
+  assert.equal(k('a', true), null);
+  assert.equal(k('Enter', true), 'next');
+  assert.equal(k('Enter', true, 'answer'), 'next');
+  assert.equal(k('Enter', true, 'control'), null);
+  assert.equal(k('Enter', false, 'answer'), 'none');
+  assert.equal(k('Enter', false), null);
+  assert.equal(k(' ', false, 'answer'), 'none');
+  for (const key of ['1', 'a', 'Enter']) assert.equal(k(key, false, 'field'), null);
 });
