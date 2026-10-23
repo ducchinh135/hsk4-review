@@ -98,7 +98,7 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 | `functions/api/[[route]].js` | Mounts the Hono app on Cloudflare Pages Functions |
 | `migrations/` | D1 schema: `0001_init.sql` (`users`, `progress`, `attempts`), `0002_srs.sql` (`srs`, no longer used by the frontend) |
 | `tests/api.test.mjs` | Integration tests for the API |
-| `tests/quiz.test.mjs`, `tests/router.test.mjs`, `tests/grammar.test.mjs`, `tests/compare.test.mjs`, `tests/listening.test.mjs`, `tests/reading.test.mjs` | Unit tests for the quiz, URL matching, grammar, confusable-words, listening and reading logic and data (no server needed) |
+| `tests/quiz.test.mjs`, `tests/router.test.mjs`, `tests/grammar.test.mjs`, `tests/compare.test.mjs`, `tests/listening.test.mjs`, `tests/reading.test.mjs`, `tests/voice.test.mjs` | Unit tests for the quiz, URL matching, grammar, confusable-words, listening and reading logic and data, and the choice of the browser voice (no server needed) |
 
 ### Listening data and audio
 

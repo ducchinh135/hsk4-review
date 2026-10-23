@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { pickVoice } from '../voice.js';
 
 const AUTO_KEY = 'hsk4_autoSpeak';
 const TTS = typeof window !== 'undefined' && 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window ? window.speechSynthesis : null;
@@ -23,8 +24,7 @@ export function useSpeech() {
     const pick = () => {
       const vs = TTS.getVoices();
       if (!vs.length) return;
-      const zh = vs.filter((v) => /^zh/i.test(v.lang) || /chinese|中文|普通话/i.test(v.name));
-      voice.current = zh.find((v) => /zh[-_]CN/i.test(v.lang)) || zh[0] || null;
+      voice.current = pickVoice(vs);
       setHasVoice(!!voice.current);
     };
     pick();
