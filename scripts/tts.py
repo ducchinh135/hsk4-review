@@ -5,14 +5,16 @@ src/data/listening.json.
 A true/false question ("truefalse" part) is the passage (voice of the question), 1.5 s of silence,
 then the ★ statement (the other voice), like the real exam. A "choice" question is the two lines of
 the dialogue (two lines, or more in Part 3; or one passage; each in its own voice) 1 s apart, 2 s of silence, then the spoken question. Uses the online
-neural voices of `edge-tts` (pip install edge-tts, no account needed). Files whose text, voices and
-rate are unchanged are skipped. `--dry-run` only reports what would be created (no network, no writes).
+neural voices of `edge-tts` (pip install edge-tts, no account needed). Also makes
+public/audio/tips/<l|r>-<part>-<section>-<example>.mp3 for every example on the listening and reading tips
+pages (src/data/reading.json too). Files whose text, voices and rate are unchanged are skipped. `--dry-run` only reports what would be created (no network, no writes).
 
     python3 scripts/tts.py [--force] [--rate=-5%] [--male-voice=zh-CN-YunjianNeural] [--dry-run]
 """
 import asyncio
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -25,6 +27,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'src' / 'data' / 'listening.json'
 OUT = ROOT / 'public' / 'audio' / 'listening'
 MANIFEST = OUT / 'manifest.json'
+READING = ROOT / 'src' / 'data' / 'reading.json'
+TIPS_OUT = ROOT / 'public' / 'audio' / 'tips'
+TIPS_MANIFEST = TIPS_OUT / 'manifest.json'
 
 # Yunyang (about 133 Hz) stands clearly apart from Xiaoxiao (about 255 Hz); the earlier Yunxi (about 167 Hz)
 # was too close to a woman's voice. `--male-voice=zh-CN-YunjianNeural` is deeper still (about 112 Hz).
@@ -75,6 +80,51 @@ async def build(q, rate, fmt):
     return passage + SILENCE + statement
 
 
+def tip_lines(zh):
+    """The spoken lines of a tips example: (voice, text). "A：…" / "B：…" lines are a dialogue (two voices);
+    option letters, ★, blanks, slashes and wide spaces are not read (they become short pauses)."""
+    out = []
+    for i, line in enumerate(l for l in zh.split('\n') if l.strip()):
+        talk = re.match(r'^\s*([AB])：', line)
+        line = re.sub(r'^\s*[A-F](：|\s)\s*', '', line)
+        line = re.sub(r'_{2,}|\s/\s|　|——|……', '，', line.replace('★', ''))
+        line = re.sub(r'([，。？！])，+', r'\1', re.sub(r'\s+', '', line)).strip('，')
+        out.append(('f' if not talk or talk.group(1) == 'A' else 'm', line))
+    return out
+
+
+def tips(rate):
+    """(file id, spoken lines) of every tips example."""
+    for prefix, path in (('l', DATA), ('r', READING)):
+        for part in json.loads(path.read_text())['parts']:
+            for i, sec in enumerate(part['tips']['sections']):
+                for k, ex in enumerate(sec['examples']):
+                    yield f"{prefix}-{part['id']}-{i}-{k}", tip_lines(ex[0])
+
+
+async def build_tips(rate, force, dry):
+    TIPS_OUT.mkdir(parents=True, exist_ok=True)
+    manifest = json.loads(TIPS_MANIFEST.read_text()) if TIPS_MANIFEST.exists() else {}
+    created = skipped = 0
+    for tid, lines in tips(rate):
+        file = TIPS_OUT / f'{tid}.mp3'
+        h = hashlib.sha1('|'.join(['tip', *(x for v, t in lines for x in (VOICES[v], t)), rate, str(len(GAP))]).encode()).hexdigest()
+        if not force and file.exists() and manifest.get(tid) == h:
+            skipped += 1
+            continue
+        created += 1
+        if dry:
+            print(f'{tid}: ' + ' | '.join(t for _, t in lines))
+            continue
+        data = GAP.join([await speak(t, VOICES[v], rate) for v, t in lines])
+        file.write_bytes(data)
+        manifest[tid] = h
+        print(f'{tid}: {len(data)} bytes')
+    if not dry:
+        TIPS_MANIFEST.write_text(json.dumps(manifest, indent=2, sort_keys=True) + '\n')
+    print(f"Tips: {'would create' if dry else 'created'} {created}, skipped {skipped}")
+
+
 async def main():
     args = sys.argv[1:]
     force = '--force' in args
@@ -104,9 +154,10 @@ async def main():
         print(f"{q['id']}: {len(data)} bytes")
     if dry:
         print(f'Would create {created}, skip {skipped}' + (': ' + ' '.join(todo) if todo else ''))
-        return
-    MANIFEST.write_text(json.dumps(manifest, indent=2, sort_keys=True) + '\n')
-    print(f'Created {created}, skipped {skipped}')
+    else:
+        MANIFEST.write_text(json.dumps(manifest, indent=2, sort_keys=True) + '\n')
+        print(f'Created {created}, skipped {skipped}')
+    await build_tips(rate, force, dry)
 
 
 asyncio.run(main())

@@ -29,7 +29,10 @@ export function useSpeech() {
     };
     pick();
     TTS.addEventListener?.('voiceschanged', pick);
-    const stop = () => TTS.cancel();
+    const stop = () => {
+      stopClip();
+      TTS.cancel();
+    };
     window.addEventListener('pagehide', stop);
     return () => {
       TTS.removeEventListener?.('voiceschanged', pick);
@@ -37,13 +40,25 @@ export function useSpeech() {
     };
   }, []);
 
+  const clip = useRef(null);
+  const stopClip = () => {
+    const a = clip.current;
+    clip.current = null;
+    if (a) {
+      a.onended = a.onerror = null;
+      a.pause();
+    }
+  };
+
   const cancel = useCallback(() => {
+    stopClip();
     if (!TTS) return;
     TTS.cancel();
     setSpeakingId(null);
   }, []);
 
   const speak = useCallback((text, id) => {
+    stopClip();
     if (!TTS || !text) return;
     TTS.cancel();
     const u = new SpeechSynthesisUtterance(text);
@@ -54,6 +69,30 @@ export function useSpeech() {
     if (id) u.onend = u.onerror = () => setSpeakingId((cur) => (cur === id ? null : cur));
     TTS.speak(u);
   }, []);
+
+  // Play a recorded mp3 (clearer than the browser's voice); read `text` aloud instead if it cannot load.
+  const play = useCallback(
+    (src, id, text) => {
+      stopClip();
+      TTS?.cancel();
+      const a = new Audio(src);
+      clip.current = a;
+      setSpeakingId(id);
+      const done = () => {
+        if (clip.current !== a) return;
+        clip.current = null;
+        setSpeakingId((cur) => (cur === id ? null : cur));
+      };
+      a.onended = done;
+      a.onerror = () => {
+        if (clip.current !== a) return;
+        done();
+        speak(text, id);
+      };
+      a.play().catch((e) => e.name !== 'AbortError' && a.onerror?.());
+    },
+    [speak]
+  );
 
   // Read the new word after navigating, only when the user enabled auto-read.
   const autoSpeak = useCallback((text) => {
@@ -74,5 +113,5 @@ export function useSpeech() {
     [speak, cancel]
   );
 
-  return { supported: !!TTS, hasVoice, speakingId, auto, setAutoSpeak, speak, autoSpeak, cancel };
+  return { supported: !!TTS, hasVoice, speakingId, auto, setAutoSpeak, speak, play, autoSpeak, cancel };
 }

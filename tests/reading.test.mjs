@@ -1,8 +1,10 @@
 // Unit tests for the reading logic and data. Run: npm run test:unit
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { existsSync, statSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import RAW from '../src/data/reading.json' with { type: 'json' };
-import { buildMix, buildRun, gradeOrder, numbered, questionLabel, orderResultLabel, questionKey, readKeyAction, reviewCount, highlightClues, mixSize, orderKeyAction, orderString, orderedSentences, pickSentence, unitNoun, unpickSentence, clearSlot, emptyFill, filledText, fillKeyAction, gradeSet, isFull, placeWord, readKey, reviewUnits, selectSlot, typeCount, unitsOf, usedWords, validateReading } from '../src/reading.js';
+import { buildMix, buildRun, gradeOrder, numbered, questionLabel, orderResultLabel, questionKey, readKeyAction, reviewCount, highlightClues, mixSize, orderKeyAction, orderString, orderedSentences, pickSentence, unitNoun, unpickSentence, clearSlot, emptyFill, filledText, fillKeyAction, gradeSet, isFull, placeWord, readKey, reviewUnits, selectSlot, tipAudioUrl, typeCount, unitsOf, usedWords, validateReading } from '../src/reading.js';
 
 const WORDS = [
   ['堵车', 'dǔchē', 'tắc đường'],
@@ -579,4 +581,17 @@ test('questionLabel() tells passages with the same question apart', () => {
   assert.equal(questionLabel(short, short.questions[0]), '小王做事一直很认真。这次公司… — 根据这段话，可以知道：');
   const long = numbered(readP('p3-002', 'long'));
   assert.equal(questionLabel(long, long.questions[1]), '小王做事一直很认真。这次公司… — 2. 根据这段话，可以知道：');
+});
+
+test('every tips example has an mp3 in public/audio/tips', () => {
+  for (const part of RAW.parts) {
+    part.tips.sections.forEach((s, i) =>
+      s.examples.forEach((_, k) => {
+        const url = tipAudioUrl(part.id, i, k);
+        assert.equal(url, `/audio/tips/r-${part.id}-${i}-${k}.mp3`);
+        const file = fileURLToPath(new URL('../public' + url, import.meta.url));
+        assert.ok(existsSync(file) && statSync(file).size > 1000, `${url} missing or too small`);
+      })
+    );
+  }
 });

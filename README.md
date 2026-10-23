@@ -88,6 +88,7 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 | `src/reading.js` | Reading data access, run building, filling and grading a set, keys, data validation |
 | `src/data/reading.json` | The reading parts: tips, types and sets (see below) |
 | `public/audio/listening/` | One mp3 per question (`p1-001.mp3`…) and `manifest.json`, made by `scripts/tts.py` |
+| `public/audio/tips/` | One mp3 per example on the listening (`l-…`) and reading (`r-…`) tips pages, named `<l|r>-<part>-<section>-<example>.mp3`, made by `scripts/tts.py` |
 | `scripts/tts.py` | Makes the listening audio with `edge-tts` (see below) |
 | `src/data/vocab.json` | The vocabulary, one array per word: `[hanzi, pinyin, meaning, example zh, example vi]` |
 | `src/data/practice.json` | Expanded HSK 4 textbook/workbook collocations (`phrases`) and context sentences (`sentences`) per word |
@@ -122,7 +123,7 @@ python3 -m venv .venv && .venv/bin/pip install edge-tts   # once; .venv is not c
 .venv/bin/python scripts/tts.py --force --rate=-10%   # redo everything, slower (default -5%)
 ```
 
-Each part I mp3 is the passage, 1.5 s of silence, then the statement; each part II mp3 is the two dialogue lines 1 s apart, 2 s of silence, then the question. The voices are Xiaoxiao (woman) and Yunyang (man, about 133 Hz against her 255 Hz; `--male-voice=zh-CN-YunjianNeural` is deeper still); changing a voice or a pause remakes the files. The pieces are joined by concatenating
+The same run makes the tips examples (`public/audio/tips/`, from both `listening.json` and `reading.json`): `A：`/`B：` lines are read in two voices, and option letters, ★, blanks and slashes become short pauses. The tips pages play these files and fall back to the browser's voice only when a file is missing, so after editing a tips example, run the script again. Each part I mp3 is the passage, 1.5 s of silence, then the statement; each part II mp3 is the two dialogue lines 1 s apart, 2 s of silence, then the question. The voices are Xiaoxiao (woman) and Yunyang (man, about 133 Hz against her 255 Hz; `--male-voice=zh-CN-YunjianNeural` is deeper still); changing a voice or a pause remakes the files. The pieces are joined by concatenating
 the mp3 bytes (all are MPEG-2 layer III, 24 kHz), which plays and decodes in Chrome; if a browser ever
 glitches at the join, rebuild the file with `ffmpeg`.
 

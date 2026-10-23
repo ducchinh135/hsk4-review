@@ -1,5 +1,5 @@
 import { useApp } from '../context/AppContext.jsx';
-import { partById, typeCount } from '../reading.js';
+import { partById, tipAudioUrl, typeCount } from '../reading.js';
 import { Link } from '../router.jsx';
 
 // How to do a part of the reading section: the format, the traps and a tip for each type.
@@ -9,12 +9,14 @@ export default function ReadingTipsPage({ part: partId }) {
   const counts = typeCount(part);
   const { intro, sections } = part.tips;
 
-  const speakBtn = (text, id) =>
-    speech.supported && (
-      <button type="button" className={'speak-btn mini' + (speech.speakingId === id ? ' speaking' : '')} aria-label="Nghe câu" onClick={() => speech.speak(text, id)}>
+  const speakBtn = (text, i, k) => {
+    const id = `rt-${i}-${k}`;
+    return (
+      <button type="button" className={'speak-btn mini' + (speech.speakingId === id ? ' speaking' : '')} aria-label="Nghe câu" onClick={() => speech.play(tipAudioUrl(part.id, i, k), id, text)}>
         🔊
       </button>
     );
+  };
 
   return (
     <div className="panel">
@@ -33,7 +35,7 @@ export default function ReadingTipsPage({ part: partId }) {
             {s.examples.map(([zh, py, vi], k) => (
               <div key={k} className="word-sentence-item">
                 <div className="zh">
-                  {zh} {speakBtn(zh, `rt-${i}-${k}`)}
+                  {zh} {speakBtn(zh, i, k)}
                 </div>
                 <div className="gp-pinyin">{py}</div>
                 <div className="vi">{vi}</div>

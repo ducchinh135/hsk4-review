@@ -16,6 +16,8 @@ export const QUESTION_BY_ID = Object.fromEntries(PARTS.flatMap((p) => p.question
 
 export const listenKey = (id) => 'l:' + id;
 export const audioUrl = (id) => '/audio/listening/' + id + '.mp3';
+// Example k of tips section i, made by scripts/tts.py.
+export const tipAudioUrl = (partId, i, k) => `/audio/tips/l-${partId}-${i}-${k}.mp3`;
 
 export const questionsOf = (part, typeId) => (typeId ? part.questions.filter((q) => q.type === typeId) : part.questions);
 

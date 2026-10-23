@@ -14,6 +14,8 @@ export const PARTS = RAW.parts;
 export const partById = (id) => PARTS.find((p) => p.id === id);
 
 export const readKey = (id) => 'r:' + id;
+// Example k of tips section i, made by scripts/tts.py.
+export const tipAudioUrl = (partId, i, k) => `/audio/tips/r-${partId}-${i}-${k}.mp3`;
 const BLANK = '___';
 export const LETTERS6 = ['A', 'B', 'C', 'D', 'E', 'F'];
 

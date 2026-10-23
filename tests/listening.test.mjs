@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { existsSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import RAW from '../src/data/listening.json' with { type: 'json' };
-import { buildMix, buildRun, correctLabel, keyAction, listenKey, mixSize, partById, partFormat, promptOf, reviewQuestions, typeCount, validateListening } from '../src/listening.js';
+import { buildMix, buildRun, correctLabel, keyAction, listenKey, mixSize, partById, partFormat, promptOf, reviewQuestions, tipAudioUrl, typeCount, validateListening } from '../src/listening.js';
 
 const q = (id, type, answer = true) => ({
   id,
@@ -138,6 +138,19 @@ test('reviewQuestions() returns only the questions marked "r", in id order', () 
   const p = { questions: [q('p1-003', 'detail'), q('p1-001', 'detail'), q('p1-002', 'detail')] };
   const marks = { 'l:p1-002': 'r', 'l:p1-003': 'r', 'l:p1-001': 'k' };
   assert.deepEqual(reviewQuestions((k) => marks[k] || '', p).map((x) => x.id), ['p1-002', 'p1-003']);
+});
+
+test('every tips example has an mp3 in public/audio/tips', () => {
+  for (const part of RAW.parts) {
+    part.tips.sections.forEach((s, i) =>
+      s.examples.forEach((_, k) => {
+        const url = tipAudioUrl(part.id, i, k);
+        assert.equal(url, `/audio/tips/l-${part.id}-${i}-${k}.mp3`);
+        const file = fileURLToPath(new URL('../public' + url, import.meta.url));
+        assert.ok(existsSync(file) && statSync(file).size > 1000, `${url} missing or too small`);
+      })
+    );
+  }
 });
 
 test('every question has an mp3 in public/audio/listening', () => {
