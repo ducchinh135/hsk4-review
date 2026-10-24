@@ -10,6 +10,7 @@ export const SECTIONS = [
   { id: 'compare', path: '/compare', label: '⚖️ Từ dễ nhầm' },
   { id: 'listening', path: '/listening/p1', label: '🎧 Nghe hiểu' },
   { id: 'reading', path: '/reading/p1', label: '📄 Đọc hiểu' },
+  { id: 'games', path: '/games', label: '🎮 Game phản xạ' },
 ];
 
 // Tabs inside the vocabulary section.
@@ -50,10 +51,13 @@ export const PAGE_TITLES = {
   'reading-tips': 'Mẹo đọc hiểu',
   'reading-practice': 'Luyện đọc',
   'reading-review': 'Ôn câu đọc sai',
+  games: 'Game phản xạ',
+  'game-type': 'Gõ từ',
+  'game-meteor': 'Bắn thiên thạch',
 };
 
 export const sectionOf = (page) =>
-  page.startsWith('reading') ? 'reading' : page.startsWith('listening') ? 'listening' : page.startsWith('compare') ? 'compare' : page.startsWith('grammar') ? 'grammar' : 'vocab';
+  page.startsWith('game') ? 'games' : page.startsWith('reading') ? 'reading' : page.startsWith('listening') ? 'listening' : page.startsWith('compare') ? 'compare' : page.startsWith('grammar') ? 'grammar' : 'vocab';
 
 const EXERCISE_TYPES = QUIZ_TYPES.map(([t]) => t);
 const SIMPLE = ['words', 'review'];
@@ -82,6 +86,13 @@ function matchCompare(parts) {
   return { page: 'compare', params: {}, path: '/compare' };
 }
 
+function matchGames(parts) {
+  const [a, b, ...rest] = parts;
+  if (a === 'type' && (b === 'meaning' || b === 'pinyin') && !rest.length) return { page: 'game-type', params: { mode: b }, path: '/games/type/' + b };
+  if (a === 'meteor' && !b) return { page: 'game-meteor', params: {}, path: '/games/meteor' };
+  return { page: 'games', params: {}, path: '/games' };
+}
+
 // /<section>/<part>[/tips | /review | /practice/<type>] for the listening and reading sections, whose
 // parts come from their data; anything else lands on the Part 1 hub.
 function matchParts(section, findPart, parts) {
@@ -106,6 +117,7 @@ export function matchRoute(pathname) {
   const parts = String(pathname).split('/').filter(Boolean);
   if (parts[0] === 'listening') return matchParts('listening', partById, parts.slice(1));
   if (parts[0] === 'reading') return matchParts('reading', readingPartById, parts.slice(1));
+  if (parts[0] === 'games') return matchGames(parts.slice(1));
   if (parts[0] === 'compare') return matchCompare(parts.slice(1));
   if (parts[0] === 'grammar') return matchGrammar(parts.slice(1));
   return matchVocab(parts[0] === 'vocab' ? parts.slice(1) : parts);

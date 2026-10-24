@@ -87,7 +87,7 @@ test('matchRoute() sends an unknown or over-long practice path to /vocab/practic
 
 test('PAGES and SECTIONS list the navigation entries in order', () => {
   assert.deepEqual(PAGES.map((p) => p.path), ['/vocab/words', '/vocab/review', '/vocab/practice']);
-  assert.deepEqual(SECTIONS.map((s) => s.id), ['vocab', 'grammar', 'compare', 'listening', 'reading']);
+  assert.deepEqual(SECTIONS.map((s) => s.id), ['vocab', 'grammar', 'compare', 'listening', 'reading', 'games']);
   for (const s of SECTIONS) assert.equal(matchRoute(s.path).path, s.path);
 });
 
@@ -177,5 +177,19 @@ test('matchRoute() maps the reading Part 3 pages', () => {
   assert.deepEqual(matchRoute('/reading/p3/review'), lpage('reading-review', { part: 'p3' }, '/reading/p3/review'));
   for (const type of ['detail', 'gist', 'infer', 'word', 'long', 'mix']) {
     assert.deepEqual(matchRoute('/reading/p3/practice/' + type), lpage('reading-practice', { part: 'p3', type }, '/reading/p3/practice/' + type));
+  }
+});
+
+test('matchRoute() maps the games pages and sends unknown ones to /games', () => {
+  assert.deepEqual(matchRoute('/games'), { page: 'games', params: {}, path: '/games' });
+  assert.deepEqual(matchRoute('/games/type/meaning'), { page: 'game-type', params: { mode: 'meaning' }, path: '/games/type/meaning' });
+  assert.deepEqual(matchRoute('/games/type/pinyin/'), { page: 'game-type', params: { mode: 'pinyin' }, path: '/games/type/pinyin' });
+  assert.deepEqual(matchRoute('/games/meteor'), { page: 'game-meteor', params: {}, path: '/games/meteor' });
+  for (const p of ['/games/x', '/games/type', '/games/type/x', '/games/meteor/1']) {
+    assert.deepEqual(matchRoute(p), { page: 'games', params: {}, path: '/games' }, p);
+  }
+  for (const p of ['games', 'game-type', 'game-meteor']) {
+    assert.equal(sectionOf(p), 'games');
+    assert.ok(PAGE_TITLES[p], p);
   }
 });
