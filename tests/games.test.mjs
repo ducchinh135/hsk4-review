@@ -8,7 +8,6 @@ import {
   fallMs,
   finishItem,
   hintMask,
-  initialShown,
   keyMatchesTile,
   newRound,
   normalizeSettings,
@@ -119,12 +118,6 @@ test('keyMatchesTile() takes the letter itself, and v or u for ü', () => {
   assert.ok(keyMatchesTile('v', 'ü'));
   assert.ok(keyMatchesTile('u', 'ü'));
   assert.ok(!keyMatchesTile('v', 'u'));
-});
-
-test('initialShown() gives the first letter and always leaves a tile to type', () => {
-  assert.equal(initialShown('fǎlǜ'), 1);
-  assert.equal(initialShown('ér'), 1);
-  assert.equal(initialShown('a'), 0);
 });
 
 test('spawnX() stays inside 0.1..0.9 and away from meteors near the top', () => {

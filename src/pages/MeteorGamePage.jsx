@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import GameSummary from '../components/GameSummary.jsx';
 import { useApp } from '../context/AppContext.jsx';
-import { METEOR, fallMs, initialShown, keyMatchesTile, loadSettings, pickWords, spawnX, tileLetters } from '../games.js';
+import { METEOR, fallMs, keyMatchesTile, loadSettings, pickWords, spawnX, tileLetters } from '../games.js';
 import { shuffle } from '../random.js';
 import { Link } from '../router.jsx';
 import { isMuted, setMuted, sfx, unlock } from '../sfx.js';
@@ -81,7 +81,7 @@ function MeteorGame() {
       const falling = g.meteors.filter((m) => m.state === 'fall').length;
       if (g.queue.length && falling < METEOR.maxOnScreen && g.clock - g.lastSpawn >= METEOR.spawnGapMs) {
         const item = g.queue.shift();
-        g.meteors.push({ id: g.nextId++, word: item.word, fall: item.fall, x: spawnX(g.meteors, Math.random), y: 0, ms: fallMs(g.spawned++), state: 'fall', until: 0, shown: initialShown(item.word[1]), typed: [], errUntil: 0, hinted: false });
+        g.meteors.push({ id: g.nextId++, word: item.word, fall: item.fall, x: spawnX(g.meteors, Math.random), y: 0, ms: fallMs(g.spawned++), state: 'fall', until: 0, shown: 0, typed: [], errUntil: 0, hinted: false });
         g.lastSpawn = g.clock;
       }
       for (const m of g.meteors) {

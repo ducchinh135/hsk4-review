@@ -109,9 +109,6 @@ export const tileLetters = (pinyin) => [...pinyinKey(pinyin).letters];
 // A pressed letter fills a tile when it is that letter; v (or u) fills ü.
 export const keyMatchesTile = (key, tile) => key === tile || (tile === 'ü' && (key === 'v' || key === 'u'));
 
-// Tiles given for free when a meteor appears: the first letter, but never the whole word.
-export const initialShown = (pinyin) => Math.min(1, tileLetters(pinyin).length - 1);
-
 export const REQUEUE_GAP = 3;
 export const MAX_ATTEMPTS = 3;
 
