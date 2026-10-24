@@ -141,7 +141,7 @@ function MeteorGame() {
   const listen = (m = lowest(s)) => m && speech.speak(m.word[0], 'meteor');
 
   const onKeyDown = (e) => {
-    if (e.nativeEvent.isComposing) return;
+    if (e.nativeEvent.isComposing || e.nativeEvent.keyCode === 229) return; // 229: Safari ends composition before the keydown
     if (e.key === 'Control') {
       if (!e.repeat) ctrlAlone.current = true;
       return;
@@ -221,7 +221,7 @@ function MeteorGame() {
                     <div className="meteor-meaning">
                       {m.word[2]}{' '}
                       {speech.supported && (
-                        <button type="button" className="meteor-ear" aria-label="Nghe từ" onClick={(e) => { e.stopPropagation(); listen(m); }}>🔊</button>
+                        <button type="button" className="meteor-ear" aria-label="Nghe từ" onClick={(e) => { e.stopPropagation(); listen(m); focus(); }}>🔊</button>
                       )}
                     </div>
                     <div className="meteor-mask">{hintMask(m.word[1], m.shown).join(' ')}</div>

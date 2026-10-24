@@ -21,6 +21,7 @@ export default function TypeGamePage({ mode }) {
   const [typed, setTyped] = useState(''); // what was typed at the last check
   const [input, setInput] = useState('');
   const [hint, setHint] = useState(0);
+  const [shake, setShake] = useState(false);
   const [now, setNow] = useState(Date.now());
   const startedAt = useRef(Date.now());
   const times = useRef([]);
@@ -81,7 +82,11 @@ export default function TypeGamePage({ mode }) {
     if (!given) return;
     const res = checkTyped(given, word, mode);
     if (phase === 'retype') {
-      if (res === 'ok') advance(true);
+      if (res === 'ok' || res === 'synonym') advance(true);
+      else {
+        setShake(true);
+        setTimeout(() => setShake(false), 300);
+      }
       return;
     }
     if (item.attempt === 1) times.current.push(Date.now() - startedAt.current);
@@ -103,7 +108,7 @@ export default function TypeGamePage({ mode }) {
   };
 
   const onKeyDown = (e) => {
-    if (e.nativeEvent.isComposing) return;
+    if (e.nativeEvent.isComposing || e.nativeEvent.keyCode === 229) return; // 229: Safari ends composition before the keydown
     if (e.key === 'Control') {
       if (!e.repeat) ctrlAlone.current = true;
       return;
@@ -111,8 +116,9 @@ export default function TypeGamePage({ mode }) {
     ctrlAlone.current = false;
     if (e.key === 'Enter') {
       e.preventDefault();
-      if (phase === 'right') advance(hint > 0);
-      else submit();
+      if (phase === 'right') {
+        if (!e.repeat) advance(hint > 0); // holding Enter must not skip the answer screen
+      } else submit();
     } else if (e.key === 'Tab' || (e.ctrlKey && e.code === 'Space')) {
       e.preventDefault();
       showHint();
@@ -175,7 +181,7 @@ export default function TypeGamePage({ mode }) {
         {mode === 'meaning' && hint > 0 && phase === 'ask' && <div className="hint-mask">{hintMask(word[1], hint).join(' ')}</div>}
         <input
           ref={inputRef}
-          className={'type-input' + state}
+          className={'type-input' + state + (shake ? ' shake' : '')}
           value={input}
           readOnly={phase === 'right'}
           placeholder={phase === 'retype' ? 'Gõ lại đáp án để tiếp tục' : PLACEHOLDERS[mode]}
