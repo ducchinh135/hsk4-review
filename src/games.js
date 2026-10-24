@@ -103,6 +103,15 @@ export function hintMask(pinyin, shown) {
   return [...pinyinKey(pinyin).letters].map((ch, i) => (i < shown ? ch : '_'));
 }
 
+// One tile per pinyin letter, tones dropped ('ü' for lü, nü).
+export const tileLetters = (pinyin) => [...pinyinKey(pinyin).letters];
+
+// A pressed letter fills a tile when it is that letter; v (or u) fills ü.
+export const keyMatchesTile = (key, tile) => key === tile || (tile === 'ü' && (key === 'v' || key === 'u'));
+
+// Tiles given for free when a meteor appears: the first letter, but never the whole word.
+export const initialShown = (pinyin) => Math.min(1, tileLetters(pinyin).length - 1);
+
 export const REQUEUE_GAP = 3;
 export const MAX_ATTEMPTS = 3;
 
@@ -133,17 +142,6 @@ export function finishItem(round, missed) {
 export const METEOR = { lives: 5, maxOnScreen: 2, firstFallMs: 20000, speedup: 0.02, minFallMs: 10000, spawnGapMs: 5000, groundRevealMs: 2000 };
 
 export const fallMs = (index) => Math.max(METEOR.minFallMs, METEOR.firstFallMs * (1 - METEOR.speedup) ** index);
-
-// The lowest falling meteor the input hits, or null. A meteor is { word, y (0 top .. 1 ground), state }.
-export function findTarget(input, meteors) {
-  let best = null;
-  for (const m of meteors) {
-    if (m.state !== 'fall') continue;
-    const r = checkTyped(input, m.word, 'meaning');
-    if ((r === 'ok' || r === 'synonym') && (!best || m.y > best.y)) best = m;
-  }
-  return best;
-}
 
 // A horizontal position in 0.1..0.9 that keeps clear of meteors still near the top.
 export function spawnX(meteors, rng = Math.random) {

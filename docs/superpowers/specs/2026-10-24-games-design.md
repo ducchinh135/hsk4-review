@@ -137,6 +137,15 @@ Khi hàng đợi rỗng thì hiện:
 
 ## 4. Game Bắn thiên thạch
 
+> **Cập nhật 2026-10-24 (theo yêu cầu của người dùng sau khi chơi thử):** game chiếm trọn màn hình, không còn ô
+> nhập. Người chơi gõ **từng chữ cái pinyin**; chữ gõ đúng với ô trống kế tiếp của thiên thạch gần mặt đất nhất
+> (thiên thạch đang gõ dở được giữ làm mục tiêu cho tới khi hạ) thì bắn **một tia** vào đúng ô đó và điền chữ;
+> điền đủ các ô thì thiên thạch nổ. Chữ đầu cho sẵn, `v` hoặc `u` gõ cho ü, gõ sai thì rung hàng ô và không mất mạng,
+> Tab gợi ý (lộ chữ kế tiếp, từ tính là trượt). Không còn gõ chữ Hán hay từ đồng nghĩa ở game này. Phi thuyền đứng
+> yên ở giữa và xoay nòng về phía ô vừa bắn. Tốc độ rơi: viên đầu 20 giây, mỗi viên sau nhanh hơn 2%, nhanh nhất
+> 10 giây, hai viên cách nhau 5 giây, tối đa 2 viên cùng lúc. Có âm thanh tự tạo (Web Audio) và ảnh SVG tự vẽ.
+> Các đoạn bên dưới mô tả bản đầu và được thay thế bởi ghi chú này ở những chỗ khác nhau.
+
 ### Màn chơi
 
 - Một khung chơi chiếm chiều ngang nội dung, cao khoảng 60vh (tối thiểu 360px), nền trời tối làm bằng

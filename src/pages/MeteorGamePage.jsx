@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import GameSummary from '../components/GameSummary.jsx';
 import { useApp } from '../context/AppContext.jsx';
-import { METEOR, fallMs, findTarget, hintMask, loadSettings, pickWords, spawnX } from '../games.js';
+import { METEOR, fallMs, initialShown, keyMatchesTile, loadSettings, pickWords, spawnX, tileLetters } from '../games.js';
 import { shuffle } from '../random.js';
 import { Link } from '../router.jsx';
 import { isMuted, setMuted, sfx, unlock } from '../sfx.js';
 
 const HIT_MS = 700;
-const LASER_MS = 260;
+const LASER_MS = 220;
+const ERR_MS = 250;
 const HURT_MS = 450;
 const SPRITE_PX = 165; // height of a meteor (rock + label)
 const SHIP_PIVOT_PX = 33; // from the bottom of the field up to the point the ship turns around
@@ -28,9 +29,10 @@ const makeSim = (words) => ({
   lastSpawn: -Infinity,
   clock: 0, // ms of play time, frozen while paused
   hurtUntil: 0,
-  tilt: 0, // degrees; the ship stays in the middle and turns toward the meteor it shoots
-
+  tilt: 0, // degrees; the ship stays in the middle and turns toward the tile it shoots
   tiltUntil: 0,
+  nextLaser: 0,
+  lockId: null, // the meteor being typed; the keys keep going to it until it is down
   hits: 0,
   missed: [],
   paused: false,
@@ -38,18 +40,19 @@ const makeSim = (words) => ({
 });
 
 const lowest = (s) => s.meteors.filter((m) => m.state === 'fall').reduce((a, m) => (!a || m.y > a.y ? m : a), null);
+// The meteor the typed letters go to: the one already being typed, else the nearest to the ground.
+const targetOf = (s) => s.meteors.find((m) => m.id === s.lockId && m.state === 'fall') || lowest(s);
 
-// Meteors with a Vietnamese meaning fall; type the word (pinyin or hanzi) and Enter to shoot it down.
+// Meteors with a Vietnamese meaning fall. Each pinyin letter pressed that matches the next empty tile of the nearest meteor
+// fires a laser at that tile; when the last tile is filled the meteor is down.
 function MeteorGame() {
   const { marks, speech } = useApp();
   const { getMark, setMark } = marks;
   const sim = useRef(null);
   if (!sim.current) sim.current = makeSim(pickWords(loadSettings(), getMark));
   const [, setTick] = useState(0);
-  const [input, setInput] = useState('');
-  const [shake, setShake] = useState(false);
   const [mute, setMute] = useState(isMuted);
-  const inputRef = useRef(null);
+  const act = useRef({}); // the latest handlers, for the window key listeners
   const fieldRef = useRef(null);
   const tilesRef = useRef(new Map()); // meteor id -> its row of letter tiles
   const ctrlAlone = useRef(false);
@@ -78,7 +81,7 @@ function MeteorGame() {
       const falling = g.meteors.filter((m) => m.state === 'fall').length;
       if (g.queue.length && falling < METEOR.maxOnScreen && g.clock - g.lastSpawn >= METEOR.spawnGapMs) {
         const item = g.queue.shift();
-        g.meteors.push({ id: g.nextId++, word: item.word, fall: item.fall, x: spawnX(g.meteors, Math.random), y: 0, ms: fallMs(g.spawned++), state: 'fall', until: 0, shown: 1, hinted: false });
+        g.meteors.push({ id: g.nextId++, word: item.word, fall: item.fall, x: spawnX(g.meteors, Math.random), y: 0, ms: fallMs(g.spawned++), state: 'fall', until: 0, shown: initialShown(item.word[1]), typed: [], errUntil: 0, hinted: false });
         g.lastSpawn = g.clock;
       }
       for (const m of g.meteors) {
@@ -87,6 +90,7 @@ function MeteorGame() {
         if (m.y >= 1) {
           m.y = 1;
           m.state = 'ground';
+          if (g.lockId === m.id) g.lockId = null;
           m.until = g.clock + METEOR.groundRevealMs;
           g.lives -= 1;
           g.hurtUntil = g.clock + HURT_MS;
@@ -118,94 +122,123 @@ function MeteorGame() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const focus = () => inputRef.current?.focus();
   const restart = (words) => {
     speech.cancel();
     sim.current = makeSim(words);
-    setInput('');
-    focus();
   };
   const togglePause = () => {
     if (s.over) return;
     s.paused = !s.paused;
-    focus();
   };
   const toggleMute = () => {
     setMuted(!mute);
     setMute(!mute);
     unlock();
-    focus();
   };
-  const fire = () => {
-    if (s.paused) {
-      s.paused = false;
-      return;
-    }
-    const target = findTarget(input, s.meteors);
-    if (!target) {
-      if (input.trim()) {
-        sfx.wrong();
-        setShake(true);
-        setTimeout(() => setShake(false), 300);
-      }
-      return;
-    }
-    // aim at the middle of the meteor's letter tiles, in field coordinates
+  // Fires a laser from the ship's nose at tile `idx` of meteor `m`, turning the ship toward it.
+  const aim = (m, idx) => {
+    const g = sim.current;
     const field = fieldRef.current?.getBoundingClientRect();
-    const tiles = tilesRef.current.get(target.id)?.getBoundingClientRect();
-    target.state = 'hit';
-    target.until = s.clock + HIT_MS;
-    s.hits += 1;
-    if (field && tiles) {
-      const tx = tiles.left + tiles.width / 2 - field.left;
-      const ty = tiles.top + tiles.height / 2 - field.top;
-      const px = field.width / 2;
-      const py = field.height - SHIP_PIVOT_PX;
-      const deg = Math.max(-MAX_TILT, Math.min(MAX_TILT, (Math.atan2(tx - px, py - ty) * 180) / Math.PI));
-      const rad = (deg * Math.PI) / 180;
-      s.tilt = deg;
-      s.tiltUntil = s.clock + TILT_MS;
-      s.lasers.push({ id: target.id, x0: px + SHIP_NOSE_LEN * Math.sin(rad), y0: py - SHIP_NOSE_LEN * Math.cos(rad), x: tx, y: ty, until: s.clock + LASER_MS });
-    }
-    sfx.laser();
-    sfx.hit();
-    speech.speak(target.word[0], 'meteor');
-    setInput('');
+    const tile = tilesRef.current.get(m.id)?.children[idx]?.getBoundingClientRect();
+    if (!field || !tile) return;
+    const tx = tile.left + tile.width / 2 - field.left;
+    const ty = tile.top + tile.height / 2 - field.top;
+    const px = field.width / 2;
+    const py = field.height - SHIP_PIVOT_PX;
+    const deg = Math.max(-MAX_TILT, Math.min(MAX_TILT, (Math.atan2(tx - px, py - ty) * 180) / Math.PI));
+    const rad = (deg * Math.PI) / 180;
+    g.tilt = deg;
+    g.tiltUntil = g.clock + TILT_MS;
+    g.lasers.push({ id: g.nextLaser++, x0: px + SHIP_NOSE_LEN * Math.sin(rad), y0: py - SHIP_NOSE_LEN * Math.cos(rad), x: tx, y: ty, until: g.clock + LASER_MS });
   };
+  const bringDown = (m) => {
+    const g = sim.current;
+    m.state = 'hit';
+    m.until = g.clock + HIT_MS;
+    g.hits += 1;
+    g.lockId = null;
+    sfx.hit();
+    speech.speak(m.word[0], 'meteor');
+  };
+  const pressLetter = (letter) => {
+    const g = sim.current;
+    if (g.paused || g.over) return;
+    const m = targetOf(g);
+    if (!m) return;
+    const tiles = tileLetters(m.word[1]);
+    if (!keyMatchesTile(letter, tiles[m.shown])) {
+      sfx.wrong();
+      m.errUntil = g.clock + ERR_MS;
+      return;
+    }
+    g.lockId = m.id;
+    aim(m, m.shown);
+    sfx.laser();
+    m.typed.push(m.shown);
+    m.shown += 1;
+    if (m.shown >= tiles.length) bringDown(m);
+  };
+  // Reveals the next letter of the target without a laser; the word then counts as missed.
   const hint = () => {
-    const m = lowest(s);
-    if (!m || s.paused) return;
-    m.shown = Math.min(m.shown + 1, hintMask(m.word[1], 0).length);
+    const g = sim.current;
+    const m = targetOf(g);
+    if (!m || g.paused) return;
     if (!m.hinted) {
       m.hinted = true;
       markMissed(m.word);
     }
+    g.lockId = m.id;
+    m.shown += 1;
+    if (m.shown >= tileLetters(m.word[1]).length) bringDown(m);
   };
-  const listen = (m = lowest(s)) => m && speech.speak(m.word[0], 'meteor');
+  const listen = (m = targetOf(sim.current)) => m && speech.speak(m.word[0], 'meteor');
+  act.current = { pressLetter, hint, togglePause, listen };
 
-  const onKeyDown = (e) => {
-    if (e.nativeEvent.isComposing || e.nativeEvent.keyCode === 229) return; // 229: Safari ends composition before the keydown
-    unlock();
-    if (e.key === 'Control') {
-      if (!e.repeat) ctrlAlone.current = true;
-      return;
-    }
-    ctrlAlone.current = false;
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      fire();
-    } else if (e.key === 'Tab' || (e.ctrlKey && e.code === 'Space')) {
-      e.preventDefault();
-      hint();
-    } else if (e.key === 'Escape') {
-      e.preventDefault();
-      togglePause();
-    }
-  };
-  const onKeyUp = (e) => {
-    if (e.key === 'Control' && ctrlAlone.current) listen();
-    ctrlAlone.current = false;
-  };
+  useEffect(() => {
+    let ctrlAlone = false;
+    const onKeyDown = (e) => {
+      const a = act.current;
+      unlock();
+      if (e.key === 'Control') {
+        if (!e.repeat) ctrlAlone = true;
+        return;
+      }
+      ctrlAlone = false;
+      if (e.metaKey || e.altKey) return;
+      if (e.ctrlKey) {
+        if (e.code === 'Space') {
+          e.preventDefault();
+          a.hint();
+        }
+        return;
+      }
+      if (e.key === 'Tab') {
+        e.preventDefault();
+        a.hint();
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        a.togglePause();
+      } else if (e.key === 'Enter') {
+        if (sim.current.paused) {
+          e.preventDefault();
+          a.togglePause();
+        }
+      } else if (/^Key[A-Z]$/.test(e.code) && !e.repeat) {
+        e.preventDefault();
+        a.pressLetter(e.code.slice(3).toLowerCase());
+      }
+    };
+    const onKeyUp = (e) => {
+      if (e.key === 'Control' && ctrlAlone) act.current.listen();
+      ctrlAlone = false;
+    };
+    window.addEventListener('keydown', onKeyDown);
+    window.addEventListener('keyup', onKeyUp);
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      window.removeEventListener('keyup', onKeyUp);
+    };
+  }, []);
 
   if (!s.total) {
     return (
@@ -241,6 +274,7 @@ function MeteorGame() {
   const W = fieldRef.current?.clientWidth || 0;
   const H = fieldRef.current?.clientHeight || 0;
   const fallH = Math.max(0, H - GROUND_PX - SPRITE_PX);
+  const current = targetOf(s);
   return (
     <div className="meteor-screen">
       <div className="meteor-top">
@@ -255,14 +289,14 @@ function MeteorGame() {
         </span>
         <div className="meteor-progress"><div style={{ width: `${(s.hits / s.total) * 100}%` }} /></div>
       </div>
-      <div className={'meteor-field' + (s.clock < s.hurtUntil ? ' hurt' : '')} ref={fieldRef} onClick={focus}>
+      <div className={'meteor-field' + (s.clock < s.hurtUntil ? ' hurt' : '')} ref={fieldRef}>
         <div className="meteor-ground" style={{ bottom: GROUND_PX }} />
         {s.meteors.map((m) => {
           const falling = m.state === 'fall';
-          const all = hintMask(m.word[1], 99);
+          const all = tileLetters(m.word[1]);
           const shown = falling ? m.shown : all.length;
           return (
-            <div key={m.id} className="meteor" style={{ transform: `translate3d(${m.x * W - 85}px, ${m.y * fallH + 10}px, 0)` }}>
+            <div key={m.id} className={'meteor' + (m === current ? ' target' : '')} style={{ transform: `translate3d(${m.x * W - 85}px, ${m.y * fallH + 10}px, 0)` }}>
               <div className={'meteor-body' + (m.state === 'hit' ? ' boom' : m.state === 'ground' ? ' crash' : '')}>
                 <img className="meteor-rock" src="/img/games/meteor.svg" alt="" draggable="false" />
                 <div className="meteor-label">
@@ -270,15 +304,15 @@ function MeteorGame() {
                     <div className="meteor-meaning">
                       {m.word[2]}{' '}
                       {speech.supported && (
-                        <button type="button" className="meteor-ear" aria-label="Nghe từ" onClick={(e) => { e.stopPropagation(); listen(m); focus(); }}>🔊</button>
+                        <button type="button" className="meteor-ear" aria-label="Nghe từ" onClick={(e) => { e.stopPropagation(); listen(m); }}>🔊</button>
                       )}
                     </div>
                   ) : (
                     <div className="meteor-meaning">{m.word[0]} · {m.word[1]}</div>
                   )}
-                  <div className="meteor-tiles" ref={(el) => (el ? tilesRef.current.set(m.id, el) : tilesRef.current.delete(m.id))}>
+                  <div className={'meteor-tiles' + (s.clock < m.errUntil ? ' err' : '')} ref={(el) => (el ? tilesRef.current.set(m.id, el) : tilesRef.current.delete(m.id))}>
                     {all.map((ch, i) => (
-                      <span key={i} className={'tile' + (i < shown ? ' on' : '') + (!falling && m.state === 'hit' ? ' pop' : '')} style={{ '--i': i }}>
+                      <span key={i} className={'tile' + (i < shown ? ' on' : '') + (m.typed.includes(i) ? ' typed' : '') + (m === current && i === shown ? ' next' : '')}>
                         {i < shown ? ch : ''}
                       </span>
                     ))}
@@ -309,20 +343,8 @@ function MeteorGame() {
         {s.paused && <div className="meteor-pause">Tạm dừng · Enter để chơi tiếp</div>}
       </div>
       <div className="meteor-bottom">
-        <input
-          ref={inputRef}
-          className={'type-input meteor-input' + (shake ? ' shake' : '')}
-          value={input}
-          autoFocus
-          autoCapitalize="none"
-          autoComplete="off"
-          spellCheck="false"
-          placeholder="Gõ pinyin hoặc chữ Hán · Enter: bắn · Tab: gợi ý · Ctrl: nghe từ"
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={onKeyDown}
-          onKeyUp={onKeyUp}
-        />
-        <button type="button" className="meteor-hint" onClick={() => { hint(); focus(); }}>💡 Gợi ý</button>
+        <span className="meteor-keys">Gõ chữ cái pinyin để bắn từng ô (ü gõ v) · Tab: gợi ý · Ctrl: nghe từ · Esc: tạm dừng</span>
+        <button type="button" className="meteor-hint" onClick={() => hint()}>💡 Gợi ý</button>
       </div>
     </div>
   );

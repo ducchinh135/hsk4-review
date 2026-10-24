@@ -42,8 +42,10 @@ random or lesson order, and how many (10 to all); the choice is remembered separ
 vocabulary pages. *Gõ từ* shows one word at a time, in two modes: see the meaning and type the Chinese
 word (pinyin without tones, or hanzi), or see the hanzi and type the pinyin with its tones. A miss shows
 the answer, has to be typed again once, and comes back three words later. *Bắn thiên thạch* drops meteors
-that carry a meaning; type the word and press Enter to shoot the lowest matching one before it hits the
-ground (5 lives, desktop only): it fills the window over a drawn space scene (SVG artwork in `public/img/games/`: background, an animated burning meteor and a ship), a laser hits the meteor's letter tiles, and synthesised sound effects (Web Audio, with a mute button) play on a hit, a miss and the end of a round. In both games a hint (Tab), "I don't remember" or a missed meteor marks
+that carry a meaning, each with a row of empty letter tiles (the first letter is given). There is no input
+box: every pinyin letter you press that matches the next empty tile of the meteor nearest the ground
+(`v` or `u` for ü) fires its own laser at that tile and fills it, and the meteor is down when the row is
+full, before it hits the ground (5 lives, desktop only): it fills the window over a drawn space scene (SVG artwork in `public/img/games/`: background, an animated burning meteor and a ship), a laser hits the meteor's letter tiles, and synthesised sound effects (Web Audio, with a mute button) play on a hit, a miss and the end of a round. In both games a hint (Tab), "I don't remember" or a missed meteor marks
 the word "needs review"; a correct answer never changes a mark.
 
 - Without a backend (e.g. GitHub Pages) marks and review progress are stored in the browser only.

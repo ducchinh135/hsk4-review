@@ -6,14 +6,16 @@ import {
   DEFAULT_SETTINGS,
   checkTyped,
   fallMs,
-  findTarget,
   finishItem,
   hintMask,
+  initialShown,
+  keyMatchesTile,
   newRound,
   normalizeSettings,
   pickWords,
   poolFor,
   spawnX,
+  tileLetters,
 } from '../src/games.js';
 
 function seeded(seed) {
@@ -105,14 +107,24 @@ test('fallMs() speeds up 2% per meteor down to 10 s', () => {
   assert.equal(fallMs(100), 10000);
 });
 
-test('findTarget() picks the lowest falling meteor that matches', () => {
-  const m = (h, y, state = 'fall') => ({ word: WORD_BY_HANZI[h], y, state });
-  const ms = [m('躺', 0.2), m('糖', 0.6), m('汤', 0.9, 'ground'), m('法律', 0.95)];
-  assert.equal(findTarget('tang', ms), ms[1]);
-  assert.equal(findTarget('躺', ms), ms[0]);
-  assert.equal(findTarget('falv', ms), ms[3]);
-  assert.equal(findTarget('xyz', ms), null);
-  assert.equal(findTarget('', ms), null);
+test('tileLetters() gives one tile per pinyin letter, without tones', () => {
+  assert.deepEqual(tileLetters('fǎlǜ'), ['f', 'a', 'l', 'ü']);
+  assert.deepEqual(tileLetters("dá'àn"), ['d', 'a', 'a', 'n']);
+  assert.deepEqual(tileLetters('Yìnxiàng'), ['y', 'i', 'n', 'x', 'i', 'a', 'n', 'g']);
+});
+
+test('keyMatchesTile() takes the letter itself, and v or u for ü', () => {
+  assert.ok(keyMatchesTile('f', 'f'));
+  assert.ok(!keyMatchesTile('g', 'f'));
+  assert.ok(keyMatchesTile('v', 'ü'));
+  assert.ok(keyMatchesTile('u', 'ü'));
+  assert.ok(!keyMatchesTile('v', 'u'));
+});
+
+test('initialShown() gives the first letter and always leaves a tile to type', () => {
+  assert.equal(initialShown('fǎlǜ'), 1);
+  assert.equal(initialShown('ér'), 1);
+  assert.equal(initialShown('a'), 0);
 });
 
 test('spawnX() stays inside 0.1..0.9 and away from meteors near the top', () => {
