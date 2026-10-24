@@ -10,11 +10,12 @@ const HIT_MS = 700;
 const LASER_MS = 260;
 const HURT_MS = 450;
 const SPRITE_PX = 165; // height of a meteor (rock + label)
-const SHIP_NOSE_PX = 108; // from the bottom of the field up to the ship's gun, where the laser starts
+const SHIP_PIVOT_PX = 33; // from the bottom of the field up to the point the ship turns around
+const SHIP_NOSE_LEN = 75; // from that point to the gun at the ship's nose, where the laser starts
 const GROUND_PX = 110; // space under the dashed line for the ship
 const SPARKS = 10;
-const TILT_MS = 220; // how long the ship leans after sliding to a target
-const MAX_TILT = 18; // degrees
+const TILT_MS = 450; // how long the ship stays turned toward the meteor it shot
+const MAX_TILT = 75; // degrees from upright
 
 const makeSim = (words) => ({
   queue: words.map((word) => ({ word, fall: 1 })),
@@ -27,8 +28,8 @@ const makeSim = (words) => ({
   lastSpawn: -Infinity,
   clock: 0, // ms of play time, frozen while paused
   hurtUntil: 0,
-  shipX: 0.5, // 0..1 across the field; the ship slides under the meteor it shoots
-  tilt: 0,
+  tilt: 0, // degrees; the ship stays in the middle and turns toward the meteor it shoots
+
   tiltUntil: 0,
   hits: 0,
   missed: [],
@@ -155,12 +156,16 @@ function MeteorGame() {
     target.state = 'hit';
     target.until = s.clock + HIT_MS;
     s.hits += 1;
-    const from = s.shipX;
-    s.shipX = target.x;
-    s.tilt = Math.max(-MAX_TILT, Math.min(MAX_TILT, (target.x - from) * (fieldRef.current?.clientWidth || 0) / 12));
-    s.tiltUntil = s.clock + TILT_MS;
     if (field && tiles) {
-      s.lasers.push({ id: target.id, x0: s.shipX, x: tiles.left + tiles.width / 2 - field.left, y: tiles.top + tiles.height / 2 - field.top, until: s.clock + LASER_MS });
+      const tx = tiles.left + tiles.width / 2 - field.left;
+      const ty = tiles.top + tiles.height / 2 - field.top;
+      const px = field.width / 2;
+      const py = field.height - SHIP_PIVOT_PX;
+      const deg = Math.max(-MAX_TILT, Math.min(MAX_TILT, (Math.atan2(tx - px, py - ty) * 180) / Math.PI));
+      const rad = (deg * Math.PI) / 180;
+      s.tilt = deg;
+      s.tiltUntil = s.clock + TILT_MS;
+      s.lasers.push({ id: target.id, x0: px + SHIP_NOSE_LEN * Math.sin(rad), y0: py - SHIP_NOSE_LEN * Math.cos(rad), x: tx, y: ty, until: s.clock + LASER_MS });
     }
     sfx.laser();
     sfx.hit();
@@ -293,12 +298,12 @@ function MeteorGame() {
         <svg className="meteor-lasers" width={W} height={H} aria-hidden="true">
           {s.lasers.map((l) => (
             <g key={l.id}>
-              <line className="laser-glow" x1={l.x0 * W} y1={H - SHIP_NOSE_PX} x2={l.x} y2={l.y} pathLength="1" />
-              <line className="laser-core" x1={l.x0 * W} y1={H - SHIP_NOSE_PX} x2={l.x} y2={l.y} pathLength="1" />
+              <line className="laser-glow" x1={l.x0} y1={l.y0} x2={l.x} y2={l.y} pathLength="1" />
+              <line className="laser-core" x1={l.x0} y1={l.y0} x2={l.x} y2={l.y} pathLength="1" />
             </g>
           ))}
         </svg>
-        <div className={'meteor-ship' + (s.lasers.length ? ' fire' : '')} style={{ left: `${s.shipX * 100}%`, transform: `translateX(-50%) rotate(${s.clock < s.tiltUntil ? s.tilt : 0}deg)` }} aria-hidden="true">
+        <div className={'meteor-ship' + (s.lasers.length ? ' fire' : '')} style={{ transform: `translateX(-50%) rotate(${s.clock < s.tiltUntil ? s.tilt : 0}deg)` }} aria-hidden="true">
           <img src="/img/games/ship.svg" alt="" draggable="false" />
         </div>
         {s.paused && <div className="meteor-pause">Tạm dừng · Enter để chơi tiếp</div>}
