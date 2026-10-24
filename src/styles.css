@@ -557,7 +557,7 @@ button.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .laser-glow{ stroke:rgba(255,224,102,.55); stroke-width:12px; filter:blur(3px); }
 .laser-core{ stroke:#fffbe0; stroke-width:3px; }
 @keyframes laser{ 0%{ stroke-dashoffset:1; opacity:1; } 55%{ stroke-dashoffset:0; opacity:1; } 100%{ stroke-dashoffset:0; opacity:0; } }
-.meteor-ship{ position:absolute; left:50%; bottom:14px; transform:translateX(-50%); width:70px; }
+.meteor-ship{ position:absolute; left:50%; bottom:14px; transform:translateX(-50%); width:70px; transition:left .18s ease-out, transform .22s ease-out; }
 .meteor-ship img{ display:block; width:100%; animation:ship-float 3.2s ease-in-out infinite; }
 .meteor-ship.fire img{ animation:ship-recoil .2s ease-out; }
 @keyframes ship-float{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-5px); } }
@@ -566,4 +566,4 @@ button.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .meteor-bottom{ display:flex; gap:10px; align-items:center; justify-content:center; padding:12px 20px 16px; background:rgba(8,10,40,.85); }
 .meteor-input{ width:min(680px,100%); color:#222; }
 .meteor-hint{ border:none; border-radius:999px; padding:12px 18px; background:#51cf66; color:#fff; font:inherit; font-weight:800; cursor:pointer; white-space:nowrap; }
-@media (prefers-reduced-motion:reduce){ .meteor-body.boom, .tile.pop, .meteor-sparks i, .meteor-field.hurt, .meteor-ship img, .meteor-ship.fire img{ animation:none; } .meteor-body.boom{ opacity:.4; } .laser-glow, .laser-core{ animation:none; opacity:.9; } }
+@media (prefers-reduced-motion:reduce){ .meteor-body.boom, .tile.pop, .meteor-sparks i, .meteor-field.hurt, .meteor-ship img, .meteor-ship.fire img{ animation:none; } .meteor-ship{ transition:none; } .meteor-body.boom{ opacity:.4; } .laser-glow, .laser-core{ animation:none; opacity:.9; } }
