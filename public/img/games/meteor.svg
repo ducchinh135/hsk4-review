@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 170" width="120" height="170">
+<defs>
+<radialGradient id="rock" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#b07a52"/><stop offset=".55" stop-color="#5b3722"/><stop offset="1" stop-color="#22110a"/></radialGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#ffb347" stop-opacity=".9"/><stop offset="1" stop-color="#ff5a1f" stop-opacity="0"/></radialGradient>
+<linearGradient id="fo" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff6a1a"/><stop offset=".6" stop-color="#e8321c" stop-opacity=".85"/><stop offset="1" stop-color="#b3122f" stop-opacity="0"/></linearGradient>
+<linearGradient id="fm" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ffb020"/><stop offset=".6" stop-color="#ff7a18" stop-opacity=".85"/><stop offset="1" stop-color="#ff5a1f" stop-opacity="0"/></linearGradient>
+<linearGradient id="fi" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fffbd0"/><stop offset=".6" stop-color="#ffe066" stop-opacity=".9"/><stop offset="1" stop-color="#ffd43b" stop-opacity="0"/></linearGradient>
+</defs>
+<style>
+.f{transform-box:fill-box;transform-origin:50% 100%}
+.f1{animation:fl .7s ease-in-out infinite alternate}
+.f2{animation:fl .5s ease-in-out -.2s infinite alternate}
+.f3{animation:fl .35s ease-in-out -.1s infinite alternate}
+@keyframes fl{0%{transform:scale(1,.9) skewX(-4deg)}100%{transform:scale(.92,1.12) skewX(5deg)}}
+.e{animation:em 1.2s linear infinite;opacity:0}
+@keyframes em{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(-70px);opacity:0}}
+.gl{transform-box:fill-box;transform-origin:center;animation:gp 1s ease-in-out infinite alternate}
+@keyframes gp{0%{opacity:.6;transform:scale(.95)}100%{opacity:1;transform:scale(1.08)}}
+.cr{animation:cp .9s ease-in-out infinite alternate}
+@keyframes cp{0%{opacity:.45}100%{opacity:1}}
+</style>
+<circle class="gl" cx="60" cy="118" r="52" fill="url(#glow)"/>
+<path class="f f1" d="M60 128 C22 118 24 70 48 38 C54 26 58 14 60 4 C62 14 66 26 72 38 C96 70 98 118 60 128Z" fill="url(#fo)"/>
+<path class="f f2" d="M60 126 C34 116 38 78 54 54 C58 44 59 34 60 24 C61 34 62 44 66 54 C82 78 86 116 60 126Z" fill="url(#fm)"/>
+<path class="f f3" d="M60 122 C46 114 48 90 57 74 C59 68 60 62 60 56 C60 62 61 68 63 74 C72 90 74 114 60 122Z" fill="url(#fi)"/>
+<circle class="e" style="animation-delay:0s;animation-duration:1.3s" cx="44" cy="70" r="2.2" fill="#ffd27a"/><circle class="e" style="animation-delay:0.4s;animation-duration:1.1s" cx="76" cy="58" r="1.8" fill="#ffd27a"/><circle class="e" style="animation-delay:0.8s;animation-duration:1.5s" cx="58" cy="44" r="2.4" fill="#ffd27a"/><circle class="e" style="animation-delay:0.2s;animation-duration:1.2s" cx="84" cy="88" r="1.6" fill="#ffd27a"/><circle class="e" style="animation-delay:0.6s;animation-duration:1.4s" cx="38" cy="96" r="1.8" fill="#ffd27a"/><circle class="e" style="animation-delay:1s;animation-duration:1s" cx="66" cy="78" r="1.4" fill="#ffd27a"/>
+<circle cx="60" cy="118" r="30" fill="url(#rock)"/>
+<circle cx="60" cy="118" r="30" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="2"/>
+<ellipse cx="50" cy="126" rx="7" ry="5" fill="#2a160c" opacity=".7"/><ellipse cx="70" cy="112" rx="5" ry="4" fill="#2a160c" opacity=".7"/><ellipse cx="62" cy="132" rx="4" ry="3" fill="#2a160c" opacity=".6"/>
+<path class="cr" d="M44 104 L52 114 L48 126" fill="none" stroke="#ff9d2e" stroke-width="2" stroke-linecap="round"/>
+<path class="cr" style="animation-delay:-.4s" d="M74 108 L66 120 L74 134" fill="none" stroke="#ffb347" stroke-width="2" stroke-linecap="round"/>
+<path class="cr" style="animation-delay:-.7s" d="M58 96 L62 108" fill="none" stroke="#ff9d2e" stroke-width="1.6" stroke-linecap="round"/>
+<ellipse cx="50" cy="104" rx="10" ry="6" fill="#fff" opacity=".16" transform="rotate(-30 50 104)"/>
+</svg>

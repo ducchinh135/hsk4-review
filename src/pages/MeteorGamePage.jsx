@@ -9,7 +9,8 @@ import { isMuted, setMuted, sfx, unlock } from '../sfx.js';
 const HIT_MS = 700;
 const LASER_MS = 260;
 const HURT_MS = 450;
-const SPRITE_PX = 130; // height of a meteor (rock + label)
+const SPRITE_PX = 165; // height of a meteor (rock + label)
+const SHIP_NOSE_PX = 108; // from the bottom of the field up to the ship's gun, where the laser starts
 const GROUND_PX = 110; // space under the dashed line for the ship
 const SPARKS = 10;
 
@@ -241,7 +242,6 @@ function MeteorGame() {
         <div className="meteor-progress"><div style={{ width: `${(s.hits / s.total) * 100}%` }} /></div>
       </div>
       <div className={'meteor-field' + (s.clock < s.hurtUntil ? ' hurt' : '')} ref={fieldRef} onClick={focus}>
-        <div className="meteor-moon" />
         <div className="meteor-ground" style={{ bottom: GROUND_PX }} />
         {s.meteors.map((m) => {
           const falling = m.state === 'fall';
@@ -250,7 +250,7 @@ function MeteorGame() {
           return (
             <div key={m.id} className="meteor" style={{ transform: `translate3d(${m.x * W - 85}px, ${m.y * fallH + 10}px, 0)` }}>
               <div className={'meteor-body' + (m.state === 'hit' ? ' boom' : m.state === 'ground' ? ' crash' : '')}>
-                <div className="meteor-rock">☄️</div>
+                <img className="meteor-rock" src="/img/games/meteor.svg" alt="" draggable="false" />
                 <div className="meteor-label">
                   {falling ? (
                     <div className="meteor-meaning">
@@ -284,12 +284,14 @@ function MeteorGame() {
         <svg className="meteor-lasers" width={W} height={H} aria-hidden="true">
           {s.lasers.map((l) => (
             <g key={l.id}>
-              <line className="laser-glow" x1={W / 2} y1={H - 58} x2={l.x} y2={l.y} pathLength="1" />
-              <line className="laser-core" x1={W / 2} y1={H - 58} x2={l.x} y2={l.y} pathLength="1" />
+              <line className="laser-glow" x1={W / 2} y1={H - SHIP_NOSE_PX} x2={l.x} y2={l.y} pathLength="1" />
+              <line className="laser-core" x1={W / 2} y1={H - SHIP_NOSE_PX} x2={l.x} y2={l.y} pathLength="1" />
             </g>
           ))}
         </svg>
-        <div className="meteor-ship" aria-hidden="true">🚀</div>
+        <div className={'meteor-ship' + (s.lasers.length ? ' fire' : '')} aria-hidden="true">
+          <img src="/img/games/ship.svg" alt="" draggable="false" />
+        </div>
         {s.paused && <div className="meteor-pause">Tạm dừng · Enter để chơi tiếp</div>}
       </div>
       <div className="meteor-bottom">
