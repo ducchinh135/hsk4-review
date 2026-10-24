@@ -4,10 +4,14 @@ import { useApp } from '../context/AppContext.jsx';
 import { METEOR, fallMs, findTarget, hintMask, loadSettings, pickWords, spawnX } from '../games.js';
 import { shuffle } from '../random.js';
 import { Link } from '../router.jsx';
+import { isMuted, setMuted, sfx, unlock } from '../sfx.js';
 
-const HIT_MS = 600;
-const LASER_MS = 200;
-const SPRITE_PX = 130; // height of a meteor (flame + label), kept below the ground line
+const HIT_MS = 700;
+const LASER_MS = 260;
+const HURT_MS = 450;
+const SPRITE_PX = 130; // height of a meteor (rock + label)
+const GROUND_PX = 110; // space under the dashed line for the ship
+const SPARKS = 10;
 
 const makeSim = (words) => ({
   queue: words.map((word) => ({ word, fall: 1 })),
@@ -19,6 +23,7 @@ const makeSim = (words) => ({
   nextId: 0,
   lastSpawn: -Infinity,
   clock: 0, // ms of play time, frozen while paused
+  hurtUntil: 0,
   hits: 0,
   missed: [],
   paused: false,
@@ -36,8 +41,10 @@ function MeteorGame() {
   const [, setTick] = useState(0);
   const [input, setInput] = useState('');
   const [shake, setShake] = useState(false);
+  const [mute, setMute] = useState(isMuted);
   const inputRef = useRef(null);
   const fieldRef = useRef(null);
+  const tilesRef = useRef(new Map()); // meteor id -> its row of letter tiles
   const ctrlAlone = useRef(false);
   const s = sim.current;
 
@@ -75,14 +82,21 @@ function MeteorGame() {
           m.state = 'ground';
           m.until = g.clock + METEOR.groundRevealMs;
           g.lives -= 1;
+          g.hurtUntil = g.clock + HURT_MS;
+          sfx.miss();
           markMissed(m.word);
           if (m.fall === 1) g.queue.push({ word: m.word, fall: 2 });
         }
       }
       g.meteors = g.meteors.filter((m) => m.state === 'fall' || g.clock < m.until);
       g.lasers = g.lasers.filter((l) => g.clock < l.until);
-      if (g.lives <= 0) g.over = 'lost';
-      else if (!g.queue.length && !g.meteors.length) g.over = 'won';
+      if (g.lives <= 0) {
+        g.over = 'lost';
+        sfx.lose();
+      } else if (!g.queue.length && !g.meteors.length) {
+        g.over = 'won';
+        sfx.win();
+      }
     };
     const onHide = () => {
       if (document.hidden) sim.current.paused = true;
@@ -109,6 +123,12 @@ function MeteorGame() {
     s.paused = !s.paused;
     focus();
   };
+  const toggleMute = () => {
+    setMuted(!mute);
+    setMute(!mute);
+    unlock();
+    focus();
+  };
   const fire = () => {
     if (s.paused) {
       s.paused = false;
@@ -117,15 +137,23 @@ function MeteorGame() {
     const target = findTarget(input, s.meteors);
     if (!target) {
       if (input.trim()) {
+        sfx.wrong();
         setShake(true);
         setTimeout(() => setShake(false), 300);
       }
       return;
     }
+    // aim at the middle of the meteor's letter tiles, in field coordinates
+    const field = fieldRef.current?.getBoundingClientRect();
+    const tiles = tilesRef.current.get(target.id)?.getBoundingClientRect();
     target.state = 'hit';
     target.until = s.clock + HIT_MS;
     s.hits += 1;
-    s.lasers.push({ id: target.id, x: target.x, y: target.y, until: s.clock + LASER_MS });
+    if (field && tiles) {
+      s.lasers.push({ id: target.id, x: tiles.left + tiles.width / 2 - field.left, y: tiles.top + tiles.height / 2 - field.top, until: s.clock + LASER_MS });
+    }
+    sfx.laser();
+    sfx.hit();
     speech.speak(target.word[0], 'meteor');
     setInput('');
   };
@@ -142,6 +170,7 @@ function MeteorGame() {
 
   const onKeyDown = (e) => {
     if (e.nativeEvent.isComposing || e.nativeEvent.keyCode === 229) return; // 229: Safari ends composition before the keydown
+    unlock();
     if (e.key === 'Control') {
       if (!e.repeat) ctrlAlone.current = true;
       return;
@@ -196,67 +225,89 @@ function MeteorGame() {
 
   const W = fieldRef.current?.clientWidth || 0;
   const H = fieldRef.current?.clientHeight || 0;
-  const py = (y) => y * (H - SPRITE_PX) + 40;
+  const fallH = Math.max(0, H - GROUND_PX - SPRITE_PX);
   return (
-    <div className="panel">
-      <div className="meteor-bar">
+    <div className="meteor-screen">
+      <div className="meteor-top">
         <strong>☄️ Bắn thiên thạch</strong>
-        <span aria-label={`${s.lives} mạng`}>{'❤️'.repeat(s.lives) + '🤍'.repeat(METEOR.lives - s.lives)}</span>
+        <span className="meteor-lives" aria-label={`${s.lives} mạng`}>{'❤️'.repeat(s.lives) + '🤍'.repeat(METEOR.lives - s.lives)}</span>
         <span>{s.hits} / {s.total}</span>
-        <span className="meteor-bar-btns">
-          <button type="button" className="btn secondary" onClick={togglePause}>{s.paused ? 'Chơi tiếp' : 'Tạm dừng'}</button>
-          <button type="button" className="btn secondary" onClick={() => restart(pickWords(loadSettings(), getMark))}>Chơi lại</button>
-          <Link to="/games" className="btn secondary">Thoát</Link>
+        <span className="meteor-top-btns">
+          <button type="button" onClick={toggleMute} aria-pressed={mute} title={mute ? 'Bật âm thanh' : 'Tắt âm thanh'}>{mute ? '🔇' : '🔔'}</button>
+          <button type="button" onClick={togglePause}>{s.paused ? 'Chơi tiếp' : 'Tạm dừng'}</button>
+          <button type="button" onClick={() => restart(pickWords(loadSettings(), getMark))}>Chơi lại</button>
+          <Link to="/games">Thoát</Link>
         </span>
+        <div className="meteor-progress"><div style={{ width: `${(s.hits / s.total) * 100}%` }} /></div>
       </div>
-      <div className="meteor-field" ref={fieldRef} onClick={focus}>
+      <div className={'meteor-field' + (s.clock < s.hurtUntil ? ' hurt' : '')} ref={fieldRef} onClick={focus}>
+        <div className="meteor-moon" />
+        <div className="meteor-ground" style={{ bottom: GROUND_PX }} />
         {s.meteors.map((m) => {
-          const shown = m.state === 'fall';
+          const falling = m.state === 'fall';
+          const all = hintMask(m.word[1], 99);
+          const shown = falling ? m.shown : all.length;
           return (
-            <div key={m.id} className={'meteor' + (m.state === 'hit' ? ' boom' : '')} style={{ left: `${m.x * 100}%`, top: `calc(${m.y} * (100% - ${SPRITE_PX}px) + 40px)` }}>
-              <div className="meteor-rock">☄️</div>
-              <div className="meteor-label">
-                {shown ? (
-                  <>
+            <div key={m.id} className="meteor" style={{ transform: `translate3d(${m.x * W - 85}px, ${m.y * fallH + 10}px, 0)` }}>
+              <div className={'meteor-body' + (m.state === 'hit' ? ' boom' : m.state === 'ground' ? ' crash' : '')}>
+                <div className="meteor-rock">☄️</div>
+                <div className="meteor-label">
+                  {falling ? (
                     <div className="meteor-meaning">
                       {m.word[2]}{' '}
                       {speech.supported && (
                         <button type="button" className="meteor-ear" aria-label="Nghe từ" onClick={(e) => { e.stopPropagation(); listen(m); focus(); }}>🔊</button>
                       )}
                     </div>
-                    <div className="meteor-mask">{hintMask(m.word[1], m.shown).join(' ')}</div>
-                  </>
-                ) : (
-                  <>
-                    <div className="meteor-meaning">{m.word[0]}</div>
-                    <div className="meteor-mask">{m.word[1]}</div>
-                  </>
-                )}
+                  ) : (
+                    <div className="meteor-meaning">{m.word[0]} · {m.word[1]}</div>
+                  )}
+                  <div className="meteor-tiles" ref={(el) => (el ? tilesRef.current.set(m.id, el) : tilesRef.current.delete(m.id))}>
+                    {all.map((ch, i) => (
+                      <span key={i} className={'tile' + (i < shown ? ' on' : '') + (!falling && m.state === 'hit' ? ' pop' : '')} style={{ '--i': i }}>
+                        {i < shown ? ch : ''}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
+              {m.state === 'hit' && (
+                <div className="meteor-sparks" aria-hidden="true">
+                  {Array.from({ length: SPARKS }, (_, i) => (
+                    <i key={i} style={{ '--a': `${(360 / SPARKS) * i}deg` }} />
+                  ))}
+                </div>
+              )}
             </div>
           );
         })}
         <svg className="meteor-lasers" width={W} height={H} aria-hidden="true">
           {s.lasers.map((l) => (
-            <line key={l.id} x1={W / 2} y1={H - 40} x2={l.x * W} y2={py(l.y) + 30} stroke="#ffe066" strokeWidth="3" strokeLinecap="round" />
+            <g key={l.id}>
+              <line className="laser-glow" x1={W / 2} y1={H - 58} x2={l.x} y2={l.y} pathLength="1" />
+              <line className="laser-core" x1={W / 2} y1={H - 58} x2={l.x} y2={l.y} pathLength="1" />
+            </g>
           ))}
         </svg>
         <div className="meteor-ship" aria-hidden="true">🚀</div>
         {s.paused && <div className="meteor-pause">Tạm dừng · Enter để chơi tiếp</div>}
       </div>
-      <input
-        ref={inputRef}
-        className={'type-input meteor-input' + (shake ? ' shake' : '')}
-        value={input}
-        autoFocus
-        autoCapitalize="none"
-        autoComplete="off"
-        spellCheck="false"
-        placeholder="Gõ pinyin hoặc chữ Hán · Enter: bắn · Tab: gợi ý · Ctrl: nghe từ"
-        onChange={(e) => setInput(e.target.value)}
-        onKeyDown={onKeyDown}
-        onKeyUp={onKeyUp}
-      />
+      <div className="meteor-bottom">
+        <input
+          ref={inputRef}
+          className={'type-input meteor-input' + (shake ? ' shake' : '')}
+          value={input}
+          autoFocus
+          autoCapitalize="none"
+          autoComplete="off"
+          spellCheck="false"
+          placeholder="Gõ pinyin hoặc chữ Hán · Enter: bắn · Tab: gợi ý · Ctrl: nghe từ"
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={onKeyDown}
+          onKeyUp={onKeyUp}
+        />
+        <button type="button" className="meteor-hint" onClick={() => { hint(); focus(); }}>💡 Gợi ý</button>
+      </div>
     </div>
   );
 }

@@ -43,7 +43,7 @@ vocabulary pages. *Gõ từ* shows one word at a time, in two modes: see the mea
 word (pinyin without tones, or hanzi), or see the hanzi and type the pinyin with its tones. A miss shows
 the answer, has to be typed again once, and comes back three words later. *Bắn thiên thạch* drops meteors
 that carry a meaning; type the word and press Enter to shoot the lowest matching one before it hits the
-ground (5 lives, desktop only). In both games a hint (Tab), "I don't remember" or a missed meteor marks
+ground (5 lives, desktop only): it fills the window, a laser hits the meteor's letter tiles, and synthesised sound effects (Web Audio, with a mute button) play on a hit, a miss and the end of a round. In both games a hint (Tab), "I don't remember" or a missed meteor marks
 the word "needs review"; a correct answer never changes a mark.
 
 - Without a backend (e.g. GitHub Pages) marks and review progress are stored in the browser only.
