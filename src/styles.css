@@ -509,3 +509,15 @@ button.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .mode-grid{ display:grid; gap:12px; }
 .mode-card{ display:flex; flex-direction:column; gap:4px; padding:14px; border-radius:16px; border:2px solid var(--accent-a,#333); text-decoration:none; color:inherit; background:var(--accent-bg,#fff); }
 @media (max-width:640px){ .game-settings{ grid-template-columns:repeat(2,1fr); } }
+.type-game{ max-width:560px; margin:0 auto; }
+.type-prompt{ font-size:clamp(30px,6vw,46px); font-weight:900; text-align:center; margin:18px 0 10px; color:var(--accent-a,#333); }
+.hint-mask{ text-align:center; font-size:26px; font-weight:800; letter-spacing:4px; margin-bottom:8px; color:#555; }
+.type-input{ width:100%; padding:14px; font-size:22px; font-family:inherit; text-align:center; border:3px solid #d8d8e2; border-radius:14px; }
+.type-input:focus{ outline:none; border-color:var(--accent-a,#333); }
+.type-input.ok{ border-color:#2f9e44; background:#ebfbee; }
+.type-input.bad{ border-color:#e03131; }
+.type-input.shake{ animation:shake .3s; }
+@keyframes shake{ 25%{ transform:translateX(-6px); } 75%{ transform:translateX(6px); } }
+@media (prefers-reduced-motion:reduce){ .type-input.shake{ animation:none; } }
+.game-keys{ margin-top:12px; font-size:13px; color:#777; text-align:center; }
+.game-stats{ list-style:none; display:flex; flex-direction:column; gap:6px; margin:10px 0 14px; font-size:17px; }
