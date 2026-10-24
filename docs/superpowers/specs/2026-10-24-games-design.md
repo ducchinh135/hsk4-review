@@ -151,9 +151,9 @@ Khi hàng đợi rỗng thì hiện:
 ### Luật
 
 - Thiên thạch xuất hiện lần lượt ở vị trí ngang ngẫu nhiên, sao cho nhãn không tràn khỏi khung và không
-  chồng lên thiên thạch đang rơi gần đó. Trên màn có **tối đa 3 thiên thạch** cùng lúc.
-- Thiên thạch đầu rơi hết khung trong **14 giây**. Mỗi thiên thạch mới rơi nhanh hơn 4%, nhanh nhất là 6
-  giây. Hai thiên thạch xuất hiện cách nhau ít nhất 2,5 giây.
+  chồng lên thiên thạch đang rơi gần đó. Trên màn có **tối đa 2 thiên thạch** cùng lúc.
+- Thiên thạch đầu rơi hết khung trong **20 giây**. Mỗi thiên thạch mới rơi nhanh hơn 2%, nhanh nhất là 10
+  giây. Hai thiên thạch xuất hiện cách nhau ít nhất 5 giây.
 - **Bắn:** gõ rồi `Enter`. Đáp án được so với mọi thiên thạch đang rơi, theo luật chấm của chế độ *Gõ từ*
   (không bắt dấu thanh, chấp nhận chữ Hán và từ đồng nghĩa y hệt). Nếu khớp nhiều viên thì bắn **viên thấp
   nhất**. Trúng thì có tia laser từ phi thuyền tới viên đó, viên nổ (hiệu ứng CSS ngắn), nhãn hiện chữ Hán

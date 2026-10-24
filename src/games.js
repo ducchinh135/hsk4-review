@@ -130,7 +130,7 @@ export function finishItem(round, missed) {
   return next;
 }
 
-export const METEOR = { lives: 5, maxOnScreen: 3, firstFallMs: 14000, speedup: 0.04, minFallMs: 6000, spawnGapMs: 2500, groundRevealMs: 2000 };
+export const METEOR = { lives: 5, maxOnScreen: 2, firstFallMs: 20000, speedup: 0.02, minFallMs: 10000, spawnGapMs: 5000, groundRevealMs: 2000 };
 
 export const fallMs = (index) => Math.max(METEOR.minFallMs, METEOR.firstFallMs * (1 - METEOR.speedup) ** index);
 

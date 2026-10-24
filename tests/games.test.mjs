@@ -99,10 +99,10 @@ test('finishItem() requeues a miss 3 places later, at most 3 attempts', () => {
   assert.deepEqual([t.done, t.firstTry], [1, 0]);
 });
 
-test('fallMs() speeds up 4% per meteor down to 6 s', () => {
-  assert.equal(fallMs(0), 14000);
-  assert.equal(Math.round(fallMs(1)), 13440);
-  assert.equal(fallMs(100), 6000);
+test('fallMs() speeds up 2% per meteor down to 10 s', () => {
+  assert.equal(fallMs(0), 20000);
+  assert.equal(Math.round(fallMs(1)), 19600);
+  assert.equal(fallMs(100), 10000);
 });
 
 test('findTarget() picks the lowest falling meteor that matches', () => {
