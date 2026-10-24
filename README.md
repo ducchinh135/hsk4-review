@@ -36,6 +36,16 @@ three-step explanation (which sentence opens, which follows, which closes). Part
 words that decide it are marked in the passage, and the translation opens once every question is
 answered. Wrong answers are marked "needs review" per question.
 
+A reflex-games section drills recalling the Chinese word from its Vietnamese meaning (the direction
+the flashcards never ask for). A bar picks the words for every game: all lessons or one, a mark filter,
+random or lesson order, and how many (10 to all); the choice is remembered separately from the
+vocabulary pages. *Gõ từ* shows one word at a time, in two modes: see the meaning and type the Chinese
+word (pinyin without tones, or hanzi), or see the hanzi and type the pinyin with its tones. A miss shows
+the answer, has to be typed again once, and comes back three words later. *Bắn thiên thạch* drops meteors
+that carry a meaning; type the word and press Enter to shoot the lowest matching one before it hits the
+ground (5 lives, desktop only). In both games a hint (Tab), "I don't remember" or a missed meteor marks
+the word "needs review"; a correct answer never changes a mark.
+
 - Without a backend (e.g. GitHub Pages) marks and review progress are stored in the browser only.
 - With the Cloudflare backend, users sign in (username + password, invite code to register) and
   their marks sync across devices (last write wins per word).
@@ -67,6 +77,9 @@ answered. Wrong answers are marked "needs review" per question.
 | `/reading/p2/practice/<type>` | A run over one part II type (`pair`, `ref`, `time`, `topic`) or `mix` (10 questions across the types) |
 | `/reading/p3`, `/reading/p3/tips`, `/reading/p3/review` | The same pages for reading part III (review: at most 20 passages, each with only its questions marked "needs review") |
 | `/reading/p3/practice/<type>` | A run over one part III type (`detail`, `gist`, `infer`, `word`, `long`) or `mix` (14 short passages and 3 long ones, 20 questions) |
+| `/games` | Word settings (lesson, filter, order, count) and one card per game; the Gõ từ card asks for a mode |
+| `/games/type/<meaning\|pinyin>` | Gõ từ: type the word from its meaning, or the pinyin from the hanzi |
+| `/games/meteor` | Bắn thiên thạch (a notice instead on narrow screens) |
 
 Paths are real URLs (History API), so the host must serve `index.html` for them. Cloudflare Pages does
 that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
@@ -85,6 +98,7 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 | `src/data/compare.json` | The confusable-word groups, as one flat list (see below) |
 | `src/listening.js` | Listening data access, run building, remembered speed and pinyin choices, data validation |
 | `src/data/listening.json` | The listening parts: tips, question types and questions (see below) |
+| `src/games.js` | Games logic: word picking and settings, answer checking, requeueing, meteor speed and targeting |
 | `src/reading.js` | Reading data access, run building, filling and grading a set, keys, data validation |
 | `src/data/reading.json` | The reading parts: tips, types and sets (see below) |
 | `public/audio/listening/` | One mp3 per question (`p1-001.mp3`…) and `manifest.json`, made by `scripts/tts.py` |
@@ -98,7 +112,7 @@ that when `dist/` has no `404.html`; `/api/*` still goes to the Functions.
 | `functions/api/[[route]].js` | Mounts the Hono app on Cloudflare Pages Functions |
 | `migrations/` | D1 schema: `0001_init.sql` (`users`, `progress`, `attempts`), `0002_srs.sql` (`srs`, no longer used by the frontend) |
 | `tests/api.test.mjs` | Integration tests for the API |
-| `tests/quiz.test.mjs`, `tests/router.test.mjs`, `tests/grammar.test.mjs`, `tests/compare.test.mjs`, `tests/listening.test.mjs`, `tests/reading.test.mjs`, `tests/voice.test.mjs` | Unit tests for the quiz, URL matching, grammar, confusable-words, listening and reading logic and data, and the choice of the browser voice (no server needed) |
+| `tests/quiz.test.mjs`, `tests/router.test.mjs`, `tests/grammar.test.mjs`, `tests/compare.test.mjs`, `tests/listening.test.mjs`, `tests/reading.test.mjs`, `tests/games.test.mjs`, `tests/voice.test.mjs` | Unit tests for the quiz, URL matching, grammar, confusable-words, listening, reading and games logic and data, and the choice of the browser voice (no server needed) |
 
 ### Listening data and audio
 
