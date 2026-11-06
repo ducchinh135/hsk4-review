@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import GameSummary from '../components/GameSummary.jsx';
 import { useApp } from '../context/AppContext.jsx';
-import { METEOR, fallMs, keyMatchesTile, loadSettings, pickWords, spawnX, tileLetters } from '../games.js';
+import { FALL_SECONDS, METEOR, fallMs, keyMatchesTile, loadSettings, pickWords, saveSettings, spawnGapMs, spawnX, tileLetters } from '../games.js';
 import { shuffle } from '../random.js';
 import { Link } from '../router.jsx';
 import { isMuted, setMuted, sfx, unlock } from '../sfx.js';
@@ -21,6 +21,7 @@ const MAX_TILT = 75; // degrees from upright
 const makeSim = (words) => ({
   queue: words.map((word) => ({ word, fall: 1 })),
   total: words.length,
+  firstMs: loadSettings().fallSec * 1000, // fall time of the first meteor, from the games settings
   meteors: [],
   lasers: [],
   lives: METEOR.lives,
@@ -79,9 +80,9 @@ function MeteorGame() {
     const step = (g, dt) => {
       g.clock += dt;
       const falling = g.meteors.filter((m) => m.state === 'fall').length;
-      if (g.queue.length && falling < METEOR.maxOnScreen && g.clock - g.lastSpawn >= METEOR.spawnGapMs) {
+      if (g.queue.length && falling < METEOR.maxOnScreen && g.clock - g.lastSpawn >= spawnGapMs(g.firstMs)) {
         const item = g.queue.shift();
-        g.meteors.push({ id: g.nextId++, word: item.word, fall: item.fall, x: spawnX(g.meteors, Math.random), y: 0, ms: fallMs(g.spawned++), state: 'fall', until: 0, shown: 0, typed: [], errUntil: 0, hinted: false });
+        g.meteors.push({ id: g.nextId++, word: item.word, fall: item.fall, x: spawnX(g.meteors, Math.random), y: 0, ms: fallMs(g.spawned++, g.firstMs), state: 'fall', until: 0, shown: 0, typed: [], errUntil: 0, hinted: false });
         g.lastSpawn = g.clock;
       }
       for (const m of g.meteors) {
@@ -125,6 +126,12 @@ function MeteorGame() {
   const restart = (words) => {
     speech.cancel();
     sim.current = makeSim(words);
+  };
+  const changeSpeed = (sec, el) => {
+    sim.current.firstMs = sec * 1000;
+    saveSettings({ ...loadSettings(), fallSec: sec });
+    el.blur(); // so Enter resumes the game instead of reopening the list
+    setTick((n) => n + 1);
   };
   const togglePause = () => {
     if (s.over) return;
@@ -340,7 +347,19 @@ function MeteorGame() {
         <div className={'meteor-ship' + (s.lasers.length ? ' fire' : '')} style={{ transform: `translateX(-50%) rotate(${s.clock < s.tiltUntil ? s.tilt : 0}deg)` }} aria-hidden="true">
           <img src="/img/games/ship.svg" alt="" draggable="false" />
         </div>
-        {s.paused && <div className="meteor-pause">Tạm dừng · Enter để chơi tiếp</div>}
+        {s.paused && (
+          <div className="meteor-pause">
+            <div>Tạm dừng · Enter để chơi tiếp</div>
+            <label className="meteor-speed">
+              <span>☄️ Tốc độ rơi (áp dụng cho thiên thạch sau)</span>
+              <select value={s.firstMs / 1000} onChange={(e) => changeSpeed(Number(e.target.value), e.target)}>
+                {FALL_SECONDS.map(([v, text]) => (
+                  <option key={v} value={v}>{text}</option>
+                ))}
+              </select>
+            </label>
+          </div>
+        )}
       </div>
       <div className="meteor-bottom">
         <span className="meteor-keys">Gõ chữ cái pinyin để bắn từng ô (ü gõ v) · Tab: gợi ý · Ctrl: nghe từ · Esc: tạm dừng</span>

@@ -35,8 +35,16 @@ export const ORDERS = [
   ['lesson', 'Theo thứ tự'],
 ];
 export const COUNTS = [10, 20, 50, 100, 'all'];
+// Seconds a meteor takes to fall at first; later meteors speed up, floored at half of it.
+export const FALL_SECONDS = [
+  [8, 'Rất nhanh (8 giây)'],
+  [12, 'Nhanh (12 giây)'],
+  [20, 'Vừa (20 giây)'],
+  [30, 'Chậm (30 giây)'],
+  [45, 'Rất chậm (45 giây)'],
+];
 
-export const DEFAULT_SETTINGS = { lesson: 'all', filter: 'all', order: 'random', count: 20 };
+export const DEFAULT_SETTINGS = { lesson: 'all', filter: 'all', order: 'random', count: 20, fallSec: 20 };
 const SETTINGS_KEY = 'hsk4_games_v1';
 
 // Keeps every valid field of a stored value and resets the others to their default.
@@ -48,6 +56,7 @@ export function normalizeSettings(raw) {
     filter: FILTERS.some(([f]) => f === r.filter) ? r.filter : d.filter,
     order: ORDERS.some(([o]) => o === r.order) ? r.order : d.order,
     count: COUNTS.includes(r.count) ? r.count : d.count,
+    fallSec: FALL_SECONDS.some(([v]) => v === r.fallSec) ? r.fallSec : d.fallSec,
   };
 }
 
@@ -138,7 +147,10 @@ export function finishItem(round, missed) {
 
 export const METEOR = { lives: 5, maxOnScreen: 2, firstFallMs: 20000, speedup: 0.02, minFallMs: 10000, spawnGapMs: 5000, groundRevealMs: 2000 };
 
-export const fallMs = (index) => Math.max(METEOR.minFallMs, METEOR.firstFallMs * (1 - METEOR.speedup) ** index);
+export const fallMs = (index, firstMs = METEOR.firstFallMs) => Math.max(firstMs / 2, firstMs * (1 - METEOR.speedup) ** index);
+
+// Gap between spawns scales with the fall time (5 s at the default 20 s).
+export const spawnGapMs = (firstMs = METEOR.firstFallMs) => firstMs / 4;
 
 // A horizontal position in 0.1..0.9 that keeps clear of meteors still near the top.
 export function spawnX(meteors, rng = Math.random) {

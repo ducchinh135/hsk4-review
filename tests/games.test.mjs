@@ -13,6 +13,7 @@ import {
   normalizeSettings,
   pickWords,
   poolFor,
+  spawnGapMs,
   spawnX,
   tileLetters,
 } from '../src/games.js';
@@ -27,7 +28,7 @@ test('normalizeSettings() keeps valid fields and resets bad ones', () => {
   assert.deepEqual(normalizeSettings({ lesson: 'L99', filter: 'r', order: 'x', count: 7 }), { ...DEFAULT_SETTINGS, filter: 'r' });
   assert.deepEqual(
     normalizeSettings({ lesson: LESSON_ORDER[2], filter: 'k', order: 'lesson', count: 'all' }),
-    { lesson: LESSON_ORDER[2], filter: 'k', order: 'lesson', count: 'all' }
+    { lesson: LESSON_ORDER[2], filter: 'k', order: 'lesson', count: 'all', fallSec: 20 }
   );
 });
 
@@ -104,6 +105,16 @@ test('fallMs() speeds up 2% per meteor down to 10 s', () => {
   assert.equal(fallMs(0), 20000);
   assert.equal(Math.round(fallMs(1)), 19600);
   assert.equal(fallMs(100), 10000);
+});
+
+test('fallMs() and spawnGapMs() scale with the chosen fall time', () => {
+  assert.equal(fallMs(0, 45000), 45000);
+  assert.equal(fallMs(100, 45000), 22500);
+  assert.equal(fallMs(100, 8000), 4000);
+  assert.equal(spawnGapMs(), 5000);
+  assert.equal(spawnGapMs(8000), 2000);
+  assert.equal(normalizeSettings({ fallSec: 45 }).fallSec, 45);
+  assert.equal(normalizeSettings({ fallSec: 7 }).fallSec, 20);
 });
 
 test('tileLetters() gives one tile per pinyin letter, without tones', () => {

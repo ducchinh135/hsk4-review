@@ -567,8 +567,11 @@ button.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .meteor-ship.fire img{ animation:ship-recoil .2s ease-out; }
 @keyframes ship-float{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-5px); } }
 @keyframes ship-recoil{ 0%{ transform:translateY(0) scale(1); } 30%{ transform:translateY(7px) scale(1.06); } 100%{ transform:translateY(0) scale(1); } }
-.meteor-pause{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(10,10,40,.65); font-size:24px; font-weight:800; }
+.meteor-pause{ position:absolute; inset:0; display:flex; flex-direction:column; gap:18px; align-items:center; justify-content:center; background:rgba(10,10,40,.65); font-size:24px; font-weight:800; }
 .meteor-bottom{ display:flex; gap:10px; align-items:center; justify-content:center; padding:12px 20px 16px; background:rgba(8,10,40,.85); }
 .meteor-keys{ font-size:15px; color:#cfd3ff; }
 .meteor-hint{ border:none; border-radius:999px; padding:12px 18px; background:#51cf66; color:#fff; font:inherit; font-weight:800; cursor:pointer; white-space:nowrap; }
 @media (prefers-reduced-motion:reduce){ .meteor-body.boom, .tile.typed, .tile.next, .meteor-tiles.err, .meteor-sparks i, .meteor-field.hurt, .meteor-ship img, .meteor-ship.fire img{ animation:none; } .meteor-ship{ transition:none; } .meteor-body.boom{ opacity:.4; } .laser-glow, .laser-core{ animation:none; opacity:.9; } }
+
+.meteor-speed{ display:flex; flex-direction:column; gap:6px; font-size:14px; font-weight:700; align-items:center; }
+.meteor-speed select{ font:inherit; font-size:16px; padding:8px; border-radius:10px; border:none; }
