@@ -573,5 +573,10 @@ button.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .meteor-hint{ border:none; border-radius:999px; padding:12px 18px; background:#51cf66; color:#fff; font:inherit; font-weight:800; cursor:pointer; white-space:nowrap; }
 @media (prefers-reduced-motion:reduce){ .meteor-body.boom, .tile.typed, .tile.next, .meteor-tiles.err, .meteor-sparks i, .meteor-field.hurt, .meteor-ship img, .meteor-ship.fire img{ animation:none; } .meteor-ship{ transition:none; } .meteor-body.boom{ opacity:.4; } .laser-glow, .laser-core{ animation:none; opacity:.9; } }
 
-.meteor-speed{ display:flex; flex-direction:column; gap:6px; font-size:14px; font-weight:700; align-items:center; }
+.meteor-speed{ display:flex; flex-direction:column; gap:8px; font-size:14px; font-weight:700; align-items:center; }
+.meteor-speed label, .game-select label{ display:flex; flex-direction:column; gap:6px; }
+.meteor-speed label{ align-items:center; }
+.fall-custom{ flex-direction:row !important; align-items:center; gap:8px !important; }
+.fall-custom input{ width:90px; font:inherit; font-size:16px; font-weight:700; padding:8px; border:2px solid #e2e2ec; border-radius:10px; }
+.fall-custom input[aria-invalid='true']{ border-color:#e5484d; }
 .meteor-speed select{ font:inherit; font-size:16px; padding:8px; border-radius:10px; border:none; }

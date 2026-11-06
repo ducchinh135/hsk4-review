@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useApp } from '../context/AppContext.jsx';
-import { COUNTS, FALL_SECONDS, FILTERS, GAMES, ORDERS, loadSettings, poolFor, saveSettings } from '../games.js';
+import { COUNTS, FILTERS, GAMES, ORDERS, loadSettings, poolFor, saveSettings } from '../games.js';
 import { LESSON_LABELS, LESSON_ORDER } from '../lessons.js';
+import FallSpeed from '../components/FallSpeed.jsx';
 import { Link } from '../router.jsx';
 
 function ModePicker({ game, onClose }) {
@@ -46,7 +47,7 @@ export default function GamesHubPage() {
   const select = (key, label, options) => (
     <label className="game-select">
       <span>{label}</span>
-      <select value={String(settings[key])} onChange={(e) => set(key, (key === 'count' && e.target.value !== 'all') || key === 'fallSec' ? Number(e.target.value) : e.target.value)}>
+      <select value={String(settings[key])} onChange={(e) => set(key, key === 'count' && e.target.value !== 'all' ? Number(e.target.value) : e.target.value)}>
         {options.map(([v, text]) => (
           <option key={v} value={v}>{text}</option>
         ))}
@@ -61,7 +62,7 @@ export default function GamesHubPage() {
         {select('filter', 'Bộ lọc', FILTERS)}
         {select('order', 'Thứ tự', ORDERS)}
         {select('count', 'Số lượng', COUNTS.map((c) => [c, c === 'all' ? 'Tất cả' : c + ' từ']))}
-        {select('fallSec', '☄️ Tốc độ rơi', FALL_SECONDS)}
+        <FallSpeed className="game-select" label="☄️ Tốc độ rơi" value={settings.fallSec} onChange={(v) => set('fallSec', v)} />
       </div>
       <div className="game-count">{n} từ phù hợp</div>
       <div className="practice-hub">

@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import GameSummary from '../components/GameSummary.jsx';
 import { useApp } from '../context/AppContext.jsx';
-import { FALL_SECONDS, METEOR, fallMs, keyMatchesTile, loadSettings, pickWords, saveSettings, spawnGapMs, spawnX, tileLetters } from '../games.js';
+import FallSpeed from '../components/FallSpeed.jsx';
+import { METEOR, fallMs, keyMatchesTile, loadSettings, pickWords, saveSettings, spawnGapMs, spawnX, tileLetters } from '../games.js';
 import { shuffle } from '../random.js';
 import { Link } from '../router.jsx';
 import { isMuted, setMuted, sfx, unlock } from '../sfx.js';
@@ -127,10 +128,9 @@ function MeteorGame() {
     speech.cancel();
     sim.current = makeSim(words);
   };
-  const changeSpeed = (sec, el) => {
+  const changeSpeed = (sec) => {
     sim.current.firstMs = sec * 1000;
     saveSettings({ ...loadSettings(), fallSec: sec });
-    el.blur(); // so Enter resumes the game instead of reopening the list
     setTick((n) => n + 1);
   };
   const togglePause = () => {
@@ -350,14 +350,7 @@ function MeteorGame() {
         {s.paused && (
           <div className="meteor-pause">
             <div>Tạm dừng · Enter để chơi tiếp</div>
-            <label className="meteor-speed">
-              <span>☄️ Tốc độ rơi (áp dụng cho thiên thạch sau)</span>
-              <select value={s.firstMs / 1000} onChange={(e) => changeSpeed(Number(e.target.value), e.target)}>
-                {FALL_SECONDS.map(([v, text]) => (
-                  <option key={v} value={v}>{text}</option>
-                ))}
-              </select>
-            </label>
+            <FallSpeed className="meteor-speed" label="☄️ Tốc độ rơi (áp dụng cho thiên thạch sau)" value={s.firstMs / 1000} onChange={changeSpeed} />
           </div>
         )}
       </div>

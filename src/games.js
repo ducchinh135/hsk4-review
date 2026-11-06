@@ -36,6 +36,8 @@ export const ORDERS = [
 ];
 export const COUNTS = [10, 20, 50, 100, 'all'];
 // Seconds a meteor takes to fall at first; later meteors speed up, floored at half of it.
+export const FALL_RANGE = [3, 300]; // seconds a player may type in
+export const validFallSec = (v) => Number.isInteger(v) && v >= FALL_RANGE[0] && v <= FALL_RANGE[1];
 export const FALL_SECONDS = [
   [8, 'Rất nhanh (8 giây)'],
   [12, 'Nhanh (12 giây)'],
@@ -56,7 +58,7 @@ export function normalizeSettings(raw) {
     filter: FILTERS.some(([f]) => f === r.filter) ? r.filter : d.filter,
     order: ORDERS.some(([o]) => o === r.order) ? r.order : d.order,
     count: COUNTS.includes(r.count) ? r.count : d.count,
-    fallSec: FALL_SECONDS.some(([v]) => v === r.fallSec) ? r.fallSec : d.fallSec,
+    fallSec: validFallSec(r.fallSec) ? r.fallSec : d.fallSec,
   };
 }
 

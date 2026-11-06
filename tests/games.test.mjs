@@ -114,7 +114,11 @@ test('fallMs() and spawnGapMs() scale with the chosen fall time', () => {
   assert.equal(spawnGapMs(), 5000);
   assert.equal(spawnGapMs(8000), 2000);
   assert.equal(normalizeSettings({ fallSec: 45 }).fallSec, 45);
-  assert.equal(normalizeSettings({ fallSec: 7 }).fallSec, 20);
+  assert.equal(normalizeSettings({ fallSec: 7 }).fallSec, 7);
+  assert.equal(normalizeSettings({ fallSec: 2 }).fallSec, 20);
+  assert.equal(normalizeSettings({ fallSec: 301 }).fallSec, 20);
+  assert.equal(normalizeSettings({ fallSec: 7.5 }).fallSec, 20);
+  assert.equal(normalizeSettings({ fallSec: '9' }).fallSec, 20);
 });
 
 test('tileLetters() gives one tile per pinyin letter, without tones', () => {
