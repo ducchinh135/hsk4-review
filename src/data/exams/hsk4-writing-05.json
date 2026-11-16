@@ -1,0 +1,199 @@
+{
+  "test": 5,
+  "writing": {
+    "part1": {
+      "questions": [
+        {
+          "no": 86,
+          "words": [
+            "提醒",
+            "警察",
+            "要注意",
+            "司机朋友",
+            "安全"
+          ],
+          "answers": [
+            "警察提醒司机朋友要注意安全。"
+          ],
+          "vi": "Cảnh sát nhắc nhở các bác tài chú ý an toàn.",
+          "explain": "Chủ ngữ 警察 + động từ 提醒 + tân ngữ 司机朋友, sau đó là cụm 要注意安全 làm bổ ngữ nội dung của lời nhắc."
+        },
+        {
+          "no": 87,
+          "words": [
+            "去",
+            "经常",
+            "锻炼",
+            "姐姐",
+            "那家健身房"
+          ],
+          "answers": [
+            "姐姐经常去那家健身房锻炼。"
+          ],
+          "vi": "Chị gái thường đến phòng tập gym đó để tập luyện.",
+          "explain": "Chủ ngữ 姐姐 + trạng ngữ 经常 + cấu trúc liên động 去那家健身房 (địa điểm) rồi 锻炼 (mục đích)."
+        },
+        {
+          "no": 88,
+          "words": [
+            "王明的画儿",
+            "非常好",
+            "画",
+            "得"
+          ],
+          "answers": [
+            "王明的画儿画得非常好。"
+          ],
+          "vi": "Tranh của Vương Minh vẽ rất đẹp.",
+          "explain": "Cấu trúc bổ ngữ trạng thái: 画 + 得 + 非常好. Chủ ngữ 王明的画儿 đứng đầu, động từ 画 lặp lại trước 得."
+        },
+        {
+          "no": 89,
+          "words": [
+            "下学期",
+            "报名",
+            "还是",
+            "吧",
+            "再"
+          ],
+          "answers": [
+            "还是下学期再报名吧。"
+          ],
+          "vi": "Hay là học kỳ sau hãy đăng ký nhé.",
+          "explain": "还是 ... 吧 diễn đạt đề nghị; 下学期 là thời gian, 再 đứng trước động từ 报名, 吧 đặt cuối câu."
+        },
+        {
+          "no": 90,
+          "words": [
+            "不是",
+            "已经",
+            "吗",
+            "了",
+            "告诉你"
+          ],
+          "answers": [
+            "不是已经告诉你了吗？"
+          ],
+          "vi": "Chẳng phải đã nói với bạn rồi sao?",
+          "explain": "Câu hỏi phản vấn: 不是 ... 吗. Trạng ngữ 已经 đứng trước động từ 告诉你, 了 ở sau động từ, 吗 ở cuối câu."
+        },
+        {
+          "no": 91,
+          "words": [
+            "把",
+            "这把钥匙",
+            "放到",
+            "服务台",
+            "请"
+          ],
+          "answers": [
+            "请把这把钥匙放到服务台。"
+          ],
+          "vi": "Xin hãy để chiếc chìa khóa này ở quầy lễ tân.",
+          "explain": "Câu chữ 把: 请 + 把 + tân ngữ (这把钥匙) + động từ 放到 + nơi chốn (服务台)."
+        },
+        {
+          "no": 92,
+          "words": [
+            "已经三天",
+            "小王",
+            "了",
+            "没上班"
+          ],
+          "answers": [
+            "小王已经三天没上班了。"
+          ],
+          "vi": "Tiểu Vương đã ba ngày không đi làm rồi.",
+          "explain": "Chủ ngữ 小王 + 已经三天 (khoảng thời gian) + 没上班 + 了 ở cuối câu chỉ trạng thái đã kéo dài đến nay."
+        },
+        {
+          "no": 93,
+          "words": [
+            "这么晚",
+            "来",
+            "怎么",
+            "你",
+            "才"
+          ],
+          "answers": [
+            "你怎么这么晚才来？"
+          ],
+          "vi": "Sao muộn thế này bạn mới đến?",
+          "explain": "Chủ ngữ 你 + 怎么 (hỏi nguyên nhân) + 这么晚 + 才 (nhấn mạnh muộn) + động từ 来."
+        },
+        {
+          "no": 94,
+          "words": [
+            "任何困难",
+            "我",
+            "克服",
+            "能"
+          ],
+          "answers": [
+            "我能克服任何困难。"
+          ],
+          "vi": "Tôi có thể vượt qua mọi khó khăn.",
+          "explain": "Chủ ngữ 我 + động từ năng nguyện 能 + động từ 克服 + tân ngữ 任何困难."
+        },
+        {
+          "no": 95,
+          "words": [
+            "放着",
+            "桌子上",
+            "零钱",
+            "一些"
+          ],
+          "answers": [
+            "桌子上放着一些零钱。"
+          ],
+          "vi": "Trên bàn có để một ít tiền lẻ.",
+          "explain": "Câu tồn tại: nơi chốn (桌子上) + động từ + 着 (放着) + vật tồn tại (一些零钱)."
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 96,
+          "word": "回答",
+          "image": "/img/exam/t05/q96.png",
+          "answer": "她举起手想要回答老师的问题。",
+          "vi": "Cô ấy giơ tay muốn trả lời câu hỏi của thầy giáo.",
+          "explain": "Ảnh một lớp học, một nữ sinh giơ tay phát biểu. 回答 là động từ, dùng với tân ngữ 问题: 回答老师的问题."
+        },
+        {
+          "no": 97,
+          "word": "重",
+          "image": "/img/exam/t05/q97.png",
+          "answer": "这个红苹果比橘子重一点儿。",
+          "vi": "Quả táo đỏ này nặng hơn quả quýt một chút.",
+          "explain": "Ảnh cái cân bập bênh với quả táo và quả cam/quýt. 重 là tính từ, dùng trong câu so sánh 比: A 比 B 重一点儿."
+        },
+        {
+          "no": 98,
+          "word": "笔记本",
+          "image": "/img/exam/t05/q98.png",
+          "answer": "这个蓝色的笔记本是我的。",
+          "vi": "Cuốn sổ ghi chép màu xanh này là của tôi.",
+          "explain": "Ảnh một cuốn sổ lò xo có cây bút gài trên bìa. 笔记本 là danh từ, dùng với 是...的 để nói về sở hữu."
+        },
+        {
+          "no": 99,
+          "word": "跑步",
+          "image": "/img/exam/t05/q99.png",
+          "answer": "为了锻炼身体，同学们每天早上都坚持跑步。",
+          "vi": "Để rèn luyện sức khỏe, các bạn học mỗi sáng đều kiên trì chạy bộ.",
+          "explain": "Ảnh một nhóm người chạy bộ ngoài trời. 跑步 là động từ (ly hợp), dùng với 坚持 hoặc 每天早上."
+        },
+        {
+          "no": 100,
+          "word": "考试",
+          "image": "/img/exam/t05/q100.png",
+          "answer": "因为我准备得很好，所以今天的考试很顺利。",
+          "vi": "Vì tôi chuẩn bị rất tốt nên kỳ thi hôm nay rất suôn sẻ.",
+          "explain": "Ảnh bàn tay đang tô đáp án trên phiếu trả lời trắc nghiệm. 考试 vừa là danh từ vừa là động từ, ở đây dùng làm danh từ: 今天的考试."
+        }
+      ]
+    }
+  }
+}

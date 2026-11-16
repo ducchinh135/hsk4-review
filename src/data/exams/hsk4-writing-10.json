@@ -1,0 +1,205 @@
+{
+  "test": 10,
+  "writing": {
+    "part1": {
+      "questions": [
+        {
+          "no": 86,
+          "words": [
+            "不要",
+            "医生",
+            "建议",
+            "感冒时",
+            "吸烟"
+          ],
+          "answers": [
+            "医生建议感冒时不要吸烟。"
+          ],
+          "vi": "Bác sĩ khuyên khi bị cảm thì đừng hút thuốc.",
+          "explain": "Chủ ngữ 医生 + 建议 + nội dung lời khuyên: 感冒时 (trạng ngữ thời gian) + 不要吸烟."
+        },
+        {
+          "no": 87,
+          "words": [
+            "他们这儿",
+            "现金",
+            "用",
+            "只能",
+            "付款"
+          ],
+          "answers": [
+            "他们这儿只能用现金付款。"
+          ],
+          "vi": "Chỗ họ chỉ có thể thanh toán bằng tiền mặt.",
+          "explain": "Chủ ngữ 他们这儿 + 只能 + 用现金 (dùng cái gì) + 付款 (làm gì): cấu trúc 用 + danh từ + động từ."
+        },
+        {
+          "no": 88,
+          "words": [
+            "准时",
+            "已经",
+            "在机场",
+            "降落了",
+            "飞机"
+          ],
+          "answers": [
+            "飞机已经准时在机场降落了。"
+          ],
+          "vi": "Máy bay đã hạ cánh đúng giờ ở sân bay.",
+          "explain": "Chủ ngữ 飞机, trạng ngữ xếp theo thứ tự 已经 + 准时 + 在机场, rồi động từ 降落了."
+        },
+        {
+          "no": 89,
+          "words": [
+            "伤心的时候",
+            "人们",
+            "最需要",
+            "在",
+            "鼓励"
+          ],
+          "answers": [
+            "人们在伤心的时候最需要鼓励。"
+          ],
+          "vi": "Con người lúc buồn nhất là cần được động viên.",
+          "explain": "Chủ ngữ 人们 + 在伤心的时候 (trạng ngữ thời gian) + 最需要 + 鼓励 (tân ngữ)."
+        },
+        {
+          "no": 90,
+          "words": [
+            "良好的",
+            "他们",
+            "为孩子",
+            "提供了",
+            "学习环境"
+          ],
+          "answers": [
+            "他们为孩子提供了良好的学习环境。"
+          ],
+          "vi": "Họ đã tạo cho trẻ em một môi trường học tập tốt.",
+          "explain": "Cấu trúc 为……提供: 他们 + 为孩子 + 提供了 + 良好的 (định ngữ) + 学习环境."
+        },
+        {
+          "no": 91,
+          "words": [
+            "污染",
+            "会",
+            "健康",
+            "空气",
+            "影响",
+            "人们的"
+          ],
+          "answers": [
+            "空气污染会影响人们的健康。"
+          ],
+          "vi": "Ô nhiễm không khí sẽ ảnh hưởng đến sức khỏe của con người.",
+          "explain": "Chủ ngữ là cụm 空气污染, trợ động từ 会 + động từ 影响 + tân ngữ 人们的健康 (người ta + của + sức khỏe)."
+        },
+        {
+          "no": 92,
+          "words": [
+            "感情",
+            "爱情",
+            "很多种",
+            "只是",
+            "之一"
+          ],
+          "answers": [
+            "爱情只是很多种感情之一。"
+          ],
+          "vi": "Tình yêu chỉ là một trong rất nhiều loại tình cảm.",
+          "explain": "Cấu trúc 是……之一 (một trong số): 爱情 + 只是 + 很多种感情 + 之一."
+        },
+        {
+          "no": 93,
+          "words": [
+            "作业",
+            "老师",
+            "交",
+            "把",
+            "给",
+            "请"
+          ],
+          "answers": [
+            "请把作业交给老师。"
+          ],
+          "vi": "Xin hãy nộp bài tập cho thầy cô.",
+          "explain": "Câu cầu khiến với 把: 请 + 把 + 作业 + 交 + 给 + 老师 (động từ 交 kèm 给 chỉ đối tượng nhận)."
+        },
+        {
+          "no": 94,
+          "words": [
+            "弄清楚",
+            "晚会的",
+            "地点",
+            "没有",
+            "我"
+          ],
+          "answers": [
+            "我没有弄清楚晚会的地点。"
+          ],
+          "vi": "Tôi chưa nắm rõ địa điểm của buổi liên hoan.",
+          "explain": "Chủ ngữ 我 + 没有 + 弄清楚 (động từ + bổ ngữ kết quả) + 晚会的地点."
+        },
+        {
+          "no": 95,
+          "words": [
+            "被他们",
+            "演出",
+            "推迟",
+            "一个小时",
+            "了"
+          ],
+          "answers": [
+            "演出被他们推迟了一个小时。"
+          ],
+          "vi": "Buổi biểu diễn bị họ hoãn lại một tiếng.",
+          "explain": "Câu bị động: 演出 (chủ ngữ) + 被他们 + 推迟 + 了 + 一个小时 (bổ ngữ thời lượng)."
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 96,
+          "word": "表扬",
+          "image": "/img/exam/t10/q96.png",
+          "answer": "她受到了妈妈的表扬。",
+          "vi": "Cô bé được mẹ khen.",
+          "explain": "Ảnh cô bé và người mẹ giơ ngón cái khen ngợi. 表扬 là động từ (khen): 受到表扬, 表扬某人."
+        },
+        {
+          "no": 97,
+          "word": "参观",
+          "image": "/img/exam/t10/q97.png",
+          "answer": "代表团正在参观展览馆。",
+          "vi": "Đoàn đại biểu đang tham quan nhà triển lãm.",
+          "explain": "Ảnh một nhóm người đang đi xem trong phòng triển lãm. 参观 là động từ, tân ngữ là nơi chốn: 参观博物馆/展览馆."
+        },
+        {
+          "no": 98,
+          "word": "出发",
+          "image": "/img/exam/t10/q98.png",
+          "answer": "他骑着自行车出发了。",
+          "vi": "Anh ấy đạp xe xuất phát rồi.",
+          "explain": "Ảnh một người đi xe đạp trên con đường dài. 出发 là động từ (lên đường): 从……出发, 出发了."
+        },
+        {
+          "no": 99,
+          "word": "打招呼",
+          "image": "/img/exam/t10/q99.png",
+          "answer": "她向大家打招呼。",
+          "vi": "Cô ấy chào mọi người.",
+          "explain": "Ảnh cô gái giơ tay vẫy chào các bạn. 打招呼 là động từ ly hợp: 向/跟 + người + 打招呼."
+        },
+        {
+          "no": 100,
+          "word": "戴",
+          "image": "/img/exam/t10/q100.png",
+          "answer": "男孩儿喜欢戴眼镜。",
+          "vi": "Cậu bé thích đeo kính.",
+          "explain": "Ảnh cậu bé đội mũ cử nhân và đeo kính to. 戴 là động từ (đeo, đội): 戴眼镜/戴帽子."
+        }
+      ]
+    }
+  }
+}

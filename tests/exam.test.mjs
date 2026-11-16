@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { TESTS, TOTAL, TOTALS, answeredCount, audioUrl, clipsOf, gapOf, isAnswered, listeningOf, sectionQuestions, examKey, filledText, gradeTest, mmss, orderedSentences, questionsOf, scaled, testByNo, toggleLetter, usedWords } from '../src/exam.js';
+import { TESTS, TOTAL, TOTALS, hanCount, isRight, normalizeSentence, writingOf, answeredCount, audioUrl, clipsOf, gapOf, isAnswered, listeningOf, sectionQuestions, examKey, filledText, gradeTest, mmss, orderedSentences, questionsOf, scaled, testByNo, toggleLetter, usedWords } from '../src/exam.js';
 
 test('there are ten tests, numbered 1-10', () => {
   assert.deepEqual(TESTS.map((t) => t.test), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
@@ -149,4 +149,52 @@ test('gradeTest() grades a listening section; true/false answers compare strictl
   assert.equal(answeredCount(t, { 1: false, 11: 0 }, 'listening'), 2);
   assert.equal(isAnswered(q1, false), true);
   assert.equal(isAnswered(q1, undefined), false);
+});
+
+test('every test has the 15 writing questions 86-100, once each, in order', () => {
+  for (const t of TESTS) {
+    assert.deepEqual(writingOf(t).map((q) => q.no), Array.from({ length: 15 }, (_, i) => 86 + i), `test ${t.test}`);
+    assert.equal(sectionQuestions(t, 'writing').length, 15);
+  }
+});
+
+test('every writing question is well formed, and its part-1 answers use exactly the given words', () => {
+  const strip = (s) => [...normalizeSentence(s)].sort().join('');
+  for (const t of TESTS) {
+    for (const q of writingOf(t)) {
+      const at = `test ${t.test} Q${q.no}`;
+      assert.ok(q.vi && q.explain, at);
+      if (q.kind === 'sentence') {
+        assert.ok(q.words.length >= 3 && q.words.length <= 6, at);
+        assert.ok(q.answers.length >= 1, at);
+        for (const a of q.answers) assert.equal(strip(a), strip(q.words.join('')), at + ' ' + a);
+      } else {
+        assert.ok(q.word && q.answer, at);
+        assert.ok(existsSync(publicPath(q.image)), at + ' image ' + q.image);
+      }
+    }
+  }
+});
+
+test('normalizeSentence() ignores spaces and punctuation; hanCount() counts characters', () => {
+  assert.equal(normalizeSentence(' 你最好 重新换一个密码。'), '你最好重新换一个密码');
+  assert.equal(normalizeSentence('他在看书，对吗？'), '他在看书对吗');
+  assert.equal(normalizeSentence(undefined), '');
+  assert.equal(hanCount('我 love 你！'), 2);
+});
+
+test('writing part 1 is graded against every sentence the book lists; part 2 is never graded', () => {
+  const q = { kind: 'sentence', answers: ['你最好重新换一个密码。', '你最好换一个密码。'] };
+  assert.equal(isRight(q, '你最好 换一个密码'), true);
+  assert.equal(isRight(q, '你最好重新换一个密码！'), true);
+  assert.equal(isRight(q, '换一个密码你最好'), false);
+  assert.equal(isRight(q, ''), false);
+  assert.equal(isRight({ kind: 'free', answer: 'x' }, 'x'), false);
+  const t = TESTS[0];
+  const all = Object.fromEntries(writingOf(t).filter((w) => w.kind === 'sentence').map((w) => [w.no, w.answers[0]]));
+  const g = gradeTest(t, all, 'writing');
+  assert.equal(g.score, 10);
+  assert.equal(g.total, TOTALS.writing);
+  assert.equal(gradeTest(t, { ...all, 86: '' }, 'writing').score, 9);
+  assert.equal(answeredCount(t, { 86: '你', 96: ' ' }, 'writing'), 1);
 });

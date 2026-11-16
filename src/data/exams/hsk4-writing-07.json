@@ -1,0 +1,203 @@
+{
+  "test": 7,
+  "writing": {
+    "part1": {
+      "questions": [
+        {
+          "no": 86,
+          "words": [
+            "想",
+            "去南方",
+            "你",
+            "工作",
+            "吗"
+          ],
+          "answers": [
+            "你想去南方工作吗？"
+          ],
+          "vi": "Bạn có muốn đến miền Nam làm việc không?",
+          "explain": "Chủ ngữ 你 + 想 (muốn) + 去南方工作 (đi miền Nam làm việc), cuối câu thêm 吗 để hỏi."
+        },
+        {
+          "no": 87,
+          "words": [
+            "开会",
+            "派张老师",
+            "去上海",
+            "校长"
+          ],
+          "answers": [
+            "校长派张老师去上海开会。"
+          ],
+          "vi": "Hiệu trưởng cử thầy Trương đi Thượng Hải họp.",
+          "explain": "Câu kiêm ngữ: 校长 + 派 + 张老师 + 去上海开会; 张老师 vừa là tân ngữ của 派 vừa là chủ ngữ của 去上海开会."
+        },
+        {
+          "no": 88,
+          "words": [
+            "成绩",
+            "的",
+            "让我",
+            "这次",
+            "很高兴"
+          ],
+          "answers": [
+            "这次的成绩让我很高兴。"
+          ],
+          "vi": "Thành tích lần này khiến tôi rất vui.",
+          "explain": "Chủ ngữ 这次的成绩 (định ngữ 这次 + 的 + 成绩), sau đó là 让我很高兴 (khiến tôi rất vui)."
+        },
+        {
+          "no": 89,
+          "words": [
+            "作业",
+            "终于",
+            "我",
+            "做完了",
+            "把"
+          ],
+          "answers": [
+            "我终于把作业做完了。"
+          ],
+          "vi": "Cuối cùng tôi cũng làm xong bài tập rồi.",
+          "explain": "Câu chữ 把: chủ ngữ + trạng ngữ 终于 + 把 + tân ngữ 作业 + động từ kèm kết quả 做完了."
+        },
+        {
+          "no": 90,
+          "words": [
+            "那个孩子",
+            "太",
+            "不",
+            "了",
+            "听话"
+          ],
+          "answers": [
+            "那个孩子太不听话了。"
+          ],
+          "vi": "Đứa trẻ đó quá không nghe lời rồi.",
+          "explain": "Cấu trúc 太……了 (quá...) bao quanh cụm 不听话: 那个孩子 + 太 + 不听话 + 了."
+        },
+        {
+          "no": 91,
+          "words": [
+            "通知",
+            "写着",
+            "上",
+            "会议",
+            "黑板"
+          ],
+          "answers": [
+            "黑板上写着会议通知。"
+          ],
+          "vi": "Trên bảng đen viết thông báo họp.",
+          "explain": "Câu tồn tại: nơi chốn 黑板上 + động từ 写着 + vật được viết 会议通知."
+        },
+        {
+          "no": 92,
+          "words": [
+            "你",
+            "不要",
+            "伤心",
+            "了",
+            "就",
+            "太"
+          ],
+          "answers": [
+            "你就不要太伤心了。"
+          ],
+          "vi": "Bạn đừng quá buồn nữa.",
+          "explain": "不要太……了 mang ý khuyên nhủ (đừng quá...), 就 đứng trước 不要 để làm giọng khuyên mềm hơn."
+        },
+        {
+          "no": 93,
+          "words": [
+            "数到十",
+            "就",
+            "了",
+            "可以开始",
+            "我"
+          ],
+          "answers": [
+            "我数到十就可以开始了。"
+          ],
+          "vi": "Tôi đếm đến mười là có thể bắt đầu rồi.",
+          "explain": "Cấu trúc 数到十 + 就 + 可以开始, 了 đặt cuối câu biểu thị sự việc sắp xảy ra."
+        },
+        {
+          "no": 94,
+          "words": [
+            "我",
+            "就是",
+            "的",
+            "大学老师",
+            "这位"
+          ],
+          "answers": [
+            "这位就是我的大学老师。"
+          ],
+          "vi": "Vị này chính là thầy giáo đại học của tôi.",
+          "explain": "这位 làm chủ ngữ, 就是 (chính là) làm vị ngữ, tân ngữ là 我的大学老师 (我 + 的 + 大学老师)."
+        },
+        {
+          "no": 95,
+          "words": [
+            "怎么",
+            "呢",
+            "听说过",
+            "没",
+            "我"
+          ],
+          "answers": [
+            "我怎么没听说过呢？"
+          ],
+          "vi": "Sao tôi lại chưa nghe nói đến nhỉ?",
+          "explain": "Câu hỏi tu từ: 我 + 怎么 + 没听说过 + 呢, 怎么 đặt trước 没听说过 để biểu thị ngạc nhiên."
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 96,
+          "word": "爬山",
+          "image": "/img/exam/t07/q96.png",
+          "answer": "爬山是很多人都喜欢的一种运动。",
+          "vi": "Leo núi là một môn thể thao mà rất nhiều người yêu thích.",
+          "explain": "Ảnh một nhóm người đang leo núi trên đường mòn. 爬山 làm chủ ngữ, câu giải thích bằng 是……的一种运动."
+        },
+        {
+          "no": 97,
+          "word": "电话",
+          "image": "/img/exam/t07/q97.png",
+          "answer": "中间的这个人正在高兴地给家人打电话。",
+          "vi": "Người ở giữa đang vui vẻ gọi điện thoại cho người nhà.",
+          "explain": "Ảnh một nhóm người ngồi trên bậc đá, người ở giữa đang nghe điện thoại. Dùng 给……打电话 (gọi điện cho...)."
+        },
+        {
+          "no": 98,
+          "word": "饺子",
+          "image": "/img/exam/t07/q98.png",
+          "answer": "我在饭店点了一盘饺子。",
+          "vi": "Tôi đã gọi một đĩa sủi cảo ở nhà hàng.",
+          "explain": "Ảnh một đĩa sủi cảo với bát nước chấm. 饺子 làm tân ngữ, lượng từ là 盘 (đĩa)."
+        },
+        {
+          "no": 99,
+          "word": "读",
+          "image": "/img/exam/t07/q99.png",
+          "answer": "这个小伙子一个人坐在石头上读书呢。",
+          "vi": "Chàng trai này ngồi một mình trên tảng đá đọc sách.",
+          "explain": "Ảnh chàng trai ngồi trên đá đọc sách. 读 + 书 (đọc sách), 呢 ở cuối câu chỉ hành động đang diễn ra."
+        },
+        {
+          "no": 100,
+          "word": "生气",
+          "image": "/img/exam/t07/q100.png",
+          "answer": "他们俩都生气了，谁也不跟谁说话。",
+          "vi": "Hai người họ đều giận rồi, chẳng ai nói chuyện với ai.",
+          "explain": "Ảnh một nam một nữ ngồi quay lưng, vẻ mặt khó chịu. 生气了 diễn tả đã giận, 谁也不跟谁说话 là hậu quả."
+        }
+      ]
+    }
+  }
+}

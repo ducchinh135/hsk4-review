@@ -22,21 +22,36 @@ import L07 from './data/exams/hsk4-listening-07.json' with { type: 'json' };
 import L08 from './data/exams/hsk4-listening-08.json' with { type: 'json' };
 import L09 from './data/exams/hsk4-listening-09.json' with { type: 'json' };
 import L10 from './data/exams/hsk4-listening-10.json' with { type: 'json' };
+import W01 from './data/exams/hsk4-writing-01.json' with { type: 'json' };
+import W02 from './data/exams/hsk4-writing-02.json' with { type: 'json' };
+import W03 from './data/exams/hsk4-writing-03.json' with { type: 'json' };
+import W04 from './data/exams/hsk4-writing-04.json' with { type: 'json' };
+import W05 from './data/exams/hsk4-writing-05.json' with { type: 'json' };
+import W06 from './data/exams/hsk4-writing-06.json' with { type: 'json' };
+import W07 from './data/exams/hsk4-writing-07.json' with { type: 'json' };
+import W08 from './data/exams/hsk4-writing-08.json' with { type: 'json' };
+import W09 from './data/exams/hsk4-writing-09.json' with { type: 'json' };
+import W10 from './data/exams/hsk4-writing-10.json' with { type: 'json' };
 import AUDIO from './data/exams/audio-manifest.json' with { type: 'json' };
 
+const WRITING = [W01, W02, W03, W04, W05, W06, W07, W08, W09, W10];
 const LISTENING = [L01, L02, L03, L04, L05, L06, L07, L08, L09, L10];
-// Each test: its reading section (hsk4-NN.json) and its listening section (hsk4-listening-NN.json).
+// Each test: its reading section (hsk4-NN.json), listening section (hsk4-listening-NN.json) and writing
+// section (hsk4-writing-NN.json).
 const READING = [T01, T02, T03, T04, T05, T06, T07, T08, T09, T10];
-export const TESTS = READING.map((t, i) => ({ ...t, listening: LISTENING[i].listening }));
+export const TESTS = READING.map((t, i) => ({ ...t, listening: LISTENING[i].listening, writing: WRITING[i].writing }));
 export const testByNo = (n) => TESTS.find((t) => t.test === Number(n));
 
 export const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
 // The real exam: 45 listening questions (about 30 minutes, the audio sets the pace) and 40 reading
 // questions in 40 minutes.
 export const SECTIONS = ['listening', 'reading'];
-export const TOTALS = { listening: 45, reading: 40 };
+// Writing is a third section: Q86-95 (put word groups in order) are graded here, Q96-100 (a sentence about
+// a picture) cannot be, so the learner checks them against the book's sample.
+export const WRITING_MINUTES = 25;
+export const TOTALS = { listening: 45, reading: 40, writing: 10 };
 export const EXAM_MINUTES = 40;
-export const SECTION_NAME = { listening: 'Nghe', reading: 'Đọc' };
+export const SECTION_NAME = { listening: 'Nghe', reading: 'Đọc', writing: 'Viết' };
 
 // Mark key of question `no` of test `t` (marks are shared with the rest of the app).
 export const examKey = (t, no) => `x:${t}:${no}`;
@@ -64,10 +79,37 @@ export function listeningOf(test) {
   return out;
 }
 
-export const sectionQuestions = (test, section) => (section === 'listening' ? listeningOf(test) : questionsOf(test));
+// Every question of the writing section: Q86-95 (kind "sentence") then Q96-100 (kind "free").
+export function writingOf(test) {
+  const w = test.writing;
+  return [
+    ...w.part1.questions.map((q) => ({ ...q, part: 1, kind: 'sentence', section: 'writing' })),
+    ...w.part2.questions.map((q) => ({ ...q, part: 2, kind: 'free', section: 'writing' })),
+  ];
+}
 
-// Has the question an answer (an order counts once its three letters are in)?
-export const isAnswered = (q, a) => (q.kind === 'order' ? (a || '').length === 3 : a !== undefined);
+export const sectionQuestions = (test, section) => (section === 'listening' ? listeningOf(test) : section === 'writing' ? writingOf(test) : questionsOf(test));
+
+// A typed sentence without spaces and punctuation, so that 你最好换一个密码 and "你最好 换一个密码。" match.
+export const normalizeSentence = (s) => String(s || '').replace(/[\s\u3000，。？！、；：“”‘’（）《》…—·,.?!;:'"()-]/g, '');
+// Number of Chinese characters in a text (the word count shown under a writing box).
+export const hanCount = (s) => (String(s || '').match(/[\u4e00-\u9fff]/g) || []).length;
+
+// Has the question an answer (an order counts once its three letters are in; a typed answer once it
+// has any character)?
+export function isAnswered(q, a) {
+  if (q.kind === 'order') return (a || '').length === 3;
+  if (q.kind === 'sentence' || q.kind === 'free') return normalizeSentence(a) !== '';
+  return a !== undefined;
+}
+
+// Is `a` the right answer to `q`? Writing part 1 accepts any sentence the book lists; part 2 has no right
+// answer a program can check, so it is never "right" here.
+export function isRight(q, a) {
+  if (q.kind === 'sentence') return q.answers.some((x) => normalizeSentence(x) === normalizeSentence(a)) && normalizeSentence(a) !== '';
+  if (q.kind === 'free') return false;
+  return a !== undefined && a === q.answer;
+}
 
 // The audio clips that play for question `no` of `test`: its own, and for the second question of a
 // shared passage (Q37, 39, ...) the first question's clip (the passage) before it.
@@ -88,10 +130,10 @@ export const TOTAL = 40;
 export function gradeTest(test, answers, section = 'reading') {
   const byNo = {};
   let score = 0;
-  const qs = sectionQuestions(test, section);
+  // writing part 2 cannot be graded: it is left out of both the score and the total
+  const qs = sectionQuestions(test, section).filter((q) => q.kind !== 'free');
   for (const q of qs) {
-    const given = answers[q.no];
-    const ok = given !== undefined && given === q.answer;
+    const ok = isRight(q, answers[q.no]);
     byNo[q.no] = ok;
     if (ok) score += 1;
   }

@@ -1,4 +1,4 @@
-import { LETTERS, audioUrl, clipsOf, filledText, listeningOf, orderedSentences, toggleLetter, usedWords } from '../exam.js';
+import { LETTERS, audioUrl, clipsOf, filledText, hanCount, listeningOf, orderedSentences, toggleLetter, usedWords, writingOf } from '../exam.js';
 import AudioPlayer from './AudioPlayer.jsx';
 
 const arrow = (s) => [...s].join(' → ');
@@ -257,6 +257,116 @@ export function ReadingPaper({ test, answers, onAnswer, revealed, okOf }) {
       {part2}
       <h3 className="quiz-label">第三部分 · Câu 66–85 · Đọc hiểu</h3>
       {part3}
+    </>
+  );
+}
+
+// The writing section. Part 1 (Q86-95): word groups to put in order; tap one to add it to the box or
+// type the whole sentence. Part 2 (Q96-100): a picture and a word, write a sentence. Props as for the
+// other papers plus: onCheck(no) (practice mode: grade this question now), selfMarks {no: 'ok' | 'bad'} and
+// onSelf(no, mark) for part 2, which only the learner can judge against the book's sample.
+export function WritingPaper({ test, answers, onAnswer, revealed, okOf, onCheck, selfMarks, onSelf }) {
+  const questions = writingOf(test);
+  const part1 = questions.filter((q) => q.kind === 'sentence');
+  const part2 = questions.filter((q) => q.kind === 'free');
+
+  const checkBtn = (q, label) =>
+    onCheck && !revealed(q.no) ? (
+      <button type="button" className="btn" disabled={!(answers[q.no] || '').trim()} onClick={() => onCheck(q.no)}>
+        {label}
+      </button>
+    ) : null;
+
+  return (
+    <>
+      <h3 className="quiz-label">第一部分 · Câu 86–95 · Sắp xếp các từ thành câu hoàn chỉnh</h3>
+      {part1.map((q) => {
+        const shown = revealed(q.no);
+        const text = answers[q.no] || '';
+        return (
+          <div key={q.no} id={'q' + q.no} className="rd-q">
+            <div className="rd-q-text">{q.no}.</div>
+            <div className="rd-words">
+              {q.words.map((w, k) => (
+                <button key={k} type="button" className="rd-word" disabled={shown} onClick={() => onAnswer(q.no, text + w)}>
+                  {w}
+                </button>
+              ))}
+            </div>
+            <input
+              className={'exam-write' + (shown ? (okOf(q.no) ? ' ok' : ' bad') : '')}
+              type="text"
+              lang="zh"
+              spellcheck="false"
+              value={text}
+              disabled={shown}
+              placeholder="Gõ hoặc bấm các từ để ghép thành câu"
+              aria-label={`Câu ${q.no}`}
+              onChange={(e) => onAnswer(q.no, e.target.value)}
+            />
+            {!shown && (
+              <div className="controls exam-modes">
+                <button type="button" className="btn secondary" disabled={!text} onClick={() => onAnswer(q.no, '')}>
+                  Xoá
+                </button>
+                {checkBtn(q, 'Kiểm tra')}
+              </div>
+            )}
+            {shown && (
+              <div className="rd-item-explain">
+                <Reveal ok={okOf(q.no)}>
+                  {!text.trim() ? '⚪ Chưa trả lời' : okOf(q.no) ? '✅ Đúng' : '❌ Sai'} — đáp án: {q.answers.join(' / ')}
+                </Reveal>
+                <div className="quiz-reveal-sub">{q.vi}</div>
+                <div className="quiz-reveal-sub">💡 {q.explain}</div>
+              </div>
+            )}
+          </div>
+        );
+      })}
+      <h3 className="quiz-label">第二部分 · Câu 96–100 · Nhìn tranh, dùng từ cho sẵn để viết câu</h3>
+      {part2.map((q) => {
+        const shown = revealed(q.no);
+        const text = answers[q.no] || '';
+        const mark = selfMarks[q.no];
+        return (
+          <div key={q.no} id={'q' + q.no} className="rd-q">
+            <div className="rd-q-text">
+              {q.no}. <span className="exam-word">{q.word}</span>
+            </div>
+            <img className="exam-pic" src={q.image} alt={`Tranh câu ${q.no}`} loading="lazy" />
+            <textarea
+              className="exam-write"
+              rows="2"
+              lang="zh"
+              spellcheck="false"
+              value={text}
+              disabled={shown}
+              placeholder={`Viết một câu có dùng “${q.word}”`}
+              aria-label={`Câu ${q.no}`}
+              onChange={(e) => onAnswer(q.no, e.target.value)}
+            />
+            <div className="exam-count">Số chữ: {hanCount(text)}</div>
+            {!shown && <div className="controls exam-modes">{checkBtn(q, 'Xem câu mẫu')}</div>}
+            {shown && (
+              <div className="rd-item-explain">
+                <div className="quiz-reveal-sub">Câu mẫu của sách:</div>
+                <div className="hz">{q.answer}</div>
+                <div className="quiz-reveal-sub">{q.vi}</div>
+                <div className="quiz-reveal-sub">💡 {q.explain}</div>
+                <div className="controls exam-modes">
+                  <button type="button" className={'btn' + (mark === 'ok' ? '' : ' secondary')} onClick={() => onSelf(q.no, 'ok')}>
+                    ✅ Mình viết đúng
+                  </button>
+                  <button type="button" className={'btn' + (mark === 'bad' ? '' : ' secondary')} onClick={() => onSelf(q.no, 'bad')}>
+                    ❌ Chưa đúng
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })}
     </>
   );
 }

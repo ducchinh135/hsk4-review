@@ -1,0 +1,204 @@
+{
+  "test": 8,
+  "writing": {
+    "part1": {
+      "questions": [
+        {
+          "no": 86,
+          "words": [
+            "房东",
+            "请",
+            "把",
+            "房租和钥匙",
+            "交给"
+          ],
+          "answers": [
+            "请把房租和钥匙交给房东。"
+          ],
+          "vi": "Xin hãy đưa tiền thuê nhà và chìa khóa cho chủ nhà.",
+          "explain": "Câu chữ 把 dạng câu cầu khiến: 请 + 把 + 房租和钥匙 + 交给 + 房东 (người nhận đặt sau 交给)."
+        },
+        {
+          "no": 87,
+          "words": [
+            "窗户",
+            "已经",
+            "了",
+            "被我",
+            "擦干净"
+          ],
+          "answers": [
+            "窗户已经被我擦干净了。"
+          ],
+          "vi": "Cửa sổ đã được tôi lau sạch rồi.",
+          "explain": "Câu bị động chữ 被: 窗户 + 已经 + 被我 + 擦干净 + 了; trạng ngữ 已经 đứng trước 被."
+        },
+        {
+          "no": 88,
+          "words": [
+            "去",
+            "我们",
+            "吧",
+            "还是",
+            "坐火车"
+          ],
+          "answers": [
+            "我们还是坐火车去吧。"
+          ],
+          "vi": "Chúng ta vẫn nên đi bằng tàu hỏa thì hơn.",
+          "explain": "还是……吧 biểu thị đề nghị chọn phương án tốt hơn; 坐火车 (phương tiện) đứng trước 去."
+        },
+        {
+          "no": 89,
+          "words": [
+            "空调",
+            "买",
+            "怎么样",
+            "你",
+            "的"
+          ],
+          "answers": [
+            "你买的空调怎么样？"
+          ],
+          "vi": "Cái điều hòa bạn mua thế nào?",
+          "explain": "你买的空调 là chủ ngữ (định ngữ 你买 + 的 + 空调), 怎么样 làm vị ngữ để hỏi."
+        },
+        {
+          "no": 90,
+          "words": [
+            "很美",
+            "海南岛",
+            "一年四季",
+            "都"
+          ],
+          "answers": [
+            "海南岛一年四季都很美。"
+          ],
+          "vi": "Đảo Hải Nam bốn mùa trong năm đều rất đẹp.",
+          "explain": "Chủ ngữ 海南岛, trạng ngữ thời gian 一年四季, rồi 都 + 很美 làm vị ngữ."
+        },
+        {
+          "no": 91,
+          "words": [
+            "一",
+            "他",
+            "想睡觉",
+            "就",
+            "上课"
+          ],
+          "answers": [
+            "他一上课就想睡觉。"
+          ],
+          "vi": "Cứ hễ vào học là cậu ấy lại buồn ngủ.",
+          "explain": "Cấu trúc 一……就…… (hễ... là...): 他 + 一上课 + 就想睡觉."
+        },
+        {
+          "no": 92,
+          "words": [
+            "看病的",
+            "非常多",
+            "人",
+            "医院里"
+          ],
+          "answers": [
+            "医院里看病的人非常多。"
+          ],
+          "vi": "Trong bệnh viện người đi khám bệnh rất đông.",
+          "explain": "Trạng ngữ nơi chốn 医院里 + chủ ngữ 看病的人 (看病的 làm định ngữ) + vị ngữ 非常多."
+        },
+        {
+          "no": 93,
+          "words": [
+            "非常详细",
+            "做",
+            "你",
+            "的",
+            "计划"
+          ],
+          "answers": [
+            "你做的计划非常详细。"
+          ],
+          "vi": "Kế hoạch bạn lập rất chi tiết.",
+          "explain": "你做的计划 là chủ ngữ (định ngữ 你做 + 的 + 计划), 非常详细 làm vị ngữ."
+        },
+        {
+          "no": 94,
+          "words": [
+            "不是",
+            "你们",
+            "准备好",
+            "吗",
+            "已经",
+            "了"
+          ],
+          "answers": [
+            "你们不是已经准备好了吗？"
+          ],
+          "vi": "Chẳng phải các bạn đã chuẩn bị xong rồi sao?",
+          "explain": "Câu hỏi tu từ 不是……吗: 你们 + 不是 + 已经准备好了 + 吗."
+        },
+        {
+          "no": 95,
+          "words": [
+            "条件",
+            "很好",
+            "提供",
+            "学校",
+            "给我们",
+            "的"
+          ],
+          "answers": [
+            "学校给我们提供的条件很好。",
+            "学校提供给我们的条件很好。"
+          ],
+          "vi": "Điều kiện mà nhà trường cung cấp cho chúng tôi rất tốt.",
+          "explain": "Chủ ngữ là cụm 学校给我们提供的条件 (定语 + 的 + 条件), vị ngữ 很好; 给我们 có thể đứng trước hoặc sau 提供."
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 96,
+          "word": "见面",
+          "image": "/img/exam/t08/q96.png",
+          "answer": "太好了，我们又见面了。",
+          "vi": "Tuyệt quá, chúng ta lại gặp nhau rồi.",
+          "explain": "Ảnh mọi người bắt tay, mỉm cười khi gặp nhau. 见面 là động từ ly hợp, thường dùng 见面了 hoặc 跟……见面."
+        },
+        {
+          "no": 97,
+          "word": "电脑",
+          "image": "/img/exam/t08/q97.png",
+          "answer": "这个小女孩儿被电脑里的新闻吸引了。",
+          "vi": "Cô bé này bị tin tức trong máy tính thu hút.",
+          "explain": "Ảnh một cô bé đeo tai nghe nhìn màn hình máy tính. 电脑里的 làm định ngữ, dùng câu bị động 被……吸引了."
+        },
+        {
+          "no": 98,
+          "word": "雨",
+          "image": "/img/exam/t08/q98.png",
+          "answer": "雨下得很大，没带伞的游客只好站在门口等着雨停。",
+          "vi": "Mưa rất to, du khách không mang ô đành đứng ở cửa đợi mưa tạnh.",
+          "explain": "Ảnh một sân trước nhà cổ trong mưa. 下雨 (mưa rơi) với bổ ngữ trạng thái 下得很大, 等着雨停 là chờ mưa tạnh."
+        },
+        {
+          "no": 99,
+          "word": "照顾",
+          "image": "/img/exam/t08/q99.png",
+          "answer": "孩子的父母工作很忙，因此孩子由两位老人照顾。",
+          "vi": "Bố mẹ đứa trẻ bận việc, vì vậy đứa trẻ do hai cụ chăm sóc.",
+          "explain": "Ảnh ông cụ ngồi cạnh xe đẩy có em bé. 照顾 là chăm sóc, dùng 由……照顾 (do... chăm sóc)."
+        },
+        {
+          "no": 100,
+          "word": "高兴",
+          "image": "/img/exam/t08/q100.png",
+          "answer": "终于毕业了，他们太高兴了。",
+          "vi": "Cuối cùng cũng tốt nghiệp rồi, họ vui quá.",
+          "explain": "Ảnh sinh viên tung mũ cử nhân ăn mừng tốt nghiệp. 太高兴了 diễn tả rất vui."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "test": 4,
+  "writing": {
+    "part1": {
+      "questions": [
+        {
+          "no": 86,
+          "words": [
+            "从",
+            "八个小时",
+            "下午",
+            "工作",
+            "到",
+            "上午"
+          ],
+          "answers": [
+            "从上午到下午工作八个小时。"
+          ],
+          "vi": "Làm việc tám tiếng từ sáng đến chiều.",
+          "explain": "Cấu trúc 从……到……: 从上午到下午 chỉ khoảng thời gian, sau đó là 工作 + bổ ngữ thời lượng 八个小时."
+        },
+        {
+          "no": 87,
+          "words": [
+            "这学期",
+            "学",
+            "三种语言",
+            "想",
+            "我"
+          ],
+          "answers": [
+            "这学期我想学三种语言。"
+          ],
+          "vi": "Học kỳ này tôi muốn học ba ngoại ngữ.",
+          "explain": "Trạng ngữ thời gian 这学期 + chủ ngữ 我 + 想 + động từ 学 + tân ngữ 三种语言."
+        },
+        {
+          "no": 88,
+          "words": [
+            "他",
+            "刚",
+            "回来",
+            "从北京",
+            "出差"
+          ],
+          "answers": [
+            "他刚从北京出差回来。"
+          ],
+          "vi": "Anh ấy vừa đi công tác ở Bắc Kinh về.",
+          "explain": "Phó từ 刚 đứng trước giới từ 从北京; 出差回来: hành động 出差 trước, 回来 sau."
+        },
+        {
+          "no": 89,
+          "words": [
+            "比较快",
+            "南方的",
+            "天气",
+            "变化"
+          ],
+          "answers": [
+            "南方的天气变化比较快。"
+          ],
+          "vi": "Thời tiết miền Nam thay đổi khá nhanh.",
+          "explain": "Chủ ngữ là cụm danh từ 南方的天气变化 (định ngữ 南方的 + 天气 + 变化), vị ngữ 比较快."
+        },
+        {
+          "no": 90,
+          "words": [
+            "按照",
+            "毕业",
+            "学校的",
+            "规定",
+            "我",
+            "暑假"
+          ],
+          "answers": [
+            "按照学校的规定，我暑假毕业。"
+          ],
+          "vi": "Theo quy định của nhà trường, tôi tốt nghiệp vào kỳ nghỉ hè.",
+          "explain": "按照 + 学校的规定 làm trạng ngữ đứng đầu câu, sau đó chủ ngữ 我 + thời gian 暑假 + động từ 毕业."
+        },
+        {
+          "no": 91,
+          "words": [
+            "苏杭一带",
+            "口味",
+            "清淡",
+            "人",
+            "的"
+          ],
+          "answers": [
+            "苏杭一带的人口味清淡。"
+          ],
+          "vi": "Người vùng Tô Hàng có khẩu vị thanh đạm.",
+          "explain": "Cụm 苏杭一带的人 là chủ ngữ lớn; vị ngữ là câu chủ-vị 口味清淡."
+        },
+        {
+          "no": 92,
+          "words": [
+            "李教授",
+            "鼓励",
+            "我",
+            "留学",
+            "来中国"
+          ],
+          "answers": [
+            "李教授鼓励我来中国留学。"
+          ],
+          "vi": "Giáo sư Lý khuyến khích tôi đến Trung Quốc du học.",
+          "explain": "Câu kiêm ngữ: 李教授 + 鼓励 + 我 + 来中国留学 (chuỗi 来中国 + 留学)."
+        },
+        {
+          "no": 93,
+          "words": [
+            "请",
+            "这台",
+            "传真机",
+            "把",
+            "送给",
+            "王博士"
+          ],
+          "answers": [
+            "请把这台传真机送给王博士。"
+          ],
+          "vi": "Xin hãy đưa chiếc máy fax này cho tiến sĩ Vương.",
+          "explain": "Câu chữ 把: 请 + 把 + tân ngữ (这台传真机) + 送给 + người nhận (王博士)."
+        },
+        {
+          "no": 94,
+          "words": [
+            "这件事",
+            "对",
+            "我",
+            "感兴趣",
+            "很"
+          ],
+          "answers": [
+            "我对这件事很感兴趣。"
+          ],
+          "vi": "Tôi rất hứng thú với việc này.",
+          "explain": "Cấu trúc 对……感兴趣: 我 + 对 + 这件事 + 很感兴趣; 很 đứng trước 感兴趣."
+        },
+        {
+          "no": 95,
+          "words": [
+            "画儿",
+            "客厅",
+            "餐厅里",
+            "和",
+            "都",
+            "挂着"
+          ],
+          "answers": [
+            "客厅和餐厅里都挂着画儿。"
+          ],
+          "vi": "Trong phòng khách và phòng ăn đều treo tranh.",
+          "explain": "Câu tồn hiện: nơi chốn (客厅和餐厅里) + 都 + 挂着 + vật (画儿)."
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 96,
+          "word": "环境",
+          "image": "/img/exam/t04/q96.png",
+          "answer": "去公园游玩儿的时候，要爱护花草，保护环境。",
+          "vi": "Khi đi chơi công viên, phải chăm sóc hoa cỏ, bảo vệ môi trường.",
+          "explain": "Ảnh bảng chữ 爱护花草 美化环境 đặt giữa bụi hoa cỏ. Dùng 环境 làm tân ngữ: 保护环境."
+        },
+        {
+          "no": 97,
+          "word": "认真",
+          "image": "/img/exam/t04/q97.png",
+          "answer": "已经很晚了，女孩儿还在认真地工作。",
+          "vi": "Đã rất khuya rồi, cô gái vẫn đang làm việc rất chăm chú.",
+          "explain": "Ảnh cô gái đang chăm chú làm việc thủ công. Dùng 认真地 + động từ làm trạng ngữ."
+        },
+        {
+          "no": 98,
+          "word": "公共汽车",
+          "image": "/img/exam/t04/q98.png",
+          "answer": "这辆公共汽车上人很少，一点儿也不挤。",
+          "vi": "Trên chiếc xe buýt này rất ít người, không hề chen chúc chút nào.",
+          "explain": "Ảnh một chiếc xe buýt chạy trên đường. Lượng từ của 公共汽车 là 辆."
+        },
+        {
+          "no": 99,
+          "word": "检查",
+          "image": "/img/exam/t04/q99.png",
+          "answer": "上火车或者飞机以前，所有的行李都要进行安全检查。",
+          "vi": "Trước khi lên tàu hoặc máy bay, toàn bộ hành lý đều phải qua kiểm tra an ninh.",
+          "explain": "Ảnh khu vực soát an ninh với máy quét hành lý. Dùng 检查 như danh từ trong 安全检查 hoặc động từ."
+        },
+        {
+          "no": 100,
+          "word": "可爱",
+          "image": "/img/exam/t04/q100.png",
+          "answer": "这就是我送你的礼物，可爱吗？",
+          "vi": "Đây chính là món quà tôi tặng bạn, có dễ thương không?",
+          "explain": "Ảnh hai món đồ chơi vải hình hổ. Dùng 可爱 làm vị ngữ, hỏi bằng 吗."
+        }
+      ]
+    }
+  }
+}

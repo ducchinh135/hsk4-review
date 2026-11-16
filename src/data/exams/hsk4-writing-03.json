@@ -1,0 +1,199 @@
+{
+  "test": 3,
+  "writing": {
+    "part1": {
+      "questions": [
+        {
+          "no": 86,
+          "words": [
+            "请",
+            "这篇课文",
+            "一遍",
+            "读",
+            "把"
+          ],
+          "answers": [
+            "请把这篇课文读一遍。"
+          ],
+          "vi": "Hãy đọc bài khóa này một lượt.",
+          "explain": "Câu chữ 把: 请 + 把 + tân ngữ (这篇课文) + động từ (读) + bổ ngữ số lượng (一遍)."
+        },
+        {
+          "no": 87,
+          "words": [
+            "一个人",
+            "会议室",
+            "里",
+            "走出"
+          ],
+          "answers": [
+            "会议室里走出一个人。"
+          ],
+          "vi": "Từ trong phòng họp có một người đi ra.",
+          "explain": "Câu tồn hiện: nơi chốn (会议室里) + động từ xu hướng (走出) + người xuất hiện (一个人)."
+        },
+        {
+          "no": 88,
+          "words": [
+            "是",
+            "丢",
+            "了",
+            "这把钥匙",
+            "谁"
+          ],
+          "answers": [
+            "是谁丢了这把钥匙？"
+          ],
+          "vi": "Ai đã làm mất chiếc chìa khóa này?",
+          "explain": "Câu nghi vấn dùng 是……的 rút gọn: 是 + 谁 + 丢了 + tân ngữ; từ để hỏi 谁 đứng trước động từ."
+        },
+        {
+          "no": 89,
+          "words": [
+            "买",
+            "他",
+            "想",
+            "去商店",
+            "生日礼物"
+          ],
+          "answers": [
+            "他想去商店买生日礼物。"
+          ],
+          "vi": "Anh ấy muốn đến cửa hàng mua quà sinh nhật.",
+          "explain": "Câu liên động: chủ ngữ 他 + 想 + 去商店 (đi đâu) + 买生日礼物 (làm gì)."
+        },
+        {
+          "no": 90,
+          "words": [
+            "哥哥",
+            "三岁",
+            "比",
+            "大",
+            "弟弟"
+          ],
+          "answers": [
+            "哥哥比弟弟大三岁。"
+          ],
+          "vi": "Anh trai lớn hơn em trai ba tuổi.",
+          "explain": "Câu so sánh 比: A + 比 + B + tính từ + chênh lệch (三岁)."
+        },
+        {
+          "no": 91,
+          "words": [
+            "了",
+            "比赛",
+            "出来",
+            "吗",
+            "结果"
+          ],
+          "answers": [
+            "比赛结果出来了吗？"
+          ],
+          "vi": "Kết quả trận đấu đã có chưa?",
+          "explain": "Chủ ngữ là cụm 比赛结果, vị ngữ 出来了, cuối câu thêm 吗 để hỏi."
+        },
+        {
+          "no": 92,
+          "words": [
+            "让",
+            "这种",
+            "人",
+            "生活",
+            "向往"
+          ],
+          "answers": [
+            "这种生活让人向往。"
+          ],
+          "vi": "Cuộc sống như thế này khiến người ta ao ước.",
+          "explain": "Câu kiêm ngữ với 让: 这种生活 + 让 + 人 + 向往."
+        },
+        {
+          "no": 93,
+          "words": [
+            "派我",
+            "公司",
+            "考察",
+            "去上海"
+          ],
+          "answers": [
+            "公司派我去上海考察。"
+          ],
+          "vi": "Công ty cử tôi đi Thượng Hải khảo sát.",
+          "explain": "Câu kiêm ngữ: 公司 + 派 + 我 + 去上海 + 考察 (mục đích đặt cuối)."
+        },
+        {
+          "no": 94,
+          "words": [
+            "约翰",
+            "了",
+            "被老师",
+            "批评"
+          ],
+          "answers": [
+            "约翰被老师批评了。"
+          ],
+          "vi": "John bị thầy giáo phê bình rồi.",
+          "explain": "Câu bị động 被: chủ ngữ + 被 + tác nhân (老师) + động từ (批评) + 了."
+        },
+        {
+          "no": 95,
+          "words": [
+            "他",
+            "体育",
+            "不喜欢",
+            "运动"
+          ],
+          "answers": [
+            "他不喜欢体育运动。"
+          ],
+          "vi": "Anh ấy không thích thể thao.",
+          "explain": "Chủ ngữ 他 + 不喜欢 + tân ngữ 体育运动 (体育 bổ nghĩa cho 运动)."
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 96,
+          "word": "干净",
+          "image": "/img/exam/t03/q96.png",
+          "answer": "这个地方很干净，也很安静。",
+          "vi": "Nơi này rất sạch sẽ, cũng rất yên tĩnh.",
+          "explain": "Ảnh chụp một khuôn viên có thảm cỏ, cây xanh trước tòa nhà. Dùng 干净 làm vị ngữ sau 很 để tả nơi chốn."
+        },
+        {
+          "no": 97,
+          "word": "茶",
+          "image": "/img/exam/t03/q97.png",
+          "answer": "这是中国很有名的茶，我给你倒一杯，怎么样？",
+          "vi": "Đây là loại trà rất nổi tiếng của Trung Quốc, tôi rót cho bạn một chén nhé, được không?",
+          "explain": "Ảnh rót trà từ ấm vào chén sứ có chữ 茶. Dùng 茶 làm tân ngữ, có thể kèm mời mọc như 倒一杯."
+        },
+        {
+          "no": 98,
+          "word": "喜欢",
+          "image": "/img/exam/t03/q98.png",
+          "answer": "这只小狗很喜欢跟人握手。",
+          "vi": "Chú chó con này rất thích bắt tay với người.",
+          "explain": "Ảnh chú chó nhỏ đặt chân vào tay người như bắt tay. Dùng 喜欢 + động từ/cụm động từ để nói sở thích."
+        },
+        {
+          "no": 99,
+          "word": "快",
+          "image": "/img/exam/t03/q99.png",
+          "answer": "都快九点了，哥哥竟然还没起床。",
+          "vi": "Sắp chín giờ rồi mà anh trai vậy mà vẫn chưa dậy.",
+          "explain": "Ảnh chiếc đồng hồ báo thức chỉ gần chín giờ. Dùng 快……了 (sắp ... rồi) để nói thời gian sắp tới."
+        },
+        {
+          "no": 100,
+          "word": "参观",
+          "image": "/img/exam/t03/q100.png",
+          "answer": "最近学校组织我们参观了鲁迅故里，我们在那儿照了一张照片。",
+          "vi": "Gần đây nhà trường tổ chức cho chúng tôi tham quan Lỗ Tấn cố lý, chúng tôi chụp một tấm ảnh ở đó.",
+          "explain": "Ảnh đông người chụp chung trước bức tường vẽ chữ 鲁迅故里. Dùng 参观 + địa điểm tham quan."
+        }
+      ]
+    }
+  }
+}

@@ -36,16 +36,20 @@ three-step explanation (which sentence opens, which follows, which closes). Part
 words that decide it are marked in the passage, and the translation opens once every question is
 answered. Wrong answers are marked "needs review" per question.
 
-A full-test section (Luyện đề) holds the listening (Q1-45) and reading (Q46-85) parts of the 10 mock tests of
-汉语水平考试模拟试题集 HSK 四级 (第2版), each in two modes. **Ôn tập** (practice): a tab per section, every
-question is graded as soon as it is answered with the transcript, translation and explanation, and the audio
-of each question can be replayed. **Thi thật** (real exam): the 45 listening clips play once, one after the
-other, with the exam's answering time after each (10 s in part 1, 17 s after), then the reading section on a
-40-minute clock; both sections are graded at the end (out of 85, and per section out of 100). Wrong questions
-are marked "needs review". The text data is in `src/data/exams/` (extracted from the scanned book;
-`python3 -I scripts/validate_exams.py` checks the reading files). The audio is cut from the 10 whole-test mp3
-(kept in `source/audio/`, not in git) by `scripts/cut_listening.py` (needs ffmpeg) into
-`public/audio/exam/tNN/qQQ.mp3`, one clip per question (about 50 MB in all). Writing is not included.
+A full-test section (Luyện đề) holds the listening (Q1-45), reading (Q46-85) and writing (Q86-100) parts of the 10
+mock tests of 汉语水平考试模拟试题集 HSK 四级 (第2版), each in two modes. **Ôn tập** (practice): a tab per
+section, every question is graded as soon as it is answered (writing: when you press the button) with the
+transcript, translation and explanation, and the audio of each question can be replayed. **Thi thật** (real
+exam): the 45 listening clips play once, one after the other, with the exam's answering time after each (10 s in
+part 1, 17 s after), then the reading section on a 40-minute clock, then writing on a 25-minute clock; all three
+are graded at the end (listening + reading out of 85, and per section out of 100). Writing part 1 (Q86-95: put
+word groups in order, typed or tapped) is graded against every sentence the book lists; part 2 (Q96-100: a
+sentence about a picture) can only be compared with the book's sample by the learner. Wrong questions are marked
+"needs review". The text data is in `src/data/exams/` (extracted from the scanned book;
+`python3 -I scripts/validate_exams.py` checks the reading files, `npm run test:unit` all of them). The audio is
+cut from the 10 whole-test mp3 (kept in `source/audio/`, not in git) by `scripts/cut_listening.py` (needs ffmpeg)
+into `public/audio/exam/tNN/qQQ.mp3`, one clip per question (about 50 MB in all); the writing pictures are crops
+of the book's pages in `public/img/exam/`.
 
 A reflex-games section drills recalling the Chinese word from its Vietnamese meaning (the direction
 the flashcards never ask for). A bar picks the words for every game: all lessons or one, a mark filter,

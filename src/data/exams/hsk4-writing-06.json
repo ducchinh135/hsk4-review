@@ -1,0 +1,203 @@
+{
+  "test": 6,
+  "writing": {
+    "part1": {
+      "questions": [
+        {
+          "no": 86,
+          "words": [
+            "他",
+            "才",
+            "赶上",
+            "好不容易",
+            "火车"
+          ],
+          "answers": [
+            "他好不容易才赶上火车。"
+          ],
+          "vi": "Anh ấy vất vả lắm mới đuổi kịp chuyến tàu.",
+          "explain": "Cấu trúc 好不容易才 + động từ: 他 + 好不容易 + 才 + 赶上 + 火车 (nhấn mạnh việc khó khăn mới làm được)."
+        },
+        {
+          "no": 87,
+          "words": [
+            "什么时候",
+            "聚会",
+            "是",
+            "你们",
+            "的"
+          ],
+          "answers": [
+            "你们是什么时候聚会的？"
+          ],
+          "vi": "Các bạn tụ họp vào lúc nào vậy?",
+          "explain": "Cấu trúc 是...的 nhấn mạnh thời gian của việc đã xảy ra: 你们 + 是 + 什么时候 + 聚会 + 的."
+        },
+        {
+          "no": 88,
+          "words": [
+            "留学",
+            "我们这儿",
+            "手续",
+            "不能",
+            "办理"
+          ],
+          "answers": [
+            "我们这儿不能办理留学手续。"
+          ],
+          "vi": "Chỗ chúng tôi không làm thủ tục du học được.",
+          "explain": "Chủ ngữ/địa điểm 我们这儿 + 不能 + động từ 办理 + tân ngữ 留学手续 (留学 bổ nghĩa cho 手续)."
+        },
+        {
+          "no": 89,
+          "words": [
+            "服务员",
+            "我们",
+            "很热情",
+            "餐厅的",
+            "对"
+          ],
+          "answers": [
+            "餐厅的服务员对我们很热情。"
+          ],
+          "vi": "Nhân viên phục vụ của nhà hàng rất nhiệt tình với chúng tôi.",
+          "explain": "Chủ ngữ 餐厅的服务员 + giới từ 对 + 我们 + 很热情 (cấu trúc 对...很热情)."
+        },
+        {
+          "no": 90,
+          "words": [
+            "呢",
+            "为什么",
+            "不",
+            "留学",
+            "去英国"
+          ],
+          "answers": [
+            "为什么不去英国留学呢？"
+          ],
+          "vi": "Tại sao không đi Anh du học vậy?",
+          "explain": "为什么 + 不 + 去英国 (liên động: đi đâu) + 留学 (làm gì), 呢 ở cuối câu hỏi để làm mềm giọng."
+        },
+        {
+          "no": 91,
+          "words": [
+            "写在",
+            "请",
+            "黑板上",
+            "通知",
+            "把"
+          ],
+          "answers": [
+            "请把通知写在黑板上。"
+          ],
+          "vi": "Xin hãy viết thông báo lên bảng.",
+          "explain": "Câu chữ 把: 请 + 把 + 通知 + 写在 + 黑板上 (nơi chốn đi sau 在)."
+        },
+        {
+          "no": 92,
+          "words": [
+            "非常值得",
+            "态度",
+            "怀疑",
+            "他的"
+          ],
+          "answers": [
+            "他的态度非常值得怀疑。"
+          ],
+          "vi": "Thái độ của anh ta rất đáng nghi ngờ.",
+          "explain": "Chủ ngữ 他的态度 + 非常 + 值得 + động từ 怀疑 (值得 + động từ: đáng để làm gì)."
+        },
+        {
+          "no": 93,
+          "words": [
+            "同时",
+            "请假",
+            "他们",
+            "王老师",
+            "向"
+          ],
+          "answers": [
+            "他们同时向王老师请假。"
+          ],
+          "vi": "Họ cùng lúc xin nghỉ phép với thầy Vương.",
+          "explain": "Chủ ngữ 他们 + trạng ngữ 同时 + giới từ 向 + 王老师 + động từ 请假."
+        },
+        {
+          "no": 94,
+          "words": [
+            "偷",
+            "李经理",
+            "被",
+            "刚买的包",
+            "了",
+            "走"
+          ],
+          "answers": [
+            "李经理刚买的包被偷走了。"
+          ],
+          "vi": "Chiếc túi Giám đốc Lý vừa mua đã bị trộm lấy mất.",
+          "explain": "Câu bị động với 被: chủ ngữ 李经理刚买的包 + 被 + 偷走 + 了 (走 là bổ ngữ xu hướng)."
+        },
+        {
+          "no": 95,
+          "words": [
+            "从来",
+            "上海",
+            "过",
+            "没去",
+            "他"
+          ],
+          "answers": [
+            "他从来没去过上海。"
+          ],
+          "vi": "Anh ấy chưa từng đến Thượng Hải.",
+          "explain": "Cấu trúc 从来没 + động từ + 过: 他 + 从来 + 没去 + 过 + 上海 (phủ định kinh nghiệm)."
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 96,
+          "word": "表演",
+          "image": "/img/exam/t06/q96.png",
+          "answer": "这种表演很受北方人的欢迎。",
+          "vi": "Kiểu biểu diễn này rất được người miền Bắc yêu thích.",
+          "explain": "Ảnh đoàn nghệ nhân đi cà kheo biểu diễn ngoài trời. 表演 vừa là danh từ vừa là động từ, ở đây là danh từ: 这种表演."
+        },
+        {
+          "no": 97,
+          "word": "生日",
+          "image": "/img/exam/t06/q97.png",
+          "answer": "今天晚上这里要举办一个生日晚会。",
+          "vi": "Tối nay ở đây sẽ tổ chức một buổi tiệc sinh nhật.",
+          "explain": "Ảnh phòng tiệc có bàn ăn bày sẵn và màn hình lớn. 生日 là danh từ, dùng làm định ngữ: 生日晚会."
+        },
+        {
+          "no": 98,
+          "word": "钢琴",
+          "image": "/img/exam/t06/q98.png",
+          "answer": "老师在教这个漂亮的女孩儿弹钢琴。",
+          "vi": "Cô giáo đang dạy cô bé xinh xắn này chơi piano.",
+          "explain": "Ảnh cô giáo hướng dẫn một bé gái đánh đàn piano. 钢琴 là danh từ, thường đi với động từ 弹: 弹钢琴."
+        },
+        {
+          "no": 99,
+          "word": "修理",
+          "image": "/img/exam/t06/q99.png",
+          "answer": "这个人想自己修理汽车，所以他要先检查一下。",
+          "vi": "Người này muốn tự sửa xe hơi nên anh ta phải kiểm tra trước một chút.",
+          "explain": "Ảnh một người đàn ông cúi xuống mở nắp capo kiểm tra động cơ. 修理 là động từ, tân ngữ thường là 汽车."
+        },
+        {
+          "no": 100,
+          "word": "胖",
+          "image": "/img/exam/t06/q100.png",
+          "answer": "这只胖胖的小狗好像很孤单。",
+          "vi": "Chú chó con mập mạp này trông có vẻ rất cô đơn.",
+          "explain": "Ảnh một chú chó pug béo ngồi một mình. 胖 là tính từ, có thể lặp lại 胖胖的 để làm định ngữ miêu tả."
+        }
+      ]
+    }
+  }
+}

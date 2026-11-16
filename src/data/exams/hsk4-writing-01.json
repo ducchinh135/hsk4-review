@@ -1,0 +1,209 @@
+{
+  "test": 1,
+  "writing": {
+    "part1": {
+      "questions": [
+        {
+          "no": 86,
+          "words": [
+            "现在",
+            "也",
+            "了",
+            "去机场",
+            "来不及"
+          ],
+          "answers": [
+            "现在去机场也来不及了。",
+            "现在也来不及去机场了。"
+          ],
+          "vi": "Bây giờ đi sân bay cũng không kịp nữa rồi.",
+          "explain": "Chủ ngữ/thời gian 现在 đứng đầu; 来不及 (không kịp) là bổ ngữ khả năng, 也 đứng trước nó, 了 đặt cuối câu. Có thể đặt 去机场 trước hoặc sau 来不及."
+        },
+        {
+          "no": 87,
+          "words": [
+            "这面镜子",
+            "时候",
+            "是",
+            "出差的",
+            "买的"
+          ],
+          "answers": [
+            "这面镜子是出差的时候买的。",
+            "出差的时候买的是这面镜子。",
+            "是出差的时候买的这面镜子。"
+          ],
+          "vi": "Chiếc gương này mua hồi đi công tác.",
+          "explain": "Dùng cấu trúc 是……的 nhấn mạnh thời gian: 这面镜子 + 是 + 出差的时候 + 买的. Các cách đảo trật tự khác cũng được chấp nhận."
+        },
+        {
+          "no": 88,
+          "words": [
+            "有",
+            "客厅",
+            "一些",
+            "家具",
+            "里"
+          ],
+          "answers": [
+            "客厅里有一些家具。"
+          ],
+          "vi": "Trong phòng khách có một số đồ nội thất.",
+          "explain": "Câu tồn tại: nơi chốn + 有 + người/vật. 客厅里 làm trạng ngữ nơi chốn, sau 有 là 一些家具."
+        },
+        {
+          "no": 89,
+          "words": [
+            "你知道",
+            "可以",
+            "哪里",
+            "吗",
+            "发传真"
+          ],
+          "answers": [
+            "你知道哪里可以发传真吗？"
+          ],
+          "vi": "Bạn có biết ở đâu có thể gửi fax không?",
+          "explain": "Câu hỏi có đại từ nghi vấn 哪里 làm tân ngữ cho 你知道: 你知道 + 哪里可以发传真, cuối câu thêm 吗."
+        },
+        {
+          "no": 90,
+          "words": [
+            "我决定",
+            "去",
+            "广告公司",
+            "应聘",
+            "一家"
+          ],
+          "answers": [
+            "我决定去一家广告公司应聘。",
+            "我决定去应聘一家广告公司。"
+          ],
+          "vi": "Tôi quyết định đến một công ty quảng cáo ứng tuyển.",
+          "explain": "我决定 + động từ. Cách 1: 去 + nơi chốn (一家广告公司) + 应聘 (đến ... ứng tuyển); cách 2: 去应聘 + tân ngữ. Lượng từ 一家 đứng trước 广告公司."
+        },
+        {
+          "no": 91,
+          "words": [
+            "请",
+            "把",
+            "那份",
+            "材料",
+            "拿过来"
+          ],
+          "answers": [
+            "请把那份材料拿过来。"
+          ],
+          "vi": "Xin hãy mang tài liệu đó lại đây.",
+          "explain": "Câu 把: 请 + 把 + tân ngữ xác định (那份材料) + động từ có bổ ngữ xu hướng (拿过来)."
+        },
+        {
+          "no": 92,
+          "words": [
+            "准备",
+            "正",
+            "他",
+            "搬",
+            "到郊区",
+            "住"
+          ],
+          "answers": [
+            "他正准备搬到郊区住。"
+          ],
+          "vi": "Anh ấy đang định chuyển ra ngoại ô ở.",
+          "explain": "他 làm chủ ngữ, 正 đứng trước động từ 准备 (đang chuẩn bị), tiếp theo 搬到郊区 rồi 住 (chuyển ra ngoại ô để ở)."
+        },
+        {
+          "no": 93,
+          "words": [
+            "他",
+            "这儿的环境",
+            "比你",
+            "更熟悉"
+          ],
+          "answers": [
+            "他比你更熟悉这儿的环境。",
+            "这儿的环境他比你更熟悉。"
+          ],
+          "vi": "Anh ấy quen thuộc với môi trường ở đây hơn bạn.",
+          "explain": "Câu so sánh 比: A + 比 + B + 更 + tính từ/động từ. 他比你更熟悉 + tân ngữ 这儿的环境; cũng có thể đưa tân ngữ lên đầu câu."
+        },
+        {
+          "no": 94,
+          "words": [
+            "证明",
+            "他",
+            "这",
+            "很诚实",
+            "的",
+            "是"
+          ],
+          "answers": [
+            "这证明他是很诚实的。"
+          ],
+          "vi": "Điều này chứng tỏ anh ấy là người rất thành thật.",
+          "explain": "这 làm chủ ngữ, 证明 là vị ngữ, tân ngữ là cụm 他是很诚实的 (cấu trúc 是……的)."
+        },
+        {
+          "no": 95,
+          "words": [
+            "这件事",
+            "伤心",
+            "因为",
+            "不值得"
+          ],
+          "answers": [
+            "因为这件事伤心不值得。",
+            "不值得因为这件事伤心。"
+          ],
+          "vi": "Không đáng phải buồn vì chuyện này.",
+          "explain": "因为这件事 là cụm chỉ nguyên nhân đặt trước 伤心; 不值得 + (因为这件事伤心) hoặc 因为这件事伤心 + 不值得, nghĩa là buồn vì việc này thì không đáng."
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 96,
+          "word": "加班",
+          "image": "/img/exam/t01/q96.png",
+          "answer": "他已经连续加班一个星期了。",
+          "vi": "Anh ấy đã liên tục tăng ca một tuần rồi.",
+          "explain": "Ảnh một người đàn ông ngồi làm việc bên bàn chất đầy tài liệu. 加班 là làm thêm giờ, có thể dùng với 连续 và thời lượng."
+        },
+        {
+          "no": 97,
+          "word": "作家",
+          "image": "/img/exam/t01/q97.png",
+          "answer": "她从小就想成为一名作家。",
+          "vi": "Từ nhỏ cô ấy đã muốn trở thành một nhà văn.",
+          "explain": "Ảnh người phụ nữ cười, cầm sổ tay đang viết. 作家 là nhà văn, thường đi với lượng từ 一名/一位."
+        },
+        {
+          "no": 98,
+          "word": "挂",
+          "image": "/img/exam/t01/q98.png",
+          "answer": "我的衣服可以挂在这里吗？",
+          "vi": "Quần áo của tôi có thể treo ở đây không?",
+          "explain": "Ảnh những chiếc áo treo trên thanh móc. 挂 là treo, thường dùng 挂在 + nơi chốn."
+        },
+        {
+          "no": 99,
+          "word": "开心",
+          "image": "/img/exam/t01/q99.png",
+          "answer": "他们俩每次见面都很开心。",
+          "vi": "Hai người họ mỗi lần gặp nhau đều rất vui.",
+          "explain": "Ảnh một gia đình ba người đang vui vẻ chạy chơi. 开心 là vui, làm vị ngữ sau 很."
+        },
+        {
+          "no": 100,
+          "word": "打招呼",
+          "image": "/img/exam/t01/q100.png",
+          "answer": "他喜欢和别人打招呼。",
+          "vi": "Anh ấy thích chào hỏi người khác.",
+          "explain": "Ảnh hai người vẫy tay chào. 打招呼 là chào hỏi, cấu trúc 和 + người + 打招呼."
+        }
+      ]
+    }
+  }
+}

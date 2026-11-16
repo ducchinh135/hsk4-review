@@ -1,0 +1,202 @@
+{
+  "test": 2,
+  "writing": {
+    "part1": {
+      "questions": [
+        {
+          "no": 86,
+          "words": [
+            "很高",
+            "费用",
+            "需要的",
+            "治疗",
+            "这项"
+          ],
+          "answers": [
+            "这项治疗需要的费用很高。"
+          ],
+          "vi": "Chi phí cần cho liệu pháp điều trị này rất cao.",
+          "explain": "Chủ ngữ là cụm danh từ 这项治疗需要的费用 (định ngữ + 的 + 费用), vị ngữ là 很高."
+        },
+        {
+          "no": 87,
+          "words": [
+            "洗脸",
+            "经常",
+            "用肥皂",
+            "这个",
+            "小伙子"
+          ],
+          "answers": [
+            "这个小伙子经常用肥皂洗脸。"
+          ],
+          "vi": "Anh chàng này thường dùng xà phòng rửa mặt.",
+          "explain": "Thứ tự: chủ ngữ + trạng ngữ tần suất 经常 + 用肥皂 (phương tiện) + động từ 洗脸."
+        },
+        {
+          "no": 88,
+          "words": [
+            "这块手表",
+            "设计",
+            "得",
+            "怎么样"
+          ],
+          "answers": [
+            "这块手表设计得怎么样？"
+          ],
+          "vi": "Chiếc đồng hồ này thiết kế thế nào?",
+          "explain": "Câu bổ ngữ trạng thái: 设计 + 得 + 怎么样, hỏi về mức độ/kết quả; chủ ngữ 这块手表 ở đầu."
+        },
+        {
+          "no": 89,
+          "words": [
+            "汽车",
+            "停着",
+            "院子里",
+            "红色",
+            "一辆"
+          ],
+          "answers": [
+            "院子里停着一辆红色汽车。"
+          ],
+          "vi": "Trong sân có đậu một chiếc ô tô màu đỏ.",
+          "explain": "Câu tồn tại: nơi chốn + động từ + 着 + số lượng từ + định ngữ (红色) + danh từ 汽车."
+        },
+        {
+          "no": 90,
+          "words": [
+            "这个消息",
+            "不要",
+            "告诉",
+            "把",
+            "别人"
+          ],
+          "answers": [
+            "不要把这个消息告诉别人。"
+          ],
+          "vi": "Đừng nói tin này cho người khác.",
+          "explain": "Câu 把 mệnh lệnh phủ định: 不要 + 把 + tân ngữ (这个消息) + động từ 告诉 + 别人."
+        },
+        {
+          "no": 91,
+          "words": [
+            "快点儿",
+            "经理",
+            "我",
+            "交总结",
+            "让"
+          ],
+          "answers": [
+            "经理让我快点儿交总结。"
+          ],
+          "vi": "Giám đốc bảo tôi nộp bản tổng kết nhanh lên.",
+          "explain": "Câu kiêm ngữ với 让: 经理 + 让 + 我 + 快点儿交总结; trạng ngữ 快点儿 đứng trước động từ 交."
+        },
+        {
+          "no": 92,
+          "words": [
+            "怎么能",
+            "不",
+            "呢",
+            "我",
+            "回来"
+          ],
+          "answers": [
+            "我怎么能不回来呢？"
+          ],
+          "vi": "Làm sao tôi có thể không quay về chứ?",
+          "explain": "Câu hỏi tu từ: 我 + 怎么能 + 不 + 回来 + 呢, ý là chắc chắn phải quay về."
+        },
+        {
+          "no": 93,
+          "words": [
+            "呢",
+            "玛丽",
+            "教室里",
+            "上课",
+            "在"
+          ],
+          "answers": [
+            "玛丽在教室里上课呢。"
+          ],
+          "vi": "Mary đang học trong lớp đấy.",
+          "explain": "在 + nơi chốn (教室里) đứng trước động từ 上课; 呢 đặt cuối câu để chỉ hành động đang diễn ra."
+        },
+        {
+          "no": 94,
+          "words": [
+            "那张桌子",
+            "了",
+            "老师",
+            "搬走",
+            "被"
+          ],
+          "answers": [
+            "那张桌子被老师搬走了。"
+          ],
+          "vi": "Cái bàn đó bị thầy giáo khiêng đi rồi.",
+          "explain": "Câu bị động với 被: tân ngữ chịu tác động + 被 + người thực hiện (老师) + động từ có bổ ngữ (搬走) + 了."
+        },
+        {
+          "no": 95,
+          "words": [
+            "著名的",
+            "一座",
+            "是",
+            "古城",
+            "北京"
+          ],
+          "answers": [
+            "北京是一座著名的古城。"
+          ],
+          "vi": "Bắc Kinh là một thành cổ nổi tiếng.",
+          "explain": "Câu chữ 是: A + 是 + số lượng từ (一座) + định ngữ (著名的) + danh từ (古城)."
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 96,
+          "word": "辣",
+          "image": "/img/exam/t02/q96.png",
+          "answer": "这些辣椒看起来很辣，其实一点儿都不辣。",
+          "vi": "Những quả ớt này trông rất cay nhưng thật ra không cay chút nào.",
+          "explain": "Ảnh một hàng ớt đỏ. 辣 là cay, có thể dùng 看起来很辣 hoặc 一点儿都不辣."
+        },
+        {
+          "no": 97,
+          "word": "速度",
+          "image": "/img/exam/t02/q97.png",
+          "answer": "一条速度很快的船正向我们开过来。",
+          "vi": "Một chiếc thuyền tốc độ rất nhanh đang chạy về phía chúng tôi.",
+          "explain": "Ảnh chiếc xuồng máy lao nhanh trên mặt nước. 速度 là tốc độ, dùng 速度很快 làm định ngữ cho 船."
+        },
+        {
+          "no": 98,
+          "word": "讨论",
+          "image": "/img/exam/t02/q98.png",
+          "answer": "这次会议很成功，他们讨论了很长时间，并且解决了很多问题。",
+          "vi": "Cuộc họp lần này rất thành công, họ đã thảo luận rất lâu và giải quyết được nhiều vấn đề.",
+          "explain": "Ảnh mấy người ngồi bàn bạc công việc. 讨论 là thảo luận, thường dùng 讨论了 + thời gian/vấn đề."
+        },
+        {
+          "no": 99,
+          "word": "新鲜",
+          "image": "/img/exam/t02/q99.png",
+          "answer": "这些鱿鱼太新鲜了，我们买点儿吧。",
+          "vi": "Những con mực này tươi quá, chúng ta mua một ít đi.",
+          "explain": "Ảnh những con mực tươi. 新鲜 là tươi, dùng cho thực phẩm, ví dụ 太新鲜了."
+        },
+        {
+          "no": 100,
+          "word": "擦",
+          "image": "/img/exam/t02/q100.png",
+          "answer": "顾客们很喜欢到她这里擦鞋。",
+          "vi": "Khách hàng rất thích đến chỗ cô ấy đánh giày.",
+          "explain": "Ảnh người đang đánh giày cho khách. 擦 là lau, chùi; 擦鞋 là đánh giày."
+        }
+      ]
+    }
+  }
+}

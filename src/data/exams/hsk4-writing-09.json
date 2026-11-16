@@ -1,0 +1,202 @@
+{
+  "test": 9,
+  "writing": {
+    "part1": {
+      "questions": [
+        {
+          "no": 86,
+          "words": [
+            "必须要",
+            "儿童的",
+            "家长",
+            "安全问题",
+            "注意"
+          ],
+          "answers": [
+            "家长必须要注意儿童的安全问题。"
+          ],
+          "vi": "Phụ huynh nhất định phải chú ý đến vấn đề an toàn của trẻ em.",
+          "explain": "Chủ ngữ 家长, vị ngữ 必须要注意, tân ngữ là cụm 儿童的安全问题 (định ngữ 儿童的 đứng trước danh từ 安全问题)."
+        },
+        {
+          "no": 87,
+          "words": [
+            "是一件",
+            "头疼的",
+            "很",
+            "事情",
+            "堵车"
+          ],
+          "answers": [
+            "堵车是一件很头疼的事情。"
+          ],
+          "vi": "Tắc đường là một việc rất đau đầu.",
+          "explain": "Câu chữ 是: 堵车 + 是一件 + 很头疼的 + 事情. Phó từ 很 đứng trước tính từ 头疼, định ngữ đứng trước 事情."
+        },
+        {
+          "no": 88,
+          "words": [
+            "遇到",
+            "时候",
+            "得冷静",
+            "千万",
+            "麻烦的"
+          ],
+          "answers": [
+            "遇到麻烦的时候千万得冷静。"
+          ],
+          "vi": "Khi gặp rắc rối nhất định phải bình tĩnh.",
+          "explain": "Trạng ngữ thời gian 遇到麻烦的时候 đứng đầu câu, sau đó là 千万 (nhất định) + 得冷静."
+        },
+        {
+          "no": 89,
+          "words": [
+            "小刘",
+            "所有的时间",
+            "把",
+            "学习上",
+            "用在"
+          ],
+          "answers": [
+            "小刘把所有的时间用在学习上。"
+          ],
+          "vi": "Tiểu Lưu dành toàn bộ thời gian vào việc học.",
+          "explain": "Câu chữ 把: chủ ngữ + 把 + tân ngữ (所有的时间) + động từ 用在 + nơi chốn/đối tượng 学习上."
+        },
+        {
+          "no": 90,
+          "words": [
+            "免费的",
+            "没有",
+            "午餐",
+            "世界上"
+          ],
+          "answers": [
+            "世界上没有免费的午餐。"
+          ],
+          "vi": "Trên đời này không có bữa trưa nào miễn phí.",
+          "explain": "Trạng ngữ nơi chốn 世界上 đứng đầu, rồi 没有 + 免费的午餐 (định ngữ 免费的 bổ nghĩa cho 午餐)."
+        },
+        {
+          "no": 91,
+          "words": [
+            "心情不好",
+            "理解的",
+            "是",
+            "王主任",
+            "可以"
+          ],
+          "answers": [
+            "王主任心情不好是可以理解的。"
+          ],
+          "vi": "Chủ nhiệm Vương tâm trạng không tốt là điều có thể hiểu được.",
+          "explain": "Cấu trúc 是……的: 王主任心情不好 (chủ ngữ) + 是可以理解的. Trợ động từ 可以 đứng trước động từ 理解."
+        },
+        {
+          "no": 92,
+          "words": [
+            "这个问题",
+            "重视",
+            "起来",
+            "被",
+            "应该"
+          ],
+          "answers": [
+            "这个问题应该被重视起来。"
+          ],
+          "vi": "Vấn đề này nên được coi trọng.",
+          "explain": "Câu bị động với 被: chủ ngữ + 应该 + 被 + 重视 + 起来. Trợ động từ 应该 đứng trước 被."
+        },
+        {
+          "no": 93,
+          "words": [
+            "广播电视",
+            "影响",
+            "对孩子",
+            "有",
+            "一定的"
+          ],
+          "answers": [
+            "广播电视对孩子有一定的影响。"
+          ],
+          "vi": "Phát thanh truyền hình có ảnh hưởng nhất định đến trẻ em.",
+          "explain": "Cấu trúc 对……有影响: 广播电视 + 对孩子 + 有 + 一定的 + 影响."
+        },
+        {
+          "no": 94,
+          "words": [
+            "年龄",
+            "请按照",
+            "顺序",
+            "从小到大的",
+            "站好"
+          ],
+          "answers": [
+            "请按照从小到大的年龄顺序站好。"
+          ],
+          "vi": "Xin hãy đứng cho ngay ngắn theo thứ tự tuổi từ nhỏ đến lớn.",
+          "explain": "Cấu trúc 请按照……站好: 从小到大的 bổ nghĩa cho 年龄顺序, đặt giữa 按照 và 站好."
+        },
+        {
+          "no": 95,
+          "words": [
+            "是",
+            "长时间",
+            "需要",
+            "坚持的",
+            "减肥"
+          ],
+          "answers": [
+            "减肥是需要长时间坚持的。"
+          ],
+          "vi": "Giảm cân là việc cần kiên trì trong thời gian dài.",
+          "explain": "Cấu trúc 是……的: 减肥 + 是 + 需要 + 长时间 + 坚持的. 长时间 là trạng ngữ của 坚持."
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 96,
+          "word": "愉快",
+          "image": "/img/exam/t09/q96.png",
+          "answer": "希望你春节过得愉快！",
+          "vi": "Chúc bạn đón Tết vui vẻ!",
+          "explain": "Ảnh một đôi nam nữ trẻ cười vui vẻ. 愉快 là tính từ, thường dùng làm bổ ngữ: 过得愉快, hoặc để chúc: 祝你周末愉快."
+        },
+        {
+          "no": 97,
+          "word": "钥匙",
+          "image": "/img/exam/t09/q97.png",
+          "answer": "昨天我把钥匙丢了。",
+          "vi": "Hôm qua tôi làm mất chìa khóa.",
+          "explain": "Ảnh một chùm chìa khóa trên mặt gỗ. 钥匙 là danh từ, có thể dùng với câu chữ 把: 把钥匙丢了/放在桌子上."
+        },
+        {
+          "no": 98,
+          "word": "麻烦",
+          "image": "/img/exam/t09/q98.png",
+          "answer": "作业太多了，实在太麻烦了！",
+          "vi": "Bài tập nhiều quá, thật là phiền phức!",
+          "explain": "Ảnh một phụ nữ nhíu mày, cầm điện thoại, vẻ phiền não. 麻烦 là tính từ (phiền phức), cũng là động từ (làm phiền): 麻烦你了."
+        },
+        {
+          "no": 99,
+          "word": "感谢",
+          "image": "/img/exam/t09/q99.png",
+          "answer": "我工作以后需要感谢的人很多。",
+          "vi": "Sau khi đi làm, người tôi cần cảm ơn rất nhiều.",
+          "explain": "Ảnh cô gái tặng quà cho một người phụ nữ lớn tuổi hơn, hai người cười. 感谢 là động từ: 感谢 + người, 感谢你的帮助."
+        },
+        {
+          "no": 100,
+          "word": "打印",
+          "image": "/img/exam/t09/q100.png",
+          "answer": "我还有很多东西要打印。",
+          "vi": "Tôi còn rất nhiều thứ phải in.",
+          "explain": "Ảnh một chiếc máy in. 打印 là động từ (in tài liệu): 打印文件/打印资料, hoặc 把文件打印出来."
+        }
+      ]
+    }
+  }
+}
