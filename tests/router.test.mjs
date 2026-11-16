@@ -87,7 +87,7 @@ test('matchRoute() sends an unknown or over-long practice path to /vocab/practic
 
 test('PAGES and SECTIONS list the navigation entries in order', () => {
   assert.deepEqual(PAGES.map((p) => p.path), ['/vocab/words', '/vocab/review', '/vocab/practice']);
-  assert.deepEqual(SECTIONS.map((s) => s.id), ['vocab', 'grammar', 'compare', 'listening', 'reading', 'games']);
+  assert.deepEqual(SECTIONS.map((s) => s.id), ['vocab', 'grammar', 'compare', 'listening', 'reading', 'exam', 'games']);
   for (const s of SECTIONS) assert.equal(matchRoute(s.path).path, s.path);
 });
 
@@ -192,4 +192,15 @@ test('matchRoute() maps the games pages and sends unknown ones to /games', () =>
     assert.equal(sectionOf(p), 'games');
     assert.ok(PAGE_TITLES[p], p);
   }
+});
+
+test('matchRoute() maps the exam pages and sends an unknown test to the list', () => {
+  const list = { page: 'exam', params: {}, path: '/exam' };
+  assert.deepEqual(matchRoute('/exam'), list);
+  assert.deepEqual(matchRoute('/exam/3'), { page: 'exam-test', params: { test: 3 }, path: '/exam/3' });
+  assert.deepEqual(matchRoute('/exam/10'), { page: 'exam-test', params: { test: 10 }, path: '/exam/10' });
+  assert.deepEqual(matchRoute('/exam/03'), { page: 'exam-test', params: { test: 3 }, path: '/exam/3' });
+  for (const p of ['/exam/0', '/exam/11', '/exam/abc', '/exam/3/x']) assert.deepEqual(matchRoute(p), list);
+  assert.equal(sectionOf('exam'), 'exam');
+  assert.equal(sectionOf('exam-test'), 'exam');
 });

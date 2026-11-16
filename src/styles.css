@@ -580,3 +580,13 @@ button.exercise-card:hover{ border-color:var(--accent-a,#333); }
 .fall-custom input{ width:90px; font:inherit; font-size:16px; font-weight:700; padding:8px; border:2px solid #e2e2ec; border-radius:10px; }
 .fall-custom input[aria-invalid='true']{ border-color:#e5484d; }
 .meteor-speed select{ font:inherit; font-size:16px; padding:8px; border-radius:10px; border:none; }
+
+/* Luyện đề: the status bar stays in view while scrolling the paper. */
+.exam-bar{ position:sticky; top:0; z-index:5; background:#fff; padding:10px 14px; margin:0 0 12px; box-shadow:0 4px 10px rgba(0,0,0,.06); }
+.exam-bar .question-grid{ margin-top:8px; }
+.fb-opt.sel{ border-color:var(--accent-a,#333); background:var(--accent-bg,#fff0f3); }
+select.rd-blank{ appearance:auto; min-width:110px; border:2px solid #999; border-radius:8px; background:#fff; padding:2px 6px; }
+select.rd-blank.ok{ background:#d3f9d8; }
+select.rd-blank.bad{ background:#ffe3e3; }
+.rd-slot.ok{ border-color:#2f9e44; background:#d3f9d8; cursor:default; }
+.rd-slot.bad{ border-color:#e03131; background:#ffe3e3; cursor:default; }

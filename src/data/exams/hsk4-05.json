@@ -1,0 +1,647 @@
+{
+  "test": 5,
+  "reading": {
+    "part1": {
+      "sets": [
+        {
+          "range": [
+            46,
+            50
+          ],
+          "words": [
+            "趟",
+            "赶",
+            "把",
+            "作用",
+            "过",
+            "坚持"
+          ],
+          "example": {
+            "text": "她每天都___走路上下班，所以身体一直很不错。",
+            "answer": 5
+          },
+          "items": [
+            {
+              "no": 46,
+              "text": "刚才小丽打电话来叫我去她家一___，说是有急事找我。",
+              "answer": 0,
+              "vi": "Vừa nãy Tiểu Lệ gọi điện bảo tôi đến nhà cô ấy một chuyến, nói là có việc gấp cần tìm tôi.",
+              "explain": "“趟” là lượng từ chỉ số lần, đặt sau số từ (一趟= một chuyến)."
+            },
+            {
+              "no": 47,
+              "text": "情人节，许多男孩儿都___红玫瑰当作礼物送给心爱的女孩儿。",
+              "answer": 2,
+              "vi": "Ngày Valentine, nhiều chàng trai tặng hoa hồng đỏ làm quà cho cô gái mình yêu.",
+              "explain": "Đây là câu chữ “把”: dùng “把” đưa tân ngữ “红玫瑰” lên trước động từ “当作”."
+            },
+            {
+              "no": 48,
+              "text": "你必须在半个小时之内___到火车站，不然就来不及了。",
+              "answer": 1,
+              "vi": "Anh phải nhanh chóng đến ga tàu trong vòng nửa tiếng, nếu không sẽ không kịp.",
+              "explain": "Động từ “赶” nghĩa là tăng tốc hành động để không lỡ thời gian, hợp với “来不及”."
+            },
+            {
+              "no": 49,
+              "text": "这种药我吃过，对我的病没有什么___。",
+              "answer": 3,
+              "vi": "Loại thuốc này tôi uống rồi, không có tác dụng gì với bệnh của tôi.",
+              "explain": "“作用” chỉ ảnh hưởng/hiệu quả đối với sự vật; “对……没有什么作用” = không có tác dụng với…"
+            },
+            {
+              "no": 50,
+              "text": "看___这部小说的人，都会被女主角的坚强勇敢所感动。",
+              "answer": 4,
+              "vi": "Những người đã đọc cuốn tiểu thuyết này đều sẽ cảm động trước sự kiên cường dũng cảm của nữ chính.",
+              "explain": "Trợ từ “过” đặt sau động từ biểu thị đã từng trải qua (看过)."
+            }
+          ]
+        },
+        {
+          "range": [
+            51,
+            55
+          ],
+          "words": [
+            "经常",
+            "害羞",
+            "不要紧",
+            "温度",
+            "语法",
+            "考虑"
+          ],
+          "example": {
+            "text": "A：今天真冷啊，好像白天最高___才2ºC。\nB：刚才电视里说明天更冷。",
+            "answer": 3
+          },
+          "items": [
+            {
+              "no": 51,
+              "text": "A：山本，不好意思，刚才把你的书碰到地上，弄脏了。\nB：___，我擦擦就行了。",
+              "answer": 2,
+              "vi": "A: Yamamoto, xin lỗi, vừa nãy tớ làm rơi sách của cậu xuống đất, bị bẩn rồi.\nB: Không sao đâu, tớ lau một chút là được.",
+              "explain": "“不要紧” nghĩa là không sao, không thành vấn đề; B nói sách bẩn không sao, chỉ cần lau là xong."
+            },
+            {
+              "no": 52,
+              "text": "A：老师，我觉得汉语的___太难了，你说我该怎么办呢？\nB：别着急，只要你多学多练，一定会弄懂的。",
+              "answer": 4,
+              "vi": "A: Thưa thầy, em thấy ngữ pháp tiếng Hán khó quá, thầy bảo em nên làm thế nào ạ?\nB: Đừng lo, chỉ cần em học nhiều luyện nhiều thì nhất định sẽ hiểu.",
+              "explain": "“语法” khá khó; B nói học nhiều luyện nhiều sẽ “弄懂” được ngữ pháp."
+            },
+            {
+              "no": 53,
+              "text": "A：你已经是个大小伙子了，怎么还这么___呢？\nB：其实我只是不知道该说什么才好。",
+              "answer": 1,
+              "vi": "A: Cậu đã là chàng trai lớn rồi, sao còn ngại ngùng thế?\nB: Thật ra tớ chỉ không biết nên nói gì thôi.",
+              "explain": "Tính từ “害羞” chỉ sự e thẹn, ngại ngùng, hợp với lời đáp “不知道该说什么”."
+            },
+            {
+              "no": 54,
+              "text": "A：现在这个公司的待遇是不错，可是太累了！___加班。\nB：不行就换个工作吧，不管怎么说身体是最重要的啊！",
+              "answer": 0,
+              "vi": "A: Đãi ngộ của công ty hiện tại cũng tốt, nhưng mệt quá! Thường xuyên phải tăng ca.\nB: Không được thì đổi việc đi, nói gì thì nói sức khỏe là quan trọng nhất!",
+              "explain": "“经常” nghĩa là “常常”; vì công việc quá mệt nên thường xuyên tăng ca."
+            },
+            {
+              "no": 55,
+              "text": "A：我还是希望你能再___一下，万一赔钱呢？\nB：你放心吧，不会的。",
+              "answer": 5,
+              "vi": "A: Tớ vẫn mong cậu cân nhắc thêm một chút, lỡ như lỗ vốn thì sao?\nB: Cậu yên tâm, sẽ không đâu.",
+              "explain": "“考虑” là suy nghĩ kỹ để đưa ra quyết định; A khuyên đối phương nghĩ lại để tránh rủi ro."
+            }
+          ]
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 56,
+          "sentences": [
+            "不会说汉语很不方便",
+            "于是我开始学习汉语",
+            "我的生意主要在中国"
+          ],
+          "answer": "CAB",
+          "vi": "Việc làm ăn của tôi chủ yếu ở Trung Quốc, không biết nói tiếng Hán rất bất tiện, thế là tôi bắt đầu học tiếng Hán.",
+          "explain": "C nêu tình hình, A bổ sung vấn đề phát hiện ra, B nêu kết quả (“于是”)."
+        },
+        {
+          "no": 57,
+          "sentences": [
+            "特别是夏天",
+            "一年四季都有人来这儿旅游",
+            "来旅游的人特别多"
+          ],
+          "answer": "BAC",
+          "vi": "Quanh năm đều có người đến đây du lịch, đặc biệt là mùa hè, người đến du lịch rất đông.",
+          "explain": "B nêu tổng quát, A là ví dụ cụ thể, C giải thích thêm cho A."
+        },
+        {
+          "no": 58,
+          "sentences": [
+            "一个人只要有了目标",
+            "那他就一定会成功",
+            "并坚持为那个目标而奋斗"
+          ],
+          "answer": "ACB",
+          "vi": "Một người chỉ cần có mục tiêu và kiên trì phấn đấu vì mục tiêu đó thì nhất định sẽ thành công.",
+          "explain": "Cặp “只要……就……” chỉ điều kiện: C bổ sung cho A, B nêu kết quả."
+        },
+        {
+          "no": 59,
+          "sentences": [
+            "这段时间他一边收集资料",
+            "一边写计划",
+            "都没有时间回家看望父母"
+          ],
+          "answer": "ABC",
+          "vi": "Thời gian này anh ấy vừa thu thập tài liệu vừa viết kế hoạch, đều không có thời gian về thăm bố mẹ.",
+          "explain": "Cặp “一边……一边……” chỉ song song; A có chủ ngữ “他” nên đứng đầu, C nêu kết quả."
+        },
+        {
+          "no": 60,
+          "sentences": [
+            "它发展得更快",
+            "京剧特别受大家欢迎",
+            "因此和其他戏曲比起来"
+          ],
+          "answer": "BCA",
+          "vi": "Kinh kịch đặc biệt được mọi người yêu thích, vì vậy so với các loại hí khúc khác thì nó phát triển nhanh hơn.",
+          "explain": "B nêu tình hình, C và A bổ sung; cụm “和……比起来” thường đặt trước."
+        },
+        {
+          "no": 61,
+          "sentences": [
+            "其他应用仍不太普遍",
+            "现在人们上网，最多的是玩儿游戏、聊天儿",
+            "其次是查找信息、收发邮件"
+          ],
+          "answer": "BCA",
+          "vi": "Hiện nay người ta lên mạng nhiều nhất là chơi game, trò chuyện, tiếp đến là tra cứu thông tin, gửi nhận email, các ứng dụng khác vẫn chưa phổ biến lắm.",
+          "explain": "B nêu đối tượng, C và A sắp xếp theo thứ tự mức độ nhiều ít (最多 – 其次 – 其他)."
+        },
+        {
+          "no": 62,
+          "sentences": [
+            "还是从健康的角度看",
+            "无论是从味道上看",
+            "这道菜都值得点"
+          ],
+          "answer": "BAC",
+          "vi": "Dù xét về hương vị hay xét từ góc độ sức khỏe, món ăn này đều đáng gọi.",
+          "explain": "Cặp “无论……都……” chỉ điều kiện; A bổ sung cho B (无论是……还是……)."
+        },
+        {
+          "no": 63,
+          "sentences": [
+            "你会发现它们有时比人更聪明",
+            "当你了解它们时",
+            "千万不要小看动物的智慧"
+          ],
+          "answer": "CBA",
+          "vi": "Tuyệt đối đừng xem thường trí tuệ của động vật, khi bạn hiểu chúng, bạn sẽ phát hiện đôi khi chúng thông minh hơn con người.",
+          "explain": "C nêu tình hình, B và A nêu kết quả; mệnh đề “当……时” thường đặt trước A."
+        },
+        {
+          "no": 64,
+          "sentences": [
+            "它不仅是一种服饰",
+            "更代表着一种文化",
+            "旗袍是中国女性的传统服饰之一"
+          ],
+          "answer": "CAB",
+          "vi": "Sườn xám là một trong những trang phục truyền thống của phụ nữ Trung Quốc, nó không chỉ là một loại trang phục mà còn đại diện cho một nền văn hóa.",
+          "explain": "C nêu tình hình, A và B bổ sung; cặp “不仅……更……” chỉ tăng tiến."
+        },
+        {
+          "no": 65,
+          "sentences": [
+            "但她依然很年轻",
+            "虽然很多年没见面了",
+            "这让大家很羡慕"
+          ],
+          "answer": "BAC",
+          "vi": "Tuy đã nhiều năm không gặp nhưng cô ấy vẫn rất trẻ, điều này khiến mọi người rất ngưỡng mộ.",
+          "explain": "Cặp “虽然……但……” chỉ chuyển ngoặt: B rồi A, C nêu kết quả."
+        }
+      ]
+    },
+    "part3": {
+      "passages": [
+        {
+          "range": [
+            66,
+            66
+          ],
+          "text": "那家咖啡店不太大，但非常干净，店里常常放着优美的音乐，散发着咖啡的香味，我和朋友经常去那儿。",
+          "vi": "Quán cà phê đó không lớn lắm nhưng rất sạch sẽ, trong quán thường mở nhạc du dương, tỏa hương cà phê, tôi và bạn bè thường xuyên đến đó.",
+          "questions": [
+            {
+              "no": 66,
+              "text": "我和朋友为什么喜欢那家咖啡店？",
+              "options": [
+                "有香味",
+                "环境很好",
+                "没有音乐",
+                "咖啡店很大"
+              ],
+              "answer": 1,
+              "explain": "Dựa vào “非常干净，店里常常放着优美的音乐，散发着咖啡的香味” có thể suy ra môi trường tốt nên chọn B."
+            }
+          ]
+        },
+        {
+          "range": [
+            67,
+            67
+          ],
+          "text": "上飞机前，要先看看你乘坐的航班在哪儿办理登机手续，然后将机票、身份证交给机场相关负责人员，换登机牌。",
+          "vi": "Trước khi lên máy bay, trước hết phải xem chuyến bay của bạn làm thủ tục ở đâu, sau đó đưa vé máy bay, chứng minh thư cho nhân viên sân bay phụ trách để đổi thẻ lên máy bay.",
+          "questions": [
+            {
+              "no": 67,
+              "text": "办理登机手续时，要把什么交给机场工作人员？",
+              "options": [
+                "手机",
+                "钱包",
+                "行李",
+                "飞机票"
+              ],
+              "answer": 3,
+              "explain": "Văn bản nói “将机票、身份证交给机场相关负责人员”, nên đáp án là vé máy bay, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            68,
+            68
+          ],
+          "text": "近两年，我国每年因车祸死亡的人数超过死亡总数的百分之七十，因此，您在外出工作、旅行、探亲的时候，一定要遵守交通法规，自觉维护交通秩序。",
+          "vi": "Hai năm gần đây, số người tử vong vì tai nạn giao thông mỗi năm ở nước ta vượt quá 70% tổng số người chết, vì vậy khi đi làm, du lịch, thăm thân, bạn nhất định phải tuân thủ luật giao thông, tự giác giữ gìn trật tự giao thông.",
+          "questions": [
+            {
+              "no": 68,
+              "text": "根据这句话，我们应该：",
+              "options": [
+                "爱护环境",
+                "购买保险",
+                "外出旅游",
+                "遵守交通规则"
+              ],
+              "answer": 3,
+              "explain": "Dựa vào “一定要遵守交通法规” nên chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            69,
+            69
+          ],
+          "text": "休息的时候我喜欢读一些书，一来这是我的爱好，二来也想充实一下自己，以免让人觉得自己没有知识。",
+          "vi": "Lúc nghỉ ngơi tôi thích đọc sách, một là đây là sở thích của tôi, hai là cũng muốn làm giàu thêm bản thân để tránh bị người khác cho là không có kiến thức.",
+          "questions": [
+            {
+              "no": 69,
+              "text": "“我”为什么喜欢读书？",
+              "options": [
+                "打发时间",
+                "生活需要",
+                "“我”的爱好",
+                "工作需要"
+              ],
+              "answer": 2,
+              "explain": "Dựa vào “一来这是我的爱好，二来也想充实一下自己”, một trong các lý do là đây là sở thích của “tôi”, chọn C."
+            }
+          ]
+        },
+        {
+          "range": [
+            70,
+            70
+          ],
+          "text": "一个人喝醉了，他叫住一辆出租车，对司机说：“去新月酒店。”司机觉得很奇怪，回答说：“这里就是新月酒店。”那人边掏钱边称赞说：“你开得还真快啊！”",
+          "vi": "Một người uống say, gọi một chiếc taxi và nói với tài xế: “Đến khách sạn Tân Nguyệt.” Tài xế thấy rất lạ, đáp: “Đây chính là khách sạn Tân Nguyệt.” Người đó vừa móc tiền vừa khen: “Anh lái nhanh thật đấy!”",
+          "questions": [
+            {
+              "no": 70,
+              "text": "根据这段话，我们知道：",
+              "options": [
+                "那个人喝醉了",
+                "司机开得很快",
+                "司机骗人",
+                "那人迷路了"
+              ],
+              "answer": 0,
+              "explain": "Dựa vào “一个人喝醉了” nên chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            71,
+            71
+          ],
+          "text": "李老师在十几年的工作中积累了丰富的教学经验，她的课讲得生动活泼，非常吸引学生，所以我选择去她的班。",
+          "vi": "Cô Lý đã tích lũy được kinh nghiệm giảng dạy phong phú trong hơn mười năm làm việc, bài giảng của cô sinh động, sôi nổi, rất thu hút học sinh, vì thế tôi chọn vào lớp của cô.",
+          "questions": [
+            {
+              "no": 71,
+              "text": "“我”为什么去李老师的班？",
+              "options": [
+                "同学好",
+                "老师性格好",
+                "老师经验丰富",
+                "班级干净"
+              ],
+              "answer": 2,
+              "explain": "Dựa vào “李老师在十几年的工作中积累了丰富的教学经验” nên chọn C."
+            }
+          ]
+        },
+        {
+          "range": [
+            72,
+            72
+          ],
+          "text": "最近几天将持续降温，早晨天气比较冷，所以建议您一定要等到太阳出来半小时之后再去锻炼，否则会影响健康。",
+          "vi": "Mấy ngày gần đây nhiệt độ sẽ tiếp tục giảm, buổi sáng khá lạnh, vì vậy khuyên bạn nhất định phải đợi mặt trời mọc nửa tiếng rồi mới đi tập thể dục, nếu không sẽ ảnh hưởng sức khỏe.",
+          "questions": [
+            {
+              "no": 72,
+              "text": "最好什么时候去锻炼？",
+              "options": [
+                "深夜",
+                "中午",
+                "晚上",
+                "日出半小时后"
+              ],
+              "answer": 3,
+              "explain": "Dựa vào “建议您一定要等到太阳出来半小时之后再去锻炼” nên chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            73,
+            73
+          ],
+          "text": "朋友之间相处，最重要的就是信任。如果你只相信自己，而经常怀疑对方，那你们之间的友谊就会受到影响。",
+          "vi": "Khi chung sống giữa bạn bè, quan trọng nhất là sự tin tưởng. Nếu bạn chỉ tin bản thân mà thường xuyên nghi ngờ đối phương thì tình bạn giữa hai người sẽ bị ảnh hưởng.",
+          "questions": [
+            {
+              "no": 73,
+              "text": "朋友相处不应该：",
+              "options": [
+                "聚会",
+                "怀疑",
+                "相处",
+                "信任"
+              ],
+              "answer": 1,
+              "explain": "Dựa vào “朋友之间的相处，最重要的就是信任” suy ra bạn bè không nên “怀疑” (nghi ngờ), chọn B."
+            }
+          ]
+        },
+        {
+          "range": [
+            74,
+            74
+          ],
+          "text": "在古代，茶本来是一种药，后来才发展成为饮料。开始时，人们把新鲜的茶叶做成汤喝，后来为了方便保存和运输，才出现了我们今天喝的这样晒干了的茶叶。",
+          "vi": "Thời cổ đại, trà vốn là một loại thuốc, về sau mới phát triển thành đồ uống. Lúc đầu, người ta nấu lá trà tươi thành canh để uống, sau này để tiện bảo quản và vận chuyển mới xuất hiện loại lá trà phơi khô như chúng ta uống ngày nay.",
+          "questions": [
+            {
+              "no": 74,
+              "text": "根据这段话，茶：",
+              "options": [
+                "味道好",
+                "不易保存",
+                "原来是药",
+                "非常新鲜"
+              ],
+              "answer": 2,
+              "explain": "Dựa vào “茶本来是一种药” nên chọn C."
+            }
+          ]
+        },
+        {
+          "range": [
+            75,
+            75
+          ],
+          "text": "过去，只要能使用电脑或者会一点儿外语，就能找到一份好工作，而现在则不同了，会外语和电脑已经成为必须具备的技能了。",
+          "vi": "Trước đây, chỉ cần biết dùng máy tính hoặc biết chút ngoại ngữ là có thể tìm được một công việc tốt, còn bây giờ thì khác, biết ngoại ngữ và máy tính đã trở thành kỹ năng bắt buộc phải có.",
+          "questions": [
+            {
+              "no": 75,
+              "text": "根据这段话，想找到好工作：",
+              "options": [
+                "会外语就行",
+                "会电脑就行",
+                "会打字就行",
+                "必须会外语和电脑"
+              ],
+              "answer": 3,
+              "explain": "Dựa vào “会外语和电脑已经成为必须具备的技能了” nên chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            76,
+            76
+          ],
+          "text": "进入80年代后，由于电视的普及，看春节联欢晚会成了中国人过春节时不可缺少的一项活动。每年有超过10亿人通过电视收看这台晚会。",
+          "vi": "Bước vào thập niên 80, do tivi phổ biến, xem gala Xuân vãn đã trở thành một hoạt động không thể thiếu khi người Trung Quốc đón Tết. Mỗi năm có hơn 1 tỷ người xem chương trình này qua tivi.",
+          "questions": [
+            {
+              "no": 76,
+              "text": "根据这段话，春节晚会：",
+              "options": [
+                "必须要看",
+                "不太精彩",
+                "只在电视上播出",
+                "很多人喜欢"
+              ],
+              "answer": 3,
+              "explain": "Dựa vào “每年有超过10亿人通过电视收看这台晚会” có thể suy ra nhiều người thích xem, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            77,
+            77
+          ],
+          "text": "小明，你才多大就戴眼镜了？是不是总看电视呀？以后少看一点儿吧！",
+          "vi": "Tiểu Minh, cháu bé thế này đã đeo kính rồi sao? Có phải suốt ngày xem tivi không? Sau này xem ít đi nhé!",
+          "questions": [
+            {
+              "no": 77,
+              "text": "说话人建议小明应该怎么做？",
+              "options": [
+                "少看电视",
+                "多看书",
+                "少戴眼镜",
+                "多做运动"
+              ],
+              "answer": 0,
+              "explain": "Dựa vào “是不是总看电视呀？以后少看一点儿吧！” nên chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            78,
+            78
+          ],
+          "text": "水一旦受到污染，就会给人类带来很大的危害。它不仅会影响到人类的生产、生活，还会破坏我们的自然环境。",
+          "vi": "Nước một khi bị ô nhiễm sẽ mang lại tác hại rất lớn cho con người. Nó không chỉ ảnh hưởng đến sản xuất, sinh hoạt của con người mà còn phá hoại môi trường tự nhiên của chúng ta.",
+          "questions": [
+            {
+              "no": 78,
+              "text": "这段话主要谈的是水污染的：",
+              "options": [
+                "治理",
+                "危害",
+                "原因",
+                "作用"
+              ],
+              "answer": 1,
+              "explain": "Dựa vào “水一旦受到污染，就会给人类带来很大的危害。它不仅会影响……还会破坏……” đoạn văn chủ yếu nói về tác hại, chọn B."
+            }
+          ]
+        },
+        {
+          "range": [
+            79,
+            79
+          ],
+          "text": "王经理做事认真负责，常常加班到深夜。由于长期过度劳累，他生病住院了。",
+          "vi": "Giám đốc Vương làm việc nghiêm túc có trách nhiệm, thường tăng ca đến khuya. Do làm việc quá sức trong thời gian dài, ông ấy đã bị bệnh phải nhập viện.",
+          "questions": [
+            {
+              "no": 79,
+              "text": "王经理为什么生病了？",
+              "options": [
+                "过度劳累",
+                "身体虚弱",
+                "饮食不当",
+                "长期失眠"
+              ],
+              "answer": 0,
+              "explain": "Dựa vào “由于长期过度劳累，他生病住院了” nên chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            80,
+            81
+          ],
+          "text": "我的朋友在公交车上经常丢钱包。有一天，朋友上车前把一些纸折好放进信封里，下车后发现信封被偷了。第二天，朋友刚上车不久，就感觉口袋里有东西。拿出来一看，是昨天的那个信封，信封上写着：“请不要开这样的玩笑，影响正常工作，谢谢！”",
+          "vi": "Bạn tôi thường xuyên bị mất ví trên xe buýt. Một hôm, trước khi lên xe bạn gấp mấy tờ giấy bỏ vào phong bì, xuống xe phát hiện phong bì bị trộm mất. Hôm sau, bạn vừa lên xe không lâu thì cảm thấy trong túi có thứ gì đó. Lấy ra xem thì là chiếc phong bì hôm qua, trên phong bì viết: “Xin đừng đùa kiểu này, ảnh hưởng đến công việc bình thường, cảm ơn!”",
+          "questions": [
+            {
+              "no": 80,
+              "text": "我的朋友经常丢：",
+              "options": [
+                "纸",
+                "钱包",
+                "信封",
+                "手机"
+              ],
+              "answer": 1,
+              "explain": "Dựa vào câu đầu “我的朋友在公交车上经常丢钱包” nên chọn B."
+            },
+            {
+              "no": 81,
+              "text": "根据这段话我们知道：",
+              "options": [
+                "朋友丢了信",
+                "朋友找到了钱",
+                "朋友影响了工作",
+                "小偷被骗了"
+              ],
+              "answer": 3,
+              "explain": "Ý của văn bản là trong phong bì tên trộm lấy chỉ toàn giấy, tức là tên trộm bị lừa, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            82,
+            83
+          ],
+          "text": "年糕是北京比较有名的小吃之一，有黄的金年糕和白的银年糕，并有“年年高”的意思。北京年糕一般在清真小吃店出售，通常在过年、过节的时候卖得较多，平时也有卖的，但数量比较少。",
+          "vi": "Bánh niên cao là một trong những món ăn vặt khá nổi tiếng của Bắc Kinh, có niên cao vàng gọi là “kim niên cao” và niên cao trắng gọi là “ngân niên cao”, lại mang ý nghĩa “năm năm cao” (năm sau hơn năm trước). Niên cao Bắc Kinh thường bán ở các tiệm ăn vặt Hồi giáo, thường bán nhiều vào dịp Tết, lễ; ngày thường cũng có bán nhưng số lượng ít hơn.",
+          "questions": [
+            {
+              "no": 82,
+              "text": "年糕有什么颜色的？",
+              "options": [
+                "棕色",
+                "青色",
+                "灰色",
+                "白色"
+              ],
+              "answer": 3,
+              "explain": "Văn bản nêu niên cao “有黄的金年糕和白的银年糕”, trong các lựa chọn chỉ có màu trắng nên chọn D."
+            },
+            {
+              "no": 83,
+              "text": "什么时候年糕卖得比较多？",
+              "options": [
+                "春节",
+                "月末",
+                "周末",
+                "平时"
+              ],
+              "answer": 0,
+              "explain": "Dựa vào “通常在过年、过节的时候卖得较多” suy ra dịp Tết Nguyên đán bán nhiều, chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            84,
+            85
+          ],
+          "text": "爬山的时候，爬得越高，越会觉得冷。这是因为高度每上升1000米，气温就下降6度，山越高，气温就越低。所以许多高山上都有冰雪，不会融化。夏天的时候，一些人会选择到很高的山上去乘凉，也是这个原因。",
+          "vi": "Khi leo núi, càng leo cao càng thấy lạnh. Đó là vì cứ lên cao 1000 mét thì nhiệt độ giảm 6 độ, núi càng cao thì nhiệt độ càng thấp. Vì vậy nhiều ngọn núi cao đều có băng tuyết không tan. Vào mùa hè, một số người chọn lên núi rất cao để hóng mát cũng vì lý do này.",
+          "questions": [
+            {
+              "no": 84,
+              "text": "当高度上升2000米时，气温会：",
+              "options": [
+                "下降6度",
+                "下降12度",
+                "下降13度",
+                "上升6度"
+              ],
+              "answer": 1,
+              "explain": "Dựa vào “高度每上升1000米，气温就下降6度” suy ra lên 2000 mét thì giảm 12 độ, chọn B."
+            },
+            {
+              "no": 85,
+              "text": "根据这段话，可以知道：",
+              "options": [
+                "爬山很危险",
+                "山顶温度低",
+                "山上都是冰雪",
+                "人们喜欢夏天"
+              ],
+              "answer": 1,
+              "explain": "Dựa vào “山越高，气温就越低……” suy ra nhiệt độ trên đỉnh núi thấp, chọn B."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

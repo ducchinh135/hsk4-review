@@ -1,0 +1,647 @@
+{
+  "test": 6,
+  "reading": {
+    "part1": {
+      "sets": [
+        {
+          "range": [
+            46,
+            50
+          ],
+          "words": [
+            "来自",
+            "顺序",
+            "坚持",
+            "对于",
+            "不断",
+            "属于"
+          ],
+          "example": {
+            "text": "她每天都___走路上下班，所以身体一直很不错。",
+            "answer": 2
+          },
+          "items": [
+            {
+              "no": 46,
+              "text": "她___外向性格，爱唱爱跳，喜欢热闹，不喜欢安静。",
+              "answer": 5,
+              "vi": "Cô ấy thuộc kiểu tính cách hướng ngoại, thích ca hát nhảy múa, thích náo nhiệt, không thích yên tĩnh.",
+              "explain": "“属于” chỉ thuộc về một loại nào đó; tính cách của cô ấy thuộc loại “外向”."
+            },
+            {
+              "no": 47,
+              "text": "___吸烟的危害，虽然大家比较了解，但真正能把烟戒掉的人却不多。",
+              "answer": 3,
+              "vi": "Về tác hại của việc hút thuốc, tuy mọi người khá hiểu rõ, nhưng người thật sự bỏ được thuốc lại không nhiều.",
+              "explain": "Giới từ “对于” dẫn ra đối tượng; ở đây đối tượng là “吸烟的危害”."
+            },
+            {
+              "no": 48,
+              "text": "经过大家___的努力，我们公司终于完成了这个项目。",
+              "answer": 4,
+              "vi": "Nhờ sự nỗ lực không ngừng của mọi người, công ty chúng tôi cuối cùng đã hoàn thành dự án này.",
+              "explain": "Phó từ “不断” nghĩa là liên tục không gián đoạn, chỉ mọi người nỗ lực không ngừng."
+            },
+            {
+              "no": 49,
+              "text": "导游让大家一点在宾馆门口排队，然后按先后___上车。",
+              "answer": 1,
+              "vi": "Hướng dẫn viên bảo mọi người một giờ xếp hàng ở cửa khách sạn, sau đó lên xe theo thứ tự trước sau.",
+              "explain": "“顺序” là thứ tự trước sau về không gian hoặc thời gian, hợp với “按先后顺序”."
+            },
+            {
+              "no": 50,
+              "text": "这次运动会，有___一百多个国家的运动员参加。",
+              "answer": 0,
+              "vi": "Đại hội thể thao lần này có vận động viên đến từ hơn một trăm quốc gia tham gia.",
+              "explain": "“来自” nghĩa là “từ……đến”; vận động viên đến từ hơn một trăm quốc gia."
+            }
+          ]
+        },
+        {
+          "range": [
+            51,
+            55
+          ],
+          "words": [
+            "任何",
+            "占线",
+            "安排",
+            "忍不住",
+            "除非",
+            "温度"
+          ],
+          "example": {
+            "text": "A：今天真冷啊，好像白天最高___才2ºC。\nB：刚才电视里说明天更冷。",
+            "answer": 5
+          },
+          "items": [
+            {
+              "no": 51,
+              "text": "A：前几天看的眼镜，你买了吗？\nB：___打折，否则我不会考虑的。",
+              "answer": 4,
+              "vi": "A: Cặp kính xem mấy hôm trước, cậu mua chưa?\nB: Trừ phi giảm giá, nếu không tớ sẽ không cân nhắc đâu.",
+              "explain": "“除非” ở đây là liên từ chỉ điều kiện, thường đi với “才、否则”; câu sau có “否则”."
+            },
+            {
+              "no": 52,
+              "text": "A：昨天你怎么醉成那样儿？\nB：我们同学聚会，大家玩儿得很高兴，我___多喝了几杯。",
+              "answer": 3,
+              "vi": "A: Hôm qua sao cậu say đến thế?\nB: Bọn tớ họp lớp, mọi người chơi rất vui, tớ không nhịn được uống thêm mấy ly.",
+              "explain": "“忍不住” chỉ không kiềm chế được mà làm việc gì đó; người nói không kiềm được việc uống nhiều."
+            },
+            {
+              "no": 53,
+              "text": "A：你给小张打电话了吗？\nB：打了，可是他的电话一直___。",
+              "answer": 1,
+              "vi": "A: Cậu gọi điện cho Tiểu Trương chưa?\nB: Gọi rồi, nhưng điện thoại của cậu ấy cứ bận máy.",
+              "explain": "“占线” chỉ đường dây đang bận khi gọi điện; phía trước có nhắc “打电话”."
+            },
+            {
+              "no": 54,
+              "text": "A：下午你要是没什么___就跟我去健身房吧，我有免费的票。\nB：真不巧，我得去机场接朋友。",
+              "answer": 2,
+              "vi": "A: Chiều nay nếu cậu không có sắp xếp gì thì đi phòng gym với tớ nhé, tớ có vé miễn phí.\nB: Thật không đúng lúc, tớ phải ra sân bay đón bạn.",
+              "explain": "“安排” dùng như danh từ, chỉ kế hoạch, dự định; “没什么安排” = không có kế hoạch gì."
+            },
+            {
+              "no": 55,
+              "text": "A：教练，这次比赛不在我们本地举行，想赢不太容易呀！\nB：我觉得只要我们队员团结起来，___困难都能克服。",
+              "answer": 0,
+              "vi": "A: Huấn luyện viên, trận đấu lần này không tổ chức tại địa phương chúng ta, muốn thắng không dễ đâu!\nB: Tôi nghĩ chỉ cần các cầu thủ đoàn kết lại thì bất kỳ khó khăn nào cũng có thể vượt qua.",
+              "explain": "Đại từ “任何” nghĩa là bất cứ cái gì; “任何困难都能克服” = khó khăn nào cũng vượt qua được."
+            }
+          ]
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 56,
+          "sentences": [
+            "所以我现在感觉很有精神",
+            "为了身体健康",
+            "我天天坚持跑步"
+          ],
+          "answer": "BCA",
+          "vi": "Vì sức khỏe, tôi ngày nào cũng kiên trì chạy bộ, nên bây giờ tôi cảm thấy rất tràn đầy tinh thần.",
+          "explain": "B nêu nguyên nhân, C bổ sung cho B, A nêu kết quả (“所以”)."
+        },
+        {
+          "no": 57,
+          "sentences": [
+            "今天我终于来到了她的家乡",
+            "我始终盼望着能够见小平一面",
+            "遗憾的是，她已经搬家了"
+          ],
+          "answer": "BAC",
+          "vi": "Tôi luôn mong có thể gặp Tiểu Bình một lần, hôm nay cuối cùng tôi đã đến quê cô ấy, đáng tiếc là cô ấy đã chuyển nhà rồi.",
+          "explain": "B nêu nguyên nhân, A và C nêu kết quả, C là chuyển ngoặt so với A."
+        },
+        {
+          "no": 58,
+          "sentences": [
+            "无论是公司领导",
+            "都应该按照规定办事",
+            "还是普通员工"
+          ],
+          "answer": "ACB",
+          "vi": "Dù là lãnh đạo công ty hay nhân viên bình thường, đều phải làm việc theo quy định.",
+          "explain": "Cặp “无论……都……” chỉ điều kiện; A và C nêu hai đối tượng song song, mệnh đề “无论……” đặt trước."
+        },
+        {
+          "no": 59,
+          "sentences": [
+            "才能选择结婚",
+            "不然就是把婚姻当作了游戏",
+            "两个人只有相互了解"
+          ],
+          "answer": "CAB",
+          "vi": "Hai người chỉ có hiểu nhau thì mới có thể chọn kết hôn, nếu không là coi hôn nhân như trò chơi.",
+          "explain": "Cặp “只有……才……” chỉ điều kiện, “不然” chỉ chuyển ngoặt; B là vế đối lập với phần trước."
+        },
+        {
+          "no": 60,
+          "sentences": [
+            "他们不想要孩子",
+            "因为培养一个孩子需要很多钱",
+            "这主要是由于收入低"
+          ],
+          "answer": "ACB",
+          "vi": "Họ không muốn có con, điều này chủ yếu là do thu nhập thấp, vì nuôi một đứa trẻ cần rất nhiều tiền.",
+          "explain": "A nêu một tình huống, “这” trong C chỉ tình huống ở A, B nêu nguyên nhân."
+        },
+        {
+          "no": 61,
+          "sentences": [
+            "语法更难",
+            "发音难，汉字难",
+            "一些人认为汉语太难了"
+          ],
+          "answer": "CBA",
+          "vi": "Một số người cho rằng tiếng Hán quá khó, phát âm khó, chữ Hán khó, ngữ pháp còn khó hơn.",
+          "explain": "“汉语太难了”, B và A đều là tân ngữ của “一些人认为”; “更” biểu thị so sánh nên câu có “更” thường đứng sau."
+        },
+        {
+          "no": 62,
+          "sentences": [
+            "她一定不会拒绝的",
+            "刘阳喜欢参加这样的活动",
+            "如果你邀请她"
+          ],
+          "answer": "BCA",
+          "vi": "Lưu Dương thích tham gia những hoạt động như thế này, nếu bạn mời cô ấy thì cô ấy nhất định sẽ không từ chối.",
+          "explain": "B nêu tình hình, C và A bổ sung; cặp “如果……那么……” chỉ giả thiết, ở đây lược bỏ “那么”."
+        },
+        {
+          "no": 63,
+          "sentences": [
+            "凡是来到北京的人",
+            "因为它是中国的奇迹",
+            "都要去爬长城"
+          ],
+          "answer": "ACB",
+          "vi": "Phàm là người đến Bắc Kinh đều phải đi leo Vạn Lý Trường Thành, vì nó là kỳ tích của Trung Quốc.",
+          "explain": "Cặp “凡是……都……” chỉ phạm vi; B nêu nguyên nhân, “它” chỉ Trường Thành."
+        },
+        {
+          "no": 64,
+          "sentences": [
+            "所以购物的人特别多",
+            "付款的地方也排起了长队",
+            "因为很多名牌商品打折"
+          ],
+          "answer": "CAB",
+          "vi": "Vì nhiều hàng hiệu giảm giá nên người mua sắm đặc biệt đông, chỗ thanh toán cũng xếp hàng dài.",
+          "explain": "Cặp “因为……所以……” chỉ nhân quả; B bổ sung cho A."
+        },
+        {
+          "no": 65,
+          "sentences": [
+            "虽然我给了他一块巧克力",
+            "那个孩子一直在哭",
+            "但他还是没有停下来"
+          ],
+          "answer": "BAC",
+          "vi": "Đứa trẻ đó cứ khóc mãi, tuy tôi đã cho nó một miếng sô cô la nhưng nó vẫn không ngừng khóc.",
+          "explain": "B nêu một tình huống, A và C bổ sung cho B; cặp “虽然……但……” chỉ chuyển ngoặt."
+        }
+      ]
+    },
+    "part3": {
+      "passages": [
+        {
+          "range": [
+            66,
+            66
+          ],
+          "text": "现在，很多家长都让孩子假期去参加辅导班，他们认为学习才是孩子应该做的，这给孩子很大的压力，其实这样对孩子的成长很不好。",
+          "vi": "Hiện nay nhiều phụ huynh cho con đi học thêm vào kỳ nghỉ, họ cho rằng học mới là việc trẻ nên làm, điều này tạo áp lực rất lớn cho trẻ, thực ra như vậy rất không tốt cho sự trưởng thành của trẻ.",
+          "questions": [
+            {
+              "no": 66,
+              "text": "现在的孩子：",
+              "options": [
+                "学习好",
+                "工作忙",
+                "身体棒",
+                "压力大"
+              ],
+              "answer": 3,
+              "explain": "Dựa vào “给孩子很大的压力” nên chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            67,
+            67
+          ],
+          "text": "明年将会流行绿色的服装，因为人们越来越感受到保护环境的重要性，而绿色可以使人想到美好的环境。",
+          "vi": "Năm sau trang phục màu xanh lá sẽ thịnh hành, vì con người ngày càng cảm nhận được tầm quan trọng của việc bảo vệ môi trường, mà màu xanh lá khiến người ta nghĩ đến môi trường tươi đẹp.",
+          "questions": [
+            {
+              "no": 67,
+              "text": "绿色让人懂得：",
+              "options": [
+                "流行趋势",
+                "保护环境",
+                "适应社会",
+                "自己的爱好"
+              ],
+              "answer": 1,
+              "explain": "Dựa vào “绿色可以使人想到美好的环境” nên chọn B."
+            }
+          ]
+        },
+        {
+          "range": [
+            68,
+            68
+          ],
+          "text": "“哈佛”理发店，烫个头发的价格让人接受不了，还是去“艺星”理发店吧，听说弄得也很漂亮，还不贵。",
+          "vi": "Tiệm cắt tóc “Harvard” giá uốn tóc khiến người ta không chấp nhận nổi, hay là đến tiệm “Nghệ Tinh” đi, nghe nói làm cũng rất đẹp mà lại không đắt.",
+          "questions": [
+            {
+              "no": 68,
+              "text": "根据这句话，可以知道“哈佛”理发店：",
+              "options": [
+                "很漂亮",
+                "价格很贵",
+                "是新开的",
+                "服务质量差"
+              ],
+              "answer": 1,
+              "explain": "Dựa vào “‘哈佛’理发店，烫个头发的价格让人接受不了” nên chọn B."
+            }
+          ]
+        },
+        {
+          "range": [
+            69,
+            69
+          ],
+          "text": "小刚，每当我对生活感到失望的时候，就会想起你对我的鼓励，想起我们一起参加的比赛，那是多么让人开心的事情。可是现在你却一次又一次地骗我，让我伤心，再见了……",
+          "vi": "Tiểu Cương, mỗi khi tôi cảm thấy thất vọng về cuộc sống, tôi lại nhớ đến sự động viên của cậu, nhớ cuộc thi chúng ta cùng tham gia, đó là chuyện vui biết bao. Nhưng bây giờ cậu lại hết lần này đến lần khác lừa dối tôi, khiến tôi đau lòng, tạm biệt……",
+          "questions": [
+            {
+              "no": 69,
+              "text": "说话人跟小刚曾经是：",
+              "options": [
+                "朋友",
+                "兄妹",
+                "师生",
+                "母子"
+              ],
+              "answer": 0,
+              "explain": "Dựa vào “就会想起你对我的鼓励，想起我们一起参加的比赛” suy ra chỉ quan hệ bạn bè mới làm vậy, chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            70,
+            70
+          ],
+          "text": "当名人其实是很不容易的。为了事业，他们失去了个人的时间、自由，甚至是爱情。他们没有自己的秘密，因为他们说的话、做的事，时刻都在被别人关注。",
+          "vi": "Làm người nổi tiếng thật ra không dễ. Vì sự nghiệp, họ mất đi thời gian cá nhân, tự do, thậm chí cả tình yêu. Họ không có bí mật riêng, vì lời họ nói, việc họ làm luôn bị người khác chú ý.",
+          "questions": [
+            {
+              "no": 70,
+              "text": "名人：",
+              "options": [
+                "爱情顺利",
+                "说话痛快",
+                "没有自由",
+                "生活平淡"
+              ],
+              "answer": 2,
+              "explain": "Dựa vào “他们失去了个人的时间、自由” nên chọn C."
+            }
+          ]
+        },
+        {
+          "range": [
+            71,
+            71
+          ],
+          "text": "如果一个人心理健康，那他面对失败的时候就不会一直伤心、失望，而是很快就能从失败中找出原因，继续努力，这样才有获得成功的希望。",
+          "vi": "Nếu một người có tâm lý khỏe mạnh thì khi đối mặt với thất bại sẽ không mãi buồn bã, thất vọng, mà nhanh chóng tìm ra nguyên nhân từ thất bại, tiếp tục nỗ lực, như vậy mới có hy vọng thành công.",
+          "questions": [
+            {
+              "no": 71,
+              "text": "面对失败不伤心，是因为：",
+              "options": [
+                "心理健康",
+                "没有失败过",
+                "非常自信",
+                "成功很难"
+              ],
+              "answer": 0,
+              "explain": "Dựa vào “如果一个人心理健康，那他面对失败的时候就不会一直伤心、失望” nên chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            72,
+            72
+          ],
+          "text": "梅兰芳先生是中国著名的京剧表演艺术家，他扮演过无数女性角色，在艺术上取得了很高的成就，受到了人们的尊敬和喜爱。",
+          "vi": "Ông Mai Lan Phương là nghệ sĩ biểu diễn Kinh kịch nổi tiếng của Trung Quốc, ông từng đóng vô số vai nữ, đạt thành tựu rất cao về nghệ thuật, được mọi người kính trọng và yêu mến.",
+          "questions": [
+            {
+              "no": 72,
+              "text": "梅兰芳先生：",
+              "options": [
+                "唱京剧",
+                "是女的",
+                "个子高",
+                "弹钢琴"
+              ],
+              "answer": 0,
+              "explain": "Dựa vào “梅兰芳先生是中国著名的京剧表演艺术家” nên chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            73,
+            73
+          ],
+          "text": "现代人工作很忙，朋友之间沟通的时间越来越少。不过没关系，我们可以通过微信“朋友圈”，了解他们的心情以及工作等方面的情况。",
+          "vi": "Người hiện đại công việc rất bận, thời gian giao tiếp giữa bạn bè ngày càng ít. Nhưng không sao, chúng ta có thể thông qua “Moments” (Vòng bạn bè) của WeChat để biết tâm trạng cũng như tình hình công việc của họ.",
+          "questions": [
+            {
+              "no": 73,
+              "text": "根据这段话，我们可以怎样知道朋友的情况？",
+              "options": [
+                "打电话",
+                "写明信片",
+                "看“朋友圈”",
+                "写电子邮件"
+              ],
+              "answer": 2,
+              "explain": "Dựa vào “我们可以通过微信‘朋友圈’，了解他们……的情况” nên chọn C."
+            }
+          ]
+        },
+        {
+          "range": [
+            74,
+            74
+          ],
+          "text": "中国人过春节的时候，总要在门上贴一副对联，表示祝福。对联分为上联、下联和横批三个部分。在古代，上联要贴在门的右边，下联要贴在左边。",
+          "vi": "Khi đón Tết, người Trung Quốc luôn dán một đôi câu đối lên cửa để chúc phúc. Câu đối chia làm ba phần: vế trên, vế dưới và hoành phi. Thời xưa vế trên phải dán bên phải cửa, vế dưới dán bên trái.",
+          "questions": [
+            {
+              "no": 74,
+              "text": "在古代，上联的位置是：",
+              "options": [
+                "右面",
+                "左面",
+                "屋子里",
+                "阳台上"
+              ],
+              "answer": 0,
+              "explain": "Dựa vào “在古代，上联要贴在门的右边” nên chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            75,
+            75
+          ],
+          "text": "有人说，如果和别人保持合适的距离，就可以更好地发现别人的优点，如果走得很近，可能发现的缺点会越来越多。",
+          "vi": "Có người nói, nếu giữ khoảng cách thích hợp với người khác thì có thể phát hiện ưu điểm của họ tốt hơn, còn nếu đến quá gần thì khuyết điểm phát hiện được có thể ngày càng nhiều.",
+          "questions": [
+            {
+              "no": 75,
+              "text": "这句话主要是说：",
+              "options": [
+                "办理手续",
+                "发现缺点",
+                "如何道歉",
+                "保持距离"
+              ],
+              "answer": 3,
+              "explain": "Dựa vào “如果和别人保持合适的距离……如果走得很近……” nên chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            76,
+            76
+          ],
+          "text": "不要因为一句话或一件事，就去判断一个人的好与坏。只有通过长时间的观察，才能得出结论，这时的判断也才能是准确的。",
+          "vi": "Đừng chỉ vì một câu nói hay một việc mà phán đoán một người tốt hay xấu. Chỉ có quan sát trong thời gian dài mới rút ra được kết luận, lúc đó phán đoán mới chính xác.",
+          "questions": [
+            {
+              "no": 76,
+              "text": "根据这段话，怎样判断一个人？",
+              "options": [
+                "开玩笑",
+                "多观察",
+                "听他解释",
+                "举行聚会"
+              ],
+              "answer": 1,
+              "explain": "Dựa vào “只有通过长时间的观察……这时的判断也才能是准确的” nên chọn B."
+            }
+          ]
+        },
+        {
+          "range": [
+            77,
+            77
+          ],
+          "text": "第一次见到余静，我就知道她是我一直在寻找的女孩儿。她聪明、开朗，说话的时候总是带着浅浅的微笑，好像能让人忘记所有的烦恼。",
+          "vi": "Lần đầu gặp Dư Tĩnh, tôi đã biết cô ấy là cô gái mà tôi luôn tìm kiếm. Cô ấy thông minh, vui vẻ, khi nói chuyện luôn mang nụ cười nhẹ, dường như có thể khiến người ta quên hết mọi phiền não.",
+          "questions": [
+            {
+              "no": 77,
+              "text": "根据这段话，可以知道“我”：",
+              "options": [
+                "在发愁",
+                "很内向",
+                "喜欢余静",
+                "要涨工资"
+              ],
+              "answer": 2,
+              "explain": "Câu “我就知道她是我一直在寻找的女孩儿” có nghĩa là tôi thích cô gái này, chọn C."
+            }
+          ]
+        },
+        {
+          "range": [
+            78,
+            78
+          ],
+          "text": "明天我就去杭州，跟你一起放松放松，去游览西湖，看看传说中的“雷峰塔”，这样你就满意了吧！",
+          "vi": "Ngày mai tôi sẽ đi Hàng Châu, cùng cậu thư giãn một chút, đi thăm Tây Hồ, xem “Tháp Lôi Phong” trong truyền thuyết, như vậy cậu hài lòng rồi chứ!",
+          "questions": [
+            {
+              "no": 78,
+              "text": "根据这段话，可以知道“我”：",
+              "options": [
+                "很调皮",
+                "有同情心",
+                "讨厌冬天",
+                "打算去旅游"
+              ],
+              "answer": 3,
+              "explain": "Dựa vào “明天我就去杭州，跟你一起放松放松，去游览西湖” nên chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            79,
+            79
+          ],
+          "text": "北京“鸟巢”是2008年第29届奥林匹克运动会的主体育场，开闭幕式也是在这里举行的。场内大约有91000个座位，其中临时座位约11000个。现在“鸟巢”已经正式向游人开放。",
+          "vi": "“Tổ chim” Bắc Kinh là sân vận động chính của Thế vận hội Olympic lần thứ 29 năm 2008, lễ khai mạc và bế mạc cũng được tổ chức tại đây. Trong sân có khoảng 91000 chỗ ngồi, trong đó chỗ ngồi tạm thời khoảng 11000. Hiện nay “Tổ chim” đã chính thức mở cửa đón du khách.",
+          "questions": [
+            {
+              "no": 79,
+              "text": "这段话主要谈：",
+              "options": [
+                "奥运会",
+                "员工管理",
+                "社会规则",
+                "“鸟巢”情况"
+              ],
+              "answer": 3,
+              "explain": "Cả đoạn văn đều nói về “Tổ chim”, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            80,
+            81
+          ],
+          "text": "有三个人在沙漠里找不到回家的路了。这时，他们遇到了一位神仙，神仙说：“我可以满足你们的任何愿望。”第一个人急忙说：“请你给我很多很多的钱，然后再把我送到我的家乡。”第二个人说：“我还没有结婚，请给我一个漂亮的妻子吧，我要和她一起回到我的城市。”神仙答应了这两个人的要求，他们很快就不见了。剩下的第三个人说：“现在只有我一个人了，我觉得很伤心，我希望那两个人能回来陪我。”结果，他的愿望实现了。",
+          "vi": "Có ba người trong sa mạc không tìm được đường về nhà. Lúc đó họ gặp một vị thần tiên, thần tiên nói: “Ta có thể thỏa mãn bất kỳ điều ước nào của các ngươi.” Người thứ nhất vội nói: “Xin ngài cho tôi thật nhiều tiền, rồi đưa tôi về quê.” Người thứ hai nói: “Tôi chưa kết hôn, xin cho tôi một người vợ xinh đẹp, tôi muốn cùng cô ấy trở về thành phố của mình.” Thần tiên đồng ý yêu cầu của hai người này, họ nhanh chóng biến mất. Người thứ ba còn lại nói: “Bây giờ chỉ còn mình tôi, tôi cảm thấy rất buồn, tôi hy vọng hai người kia có thể quay lại bên tôi.” Kết quả, điều ước của anh ta thành hiện thực.",
+          "questions": [
+            {
+              "no": 80,
+              "text": "这三个人怎么了？",
+              "options": [
+                "很疲劳",
+                "很沉默",
+                "迷路了",
+                "丢了东西"
+              ],
+              "answer": 2,
+              "explain": "Dựa vào câu đầu “有三个人在沙漠里找不到回家的路了”, họ bị lạc đường, chọn C."
+            },
+            {
+              "no": 81,
+              "text": "第三个人实现了什么愿望？",
+              "options": [
+                "皮肤变白",
+                "回到家乡",
+                "成为富人",
+                "重新见到那两个人"
+              ],
+              "answer": 3,
+              "explain": "Dựa vào “我希望那两个人能回来陪我” suy ra người thứ ba muốn gặp lại hai người kia, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            82,
+            83
+          ],
+          "text": "相信自己，就是发现自己的长处；相信自己，我们才能勇敢地尝试，也许会经历失败和错误，但那只是让我们离成功更近一点儿；相信自己，可以让这个世界因为有你而变得更加美丽。",
+          "vi": "Tin vào bản thân là phát hiện ra sở trường của mình; tin vào bản thân, chúng ta mới có thể dũng cảm thử sức, có lẽ sẽ trải qua thất bại và sai lầm, nhưng đó chỉ khiến ta gần thành công hơn một chút; tin vào bản thân có thể khiến thế giới này vì có bạn mà trở nên đẹp hơn.",
+          "questions": [
+            {
+              "no": 82,
+              "text": "根据这段话，相信自己应该：",
+              "options": [
+                "没有缺点",
+                "改变世界",
+                "远离失败",
+                "敢于去做"
+              ],
+              "answer": 3,
+              "explain": "Dựa vào “相信自己，我们才能勇敢地尝试” suy ra tin vào bản thân là phải dám làm, chọn D."
+            },
+            {
+              "no": 83,
+              "text": "这段话主要介绍的是：",
+              "options": [
+                "自信",
+                "兴趣",
+                "友情",
+                "能力"
+              ],
+              "answer": 0,
+              "explain": "Văn bản lặp lại “相信自己……相信自己……相信自己……”, nói về việc phải biết tự tin, chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            84,
+            85
+          ],
+          "text": "猫的性情温顺，聪明活泼，是人类最喜爱的动物之一。它最爱的食物是老鼠和鱼。猫的种类有很多，它们的一般寿命为18—20岁，青春期则在1—2岁之间。10岁的猫基本上就是老年了，这时需要主人更加小心地照料它，这样才能使它长寿。",
+          "vi": "Mèo tính tình hiền lành, thông minh hoạt bát, là một trong những loài vật được con người yêu thích nhất. Món ăn mà nó thích nhất là chuột và cá. Mèo có rất nhiều giống, tuổi thọ thông thường của chúng là 18—20 tuổi, tuổi dậy thì trong khoảng 1—2 tuổi. Mèo 10 tuổi về cơ bản đã là già, lúc này cần chủ chăm sóc cẩn thận hơn, như vậy mới giúp nó sống lâu.",
+          "questions": [
+            {
+              "no": 84,
+              "text": "根据这段话，可以知道猫：",
+              "options": [
+                "不吃肉",
+                "性格活泼",
+                "容易生病",
+                "寿命很长"
+              ],
+              "answer": 1,
+              "explain": "Dựa vào “猫的性情温顺，聪明活泼” suy ra tính cách mèo hoạt bát, chọn B."
+            },
+            {
+              "no": 85,
+              "text": "主人应该更加小心地照料猫，这时的猫一般在：",
+              "options": [
+                "1—2岁",
+                "10岁以下",
+                "10岁以上",
+                "18—20岁"
+              ],
+              "answer": 2,
+              "explain": "Dựa vào “10岁的猫基本上就是老年了，这时需要主人更加小心地照料它” suy ra mèo trên 10 tuổi cần chăm kỹ, chọn C."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

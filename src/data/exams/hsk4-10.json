@@ -1,0 +1,647 @@
+{
+  "test": 10,
+  "reading": {
+    "part1": {
+      "sets": [
+        {
+          "range": [
+            46,
+            50
+          ],
+          "words": [
+            "印象",
+            "得到",
+            "质量",
+            "打扰",
+            "占线",
+            "坚持"
+          ],
+          "example": {
+            "text": "她每天都___走路上下班，所以身体一直很不错。",
+            "answer": 5
+          },
+          "items": [
+            {
+              "no": 46,
+              "text": "对不起，___一下，请问，中国银行怎么走？",
+              "answer": 3,
+              "vi": "Xin lỗi, làm phiền một chút, cho hỏi đi đến Ngân hàng Trung Quốc thế nào?",
+              "explain": "\"打扰一下\" cũng là cách nói lịch sự, nhã nhặn như \"对不起\", \"不好意思\"; là cụm cố định, thường dùng khi nhờ người giúp đỡ."
+            },
+            {
+              "no": 47,
+              "text": "她今天的精彩表演给大家留下了很好的___。",
+              "answer": 0,
+              "vi": "Màn biểu diễn tuyệt vời hôm nay của cô ấy để lại ấn tượng rất tốt trong mọi người.",
+              "explain": "\"印象\" là danh từ; dùng cấu trúc \"留下……印象\" (để lại ấn tượng)."
+            },
+            {
+              "no": 48,
+              "text": "这件衣服的颜色、样式都很合适，就是___不太好。",
+              "answer": 2,
+              "vi": "Màu sắc và kiểu dáng của chiếc áo này đều rất hợp, chỉ là chất lượng không được tốt lắm.",
+              "explain": "\"颜色\", \"样式\" là vẻ bên ngoài, còn \"质量\" là đặc điểm bên trong của sản phẩm; người mua không hài lòng ở chất lượng."
+            },
+            {
+              "no": 49,
+              "text": "那家公司生产的巧克力___很多人的好评。",
+              "answer": 1,
+              "vi": "Sô cô la do công ty đó sản xuất nhận được lời khen của rất nhiều người.",
+              "explain": "\"得到……好评\" nghĩa là nhận được đánh giá tốt."
+            },
+            {
+              "no": 50,
+              "text": "我打了一个上午电话了，总是___。",
+              "answer": 4,
+              "vi": "Tôi gọi điện cả buổi sáng rồi mà máy lúc nào cũng báo bận.",
+              "explain": "\"占线\" nghĩa là đầu dây bên kia đang bận."
+            }
+          ]
+        },
+        {
+          "range": [
+            51,
+            55
+          ],
+          "words": [
+            "温度",
+            "偶尔",
+            "可惜",
+            "能力",
+            "解释",
+            "只要"
+          ],
+          "example": {
+            "text": "A：今天真冷啊，好像白天最高___才2℃。\nB：刚才电视里说明天更冷。",
+            "answer": 0
+          },
+          "items": [
+            {
+              "no": 51,
+              "text": "A：你常常来这儿喝茶吗？\nB：不常来，___会跟同事们来一次。",
+              "answer": 1,
+              "vi": "A: Bạn có hay đến đây uống trà không?\nB: Không hay đến, thỉnh thoảng mới cùng đồng nghiệp đến một lần.",
+              "explain": "\"偶尔\" là thỉnh thoảng, đồng nghĩa với \"不常\" trong câu."
+            },
+            {
+              "no": 52,
+              "text": "A：他差两分就通过考试了，真___！\nB：没关系，下次继续努力。",
+              "answer": 2,
+              "vi": "A: Cậu ấy chỉ thiếu hai điểm nữa là đỗ rồi, thật đáng tiếc!\nB: Không sao, lần sau tiếp tục cố gắng.",
+              "explain": "\"差两分就通过\" nghĩa là chưa đỗ, \"可惜\" biểu thị sự tiếc nuối."
+            },
+            {
+              "no": 53,
+              "text": "A：老师，您能给我___一下这个汉字的意思吗？\nB：哪个？让我看看。",
+              "answer": 4,
+              "vi": "A: Thầy ơi, thầy có thể giải thích cho em nghĩa của chữ Hán này không?\nB: Chữ nào? Để thầy xem.",
+              "explain": "\"解释\" là nói rõ, giảng giải; học sinh không hiểu nghĩa chữ nên nhờ thầy giảng."
+            },
+            {
+              "no": 54,
+              "text": "A：明天就要去面试了，我有点儿担心。\nB：别担心，要相信自己的___。",
+              "answer": 3,
+              "vi": "A: Ngày mai phải đi phỏng vấn rồi, tôi hơi lo.\nB: Đừng lo, hãy tin vào năng lực của chính mình.",
+              "explain": "\"能力\" là thực lực để hoàn thành việc gì đó; B bảo A tin mình có năng lực vượt qua phỏng vấn."
+            },
+            {
+              "no": 55,
+              "text": "A：老师，这次考试难吗？\nB：不难，___你认真复习，就一定能考好。",
+              "answer": 5,
+              "vi": "A: Thầy ơi, kỳ thi lần này có khó không?\nB: Không khó, chỉ cần em ôn tập nghiêm túc thì nhất định sẽ thi tốt.",
+              "explain": "\"只要……就……\" là cặp cố định: sau \"只要\" là điều kiện, sau \"就\" là kết quả."
+            }
+          ]
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 56,
+          "sentences": [
+            "一方面需要记住生词和语法",
+            "学好一门外语并不难",
+            "另一方面需要多听多说"
+          ],
+          "answer": "BAC",
+          "vi": "Học giỏi một ngoại ngữ không khó: một mặt cần nhớ từ mới và ngữ pháp, mặt khác cần nghe nói nhiều.",
+          "explain": "B là câu tổng quát, A và C là phần chia ý; \"一方面\" (A) đứng trước \"另一方面\" (C)."
+        },
+        {
+          "no": 57,
+          "sentences": [
+            "现在的年轻人不重视运动",
+            "而且每天长时间对着电脑",
+            "结果影响了身体的健康"
+          ],
+          "answer": "ABC",
+          "vi": "Thanh niên bây giờ không coi trọng vận động, hơn nữa mỗi ngày lại ngồi trước máy tính thời gian dài, kết quả là ảnh hưởng đến sức khỏe.",
+          "explain": "A nêu chủ đề, B (\"而且\") bổ sung thêm, C là kết quả."
+        },
+        {
+          "no": 58,
+          "sentences": [
+            "不能总靠朋友",
+            "成长是每个人自己必须完成的任务",
+            "更不能总想着依赖父母"
+          ],
+          "answer": "BAC",
+          "vi": "Trưởng thành là nhiệm vụ mà mỗi người phải tự hoàn thành, không thể lúc nào cũng dựa vào bạn bè, càng không thể lúc nào cũng nghĩ đến việc dựa dẫm vào bố mẹ.",
+          "explain": "B nêu chủ đề, A \"不能……\" đứng trước C \"更不能……\"."
+        },
+        {
+          "no": 59,
+          "sentences": [
+            "人太多也是重要的原因",
+            "找工作难是现代社会的普遍现象",
+            "工作机会少是原因之一"
+          ],
+          "answer": "BCA",
+          "vi": "Tìm việc khó là hiện tượng phổ biến trong xã hội hiện đại, cơ hội việc làm ít là một trong những nguyên nhân, người quá đông cũng là nguyên nhân quan trọng.",
+          "explain": "B nêu chủ đề, C \"是……\" đứng trước A \"也是……\"."
+        },
+        {
+          "no": 60,
+          "sentences": [
+            "有些困难会让你暂时感到很难过",
+            "但过一段时间以后你会发现",
+            "其实你获得了更大的幸福"
+          ],
+          "answer": "ABC",
+          "vi": "Có những khó khăn sẽ khiến bạn tạm thời cảm thấy rất buồn, nhưng qua một thời gian bạn sẽ nhận ra, thật ra bạn đã có được hạnh phúc lớn hơn.",
+          "explain": "A nêu chủ đề, B \"但\" chuyển ý, C giải thích thêm cho B."
+        },
+        {
+          "no": 61,
+          "sentences": [
+            "我本来是想下了班马上回家的",
+            "于是就回来晚了",
+            "可是下班之前经理突然让我发一个传真"
+          ],
+          "answer": "ACB",
+          "vi": "Vốn dĩ tôi định tan làm là về nhà ngay, nhưng trước khi tan làm giám đốc bỗng bảo tôi gửi một bản fax, thế là tôi về muộn.",
+          "explain": "A nêu chủ đề, C \"可是\" chuyển ý cho thấy sự việc thay đổi, B \"于是\" mang nghĩa \"vì thế\", việc sau nối liền việc trước."
+        },
+        {
+          "no": 62,
+          "sentences": [
+            "有些人总是能发现生活中的快乐",
+            "这两种人的心情是完全不同的",
+            "还有一些人总喜欢回忆一些难过的事"
+          ],
+          "answer": "ACB",
+          "vi": "Có những người luôn phát hiện được niềm vui trong cuộc sống, còn có những người lại luôn thích nhớ về những chuyện buồn, tâm trạng của hai loại người này hoàn toàn khác nhau.",
+          "explain": "A \"有些人\" đứng trước C \"还有一些人\", B là câu kết tổng hợp."
+        },
+        {
+          "no": 63,
+          "sentences": [
+            "我有一个男同学，从小就想成为老师",
+            "由于种种原因，最后没能当老师",
+            "所以他决定一定要找一个当老师的做妻子"
+          ],
+          "answer": "ABC",
+          "vi": "Tôi có một bạn học nam, từ nhỏ đã muốn trở thành giáo viên, nhưng vì nhiều lý do cuối cùng không làm được giáo viên, nên anh ấy quyết định nhất định phải tìm một người vợ là giáo viên.",
+          "explain": "A nêu chủ đề, B bổ sung thêm, C là kết quả suy ra từ A và B."
+        },
+        {
+          "no": 64,
+          "sentences": [
+            "在原有的基础上，加入了一些广告内容",
+            "张经理，根据您的要求",
+            "我把这篇报道稍微改了一下"
+          ],
+          "answer": "BCA",
+          "vi": "Giám đốc Trương, theo yêu cầu của ông, tôi đã sửa lại bài phóng sự này một chút, trên cơ sở ban đầu, thêm vào một số nội dung quảng cáo.",
+          "explain": "B nêu chủ đề, C nói rõ thêm, A giải thích thêm cho C."
+        },
+        {
+          "no": 65,
+          "sentences": [
+            "只有周末才有时间跟家人在一起",
+            "他平时每天都要在公司上班",
+            "下了班还要忙着学英语"
+          ],
+          "answer": "BCA",
+          "vi": "Bình thường mỗi ngày anh ấy đều phải đi làm ở công ty, tan làm còn bận học tiếng Anh, chỉ có cuối tuần mới có thời gian ở bên gia đình.",
+          "explain": "B nêu chủ đề: anh ấy rất bận, C nói rõ thêm (tan làm cũng bận), A \"只有\" biểu thị sự chuyển ý."
+        }
+      ]
+    },
+    "part3": {
+      "passages": [
+        {
+          "range": [
+            66,
+            66
+          ],
+          "text": "不要总把“累”“烦”挂在嘴边，因为人的心情会受语言的影响，如果你总说不开心的话，你很难让自己开心起来。",
+          "vi": "Đừng lúc nào cũng treo chữ \"mệt\", \"phiền\" trên miệng, vì tâm trạng con người bị ảnh hưởng bởi lời nói, nếu bạn cứ luôn nói những lời không vui thì rất khó làm bản thân vui lên.",
+          "questions": [
+            {
+              "no": 66,
+              "text": "应该常常说什么？",
+              "options": [
+                "累",
+                "烦",
+                "开心的话",
+                "不开心的话"
+              ],
+              "answer": 2,
+              "explain": "Những lời như \"累\", \"烦\", \"不开心\" ảnh hưởng đến tâm trạng, nên cần thường nói những lời vui vẻ."
+            }
+          ]
+        },
+        {
+          "range": [
+            67,
+            67
+          ],
+          "text": "我非常喜欢这本杂志，因为它的内容丰富，很有时代特点。最主要的是，里面有很多文学作品，对我提高汉语水平有很大帮助。",
+          "vi": "Tôi rất thích cuốn tạp chí này vì nội dung phong phú, mang đậm đặc điểm thời đại. Quan trọng nhất là bên trong có nhiều tác phẩm văn học, giúp ích rất nhiều cho việc nâng cao trình độ tiếng Hán của tôi.",
+          "questions": [
+            {
+              "no": 67,
+              "text": "“我”喜欢这本杂志的最主要原因是：",
+              "options": [
+                "内容丰富",
+                "有时代特点",
+                "免费",
+                "有很多文学作品"
+              ],
+              "answer": 3,
+              "explain": "\"最主要的是，里面有很多文学作品\": người nói coi trọng nhất các tác phẩm văn học trong đó."
+            }
+          ]
+        },
+        {
+          "range": [
+            68,
+            68
+          ],
+          "text": "当我不开心的时候，喜欢一个人坐在房间里，听音乐、看书，或者上网看一些有意思的电影。而我朋友正好相反，她喜欢跟一大群人在一起，大家一起喝酒、唱歌、聊天儿。",
+          "vi": "Khi tôi không vui, tôi thích ngồi một mình trong phòng, nghe nhạc, đọc sách hoặc lên mạng xem vài bộ phim thú vị. Còn bạn tôi thì hoàn toàn ngược lại, cô ấy thích ở cùng một đám đông, mọi người cùng uống rượu, hát, trò chuyện.",
+          "questions": [
+            {
+              "no": 68,
+              "text": "朋友不开心的时候会怎么样？",
+              "options": [
+                "跟大家在一起",
+                "自己一个人",
+                "看电影",
+                "听音乐"
+              ],
+              "answer": 0,
+              "explain": "Phần sau nói bạn lúc không vui \"喜欢跟一大群人在一起\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            69,
+            69
+          ],
+          "text": "这种香水很受女士们欢迎，不仅因为它的味道闻起来很香，还因为它的瓶子很漂亮，很多女士买香水其实是为了买香水瓶。",
+          "vi": "Loại nước hoa này rất được phụ nữ ưa chuộng, không chỉ vì mùi của nó rất thơm mà còn vì chai rất đẹp, nhiều phụ nữ mua nước hoa thực ra là để mua chai nước hoa.",
+          "questions": [
+            {
+              "no": 69,
+              "text": "关于这种香水，下列哪项不对？",
+              "options": [
+                "很香",
+                "免费",
+                "瓶子很漂亮",
+                "女士很喜欢"
+              ],
+              "answer": 1,
+              "explain": "Bài nhắc đến \"很香\", \"瓶子很漂亮\", \"女士很喜欢\", không nhắc đến \"免费\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            70,
+            70
+          ],
+          "text": "北方的秋天是一年四季中最美的季节。天气晴朗，天空很蓝，偶尔飘过几朵白云，空气很新鲜，而且不冷不热，很凉快，是最适合外出旅行的季节。",
+          "vi": "Mùa thu ở miền Bắc là mùa đẹp nhất trong bốn mùa. Thời tiết trong trẻo, bầu trời rất xanh, thỉnh thoảng có vài đám mây trắng trôi qua, không khí rất trong lành, lại không lạnh không nóng, rất mát mẻ, là mùa thích hợp nhất để đi du lịch.",
+          "questions": [
+            {
+              "no": 70,
+              "text": "关于北方的秋天，下列哪项不对？",
+              "options": [
+                "很美",
+                "空气新鲜",
+                "很热",
+                "适合旅行"
+              ],
+              "answer": 2,
+              "explain": "Bài viết mùa thu miền Bắc \"不冷不热\", chứ không phải \"很热\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            71,
+            71
+          ],
+          "text": "哥，你看，我给你买了一条新领带，你明天不是要去新公司面试吗，戴上它，一定会让你看起来更精神。",
+          "vi": "Anh ơi, anh xem, em mua cho anh một chiếc cà vạt mới, ngày mai anh chẳng phải đi phỏng vấn ở công ty mới sao, đeo nó vào chắc chắn sẽ khiến anh trông tinh thần hơn.",
+          "questions": [
+            {
+              "no": 71,
+              "text": "为什么要给哥哥买新领带？",
+              "options": [
+                "他要去面试",
+                "他过生日",
+                "他戴领带很精神",
+                "他要去上班"
+              ],
+              "answer": 0,
+              "explain": "\"你明天不是要去新公司面试吗\": lý do mua cà vạt là anh trai sắp đi phỏng vấn."
+            }
+          ]
+        },
+        {
+          "range": [
+            72,
+            72
+          ],
+          "text": "你今天做的鱼比昨天的好吃，蔬菜的味道也不错，不像昨天的那么咸。可是，今天的汤是不是酸了一点儿？",
+          "vi": "Món cá hôm nay bạn nấu ngon hơn hôm qua, rau cũng không tồi, không mặn như hôm qua. Nhưng mà canh hôm nay có phải hơi chua không?",
+          "questions": [
+            {
+              "no": 72,
+              "text": "今天的汤怎么样？",
+              "options": [
+                "酸",
+                "甜",
+                "苦",
+                "咸"
+              ],
+              "answer": 0,
+              "explain": "\"可是，今天的汤是不是酸了一点儿\": người nói thấy canh hơi chua."
+            }
+          ]
+        },
+        {
+          "range": [
+            73,
+            73
+          ],
+          "text": "他不是我的男朋友，是我叔叔的儿子，也就是我的弟弟，大学刚毕业，来北京看我，顺便看看长城和故宫。",
+          "vi": "Cậu ấy không phải bạn trai tôi mà là con trai của chú tôi, cũng tức là em họ tôi, vừa tốt nghiệp đại học, đến Bắc Kinh thăm tôi, tiện thể ngắm Trường Thành và Cố Cung.",
+          "questions": [
+            {
+              "no": 73,
+              "text": "“他”和“我”是什么关系？",
+              "options": [
+                "亲戚",
+                "同学",
+                "朋友",
+                "夫妻"
+              ],
+              "answer": 0,
+              "explain": "\"是我叔叔的儿子，也就是我的弟弟\": là họ hàng."
+            }
+          ]
+        },
+        {
+          "range": [
+            74,
+            74
+          ],
+          "text": "任何事情都有第一次，第一次上学、第一次考试、第一次工作、第一次比赛……当我们面对第一次的时候，不要害怕，不要紧张，每个人的机会都一样，只要走出第一步，以后就容易得多。",
+          "vi": "Việc gì cũng có lần đầu tiên: lần đầu đi học, lần đầu thi, lần đầu đi làm, lần đầu thi đấu... Khi đối mặt với lần đầu tiên, đừng sợ hãi, đừng căng thẳng, cơ hội của mỗi người đều như nhau, chỉ cần bước ra bước đầu tiên thì sau này sẽ dễ dàng hơn nhiều.",
+          "questions": [
+            {
+              "no": 74,
+              "text": "作者认为面对第一次的时候，应该怎么样？",
+              "options": [
+                "害怕",
+                "紧张",
+                "勇敢",
+                "粗心"
+              ],
+              "answer": 2,
+              "explain": "Tác giả nói \"不要害怕，不要紧张\", tức là nên dũng cảm."
+            }
+          ]
+        },
+        {
+          "range": [
+            75,
+            75
+          ],
+          "text": "一年前的今天，我和我爱人在朋友的生日晚会上认识了，当时他走过来跟我说：“对不起，能告诉我你的电话号码吗？”我问他为什么，他说：“因为我不是坏人啊。”",
+          "vi": "Một năm trước, đúng ngày hôm nay, tôi và chồng (vợ) quen nhau trong buổi tiệc sinh nhật của một người bạn, lúc đó anh ấy bước tới nói với tôi: \"Xin lỗi, bạn có thể cho tôi số điện thoại của bạn không?\" Tôi hỏi anh ấy tại sao, anh ấy nói: \"Vì tôi không phải người xấu mà.\"",
+          "questions": [
+            {
+              "no": 75,
+              "text": "根据对话我们知道，作者的爱人是个什么样的人？",
+              "options": [
+                "有礼貌",
+                "认真",
+                "幽默",
+                "马虎"
+              ],
+              "answer": 2,
+              "explain": "Câu trả lời \"因为我不是坏人啊\" cho thấy chồng của tác giả là người rất hài hước."
+            }
+          ]
+        },
+        {
+          "range": [
+            76,
+            76
+          ],
+          "text": "每个人的性格不同，如果正在做一件不适合自己的事，那么不管多努力，可能都无法取得最好的效果，不如及时改变，找到更适合自己的事。及时放弃是聪明的表现。",
+          "vi": "Tính cách mỗi người khác nhau, nếu đang làm một việc không phù hợp với mình thì dù cố gắng đến đâu cũng có thể không đạt hiệu quả tốt nhất, chi bằng kịp thời thay đổi, tìm việc phù hợp hơn với bản thân. Kịp thời từ bỏ là biểu hiện của sự thông minh.",
+          "questions": [
+            {
+              "no": 76,
+              "text": "这段话主要在谈什么？",
+              "options": [
+                "努力",
+                "放弃",
+                "性格",
+                "效果"
+              ],
+              "answer": 1,
+              "explain": "Câu cuối \"及时放弃是聪明的表现\" cho thấy đoạn văn chủ yếu nói về việc từ bỏ."
+            }
+          ]
+        },
+        {
+          "range": [
+            77,
+            77
+          ],
+          "text": "他刚来中国的时候，还是个小男孩儿，一说话就脸红，现在已经长大了，汉语说得很流利，最让他得意的是，他竟然当了翻译。",
+          "vi": "Lúc mới đến Trung Quốc cậu ấy vẫn còn là một cậu bé, hễ nói chuyện là đỏ mặt, bây giờ đã lớn rồi, nói tiếng Hán rất lưu loát, điều khiến cậu ấy tự hào nhất là cậu ấy lại trở thành phiên dịch viên.",
+          "questions": [
+            {
+              "no": 77,
+              "text": "他为什么觉得得意？",
+              "options": [
+                "长大了",
+                "汉语说得好",
+                "成熟了",
+                "当了一名翻译"
+              ],
+              "answer": 3,
+              "explain": "\"最让他得意的是，他竟然当了翻译\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            78,
+            78
+          ],
+          "text": "可能每个女孩儿都有一个美丽的梦，那就是遇见一个浪漫的男孩儿，男孩儿可以送她鲜花、巧克力，带她去旅行。可这个梦会逐渐改变，因为随着她们不断成熟，她们会发现，比浪漫更重要的是男人的诚实和耐心。",
+          "vi": "Có lẽ cô gái nào cũng có một giấc mơ đẹp, đó là gặp một chàng trai lãng mạn, chàng trai có thể tặng cô hoa tươi, sô cô la, đưa cô đi du lịch. Nhưng giấc mơ này sẽ dần thay đổi, vì khi họ ngày càng trưởng thành, họ sẽ nhận ra rằng điều quan trọng hơn sự lãng mạn là sự chân thành và kiên nhẫn của người đàn ông.",
+          "questions": [
+            {
+              "no": 78,
+              "text": "女孩儿在成熟之前喜欢什么样的男孩儿？",
+              "options": [
+                "耐心",
+                "诚实",
+                "浪漫",
+                "善良"
+              ],
+              "answer": 2,
+              "explain": "Các cô gái trước khi trưởng thành đều mong \"遇见一个浪漫的男孩儿\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            79,
+            79
+          ],
+          "text": "当我们在别的国家生活时，除了要了解这个国家的语言、文化，更要努力去适应它的习惯。不能因为它的习惯跟我们自己的不一样，就去批评，这样很不礼貌。",
+          "vi": "Khi chúng ta sống ở nước khác, ngoài việc tìm hiểu ngôn ngữ, văn hóa của nước đó, càng phải cố gắng thích nghi với phong tục tập quán của họ. Không thể chỉ vì tập quán của họ khác với của mình mà đi phê bình, như vậy rất bất lịch sự.",
+          "questions": [
+            {
+              "no": 79,
+              "text": "面对不同国家的习惯，作者觉得应该怎么样？",
+              "options": [
+                "尊重",
+                "反对",
+                "无所谓",
+                "批评"
+              ],
+              "answer": 0,
+              "explain": "Tác giả cho rằng không thể \"批评\" tập quán nước khác, tức là nên tôn trọng."
+            }
+          ]
+        },
+        {
+          "range": [
+            80,
+            81
+          ],
+          "text": "毕业之前，小张和几个同班同学一起在外贸公司实习。毕业以后，只有小张成为了这家公司的正式职员。别的同学都觉得很奇怪，经理说，小张对待每一项工作都认真负责，所以愿意给他工作的机会。",
+          "vi": "Trước khi tốt nghiệp, Tiểu Trương cùng vài bạn cùng lớp thực tập tại một công ty ngoại thương. Sau khi tốt nghiệp, chỉ có Tiểu Trương trở thành nhân viên chính thức của công ty này. Các bạn khác đều thấy rất lạ, giám đốc nói Tiểu Trương đối xử với mỗi công việc đều nghiêm túc, có trách nhiệm, nên sẵn lòng cho cậu ấy cơ hội làm việc.",
+          "questions": [
+            {
+              "no": 80,
+              "text": "毕业之前，小张在干什么？",
+              "options": [
+                "实习",
+                "学习",
+                "关门",
+                "当翻译"
+              ],
+              "answer": 0,
+              "explain": "\"毕业之前，小张和几个同班同学一起在外贸公司实习\"."
+            },
+            {
+              "no": 81,
+              "text": "经理觉得小张怎么样？",
+              "options": [
+                "很奇怪",
+                "很可怜",
+                "很热情",
+                "有责任心"
+              ],
+              "answer": 3,
+              "explain": "Giám đốc cho rằng \"小张对待每一项工作都认真负责\", tức là có tinh thần trách nhiệm."
+            }
+          ]
+        },
+        {
+          "range": [
+            82,
+            83
+          ],
+          "text": "经常打扫房间，不仅能让环境更干净，还能让心情变得更好。我们把房间里不干净的东西扫出去，就好像把不快乐的事忘了一样。如果你想让自己每天都开心，那么就经常打扫房间，保持房间的干净整洁吧。",
+          "vi": "Thường xuyên dọn phòng không chỉ làm môi trường sạch hơn mà còn làm tâm trạng tốt hơn. Chúng ta quét những thứ không sạch trong phòng ra ngoài, cứ như là quên đi những chuyện không vui vậy. Nếu bạn muốn mình ngày nào cũng vui thì hãy thường xuyên dọn phòng, giữ cho phòng sạch sẽ gọn gàng nhé.",
+          "questions": [
+            {
+              "no": 82,
+              "text": "关于打扫房间，下面不正确的是：",
+              "options": [
+                "可使房间干净",
+                "可使房间整洁",
+                "可使心情变好",
+                "可使房间变大"
+              ],
+              "answer": 3,
+              "explain": "Bài nhắc đến làm phòng sạch, gọn gàng và tâm trạng tốt hơn, chỉ có \"làm phòng rộng hơn\" (D) là không được nhắc đến."
+            },
+            {
+              "no": 83,
+              "text": "作者认为怎样能忘记不快乐的事？",
+              "options": [
+                "经常锻炼",
+                "每天都开心",
+                "环境不好",
+                "打扫房间"
+              ],
+              "answer": 3,
+              "explain": "\"把房间里不干净的东西扫出去，就好像把不快乐的事忘了一样\": dọn phòng giúp quên chuyện không vui."
+            }
+          ]
+        },
+        {
+          "range": [
+            84,
+            85
+          ],
+          "text": "手机，有时候让人与人之间的距离变得很近。我在中国，你在美国，有了手机，我们可以发短信，可以打电话，联系起来很方便，好像我在左边，你在右边。手机，有时候让人与人之间的距离变得很远，我在左边，你在右边，但有了手机，我们不是上网就是玩儿手机游戏，好像我在中国，你在美国。",
+          "vi": "Điện thoại di động đôi khi làm khoảng cách giữa người với người trở nên rất gần. Tôi ở Trung Quốc, bạn ở Mỹ, có điện thoại, chúng ta có thể nhắn tin, gọi điện, liên lạc rất tiện, như thể tôi ở bên trái, bạn ở bên phải. Điện thoại đôi khi làm khoảng cách giữa người với người trở nên rất xa, tôi ở bên trái, bạn ở bên phải, nhưng có điện thoại rồi, chúng ta hoặc lên mạng hoặc chơi game trên điện thoại, như thể tôi ở Trung Quốc, bạn ở Mỹ.",
+          "questions": [
+            {
+              "no": 84,
+              "text": "为什么说手机会让人与人之间的距离变近？",
+              "options": [
+                "我在中国",
+                "方便联系",
+                "我在右边",
+                "我在左边"
+              ],
+              "answer": 1,
+              "explain": "\"有了手机，我们可以发短信，可以打电话，联系起来很方便\"."
+            },
+            {
+              "no": 85,
+              "text": "关于手机，下列哪项文中没有提到？",
+              "options": [
+                "可以打电话",
+                "可以赚钱",
+                "可以上网",
+                "可以发短信"
+              ],
+              "answer": 1,
+              "explain": "Bài nhắc đến gọi điện, lên mạng, nhắn tin, không nhắc đến \"kiếm tiền\"."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

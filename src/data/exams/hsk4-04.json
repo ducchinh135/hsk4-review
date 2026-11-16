@@ -1,0 +1,647 @@
+{
+  "test": 4,
+  "reading": {
+    "part1": {
+      "sets": [
+        {
+          "range": [
+            46,
+            50
+          ],
+          "words": [
+            "之一",
+            "坚持",
+            "提前",
+            "与",
+            "快乐",
+            "聚会"
+          ],
+          "example": {
+            "text": "她每天都___走路上下班，所以身体一直很不错。",
+            "answer": 1
+          },
+          "items": [
+            {
+              "no": 46,
+              "text": "大熊猫是世界上最珍贵的动物___。",
+              "answer": 0,
+              "vi": "Gấu trúc là một trong những loài động vật quý hiếm nhất thế giới.",
+              "explain": "\"之一\" nghĩa là một trong số đó; thế giới có nhiều động vật quý, gấu trúc là một trong số ấy."
+            },
+            {
+              "no": 47,
+              "text": "我们经常___，一起聊天儿、吃饭、唱歌，非常开心。",
+              "answer": 5,
+              "vi": "Chúng tôi thường xuyên tụ họp, cùng trò chuyện, ăn cơm, hát hò, rất vui.",
+              "explain": "\"聚会\" là bạn bè người thân tụ tập lại; từ \"一起聊天儿、吃饭、唱歌\" suy ra họ đang tụ họp."
+            },
+            {
+              "no": 48,
+              "text": "公司要求我们拜访客户之前，要___跟客户打招呼。",
+              "answer": 2,
+              "vi": "Công ty yêu cầu trước khi đến thăm khách hàng, chúng tôi phải chào hỏi khách hàng trước.",
+              "explain": "\"提前\" là làm trước khi làm một việc; \"之前\" ở vế trước cho thấy phải báo trước cho đối phương."
+            },
+            {
+              "no": 49,
+              "text": "在我们的生活中，每天都会发生很多故事，有的让你___，有的使你悲伤。",
+              "answer": 4,
+              "vi": "Trong cuộc sống của chúng ta, mỗi ngày đều xảy ra nhiều câu chuyện, có chuyện khiến bạn vui vẻ, có chuyện làm bạn buồn.",
+              "explain": "Đối lập với \"悲伤\" nên cần một tính từ, chỉ có \"快乐\" hợp nghĩa."
+            },
+            {
+              "no": 50,
+              "text": "___别人交流的时候，要看着对方的眼睛，这是最基本的礼貌。",
+              "answer": 3,
+              "vi": "Khi trao đổi với người khác, phải nhìn vào mắt đối phương, đây là phép lịch sự cơ bản nhất.",
+              "explain": "Giới từ \"与\" dẫn đối tượng, tương đương \"和、跟、同\", thường dùng trong văn viết."
+            }
+          ]
+        },
+        {
+          "range": [
+            51,
+            55
+          ],
+          "words": [
+            "交",
+            "左右",
+            "不像话",
+            "回头",
+            "温度",
+            "礼貌"
+          ],
+          "example": {
+            "text": "A：今天真冷啊，好像白天最高___才2ºC。\nB：刚才电视里说明天更冷。",
+            "answer": 4
+          },
+          "items": [
+            {
+              "no": 51,
+              "text": "A：这个箱子大概得有50斤___，你一个人肯定抬不动。\nB：没事儿，一会儿我给小刘打个电话，让他帮我一下。",
+              "answer": 1,
+              "vi": "A: Cái thùng này chắc phải nặng khoảng 50 cân, một mình cậu chắc chắn không khiêng nổi.\nB: Không sao, lát nữa tớ gọi điện cho Tiểu Lưu, nhờ cậu ấy giúp một tay.",
+              "explain": "\"左右\" đặt sau số từ chỉ ước chừng; người nói ước lượng thùng nặng khoảng 50 cân."
+            },
+            {
+              "no": 52,
+              "text": "A：张东也太___了，说一点到，两点了还没来。\nB：他那个人你还不了解吗？每次聚会都会迟到。",
+              "answer": 2,
+              "vi": "A: Trương Đông thật là quá đáng, hẹn một giờ đến mà hai giờ rồi vẫn chưa tới.\nB: Con người anh ấy cậu còn không hiểu sao? Lần tụ họp nào cũng đến muộn.",
+              "explain": "\"不像话\" chỉ lời nói, hành vi không hợp lẽ, dùng để chê trách người khác; ở đây chê Trương Đông đến muộn."
+            },
+            {
+              "no": 53,
+              "text": "A：老师要求我们明天上午必须把论文___上去。\nB：这可怎么办呢？我还没写完呢！",
+              "answer": 0,
+              "vi": "A: Thầy yêu cầu sáng mai chúng ta phải nộp luận văn lên.\nB: Thế này thì làm sao đây? Tớ còn chưa viết xong!",
+              "explain": "Động từ \"交\" nghĩa là chuyển giao vật cho bên có liên quan; ở đây là nộp luận văn cho thầy."
+            },
+            {
+              "no": 54,
+              "text": "A：这次出差换我去了，李勇能高兴吗？\nB：你别担心，___我跟他解释一下，他会理解的。",
+              "answer": 3,
+              "vi": "A: Lần đi công tác này đổi thành mình đi, Lý Dũng có vui không nhỉ?\nB: Cậu đừng lo, lát nữa tớ giải thích với cậu ấy, cậu ấy sẽ hiểu thôi.",
+              "explain": "\"回头\" chỉ việc sẽ xảy ra không lâu sau, tương đương \"一会儿\"; người nói định lát nữa tìm thời gian giải thích."
+            },
+            {
+              "no": 55,
+              "text": "A：安娜怎么这么没有___呢？进来也不跟我们打个招呼！\nB：你别生气，可能她没看见我们。",
+              "answer": 5,
+              "vi": "A: Sao Anna lại vô lễ thế nhỉ? Vào đến nơi cũng không chào chúng ta một tiếng!\nB: Cậu đừng giận, có thể cô ấy không nhìn thấy chúng ta.",
+              "explain": "\"礼貌\" chỉ lời nói, hành động khiêm tốn, cung kính; người nói thấy Anna không chào là thiếu lịch sự."
+            }
+          ]
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 56,
+          "sentences": [
+            "房东也很实在",
+            "郊区的房子很安静",
+            "所以我决定租下来"
+          ],
+          "answer": "BAC",
+          "vi": "Nhà ở ngoại ô rất yên tĩnh, chủ nhà cũng rất thật thà, nên tôi quyết định thuê.",
+          "explain": "B và A nêu lý do, A bổ sung cho B; C nêu kết quả."
+        },
+        {
+          "no": 57,
+          "sentences": [
+            "遇到事情的时候",
+            "所以失去了很多机会",
+            "他总是很犹豫"
+          ],
+          "answer": "ACB",
+          "vi": "Khi gặp chuyện, anh ấy luôn do dự, vì thế đã đánh mất rất nhiều cơ hội.",
+          "explain": "A và C nêu nguyên nhân, cụm \"……的时候\" thường đặt ở đầu; B nêu kết quả."
+        },
+        {
+          "no": 58,
+          "sentences": [
+            "就不去外边玩儿",
+            "只要手中有本书",
+            "小时候我很爱看书"
+          ],
+          "answer": "CBA",
+          "vi": "Hồi nhỏ tôi rất thích đọc sách, chỉ cần trong tay có một cuốn sách là không ra ngoài chơi.",
+          "explain": "C nêu tình huống, \"我\" là chủ ngữ của câu; cặp \"只要……就……\" biểu thị điều kiện."
+        },
+        {
+          "no": 59,
+          "sentences": [
+            "我们有责任从小事做起",
+            "作为地球村的公民",
+            "保护我们的环境"
+          ],
+          "answer": "BAC",
+          "vi": "Là công dân của làng toàn cầu, chúng ta có trách nhiệm bắt đầu từ những việc nhỏ để bảo vệ môi trường của mình.",
+          "explain": "B đưa ra chủ ngữ; A và C giải thích thêm, trong A \"我们\" là chủ ngữ."
+        },
+        {
+          "no": 60,
+          "sentences": [
+            "老师对学生的微笑",
+            "它会让学生感到幸福和快乐",
+            "是对学生的肯定和欣赏"
+          ],
+          "answer": "ACB",
+          "vi": "Nụ cười của thầy cô dành cho học sinh là sự khẳng định và trân trọng đối với học sinh, nó sẽ khiến học sinh cảm thấy hạnh phúc và vui vẻ.",
+          "explain": "Mẫu câu \"……，是……\" rất thường gặp; B là nhận xét về điều trước, \"它\" chỉ tình huống ở trước."
+        },
+        {
+          "no": 61,
+          "sentences": [
+            "到达威尼斯的时候",
+            "正好赶上电影节开幕",
+            "导游就带着我们四处参观"
+          ],
+          "answer": "ABC",
+          "vi": "Khi đến Venice, vừa lúc gặp lễ khai mạc liên hoan phim, hướng dẫn viên liền dẫn chúng tôi đi tham quan khắp nơi.",
+          "explain": "A và B nêu tình huống, cụm \"……的时候\" thường đặt đầu; C nêu kết quả."
+        },
+        {
+          "no": 62,
+          "sentences": [
+            "就会感到寂寞和孤独",
+            "如果生活中没有朋友",
+            "也就不会有欢声笑语"
+          ],
+          "answer": "BAC",
+          "vi": "Nếu trong cuộc sống không có bạn bè thì sẽ cảm thấy cô đơn, lạc lõng, cũng sẽ không có tiếng cười nói vui vẻ.",
+          "explain": "Cặp \"如果……就……\" biểu thị giả thiết, C bổ sung cho A."
+        },
+        {
+          "no": 63,
+          "sentences": [
+            "别人都以为他是中国人呢",
+            "还会中国功夫",
+            "他汉语说得非常流利"
+          ],
+          "answer": "CBA",
+          "vi": "Anh ấy nói tiếng Trung rất lưu loát, lại còn biết võ Trung Quốc, nên ai cũng tưởng anh là người Trung Quốc.",
+          "explain": "C và B nêu nguyên nhân, B bổ sung cho C; A nêu kết quả."
+        },
+        {
+          "no": 64,
+          "sentences": [
+            "每个人都应该积极帮助别人",
+            "自己也会得到快乐",
+            "因为你在帮助别人的同时"
+          ],
+          "answer": "ACB",
+          "vi": "Mỗi người đều nên tích cực giúp đỡ người khác, vì khi bạn giúp người khác thì bản thân cũng nhận được niềm vui.",
+          "explain": "A nêu quan điểm; C và B giải thích lý do, câu \"……的同时\" thường đặt ở trước."
+        },
+        {
+          "no": 65,
+          "sentences": [
+            "今天哈尔滨下起了暴风雪",
+            "但人们还是希望能回家过年",
+            "这给旅客出行带来一定影响"
+          ],
+          "answer": "ACB",
+          "vi": "Hôm nay Cáp Nhĩ Tân có bão tuyết, điều này ít nhiều ảnh hưởng đến việc đi lại của hành khách, nhưng mọi người vẫn mong được về nhà ăn Tết.",
+          "explain": "A và C nêu tình huống, \"这\" chỉ \"暴风雪\"; B nêu một kết quả."
+        }
+      ]
+    },
+    "part3": {
+      "passages": [
+        {
+          "range": [
+            66,
+            66
+          ],
+          "text": "生活中，我们习惯于走别人走过的路，认为这样一定不会错。但是，事实上走别人没走过的路，往往更容易成功。",
+          "vi": "Trong cuộc sống, chúng ta quen đi con đường người khác đã đi, cho rằng như vậy chắc chắn không sai. Nhưng thực tế, đi con đường người khác chưa đi thường dễ thành công hơn.",
+          "questions": [
+            {
+              "no": 66,
+              "text": "生活的路应该怎样走？",
+              "options": [
+                "看别人走",
+                "跟别人一起走",
+                "在别人后边走",
+                "走不同的路"
+              ],
+              "answer": 3,
+              "explain": "Theo \"事实上走别人没走过的路，往往更容易成功\", tác giả tán thành đi con đường khác."
+            }
+          ]
+        },
+        {
+          "range": [
+            67,
+            67
+          ],
+          "text": "当一名优秀的记者是我学习的目标，为了实现这个目标，我需要付出更多的努力。",
+          "vi": "Trở thành một nhà báo xuất sắc là mục tiêu học tập của tôi, để thực hiện mục tiêu này tôi cần nỗ lực nhiều hơn.",
+          "questions": [
+            {
+              "no": 67,
+              "text": "说话人的理想是什么？",
+              "options": [
+                "当记者",
+                "成为好学生",
+                "当商人",
+                "当老师"
+              ],
+              "answer": 0,
+              "explain": "Theo \"当一名优秀的记者是我学习的目标\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            68,
+            68
+          ],
+          "text": "电脑和可视电话的出现，又一次拉近了我们跟外面世界的距离，就像大家都生活在一个地球村里，出差、留学已经不再有那种与亲人分离的痛苦了。",
+          "vi": "Sự xuất hiện của máy tính và điện thoại có hình lại một lần nữa kéo gần khoảng cách giữa chúng ta với thế giới bên ngoài, như thể mọi người sống trong một ngôi làng toàn cầu, đi công tác, du học không còn nỗi đau xa người thân nữa.",
+          "questions": [
+            {
+              "no": 68,
+              "text": "电脑和可视电话：",
+              "options": [
+                "使人痛苦",
+                "使出差更容易",
+                "浪费能源",
+                "对生活有好处"
+              ],
+              "answer": 3,
+              "explain": "Máy tính và điện thoại có hình \"拉近了我们跟外面世界的距离\", không còn \"与亲人分离的痛苦\", nên có lợi cho cuộc sống."
+            }
+          ]
+        },
+        {
+          "range": [
+            69,
+            69
+          ],
+          "text": "不论是走在大街上，还是待在餐馆里，一听到家乡人的声音我总是很兴奋。虽然并不认识，也可能一点儿关系都没有，但看到他们，我总感觉非常亲切。",
+          "vi": "Dù đi trên phố hay ngồi trong nhà hàng, hễ nghe giọng người quê mình là tôi luôn rất phấn khích. Tuy không quen biết, cũng có thể chẳng có quan hệ gì, nhưng thấy họ tôi luôn cảm thấy rất thân thiết.",
+          "questions": [
+            {
+              "no": 69,
+              "text": "说话人在哪儿？",
+              "options": [
+                "在大街上",
+                "在餐馆里",
+                "在外地",
+                "在家乡"
+              ],
+              "answer": 2,
+              "explain": "Từ \"一听到家乡人的声音我总是很兴奋\" suy ra đây là tâm trạng người xa quê, nên người nói đang ở nơi khác."
+            }
+          ]
+        },
+        {
+          "range": [
+            70,
+            70
+          ],
+          "text": "最近社区举行了一个活动，让大家去看交通事故的图片展览。看着那一幅幅让人伤心、难过的图片，很多人都说今后一定要从身边的小事做起，遵守交通秩序，珍爱生命。",
+          "vi": "Gần đây khu dân cư tổ chức một hoạt động, mời mọi người đi xem triển lãm ảnh về tai nạn giao thông. Nhìn từng bức ảnh khiến người ta đau lòng, buồn bã, nhiều người nói từ nay nhất định phải bắt đầu từ những việc nhỏ quanh mình, tuân thủ trật tự giao thông, trân trọng sinh mạng.",
+          "questions": [
+            {
+              "no": 70,
+              "text": "这是一次什么样的活动？",
+              "options": [
+                "打扫卫生",
+                "摄影展览",
+                "健康教育",
+                "交通意识教育"
+              ],
+              "answer": 3,
+              "explain": "Theo \"让大家去看交通事故的图片展览\" và mục đích tuân thủ trật tự giao thông, đây là hoạt động giáo dục ý thức giao thông."
+            }
+          ]
+        },
+        {
+          "range": [
+            71,
+            71
+          ],
+          "text": "马路对面的广东菜馆很受欢迎，我经常去。那儿的菜清淡可口，不油腻，价钱也不贵，很适合我们女生。",
+          "vi": "Nhà hàng món Quảng Đông bên kia đường rất được ưa chuộng, tôi thường đến. Món ở đó thanh đạm ngon miệng, không ngấy dầu mỡ, giá cũng không đắt, rất hợp với các cô gái chúng tôi.",
+          "questions": [
+            {
+              "no": 71,
+              "text": "这家店为什么生意好？",
+              "options": [
+                "菜量大",
+                "环境好",
+                "有音乐",
+                "比较便宜"
+              ],
+              "answer": 3,
+              "explain": "Theo \"价钱也不贵\", giá rẻ."
+            }
+          ]
+        },
+        {
+          "range": [
+            72,
+            72
+          ],
+          "text": "每天早上醒来，能感到自己还有追求，还需要把事情做得更好，那是一件多么值得高兴的事情啊！",
+          "vi": "Mỗi sáng thức dậy mà cảm thấy mình vẫn còn theo đuổi điều gì đó, vẫn cần làm mọi việc tốt hơn, đó là một việc đáng mừng biết bao!",
+          "questions": [
+            {
+              "no": 72,
+              "text": "值得我们高兴的事情是：",
+              "options": [
+                "想做好事",
+                "还有追求",
+                "想多睡觉",
+                "追求女朋友"
+              ],
+              "answer": 1,
+              "explain": "Theo \"能感到自己还有追求\" và \"那是一件多么值得高兴的事情啊\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            73,
+            73
+          ],
+          "text": "有些事情看起来很有趣，可是你没有做过，那么它就不是你的兴趣。只有你做过之后，发现自己真的喜欢它，这才是你的兴趣。",
+          "vi": "Có những việc nhìn có vẻ thú vị nhưng bạn chưa từng làm thì đó không phải sở thích của bạn. Chỉ khi bạn đã làm rồi và thấy mình thật sự thích nó thì đó mới là sở thích của bạn.",
+          "questions": [
+            {
+              "no": 73,
+              "text": "这段话主要谈的是什么？",
+              "options": [
+                "经历",
+                "故事",
+                "事情",
+                "兴趣"
+              ],
+              "answer": 3,
+              "explain": "Đoạn văn nói việc chưa làm thì không phải sở thích, chỉ khi làm rồi và thật sự thích mới là sở thích; vậy chủ đề là \"兴趣\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            74,
+            74
+          ],
+          "text": "乐观的人把困难看得很轻、很淡，他们永远用一颗积极、快乐的心去面对困难，争取成功。",
+          "vi": "Người lạc quan coi khó khăn rất nhẹ, rất nhạt; họ luôn dùng một trái tim tích cực, vui vẻ để đối mặt với khó khăn, phấn đấu thành công.",
+          "questions": [
+            {
+              "no": 74,
+              "text": "乐观的人：",
+              "options": [
+                "困难少",
+                "喜欢笑",
+                "没有烦恼",
+                "不怕困难"
+              ],
+              "answer": 3,
+              "explain": "Theo \"他们永远用一颗积极、快乐的心去面对困难，争取成功\", người lạc quan không sợ khó khăn."
+            }
+          ]
+        },
+        {
+          "range": [
+            75,
+            75
+          ],
+          "text": "现在很多家长不知道孩子喜欢什么，也不了解孩子在想什么，有时甚至没有办法跟他们交流。",
+          "vi": "Hiện nay nhiều phụ huynh không biết con thích gì, cũng không hiểu con đang nghĩ gì, có khi thậm chí không có cách nào trò chuyện với con.",
+          "questions": [
+            {
+              "no": 75,
+              "text": "父母感到最难做的事是：",
+              "options": [
+                "理解孩子",
+                "和孩子沟通",
+                "照顾孩子",
+                "帮助孩子"
+              ],
+              "answer": 1,
+              "explain": "\"跟……沟通\" tức \"跟……交流\"; bài nói nhiều phụ huynh \"没有办法跟他们交流\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            76,
+            76
+          ],
+          "text": "北京市卫生局昨天通知，将在全市开展食品安全大检查活动，重点检查饭店、街边小吃和超市熟食区的卫生，以保证食品安全。",
+          "vi": "Hôm qua Cục Y tế thành phố Bắc Kinh thông báo sẽ triển khai đợt kiểm tra lớn về an toàn thực phẩm trên toàn thành phố, trọng điểm kiểm tra vệ sinh của nhà hàng, đồ ăn vặt đường phố và khu đồ chín trong siêu thị, nhằm đảm bảo an toàn thực phẩm.",
+          "questions": [
+            {
+              "no": 76,
+              "text": "这次大检查要检查什么？",
+              "options": [
+                "卫生",
+                "交通",
+                "安全",
+                "设施"
+              ],
+              "answer": 0,
+              "explain": "Theo \"卫生局昨天通知……\" và \"重点检查……的卫生\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            77,
+            77
+          ],
+          "text": "高考时我的英语成绩不错，那是因为不考听力。上大学以后，英语老师讲的课我几乎一点儿都听不懂，这种情况让我觉得非常失望。",
+          "vi": "Thi đại học điểm tiếng Anh của tôi khá tốt, đó là vì không thi nghe. Lên đại học, bài giảng của thầy tiếng Anh tôi hầu như không nghe hiểu chút nào, tình trạng này khiến tôi rất thất vọng.",
+          "questions": [
+            {
+              "no": 77,
+              "text": "我失望是因为：",
+              "options": [
+                "成绩不好",
+                "上课听不懂",
+                "不能说话",
+                "不学习听力"
+              ],
+              "answer": 1,
+              "explain": "Theo \"英语老师讲的课我几乎一点儿都听不懂，这种情况让我觉得非常失望\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            78,
+            78
+          ],
+          "text": "以前大学毕业后很容易找到一个稳定的工作，所以很多人把上大学当成改变命运的最好方法。",
+          "vi": "Trước đây tốt nghiệp đại học rất dễ tìm được công việc ổn định, nên nhiều người coi học đại học là cách tốt nhất để thay đổi vận mệnh.",
+          "questions": [
+            {
+              "no": 78,
+              "text": "以前上大学的好处是：",
+              "options": [
+                "能有好工作",
+                "能去城市",
+                "能挣很多钱",
+                "能提升运气"
+              ],
+              "answer": 0,
+              "explain": "Theo \"以前大学毕业后很容易找到一个稳定的工作\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            79,
+            79
+          ],
+          "text": "现在的交通广播节目很不错，新闻、音乐、交通信息等各种内容都有，而且主持人的水平也很高，受到了出租车司机、老年人和孩子们的欢迎。",
+          "vi": "Chương trình phát thanh giao thông hiện nay rất hay, có đủ nội dung như tin tức, âm nhạc, thông tin giao thông, hơn nữa trình độ người dẫn chương trình cũng rất cao, được tài xế taxi, người già và trẻ em yêu thích.",
+          "questions": [
+            {
+              "no": 79,
+              "text": "受到出租车司机们欢迎的是：",
+              "options": [
+                "主持人",
+                "广播节目",
+                "新闻",
+                "交通信息"
+              ],
+              "answer": 1,
+              "explain": "Theo \"交通广播节目很不错\" và \"受到了出租车司机、老年人和孩子们的欢迎\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            80,
+            81
+          ],
+          "text": "今天去商场购物的时候，发现只有电梯和它旁边的楼梯可以使用，很多写着“安全通道”的大门都锁上了，有的地方甚至还放了很多货物。我很担心，要是发生意外事故人们跑不出去怎么办？",
+          "vi": "Hôm nay đi mua sắm ở trung tâm thương mại, tôi thấy chỉ có thang máy và cầu thang bên cạnh dùng được, nhiều cánh cửa ghi \"lối thoát hiểm\" đều bị khóa, có chỗ còn để nhiều hàng hóa. Tôi rất lo, nếu xảy ra tai nạn bất ngờ mà mọi người không chạy ra được thì sao?",
+          "questions": [
+            {
+              "no": 80,
+              "text": "“安全通道”应该是做什么的？",
+              "options": [
+                "卖东西的",
+                "去办公室的路",
+                "通到外边的路",
+                "发生意外的地方"
+              ],
+              "answer": 2,
+              "explain": "So sánh \"安全通道\" với thang máy, cầu thang thì biết đó là lối đi thông ra bên ngoài."
+            },
+            {
+              "no": 81,
+              "text": "说话人担心什么？",
+              "options": [
+                "发生意外",
+                "货物卖不掉",
+                "货物没处放",
+                "人们跑得慢"
+              ],
+              "answer": 0,
+              "explain": "Theo \"我很担心，要是发生意外事故人们跑不出去怎么办\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            82,
+            83
+          ],
+          "text": "最近社会上出现了一批“宅男”，整天躲在房间里不是玩儿电脑，就是睡觉，既不出门，也不见朋友，只吃一点儿饼干、方便面等。他们有的是因为失业，有的是根本没找到过工作，所以越来越怕见人，也越来越不愿意见人。这些内向、忧郁的“宅男”的生活方式让他们的父母非常担心。",
+          "vi": "Gần đây xã hội xuất hiện một nhóm \"otaku nam\" (trạch nam), cả ngày trốn trong phòng, không chơi máy tính thì ngủ, vừa không ra ngoài vừa không gặp bạn bè, chỉ ăn chút bánh quy, mì ăn liền, v.v. Có người vì thất nghiệp, có người chưa từng tìm được việc, nên càng ngày càng sợ gặp người, cũng càng không muốn gặp người. Lối sống của những \"trạch nam\" hướng nội, u uất này khiến cha mẹ họ rất lo lắng.",
+          "questions": [
+            {
+              "no": 82,
+              "text": "根据这段话，可知“宅男”的生活：",
+              "options": [
+                "很愉快",
+                "很幸福",
+                "很丰富",
+                "让人担心"
+              ],
+              "answer": 3,
+              "explain": "Theo \"让他们的父母非常担心\"."
+            },
+            {
+              "no": 83,
+              "text": "为什么会出现“宅男”？",
+              "options": [
+                "他们没有工作",
+                "他们没有朋友",
+                "他们父母不好",
+                "他们没有钱"
+              ],
+              "answer": 0,
+              "explain": "Theo \"他们有的是因为失业，也有的是根本没找到过工作\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            84,
+            85
+          ],
+          "text": "16年前，美国青年丁大卫来到中国一所郊区小学教书。因为他的课很受老师和学生的喜欢，后来当上了校长。1998年他又去了西部，在兰州的一所大学当教师。现在他在西部的一个县教育局当教育顾问。",
+          "vi": "16 năm trước, thanh niên Mỹ Đinh Đại Vệ đến dạy ở một trường tiểu học ngoại ô Trung Quốc. Vì bài giảng của anh được thầy cô và học sinh yêu thích nên sau đó anh làm hiệu trưởng. Năm 1998 anh lại đến miền Tây, làm giáo viên ở một trường đại học tại Lan Châu. Hiện nay anh làm cố vấn giáo dục ở phòng giáo dục một huyện miền Tây.",
+          "questions": [
+            {
+              "no": 84,
+              "text": "丁大卫刚来中国时做什么工作？",
+              "options": [
+                "大学老师",
+                "小学校长",
+                "小学教师",
+                "教育顾问"
+              ],
+              "answer": 2,
+              "explain": "Theo \"美国青年丁大卫来到中国一所郊区小学教书\", lúc mới đến anh là giáo viên tiểu học."
+            },
+            {
+              "no": 85,
+              "text": "丁大卫这个人怎么样？",
+              "options": [
+                "很一般",
+                "不太好",
+                "很受欢迎",
+                "马马虎虎"
+              ],
+              "answer": 2,
+              "explain": "Theo \"他的课很受老师和学生的喜欢\", anh rất được yêu mến."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

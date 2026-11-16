@@ -1,0 +1,647 @@
+{
+  "test": 8,
+  "reading": {
+    "part1": {
+      "sets": [
+        {
+          "range": [
+            46,
+            50
+          ],
+          "words": [
+            "提",
+            "坚持",
+            "而且",
+            "再",
+            "成功",
+            "跟"
+          ],
+          "example": {
+            "text": "她每天都___走路上下班，所以身体一直很不错。",
+            "answer": 1
+          },
+          "items": [
+            {
+              "no": 46,
+              "text": "这个活动很___，经理对我们非常满意。",
+              "answer": 4,
+              "vi": "Hoạt động này rất thành công, giám đốc vô cùng hài lòng về chúng tôi.",
+              "explain": "\"成功\" nghĩa là đạt được hiệu quả như mong đợi, hợp với ngữ cảnh giám đốc rất hài lòng."
+            },
+            {
+              "no": 47,
+              "text": "她的化妆方法是___着电视学的，虽然不太专业，但是还是挺漂亮的。",
+              "answer": 5,
+              "vi": "Cách trang điểm của cô ấy là học theo ti vi, tuy không chuyên nghiệp lắm nhưng vẫn khá đẹp.",
+              "explain": "\"跟\" dẫn ra đối tượng; ở đây \"跟着电视学\" là học theo ti vi."
+            },
+            {
+              "no": 48,
+              "text": "王姐她们家想等儿子大学毕业以后___搬到南方去。",
+              "answer": 3,
+              "vi": "Nhà chị Vương muốn đợi con trai tốt nghiệp đại học rồi mới chuyển xuống miền Nam.",
+              "explain": "\"再\" biểu thị một hành động xảy ra sau khi một việc khác đã xong: đợi con tốt nghiệp xong mới chuyển nhà."
+            },
+            {
+              "no": 49,
+              "text": "今天是我第一次讲课，你一定要给我___点儿建议。",
+              "answer": 0,
+              "vi": "Hôm nay là lần đầu tiên tôi lên lớp giảng bài, bạn nhất định phải góp cho tôi vài ý kiến.",
+              "explain": "Động từ \"提\" có nghĩa là đưa ra; \"提建议\" là đưa ra đề xuất, góp ý."
+            },
+            {
+              "no": 50,
+              "text": "小明喜欢去网吧，这不仅浪费了很多钱，___也影响了学习成绩。",
+              "answer": 2,
+              "vi": "Tiểu Minh thích đến quán net, điều này không những lãng phí nhiều tiền mà còn ảnh hưởng đến thành tích học tập.",
+              "explain": "Cặp \"不仅……而且……\" biểu thị quan hệ tăng tiến."
+            }
+          ]
+        },
+        {
+          "range": [
+            51,
+            55
+          ],
+          "words": [
+            "绝对",
+            "目标",
+            "单调",
+            "幅",
+            "温度",
+            "对于"
+          ],
+          "example": {
+            "text": "A：今天真冷啊，好像白天最高___才2ºC。\nB：刚才电视里说明天更冷。",
+            "answer": 4
+          },
+          "items": [
+            {
+              "no": 51,
+              "text": "A：___女人来说，事业重要还是家庭重要呢？\nB：关于这个问题，不同的人会有不同的看法。",
+              "answer": 5,
+              "vi": "A: Đối với phụ nữ mà nói, sự nghiệp quan trọng hay gia đình quan trọng? B: Về vấn đề này, mỗi người sẽ có cách nhìn khác nhau.",
+              "explain": "\"对于……来说\" là cách kết hợp cố định."
+            },
+            {
+              "no": 52,
+              "text": "A：这种手机的质量怎么样啊？我以前没见过这个牌子。\nB：放心吧，___没问题。",
+              "answer": 0,
+              "vi": "A: Chất lượng loại điện thoại này thế nào? Trước đây tôi chưa thấy hãng này. B: Yên tâm đi, tuyệt đối không có vấn đề.",
+              "explain": "\"绝对\" mang nghĩa chắc chắn, khẳng định; ở đây người nói đảm bảo chất lượng chắc chắn không có vấn đề."
+            },
+            {
+              "no": 53,
+              "text": "A：客厅里除了几件旧家具，什么也没有，不好看。\nB：买两___画儿挂上不就行了。",
+              "answer": 3,
+              "vi": "A: Phòng khách ngoài mấy món đồ nội thất cũ ra chẳng có gì, không đẹp. B: Mua hai bức tranh treo lên là được chứ gì.",
+              "explain": "Lượng từ của \"画儿\" (tranh) là \"幅\"."
+            },
+            {
+              "no": 54,
+              "text": "A：我觉得自己现在的生活太___了，上班、回家、上网，每天都一样。\nB：要不你也来参加我们的俱乐部吧。",
+              "answer": 2,
+              "vi": "A: Tôi thấy cuộc sống hiện giờ của mình đơn điệu quá, đi làm, về nhà, lên mạng, ngày nào cũng như ngày nào. B: Hay là bạn cũng tham gia câu lạc bộ của chúng tôi đi.",
+              "explain": "Câu \"每天都一样\" cho thấy cuộc sống thiếu thay đổi; \"单调\" nghĩa là thiếu sự thay đổi."
+            },
+            {
+              "no": 55,
+              "text": "A：马上就要毕业了，打算找个什么样的工作啊？有___了吗？\nB：别提了，我正为这事发愁呢！",
+              "answer": 1,
+              "vi": "A: Sắp tốt nghiệp rồi, định tìm công việc như thế nào? Đã có mục tiêu chưa? B: Đừng nhắc nữa, tôi đang đau đầu vì chuyện này đây!",
+              "explain": "\"目标\" có thể chỉ đối tượng cần tìm kiếm, ở đây chỉ công việc; người nói hỏi về việc tìm việc của đối phương."
+            }
+          ]
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 56,
+          "sentences": [
+            "她从小就想成为一名歌手",
+            "最后她终于考上了音乐学院",
+            "经过不断努力"
+          ],
+          "answer": "ACB",
+          "vi": "Cô ấy từ nhỏ đã muốn trở thành ca sĩ, trải qua nỗ lực không ngừng, cuối cùng cô ấy đã thi đỗ học viện âm nhạc.",
+          "explain": "\"从小\", \"经过\", \"最后\" biểu thị trình tự thời gian nên thứ tự là ACB."
+        },
+        {
+          "no": 57,
+          "sentences": [
+            "今天这个愿望终于实现了",
+            "所以我一直希望能有机会尝一尝",
+            "听说中国的饺子好吃"
+          ],
+          "answer": "CBA",
+          "vi": "Nghe nói sủi cảo Trung Quốc rất ngon, nên tôi luôn mong có cơ hội được nếm thử, hôm nay điều ước này cuối cùng đã thành hiện thực.",
+          "explain": "C nêu một tình huống, B bổ sung cho phần trước, A nói kết quả."
+        },
+        {
+          "no": 58,
+          "sentences": [
+            "尽管已经不在一起学习了",
+            "但是我们还是最好的朋友",
+            "也不经常联系了"
+          ],
+          "answer": "ACB",
+          "vi": "Mặc dù đã không còn học cùng nhau, cũng không thường xuyên liên lạc nữa, nhưng chúng tôi vẫn là bạn tốt nhất.",
+          "explain": "A nêu tình huống, C bổ sung cho A, B nêu kết quả chuyển ngoặt (\"尽管……但是……\")."
+        },
+        {
+          "no": 59,
+          "sentences": [
+            "那里气候和景色都不错",
+            "去年我去过一次昆明",
+            "有机会我还要去"
+          ],
+          "answer": "BAC",
+          "vi": "Năm ngoái tôi đã đến Côn Minh một lần, khí hậu và cảnh sắc ở đó đều rất đẹp, có cơ hội tôi còn muốn đi nữa.",
+          "explain": "B nêu tình huống, A giải thích thêm cho B, C là kết quả."
+        },
+        {
+          "no": 60,
+          "sentences": [
+            "所以连续三年被评为优秀学生",
+            "她学习成绩特别好",
+            "而且尊敬老师，爱护同学"
+          ],
+          "answer": "BCA",
+          "vi": "Cô ấy học tập đặc biệt giỏi, hơn nữa còn kính trọng thầy cô, yêu thương bạn học, vì vậy ba năm liền được bình chọn là học sinh xuất sắc.",
+          "explain": "B nêu tình huống, C bổ sung cho B (\"而且\"), A nêu kết quả (\"所以\")."
+        },
+        {
+          "no": 61,
+          "sentences": [
+            "7岁开始学拉小提琴",
+            "现在已经是艺术学校的学生了",
+            "我大概从3岁开始学画画儿"
+          ],
+          "answer": "CAB",
+          "vi": "Tôi bắt đầu học vẽ từ khoảng 3 tuổi, 7 tuổi bắt đầu học kéo vĩ cầm, bây giờ đã là học sinh trường nghệ thuật.",
+          "explain": "\"3岁\", \"7岁\", \"现在\" được giới thiệu theo trình tự thời gian."
+        },
+        {
+          "no": 62,
+          "sentences": [
+            "可是号不全了",
+            "质量和样子都很好",
+            "昨天我看上一件衬衫"
+          ],
+          "answer": "CBA",
+          "vi": "Hôm qua tôi ưng một chiếc áo sơ mi, chất lượng và kiểu dáng đều rất tốt, nhưng đã hết đủ size.",
+          "explain": "C đưa ra đối tượng được nói đến, B nêu cụ thể, A có \"可是\" biểu thị chuyển ngoặt."
+        },
+        {
+          "no": 63,
+          "sentences": [
+            "老虎是陆地上最强大的动物之一",
+            "它的适应能力很强",
+            "因此分布很广泛"
+          ],
+          "answer": "ABC",
+          "vi": "Hổ là một trong những loài động vật mạnh nhất trên cạn, khả năng thích nghi của nó rất mạnh, do đó phân bố rất rộng.",
+          "explain": "A và B nêu tình huống, \"老虎\" là chủ ngữ, C nêu kết quả (\"因此\")."
+        },
+        {
+          "no": 64,
+          "sentences": [
+            "我要租一套房子",
+            "不用太大",
+            "但是环境一定要好"
+          ],
+          "answer": "ABC",
+          "vi": "Tôi muốn thuê một căn nhà, không cần quá lớn, nhưng môi trường nhất định phải tốt.",
+          "explain": "A nêu tình huống, B và C nhấn mạnh yêu cầu, C bổ sung thêm cho B (\"但是\")."
+        },
+        {
+          "no": 65,
+          "sentences": [
+            "中国水资源比较缺乏",
+            "近年来随着用水量的增加",
+            "这种情况也更加严重了"
+          ],
+          "answer": "ACB",
+          "vi": "Tài nguyên nước của Trung Quốc tương đối khan hiếm, những năm gần đây cùng với việc lượng nước sử dụng tăng lên, tình trạng này càng nghiêm trọng hơn.",
+          "explain": "A nêu tình hình chung, B và C bổ sung cho A; mệnh đề \"随着\" thường đặt ở phía trước."
+        }
+      ]
+    },
+    "part3": {
+      "passages": [
+        {
+          "range": [
+            66,
+            66
+          ],
+          "text": "王姐真幸福，丈夫事业成功，儿子又聪明懂事，我要是能有她的一半就满足了！",
+          "vi": "Chị Vương thật hạnh phúc, chồng sự nghiệp thành công, con trai lại thông minh hiểu chuyện, giá mà tôi có được một nửa như chị ấy thì tôi đã mãn nguyện rồi!",
+          "questions": [
+            {
+              "no": 66,
+              "text": "说话人是什么语气？",
+              "options": [
+                "失望",
+                "羡慕",
+                "得意",
+                "嫉妒"
+              ],
+              "answer": 1,
+              "explain": "Câu \"我要是能有她的一半就满足了\" cho thấy người nói rất ngưỡng mộ chị Vương, chọn B."
+            }
+          ]
+        },
+        {
+          "range": [
+            67,
+            67
+          ],
+          "text": "这儿的景色真好，环境也不错，公共设施还挺全，就是房价有点儿高，我们买不起。",
+          "vi": "Cảnh sắc ở đây thật đẹp, môi trường cũng tốt, cơ sở vật chất công cộng khá đầy đủ, chỉ là giá nhà hơi cao, chúng tôi không mua nổi.",
+          "questions": [
+            {
+              "no": 67,
+              "text": "说话人对哪方面不太满意？",
+              "options": [
+                "环境",
+                "公共设施",
+                "条件",
+                "价格"
+              ],
+              "answer": 3,
+              "explain": "Câu \"就是房价有点儿高，我们买不起\" cho thấy người nói không hài lòng về giá cả, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            68,
+            68
+          ],
+          "text": "一个星期以来，我每天只吃苹果，喝矿泉水，不吃饭，就连我最爱吃的冰激凌也一次没吃，没办法，谁叫我现在这么胖了！",
+          "vi": "Cả tuần nay, mỗi ngày tôi chỉ ăn táo, uống nước khoáng, không ăn cơm, ngay cả kem món tôi thích nhất cũng không ăn một lần, hết cách rồi, ai bảo bây giờ tôi béo thế này!",
+          "questions": [
+            {
+              "no": 68,
+              "text": "根据这段话可以知道什么？",
+              "options": [
+                "“我”想减肥",
+                "“我”不爱吃饭",
+                "“我”喜欢苹果",
+                "“我”不想吃冰激凌"
+              ],
+              "answer": 0,
+              "explain": "Câu \"谁叫我现在这么胖了\" cho thấy người nói thấy mình béo, những việc làm này là để giảm cân, chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            69,
+            69
+          ],
+          "text": "一个人能不能在工作中做出成绩，与学历和出身没有关系，重要的是这个人有没有能力和信心。",
+          "vi": "Một người có làm nên thành tích trong công việc hay không không liên quan đến học vấn và xuất thân, quan trọng là người đó có năng lực và niềm tin hay không.",
+          "questions": [
+            {
+              "no": 69,
+              "text": "这句话告诉我们，一个人能力的大小决定着：",
+              "options": [
+                "学历",
+                "出身",
+                "成绩",
+                "信心"
+              ],
+              "answer": 2,
+              "explain": "Dựa vào \"一个人能不能在工作中做出成绩……重要的是这个人有没有能力和信心\", chọn C."
+            }
+          ]
+        },
+        {
+          "range": [
+            70,
+            70
+          ],
+          "text": "重庆今年要是下一场大雪多好啊！我出生以来就没看见过几场雪。生活在北方的人每年都能看见好几场雪，真羡慕他们！",
+          "vi": "Giá mà năm nay Trùng Khánh có một trận tuyết lớn thì tốt biết bao! Từ khi sinh ra tôi chưa thấy được mấy trận tuyết. Người sống ở miền Bắc mỗi năm đều được thấy mấy trận tuyết, thật ngưỡng mộ họ!",
+          "questions": [
+            {
+              "no": 70,
+              "text": "通过这段话，可以知道：",
+              "options": [
+                "“我”是北方人",
+                "“我”不喜欢重庆",
+                "“我”想看雪",
+                "“我”要去北方"
+              ],
+              "answer": 2,
+              "explain": "Câu \"重庆今年要是下一场大雪多好啊！我出生以来就没看见过几场雪\" cho thấy \"tôi\" muốn xem tuyết, chọn C."
+            }
+          ]
+        },
+        {
+          "range": [
+            71,
+            71
+          ],
+          "text": "请大家放心，在比赛中我一定做到：尊重对手，尊重比赛规则，赛出风格，赛出水平，争取得到好成绩。",
+          "vi": "Xin mọi người yên tâm, trong cuộc thi tôi nhất định sẽ làm được: tôn trọng đối thủ, tôn trọng luật thi, thi đấu có phong cách, thi ra trình độ, cố gắng đạt thành tích tốt.",
+          "questions": [
+            {
+              "no": 71,
+              "text": "他来这儿的目的是什么？",
+              "options": [
+                "参加比赛",
+                "观看比赛",
+                "锻炼身体",
+                "主持比赛"
+              ],
+              "answer": 0,
+              "explain": "Câu \"在比赛中我一定做到……\" cho thấy người nói đến đây để thi đấu, chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            72,
+            72
+          ],
+          "text": "吃饭没有规律的人，一般容易感觉累，没有力气，时间长了也会引起营养不良等问题，严重时还会得病。",
+          "vi": "Người ăn uống không điều độ thường dễ cảm thấy mệt, không có sức, lâu dần cũng sẽ gây ra các vấn đề như suy dinh dưỡng, nghiêm trọng còn có thể sinh bệnh.",
+          "questions": [
+            {
+              "no": 72,
+              "text": "想健康，吃饭就要：",
+              "options": [
+                "少吃",
+                "有营养",
+                "有规律",
+                "不得病"
+              ],
+              "answer": 2,
+              "explain": "Ăn uống không có quy luật sẽ gây ra nhiều vấn đề, nên muốn khỏe mạnh thì ăn uống phải có quy luật, chọn C."
+            }
+          ]
+        },
+        {
+          "range": [
+            73,
+            73
+          ],
+          "text": "语言是文化的一部分，并在文化中发挥着相当重要的作用。同时，语言也受到文化的影响。",
+          "vi": "Ngôn ngữ là một phần của văn hóa, và phát huy vai trò khá quan trọng trong văn hóa. Đồng thời, ngôn ngữ cũng chịu ảnh hưởng của văn hóa.",
+          "questions": [
+            {
+              "no": 73,
+              "text": "这段话说的是：",
+              "options": [
+                "文化",
+                "语言",
+                "科技",
+                "语言和文化的关系"
+              ],
+              "answer": 3,
+              "explain": "Dựa vào \"语言是文化的一部分……同时，语言也受到文化的影响\", đoạn văn nói về mối quan hệ giữa ngôn ngữ và văn hóa, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            74,
+            74
+          ],
+          "text": "大熊猫是一种活泼的动物，喜欢吃竹子。它生活在森林茂盛、温暖湿润的地方，但现在大熊猫的数量却越来越少了。",
+          "vi": "Gấu trúc là loài động vật hoạt bát, thích ăn tre. Nó sống ở những nơi rừng rậm um tùm, ấm áp ẩm ướt, nhưng hiện nay số lượng gấu trúc lại ngày càng ít đi.",
+          "questions": [
+            {
+              "no": 74,
+              "text": "关于大熊猫，没提到的是：",
+              "options": [
+                "越来越少",
+                "喜欢吃竹子",
+                "很活泼",
+                "成长很快"
+              ],
+              "answer": 3,
+              "explain": "Bài nhắc đến \"活泼的动物，喜欢吃竹子\" và \"数量却越来越少了\", không nhắc đến \"成长很快\", chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            75,
+            75
+          ],
+          "text": "人要生存就需要呼吸空气，一个成年人每天大约呼吸2万多次。因此，被污染了的空气对人体健康有很大的影响，甚至会危害人的生命。",
+          "vi": "Con người muốn sinh tồn thì cần hít thở không khí, một người trưởng thành mỗi ngày hít thở khoảng hơn 2 vạn lần. Vì vậy, không khí bị ô nhiễm có ảnh hưởng rất lớn đến sức khỏe con người, thậm chí còn nguy hại đến tính mạng.",
+          "questions": [
+            {
+              "no": 75,
+              "text": "这段话谈论的主要内容是什么？",
+              "options": [
+                "呼吸方法",
+                "空气的作用",
+                "呼吸的重要性",
+                "空气对人的影响"
+              ],
+              "answer": 3,
+              "explain": "Câu \"被污染了的空气对人体健康有很大的影响\" cho thấy nội dung chính là ảnh hưởng của không khí đối với con người, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            76,
+            76
+          ],
+          "text": "学习方法是一种快速掌握知识的方法。可能每个人的学习方法都不一样，但是掌握了正确的学习方法却是成功的第一步。",
+          "vi": "Phương pháp học tập là cách để nắm bắt kiến thức nhanh chóng. Có thể phương pháp học của mỗi người đều khác nhau, nhưng nắm được phương pháp học đúng đắn lại là bước đầu tiên của thành công.",
+          "questions": [
+            {
+              "no": 76,
+              "text": "这段话主要谈的是什么？",
+              "options": [
+                "学习时间",
+                "学习态度",
+                "学习效率",
+                "学习方法"
+              ],
+              "answer": 3,
+              "explain": "Đoạn văn giới thiệu định nghĩa \"phương pháp học tập\", chỉ ra mỗi người mỗi khác và đó là \"bước đầu của thành công\", nên chủ yếu nói về phương pháp học, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            77,
+            77
+          ],
+          "text": "仙人掌主要生长在美洲，是人们日常生活中不可缺少的一种特色蔬菜和水果，可以放在锅里煮，或是在火上烤，还有的人用它来酿酒。",
+          "vi": "Xương rồng chủ yếu mọc ở châu Mỹ, là một loại rau và trái cây đặc trưng không thể thiếu trong đời sống hằng ngày của người dân, có thể cho vào nồi nấu, hoặc nướng trên lửa, còn có người dùng nó để nấu rượu.",
+          "questions": [
+            {
+              "no": 77,
+              "text": "根据这句话，可以知道仙人掌：",
+              "options": [
+                "可以煮",
+                "不能吃",
+                "不能做酒",
+                "只生长在美洲"
+              ],
+              "answer": 0,
+              "explain": "Câu \"可以放在锅里煮\" cho biết xương rồng có thể nấu, chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            78,
+            78
+          ],
+          "text": "运动可以使身体得到锻炼，也能够减轻人们的心理压力，因此，专家建议人们每天都适当地进行一些运动，比如，慢跑、打羽毛球、游泳等等。",
+          "vi": "Vận động có thể giúp cơ thể được rèn luyện, cũng có thể giảm bớt áp lực tâm lý của con người, vì vậy chuyên gia khuyên mọi người mỗi ngày nên vận động vừa phải, ví dụ chạy bộ chậm, đánh cầu lông, bơi lội...",
+          "questions": [
+            {
+              "no": 78,
+              "text": "根据这句话，可知运动可以：",
+              "options": [
+                "缓解疼痛",
+                "减少压力",
+                "认识朋友",
+                "赚钱"
+              ],
+              "answer": 1,
+              "explain": "Câu \"也能够减轻人们的心理压力\" nên chọn B."
+            }
+          ]
+        },
+        {
+          "range": [
+            79,
+            79
+          ],
+          "text": "随着国际文化交流的增多，旗袍已经不仅是中国女性的经典服装，许多外国女明星也开始穿起了旗袍，有的穿出了传统的味道，有的穿出了新的感觉。",
+          "vi": "Cùng với việc giao lưu văn hóa quốc tế ngày càng nhiều, sườn xám không còn chỉ là trang phục kinh điển của phụ nữ Trung Quốc, nhiều nữ minh tinh nước ngoài cũng bắt đầu mặc sườn xám, có người mặc ra phong vị truyền thống, có người mặc ra cảm giác mới.",
+          "questions": [
+            {
+              "no": 79,
+              "text": "根据这句话，下列哪项正确？",
+              "options": [
+                "只有明星穿旗袍",
+                "外国人不穿旗袍",
+                "旗袍已经国际化",
+                "外国人须穿旗袍"
+              ],
+              "answer": 2,
+              "explain": "Câu \"旗袍已经不仅是中国女性的经典服装，许多外国女明星也开始穿起了旗袍\" cho thấy sườn xám đã quốc tế hóa, chọn C."
+            }
+          ]
+        },
+        {
+          "range": [
+            80,
+            81
+          ],
+          "text": "进入21世纪以来，手机成了人们最常使用的通信设备。目前它的普及率已经非常高，甚至深入到了山区、林场。人们用手机打电话、听音乐、拍照片、上网查资料，不仅提高了工作效率，也丰富了业余生活。",
+          "vi": "Từ khi bước vào thế kỷ 21, điện thoại di động trở thành thiết bị liên lạc mà mọi người dùng nhiều nhất. Hiện nay tỷ lệ phổ biến của nó đã rất cao, thậm chí thâm nhập đến cả vùng núi, lâm trường. Mọi người dùng điện thoại để gọi điện, nghe nhạc, chụp ảnh, lên mạng tra cứu tài liệu, không chỉ nâng cao hiệu suất công việc mà còn làm phong phú đời sống ngoài giờ làm.",
+          "questions": [
+            {
+              "no": 80,
+              "text": "下列哪项不是手机的用途？",
+              "options": [
+                "打电话",
+                "上网",
+                "拍照片",
+                "打印资料"
+              ],
+              "answer": 3,
+              "explain": "Bài nêu \"打电话、听音乐、拍照片、上网查资料\", không có in tài liệu, nên chọn D."
+            },
+            {
+              "no": 81,
+              "text": "使用手机的好处不包括哪项？",
+              "options": [
+                "去林场的速度快",
+                "方便与外界联系",
+                "提高工作效率",
+                "丰富业余生活"
+              ],
+              "answer": 0,
+              "explain": "Câu \"不仅提高了工作效率，也丰富了业余生活\" cho thấy tác dụng của điện thoại không liên quan đến tốc độ đi đến lâm trường, chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            82,
+            83
+          ],
+          "text": "“裸婚”是一个流行词语，也是一种对婚姻的新理解。它是指两个人结婚的时候没有房子，没有车，也不办婚礼，不去旅行。其中有的是因为没有钱，有的工资虽然很高，学历也很高，但是不想给彼此很大的压力。“裸婚”让我们知道：决定婚姻的不是金钱，而是真正的爱情。",
+          "vi": "\"Cưới trần\" là một từ thịnh hành, cũng là một cách hiểu mới về hôn nhân. Nó chỉ việc hai người kết hôn mà không có nhà, không có xe, cũng không tổ chức đám cưới, không đi du lịch. Trong đó có người vì không có tiền, có người dù lương rất cao, học vấn cũng rất cao nhưng không muốn tạo cho nhau áp lực lớn. \"Cưới trần\" cho chúng ta biết: thứ quyết định hôn nhân không phải là tiền bạc mà là tình yêu chân thật.",
+          "questions": [
+            {
+              "no": 82,
+              "text": "两个人结婚，真正的原因应该是：",
+              "options": [
+                "房子",
+                "爱情",
+                "金钱",
+                "学历"
+              ],
+              "answer": 1,
+              "explain": "Câu \"决定婚姻的不是金钱，而是真正的爱情\" nên chọn B."
+            },
+            {
+              "no": 83,
+              "text": "这段话主要介绍：",
+              "options": [
+                "生活方式",
+                "金钱重要",
+                "结婚形式",
+                "幸福生活"
+              ],
+              "answer": 2,
+              "explain": "Đoạn văn chủ yếu giới thiệu \"裸婚\", một hình thức kết hôn mới, chọn C."
+            }
+          ]
+        },
+        {
+          "range": [
+            84,
+            85
+          ],
+          "text": "妻子正在厨房里忙着，丈夫在她旁边不停地说：“慢些！小心！赶快把鱼翻过来。油是不是太多了？有没有放盐啊？”妻子不满意地说：“我知道怎么炒菜！不用你告诉！”丈夫平静地回答道：“你当然知道，亲爱的，我只是想让你知道，我在开车时，你在一旁不停地说话，我的感觉如何。”",
+          "vi": "Người vợ đang bận rộn trong bếp, người chồng đứng bên cạnh nói không ngừng: \"Từ từ thôi! Cẩn thận! Mau lật con cá lại. Dầu có nhiều quá không? Đã cho muối chưa đấy?\" Người vợ không hài lòng nói: \"Em biết nấu ăn thế nào! Không cần anh bảo!\" Người chồng bình tĩnh đáp: \"Em đương nhiên biết, em yêu, anh chỉ muốn em biết rằng khi anh lái xe, em ngồi bên cạnh nói không ngừng thì cảm giác của anh thế nào.\"",
+          "questions": [
+            {
+              "no": 84,
+              "text": "妻子在干什么？",
+              "options": [
+                "做鱼",
+                "吃饭",
+                "包饺子",
+                "打扫厨房"
+              ],
+              "answer": 0,
+              "explain": "Câu \"赶快把鱼翻过来\" cho thấy người vợ đang làm (nấu) cá, chọn A."
+            },
+            {
+              "no": 85,
+              "text": "丈夫想告诉妻子什么道理？",
+              "options": [
+                "要有同情心",
+                "习惯很重要",
+                "应互相理解",
+                "做人要诚实"
+              ],
+              "answer": 2,
+              "explain": "Câu \"我只是想让你知道，我在开车时，你在一旁不停地说话，我的感觉如何\" cho thấy chồng muốn vợ học cách thấu hiểu lẫn nhau, chọn C."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

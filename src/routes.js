@@ -2,6 +2,7 @@
 import { partById } from './listening.js';
 import { partById as readingPartById } from './reading.js';
 import { QUIZ_TYPES } from './quiz.js';
+import { testByNo } from './exam.js';
 
 // Top-level sections shown in the sidebar. Add an entry here (and its pages below) for a new one.
 export const SECTIONS = [
@@ -10,6 +11,7 @@ export const SECTIONS = [
   { id: 'compare', path: '/compare', label: '⚖️ Từ dễ nhầm' },
   { id: 'listening', path: '/listening/p1', label: '🎧 Nghe hiểu' },
   { id: 'reading', path: '/reading/p1', label: '📄 Đọc hiểu' },
+  { id: 'exam', path: '/exam', label: '📝 Luyện đề' },
   { id: 'games', path: '/games', label: '🎮 Game phản xạ' },
 ];
 
@@ -51,13 +53,15 @@ export const PAGE_TITLES = {
   'reading-tips': 'Mẹo đọc hiểu',
   'reading-practice': 'Luyện đọc',
   'reading-review': 'Ôn câu đọc sai',
+  exam: 'Luyện đề',
+  'exam-test': 'Làm đề',
   games: 'Game phản xạ',
   'game-type': 'Gõ từ',
   'game-meteor': 'Bắn thiên thạch',
 };
 
 export const sectionOf = (page) =>
-  page.startsWith('game') ? 'games' : page.startsWith('reading') ? 'reading' : page.startsWith('listening') ? 'listening' : page.startsWith('compare') ? 'compare' : page.startsWith('grammar') ? 'grammar' : 'vocab';
+  page.startsWith('game') ? 'games' : page.startsWith('exam') ? 'exam' : page.startsWith('reading') ? 'reading' : page.startsWith('listening') ? 'listening' : page.startsWith('compare') ? 'compare' : page.startsWith('grammar') ? 'grammar' : 'vocab';
 
 const EXERCISE_TYPES = QUIZ_TYPES.map(([t]) => t);
 const SIMPLE = ['words', 'review'];
@@ -84,6 +88,13 @@ function matchCompare(parts) {
   if (!rest.length && a === 'practice') return { page: 'compare-practice', params: {}, path: '/compare/practice' };
   if (!rest.length && a === 'review') return { page: 'compare-review', params: {}, path: '/compare/review' };
   return { page: 'compare', params: {}, path: '/compare' };
+}
+
+// /exam (the list of tests) and /exam/<n> (one test); an unknown test number lands on the list.
+function matchExam(parts) {
+  const [n, ...rest] = parts;
+  if (n && !rest.length && /^\d+$/.test(n) && testByNo(n)) return { page: 'exam-test', params: { test: Number(n) }, path: '/exam/' + Number(n) };
+  return { page: 'exam', params: {}, path: '/exam' };
 }
 
 function matchGames(parts) {
@@ -117,6 +128,7 @@ export function matchRoute(pathname) {
   const parts = String(pathname).split('/').filter(Boolean);
   if (parts[0] === 'listening') return matchParts('listening', partById, parts.slice(1));
   if (parts[0] === 'reading') return matchParts('reading', readingPartById, parts.slice(1));
+  if (parts[0] === 'exam') return matchExam(parts.slice(1));
   if (parts[0] === 'games') return matchGames(parts.slice(1));
   if (parts[0] === 'compare') return matchCompare(parts.slice(1));
   if (parts[0] === 'grammar') return matchGrammar(parts.slice(1));

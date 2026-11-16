@@ -1,0 +1,647 @@
+{
+  "test": 3,
+  "reading": {
+    "part1": {
+      "sets": [
+        {
+          "range": [
+            46,
+            50
+          ],
+          "words": [
+            "抽",
+            "旅行",
+            "到处",
+            "下来",
+            "坚持",
+            "方便"
+          ],
+          "example": {
+            "text": "她每天都___走路上下班，所以身体一直很不错。",
+            "answer": 4
+          },
+          "items": [
+            {
+              "no": 46,
+              "text": "我们明天去杭州___，导游说西湖的景色很美。",
+              "answer": 1,
+              "vi": "Ngày mai chúng tôi đi du lịch Hàng Châu, hướng dẫn viên nói phong cảnh Tây Hồ rất đẹp.",
+              "explain": "Dựa vào \"导游\" ở vế sau thì chỗ trống là \"旅行\" (du lịch)."
+            },
+            {
+              "no": 47,
+              "text": "我家虽然离市中心比较远，但是交通很___。",
+              "answer": 5,
+              "vi": "Nhà tôi tuy cách trung tâm thành phố khá xa, nhưng giao thông rất thuận tiện.",
+              "explain": "\"方便\" nghĩa là tiện lợi; \"交通方便\" nói điều kiện giao thông tốt, rất thuận tiện."
+            },
+            {
+              "no": 48,
+              "text": "房间里有空调，比较热，把大衣脱___吧。",
+              "answer": 3,
+              "vi": "Trong phòng có điều hòa, khá nóng, cởi áo khoác ra đi.",
+              "explain": "\"下来\" đặt sau động từ \"脱\" làm bổ ngữ xu hướng, chỉ sự tách ra, rời khỏi, hợp nghĩa câu."
+            },
+            {
+              "no": 49,
+              "text": "高阳从书架上___出一本书看了看，觉得没意思，又放了回去。",
+              "answer": 0,
+              "vi": "Cao Dương rút một cuốn sách từ giá sách ra xem thử, thấy chẳng hay, lại để về chỗ cũ.",
+              "explain": "Động từ \"抽\" nghĩa là rút thứ nằm kẹp ở giữa ra; câu này là rút một cuốn sách từ giá sách."
+            },
+            {
+              "no": 50,
+              "text": "我___都找遍了，也没有发现那张邮票。",
+              "answer": 2,
+              "vi": "Tôi tìm khắp mọi nơi rồi mà vẫn không thấy con tem đó.",
+              "explain": "\"到处\" chỉ nơi chốn, khắp mọi nơi; nghĩa là tôi đã tìm hết mọi chỗ."
+            }
+          ]
+        },
+        {
+          "range": [
+            51,
+            55
+          ],
+          "words": [
+            "答案",
+            "温度",
+            "决定",
+            "可不是",
+            "靠",
+            "大概"
+          ],
+          "example": {
+            "text": "A：今天真冷啊，好像白天最高___才2ºC。\nB：刚才电视里说明天更冷。",
+            "answer": 1
+          },
+          "items": [
+            {
+              "no": 51,
+              "text": "A：服务员，请问烤鸭什么时候能烤好？\nB：___得半个小时吧！",
+              "answer": 5,
+              "vi": "A: Phục vụ ơi, cho hỏi khi nào vịt quay xong được ạ?\nB: Chắc phải khoảng nửa tiếng đấy!",
+              "explain": "Hiện chưa thể chắc chắn, \"大概\" biểu thị ước chừng, không xác định nên hợp nghĩa."
+            },
+            {
+              "no": 52,
+              "text": "A：你说我应不应该去他家啊？\nB：这是你自己的事儿，你自己___。",
+              "answer": 2,
+              "vi": "A: Cậu nói xem tớ có nên đến nhà anh ấy không?\nB: Đó là việc của cậu, cậu tự quyết định đi.",
+              "explain": "\"决定\" là đưa ra lựa chọn, tự quyết; hợp với \"这是你自己的事儿\"."
+            },
+            {
+              "no": 53,
+              "text": "A：老师，这道题选择C对吗？\nB：不对，正确___是D。",
+              "answer": 0,
+              "vi": "A: Thầy ơi, câu này chọn C đúng không ạ?\nB: Không đúng, đáp án chính xác là D.",
+              "explain": "Học sinh hỏi kết quả giải đúng của câu hỏi, nên điền \"答案\" (đáp án)."
+            },
+            {
+              "no": 54,
+              "text": "A：你是不是把对联贴反了？\nB：哎呀，___嘛，上联应该在右边，我贴到左边墙上了。",
+              "answer": 3,
+              "vi": "A: Có phải cậu dán câu đối ngược rồi không?\nB: Ôi trời, đúng thế còn gì, vế trên phải ở bên phải mà tớ lại dán lên tường bên trái.",
+              "explain": "\"可不是\" biểu thị đồng ý với ý kiến của người trước; người thứ hai quả thật đã dán ngược."
+            },
+            {
+              "no": 55,
+              "text": "A：她的亲人都在地震中去世了，现在只剩下她一个人。\nB：太可怜了，真不知道以后她要___什么生活。",
+              "answer": 4,
+              "vi": "A: Người thân của cô ấy đều mất trong trận động đất, giờ chỉ còn lại một mình cô ấy.\nB: Tội quá, thật không biết sau này cô ấy sẽ dựa vào cái gì để sống.",
+              "explain": "\"靠\" nghĩa là dựa vào, nhờ vào; \"靠什么生活\" là dựa vào đâu để sống."
+            }
+          ]
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 56,
+          "sentences": [
+            "只能刷卡了",
+            "可是因为着急，忘了带现金",
+            "我去超市买橡皮和信封"
+          ],
+          "answer": "CBA",
+          "vi": "Tôi đi siêu thị mua cục tẩy và phong bì, nhưng vì vội nên quên mang tiền mặt, đành phải quẹt thẻ.",
+          "explain": "C nêu tình huống, B giải thích sự cố bất ngờ (\"可是\"), A là kết quả."
+        },
+        {
+          "no": 57,
+          "sentences": [
+            "现在节日礼物越送越贵重",
+            "有的学生每年要花上百元买贺年卡",
+            "连校园里也不例外"
+          ],
+          "answer": "ACB",
+          "vi": "Bây giờ quà tặng dịp lễ càng tặng càng đắt giá, ngay cả trong trường học cũng không ngoại lệ, có học sinh mỗi năm phải tốn hàng trăm tệ mua thiệp chúc mừng.",
+          "explain": "A nêu tình hình; B và C là ví dụ minh họa, trong đó B bổ sung, giải thích cho C."
+        },
+        {
+          "no": 58,
+          "sentences": [
+            "要先托运行李",
+            "登机前",
+            "然后再领登机牌"
+          ],
+          "answer": "BAC",
+          "vi": "Trước khi lên máy bay, phải ký gửi hành lý trước, sau đó mới nhận thẻ lên máy bay.",
+          "explain": "B chỉ thời gian, cặp liên từ \"先……然后……\" biểu thị thứ tự."
+        },
+        {
+          "no": 59,
+          "sentences": [
+            "更容易生病",
+            "我从小身体就不好",
+            "遇上这样的天气"
+          ],
+          "answer": "BCA",
+          "vi": "Từ nhỏ sức khỏe tôi đã không tốt, gặp thời tiết thế này thì càng dễ bị bệnh.",
+          "explain": "B giới thiệu tình hình; A và C nhấn mạnh thêm, C là điều kiện, A là kết quả."
+        },
+        {
+          "no": 60,
+          "sentences": [
+            "据有关资料统计",
+            "这绝对不是一个小数目",
+            "在北京，学校用水占全部城市用水的13%"
+          ],
+          "answer": "ACB",
+          "vi": "Theo thống kê của tài liệu liên quan, ở Bắc Kinh lượng nước dùng của trường học chiếm 13% tổng lượng nước dùng của thành phố, đây tuyệt đối không phải con số nhỏ.",
+          "explain": "\"据……统计\" dẫn ra số liệu 13%, B là lời nhận xét về điều vừa nêu."
+        },
+        {
+          "no": 61,
+          "sentences": [
+            "我每周给小鱼换一次水",
+            "那个时候小鱼总是很听话",
+            "有时还搅动水给它增加氧气"
+          ],
+          "answer": "ACB",
+          "vi": "Mỗi tuần tôi thay nước cho cá nhỏ một lần, đôi khi còn khuấy nước để tăng oxy cho nó, lúc đó cá con luôn rất ngoan.",
+          "explain": "A và C giới thiệu thói quen, C bổ sung cho A; B nói lên một kết quả."
+        },
+        {
+          "no": 62,
+          "sentences": [
+            "出现了大批优秀演员",
+            "京剧形成以来",
+            "同时也形成了很多流派"
+          ],
+          "answer": "BAC",
+          "vi": "Từ khi kinh kịch hình thành đến nay, đã xuất hiện hàng loạt diễn viên xuất sắc, đồng thời cũng hình thành nhiều trường phái.",
+          "explain": "B chỉ thời gian, A và C nêu tình hình, câu có \"同时\" thường đặt ở sau."
+        },
+        {
+          "no": 63,
+          "sentences": [
+            "无论是在家里",
+            "还是在公共场所",
+            "老年人都应该受到尊敬"
+          ],
+          "answer": "ABC",
+          "vi": "Dù là ở nhà hay ở nơi công cộng, người già đều nên được tôn trọng.",
+          "explain": "Cặp từ \"无论……都……\" biểu thị điều kiện, C nêu kết quả."
+        },
+        {
+          "no": 64,
+          "sentences": [
+            "当一名律师是她的梦想",
+            "却还是没能实现这个愿望",
+            "可是尽管她付出了很多努力"
+          ],
+          "answer": "ACB",
+          "vi": "Làm luật sư là ước mơ của cô ấy, nhưng dù cô ấy đã nỗ lực rất nhiều, vẫn không thực hiện được nguyện vọng này.",
+          "explain": "A nêu nguyên nhân/nội dung; C và B nêu kết quả, cặp \"尽管……却……\" biểu thị chuyển ngoặt."
+        },
+        {
+          "no": 65,
+          "sentences": [
+            "虽然我们喜欢传统旗袍",
+            "他们又设计出了有欧洲风格的旗袍",
+            "但是设计师们更愿意创新"
+          ],
+          "answer": "ACB",
+          "vi": "Tuy chúng tôi thích sườn xám truyền thống, nhưng các nhà thiết kế thích đổi mới hơn, nên họ lại thiết kế ra sườn xám phong cách châu Âu.",
+          "explain": "Cặp \"虽然……但是……\" biểu thị chuyển ngoặt, B nêu một kết quả nên đặt cuối."
+        }
+      ]
+    },
+    "part3": {
+      "passages": [
+        {
+          "range": [
+            66,
+            66
+          ],
+          "text": "爱好会带你敲开成功的大门，当你因为爱好去做一件事情的时候，就会充满兴趣，心情愉快。",
+          "vi": "Sở thích sẽ giúp bạn gõ cửa thành công; khi bạn làm một việc vì sở thích, bạn sẽ tràn đầy hứng thú, tâm trạng vui vẻ.",
+          "questions": [
+            {
+              "no": 66,
+              "text": "你非常愉快地去做一件事，是因为：",
+              "options": [
+                "想成功",
+                "爱好它",
+                "很自信",
+                "没兴趣"
+              ],
+              "answer": 1,
+              "explain": "Theo \"当你因为爱好去做一件事情的时候，就会……心情愉快\", làm việc vui vẻ là vì yêu thích nó."
+            }
+          ]
+        },
+        {
+          "range": [
+            67,
+            67
+          ],
+          "text": "年糕不仅味道香甜可口，而且营养丰富，还具有健身祛病的作用，不过年糕含的水分少，不容易消化。",
+          "vi": "Bánh gạo (niangao) không chỉ có vị thơm ngọt ngon miệng mà còn giàu dinh dưỡng, lại có tác dụng tăng cường sức khỏe, trừ bệnh, có điều bánh gạo chứa ít nước, khó tiêu hóa.",
+          "questions": [
+            {
+              "no": 67,
+              "text": "根据这段话，可以知道年糕：",
+              "options": [
+                "不好吃",
+                "不容易消化",
+                "没有营养",
+                "吃了容易生病"
+              ],
+              "answer": 1,
+              "explain": "Theo \"年糕含的水分少，不容易消化\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            68,
+            68
+          ],
+          "text": "堆雪人是北方孩子才能玩儿到的一种游戏，除了堆雪人，孩子们还可以打雪仗，所以冬天的时候，孩子们特别喜欢下雪。",
+          "vi": "Đắp người tuyết là trò chơi chỉ trẻ em miền Bắc mới được chơi; ngoài đắp người tuyết, trẻ còn có thể ném tuyết, nên mùa đông bọn trẻ đặc biệt thích tuyết rơi.",
+          "questions": [
+            {
+              "no": 68,
+              "text": "打雪仗是：",
+              "options": [
+                "一种职业",
+                "一种动作",
+                "一种游戏",
+                "一种工作"
+              ],
+              "answer": 2,
+              "explain": "Theo \"堆雪人是北方孩子才能玩儿到的一种游戏\" và \"除了堆雪人，孩子们还可以打雪仗\", ném tuyết cũng là một trò chơi."
+            }
+          ]
+        },
+        {
+          "range": [
+            69,
+            69
+          ],
+          "text": "最近的一次调查表明，年轻人可去的文化、娱乐场所太少了。除了卡拉OK、网吧，就只有电影院了。而由于票价太贵，很多情侣也不能经常去，大家非常不满意。",
+          "vi": "Một cuộc khảo sát gần đây cho thấy nơi vui chơi, văn hóa dành cho giới trẻ quá ít. Ngoài karaoke và quán net thì chỉ có rạp chiếu phim. Mà vì giá vé quá đắt nên nhiều cặp đôi cũng không thể đi thường xuyên, mọi người rất không hài lòng.",
+          "questions": [
+            {
+              "no": 69,
+              "text": "大家不满意的是：",
+              "options": [
+                "票价很贵",
+                "娱乐场所太少",
+                "电影院不好",
+                "卡拉OK太少"
+              ],
+              "answer": 0,
+              "explain": "Theo \"由于票价太贵，很多情侣也不能经常去，大家非常不满意\", điều không hài lòng là giá vé đắt."
+            }
+          ]
+        },
+        {
+          "range": [
+            70,
+            70
+          ],
+          "text": "珍珠奶茶不仅在口味上讲究，而且还很注重颜色，因此最能吸引年轻的消费者。",
+          "vi": "Trà sữa trân châu không chỉ chú trọng hương vị mà còn rất coi trọng màu sắc, do đó thu hút giới trẻ nhất.",
+          "questions": [
+            {
+              "no": 70,
+              "text": "根据这句话，可以知道珍珠奶茶：",
+              "options": [
+                "不好喝",
+                "颜色重",
+                "比较贵",
+                "年轻人喜欢"
+              ],
+              "answer": 3,
+              "explain": "Theo \"最能吸引年轻的消费者\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            71,
+            71
+          ],
+          "text": "很多人吃饭以后，喜欢马上吃水果，其实这样做对身体并不好，正确的做法是在饭后2小时或饭前1小时吃水果。",
+          "vi": "Nhiều người sau bữa ăn thích ăn trái cây ngay, thực ra làm vậy không tốt cho cơ thể; cách đúng là ăn trái cây sau bữa ăn 2 tiếng hoặc trước bữa ăn 1 tiếng.",
+          "questions": [
+            {
+              "no": 71,
+              "text": "吃水果的正确时间是：",
+              "options": [
+                "任何时间",
+                "饭前1小时",
+                "吃饭以前",
+                "饭后1小时"
+              ],
+              "answer": 1,
+              "explain": "Theo \"正确的做法是在饭后2小时或饭前1小时吃水果\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            72,
+            72
+          ],
+          "text": "我非常喜欢我的学生，他们每个人都很可爱，我很高兴能跟他们在一起，并且看着他们一天天地长大。",
+          "vi": "Tôi rất yêu quý học sinh của mình, em nào cũng đáng yêu, tôi rất vui được ở bên các em và nhìn các em lớn lên từng ngày.",
+          "questions": [
+            {
+              "no": 72,
+              "text": "“我”的职业是什么？",
+              "options": [
+                "教师",
+                "学生",
+                "演员",
+                "作家"
+              ],
+              "answer": 0,
+              "explain": "Theo \"我非常喜欢我的学生\", người nói là giáo viên."
+            }
+          ]
+        },
+        {
+          "range": [
+            73,
+            73
+          ],
+          "text": "大熊猫的头大，身体肥胖，尾巴很短，眼睛周围及四肢都是黑色，其余部分为白色。",
+          "vi": "Gấu trúc lớn có đầu to, thân mập, đuôi rất ngắn, xung quanh mắt và tứ chi đều màu đen, phần còn lại màu trắng.",
+          "questions": [
+            {
+              "no": 73,
+              "text": "这句话介绍的是大熊猫的：",
+              "options": [
+                "食物",
+                "生活环境",
+                "样子",
+                "颜色"
+              ],
+              "answer": 2,
+              "explain": "Đoạn văn giới thiệu hình dáng bên ngoài của gấu trúc (đầu, thân, đuôi, màu lông), nên chọn \"样子\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            74,
+            74
+          ],
+          "text": "一个工作能力很强的领导会让大家尊敬，但是一个性格很和善的领导往往更受员工喜爱。",
+          "vi": "Một lãnh đạo có năng lực làm việc mạnh khiến mọi người kính trọng, nhưng một lãnh đạo tính tình hiền hòa thường được nhân viên yêu quý hơn.",
+          "questions": [
+            {
+              "no": 74,
+              "text": "性格好的领导怎么样？",
+              "options": [
+                "令大家尊敬",
+                "员工喜欢",
+                "工作能力强",
+                "大家讨厌"
+              ],
+              "answer": 1,
+              "explain": "Theo \"性格很和善的领导往往更受员工喜爱\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            75,
+            75
+          ],
+          "text": "新鲜的豆浆作为日常健康饮品，有较高的营养价值，对身体很有好处，但一定注意不要空着肚子喝豆浆。",
+          "vi": "Sữa đậu nành tươi là thức uống tốt cho sức khỏe hằng ngày, có giá trị dinh dưỡng khá cao, rất có lợi cho cơ thể, nhưng nhất định chú ý không uống sữa đậu nành khi bụng đói.",
+          "questions": [
+            {
+              "no": 75,
+              "text": "根据这段话，可以知道：",
+              "options": [
+                "要少喝豆浆",
+                "豆浆对身体好",
+                "豆浆很贵",
+                "要空肚喝豆浆"
+              ],
+              "answer": 1,
+              "explain": "Theo \"对身体很有好处\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            76,
+            76
+          ],
+          "text": "周六我和赵先生约好去打高尔夫，本来想早点儿，可是路上堵车了，到球场时，赵先生已经在那里等我了。",
+          "vi": "Thứ Bảy tôi hẹn với ông Triệu đi đánh golf, vốn định đến sớm một chút, nhưng trên đường kẹt xe, đến sân thì ông Triệu đã đợi ở đó rồi.",
+          "questions": [
+            {
+              "no": 76,
+              "text": "根据这段话，“我”：",
+              "options": [
+                "遇到了堵车",
+                "没打球",
+                "走丢了",
+                "搬家了"
+              ],
+              "answer": 0,
+              "explain": "Theo \"路上堵车了\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            77,
+            77
+          ],
+          "text": "不要把社会上流行的事当成是自己感兴趣的事，虽然很多人喜欢，但它不一定适合你，所以你要仔细地考虑之后，再决定要不要去做。",
+          "vi": "Đừng coi những việc đang thịnh hành trong xã hội là việc mình hứng thú; tuy nhiều người thích nhưng nó chưa chắc hợp với bạn, nên bạn cần cân nhắc kỹ rồi hãy quyết định có làm hay không.",
+          "questions": [
+            {
+              "no": 77,
+              "text": "流行的事：",
+              "options": [
+                "你感兴趣",
+                "很多人喜欢",
+                "一定要去做",
+                "非常有意思"
+              ],
+              "answer": 1,
+              "explain": "Theo \"虽然很多人喜欢\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            78,
+            78
+          ],
+          "text": "我们在与别人交往时，要注意一些礼节。比如，在谈话时，不要谈疾病等不愉快的事情，不要询问女士年龄及是否结婚等等。",
+          "vi": "Khi giao tiếp với người khác, chúng ta cần chú ý một số lễ nghi. Ví dụ khi nói chuyện, không bàn về bệnh tật và những chuyện không vui, không hỏi tuổi hay tình trạng hôn nhân của phụ nữ, v.v.",
+          "questions": [
+            {
+              "no": 78,
+              "text": "与别人谈话时，可以谈什么内容？",
+              "options": [
+                "天气",
+                "疾病",
+                "不愉快的事",
+                "女士的年龄"
+              ],
+              "answer": 0,
+              "explain": "Bài nêu \"不要谈疾病等不愉快的事情，不要询问女士年龄\", ba lựa chọn B, C, D đều không nên nói; chỉ còn \"天气\" (đáp án A theo sách)."
+            }
+          ]
+        },
+        {
+          "range": [
+            79,
+            79
+          ],
+          "text": "放弃是一种清醒的选择。只有学会放弃那些应该放弃的东西或事情，才会让自己轻松起来；也只有学会放弃，才能远离烦恼，让生活更加美好。",
+          "vi": "Từ bỏ là một lựa chọn tỉnh táo. Chỉ khi học được cách từ bỏ những thứ, những việc cần từ bỏ thì mới thấy nhẹ nhõm; cũng chỉ khi học cách từ bỏ mới tránh xa phiền muộn, khiến cuộc sống tốt đẹp hơn.",
+          "questions": [
+            {
+              "no": 79,
+              "text": "根据这句话，怎样才能让生活更美好？",
+              "options": [
+                "学会选择",
+                "学会放弃",
+                "学会沟通",
+                "学会理解"
+              ],
+              "answer": 1,
+              "explain": "Theo \"只有学会放弃，才能……让生活更加美好\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            80,
+            81
+          ],
+          "text": "森林里准备举行才艺比赛，比赛前的三个星期，兔子发现自己胖了，就打算减肥。比赛当天，熊猫顺利地打完了太极拳，小鸟唱出了好听的歌曲，最后是兔子的表演，大家都很期待，没想到它跳了不久就晕倒了。原来，兔子由于减肥过度，导致营养不良，需要住院治疗。本来兔子最有希望得到冠军，可现在冠军是小鸟的了。",
+          "vi": "Trong rừng chuẩn bị tổ chức cuộc thi tài năng; ba tuần trước cuộc thi, thỏ thấy mình béo lên nên định giảm cân. Ngày thi, gấu trúc đánh xong bài thái cực quyền suôn sẻ, chim nhỏ hát một bài hay, cuối cùng là phần biểu diễn của thỏ, ai cũng mong chờ, không ngờ nhảy chưa được bao lâu thì thỏ ngất xỉu. Hóa ra thỏ giảm cân quá mức nên bị suy dinh dưỡng, cần nhập viện điều trị. Vốn thỏ có hy vọng nhất giành quán quân, nhưng giờ quán quân thuộc về chim nhỏ.",
+          "questions": [
+            {
+              "no": 80,
+              "text": "兔子为什么晕倒了？",
+              "options": [
+                "太累了",
+                "害怕",
+                "兴奋过度",
+                "营养不良"
+              ],
+              "answer": 3,
+              "explain": "Theo \"导致营养不良\", thỏ ngất vì suy dinh dưỡng."
+            },
+            {
+              "no": 81,
+              "text": "谁最后得了冠军？",
+              "options": [
+                "熊猫",
+                "小狗",
+                "小鸟",
+                "兔子"
+              ],
+              "answer": 2,
+              "explain": "Theo \"兔子最有希望得到冠军，可现在冠军是小鸟的了\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            82,
+            83
+          ],
+          "text": "要想让别人尽快与自己从陌生走向熟悉，最后成为朋友，你就要先表现出友好，因为主动的人总是比被动的人容易得到朋友。不要害怕行动，要知道，对方的心理和你一样，希望得到友谊而又有些不好意思。所以如果你先伸出友谊之手，你就已经成功了一半儿了。",
+          "vi": "Muốn người khác nhanh chóng từ xa lạ trở nên quen thuộc rồi thành bạn của mình, bạn phải thể hiện sự thân thiện trước, vì người chủ động luôn dễ có bạn hơn người bị động. Đừng sợ hành động, hãy biết rằng tâm lý đối phương cũng giống bạn: mong có tình bạn nhưng lại hơi ngại. Vì vậy nếu bạn chìa tay tình bạn trước thì bạn đã thành công một nửa rồi.",
+          "questions": [
+            {
+              "no": 82,
+              "text": "这段话讨论的主要内容是什么？",
+              "options": [
+                "交友",
+                "爱情",
+                "态度",
+                "生活"
+              ],
+              "answer": 0,
+              "explain": "Các cụm \"成为朋友\", \"得到朋友\", \"得到友谊\" cho thấy đoạn văn bàn về việc kết bạn."
+            },
+            {
+              "no": 83,
+              "text": "如果你要交朋友，最好怎么做？",
+              "options": [
+                "常打招呼",
+                "被动等待",
+                "希望得到",
+                "先表示友好"
+              ],
+              "answer": 3,
+              "explain": "Theo \"如果你先伸出友谊之手，你就已经成功了一半儿了\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            84,
+            85
+          ],
+          "text": "要想选择好未来的职业，上大学之前就应该做好准备。这时候如果能知道自己的真正兴趣，并且在进入大学时选择与此相关的专业，那么在大学学习期间你就能不断地丰富有关的知识，到大学毕业时，就能够与别人拉开很大一段距离了。",
+          "vi": "Muốn chọn tốt nghề nghiệp tương lai, trước khi vào đại học đã nên chuẩn bị. Lúc này nếu biết được sở thích thật sự của mình và chọn ngành liên quan khi vào đại học, thì trong thời gian học đại học bạn có thể không ngừng làm giàu kiến thức liên quan, đến khi tốt nghiệp sẽ tạo được khoảng cách khá lớn so với người khác.",
+          "questions": [
+            {
+              "no": 84,
+              "text": "选择职业的前期准备从什么时候开始？",
+              "options": [
+                "大学毕业时",
+                "进入大学前",
+                "开始工作后",
+                "大学快毕业时"
+              ],
+              "answer": 1,
+              "explain": "Theo \"上大学之前就应该做好准备\"."
+            },
+            {
+              "no": 85,
+              "text": "如果准备阶段努力丰富自己的知识，毕业时就会：",
+              "options": [
+                "找到工作",
+                "吸取教训",
+                "超过别人",
+                "对工作有兴趣"
+              ],
+              "answer": 2,
+              "explain": "Theo câu cuối \"就能够与别人拉开很大一段距离了\", tức vượt trội hơn người khác."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

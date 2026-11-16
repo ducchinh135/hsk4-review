@@ -1,0 +1,647 @@
+{
+  "test": 7,
+  "reading": {
+    "part1": {
+      "sets": [
+        {
+          "range": [
+            46,
+            50
+          ],
+          "words": [
+            "尽管",
+            "所",
+            "节约",
+            "离",
+            "坚持",
+            "家具"
+          ],
+          "example": {
+            "text": "她每天都___走路上下班，所以身体一直很不错。",
+            "answer": 4
+          },
+          "items": [
+            {
+              "no": 46,
+              "text": "其实我还是挺___的，不该花的钱我从不乱花。",
+              "answer": 2,
+              "vi": "Thật ra tôi vẫn khá tiết kiệm, tiền không đáng tiêu thì tôi chưa bao giờ tiêu bừa.",
+              "explain": "\"节约\" (tiết kiệm) hợp nghĩa với vế sau \"không đáng tiêu thì không tiêu bừa\"; các từ còn lại không điền được vào cấu trúc \"挺___的\"."
+            },
+            {
+              "no": 47,
+              "text": "这套___是我很久以前就想买的，今天终于可以买回去了。",
+              "answer": 5,
+              "vi": "Bộ đồ nội thất này tôi muốn mua từ lâu rồi, hôm nay cuối cùng cũng mua được mang về.",
+              "explain": "\"套\" là lượng từ, đi với danh từ \"家具\" (đồ nội thất) tạo thành cấu trúc \"lượng từ + danh từ\"."
+            },
+            {
+              "no": 48,
+              "text": "___考试结束还有十分钟，请同学们抓紧时间答题。",
+              "answer": 3,
+              "vi": "Còn mười phút nữa là hết giờ thi, mời các em tranh thủ thời gian làm bài.",
+              "explain": "\"离\" biểu thị khoảng cách về thời gian: cách lúc kết thúc kỳ thi còn mười phút."
+            },
+            {
+              "no": 49,
+              "text": "政府计划在两年内再建十___希望小学。",
+              "answer": 1,
+              "vi": "Chính phủ dự định trong vòng hai năm xây thêm mười ngôi trường Hy Vọng.",
+              "explain": "Lượng từ của \"学校\" (trường học) là \"所\"."
+            },
+            {
+              "no": 50,
+              "text": "___这件事我们没有告诉她，她还是知道了。",
+              "answer": 0,
+              "vi": "Mặc dù chúng tôi không nói với cô ấy chuyện này, cô ấy vẫn biết.",
+              "explain": "\"尽管\" biểu thị sự nhượng bộ chuyển ngoặt: dù có tình huống ở trước thì kết quả ở sau vẫn không đổi (đi với \"还是\")."
+            }
+          ]
+        },
+        {
+          "range": [
+            51,
+            55
+          ],
+          "words": [
+            "恐怕",
+            "带",
+            "恢复",
+            "精彩",
+            "温度",
+            "往"
+          ],
+          "example": {
+            "text": "A：今天真冷啊，好像白天最高___才2ºC。\nB：刚才电视里说明天更冷。",
+            "answer": 4
+          },
+          "items": [
+            {
+              "no": 51,
+              "text": "A：妈，我去同学家玩儿一会儿。\nB：好，下楼的时候顺便把垃圾___下去！",
+              "answer": 1,
+              "vi": "A: Mẹ ơi, con sang nhà bạn chơi một lát. B: Ừ, lúc xuống lầu tiện tay mang rác xuống luôn nhé!",
+              "explain": "\"带\" có nghĩa là tiện tay mang theo làm việc gì; mẹ dặn lúc xuống lầu tiện thể mang rác đi."
+            },
+            {
+              "no": 52,
+              "text": "A：于飞的胳膊现在怎么样了？\nB：他这次摔得可不轻，估计还得过一段时间才能___。",
+              "answer": 2,
+              "vi": "A: Cánh tay của Vu Phi giờ thế nào rồi? B: Lần này cậu ấy ngã không nhẹ đâu, chắc còn phải một thời gian nữa mới hồi phục được.",
+              "explain": "\"恢复\" là trở lại trạng thái ban đầu; tay bị thương cần thời gian mới khỏi, phục hồi như cũ."
+            },
+            {
+              "no": 53,
+              "text": "A：这么晚了，小王___不能来了。\nB：那可怎么办呀？我的资料还在他那儿呢！",
+              "answer": 0,
+              "vi": "A: Muộn thế này rồi, e rằng Tiểu Vương không đến được nữa. B: Thế thì làm sao đây? Tài liệu của tôi vẫn còn ở chỗ cậu ấy!",
+              "explain": "\"恐怕\" biểu thị sự ước đoán kèm theo lo lắng; người nói đoán Tiểu Vương không đến được."
+            },
+            {
+              "no": 54,
+              "text": "A：先生，您能不能再___前动一动，我这儿太挤了。\nB：不好意思，这车人太多，前边也没地方了。",
+              "answer": 5,
+              "vi": "A: Thưa ông, ông có thể nhích lên phía trước thêm chút nữa không, chỗ tôi chật quá. B: Xin lỗi, xe đông người quá, phía trước cũng hết chỗ rồi.",
+              "explain": "Giới từ \"往\" đứng trước động từ, kết hợp với từ chỉ phương hướng tạo cấu trúc \"往 + phương vị + động từ\"."
+            },
+            {
+              "no": 55,
+              "text": "A：昨天的演出太___了，你没看真可惜。\nB：没事儿，我还能弄到票。",
+              "answer": 3,
+              "vi": "A: Buổi biểu diễn hôm qua hay tuyệt, cậu không xem thật đáng tiếc. B: Không sao, tớ vẫn có thể kiếm được vé.",
+              "explain": "\"精彩\" thường dùng để khen buổi biểu diễn, triển lãm, bài viết... hay, xuất sắc; hợp với ngữ cảnh."
+            }
+          ]
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 56,
+          "sentences": [
+            "如果明天下大雪",
+            "飞机无法起飞",
+            "那我就不能去开会了"
+          ],
+          "answer": "ABC",
+          "vi": "Nếu ngày mai tuyết rơi dày, máy bay không thể cất cánh, vậy thì tôi sẽ không thể đi họp được.",
+          "explain": "Cặp từ liên kết \"如果……就……\" biểu thị giả thiết; B là phần bổ sung cho A, C là kết quả."
+        },
+        {
+          "no": 57,
+          "sentences": [
+            "知道了我的成绩后",
+            "给我留下了很深的印象",
+            "他那兴奋的表情"
+          ],
+          "answer": "ACB",
+          "vi": "Sau khi biết điểm của tôi, vẻ mặt phấn khích của anh ấy đã để lại cho tôi ấn tượng rất sâu sắc.",
+          "explain": "A nêu thời điểm, C và B nói về tình huống, trong đó B là kết quả của C."
+        },
+        {
+          "no": 58,
+          "sentences": [
+            "介绍情况时也很诚恳",
+            "这让顾客感到非常放心",
+            "她的服务热情周到"
+          ],
+          "answer": "CAB",
+          "vi": "Cô ấy phục vụ nhiệt tình chu đáo, khi giới thiệu tình hình cũng rất chân thành, điều này khiến khách hàng cảm thấy rất yên tâm.",
+          "explain": "A và C nhấn mạnh sự thật, A bổ sung cho C (\"也\"), B nêu kết quả."
+        },
+        {
+          "no": 59,
+          "sentences": [
+            "要马上送他去医院",
+            "他看起来病得很厉害",
+            "否则就耽误了"
+          ],
+          "answer": "BAC",
+          "vi": "Trông anh ấy ốm rất nặng, phải đưa anh ấy đi bệnh viện ngay, nếu không sẽ lỡ việc (chậm trễ).",
+          "explain": "B nêu tình huống, A đưa ra cách giải quyết, C chỉ ra hậu quả nếu không làm như vậy (\"否则\")."
+        },
+        {
+          "no": 60,
+          "sentences": [
+            "所以决心把公益活动做好",
+            "听了您的精彩讲话",
+            "我非常感动"
+          ],
+          "answer": "BCA",
+          "vi": "Nghe bài nói chuyện đặc sắc của ngài, tôi vô cùng cảm động, vì vậy quyết tâm làm tốt các hoạt động công ích.",
+          "explain": "B thực chất chỉ thời gian (lược \"后\": nghe xong...), C nối tiếp tình huống trước, A nêu kết quả (\"所以\")."
+        },
+        {
+          "no": 61,
+          "sentences": [
+            "请不要伤心",
+            "假如生活中你失败了",
+            "因为你会从失败中学到很多东西"
+          ],
+          "answer": "BAC",
+          "vi": "Nếu trong cuộc sống bạn thất bại, xin đừng buồn, vì bạn sẽ học được rất nhiều điều từ thất bại.",
+          "explain": "B nêu giả thiết, A là kết quả của nó, C giải thích cho phần trước (\"因为\")."
+        },
+        {
+          "no": 62,
+          "sentences": [
+            "我是一名大学毕业生",
+            "为了支援西部教育事业",
+            "我一个人来到了西部山区"
+          ],
+          "answer": "ABC",
+          "vi": "Tôi là một sinh viên tốt nghiệp đại học, để hỗ trợ sự nghiệp giáo dục miền Tây, tôi một mình đến vùng núi phía Tây.",
+          "explain": "A giới thiệu tình hình, B và C bổ sung; mệnh đề \"为了\" chỉ nguyên nhân thường đặt phía trước."
+        },
+        {
+          "no": 63,
+          "sentences": [
+            "所以我们不能只看眼前利益",
+            "选择职业是人生的一件大事",
+            "而要看以后能否有较大发展"
+          ],
+          "answer": "BAC",
+          "vi": "Chọn nghề là một việc lớn của đời người, vì vậy chúng ta không thể chỉ nhìn lợi ích trước mắt, mà phải xem sau này có thể phát triển lớn hơn hay không.",
+          "explain": "B nêu tình huống, A và C là quan điểm rút ra; mẫu \"不能(要)……而要……\" là cấu trúc lựa chọn thường gặp."
+        },
+        {
+          "no": 64,
+          "sentences": [
+            "小明的学习一直都很好",
+            "总是考90多分",
+            "但最近的考试竟然不及格"
+          ],
+          "answer": "ABC",
+          "vi": "Việc học của Tiểu Minh luôn rất tốt, lúc nào cũng được hơn 90 điểm, nhưng kỳ thi gần đây lại bất ngờ không đạt.",
+          "explain": "A nêu chủ ngữ, B bổ sung, C chuyển ngoặt (\"但\") nói ngược lại với phần trước."
+        },
+        {
+          "no": 65,
+          "sentences": [
+            "即使工资再高，条件再好",
+            "也不一定能保证工作热情",
+            "做自己不喜欢的工作"
+          ],
+          "answer": "CAB",
+          "vi": "Làm công việc mình không thích, dù lương có cao hơn, điều kiện có tốt hơn nữa, cũng chưa chắc đảm bảo được nhiệt huyết làm việc.",
+          "explain": "C nêu tình huống, A và B nhấn mạnh kết quả; cặp \"即使……也……\" biểu thị giả thiết nhượng bộ."
+        }
+      ]
+    },
+    "part3": {
+      "passages": [
+        {
+          "range": [
+            66,
+            66
+          ],
+          "text": "晓东每天一回家不是看动画片，就是上网玩儿游戏，几乎很少做作业，但每次考试都能考到班级前三名，这让爸爸妈妈觉得很奇怪。",
+          "vi": "Mỗi ngày về đến nhà, Hiểu Đông hoặc là xem phim hoạt hình, hoặc là lên mạng chơi game, hầu như rất ít làm bài tập, nhưng lần thi nào cũng đứng trong ba hạng đầu của lớp, điều này khiến bố mẹ cậu thấy rất lạ.",
+          "questions": [
+            {
+              "no": 66,
+              "text": "晓东学习怎么样？",
+              "options": [
+                "进不了前三",
+                "很骄傲",
+                "很不好",
+                "成绩不错"
+              ],
+              "answer": 3,
+              "explain": "Câu \"每次考试都能考到班级前三名\" cho biết thành tích học tập của Hiểu Đông rất tốt, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            67,
+            67
+          ],
+          "text": "每个人都希望自己的孩子有良好的生活习惯，但良好的习惯并不是一天两天就能养成的，这需要父母从小就严格地要求孩子，并用自己的行动去影响他们。",
+          "vi": "Ai cũng mong con mình có thói quen sinh hoạt tốt, nhưng thói quen tốt không phải một hai ngày là hình thành được, điều này cần bố mẹ yêu cầu nghiêm khắc con từ nhỏ, và dùng hành động của chính mình để ảnh hưởng đến con.",
+          "questions": [
+            {
+              "no": 67,
+              "text": "下列哪一项不是父母应该做的？",
+              "options": [
+                "严格要求",
+                "长时间培养",
+                "自己先做好",
+                "让孩子自己选择"
+              ],
+              "answer": 3,
+              "explain": "\"不是一天两天就能养成\" -> cần bồi dưỡng lâu dài; \"从小就严格地要求孩子\" -> yêu cầu nghiêm khắc; \"用自己的行动去影响他们\" -> bản thân làm tốt trước. Chỉ có D không được nhắc đến."
+            }
+          ]
+        },
+        {
+          "range": [
+            68,
+            68
+          ],
+          "text": "海南岛属热带海洋性气候，雨水较多，终年鲜花盛开，是中国著名的旅游胜地，尤其是冬天，北方游客都喜欢到这里来感受温暖的阳光。",
+          "vi": "Đảo Hải Nam thuộc khí hậu nhiệt đới hải dương, mưa khá nhiều, quanh năm hoa nở rộ, là thắng cảnh du lịch nổi tiếng của Trung Quốc, đặc biệt vào mùa đông, du khách miền Bắc đều thích đến đây để cảm nhận ánh nắng ấm áp.",
+          "questions": [
+            {
+              "no": 68,
+              "text": "这段话主要在谈海南岛：",
+              "options": [
+                "很热",
+                "不太冷",
+                "有鲜花",
+                "适合旅游"
+              ],
+              "answer": 3,
+              "explain": "Câu \"是中国著名的旅游胜地\" cho thấy đoạn văn nói về việc Hải Nam thích hợp để du lịch, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            69,
+            69
+          ],
+          "text": "一个人的能力是有限的，无论我们做什么样的工作，都不要认为自己是唯一能够做好的人。要知道，把工作分给其他人，这既减小了工作强度，也会让自己有时间去做更多的工作。",
+          "vi": "Năng lực của một người là có hạn, dù chúng ta làm công việc gì, cũng đừng cho rằng mình là người duy nhất làm tốt được. Cần biết rằng, giao bớt việc cho người khác, vừa giảm cường độ công việc, vừa giúp mình có thời gian làm được nhiều việc hơn.",
+          "questions": [
+            {
+              "no": 69,
+              "text": "把工作分给别人是为了：",
+              "options": [
+                "使工作变少",
+                "让自己休息",
+                "不让别人休息",
+                "减小工作强度"
+              ],
+              "answer": 3,
+              "explain": "Dựa vào \"把工作分给其他人，这既减小了工作强度，也……\" nên chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            70,
+            70
+          ],
+          "text": "我家附近是一所中学。上课的铃声和学生们的读书声，每天都伴着我，使我对学习有了兴趣，对学校有了很深的感情。",
+          "vi": "Gần nhà tôi có một trường trung học. Tiếng chuông vào lớp và tiếng đọc bài của học sinh ngày nào cũng đồng hành cùng tôi, khiến tôi có hứng thú với việc học, và có tình cảm sâu sắc với trường học.",
+          "questions": [
+            {
+              "no": 70,
+              "text": "根据这段话，“我”家附近的学校：",
+              "options": [
+                "学生很讨厌",
+                "学生很爱学习",
+                "使我更爱学习",
+                "让我不喜欢学校"
+              ],
+              "answer": 2,
+              "explain": "Câu \"使我对学习有了兴趣，对学校有了很深的感情\" cho thấy ngôi trường khiến \"tôi\" yêu việc học hơn, chọn C."
+            }
+          ]
+        },
+        {
+          "range": [
+            71,
+            71
+          ],
+          "text": "今天是星期日，妈妈去单位加班了，家里只有我和爸爸。平时都是妈妈做家务，所以我和爸爸决定搞搞家庭卫生，收拾收拾。",
+          "vi": "Hôm nay là Chủ nhật, mẹ đi làm thêm ở cơ quan, trong nhà chỉ có tôi và bố. Bình thường đều là mẹ làm việc nhà, nên tôi và bố quyết định dọn dẹp vệ sinh nhà cửa một chút.",
+          "questions": [
+            {
+              "no": 71,
+              "text": "“我”和爸爸想要做什么？",
+              "options": [
+                "做饭",
+                "去买菜",
+                "看电视",
+                "打扫卫生"
+              ],
+              "answer": 3,
+              "explain": "Câu \"我和爸爸决定搞搞家庭卫生，收拾收拾\" cho biết hai bố con muốn dọn dẹp vệ sinh, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            72,
+            72
+          ],
+          "text": "电影《阿凡达》取得了很大成功，其中一个很重要的原因就是它向人们展示了大自然的壮美。为了使观众有身在其中的感觉，它还采用了3D技术，观众只要戴上眼镜，就能跟电影中的阿凡达一样来到美丽的大山里。",
+          "vi": "Bộ phim Avatar đã đạt thành công lớn, một trong những nguyên nhân rất quan trọng là nó cho mọi người thấy vẻ hùng vĩ tươi đẹp của thiên nhiên. Để khán giả có cảm giác như đang ở trong đó, phim còn sử dụng kỹ thuật 3D, khán giả chỉ cần đeo kính là có thể giống như Avatar trong phim đến với những ngọn núi tuyệt đẹp.",
+          "questions": [
+            {
+              "no": 72,
+              "text": "根据这句话，观众喜欢《阿凡达》的原因是：",
+              "options": [
+                "景色美",
+                "画面清楚",
+                "可以戴眼镜",
+                "电影票便宜"
+              ],
+              "answer": 0,
+              "explain": "Câu \"其中一个很重要的原因就是它向人们展示了大自然的壮美\" nên chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            73,
+            73
+          ],
+          "text": "很小的时候，我就有了第一个理想，当一名女警察。现在想一想，当时的我，其实是喜欢女警察们漂亮的警服和她们指挥交通时迷人的动作。",
+          "vi": "Từ khi còn rất nhỏ, tôi đã có ước mơ đầu tiên là trở thành một nữ cảnh sát. Giờ nghĩ lại, thực ra khi đó tôi thích bộ cảnh phục đẹp của các nữ cảnh sát và những động tác cuốn hút khi họ điều khiển giao thông.",
+          "questions": [
+            {
+              "no": 73,
+              "text": "我想当女警察的原因之一是：",
+              "options": [
+                "长得好看",
+                "服装漂亮",
+                "身材苗条",
+                "动作很快"
+              ],
+              "answer": 1,
+              "explain": "Câu \"其实是喜欢女警察们漂亮的警服……\" cho biết \"tôi\" thích vì trang phục của họ đẹp, chọn B."
+            }
+          ]
+        },
+        {
+          "range": [
+            74,
+            74
+          ],
+          "text": "有些人大学毕业后选择留在大城市发展。可由于没有钱买房子，只好与同学或者朋友合租房子。他们说这样很好，不仅减少了租房的费用，有时还能在一起聊聊天儿。",
+          "vi": "Một số người sau khi tốt nghiệp đại học chọn ở lại thành phố lớn để phát triển. Nhưng do không có tiền mua nhà, đành thuê chung nhà với bạn học hoặc bạn bè. Họ nói như vậy rất tốt, không chỉ giảm chi phí thuê nhà, đôi khi còn có thể ngồi trò chuyện với nhau.",
+          "questions": [
+            {
+              "no": 74,
+              "text": "这些大学生合租房子的原因是：",
+              "options": [
+                "钱不太多",
+                "喜欢聊天儿",
+                "不能单独生活",
+                "能一起吃饭"
+              ],
+              "answer": 0,
+              "explain": "Câu \"这样不仅减少了租房的费用\" cho thấy thuê chung để giảm tiền thuê nhà, tức là không có nhiều tiền, chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            75,
+            75
+          ],
+          "text": "电脑修理部的李经理喜欢与顾客沟通。每当有顾客来修电脑，他都积极、热心地为他们讲解电脑使用方面的知识和注意事项。",
+          "vi": "Giám đốc Lý của bộ phận sửa chữa máy tính thích trao đổi với khách hàng. Mỗi khi có khách đến sửa máy tính, ông đều tích cực, nhiệt tình giảng giải cho họ kiến thức sử dụng máy tính và những điều cần chú ý.",
+          "questions": [
+            {
+              "no": 75,
+              "text": "李经理对待顾客：",
+              "options": [
+                "很热情",
+                "很冷静",
+                "有知识",
+                "爱聊天儿"
+              ],
+              "answer": 0,
+              "explain": "Câu \"每当有顾客来修电脑，他都积极、热心地……\" cho biết giám đốc Lý rất nhiệt tình với khách, chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            76,
+            76
+          ],
+          "text": "由于家庭条件不好，知识水平又很低，大多数农民进城以后，只能在服务、加工等只要求初等技术的行业工作。",
+          "vi": "Do điều kiện gia đình không tốt, trình độ kiến thức lại rất thấp, đa số nông dân sau khi vào thành phố chỉ có thể làm việc trong các ngành như dịch vụ, gia công, vốn chỉ đòi hỏi kỹ thuật sơ cấp.",
+          "questions": [
+            {
+              "no": 76,
+              "text": "农民工大多在服务、加工等行业工作是由于：",
+              "options": [
+                "没有钱",
+                "知识很少",
+                "喜欢自由",
+                "不想动脑"
+              ],
+              "answer": 1,
+              "explain": "Câu \"知识水平又很低\" cho biết nguyên nhân là kiến thức ít, chọn B."
+            }
+          ]
+        },
+        {
+          "range": [
+            77,
+            77
+          ],
+          "text": "一天，小明看到同学小刚家有一个非常好看的足球，上面有好多明星的签名，于是他就想学踢足球了。",
+          "vi": "Một hôm, Tiểu Minh thấy nhà bạn học Tiểu Cương có một quả bóng đá rất đẹp, trên đó có chữ ký của rất nhiều ngôi sao, thế là cậu muốn học đá bóng.",
+          "questions": [
+            {
+              "no": 77,
+              "text": "小明想学踢足球是因为：",
+              "options": [
+                "想当明星",
+                "喜欢运动",
+                "喜欢给人签名",
+                "喜欢那个足球"
+              ],
+              "answer": 3,
+              "explain": "Câu \"看到同学小刚家有一个非常好看的足球……于是他就想学踢足球了\" cho thấy cậu thích quả bóng đó nên mới muốn học đá bóng, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            78,
+            78
+          ],
+          "text": "学习外语时要多说、多练，这样才能使自己进步得更快。当别人纠正你的错误时，也不要不好意思，因为每个人都是在改正自己错误的过程中进步的。",
+          "vi": "Khi học ngoại ngữ cần nói nhiều, luyện nhiều, như vậy mới giúp bản thân tiến bộ nhanh hơn. Khi người khác sửa lỗi cho bạn, cũng đừng ngại, vì mỗi người đều tiến bộ trong quá trình sửa lỗi của chính mình.",
+          "questions": [
+            {
+              "no": 78,
+              "text": "这段话主要是说：",
+              "options": [
+                "学习的态度",
+                "要相信自己",
+                "要纠正错误",
+                "每个人都一样"
+              ],
+              "answer": 0,
+              "explain": "Dựa vào \"学习外语时要多说、多练……不要不好意思……因为……\", đoạn văn chủ yếu nói về thái độ học tập, chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            79,
+            79
+          ],
+          "text": "香滑的炖蛋和双皮奶是澳门非常有名的小吃。无论是夏天还是冬天，店家门口总是有排着队等着品尝的人。",
+          "vi": "Trứng hấp mịn thơm và sữa đôi lớp là những món ăn vặt rất nổi tiếng của Ma Cao. Dù là mùa hè hay mùa đông, trước cửa tiệm lúc nào cũng có người xếp hàng chờ nếm thử.",
+          "questions": [
+            {
+              "no": 79,
+              "text": "这段话主要说的是：",
+              "options": [
+                "澳门的气候",
+                "澳门的小吃",
+                "澳门人的习惯",
+                "澳门人的传统"
+              ],
+              "answer": 1,
+              "explain": "Câu \"香滑的炖蛋和双皮奶是澳门非常有名的小吃\" nên chọn B."
+            }
+          ]
+        },
+        {
+          "range": [
+            80,
+            81
+          ],
+          "text": "根据19日的天气预报，未来三天，全国大部分地区天气晴好，降雨量较少。新疆西部和东北部分地区有小到中雪，南方有小雨或阵雨。今后10天，中东部的大部分地区气温将逐步回升，东北地区最低气温在零下10—零下15度左右，华北等地气温将比去年同期高1—3度。",
+          "vi": "Theo dự báo thời tiết ngày 19, ba ngày tới phần lớn các khu vực trên cả nước trời đẹp, lượng mưa ít. Tây Tân Cương và một số khu vực Đông Bắc có tuyết nhỏ đến vừa, miền Nam có mưa nhỏ hoặc mưa rào. Trong 10 ngày tới, nhiệt độ ở phần lớn khu vực miền Trung và miền Đông sẽ dần tăng trở lại, nhiệt độ thấp nhất ở Đông Bắc khoảng từ âm 10 đến âm 15 độ, nhiệt độ ở Hoa Bắc và các nơi khác sẽ cao hơn cùng kỳ năm ngoái 1-3 độ.",
+          "questions": [
+            {
+              "no": 80,
+              "text": "未来三天，哪个地方会下雪？",
+              "options": [
+                "新疆西北部",
+                "新疆南部",
+                "中东部大部分地区",
+                "东北一些地方"
+              ],
+              "answer": 3,
+              "explain": "Câu \"新疆西部和东北部分地区有小到中雪\" cho thấy Tây Tân Cương và một số nơi ở Đông Bắc có tuyết, chọn D."
+            },
+            {
+              "no": 81,
+              "text": "如果去年这个时候华北地区的最高气温是15度，今年就是：",
+              "options": [
+                "16—18度",
+                "12—14度",
+                "15度",
+                "18—21度"
+              ],
+              "answer": 0,
+              "explain": "Câu \"华北等地气温将比去年同期高1—3度\", năm ngoái là 15 độ nên năm nay khoảng 16-18 độ, chọn A."
+            }
+          ]
+        },
+        {
+          "range": [
+            82,
+            83
+          ],
+          "text": "大学毕业生选择第一份工作时应该认真考虑，因为这将对他们个人的工作态度和工作习惯产生很大的影响，也可能决定着他们将来事业的发展。如果工作几年后，才发现自己的兴趣爱好不适合这份工作，再想去别的公司，可能会有些晚了。",
+          "vi": "Sinh viên tốt nghiệp đại học khi chọn công việc đầu tiên nên cân nhắc nghiêm túc, vì điều này sẽ ảnh hưởng rất lớn đến thái độ làm việc và thói quen làm việc cá nhân của họ, cũng có thể quyết định sự phát triển sự nghiệp sau này. Nếu làm vài năm mới phát hiện sở thích của mình không hợp với công việc này, rồi muốn chuyển sang công ty khác thì có thể hơi muộn.",
+          "questions": [
+            {
+              "no": 82,
+              "text": "选择第一份工作：",
+              "options": [
+                "很容易",
+                "要认真考虑",
+                "要看爱好",
+                "难度很大"
+              ],
+              "answer": 1,
+              "explain": "Câu \"大学毕业生选择第一份工作时应该认真考虑\" nên chọn B."
+            },
+            {
+              "no": 83,
+              "text": "第一份工作对什么没有影响？",
+              "options": [
+                "工作态度",
+                "工作习惯",
+                "事业发展",
+                "个人专长"
+              ],
+              "answer": 3,
+              "explain": "Bài nhắc đến thái độ làm việc, thói quen làm việc và sự phát triển sự nghiệp; chỉ có \"个人专长\" (sở trường cá nhân) không được nhắc đến, chọn D."
+            }
+          ]
+        },
+        {
+          "range": [
+            84,
+            85
+          ],
+          "text": "随着网络的流行，现在出现了很多网络语言，比如，“偷菜去”“哥吃的不是面，是寂寞”等，这些语言新鲜、有趣儿，而且有些还说明了一定的道理。所以，人们聊天儿的时候常常喜欢用。",
+          "vi": "Cùng với sự phổ biến của Internet, hiện nay xuất hiện rất nhiều ngôn ngữ mạng, ví dụ \"đi hái trộm rau\", \"anh ăn không phải mì mà là cô đơn\"..., những câu nói này mới mẻ, thú vị, hơn nữa có câu còn nói lên một đạo lý nhất định. Vì vậy, khi trò chuyện mọi người thường thích dùng.",
+          "questions": [
+            {
+              "no": 84,
+              "text": "这段话主要在谈什么？",
+              "options": [
+                "心情",
+                "网络语言",
+                "QQ聊天儿",
+                "玩儿游戏"
+              ],
+              "answer": 1,
+              "explain": "Đoạn văn giới thiệu sự xuất hiện của ngôn ngữ mạng, nội dung cụ thể và lý do mọi người thích dùng, chọn B."
+            },
+            {
+              "no": 85,
+              "text": "人们对此有什么看法？",
+              "options": [
+                "比较喜欢",
+                "十分讨厌",
+                "不满意",
+                "很生气"
+              ],
+              "answer": 0,
+              "explain": "Câu \"人们聊天儿的时候常常喜欢用\" cho thấy mọi người khá thích, chọn A."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

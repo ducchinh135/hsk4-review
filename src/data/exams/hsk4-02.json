@@ -1,0 +1,647 @@
+{
+ "test": 2,
+ "reading": {
+  "part1": {
+   "sets": [
+    {
+     "range": [
+      46,
+      50
+     ],
+     "words": [
+      "要是",
+      "挑",
+      "态度",
+      "尽快",
+      "还是",
+      "坚持"
+     ],
+     "example": {
+      "text": "她每天都___走路上下班,所以身体一直很不错。",
+      "answer": 5
+     },
+     "items": [
+      {
+       "no": 46,
+       "text": "晚上十点以后最好不要给朋友打电话,即使非打不可,也要___说完。",
+       "answer": 3,
+       "vi": "Sau mười giờ tối tốt nhất đừng gọi điện cho bạn bè, dù buộc phải gọi cũng phải nói xong càng nhanh càng tốt.",
+       "explain": "“尽快” là cố gắng tăng tốc độ; câu có nghĩa là nói cho xong thật nhanh nên chọn 尽快."
+      },
+      {
+       "no": 47,
+       "text": "___礼拜天下雨,我们就不能去郊区了。",
+       "answer": 0,
+       "vi": "Nếu Chủ nhật trời mưa thì chúng ta không thể đi ngoại ô được.",
+       "explain": "Phó từ “要是” biểu thị giả thiết, thường dùng cùng với “就” nên chọn 要是."
+      },
+      {
+       "no": 48,
+       "text": "虽然他身边有很多漂亮女孩儿,可是要___一个做女朋友,却不容易。",
+       "answer": 1,
+       "vi": "Tuy bên cạnh anh ấy có nhiều cô gái xinh đẹp, nhưng chọn một người làm bạn gái thì lại không dễ.",
+       "explain": "“挑” là chọn ra người hay vật phù hợp yêu cầu từ nhiều người hay vật; câu nói chọn một người từ “nhiều cô gái xinh đẹp” làm bạn gái."
+      },
+      {
+       "no": 49,
+       "text": "我经常去那家理发店弄头发,那儿的服务___好,价钱也合理。",
+       "answer": 2,
+       "vi": "Tôi thường đến tiệm cắt tóc đó làm tóc, thái độ phục vụ ở đó rất tốt, giá cả cũng hợp lý.",
+       "explain": "“态度” là cử chỉ, thần thái của con người; câu nói tiệm đó phục vụ khách có thái độ tốt nên chọn 态度."
+      },
+      {
+       "no": 50,
+       "text": "你想喝热咖啡、鲜牛奶,___果汁?我这儿什么都有,不用客气。",
+       "answer": 4,
+       "vi": "Bạn muốn uống cà phê nóng, sữa tươi hay là nước ép? Chỗ tôi cái gì cũng có, đừng khách sáo.",
+       "explain": "“还是” ở đây là liên từ, dùng trong câu hỏi lựa chọn, biểu thị chọn một trong nhiều mục nên chọn 还是."
+      }
+     ]
+    },
+    {
+     "range": [
+      51,
+      55
+     ],
+     "words": [
+      "愿意",
+      "弄",
+      "不得不",
+      "温度",
+      "上",
+      "了不起"
+     ],
+     "example": {
+      "text": "A:今天真冷啊,好像白天最高___才2℃。\nB:刚才电视里说明天更冷。",
+      "answer": 3
+     },
+     "items": [
+      {
+       "no": 51,
+       "text": "A:我___到了两张明天的球票,你想不想去?\nB:那还用说。",
+       "answer": 1,
+       "vi": "A: Mình kiếm được hai vé bóng đá ngày mai, cậu có muốn đi không?\nB: Còn phải hỏi nữa.",
+       "explain": "“弄” là tìm cách có được; câu có nghĩa là nghĩ cách kiếm được hai vé bóng nên chọn 弄."
+      },
+      {
+       "no": 52,
+       "text": "A:这儿景色太美了,简直就像画儿一样!\nB:是啊,我都不___离开了,要是能在这儿生活,那该有多好啊!",
+       "answer": 0,
+       "vi": "A: Phong cảnh ở đây đẹp quá, đúng là như tranh vẽ!\nB: Đúng vậy, tôi còn chẳng muốn rời đi nữa, giá mà được sống ở đây thì tốt biết bao!",
+       "explain": "“不愿意” nghĩa là “不想”; câu nói cảnh đẹp quá nên không muốn rời đi."
+      },
+      {
+       "no": 53,
+       "text": "A:张教授太___了,竟然能说五种语言。\nB:是啊,听说他父母都是研究语言的教授。",
+       "answer": 5,
+       "vi": "A: Giáo sư Trương thật giỏi quá, lại có thể nói được năm thứ tiếng.\nB: Đúng vậy, nghe nói bố mẹ ông ấy đều là giáo sư nghiên cứu ngôn ngữ.",
+       "explain": "“了不起” biểu thị nổi bật, phi thường, rất xuất sắc, dùng để khen người; hợp với ý câu."
+      },
+      {
+       "no": 54,
+       "text": "A:如果你在生活___遇到了什么困难,尽管来找我好了!\nB:太谢谢你了,有你这样的朋友我真幸运。",
+       "answer": 4,
+       "vi": "A: Nếu trong cuộc sống bạn gặp khó khăn gì, cứ đến tìm tôi nhé!\nB: Cảm ơn bạn nhiều lắm, có người bạn như bạn tôi thật may mắn.",
+       "explain": "Phương vị từ “上” có nghĩa trừu tượng chỉ “phương diện”, thường kết hợp với “在” thành cấu trúc “在……上” nên chọn 上."
+      },
+      {
+       "no": 55,
+       "text": "A:听说李克的爸爸住院了,好像病得很厉害。\nB:是啊,所以他___回国了。",
+       "answer": 2,
+       "vi": "A: Nghe nói bố của Lý Khắc nhập viện rồi, hình như bệnh rất nặng.\nB: Đúng vậy, nên cậu ấy buộc phải về nước.",
+       "explain": "“不得不” có nghĩa là bắt buộc, chỉ có thể làm như vậy; bố ốm nặng nên cậu ấy buộc phải về nước."
+      }
+     ]
+    }
+   ]
+  },
+  "part2": {
+   "questions": [
+    {
+     "no": 56,
+     "sentences": [
+      "烤鸭不仅味道香",
+      "它已经有几百年的历史了",
+      "而且营养丰富,有助于美容"
+     ],
+     "answer": "ACB",
+     "vi": "Vịt quay không chỉ có mùi vị thơm mà còn giàu dinh dưỡng, có lợi cho làm đẹp, nó đã có lịch sử vài trăm năm rồi.",
+     "explain": "Cặp từ nối “不仅……而且……” biểu thị tăng tiến, “它” trong B chỉ món vịt quay nên thứ tự là ACB."
+    },
+    {
+     "no": 57,
+     "sentences": [
+      "不管你愿意不愿意",
+      "我们生活在社会中",
+      "总要和各种各样的人打交道"
+     ],
+     "answer": "BAC",
+     "vi": "Chúng ta sống trong xã hội, dù bạn có muốn hay không thì cũng luôn phải giao tiếp với đủ loại người.",
+     "explain": "B tổng thuật tình hình, phạm vi; A và C giải thích cho B, cặp “不管……总……” biểu thị điều kiện nên thứ tự là BAC."
+    },
+    {
+     "no": 58,
+     "sentences": [
+      "据统计,人口最多的是广东省",
+      "中国有二十三个省",
+      "青海省的人口则是最少的"
+     ],
+     "answer": "BAC",
+     "vi": "Trung Quốc có hai mươi ba tỉnh, theo thống kê, tỉnh đông dân nhất là Quảng Đông, còn tỉnh Thanh Hải thì có dân số ít nhất.",
+     "explain": "B nêu đối tượng cần nói; A và C là giải thích, thuyết minh về B, “据统计” dẫn ra kết quả thống kê nên thứ tự là BAC."
+    },
+    {
+     "no": 59,
+     "sentences": [
+      "原来他记错了时间",
+      "差不多一个小时后",
+      "我在公园门口等到了他"
+     ],
+     "answer": "BCA",
+     "vi": "Khoảng một tiếng sau, tôi đợi được anh ấy ở cổng công viên, hóa ra anh ấy nhớ nhầm thời gian.",
+     "explain": "B và C nêu tình huống, thường đặt thời gian ở trước; A giải thích tình huống phía trước, chỉ ra nguyên nhân nên thứ tự là BCA."
+    },
+    {
+     "no": 60,
+     "sentences": [
+      "这几年,城市的交通有了很大的改善",
+      "而且空气也越来越不好",
+      "但是上下班的时候还是常常堵车"
+     ],
+     "answer": "ACB",
+     "vi": "Mấy năm nay giao thông thành phố đã được cải thiện rất nhiều, nhưng lúc đi làm tan làm vẫn thường kẹt xe, hơn nữa không khí cũng ngày càng xấu.",
+     "explain": "A nêu tình huống, “但是……” biểu thị chuyển ngoặt, “而且” bổ sung và tăng tiến cho phần trước nên thứ tự là ACB."
+    },
+    {
+     "no": 61,
+     "sentences": [
+      "给我留下了很深的印象",
+      "应聘的时候表现得非常自信",
+      "就是那个大学生"
+     ],
+     "answer": "CBA",
+     "vi": "Chính là cậu sinh viên đó, khi ứng tuyển thể hiện rất tự tin, đã để lại cho tôi ấn tượng rất sâu sắc.",
+     "explain": "C chỉ ra đối tượng được nói đến; B và A giải thích cho phần trước, ẩn đi cặp “因为……所以……” (vì khi ứng tuyển rất tự tin nên để lại ấn tượng sâu sắc) nên thứ tự là CBA."
+    },
+    {
+     "no": 62,
+     "sentences": [
+      "小伙子每天都给她发短信",
+      "为了赢得那个女孩儿的欢心",
+      "终于感动了那个女孩儿"
+     ],
+     "answer": "BAC",
+     "vi": "Để giành được lòng cô gái ấy, chàng trai ngày nào cũng nhắn tin cho cô, cuối cùng đã làm cô gái cảm động.",
+     "explain": "B nêu lý do, A tiếp nối B biểu thị sự việc xảy ra liền sau, C nêu kết quả nên thứ tự là BAC."
+    },
+    {
+     "no": 63,
+     "sentences": [
+      "那不过是一把小刀",
+      "但不能用来切大块的肉",
+      "虽然可以切水果"
+     ],
+     "answer": "ACB",
+     "vi": "Đó chẳng qua chỉ là một con dao nhỏ, tuy có thể cắt trái cây nhưng không thể dùng để cắt miếng thịt lớn.",
+     "explain": "A chỉ ra đối tượng; C và B giải thích cho A, cặp “虽然……但……” biểu thị chuyển ngoặt nên thứ tự là ACB."
+    },
+    {
+     "no": 64,
+     "sentences": [
+      "就一定能解决它",
+      "只要我们一起努力",
+      "问题并没有大家想象的那么难"
+     ],
+     "answer": "CBA",
+     "vi": "Vấn đề không khó như mọi người tưởng, chỉ cần chúng ta cùng nhau nỗ lực thì nhất định có thể giải quyết được nó.",
+     "explain": "C đưa ra một tình huống; B và A giải thích, thuyết minh cho nó, cặp “只要……就……” biểu thị điều kiện nên thứ tự là CBA."
+    },
+    {
+     "no": 65,
+     "sentences": [
+      "前方正在修高速公路",
+      "你们还是绕行吧",
+      "所以现在禁止通行"
+     ],
+     "answer": "ACB",
+     "vi": "Phía trước đang sửa đường cao tốc nên hiện đang cấm lưu thông, các bạn vẫn nên đi đường vòng thì hơn.",
+     "explain": "A nêu tình huống, C dùng “所以” tạo quan hệ nhân quả với A, B kết thúc bằng “吧” là lời khuyên tiếp theo nên thứ tự là ACB."
+    }
+   ]
+  },
+  "part3": {
+   "passages": [
+    {
+     "range": [
+      66,
+      66
+     ],
+     "text": "聪明的人不怕失败,不管遇到多大的困难,他们都不怕,因为即使失败,他们也会学到很多东西。",
+     "vi": "Người thông minh không sợ thất bại, dù gặp khó khăn lớn đến đâu họ cũng không sợ, vì dù có thất bại họ cũng học được rất nhiều điều.",
+     "questions": [
+      {
+       "no": 66,
+       "text": "聪明的人:",
+       "options": [
+        "会交很多朋友",
+        "常遇到困难",
+        "不会失败",
+        "不怕困难"
+       ],
+       "answer": 3,
+       "explain": "Theo câu “不管遇到多大的困难,他们都不怕”, đây là cách làm của người thông minh, chọn D."
+      }
+     ]
+    },
+    {
+     "range": [
+      67,
+      67
+     ],
+     "text": "好多人喜欢去大商场购物,这并不是因为他们有钱,而是因为商场里的东西可以保证质量,还可以退换,所以顾客很放心。",
+     "vi": "Nhiều người thích đi mua sắm ở trung tâm thương mại lớn, điều này không phải vì họ có tiền mà vì hàng hóa trong trung tâm đảm bảo chất lượng, lại còn có thể đổi trả, nên khách hàng rất yên tâm.",
+     "questions": [
+      {
+       "no": 67,
+       "text": "顾客为什么喜欢去商场购物?",
+       "options": [
+        "东西可以打折",
+        "东西样式好",
+        "服务员态度好",
+        "东西质量好"
+       ],
+       "answer": 3,
+       "explain": "Theo câu “商场里的东西可以保证质量”, lý do khách hàng hài lòng là chất lượng hàng tốt, chọn D."
+      }
+     ]
+    },
+    {
+     "range": [
+      68,
+      68
+     ],
+     "text": "他整天开车在外边跑,虽然挣得很多,家里的生活也比过去好多了,但我和孩子没有一天不担心他的。",
+     "vi": "Anh ấy cả ngày lái xe chạy bên ngoài, tuy kiếm được nhiều, cuộc sống trong nhà cũng khá hơn trước nhiều, nhưng tôi và con không ngày nào là không lo lắng cho anh ấy.",
+     "questions": [
+      {
+       "no": 68,
+       "text": "根据这段话,“我”和他是:",
+       "options": [
+        "夫妻",
+        "亲戚",
+        "朋友",
+        "恋人"
+       ],
+       "answer": 0,
+       "explain": "Theo câu “我和孩子没有一天不担心他的”, có thể biết “他” là bố của đứa trẻ, tức là chồng, chọn A."
+      }
+     ]
+    },
+    {
+     "range": [
+      69,
+      69
+     ],
+     "text": "我喜欢冬天的雪,是因为它把这个世界打扮得漂漂亮亮的。可今年的冬天,雪却很少,只剩下并不清新的空气和灰色的天空,让我感到很难过。",
+     "vi": "Tôi thích tuyết mùa đông vì nó tô điểm thế giới này thật xinh đẹp. Nhưng mùa đông năm nay tuyết lại rất ít, chỉ còn không khí chẳng trong lành và bầu trời xám xịt, khiến tôi cảm thấy rất buồn.",
+     "questions": [
+      {
+       "no": 69,
+       "text": "今年冬天让“我”感到难过的是:",
+       "options": [
+        "雪不太多",
+        "空气很新鲜",
+        "天空不是灰色的",
+        "不够漂亮"
+       ],
+       "answer": 0,
+       "explain": "Theo câu “今年的冬天,雪却很少……让我感到很难过”, chọn A."
+      }
+     ]
+    },
+    {
+     "range": [
+      70,
+      70
+     ],
+     "text": "走在路上遇见认识的人应该打招呼,有时也可用点头表示友好,而遇到熟悉的朋友,还可以问问对方家人的情况。",
+     "vi": "Đi trên đường gặp người quen thì nên chào hỏi, đôi khi cũng có thể gật đầu để biểu thị thân thiện, còn gặp bạn bè thân quen thì còn có thể hỏi thăm tình hình người nhà của họ.",
+     "questions": [
+      {
+       "no": 70,
+       "text": "这段话是介绍:",
+       "options": [
+        "交友方法",
+        "礼貌用语",
+        "问候方式",
+        "朋友感情"
+       ],
+       "answer": 2,
+       "explain": "Hai từ “打招呼” và “点头” trong văn bản đều là cách chào hỏi, chọn C."
+      }
+     ]
+    },
+    {
+     "range": [
+      71,
+      71
+     ],
+     "text": "乘坐公交车时,应排队等候,不要挤在车行道上,更不要站在道路中间。",
+     "vi": "Khi đi xe buýt nên xếp hàng chờ, đừng chen chúc trên làn xe chạy, càng đừng đứng giữa đường.",
+     "questions": [
+      {
+       "no": 71,
+       "text": "等车时应该:",
+       "options": [
+        "站在路边",
+        "挤在一起",
+        "按顺序排队",
+        "不遵守秩序"
+       ],
+       "answer": 2,
+       "explain": "Theo câu “应排队等候”, chọn C."
+      }
+     ]
+    },
+    {
+     "range": [
+      72,
+      72
+     ],
+     "text": "这本杂志出现于1892年,它的读者主要是都市女性,内容包括时尚时装、化妆、美容、健康、娱乐和艺术等各个方面,是一本综合性时尚生活杂志。",
+     "vi": "Tạp chí này xuất hiện vào năm 1892, độc giả chủ yếu là phụ nữ thành thị, nội dung bao gồm thời trang, trang điểm, làm đẹp, sức khỏe, giải trí và nghệ thuật..., là một tạp chí phong cách sống thời thượng tổng hợp.",
+     "questions": [
+      {
+       "no": 72,
+       "text": "这本杂志:",
+       "options": [
+        "很流行",
+        "男人爱看",
+        "出版很早",
+        "是时尚杂志"
+       ],
+       "answer": 3,
+       "explain": "Câu cuối “是一本综合性时尚生活杂志” cho biết đây là tạp chí thời trang, chọn D."
+      }
+     ]
+    },
+    {
+     "range": [
+      73,
+      73
+     ],
+     "text": "这套房子很宽敞,还有热水器、电冰箱,位置也不错,可是冬天的时候,暖气烧得不好,所以我决定不再租了。",
+     "vi": "Căn nhà này rất rộng rãi, còn có bình nước nóng, tủ lạnh, vị trí cũng không tệ, nhưng mùa đông thì hệ thống sưởi không nóng, nên tôi quyết định không thuê nữa.",
+     "questions": [
+      {
+       "no": 73,
+       "text": "“我”不租这套房子是因为:",
+       "options": [
+        "暖气不热",
+        "没有暖气",
+        "没有空调",
+        "卫生间太小"
+       ],
+       "answer": 0,
+       "explain": "Theo câu “可是冬天的时候,暖气烧得不好”, có nghĩa là sưởi không nóng, chọn A."
+      }
+     ]
+    },
+    {
+     "range": [
+      74,
+      74
+     ],
+     "text": "明星看起来很让人羡慕,可是他们也会面临很多问题,比如,爱情、婚姻、事业的不顺利,假新闻带来的误会等等,所以很多明星都去看心理医生。",
+     "vi": "Các ngôi sao trông thật đáng ngưỡng mộ, nhưng họ cũng đối mặt với nhiều vấn đề, chẳng hạn tình yêu, hôn nhân, sự nghiệp không thuận lợi, hiểu lầm do tin giả gây ra..., vì vậy rất nhiều ngôi sao đều đi gặp bác sĩ tâm lý.",
+     "questions": [
+      {
+       "no": 74,
+       "text": "根据这段话,可以知道明星:",
+       "options": [
+        "婚姻稳定",
+        "挣钱很多",
+        "压力很大",
+        "想当心理医生"
+       ],
+       "answer": 2,
+       "explain": "Theo các câu “爱情、婚姻、事业的不顺利” và “很多明星都去看心理医生”, áp lực của ngôi sao rất lớn, chọn C."
+      }
+     ]
+    },
+    {
+     "range": [
+      75,
+      75
+     ],
+     "text": "随着生活水平的提高,人们越来越重视精神生活,追求浪漫,所以看电影的人多了起来。虽然电影票越来越贵,但这并没有阻止人们看电影的热情。",
+     "vi": "Cùng với mức sống nâng cao, con người ngày càng coi trọng đời sống tinh thần, theo đuổi sự lãng mạn, nên người đi xem phim nhiều lên. Tuy vé xem phim ngày càng đắt nhưng điều này không ngăn được nhiệt tình xem phim của mọi người.",
+     "questions": [
+      {
+       "no": 75,
+       "text": "人们为什么喜欢看电影?",
+       "options": [
+        "电影内容丰富",
+        "电影票价不贵",
+        "追求浪漫",
+        "导演厉害"
+       ],
+       "answer": 2,
+       "explain": "Theo câu “追求浪漫,所以看电影的人多了起来”, mọi người xem phim vì theo đuổi sự lãng mạn, chọn C."
+      }
+     ]
+    },
+    {
+     "range": [
+      76,
+      76
+     ],
+     "text": "业余爱好不仅让你更好地与人交往,还可以让你发现自己其他方面的能力。例如,踢足球既可以表现你运动方面的能力,又可以培养你的合作精神。",
+     "vi": "Sở thích ngoài giờ không chỉ giúp bạn giao tiếp với người khác tốt hơn mà còn giúp bạn phát hiện khả năng ở những phương diện khác của bản thân. Ví dụ, đá bóng vừa có thể thể hiện năng lực vận động của bạn, vừa có thể bồi dưỡng tinh thần hợp tác của bạn.",
+     "questions": [
+      {
+       "no": 76,
+       "text": "这段话主要在谈:",
+       "options": [
+        "生活习惯",
+        "业余爱好",
+        "朋友感情",
+        "环境保护"
+       ],
+       "answer": 1,
+       "explain": "Câu đầu nói về sở thích ngoài giờ, các ví dụ phía sau là chứng minh cho câu đó, nên đoạn văn chủ yếu nói về sở thích ngoài giờ, chọn B."
+      }
+     ]
+    },
+    {
+     "range": [
+      77,
+      77
+     ],
+     "text": "以前我们去外地开会的时候,要带很多打印的文件,又厚又重,很不方便。现在,有了笔记本电脑,文件可以存在里面,减少了人们出行的麻烦。",
+     "vi": "Trước đây khi đi họp ở nơi khác, chúng ta phải mang theo rất nhiều tài liệu in, vừa dày vừa nặng, rất bất tiện. Bây giờ có máy tính xách tay, tài liệu có thể lưu trong đó, giảm bớt phiền phức khi đi lại.",
+     "questions": [
+      {
+       "no": 77,
+       "text": "现在去开会:",
+       "options": [
+        "不用文件",
+        "程序复杂",
+        "轻松方便",
+        "必须用电脑"
+       ],
+       "answer": 2,
+       "explain": "Theo đoạn văn, có máy tính rồi thì có thể lưu tài liệu trong máy, nên đi họp nhẹ nhàng, tiện lợi hơn, chọn C."
+      }
+     ]
+    },
+    {
+     "range": [
+      78,
+      78
+     ],
+     "text": "一个孝顺父母的人,一定值得别人尊重。一个连自己的父母都不尊敬的人,又怎么能真正地对别人好呢?",
+     "vi": "Một người hiếu thảo với cha mẹ nhất định xứng đáng được người khác tôn trọng. Một người đến cả cha mẹ mình cũng không kính trọng thì làm sao có thể thật lòng tốt với người khác được?",
+     "questions": [
+      {
+       "no": 78,
+       "text": "孝顺父母的人:",
+       "options": [
+        "更有名",
+        "很幽默",
+        "勇敢坚强",
+        "值得尊重"
+       ],
+       "answer": 3,
+       "explain": "Theo câu “一个孝顺父母的人,一定值得别人尊重”, chọn D."
+      }
+     ]
+    },
+    {
+     "range": [
+      79,
+      79
+     ],
+     "text": "除夕夜,中国人在半夜12点放完鞭炮之后,北方人习惯吃饺子,而南方人习惯吃年糕。",
+     "vi": "Đêm giao thừa, sau khi đốt pháo vào lúc nửa đêm 12 giờ, người miền Bắc Trung Quốc quen ăn bánh chẻo (sủi cảo), còn người miền Nam quen ăn bánh gạo (niangao).",
+     "questions": [
+      {
+       "no": 79,
+       "text": "根据这段话,除夕夜吃饺子或吃年糕前要:",
+       "options": [
+        "包饺子",
+        "放鞭炮",
+        "做年糕",
+        "点蜡烛"
+       ],
+       "answer": 1,
+       "explain": "Theo câu “中国人在半夜12点放完鞭炮之后”, trước khi ăn sủi cảo hoặc bánh gạo thì phải đốt pháo trước, chọn B."
+      }
+     ]
+    },
+    {
+     "range": [
+      80,
+      81
+     ],
+     "text": "现在有很多父母让自己的孩子参加各种各样的辅导班,它们占用了孩子大量的业余时间,孩子失去了很多自由,觉得很累。我认为家长应该给孩子一个健康、快乐、没有压力的环境,让他们自由地成长,让他们因为快乐而喜欢学习,这样才对他们的学习有好处。",
+     "vi": "Hiện nay có nhiều bậc cha mẹ cho con tham gia đủ loại lớp phụ đạo, chúng chiếm dụng rất nhiều thời gian rảnh của trẻ, trẻ mất đi nhiều tự do và cảm thấy rất mệt. Tôi cho rằng phụ huynh nên tạo cho con một môi trường lành mạnh, vui vẻ, không áp lực, để các em lớn lên tự do, vì vui vẻ mà thích học, như vậy mới có lợi cho việc học của các em.",
+     "questions": [
+      {
+       "no": 80,
+       "text": "孩子的业余时间都在做什么?",
+       "options": [
+        "参加比赛",
+        "去辅导班",
+        "高兴地玩儿",
+        "和父母在一起"
+       ],
+       "answer": 1,
+       "explain": "Theo câu “孩子参加各种各样的辅导班,它们占用了孩子大量的业余时间”, thời gian rảnh của trẻ đều dành cho lớp phụ đạo, chọn B."
+      },
+      {
+       "no": 81,
+       "text": "什么对孩子的学习有好处?",
+       "options": [
+        "要有压力",
+        "多样辅导",
+        "健康快乐",
+        "快点儿长高"
+       ],
+       "answer": 2,
+       "explain": "Theo câu “我认为家长应该给孩子一个健康、快乐、没有压力的环境……这样才对他们的学习有好处”, chọn C."
+      }
+     ]
+    },
+    {
+     "range": [
+      82,
+      83
+     ],
+     "text": "新年快要到了,小兔子打算送给熊猫一件礼物,它想来想去,最后带着数码相机来到熊猫的家里,准备为熊猫拍一张彩色照片,可是却发现相机没电了,充电器也找不到了。熊猫这时也在为小兔子准备礼物,它织了一顶紫色的帽子,但是忘了小兔子长着两只长长的耳朵,结果织小了,小兔子戴不上。",
+     "vi": "Năm mới sắp đến, chú thỏ định tặng gấu trúc một món quà, nghĩ đi nghĩ lại, cuối cùng mang máy ảnh kỹ thuật số đến nhà gấu trúc, định chụp cho gấu trúc một tấm ảnh màu, nhưng lại phát hiện máy ảnh hết pin, bộ sạc cũng không tìm thấy. Lúc này gấu trúc cũng đang chuẩn bị quà cho thỏ, nó đan một chiếc mũ màu tím, nhưng quên mất thỏ có hai chiếc tai dài, kết quả đan nhỏ quá, thỏ không đội vừa.",
+     "questions": [
+      {
+       "no": 82,
+       "text": "小兔子准备为熊猫做什么?",
+       "options": [
+        "讲笑话",
+        "剪头发",
+        "拍照片",
+        "买充电器"
+       ],
+       "answer": 2,
+       "explain": "Theo câu “准备为熊猫拍一张彩色照片”, chọn C."
+      },
+      {
+       "no": 83,
+       "text": "熊猫准备的礼物怎么样?",
+       "options": [
+        "太小了",
+        "忘带了",
+        "太大了",
+        "颜色不好"
+       ],
+       "answer": 0,
+       "explain": "Theo câu cuối “结果织小了,小兔子戴不上”, chọn A."
+      }
+     ]
+    },
+    {
+     "range": [
+      84,
+      85
+     ],
+     "text": "地球最南和最北的两个地方,分别叫南极和北极。与其他地方不同的是,它们常年都有冰雪。就算在一年中最热的时候,南极和北极依然非常寒冷,这是南北两极共有的特征。但这些年来,由于地球的环境越来越糟糕,南极和北极也开始变热了。",
+     "vi": "Hai nơi cực nam và cực bắc của Trái Đất lần lượt gọi là Nam Cực và Bắc Cực. Khác với những nơi khác, quanh năm ở đó đều có băng tuyết. Ngay cả vào lúc nóng nhất trong năm, Nam Cực và Bắc Cực vẫn cực kỳ lạnh, đây là đặc điểm chung của hai cực nam bắc. Nhưng những năm gần đây, do môi trường Trái Đất ngày càng xấu đi, Nam Cực và Bắc Cực cũng bắt đầu nóng lên.",
+     "questions": [
+      {
+       "no": 84,
+       "text": "其他地方最热的时候,南极和北极:",
+       "options": [
+        "很糟糕",
+        "已经很暖",
+        "仍然很冷",
+        "冰雪融化"
+       ],
+       "answer": 2,
+       "explain": "Theo câu “就算在一年中最热的时候,南极和北极依然非常寒冷”, chọn C."
+      },
+      {
+       "no": 85,
+       "text": "关于南北两极,可以知道:",
+       "options": [
+        "北极更冷",
+        "开始变热",
+        "到处是田野",
+        "天气很热"
+       ],
+       "answer": 1,
+       "explain": "Theo câu cuối “地球的环境越来越糟糕,南极和北极也开始变热了”, chọn B."
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

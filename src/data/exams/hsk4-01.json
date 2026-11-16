@@ -1,0 +1,647 @@
+{
+ "test": 1,
+ "reading": {
+  "part1": {
+   "sets": [
+    {
+     "range": [
+      46,
+      50
+     ],
+     "words": [
+      "法律",
+      "改变",
+      "羡慕",
+      "坚持",
+      "毕业",
+      "道歉"
+     ],
+     "example": {
+      "text": "她每天都___走路上下班,所以身体一直很不错。",
+      "answer": 3
+     },
+     "items": [
+      {
+       "no": 46,
+       "text": "掌握一定的___知识,对我们每个人来说都很重要。",
+       "answer": 0,
+       "vi": "Nắm vững một lượng kiến thức pháp luật nhất định là rất quan trọng đối với mỗi chúng ta.",
+       "explain": "“法律” là một bộ phận lý luận thuộc phạm trù “知识” (kiến thức), đứng trước “知识” làm định ngữ nên chọn 法律."
+      },
+      {
+       "no": 47,
+       "text": "做错事就要___,这样才能得到别人的原谅。",
+       "answer": 5,
+       "vi": "Làm sai chuyện thì phải xin lỗi, như vậy mới được người khác tha thứ.",
+       "explain": "“道歉” là bày tỏ với đối phương rằng mình sai; làm sai thì phải xin lỗi mới được tha thứ nên chọn 道歉."
+      },
+      {
+       "no": 48,
+       "text": "她有一个非常幸福的家庭,人人都很___她。",
+       "answer": 2,
+       "vi": "Cô ấy có một gia đình vô cùng hạnh phúc, ai cũng rất ngưỡng mộ cô ấy.",
+       "explain": "Động từ “羡慕” là thấy người khác có điều mình mong muốn thì cũng muốn có; câu nói ai cũng muốn có gia đình hạnh phúc như cô ấy."
+      },
+      {
+       "no": 49,
+       "text": "如果不做出___,就永远不会进步。",
+       "answer": 1,
+       "vi": "Nếu không thay đổi thì sẽ mãi mãi không tiến bộ.",
+       "explain": "“改变” là thay đổi, trở nên khác trước; muốn tiến bộ thì phải có sự thay đổi nên chọn 改变."
+      },
+      {
+       "no": 50,
+       "text": "我的大学同学___后,大多去公司工作了。",
+       "answer": 4,
+       "vi": "Sau khi tốt nghiệp, phần lớn bạn học đại học của tôi đều đi làm ở công ty.",
+       "explain": "Động từ “毕业” là học xong chương trình, kết thúc việc học ở trường; sau khi tốt nghiệp thì phần lớn đi làm công ty."
+      }
+     ]
+    },
+    {
+     "range": [
+      51,
+      55
+     ],
+     "words": [
+      "密码",
+      "联系",
+      "温度",
+      "演出",
+      "比较",
+      "赶"
+     ],
+     "example": {
+      "text": "A:今天真冷啊,好像白天最高___才2℃。\nB:刚才电视里说明天更冷。",
+      "answer": 2
+     },
+     "items": [
+      {
+       "no": 51,
+       "text": "A:这么晚了还出去?多不安全啊!\nB:没事儿,今晚学校有___,我和朋友一起去。",
+       "answer": 3,
+       "vi": "A: Muộn thế này còn ra ngoài à? Nguy hiểm lắm!\nB: Không sao đâu, tối nay trường có buổi biểu diễn, mình đi cùng bạn.",
+       "explain": "“演出” ở đây là danh từ, chỉ hoạt động biểu diễn văn nghệ do đơn vị hay cá nhân tổ chức; ý là cùng bạn đi xem biểu diễn buổi tối ở trường."
+      },
+      {
+       "no": 52,
+       "text": "A:小王,上次我给你介绍的女朋友,你们后来___了吗?\nB:最近工作太忙了,没有时间啊。",
+       "answer": 1,
+       "vi": "A: Tiểu Vương, cô bạn gái lần trước tôi giới thiệu cho cậu, sau đó hai người có liên lạc không?\nB: Dạo này công việc bận quá, không có thời gian.",
+       "explain": "“联系” là dùng mạng, điện thoại, thư từ, gặp mặt... để trò chuyện, trao đổi; người hỏi muốn biết sau đó có liên lạc với cô gái được giới thiệu hay không."
+      },
+      {
+       "no": 53,
+       "text": "A:怎么办?我忘记我的银行卡___了!\nB:再好好儿想一想,实在想不起来就只能去银行了。",
+       "answer": 0,
+       "vi": "A: Làm sao đây? Tôi quên mật khẩu thẻ ngân hàng rồi!\nB: Nghĩ kỹ lại xem, thật sự không nhớ ra thì chỉ còn cách đến ngân hàng thôi.",
+       "explain": "“密码” là dãy số bí mật, danh từ; người nói quên mật khẩu thẻ ngân hàng nên chọn 密码."
+      },
+      {
+       "no": 54,
+       "text": "A:我的总结写好了,你能帮我看一下吗?\nB:我也在___时间写总结,你先等一会儿吧。",
+       "answer": 5,
+       "vi": "A: Bản tổng kết của tôi viết xong rồi, cậu xem giúp tôi một chút được không?\nB: Tôi cũng đang chạy đua với thời gian để viết tổng kết, cậu đợi một lát nhé.",
+       "explain": "“赶时间” thường dùng cùng nhau, nghĩa là tranh thủ thời gian làm việc gì; ý là B cũng đang gấp rút viết tổng kết."
+      },
+      {
+       "no": 55,
+       "text": "A:小芳,你看看这两件衣服哪件___好看?\nB:我觉得你穿的话,红色这件更好一些吧。",
+       "answer": 4,
+       "vi": "A: Tiểu Phương, cậu xem hai chiếc áo này chiếc nào đẹp hơn?\nB: Mình thấy nếu cậu mặc thì chiếc màu đỏ này đẹp hơn một chút.",
+       "explain": "Phó từ “比较” đặt trước tính từ, biểu thị so sánh hai bên và mức độ cao hơn; ý là trong hai chiếc áo, chiếc đỏ đẹp hơn."
+      }
+     ]
+    }
+   ]
+  },
+  "part2": {
+   "questions": [
+    {
+     "no": 56,
+     "sentences": [
+      "小时候每次放暑假妈妈都让我在家弹钢琴",
+      "没想到长大后我真的爱上了弹钢琴",
+      "现在我想成为一名钢琴家"
+     ],
+     "answer": "ABC",
+     "vi": "Hồi nhỏ mỗi kỳ nghỉ hè mẹ đều bắt tôi ở nhà tập đàn piano, không ngờ lớn lên tôi lại thật sự yêu piano, bây giờ tôi muốn trở thành một nghệ sĩ piano.",
+     "explain": "Sắp xếp theo thời gian: “小时候” (hồi nhỏ), “长大后” (sau khi lớn), “现在” (bây giờ) nên thứ tự là ABC."
+    },
+    {
+     "no": 57,
+     "sentences": [
+      "因为只有这样才可能获得成功",
+      "一个人有了理想",
+      "就应该积极地去努力"
+     ],
+     "answer": "BCA",
+     "vi": "Một người đã có lý tưởng thì nên tích cực nỗ lực, vì chỉ có như vậy mới có thể giành được thành công.",
+     "explain": "B nêu tình huống, C nêu cách thực hiện, A giải thích lý do nên thứ tự là BCA."
+    },
+    {
+     "no": 58,
+     "sentences": [
+      "每天上下班的时候,路上经常堵车",
+      "就很容易迟到",
+      "如果早上上班不早点儿出门的话"
+     ],
+     "answer": "ACB",
+     "vi": "Mỗi ngày đi làm, trên đường thường xuyên kẹt xe, nếu buổi sáng đi làm mà không ra khỏi nhà sớm một chút thì rất dễ bị muộn.",
+     "explain": "A nêu tình huống; B và C giải thích vì sao phải đi sớm, cấu trúc “如果……就……” biểu thị giả thiết nên thứ tự là ACB."
+    },
+    {
+     "no": 59,
+     "sentences": [
+      "可是现在真的成为一名导游了",
+      "我从小的梦想就是能当个导游到处旅行",
+      "我才发现这原来是一份很辛苦的工作"
+     ],
+     "answer": "BAC",
+     "vi": "Ước mơ từ nhỏ của tôi là làm hướng dẫn viên du lịch để đi đây đó, nhưng bây giờ thật sự trở thành hướng dẫn viên rồi, tôi mới phát hiện hóa ra đây là một công việc rất vất vả.",
+     "explain": "Sắp xếp theo thời gian: “从小” (từ nhỏ), “现在” (bây giờ), “才发现” (mới phát hiện) nên thứ tự là BAC."
+    },
+    {
+     "no": 60,
+     "sentences": [
+      "今天竟然一下子变得这么冷",
+      "看来冬天真的来了",
+      "昨天还很暖和"
+     ],
+     "answer": "CAB",
+     "vi": "Hôm qua còn rất ấm áp, hôm nay lại đột nhiên lạnh thế này, xem ra mùa đông thật sự đã đến rồi.",
+     "explain": "Dựa vào “昨天” rồi “今天” để xếp theo thời gian; B là kết luận rút ra từ việc trời trở lạnh (mùa đông đến), nên thứ tự là CAB."
+    },
+    {
+     "no": 61,
+     "sentences": [
+      "其实他常常和父母发脾气",
+      "他平时对别人很好",
+      "大家都以为他性格不错"
+     ],
+     "answer": "BCA",
+     "vi": "Anh ấy bình thường đối xử với người khác rất tốt, mọi người đều tưởng tính cách anh ấy không tệ, nhưng thật ra anh ấy thường xuyên nổi nóng với bố mẹ.",
+     "explain": "B nêu tình huống, C rút ra kết luận mà mọi người nghĩ, A nêu sự thật “其实” không phải như vậy nên thứ tự là BCA."
+    },
+    {
+     "no": 62,
+     "sentences": [
+      "我们都为他感到高兴",
+      "并且向他表示祝贺",
+      "经过三年的努力,小林终于考上了博士"
+     ],
+     "answer": "CAB",
+     "vi": "Trải qua ba năm nỗ lực, Tiểu Lâm cuối cùng đã thi đậu tiến sĩ, chúng tôi đều thấy vui cho anh ấy và còn chúc mừng anh ấy.",
+     "explain": "C giới thiệu sự việc; A và B là phản ứng của mọi người khi biết chuyện, B bổ sung cho A nên thứ tự là CAB."
+    },
+    {
+     "no": 63,
+     "sentences": [
+      "也可能是很久以前的经历",
+      "我们晚上做的梦",
+      "可能是白天经历的事情"
+     ],
+     "answer": "BCA",
+     "vi": "Giấc mơ chúng ta mơ vào ban đêm có thể là chuyện đã trải qua ban ngày, cũng có thể là trải nghiệm từ rất lâu về trước.",
+     "explain": "B nêu vấn đề; A và C giải thích cho B, “可能……” đứng trước “也可能……” nên thứ tự là BCA."
+    },
+    {
+     "no": 64,
+     "sentences": [
+      "这个星期日我过生日",
+      "我要在家里举办生日晚会",
+      "希望你能来参加"
+     ],
+     "answer": "ABC",
+     "vi": "Chủ nhật này là sinh nhật tôi, tôi sẽ tổ chức tiệc sinh nhật ở nhà, hy vọng bạn có thể đến tham dự.",
+     "explain": "A và B có quan hệ nhân quả, “(因为)……,所以……” đã lược bỏ “因为”; C bổ sung cho B nên thứ tự là ABC."
+    },
+    {
+     "no": 65,
+     "sentences": [
+      "你才能知道到底谁才是真正的朋友",
+      "每个人的周围都有很多朋友",
+      "但是只有当你遇到困难的时候"
+     ],
+     "answer": "BCA",
+     "vi": "Xung quanh mỗi người đều có rất nhiều bạn bè, nhưng chỉ khi bạn gặp khó khăn thì mới biết rốt cuộc ai là bạn thật sự.",
+     "explain": "B nêu tình huống, C chuyển ngoặt bằng “但是”, cặp từ “只有……才……” biểu thị điều kiện nên thứ tự là BCA."
+    }
+   ]
+  },
+  "part3": {
+   "passages": [
+    {
+     "range": [
+      66,
+      66
+     ],
+     "text": "巧克力非常受女孩子的欢迎,但是因为巧克力的热量很高,吃多了可能会使人变胖,所以即使非常喜欢也不能一次吃得太多。",
+     "vi": "Sô-cô-la rất được các cô gái ưa chuộng, nhưng vì lượng calo của sô-cô-la rất cao, ăn nhiều có thể làm người ta béo lên, nên dù rất thích cũng không thể ăn quá nhiều một lần.",
+     "questions": [
+      {
+       "no": 66,
+       "text": "不能一次吃太多巧克力的原因是:",
+       "options": [
+        "很贵",
+        "容易变胖",
+        "不好吃",
+        "不爱吃"
+       ],
+       "answer": 1,
+       "explain": "Theo câu “吃多了可能会使人变胖”, ăn nhiều dễ béo nên chọn B."
+      }
+     ]
+    },
+    {
+     "range": [
+      67,
+      67
+     ],
+     "text": "在生活中有些人总是说自己不幸福,而羡慕别人的幸福。其实,幸福是一种感觉,是一种生活态度,每个人的幸福都在自己手中。",
+     "vi": "Trong cuộc sống, có những người luôn nói mình không hạnh phúc mà lại ngưỡng mộ hạnh phúc của người khác. Thực ra, hạnh phúc là một cảm giác, là một thái độ sống, hạnh phúc của mỗi người đều nằm trong tay chính mình.",
+     "questions": [
+      {
+       "no": 67,
+       "text": "这段话主要告诉我们,幸福:",
+       "options": [
+        "需要羡慕",
+        "是相同的",
+        "很简单",
+        "有标准"
+       ],
+       "answer": 2,
+       "explain": "“幸福是一种感觉,是一种生活态度,每个人的幸福都在自己手中” nghĩa là chỉ cần có thái độ đúng thì hạnh phúc ở ngay trong tay, rất dễ có được, nên chọn C."
+      }
+     ]
+    },
+    {
+     "range": [
+      68,
+      68
+     ],
+     "text": "现在很多年轻人把水果、饼干等当正餐,以为这样就能减肥。其实,这样做是不科学的,长期下去会造成营养不良。",
+     "vi": "Hiện nay nhiều bạn trẻ coi trái cây, bánh quy... là bữa chính, tưởng rằng làm vậy có thể giảm cân. Thực ra làm như thế là không khoa học, lâu dài sẽ gây suy dinh dưỡng.",
+     "questions": [
+      {
+       "no": 68,
+       "text": "这段话主要想告诉我们什么?",
+       "options": [
+        "多吃水果好",
+        "吃饼干能减肥",
+        "要科学减肥",
+        "减肥很容易"
+       ],
+       "answer": 2,
+       "explain": "“这样做是不科学的” trong đó “这样做” chỉ việc “把水果、饼干等当正餐”; ý chính là phải giảm cân một cách khoa học, chọn C."
+      }
+     ]
+    },
+    {
+     "range": [
+      69,
+      69
+     ],
+     "text": "今年暑假,我和朋友一起去了四川的九寨沟。那里景色非常美丽,空气也很新鲜,我在那儿拍了很多照片。",
+     "vi": "Kỳ nghỉ hè năm nay, tôi cùng bạn bè đi Cửu Trại Câu ở Tứ Xuyên. Phong cảnh ở đó vô cùng đẹp, không khí cũng rất trong lành, tôi đã chụp rất nhiều ảnh ở đó.",
+     "questions": [
+      {
+       "no": 69,
+       "text": "四川九寨沟:",
+       "options": [
+        "空气不好",
+        "景色很美",
+        "不值得去",
+        "很少有人去"
+       ],
+       "answer": 1,
+       "explain": "Theo câu “那里景色非常美丽” nên chọn B."
+      }
+     ]
+    },
+    {
+     "range": [
+      70,
+      70
+     ],
+     "text": "父母和老师在教育儿童的时候,需要有爱心和耐心。因为童年对一个人以后的人生会产生非常重要的影响。",
+     "vi": "Khi giáo dục trẻ em, cha mẹ và thầy cô cần có lòng yêu thương và sự kiên nhẫn. Bởi vì tuổi thơ có ảnh hưởng vô cùng quan trọng đến cuộc đời sau này của một người.",
+     "questions": [
+      {
+       "no": 70,
+       "text": "一个人的童年:",
+       "options": [
+        "要耐心",
+        "很重要",
+        "要受到教育",
+        "要有礼貌"
+       ],
+       "answer": 1,
+       "explain": "Theo câu “童年对一个人以后的人生会产生非常重要的影响” nên chọn B."
+      }
+     ]
+    },
+    {
+     "range": [
+      71,
+      71
+     ],
+     "text": "宠物是人类的好朋友,它们让我们学会爱与责任,它们给我们的生活带来阳光和笑声,它们值得我们每个人的尊重。",
+     "vi": "Thú cưng là người bạn tốt của loài người, chúng giúp ta học được tình yêu và trách nhiệm, mang đến ánh nắng và tiếng cười cho cuộc sống của chúng ta, chúng xứng đáng nhận được sự tôn trọng của mỗi người.",
+     "questions": [
+      {
+       "no": 71,
+       "text": "根据这段话,宠物:",
+       "options": [
+        "每个人都要养",
+        "不会死亡",
+        "没人喜欢",
+        "值得被爱"
+       ],
+       "answer": 3,
+       "explain": "Câu “它们值得受到每个人的尊重” gần nghĩa nhất với D; A và B đoạn văn không nhắc tới, C trái với ý đoạn văn nên chọn D."
+      }
+     ]
+    },
+    {
+     "range": [
+      72,
+      72
+     ],
+     "text": "爱读书是个好习惯。一本好书就像一位老师,可以教给我们很多知识,使我们受到启发。因此,让我们养成读书的好习惯吧。",
+     "vi": "Thích đọc sách là một thói quen tốt. Một cuốn sách hay giống như một người thầy, có thể dạy cho chúng ta nhiều kiến thức và mang lại cho chúng ta sự gợi mở. Vì vậy, hãy cùng nhau tạo thói quen đọc sách tốt nhé.",
+     "questions": [
+      {
+       "no": 72,
+       "text": "这段话告诉我们,应该:",
+       "options": [
+        "找老师",
+        "多读书",
+        "尊重老师",
+        "学知识"
+       ],
+       "answer": 1,
+       "explain": "Câu “让我们养成读书的好习惯吧” có nghĩa là nên đọc sách nhiều, chọn B."
+      }
+     ]
+    },
+    {
+     "range": [
+      73,
+      73
+     ],
+     "text": "今天我想打印一份材料,却发现办公室的打印机坏了,所以只好去隔壁的办公室打印。谁知道他们的打印机也坏了,这真是太奇怪了!",
+     "vi": "Hôm nay tôi muốn in một tài liệu, nhưng phát hiện máy in ở văn phòng bị hỏng, nên đành sang văn phòng bên cạnh để in. Ai ngờ máy in của họ cũng hỏng, thật là quá kỳ lạ!",
+     "questions": [
+      {
+       "no": 73,
+       "text": "根据这段话:",
+       "options": [
+        "没有打印机",
+        "没有纸了",
+        "打印机坏了",
+        "材料丢了"
+       ],
+       "answer": 2,
+       "explain": "Theo “发现办公室的打印机坏了” và “他们的打印机也坏了”, máy in của cả hai văn phòng đều hỏng, chọn C."
+      }
+     ]
+    },
+    {
+     "range": [
+      74,
+      74
+     ],
+     "text": "很多家长常让孩子做这做那,比如他们常常告诉孩子要节约用水,要诚实等,但他们自己却不这么做。其实,家长才是孩子最好的老师。",
+     "vi": "Nhiều phụ huynh thường bắt con làm cái này cái kia, ví dụ thường dặn con phải tiết kiệm nước, phải trung thực..., nhưng bản thân họ lại không làm như vậy. Thực ra, cha mẹ mới là người thầy tốt nhất của con.",
+     "questions": [
+      {
+       "no": 74,
+       "text": "根据这段话,下面哪一项是对的:",
+       "options": [
+        "要尊重老师",
+        "要感谢父母",
+        "要自信",
+        "要节约用水"
+       ],
+       "answer": 3,
+       "explain": "Theo câu “家长才是孩子最好的老师”, nếu cha mẹ tiết kiệm nước, trung thực thì con sẽ học theo, nên cha mẹ phải tự làm gương tiết kiệm nước trước, chọn D."
+      }
+     ]
+    },
+    {
+     "range": [
+      75,
+      75
+     ],
+     "text": "我现在在读硕士,以后想当一名汉语翻译。我的老师告诉我,我需要积累大量的词语。因此我每天早上听广播,有不懂的词语就记下来然后查词典。",
+     "vi": "Hiện tôi đang học thạc sĩ, sau này muốn làm phiên dịch tiếng Trung. Thầy giáo nói với tôi rằng tôi cần tích lũy một lượng lớn từ vựng. Vì vậy mỗi sáng tôi nghe đài, gặp từ nào không hiểu thì ghi lại rồi tra từ điển.",
+     "questions": [
+      {
+       "no": 75,
+       "text": "听广播有不懂的词语时,“我”:",
+       "options": [
+        "很难受",
+        "查词典",
+        "很吃惊",
+        "看答案"
+       ],
+       "answer": 1,
+       "explain": "Theo câu “有不懂的词语就记下来然后查词典”, chọn B."
+      }
+     ]
+    },
+    {
+     "range": [
+      76,
+      76
+     ],
+     "text": "生活中我们经常因为粗心而找不到东西。这时候不能着急,相反,要静下心来仔细回忆,也许你要找的东西就在眼前。",
+     "vi": "Trong cuộc sống, chúng ta thường vì bất cẩn mà không tìm thấy đồ. Lúc này không được vội, ngược lại, hãy bình tĩnh lại và nhớ kỹ, có lẽ thứ bạn cần tìm đang ở ngay trước mắt.",
+     "questions": [
+      {
+       "no": 76,
+       "text": "找东西要:",
+       "options": [
+        "仔细回忆",
+        "粗心",
+        "找人帮忙",
+        "先整理"
+       ],
+       "answer": 0,
+       "explain": "Theo câu “要静下心来仔细回忆”, chọn A."
+      }
+     ]
+    },
+    {
+     "range": [
+      77,
+      77
+     ],
+     "text": "现在很多人在餐厅聚会,付款时不是用现金而是用信用卡。这种方式很方便,正在被越来越多的人所接受。",
+     "vi": "Hiện nay nhiều người tụ tập ở nhà hàng, khi thanh toán không dùng tiền mặt mà dùng thẻ tín dụng. Cách này rất tiện lợi và đang được ngày càng nhiều người chấp nhận.",
+     "questions": [
+      {
+       "no": 77,
+       "text": "根据这段话,用信用卡:",
+       "options": [
+        "不能付款",
+        "很方便",
+        "很省钱",
+        "不被人接受"
+       ],
+       "answer": 1,
+       "explain": "Theo câu “这种方式很方便”, chọn B."
+      }
+     ]
+    },
+    {
+     "range": [
+      78,
+      78
+     ],
+     "text": "有些人很喜欢和别人开玩笑,觉得这很幽默,也很有趣。但实际上并不是每个人都喜欢开玩笑,有的人甚至会因此而生气。这一点应该引起我们的注意。",
+     "vi": "Có người rất thích đùa với người khác, cho rằng như vậy rất hài hước và thú vị. Nhưng thực tế không phải ai cũng thích đùa, có người thậm chí còn vì thế mà tức giận. Điều này chúng ta nên chú ý.",
+     "questions": [
+      {
+       "no": 78,
+       "text": "这段话告诉我们,开玩笑:",
+       "options": [
+        "不能太随便",
+        "应被禁止",
+        "要道歉",
+        "很麻烦"
+       ],
+       "answer": 0,
+       "explain": "Theo câu “实际上并不是每个人都喜欢开玩笑,有的人甚至会因此而生气”, không thể tùy tiện đùa với người khác, chọn A."
+      }
+     ]
+    },
+    {
+     "range": [
+      79,
+      79
+     ],
+     "text": "婚姻和爱情的关系是怎样的?相爱的人不一定会走入婚姻。陪你走过一生的那个人,也许不是你最爱的那个人,只是在对的时间、对的地点遇到的那个人。",
+     "vi": "Quan hệ giữa hôn nhân và tình yêu là như thế nào? Những người yêu nhau chưa chắc sẽ bước vào hôn nhân. Người đi cùng bạn suốt cả cuộc đời có lẽ không phải người bạn yêu nhất, chỉ là người gặp đúng thời điểm, đúng địa điểm.",
+     "questions": [
+      {
+       "no": 79,
+       "text": "这段话告诉我们,互相喜欢的人:",
+       "options": [
+        "会结婚",
+        "不一定在一起",
+        "很幸福",
+        "不愉快"
+       ],
+       "answer": 1,
+       "explain": "Theo câu “相爱的人不一定会走入婚姻”, chọn B."
+      }
+     ]
+    },
+    {
+     "range": [
+      80,
+      81
+     ],
+     "text": "每个人在成长的过程中,都会遇到各种各样的烦恼,但我们不能常常因此而难过,或者对生活感到失望。只要你能勇敢地去面对,就一定能找到解决的办法。我们应该明白,正是这些烦恼丰富了我们的人生,让我们更加珍惜眼前幸福的生活。",
+     "vi": "Trong quá trình trưởng thành, mỗi người đều gặp đủ loại phiền não, nhưng chúng ta không thể thường xuyên vì thế mà buồn bã hay thất vọng về cuộc sống. Chỉ cần bạn dũng cảm đối mặt, nhất định sẽ tìm được cách giải quyết. Chúng ta nên hiểu rằng chính những phiền não này đã làm phong phú cuộc đời ta, khiến ta càng trân trọng cuộc sống hạnh phúc trước mắt.",
+     "questions": [
+      {
+       "no": 80,
+       "text": "这段话主要谈:",
+       "options": [
+        "烦恼",
+        "幸福",
+        "艺术",
+        "生活"
+       ],
+       "answer": 0,
+       "explain": "Cả đoạn văn đều nói về “烦恼” (phiền não), chọn A."
+      },
+      {
+       "no": 81,
+       "text": "遇到烦恼的时候,我们应该:",
+       "options": [
+        "感到难过",
+        "感到失望",
+        "勇敢面对",
+        "珍惜烦恼"
+       ],
+       "answer": 2,
+       "explain": "Theo câu “只要你能勇敢地去面对,就一定能找到解决的办法”, cần dũng cảm đối mặt với phiền não, chọn C."
+      }
+     ]
+    },
+    {
+     "range": [
+      82,
+      83
+     ],
+     "text": "当我们要做出一个决定的时候,常常习惯问一问别人的意见。也许这样确实能帮助我们做出更加正确的判断。但是无论别人说什么,最后还是要自己做出决定,如果自己不考虑就接受了别人的建议,也许以后出现问题了就会后悔当时的决定。",
+     "vi": "Khi cần đưa ra một quyết định, chúng ta thường quen hỏi ý kiến người khác. Có lẽ làm vậy quả thật giúp ta đưa ra phán đoán chính xác hơn. Nhưng bất kể người khác nói gì, cuối cùng vẫn phải tự mình quyết định; nếu bản thân không suy nghĩ mà chấp nhận lời khuyên của người khác, có thể sau này xảy ra vấn đề sẽ hối hận về quyết định lúc đó.",
+     "questions": [
+      {
+       "no": 82,
+       "text": "做出决定之前问一问别人的意见,可以:",
+       "options": [
+        "正确判断问题",
+        "更自信",
+        "不后悔",
+        "遇到问题"
+       ],
+       "answer": 0,
+       "explain": "Theo câu “问一问别人的意见。也许这样确实能帮助我们做出更加正确的判断”, chọn A."
+      },
+      {
+       "no": 83,
+       "text": "根据这段话,可以知道什么?",
+       "options": [
+        "要多和别人聊天儿",
+        "最好自己做决定",
+        "耐心很重要",
+        "尊重别人"
+       ],
+       "answer": 1,
+       "explain": "Câu “无论别人说什么,最后还是要自己做出决定” và “不考虑就接受了别人的建议……会后悔” cho thấy tốt nhất nên tự mình quyết định, chọn B."
+      }
+     ]
+    },
+    {
+     "range": [
+      84,
+      85
+     ],
+     "text": "现在,很多家庭都喜欢在屋子里养一些植物,这确实有很多好处,比如可以使人心情愉快,也可以让空气变得新鲜。但是,其实有些植物并不适合在室内养,它们虽然看上去很好看,却会对人的健康产生不良的影响。因此如果想在家里养一些花的话,最好先上网查一查。",
+     "vi": "Hiện nay nhiều gia đình thích trồng một số cây trong nhà, điều này quả thật có nhiều lợi ích, chẳng hạn khiến tâm trạng vui vẻ, cũng làm không khí trong lành hơn. Nhưng thực ra có một số cây không thích hợp trồng trong nhà, tuy trông rất đẹp nhưng lại gây ảnh hưởng xấu đến sức khỏe con người. Vì vậy nếu muốn trồng hoa trong nhà, tốt nhất nên lên mạng tra cứu trước.",
+     "questions": [
+      {
+       "no": 84,
+       "text": "关于养花,下面哪句话正确:",
+       "options": [
+        "使人心情好",
+        "对身体有益",
+        "对身体有害",
+        "都适合在家养"
+       ],
+       "answer": 0,
+       "explain": "Theo câu “养一些植物……可以使人心情愉快”, trồng hoa giúp tâm trạng tốt, chọn A."
+      },
+      {
+       "no": 85,
+       "text": "这段话主要谈:",
+       "options": [
+        "空气",
+        "上网",
+        "健康",
+        "养花"
+       ],
+       "answer": 3,
+       "explain": "Đoạn văn trước hết nói trồng cây có nhiều lợi ích, sau đó nói có cây không hợp trồng trong nhà, cuối cùng nói muốn trồng hoa thì nên lên mạng tra trước; hoa là một loại thực vật nên chủ đề là trồng hoa, chọn D."
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

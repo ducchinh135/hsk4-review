@@ -11,6 +11,8 @@ import { AppProvider, useApp } from './context/AppContext.jsx';
 import PracticeHub from './components/PracticeHub.jsx';
 import ComparePage from './pages/ComparePage.jsx';
 import ComparePracticePage from './pages/ComparePracticePage.jsx';
+import ExamHubPage from './pages/ExamHubPage.jsx';
+import ExamTestPage from './pages/ExamTestPage.jsx';
 import GamesHubPage from './pages/GamesHubPage.jsx';
 import MeteorGamePage from './pages/MeteorGamePage.jsx';
 import TypeGamePage from './pages/TypeGamePage.jsx';
@@ -31,6 +33,8 @@ import { PAGE_TITLES, sectionOf } from './routes.js';
 // The study pages are remounted (via `key`) when the lesson, filter or account data changes, so
 // their lists and positions are rebuilt.
 function Page({ route, viewVersion }) {
+  if (route.page === 'exam') return <ExamHubPage key={viewVersion} />;
+  if (route.page === 'exam-test') return <ExamTestPage key={route.params.test + ':' + viewVersion} test={route.params.test} />;
   if (route.page === 'games') return <GamesHubPage key={viewVersion} />;
   if (route.page === 'game-type') return <TypeGamePage key={route.params.mode + ':' + viewVersion} mode={route.params.mode} />;
   if (route.page === 'game-meteor') return <MeteorGamePage key={viewVersion} />;
@@ -83,7 +87,7 @@ function Shell() {
       <div className="layout">
         <Sidebar page={route.page} />
         <div className="content">
-          {section === 'games' ? null : section === 'grammar' ? (
+          {section === 'games' || section === 'exam' ? null : section === 'grammar' ? (
             <GrammarNav page={route.page} />
           ) : section === 'compare' ? (
             <CompareNav page={route.page} />

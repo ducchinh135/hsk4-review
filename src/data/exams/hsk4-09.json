@@ -1,0 +1,647 @@
+{
+  "test": 9,
+  "reading": {
+    "part1": {
+      "sets": [
+        {
+          "range": [
+            46,
+            50
+          ],
+          "words": [
+            "准时",
+            "坚持",
+            "自信",
+            "害羞",
+            "符合",
+            "道歉"
+          ],
+          "example": {
+            "text": "她每天都___走路上下班，所以身体一直很不错。",
+            "answer": 1
+          },
+          "items": [
+            {
+              "no": 46,
+              "text": "她今天表演得很好，跳舞时非常有___。",
+              "answer": 2,
+              "vi": "Hôm nay cô ấy biểu diễn rất tốt, lúc nhảy rất tự tin.",
+              "explain": "\"自信\" là tin vào bản thân; cô ấy tin mình nên biểu diễn tốt, hợp ý câu (\"有自信\")."
+            },
+            {
+              "no": 47,
+              "text": "因为小李昨天的作业不___老师的要求，所以今天必须重新写。",
+              "answer": 4,
+              "vi": "Vì bài tập hôm qua của Tiểu Lý không phù hợp với yêu cầu của thầy cô nên hôm nay phải viết lại.",
+              "explain": "\"符合\" là phù hợp với điều kiện, tiêu chuẩn; bài tập không phù hợp yêu cầu thầy nên phải viết lại."
+            },
+            {
+              "no": 48,
+              "text": "他从小就很___，一和女生说话脸就红。",
+              "answer": 3,
+              "vi": "Từ nhỏ cậu ấy đã rất hay xấu hổ, hễ nói chuyện với con gái là đỏ mặt.",
+              "explain": "\"害羞\" là tính từ chỉ cảm giác ngại ngùng; vì thế mới đỏ mặt khi nói chuyện với con gái."
+            },
+            {
+              "no": 49,
+              "text": "玛丽上班一直很___，从来不会迟到。",
+              "answer": 0,
+              "vi": "Mary đi làm lúc nào cũng rất đúng giờ, chưa bao giờ đến muộn.",
+              "explain": "\"准时\" là đúng giờ, tuân thủ thời gian quy định, khớp với \"从来不会迟到\"."
+            },
+            {
+              "no": 50,
+              "text": "昨天王志对他女朋友发脾气了，现在去向她___。",
+              "answer": 5,
+              "vi": "Hôm qua Vương Chí nổi nóng với bạn gái, bây giờ đi xin lỗi cô ấy.",
+              "explain": "\"道歉\" là xin lỗi; đã nổi nóng với bạn gái nên mới đi xin lỗi (\"向她道歉\")."
+            }
+          ]
+        },
+        {
+          "range": [
+            51,
+            55
+          ],
+          "words": [
+            "由于",
+            "尊重",
+            "严重",
+            "小吃",
+            "区别",
+            "温度"
+          ],
+          "example": {
+            "text": "A：今天真冷啊，好像白天最高___才2℃。\nB：刚才电视里说明天更冷。",
+            "answer": 5
+          },
+          "items": [
+            {
+              "no": 51,
+              "text": "A：你能告诉我这两台电脑有什么___吗？\nB：很抱歉，我不太懂电脑。",
+              "answer": 4,
+              "vi": "A: Bạn có thể cho tôi biết hai chiếc máy tính này có gì khác nhau không?\nB: Xin lỗi, tôi không rành về máy tính lắm.",
+              "explain": "\"区别\" là điểm khác biệt; A muốn biết điểm khác nhau của hai máy tính, B cũng không biết."
+            },
+            {
+              "no": 52,
+              "text": "A：听说小王病了，现在怎么样了？\nB：不用担心，他病得不___。",
+              "answer": 2,
+              "vi": "A: Nghe nói Tiểu Vương bị bệnh, bây giờ thế nào rồi?\nB: Đừng lo, bệnh của cậu ấy không nặng đâu.",
+              "explain": "\"严重\" là nghiêm trọng; \"不用担心\" nên bệnh \"不严重\"."
+            },
+            {
+              "no": 53,
+              "text": "A：你的小学老师是位非常善良的人。\nB：是啊，我一直都很___她。",
+              "answer": 1,
+              "vi": "A: Cô giáo tiểu học của bạn là người rất tốt bụng.\nB: Đúng vậy, tôi luôn rất kính trọng cô ấy.",
+              "explain": "\"尊重\" là động từ tâm lý, có thể đứng sau phó từ mức độ \"很\"."
+            },
+            {
+              "no": 54,
+              "text": "A：___今天天气不好，校长坐的飞机不能按时起飞。\nB：好的，我告诉王老师一声。",
+              "answer": 0,
+              "vi": "A: Do hôm nay thời tiết xấu nên máy bay của hiệu trưởng không thể cất cánh đúng giờ.\nB: Được, tôi sẽ báo thầy Vương một tiếng.",
+              "explain": "\"由于\" chỉ nguyên nhân; \"天气不好\" và \"飞机不能起飞\" là quan hệ nhân quả."
+            },
+            {
+              "no": 55,
+              "text": "A：你为什么这么喜欢四川？\nB：因为那里有特别多我喜欢吃的___！",
+              "answer": 3,
+              "vi": "A: Vì sao bạn thích Tứ Xuyên đến vậy?\nB: Vì ở đó có rất nhiều món ăn vặt mà tôi thích!",
+              "explain": "\"小吃\" là danh từ chỉ món ăn nhẹ, giá rẻ; ở đó có nhiều món \"tôi\" thích ăn."
+            }
+          ]
+        }
+      ]
+    },
+    "part2": {
+      "questions": [
+        {
+          "no": 56,
+          "sentences": [
+            "我听说王明家不太好找",
+            "我还是坐出租车吧，因为我怕迷路",
+            "要换三次公共汽车，还要再走一段路"
+          ],
+          "answer": "ACB",
+          "vi": "Tôi nghe nói nhà Vương Minh không dễ tìm, phải đổi xe buýt ba lần, còn phải đi bộ thêm một đoạn. Tôi vẫn nên đi taxi thì hơn, vì tôi sợ lạc đường.",
+          "explain": "A giới thiệu tình hình, C giải thích cho A, B nêu kết quả (đi taxi)."
+        },
+        {
+          "no": 57,
+          "sentences": [
+            "你还要考虑学什么专业以后好找工作",
+            "选择专业是非常重要的",
+            "你必须先想想自己的兴趣爱好"
+          ],
+          "answer": "BCA",
+          "vi": "Chọn ngành là điều vô cùng quan trọng. Trước hết bạn phải nghĩ xem sở thích của mình là gì, ngoài ra còn phải cân nhắc học ngành nào để sau này dễ tìm việc.",
+          "explain": "B nêu tình hình, A và C giải thích thêm; theo trật tự \"先……，还要……\" thì C đứng trước A."
+        },
+        {
+          "no": 58,
+          "sentences": [
+            "更不要希望父母能一直保护我们",
+            "到了十八岁以后，我们就应该慢慢学着长大",
+            "不要总觉得自己年纪还小"
+          ],
+          "answer": "BCA",
+          "vi": "Sau mười tám tuổi, chúng ta nên dần dần học cách trưởng thành, đừng lúc nào cũng nghĩ mình còn nhỏ, càng đừng hy vọng bố mẹ có thể bảo vệ mình mãi.",
+          "explain": "B nêu tình hình, A và C bổ sung; \"不要……\" đứng trước \"更不要……\"."
+        },
+        {
+          "no": 59,
+          "sentences": [
+            "孩子学习不好不一定是因为他们笨",
+            "也可能是因为小孩子平时太粗心、太马虎",
+            "可能是因为父母教育的方法不对"
+          ],
+          "answer": "ACB",
+          "vi": "Trẻ học không tốt chưa chắc là vì chúng ngốc, có thể là do cách dạy của bố mẹ không đúng, cũng có thể là do bình thường trẻ quá bất cẩn, cẩu thả.",
+          "explain": "A nêu tình hình, B và C bổ sung; \"可能……\" đứng trước \"也可能……\"."
+        },
+        {
+          "no": 60,
+          "sentences": [
+            "心情不好时，买东西可以减轻压力，放松自己",
+            "心情好的时候买东西可以让心情更愉快",
+            "我心情好或者不好的时候都喜欢购物"
+          ],
+          "answer": "CBA",
+          "vi": "Dù tâm trạng tốt hay không tốt tôi đều thích mua sắm: lúc tâm trạng tốt, mua đồ giúp tâm trạng vui hơn; lúc tâm trạng không tốt, mua đồ giúp giảm áp lực, thư giãn bản thân.",
+          "explain": "C là câu tổng quát nêu tình hình, B và A lần lượt giải thích hai mặt \"tâm trạng tốt\" và \"tâm trạng không tốt\" của C nên B đứng trước A."
+        },
+        {
+          "no": 61,
+          "sentences": [
+            "如果你只是想稍微运动一下，可以去散步",
+            "但如果你想出汗，打羽毛球、跑步就是很好的选择了",
+            "锻炼身体的方法有很多"
+          ],
+          "answer": "CAB",
+          "vi": "Có rất nhiều cách rèn luyện thân thể. Nếu bạn chỉ muốn vận động nhẹ một chút thì có thể đi dạo, nhưng nếu bạn muốn đổ mồ hôi thì chơi cầu lông, chạy bộ là lựa chọn rất tốt.",
+          "explain": "C nêu tình hình, \"如果……\" là ví dụ minh họa, \"但……\" chỉ sự chuyển ý."
+        },
+        {
+          "no": 62,
+          "sentences": [
+            "生气对身体很不好",
+            "然后想一想问题是怎么产生的，该怎么解决",
+            "遇到这种情况，你必须先冷静下来"
+          ],
+          "answer": "ACB",
+          "vi": "Tức giận rất có hại cho sức khỏe. Gặp tình huống này, bạn phải bình tĩnh lại trước, sau đó nghĩ xem vấn đề phát sinh thế nào, nên giải quyết ra sao.",
+          "explain": "A nêu tình hình, B và C bổ sung cách xử lý; theo trật tự \"先……然后……\" thì C đứng trước B."
+        },
+        {
+          "no": 63,
+          "sentences": [
+            "可是他那边总是占线",
+            "我今天很想给老同学打个电话",
+            "不知道他在和谁联系呢"
+          ],
+          "answer": "BAC",
+          "vi": "Hôm nay tôi rất muốn gọi điện cho bạn học cũ, nhưng máy bên anh ấy cứ báo bận, không biết anh ấy đang liên lạc với ai nữa.",
+          "explain": "B nêu tình hình, \"可是……\" chuyển ý và chỉ kết quả, C là phỏng đoán về kết quả ở A."
+        },
+        {
+          "no": 64,
+          "sentences": [
+            "辛苦了这么多年我们终于硕士毕业了，我想马上去找工作",
+            "可是李华还要读博士",
+            "她说她觉得这样才是成功的"
+          ],
+          "answer": "ABC",
+          "vi": "Vất vả bao nhiêu năm, cuối cùng chúng tôi cũng tốt nghiệp thạc sĩ, tôi muốn đi tìm việc ngay, nhưng Lý Hoa còn muốn học tiến sĩ, cô ấy nói cô ấy cho rằng như vậy mới là thành công.",
+          "explain": "A nêu tình hình, \"可是……\" chuyển ý: nói dự định của \"tôi\" trước rồi mới đến của \"Lý Hoa\"; C bổ sung cho B."
+        },
+        {
+          "no": 65,
+          "sentences": [
+            "可是老师说那只是长城的一小部分",
+            "今天上课老师向我们介绍中国的长城",
+            "我告诉老师我去过北京的长城"
+          ],
+          "answer": "BCA",
+          "vi": "Hôm nay trên lớp thầy giáo giới thiệu Vạn Lý Trường Thành của Trung Quốc, tôi nói với thầy là tôi đã đến Trường Thành ở Bắc Kinh, nhưng thầy nói đó chỉ là một phần nhỏ của Trường Thành.",
+          "explain": "B nêu tình hình, C nối tiếp B (sự việc xảy ra liền sau), câu A chuyển ý đối với câu C."
+        }
+      ]
+    },
+    "part3": {
+      "passages": [
+        {
+          "range": [
+            66,
+            66
+          ],
+          "text": "我以前最喜欢吃米饭了，但是后来报纸上说多吃米饭对减肥没有好处，所以现在我尽量吃面条儿、包子之类的东西。",
+          "vi": "Trước đây tôi thích ăn cơm nhất, nhưng sau đó báo nói ăn nhiều cơm không có lợi cho việc giảm cân, nên bây giờ tôi cố gắng ăn những thứ như mì, bánh bao.",
+          "questions": [
+            {
+              "no": 66,
+              "text": "她现在很少吃什么？",
+              "options": [
+                "包子",
+                "米饭",
+                "饺子",
+                "面条儿"
+              ],
+              "answer": 1,
+              "explain": "\"我以前最喜欢吃米饭了\", \"现在我尽量吃面条儿、包子之类的东西\": để giảm cân, bây giờ cô ấy cố gắng ít ăn cơm."
+            }
+          ]
+        },
+        {
+          "range": [
+            67,
+            67
+          ],
+          "text": "小王下个月要结婚了，我们是多年的老朋友了，怎么也得表示一下，这真是个难题，选什么才好呢？",
+          "vi": "Tiểu Vương tháng sau sẽ kết hôn, chúng tôi là bạn cũ nhiều năm, thế nào cũng phải có chút tấm lòng, đây đúng là một vấn đề khó, chọn gì mới tốt đây?",
+          "questions": [
+            {
+              "no": 67,
+              "text": "他要做什么？",
+              "options": [
+                "祝贺朋友",
+                "参加婚礼",
+                "送朋友礼物",
+                "说明一下"
+              ],
+              "answer": 2,
+              "explain": "\"小王下个月要结婚了\", \"选什么才好呢\": bạn sắp cưới, người nói đang băn khoăn không biết tặng quà gì."
+            }
+          ]
+        },
+        {
+          "range": [
+            68,
+            68
+          ],
+          "text": "大家都不用担心，尽管做好准备。阴也好，晴也好，比赛都将按原计划在9月16日举行，不会有什么变化。",
+          "vi": "Mọi người đều không cần lo lắng, cứ chuẩn bị cho tốt. Trời âm u hay trời nắng thì cuộc thi vẫn sẽ diễn ra theo kế hoạch ban đầu vào ngày 16 tháng 9, sẽ không có thay đổi gì.",
+          "questions": [
+            {
+              "no": 68,
+              "text": "从这句话我们可以知道：",
+              "options": [
+                "比赛时间",
+                "明天晴",
+                "明天阴",
+                "比赛有变化"
+              ],
+              "answer": 0,
+              "explain": "\"比赛都将按原计划在9月16日举行，不会有什么变化\": biết được thời gian thi đấu là ngày 16/9."
+            }
+          ]
+        },
+        {
+          "range": [
+            69,
+            69
+          ],
+          "text": "刚才我上网查了飞机票的票价，如果你不想花太多钱，就不要选择在暑假、寒假或者十一期间去。",
+          "vi": "Vừa rồi tôi lên mạng tra giá vé máy bay, nếu bạn không muốn tốn nhiều tiền thì đừng chọn đi vào kỳ nghỉ hè, nghỉ đông hoặc dịp Quốc khánh.",
+          "questions": [
+            {
+              "no": 69,
+              "text": "买什么时候的飞机票会便宜？",
+              "options": [
+                "寒假",
+                "暑假",
+                "十一期间",
+                "三、四月份"
+              ],
+              "answer": 3,
+              "explain": "Ba khoảng thời gian \"暑假、寒假、十一\" vé đắt, nên tháng 3, tháng 4 vé rẻ hơn."
+            }
+          ]
+        },
+        {
+          "range": [
+            70,
+            70
+          ],
+          "text": "青年人必须有适应社会实际需要的能力，他们必须有丰富的专业知识，必须有良好的人际关系，最关键的是必须有积极向上的思想追求。",
+          "vi": "Thanh niên phải có năng lực thích ứng với nhu cầu thực tế của xã hội, phải có kiến thức chuyên môn phong phú, phải có các mối quan hệ tốt, quan trọng nhất là phải có sự theo đuổi tư tưởng tích cực, hướng lên.",
+          "questions": [
+            {
+              "no": 70,
+              "text": "现在的青年人最重要的是拥有什么？",
+              "options": [
+                "专业知识",
+                "适应能力",
+                "人际关系",
+                "思想追求"
+              ],
+              "answer": 3,
+              "explain": "\"最关键的是必须有积极向上的思想追求\": điều then chốt nhất là theo đuổi tư tưởng."
+            }
+          ]
+        },
+        {
+          "range": [
+            71,
+            71
+          ],
+          "text": "我们公司去年完成了80万的工作任务，不过没有达到要求，只完成了原计划的百分之八十，今年年初必须赶快完成任务。",
+          "vi": "Năm ngoái công ty chúng tôi hoàn thành 800 nghìn công việc, nhưng chưa đạt yêu cầu, chỉ hoàn thành 80% kế hoạch ban đầu, đầu năm nay phải nhanh chóng hoàn thành nhiệm vụ.",
+          "questions": [
+            {
+              "no": 71,
+              "text": "公司实际计划完成多少任务？",
+              "options": [
+                "60万",
+                "80万",
+                "100万",
+                "120万"
+              ],
+              "answer": 2,
+              "explain": "80 vạn chỉ bằng 80% kế hoạch, nên kế hoạch gốc là 80 ÷ 80% = 100 (vạn)."
+            }
+          ]
+        },
+        {
+          "range": [
+            72,
+            72
+          ],
+          "text": "我经常去一家小吃店吃饭，因为我觉得他们家的饭菜既干净又好吃，但是前几天我觉得味道变了，于是问老板盐是不是放多了，原来他们家刚换了厨师。",
+          "vi": "Tôi thường đến một quán ăn vặt để ăn cơm vì thấy đồ ăn ở đó vừa sạch vừa ngon, nhưng mấy hôm trước tôi thấy vị đã thay đổi, nên hỏi ông chủ có phải cho nhiều muối quá không, hóa ra quán họ vừa đổi đầu bếp.",
+          "questions": [
+            {
+              "no": 72,
+              "text": "前几天这家小吃店的饭菜怎么了？",
+              "options": [
+                "更酸了",
+                "更甜了",
+                "更辣了",
+                "更咸了"
+              ],
+              "answer": 3,
+              "explain": "\"问老板盐是不是放多了\": tức là món ăn bị cho nhiều muối, mặn hơn."
+            }
+          ]
+        },
+        {
+          "range": [
+            73,
+            73
+          ],
+          "text": "同学准备来中国旅游，他打算去北京、上海、广州等城市，但是最近大城市污染太严重，我建议他去南方一些小城市走走。",
+          "vi": "Bạn học chuẩn bị đến Trung Quốc du lịch, cậu ấy định đi các thành phố như Bắc Kinh, Thượng Hải, Quảng Châu, nhưng gần đây ô nhiễm ở các thành phố lớn quá nghiêm trọng, tôi khuyên cậu ấy đi dạo một vài thành phố nhỏ ở miền Nam.",
+          "questions": [
+            {
+              "no": 73,
+              "text": "他可能建议同学去哪儿？",
+              "options": [
+                "扬州",
+                "北京",
+                "上海",
+                "广州"
+              ],
+              "answer": 0,
+              "explain": "\"我建议他去南方一些小城市走走\"; trong 4 đáp án, Bắc Kinh, Thượng Hải, Quảng Châu đều là thành phố lớn, chỉ có Dương Châu là thành phố nhỏ."
+            }
+          ]
+        },
+        {
+          "range": [
+            74,
+            74
+          ],
+          "text": "小刚以前又懒又让人讨厌，上了大学以后可真是变化很大，不仅得到了硕士学位，人也变帅了，最让人羡慕的是他现在成了一名成功的律师。",
+          "vi": "Trước đây Tiểu Cương vừa lười vừa khiến người ta ghét, sau khi vào đại học thì thay đổi rất nhiều, không chỉ có được bằng thạc sĩ, người cũng trở nên đẹp trai hơn, điều khiến người ta ngưỡng mộ nhất là bây giờ cậu ấy đã trở thành một luật sư thành công.",
+          "questions": [
+            {
+              "no": 74,
+              "text": "小刚最让人羡慕的是什么？",
+              "options": [
+                "人长得帅",
+                "成了律师",
+                "得到硕士学位",
+                "性格变好了"
+              ],
+              "answer": 1,
+              "explain": "\"最让人羡慕的是他现在成了一名成功的律师\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            75,
+            75
+          ],
+          "text": "遇到不会做的阅读题不要马上看书后的答案，要通过自己的思考慢慢找到正确的答案，思考是个非常重要的过程。",
+          "vi": "Gặp bài đọc hiểu không biết làm thì đừng vội xem đáp án cuối sách, hãy tự suy nghĩ để từ từ tìm ra đáp án đúng, suy nghĩ là một quá trình vô cùng quan trọng.",
+          "questions": [
+            {
+              "no": 75,
+              "text": "遇到不会做的阅读题应该怎么样？",
+              "options": [
+                "马上看答案",
+                "先思考",
+                "问家长",
+                "问老师"
+              ],
+              "answer": 1,
+              "explain": "\"要通过自己的思考慢慢找到正确的答案\": nên suy nghĩ trước."
+            }
+          ]
+        },
+        {
+          "range": [
+            76,
+            76
+          ],
+          "text": "王芳告诉我不要总是相信商店的打折活动，他们往往先把商品的价格提高很多，再打折，实际上一点儿也不便宜，甚至还贵了。",
+          "vi": "Vương Phương bảo tôi đừng lúc nào cũng tin vào các đợt giảm giá của cửa hàng, họ thường tăng giá hàng lên rất nhiều trước rồi mới giảm giá, thực ra chẳng rẻ chút nào, thậm chí còn đắt hơn.",
+          "questions": [
+            {
+              "no": 76,
+              "text": "有些商店怎么打折？",
+              "options": [
+                "涨价后打折",
+                "在原价上打折",
+                "减价后打折",
+                "半价以后打折"
+              ],
+              "answer": 0,
+              "explain": "\"先把商品的价格提高很多，再打折\": tăng giá rồi mới giảm giá."
+            }
+          ]
+        },
+        {
+          "range": [
+            77,
+            77
+          ],
+          "text": "你来应聘怎么忘了带毕业证？你今天就是填了表格也不能面试，明天再来吧。",
+          "vi": "Bạn đến ứng tuyển sao lại quên mang bằng tốt nghiệp? Hôm nay dù bạn có điền xong mẫu đơn cũng không thể phỏng vấn, mai hãy đến lại.",
+          "questions": [
+            {
+              "no": 77,
+              "text": "他为什么不能面试？",
+              "options": [
+                "没填表格",
+                "没带毕业证",
+                "没带照片",
+                "没带身份证"
+              ],
+              "answer": 1,
+              "explain": "\"你来应聘怎么忘了带毕业证\": anh ta quên mang bằng tốt nghiệp nên không thể phỏng vấn."
+            }
+          ]
+        },
+        {
+          "range": [
+            78,
+            78
+          ],
+          "text": "刚工作的时候，李丽很不适应，因为和客人出去吃饭总要干杯，还要说很多祝福的话，她很害羞，总是红着脸什么也说不出来。",
+          "vi": "Lúc mới đi làm, Lý Lệ rất không quen, vì đi ăn với khách luôn phải cạn ly, còn phải nói nhiều lời chúc, cô rất hay ngại, cứ đỏ mặt chẳng nói được gì.",
+          "questions": [
+            {
+              "no": 78,
+              "text": "李丽为什么不适应？",
+              "options": [
+                "要吃饭",
+                "要喝酒",
+                "有很多工作",
+                "没时间回家"
+              ],
+              "answer": 1,
+              "explain": "\"和客人出去吃饭总要干杯\", mà \"干杯\" là từ hay nói khi uống rượu, nên cô không quen vì phải uống rượu."
+            }
+          ]
+        },
+        {
+          "range": [
+            79,
+            79
+          ],
+          "text": "小红交了一个小她五岁的男朋友，所以无论如何，妈妈都不让她出去。",
+          "vi": "Tiểu Hồng quen một bạn trai nhỏ hơn cô năm tuổi, nên dù thế nào mẹ cũng không cho cô ra ngoài.",
+          "questions": [
+            {
+              "no": 79,
+              "text": "小红妈妈对她交的这个男朋友是什么态度？",
+              "options": [
+                "支持",
+                "同意",
+                "无所谓",
+                "反对"
+              ],
+              "answer": 3,
+              "explain": "\"妈妈都不让她出去\": mẹ không muốn Tiểu Hồng gặp bạn trai, tức là phản đối."
+            }
+          ]
+        },
+        {
+          "range": [
+            80,
+            81
+          ],
+          "text": "骑自行车有很多好处：骑自行车上班不用担心堵车，上班不会迟到；骑自行车也可以减少空气污染，保护我们的环境。最重要的是骑自行车能够锻炼身体，使自己的身体更健康。",
+          "vi": "Đi xe đạp có rất nhiều lợi ích: đi xe đạp đi làm không phải lo kẹt xe, đi làm không bị muộn; đi xe đạp cũng có thể giảm ô nhiễm không khí, bảo vệ môi trường của chúng ta. Quan trọng nhất là đi xe đạp có thể rèn luyện thân thể, làm cho cơ thể khỏe mạnh hơn.",
+          "questions": [
+            {
+              "no": 80,
+              "text": "骑自行车有几个好处？",
+              "options": [
+                "一个",
+                "两个",
+                "三个",
+                "四个"
+              ],
+              "answer": 2,
+              "explain": "Có ba lợi ích: một là không lo kẹt xe, đi làm không muộn; hai là giảm ô nhiễm, bảo vệ môi trường; ba là rèn luyện thân thể."
+            },
+            {
+              "no": 81,
+              "text": "骑自行车最大的好处是什么？",
+              "options": [
+                "不堵车",
+                "不迟到",
+                "锻炼身体",
+                "保护环境"
+              ],
+              "answer": 2,
+              "explain": "\"最重要的是骑自行车能够锻炼身体\"."
+            }
+          ]
+        },
+        {
+          "range": [
+            82,
+            83
+          ],
+          "text": "现在有很多年轻人不找工作，只是吃父母的，穿父母的。造成这种情况有几个原因，有人认为是社会的责任，有人认为是父母的失败，但我认为主要原因还是在于年轻人总觉得父母会一直保护他们，所以自己不努力，不找工作，只待在家里。",
+          "vi": "Hiện nay có rất nhiều thanh niên không đi tìm việc, chỉ ăn của bố mẹ, mặc của bố mẹ. Tình trạng này có mấy nguyên nhân: có người cho là trách nhiệm của xã hội, có người cho là thất bại của bố mẹ, nhưng tôi cho rằng nguyên nhân chính vẫn là do thanh niên luôn nghĩ bố mẹ sẽ bảo vệ họ mãi, nên bản thân không cố gắng, không tìm việc, chỉ ở nhà.",
+          "questions": [
+            {
+              "no": 82,
+              "text": "现在有很多年轻人：",
+              "options": [
+                "努力找工作",
+                "不找工作",
+                "工作努力",
+                "工作不努力"
+              ],
+              "answer": 1,
+              "explain": "\"自己不努力，不找工作，只待在家里\": nhiều thanh niên không tìm việc, chứ không phải làm việc không chăm chỉ."
+            },
+            {
+              "no": 83,
+              "text": "作者认为主要是谁造成这种情况的？",
+              "options": [
+                "社会",
+                "父母",
+                "单位",
+                "年轻人自己"
+              ],
+              "answer": 3,
+              "explain": "\"主要原因还是在于年轻人总觉得父母会一直保护他们\": do chính thanh niên."
+            }
+          ]
+        },
+        {
+          "range": [
+            84,
+            85
+          ],
+          "text": "到底一个家庭有几个孩子才是最理想的呢？有人说多点儿好，有两个、三个、四个孩子或者更多多好啊，这样他们就可以一起玩儿，不会觉得无聊了。但是在中国，人们工作压力大，经济压力也不小，父母没有太多的时间照顾更多的孩子，这些原因都让中国父母觉得生一个孩子是最理想的。",
+          "vi": "Rốt cuộc một gia đình có mấy đứa con mới là lý tưởng nhất? Có người nói nhiều một chút thì tốt, có hai, ba, bốn đứa con hoặc nhiều hơn thì thật tốt, như vậy chúng có thể chơi cùng nhau, không thấy buồn chán. Nhưng ở Trung Quốc, áp lực công việc lớn, áp lực kinh tế cũng không nhỏ, bố mẹ không có nhiều thời gian chăm sóc nhiều con, những lý do này khiến bố mẹ Trung Quốc cho rằng sinh một con là lý tưởng nhất.",
+          "questions": [
+            {
+              "no": 84,
+              "text": "现在，中国父母认为一个家庭有几个孩子是最理想的？",
+              "options": [
+                "一个",
+                "两个",
+                "三个",
+                "四个"
+              ],
+              "answer": 0,
+              "explain": "\"……中国父母觉得生一个孩子是最理想的\"."
+            },
+            {
+              "no": 85,
+              "text": "关于中国父母，哪项文中没有提到？",
+              "options": [
+                "经济压力大",
+                "有理想",
+                "工作压力大",
+                "一个孩子最好"
+              ],
+              "answer": 1,
+              "explain": "Bài nêu \"工作压力大, 经济压力也不小\" và \"一个孩子最好\", không nhắc đến \"有理想\"."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

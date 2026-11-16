@@ -36,6 +36,13 @@ three-step explanation (which sentence opens, which follows, which closes). Part
 words that decide it are marked in the passage, and the translation opens once every question is
 answered. Wrong answers are marked "needs review" per question.
 
+A full-test section (Luyện đề) holds the reading part (Q46-85, 40 questions, 40-minute clock) of the 10
+mock tests of 汉语水平考试模拟试题集 HSK 四级 (第2版), each on one paper: pick words for the blanks, tap
+sentences into order, answer the passages, then submit to see the score and, under every question, the
+right answer, a translation and an explanation. Wrong questions are marked "needs review". The data is in
+`src/data/exams/` (extracted from the scanned book; `python3 -I scripts/validate_exams.py` checks it). The
+listening and writing parts are not done yet.
+
 A reflex-games section drills recalling the Chinese word from its Vietnamese meaning (the direction
 the flashcards never ask for). A bar picks the words for every game: all lessons or one, a mark filter,
 random or lesson order, and how many (10 to all); the choice is remembered separately from the
