@@ -12,7 +12,7 @@ import PracticeHub from './components/PracticeHub.jsx';
 import ComparePage from './pages/ComparePage.jsx';
 import ComparePracticePage from './pages/ComparePracticePage.jsx';
 import ExamHubPage from './pages/ExamHubPage.jsx';
-import ExamTestPage from './pages/ExamTestPage.jsx';
+import ExamRunPage from './pages/ExamRunPage.jsx';
 import GamesHubPage from './pages/GamesHubPage.jsx';
 import MeteorGamePage from './pages/MeteorGamePage.jsx';
 import TypeGamePage from './pages/TypeGamePage.jsx';
@@ -34,7 +34,9 @@ import { PAGE_TITLES, sectionOf } from './routes.js';
 // their lists and positions are rebuilt.
 function Page({ route, viewVersion }) {
   if (route.page === 'exam') return <ExamHubPage key={viewVersion} />;
-  if (route.page === 'exam-test') return <ExamTestPage key={route.params.test + ':' + viewVersion} test={route.params.test} />;
+  if (route.page === 'exam-study' || route.page === 'exam-real') {
+    return <ExamRunPage key={route.page + route.params.test + ':' + viewVersion} test={route.params.test} mode={route.page === 'exam-real' ? 'real' : 'study'} />;
+  }
   if (route.page === 'games') return <GamesHubPage key={viewVersion} />;
   if (route.page === 'game-type') return <TypeGamePage key={route.params.mode + ':' + viewVersion} mode={route.params.mode} />;
   if (route.page === 'game-meteor') return <MeteorGamePage key={viewVersion} />;

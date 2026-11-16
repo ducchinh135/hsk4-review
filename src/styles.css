@@ -590,3 +590,14 @@ select.rd-blank.ok{ background:#d3f9d8; }
 select.rd-blank.bad{ background:#ffe3e3; }
 .rd-slot.ok{ border-color:#2f9e44; background:#d3f9d8; cursor:default; }
 .rd-slot.bad{ border-color:#e03131; background:#ffe3e3; cursor:default; }
+.exam-modes{ margin-top:6px; justify-content:flex-start; }
+.exam-tabs{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
+.exam-audio{ display:flex; flex-direction:column; gap:8px; align-items:flex-start; }
+.exam-lq{ padding:10px 0; border-bottom:1px solid #eee; scroll-margin-top:200px; }
+.exam-lq.now{ background:var(--accent-bg,#fff0f3); border-radius:12px; padding:10px 12px; }
+.exam-clip{ display:flex; flex-direction:column; gap:4px; margin:6px 0; }
+.exam-clip-label{ font-size:13px; font-weight:700; color:#666; }
+.exam-script{ margin:8px 0; padding:8px 12px; background:#faf7f2; border-radius:10px; font-size:clamp(16px,3.4vw,19px); }
+.exam-who{ color:var(--accent-a,#ef6b7f); }
+.exam-grid summary{ cursor:pointer; font-size:13px; font-weight:700; color:#666; margin:4px 0; }
+.exam-grid .question-grid{ margin-top:6px; max-height:40vh; overflow:auto; }

@@ -54,7 +54,8 @@ export const PAGE_TITLES = {
   'reading-practice': 'Luyện đọc',
   'reading-review': 'Ôn câu đọc sai',
   exam: 'Luyện đề',
-  'exam-test': 'Làm đề',
+  'exam-study': 'Ôn tập đề',
+  'exam-real': 'Thi thật',
   games: 'Game phản xạ',
   'game-type': 'Gõ từ',
   'game-meteor': 'Bắn thiên thạch',
@@ -90,10 +91,13 @@ function matchCompare(parts) {
   return { page: 'compare', params: {}, path: '/compare' };
 }
 
-// /exam (the list of tests) and /exam/<n> (one test); an unknown test number lands on the list.
+// /exam (the list of tests), /exam/<n>/study (practice mode) and /exam/<n>/real (the real-exam mode); an
+// unknown test number or mode lands on the list.
 function matchExam(parts) {
-  const [n, ...rest] = parts;
-  if (n && !rest.length && /^\d+$/.test(n) && testByNo(n)) return { page: 'exam-test', params: { test: Number(n) }, path: '/exam/' + Number(n) };
+  const [n, mode, ...rest] = parts;
+  if (n && /^\d+$/.test(n) && testByNo(n) && (mode === 'study' || mode === 'real') && !rest.length) {
+    return { page: 'exam-' + mode, params: { test: Number(n) }, path: `/exam/${Number(n)}/${mode}` };
+  }
   return { page: 'exam', params: {}, path: '/exam' };
 }
 

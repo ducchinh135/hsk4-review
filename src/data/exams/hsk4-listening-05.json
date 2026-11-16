@@ -1,0 +1,1127 @@
+{
+ "test": 5,
+ "listening": {
+  "part1": {
+   "questions": [
+    {
+     "no": 1,
+     "statement": "妈妈的小狗不听话。",
+     "answer": false,
+     "script": [
+      {
+       "who": "N",
+       "text": "妈妈很喜欢小狗，不管是吃饭还是看电视，总抱着它。"
+      }
+     ],
+     "vi": "Mẹ rất thích chú chó nhỏ, dù ăn cơm hay xem tivi cũng luôn ôm nó.",
+     "explain": "Đoạn nói mẹ thích chó, luôn ôm nó, không hề nói chó không nghe lời. Nên câu sai."
+    },
+    {
+     "no": 2,
+     "statement": "今天是“我”同学的生日。",
+     "answer": false,
+     "script": [
+      {
+       "who": "N",
+       "text": "今天早上，当我急急忙忙推开教室门时，同学们手拿鲜花，对着我微笑，桌子上还放着一个大大的生日蛋糕。"
+      }
+     ],
+     "vi": "Sáng nay, khi tôi vội vã đẩy cửa lớp học, các bạn tay cầm hoa tươi mỉm cười với tôi, trên bàn còn đặt một chiếc bánh sinh nhật thật to.",
+     "explain": "Bạn học cầm hoa mỉm cười với “tôi”, có bánh sinh nhật, suy ra hôm nay là sinh nhật của “tôi”, không phải của bạn học. Câu sai."
+    },
+    {
+     "no": 3,
+     "statement": "“我”和朋友约定在汽车站见面。",
+     "answer": true,
+     "script": [
+      {
+       "who": "N",
+       "text": "星期天我带着妻子到城里去看一个朋友，因为不认识他的新家，我们在电话里约定在汽车站见面。"
+      }
+     ],
+     "vi": "Chủ nhật tôi đưa vợ vào thành phố thăm một người bạn, vì không biết nhà mới của anh ấy nên chúng tôi hẹn gặp nhau ở bến xe qua điện thoại.",
+     "explain": "Đoạn nói “chúng tôi hẹn nhau ở bến xe qua điện thoại”, nên câu đúng."
+    },
+    {
+     "no": 4,
+     "statement": "人们喜爱小吃是因为吃起来方便。",
+     "answer": false,
+     "script": [
+      {
+       "who": "N",
+       "text": "由于小吃的味道好，又比较便宜，因此越来越受到人们的喜爱。"
+      }
+     ],
+     "vi": "Vì đồ ăn vặt vị ngon lại khá rẻ nên ngày càng được mọi người yêu thích.",
+     "explain": "Lý do là vị ngon và rẻ, không nhắc đến chuyện ăn tiện lợi. Câu sai."
+    },
+    {
+     "no": 5,
+     "statement": "春节的时候，火车客运非常繁忙。",
+     "answer": true,
+     "script": [
+      {
+       "who": "N",
+       "text": "春节前，很多人都要回家过年，所以火车、汽车的生意特别好，可是服务却比以前差了很多。"
+      }
+     ],
+     "vi": "Trước Tết, nhiều người về quê ăn Tết nên việc làm ăn của tàu hỏa, xe khách đặc biệt tốt, nhưng dịch vụ lại kém hơn trước nhiều.",
+     "explain": "“Việc làm ăn của tàu hỏa, xe khách đặc biệt tốt” cho thấy vận tải hành khách rất bận rộn. Câu đúng."
+    },
+    {
+     "no": 6,
+     "statement": "“我”的手机坏了，所以很着急。",
+     "answer": false,
+     "script": [
+      {
+       "who": "N",
+       "text": "我的手机没电了，查不到小明的电话号码，真急人。"
+      }
+     ],
+     "vi": "Điện thoại của tôi hết pin, không tra được số của Tiểu Minh, thật sốt ruột.",
+     "explain": "“Tôi” sốt ruột vì không tra được số điện thoại của Tiểu Minh, điện thoại hết pin chứ không phải hỏng. Câu sai."
+    },
+    {
+     "no": 7,
+     "statement": "目前的污染问题中，城市环境污染最严重。",
+     "answer": false,
+     "script": [
+      {
+       "who": "N",
+       "text": "目前世界各地的污染问题非常严重，最突出的表现是空气污染、海洋污染和城市环境污染。"
+      }
+     ],
+     "vi": "Hiện nay vấn đề ô nhiễm ở khắp nơi trên thế giới rất nghiêm trọng, biểu hiện nổi bật nhất là ô nhiễm không khí, ô nhiễm biển và ô nhiễm môi trường đô thị.",
+     "explain": "Ô nhiễm môi trường đô thị chỉ là một trong ba biểu hiện, đoạn không nói nó nghiêm trọng nhất. Câu sai."
+    },
+    {
+     "no": 8,
+     "statement": "现在旅游的时间更长了。",
+     "answer": true,
+     "script": [
+      {
+       "who": "N",
+       "text": "国家延长节日假期后，人们的旅游时间更充足了，不仅能在国内旅游，还可以去国外观光购物。"
+      }
+     ],
+     "vi": "Sau khi nhà nước kéo dài kỳ nghỉ lễ, thời gian đi du lịch của mọi người dư dả hơn, không chỉ du lịch trong nước mà còn có thể ra nước ngoài tham quan, mua sắm.",
+     "explain": "“Thời gian du lịch dư dả hơn” nghĩa là thời gian du lịch dài hơn. Câu đúng."
+    },
+    {
+     "no": 9,
+     "statement": "女士出席正式场合时，最好不要穿裙子。",
+     "answer": false,
+     "script": [
+      {
+       "who": "N",
+       "text": "出席正式场合时，应该穿正式的服装，比如男人穿西服，女人穿套装。女士如果想穿裙子，就必须穿袜子，而且袜口不要露出来。"
+      }
+     ],
+     "vi": "Khi dự các dịp trang trọng nên mặc trang phục chính thức, ví dụ nam mặc vest, nữ mặc bộ com-lê nữ. Nữ nếu muốn mặc váy thì nhất định phải đi tất, và mép tất không được lộ ra ngoài.",
+     "explain": "Đoạn nói nữ muốn mặc váy thì phải đi tất, tức là vẫn được mặc váy. Câu sai."
+    },
+    {
+     "no": 10,
+     "statement": "年轻人不能跟老人沟通。",
+     "answer": false,
+     "script": [
+      {
+       "who": "N",
+       "text": "在同一个问题上，年轻人和老人的认识会有些不同，但并不代表他们不能沟通。"
+      }
+     ],
+     "vi": "Về cùng một vấn đề, nhận thức của người trẻ và người già có thể hơi khác nhau, nhưng điều đó không có nghĩa là họ không thể trao đổi với nhau.",
+     "explain": "“Không có nghĩa là họ không thể trao đổi” nghĩa là người trẻ và người già vẫn có thể trao đổi. Câu sai."
+    }
+   ]
+  },
+  "part2": {
+   "questions": [
+    {
+     "no": 11,
+     "options": [
+      "下周",
+      "今天",
+      "两周后",
+      "下周末"
+     ],
+     "answer": 3,
+     "script": [
+      {
+       "who": "M",
+       "text": "旅游计划还没出来吗？"
+      },
+      {
+       "who": "F",
+       "text": "经理不在，定不下来，不过下周末应该可以。"
+      },
+      {
+       "who": "Q",
+       "text": "旅游计划什么时候能做出来？"
+      }
+     ],
+     "vi": "Nam: Kế hoạch du lịch vẫn chưa ra à?\nNữ: Giám đốc không có mặt nên chưa chốt được, nhưng cuối tuần sau chắc là được.\nHỏi: Khi nào có thể làm xong kế hoạch du lịch?",
+     "explain": "Nữ nói “下周末应该可以”, tức cuối tuần sau. Chọn D."
+    },
+    {
+     "no": 12,
+     "options": [
+      "不爱唱歌",
+      "跳舞跳得很好",
+      "想打太极拳",
+      "喜欢玩儿电脑"
+     ],
+     "answer": 1,
+     "script": [
+      {
+       "who": "M",
+       "text": "你跳得那么好，联欢会时你一定得表演一个！"
+      },
+      {
+       "who": "F",
+       "text": "我正在准备呢。"
+      },
+      {
+       "who": "Q",
+       "text": "根据对话可知女的怎么样？"
+      }
+     ],
+     "vi": "Nam: Bạn nhảy giỏi như vậy, trong buổi liên hoan nhất định phải biểu diễn một tiết mục!\nNữ: Mình đang chuẩn bị đây.\nHỏi: Theo đoạn hội thoại, người nữ thế nào?",
+     "explain": "Nam nói “你跳得那么好”, nên nữ nhảy rất giỏi. Chọn B."
+    },
+    {
+     "no": 13,
+     "options": [
+      "复习",
+      "考试",
+      "看电影",
+      "去礼堂"
+     ],
+     "answer": 0,
+     "script": [
+      {
+       "who": "F",
+       "text": "今天万达影城上映新片，咱们一起去看看吧。"
+      },
+      {
+       "who": "M",
+       "text": "不行啊，明天就考试了，我还得复习呢！"
+      },
+      {
+       "who": "Q",
+       "text": "男的今晚可能做什么？"
+      }
+     ],
+     "vi": "Nữ: Hôm nay rạp Vạn Đạt chiếu phim mới, mình cùng đi xem nhé.\nNam: Không được, mai thi rồi, mình còn phải ôn bài đây!\nHỏi: Tối nay người nam có thể làm gì?",
+     "explain": "Nam nói “我还得复习呢”, nên tối nay anh ấy ôn bài. Chọn A."
+    },
+    {
+     "no": 14,
+     "options": [
+      "夫妻",
+      "朋友",
+      "恋人",
+      "同事"
+     ],
+     "answer": 0,
+     "script": [
+      {
+       "who": "F",
+       "text": "中午想吃点儿什么？"
+      },
+      {
+       "who": "M",
+       "text": "听你的，你是咱家领导。"
+      },
+      {
+       "who": "Q",
+       "text": "男的和女的是什么关系？"
+      }
+     ],
+     "vi": "Nữ: Trưa nay muốn ăn gì?\nNam: Nghe em, em là “lãnh đạo” trong nhà mình mà.\nHỏi: Quan hệ giữa người nam và người nữ là gì?",
+     "explain": "“咱家领导” là cách nói hay dùng giữa vợ chồng. Chọn A."
+    },
+    {
+     "no": 15,
+     "options": [
+      "伤心",
+      "惊讶",
+      "后悔",
+      "生气"
+     ],
+     "answer": 2,
+     "script": [
+      {
+       "who": "F",
+       "text": "小刘，听说出国留学的名额又增加了，你快点儿去报名吧。"
+      },
+      {
+       "who": "M",
+       "text": "可是我已经答应女朋友不去了，现在怎么跟她说呀！"
+      },
+      {
+       "who": "Q",
+       "text": "男的心情如何？"
+      }
+     ],
+     "vi": "Nữ: Tiểu Lưu, nghe nói chỉ tiêu đi du học nước ngoài lại tăng rồi, cậu mau đi đăng ký đi.\nNam: Nhưng mình đã hứa với bạn gái là không đi rồi, giờ biết nói với cô ấy thế nào đây!\nHỏi: Tâm trạng của người nam thế nào?",
+     "explain": "Nam đã hứa với bạn gái không đi, giờ không biết nói sao, suy ra anh hối hận vì đã hứa. Chọn C."
+    },
+    {
+     "no": 16,
+     "options": [
+      "换裤子",
+      "退裤子",
+      "买裤子",
+      "做裤子"
+     ],
+     "answer": 0,
+     "script": [
+      {
+       "who": "M",
+       "text": "昨天我在这儿买的裤子有点儿肥，能不能给我换一条？"
+      },
+      {
+       "who": "F",
+       "text": "可以，请先让我看一下购物小票。"
+      },
+      {
+       "who": "Q",
+       "text": "男的想干什么？"
+      }
+     ],
+     "vi": "Nam: Hôm qua tôi mua chiếc quần ở đây hơi rộng, có thể đổi cho tôi một chiếc khác không?\nNữ: Được, xin cho tôi xem hóa đơn mua hàng trước.\nHỏi: Người nam muốn làm gì?",
+     "explain": "Nam nói “能不能给我换一条”, tức muốn đổi quần. Chọn A."
+    },
+    {
+     "no": 17,
+     "options": [
+      "旅游的事",
+      "感情的事",
+      "工作的事",
+      "生意的事"
+     ],
+     "answer": 1,
+     "script": [
+      {
+       "who": "F",
+       "text": "李东，你也不小了，是不是该考虑一下个人问题了？"
+      },
+      {
+       "who": "M",
+       "text": "话是这么说，可是也没有合适的呀！"
+      },
+      {
+       "who": "Q",
+       "text": "女的说的是什么事？"
+      }
+     ],
+     "vi": "Nữ: Lý Đông, cậu cũng không còn nhỏ nữa, có phải nên nghĩ đến chuyện cá nhân rồi không?\nNam: Nói thì vậy, nhưng cũng chưa có người hợp mà!\nHỏi: Người nữ đang nói đến chuyện gì?",
+     "explain": "“个人问题” thường chỉ chuyện tình cảm, hôn nhân. Chọn B."
+    },
+    {
+     "no": 18,
+     "options": [
+      "下雨了",
+      "天气晴了",
+      "撞车了",
+      "吵架了"
+     ],
+     "answer": 2,
+     "script": [
+      {
+       "who": "F",
+       "text": "出什么事了？前边怎么有那么多人呢？"
+      },
+      {
+       "who": "M",
+       "text": "发生交通事故了！"
+      },
+      {
+       "who": "Q",
+       "text": "根据对话，可能发生了什么事？"
+      }
+     ],
+     "vi": "Nữ: Có chuyện gì thế? Sao phía trước đông người vậy?\nNam: Xảy ra tai nạn giao thông rồi!\nHỏi: Theo đoạn hội thoại, có thể đã xảy ra chuyện gì?",
+     "explain": "Nam nói “发生交通事故了”, tức xảy ra va chạm xe. Chọn C."
+    },
+    {
+     "no": 19,
+     "options": [
+      "游泳",
+      "爬山",
+      "跑步",
+      "购物"
+     ],
+     "answer": 0,
+     "script": [
+      {
+       "who": "F",
+       "text": "休息一会儿吧，我游不动了。"
+      },
+      {
+       "who": "M",
+       "text": "好，我们上去歇歇。"
+      },
+      {
+       "who": "Q",
+       "text": "他们最可能在做什么？"
+      }
+     ],
+     "vi": "Nữ: Nghỉ một lát đi, mình bơi không nổi nữa.\nNam: Được, mình lên bờ nghỉ chút.\nHỏi: Họ có khả năng nhất đang làm gì?",
+     "explain": "Nữ nói “我游不动了”, suy ra họ đang bơi. Chọn A."
+    },
+    {
+     "no": 20,
+     "options": [
+      "订票点",
+      "银行",
+      "商场",
+      "火车站"
+     ],
+     "answer": 0,
+     "script": [
+      {
+       "who": "M",
+       "text": "这儿可以订机票吗？"
+      },
+      {
+       "who": "F",
+       "text": "可以，您要订哪天的？去哪儿？"
+      },
+      {
+       "who": "Q",
+       "text": "对话可能发生在哪里？"
+      }
+     ],
+     "vi": "Nam: Ở đây có đặt vé máy bay được không?\nNữ: Được, anh muốn đặt ngày nào? Đi đâu?\nHỏi: Cuộc đối thoại có thể diễn ra ở đâu?",
+     "explain": "Nam hỏi “这儿可以订机票吗”, nên nơi đó là điểm bán vé. Chọn A."
+    },
+    {
+     "no": 21,
+     "options": [
+      "想学功夫",
+      "功夫电影好",
+      "功夫激烈",
+      "女孩儿别学功夫"
+     ],
+     "answer": 3,
+     "script": [
+      {
+       "who": "F",
+       "text": "我从小就很喜欢中国的功夫电影，还想学点儿中国功夫。"
+      },
+      {
+       "who": "M",
+       "text": "你又不是男孩子，学这个干什么呀？"
+      },
+      {
+       "who": "Q",
+       "text": "男的是什么意思？"
+      }
+     ],
+     "vi": "Nữ: Từ nhỏ mình đã rất thích phim võ thuật Trung Quốc, còn muốn học chút công phu Trung Quốc.\nNam: Bạn đâu phải con trai, học cái đó làm gì?\nHỏi: Người nam có ý gì?",
+     "explain": "Câu hỏi tu từ “你又不是男孩子，学这个干什么啊” ngụ ý con gái không nên học võ. Chọn D."
+    },
+    {
+     "no": 22,
+     "options": [
+      "简历",
+      "推荐信",
+      "毕业证书",
+      "工作证明"
+     ],
+     "answer": 3,
+     "script": [
+      {
+       "who": "M",
+       "text": "您好，我是来应聘的，请问需要哪些材料？"
+      },
+      {
+       "who": "F",
+       "text": "请让我看一下你的简历、毕业证书和推荐信。"
+      },
+      {
+       "who": "Q",
+       "text": "根据对话，应聘时哪个材料不需要？"
+      }
+     ],
+     "vi": "Nam: Chào chị, tôi đến ứng tuyển, xin hỏi cần những giấy tờ nào?\nNữ: Cho tôi xem sơ yếu lý lịch, bằng tốt nghiệp và thư giới thiệu của anh.\nHỏi: Theo đoạn hội thoại, khi ứng tuyển không cần giấy tờ nào?",
+     "explain": "Nữ chỉ nhắc lý lịch, bằng tốt nghiệp, thư giới thiệu; không cần giấy chứng nhận công việc. Chọn D."
+    },
+    {
+     "no": 23,
+     "options": [
+      "打车",
+      "讲价",
+      "问路",
+      "找宾馆"
+     ],
+     "answer": 3,
+     "script": [
+      {
+       "who": "M",
+       "text": "请问这儿附近有宾馆吗？"
+      },
+      {
+       "who": "F",
+       "text": "离这儿不远有一家，走路10分钟就到了。"
+      },
+      {
+       "who": "Q",
+       "text": "男的在做什么？"
+      }
+     ],
+     "vi": "Nam: Xin hỏi gần đây có khách sạn không?\nNữ: Cách đây không xa có một nhà, đi bộ 10 phút là tới.\nHỏi: Người nam đang làm gì?",
+     "explain": "Nam hỏi “这儿附近有宾馆吗”, tức đang tìm khách sạn. Chọn D."
+    },
+    {
+     "no": 24,
+     "options": [
+      "唱歌",
+      "跳舞",
+      "打太极拳",
+      "说相声"
+     ],
+     "answer": 0,
+     "script": [
+      {
+       "who": "F",
+       "text": "下周有文艺表演，老师让我弹钢琴，让小李唱歌，叫你跳舞。"
+      },
+      {
+       "who": "M",
+       "text": "可是我想和小李换换。"
+      },
+      {
+       "who": "Q",
+       "text": "男的想表演什么？"
+      }
+     ],
+     "vi": "Nữ: Tuần sau có buổi biểu diễn văn nghệ, cô giáo bảo mình chơi piano, Tiểu Lý hát, còn cậu nhảy.\nNam: Nhưng mình muốn đổi với Tiểu Lý.\nHỏi: Người nam muốn biểu diễn gì?",
+     "explain": "Tiểu Lý hát, nam muốn đổi với Tiểu Lý nên anh muốn hát. Chọn A."
+    },
+    {
+     "no": 25,
+     "options": [
+      "高兴",
+      "不满",
+      "悲伤",
+      "愤怒"
+     ],
+     "answer": 1,
+     "script": [
+      {
+       "who": "M",
+       "text": "把号码告诉我，一会儿给你打过去。"
+      },
+      {
+       "who": "F",
+       "text": "你怎么总是忘记我的电话号码呢？真是的！"
+      },
+      {
+       "who": "Q",
+       "text": "女的是什么语气？"
+      }
+     ],
+     "vi": "Nam: Cho anh số đi, lát nữa anh gọi lại cho em.\nNữ: Sao anh cứ quên số điện thoại của em thế? Thật là!\nHỏi: Giọng điệu của người nữ thế nào?",
+     "explain": "“真是的！” mang giọng không hài lòng; nữ bất mãn vì nam luôn quên số của cô. Chọn B."
+    }
+   ]
+  },
+  "part3": {
+   "questions": [
+    {
+     "no": 26,
+     "group": [
+      26
+     ],
+     "options": [
+      "秘书",
+      "服务员",
+      "总经理",
+      "业务经理"
+     ],
+     "answer": 0,
+     "question": "小刘可能是做什么工作的？",
+     "script": [
+      {
+       "who": "F",
+       "text": "经理，您找我有什么事？"
+      },
+      {
+       "who": "M",
+       "text": "小刘，我要的资料都准备好了吗？"
+      },
+      {
+       "who": "F",
+       "text": "准备好了。"
+      },
+      {
+       "who": "M",
+       "text": "那就送到会议室吧，顺便通知各位业务经理去开会。"
+      },
+      {
+       "who": "F",
+       "text": "好的，我马上就去。"
+      }
+     ],
+     "vi": "Nữ: Giám đốc, anh tìm tôi có việc gì ạ?\nNam: Tiểu Lưu, tài liệu tôi cần chuẩn bị xong chưa?\nNữ: Xong rồi ạ.\nNam: Vậy mang tới phòng họp đi, tiện thể thông báo cho các giám đốc kinh doanh đến họp.\nNữ: Vâng, tôi đi ngay.\nHỏi: Tiểu Lưu có thể làm nghề gì?",
+     "explain": "Tiểu Lưu chuẩn bị tài liệu, đưa đến phòng họp, thông báo các giám đốc đi họp, đây là việc của thư ký. Chọn A."
+    },
+    {
+     "no": 27,
+     "group": [
+      27
+     ],
+     "options": [
+      "女的不做饭",
+      "小吃不好吃",
+      "小吃不卫生",
+      "家里东西坏了"
+     ],
+     "answer": 2,
+     "question": "根据对话，可以知道什么？",
+     "script": [
+      {
+       "who": "M",
+       "text": "我说过多少次了，别总去外边吃东西，你就是不听。"
+      },
+      {
+       "who": "F",
+       "text": "外边的小吃味道好嘛，而且以前我吃了也没事。"
+      },
+      {
+       "who": "M",
+       "text": "虽然味道好，但有的不干净。"
+      },
+      {
+       "who": "F",
+       "text": "我也没想到会拉肚子呀！"
+      }
+     ],
+     "vi": "Nam: Anh đã nói bao nhiêu lần rồi, đừng cứ ra ngoài ăn vặt, em cứ không nghe.\nNữ: Đồ ăn vặt bên ngoài vị ngon mà, với lại trước đây em ăn cũng chẳng sao.\nNam: Tuy vị ngon nhưng có chỗ không sạch.\nNữ: Em cũng đâu ngờ lại bị đau bụng tiêu chảy!\nHỏi: Theo đoạn hội thoại, có thể biết điều gì?",
+     "explain": "Nam nói “虽然味道好，但有的不干净”, nghĩa là đồ ăn vặt không vệ sinh. Chọn C."
+    },
+    {
+     "no": 28,
+     "group": [
+      28
+     ],
+     "options": [
+      "女的和男的是邻居",
+      "男的自己住",
+      "男的想换房间",
+      "男的喜欢音乐"
+     ],
+     "answer": 2,
+     "question": "从对话中我们可以知道什么？",
+     "script": [
+      {
+       "who": "M",
+       "text": "我想换个房间，可以吗？"
+      },
+      {
+       "who": "F",
+       "text": "为什么啊？"
+      },
+      {
+       "who": "M",
+       "text": "我那个同屋总在宿舍听音乐，我根本学习不了。"
+      },
+      {
+       "who": "F",
+       "text": "那你搬到304吧。"
+      }
+     ],
+     "vi": "Nam: Tôi muốn đổi phòng, được không?\nNữ: Tại sao vậy?\nNam: Bạn cùng phòng của tôi suốt ngày nghe nhạc trong ký túc xá, tôi hoàn toàn không học được.\nNữ: Vậy anh chuyển sang phòng 304 đi.\nHỏi: Từ đoạn hội thoại ta biết được điều gì?",
+     "explain": "Nam mở đầu “我想换个房间”, nữ đồng ý cho chuyển sang 304. Chọn C."
+    },
+    {
+     "no": 29,
+     "group": [
+      29
+     ],
+     "options": [
+      "节目不好",
+      "眼睛不好",
+      "身体不好",
+      "广告太多"
+     ],
+     "answer": 3,
+     "question": "男的为什么不喜欢看电视？",
+     "script": [
+      {
+       "who": "F",
+       "text": "你经常看电视吗？"
+      },
+      {
+       "who": "M",
+       "text": "不，我很少看，因为广告太多了。"
+      },
+      {
+       "who": "F",
+       "text": "是啊，一集电视剧里边要插播好几段广告。"
+      },
+      {
+       "who": "M",
+       "text": "太浪费时间了！"
+      }
+     ],
+     "vi": "Nữ: Anh có hay xem tivi không?\nNam: Không, tôi rất ít xem vì quảng cáo nhiều quá.\nNữ: Đúng vậy, một tập phim truyền hình mà chen mấy đoạn quảng cáo.\nNam: Lãng phí thời gian quá!\nHỏi: Vì sao người nam không thích xem tivi?",
+     "explain": "Nam nói “我很少看，因为广告太多了”. Chọn D."
+    },
+    {
+     "no": 30,
+     "group": [
+      30
+     ],
+     "options": [
+      "夫妻",
+      "师生",
+      "医生和病人",
+      "经理和秘书"
+     ],
+     "answer": 2,
+     "question": "这两个人是什么关系？",
+     "script": [
+      {
+       "who": "F",
+       "text": "早上好，刘医生。"
+      },
+      {
+       "who": "M",
+       "text": "早上好。今天感觉怎么样？"
+      },
+      {
+       "who": "F",
+       "text": "吃了你开的药，我感觉好多了，就是嗓子还有点儿疼。"
+      },
+      {
+       "who": "M",
+       "text": "那我再给你开点儿药。回去以后注意多休息，过几天就会好。"
+      },
+      {
+       "who": "F",
+       "text": "好的，谢谢！"
+      }
+     ],
+     "vi": "Nữ: Chào buổi sáng, bác sĩ Lưu.\nNam: Chào buổi sáng. Hôm nay cảm thấy thế nào?\nNữ: Uống thuốc bác sĩ kê tôi thấy đỡ nhiều rồi, chỉ là cổ họng vẫn còn hơi đau.\nNam: Vậy tôi kê thêm cho chị ít thuốc. Về nhà nhớ nghỉ ngơi nhiều, vài ngày nữa sẽ khỏi.\nNữ: Vâng, cảm ơn bác sĩ!\nHỏi: Hai người này có quan hệ gì?",
+     "explain": "Gọi “刘医生”, uống thuốc ông kê, ông kê thêm thuốc: quan hệ bác sĩ và bệnh nhân. Chọn C."
+    },
+    {
+     "no": 31,
+     "group": [
+      31
+     ],
+     "options": [
+      "坐船",
+      "坐火车",
+      "坐飞机",
+      "坐汽车"
+     ],
+     "answer": 2,
+     "question": "女的怎么去上海？",
+     "script": [
+      {
+       "who": "F",
+       "text": "你能帮我整理一下行李吗？"
+      },
+      {
+       "who": "M",
+       "text": "又要出差呀？"
+      },
+      {
+       "who": "F",
+       "text": "是啊，跟经理去上海开会，明天就走。"
+      },
+      {
+       "who": "M",
+       "text": "坐火车去吗？"
+      },
+      {
+       "who": "F",
+       "text": "不是，王秘书给我们订了机票。"
+      }
+     ],
+     "vi": "Nữ: Anh giúp em sắp xếp hành lý một chút được không?\nNam: Lại đi công tác à?\nNữ: Vâng, đi Thượng Hải họp cùng giám đốc, mai đi.\nNam: Đi bằng tàu hỏa à?\nNữ: Không, thư ký Vương đặt vé máy bay cho chúng em rồi.\nHỏi: Người nữ đi Thượng Hải bằng cách nào?",
+     "explain": "Nữ nói “王秘书给我们订了机票”, tức đi bằng máy bay. Chọn C."
+    },
+    {
+     "no": 32,
+     "group": [
+      32
+     ],
+     "options": [
+      "赢了",
+      "输了",
+      "平了",
+      "没进球"
+     ],
+     "answer": 0,
+     "question": "昨天的比赛他们队怎么样？",
+     "script": [
+      {
+       "who": "M",
+       "text": "昨天的篮球比赛真精彩！"
+      },
+      {
+       "who": "F",
+       "text": "是呀，好久没看到这么激烈的比赛了。"
+      },
+      {
+       "who": "M",
+       "text": "两个队的水平差不多。"
+      },
+      {
+       "who": "F",
+       "text": "可不是，要是最后一个三分球没进，我们就输了。"
+      },
+      {
+       "who": "M",
+       "text": "是啊，就比他们多了一分，真危险！"
+      }
+     ],
+     "vi": "Nam: Trận bóng rổ hôm qua hay thật!\nNữ: Đúng vậy, lâu rồi không xem trận nào quyết liệt thế.\nNam: Trình độ hai đội ngang nhau.\nNữ: Chứ còn gì, nếu quả ném ba điểm cuối không vào thì chúng ta thua rồi.\nNam: Ừ, chỉ hơn họ một điểm, nguy hiểm thật!\nHỏi: Trận hôm qua đội của họ thế nào?",
+     "explain": "“就比他们多了一分” và “要是最后一个三分球没进，我们就输了”: đội của họ thắng sát nút. Chọn A."
+    },
+    {
+     "no": 33,
+     "group": [
+      33
+     ],
+     "options": [
+      "失业了",
+      "不能工作",
+      "没努力",
+      "没考上研究生"
+     ],
+     "answer": 3,
+     "question": "关于女的，可以知道什么？",
+     "script": [
+      {
+       "who": "M",
+       "text": "没考上研究生，找工作也行啊！"
+      },
+      {
+       "who": "F",
+       "text": "可是我还想再考一次，不然不是白努力了！"
+      },
+      {
+       "who": "M",
+       "text": "那你再考不上怎么办呢？"
+      },
+      {
+       "who": "F",
+       "text": "考不上再找工作。"
+      }
+     ],
+     "vi": "Nam: Không thi đỗ cao học thì tìm việc cũng được mà!\nNữ: Nhưng em còn muốn thi lại một lần nữa, không thì chẳng phải công sức đổ sông đổ biển sao!\nNam: Vậy thi lại mà vẫn không đỗ thì sao?\nNữ: Không đỗ thì lại đi tìm việc.\nHỏi: Về người nữ, có thể biết điều gì?",
+     "explain": "Nam nói “没考上研究生，找工作也行啊”, nữ muốn thi lại, nên hiện giờ cô chưa đỗ cao học. Chọn D."
+    },
+    {
+     "no": 34,
+     "group": [
+      34
+     ],
+     "options": [
+      "要结婚",
+      "明天是情人节",
+      "今天是情人节",
+      "明天是圣诞节"
+     ],
+     "answer": 1,
+     "question": "男的为什么要给女朋友买花儿？",
+     "script": [
+      {
+       "who": "F",
+       "text": "先生，你想选点儿什么？"
+      },
+      {
+       "who": "M",
+       "text": "明天是情人节，我想给我女朋友买些花儿。"
+      },
+      {
+       "who": "F",
+       "text": "那你打算花多少钱？"
+      },
+      {
+       "who": "M",
+       "text": "钱不是问题，只要漂亮就行。"
+      }
+     ],
+     "vi": "Nữ: Thưa anh, anh muốn chọn gì ạ?\nNam: Mai là Valentine, tôi muốn mua ít hoa tặng bạn gái.\nNữ: Vậy anh định chi bao nhiêu tiền?\nNam: Tiền không thành vấn đề, miễn là đẹp.\nHỏi: Vì sao người nam muốn mua hoa cho bạn gái?",
+     "explain": "Nam nói “明天是情人节”. Chọn B."
+    },
+    {
+     "no": 35,
+     "group": [
+      35
+     ],
+     "options": [
+      "男的是导游",
+      "他们周末见面",
+      "女的明天有事",
+      "男的刚来北京"
+     ],
+     "answer": 1,
+     "question": "根据对话，我们可以知道：",
+     "script": [
+      {
+       "who": "F",
+       "text": "听说你来北京一年了，能给我推荐几个旅游的地方吗？"
+      },
+      {
+       "who": "M",
+       "text": "当然可以了，故宫、长城、颐和园……这些地方都很受欢迎。"
+      },
+      {
+       "who": "F",
+       "text": "你有时间吗？陪我一起去吧。"
+      },
+      {
+       "who": "M",
+       "text": "行啊，没问题！这个周末怎么样？"
+      },
+      {
+       "who": "F",
+       "text": "好，谢谢你！"
+      }
+     ],
+     "vi": "Nữ: Nghe nói anh đến Bắc Kinh một năm rồi, anh giới thiệu cho tôi vài chỗ du lịch được không?\nNam: Tất nhiên rồi, Cố Cung, Vạn Lý Trường Thành, Di Hòa Viên... những nơi này đều rất được yêu thích.\nNữ: Anh có thời gian không? Đi cùng tôi nhé.\nNam: Được thôi, không thành vấn đề! Cuối tuần này thì sao?\nNữ: Được, cảm ơn anh!\nHỏi: Theo đoạn hội thoại, ta có thể biết:",
+     "explain": "Nữ rủ nam đi cùng, nam hẹn “这个周末”, nữ đồng ý, nên cuối tuần họ gặp nhau. Chọn B."
+    },
+    {
+     "no": 36,
+     "group": [
+      36,
+      37
+     ],
+     "options": [
+      "挣钱",
+      "有时间",
+      "爱表现",
+      "心情不好"
+     ],
+     "answer": 0,
+     "question": "那些明星为什么写书？",
+     "script": [
+      {
+       "who": "N",
+       "text": "现在，有些明星为了追求经济利益而写书，这样很不好，因为读者花钱买他们的书，是为了从书中获得有益的东西，所以希望他们写书的时候，最好认真地考虑一下自己的写作目的。"
+      }
+     ],
+     "vi": "Hiện nay, có một số ngôi sao vì theo đuổi lợi ích kinh tế mà viết sách, như vậy rất không tốt, vì độc giả bỏ tiền mua sách của họ là để thu được điều bổ ích từ sách, nên hy vọng khi viết sách họ tốt nhất nên suy nghĩ nghiêm túc về mục đích viết của mình.\nHỏi: Những ngôi sao đó vì sao viết sách?",
+     "explain": "“为了追求经济利益” tức vì kiếm tiền. Chọn A."
+    },
+    {
+     "no": 37,
+     "group": [
+      36,
+      37
+     ],
+     "options": [
+      "友谊",
+      "事业",
+      "爱情",
+      "写作目的"
+     ],
+     "answer": 3,
+     "question": "说话人希望明星要考虑什么？",
+     "script": [
+      {
+       "who": "N",
+       "text": "现在，有些明星为了追求经济利益而写书，这样很不好，因为读者花钱买他们的书，是为了从书中获得有益的东西，所以希望他们写书的时候，最好认真地考虑一下自己的写作目的。"
+      }
+     ],
+     "vi": "Hiện nay, có một số ngôi sao vì theo đuổi lợi ích kinh tế mà viết sách, như vậy rất không tốt, vì độc giả bỏ tiền mua sách của họ là để thu được điều bổ ích từ sách, nên hy vọng khi viết sách họ tốt nhất nên suy nghĩ nghiêm túc về mục đích viết của mình.\nHỏi: Người nói hy vọng các ngôi sao cân nhắc điều gì?",
+     "explain": "Người nói hy vọng khi viết sách họ “认真地考虑一下自己的写作目的”. Chọn D."
+    },
+    {
+     "no": 38,
+     "group": [
+      38,
+      39
+     ],
+     "options": [
+      "家长",
+      "老师",
+      "领导",
+      "大夫"
+     ],
+     "answer": 0,
+     "question": "说话人是谁？",
+     "script": [
+      {
+       "who": "N",
+       "text": "原来我家孩子吃饭的时候，只想着自己，可是现在不一样了。他总是等长辈开始吃以后才拿起筷子。大人们都说他长大了，懂事了。我听着心里也挺高兴的。"
+      }
+     ],
+     "vi": "Trước đây con tôi lúc ăn cơm chỉ nghĩ đến bản thân, nhưng giờ khác rồi. Nó luôn đợi người lớn bắt đầu ăn rồi mới cầm đũa. Mọi người lớn đều bảo nó lớn rồi, hiểu chuyện rồi. Nghe vậy trong lòng tôi cũng rất vui.\nHỏi: Người nói là ai?",
+     "explain": "Người nói bắt đầu bằng “我家孩子”, là phụ huynh của đứa trẻ. Chọn A."
+    },
+    {
+     "no": 39,
+     "group": [
+      38,
+      39
+     ],
+     "options": [
+      "懂事了",
+      "很诚实",
+      "成绩好",
+      "没礼貌"
+     ],
+     "answer": 0,
+     "question": "她的孩子现在怎么样？",
+     "script": [
+      {
+       "who": "N",
+       "text": "原来我家孩子吃饭的时候，只想着自己，可是现在不一样了。他总是等长辈开始吃以后才拿起筷子。大人们都说他长大了，懂事了。我听着心里也挺高兴的。"
+      }
+     ],
+     "vi": "Trước đây con tôi lúc ăn cơm chỉ nghĩ đến bản thân, nhưng giờ khác rồi. Nó luôn đợi người lớn bắt đầu ăn rồi mới cầm đũa. Mọi người lớn đều bảo nó lớn rồi, hiểu chuyện rồi. Nghe vậy trong lòng tôi cũng rất vui.\nHỏi: Con của bà ấy bây giờ thế nào?",
+     "explain": "“大人们都说他长大了，懂事了”. Chọn A."
+    },
+    {
+     "no": 40,
+     "group": [
+      40,
+      41
+     ],
+     "options": [
+      "电影中",
+      "报纸上",
+      "故事书里",
+      "小说中"
+     ],
+     "answer": 1,
+     "question": "这段话最可能出现在哪儿？",
+     "script": [
+      {
+       "who": "N",
+       "text": "随着人们生活质量的不断提高，手表已不仅仅是看时间的工具了。飞亚达表将良好的质量、优秀的设计与人们的个性、身份联系起来。戴上它，会使人感受不凡的气质。或许正像它的广告词中说的：飞亚达，一旦拥有，别无所求。"
+      }
+     ],
+     "vi": "Cùng với chất lượng cuộc sống không ngừng nâng cao, đồng hồ đeo tay đã không chỉ là công cụ xem giờ. Đồng hồ Phi Á Đạt gắn chất lượng tốt và thiết kế xuất sắc với cá tính, thân phận của con người. Đeo nó lên sẽ khiến người ta cảm nhận được khí chất phi phàm. Có lẽ đúng như lời quảng cáo của nó: Phi Á Đạt, một khi đã sở hữu, chẳng cầu gì hơn.\nHỏi: Đoạn này có khả năng xuất hiện ở đâu nhất?",
+     "explain": "Đoạn giới thiệu chất lượng, thiết kế và lời quảng cáo của đồng hồ, giống một bài trên báo. Chọn B."
+    },
+    {
+     "no": 41,
+     "group": [
+      40,
+      41
+     ],
+     "options": [
+      "价格贵",
+      "质量好",
+      "没人买",
+      "没做广告"
+     ],
+     "answer": 1,
+     "question": "根据这段话，可以知道飞亚达表怎么样？",
+     "script": [
+      {
+       "who": "N",
+       "text": "随着人们生活质量的不断提高，手表已不仅仅是看时间的工具了。飞亚达表将良好的质量、优秀的设计与人们的个性、身份联系起来。戴上它，会使人感受不凡的气质。或许正像它的广告词中说的：飞亚达，一旦拥有，别无所求。"
+      }
+     ],
+     "vi": "Cùng với chất lượng cuộc sống không ngừng nâng cao, đồng hồ đeo tay đã không chỉ là công cụ xem giờ. Đồng hồ Phi Á Đạt gắn chất lượng tốt và thiết kế xuất sắc với cá tính, thân phận của con người. Đeo nó lên sẽ khiến người ta cảm nhận được khí chất phi phàm. Có lẽ đúng như lời quảng cáo của nó: Phi Á Đạt, một khi đã sở hữu, chẳng cầu gì hơn.\nHỏi: Theo đoạn này, đồng hồ Phi Á Đạt thế nào?",
+     "explain": "“将良好的质量、优秀的设计……联系起来” cho thấy chất lượng tốt. Chọn B."
+    },
+    {
+     "no": 42,
+     "group": [
+      42,
+      43
+     ],
+     "options": [
+      "非常礼貌",
+      "主人高兴",
+      "显得主动",
+      "可能带来不便"
+     ],
+     "answer": 3,
+     "question": "做客的时候，到得很早会怎么样？",
+     "script": [
+      {
+       "who": "N",
+       "text": "关于遵守时间这个问题，人们往往认为，遵守时间就是不迟到。那么早到行不行呢？有时也不太好。比如你去拜访亲戚或朋友，如果去得太早，可能主人还没准备好，这就可能会给他们造成一些不便。一般来说，提前两三分钟到比较好。"
+      }
+     ],
+     "vi": "Về vấn đề giữ đúng giờ, người ta thường cho rằng giữ đúng giờ là không đến muộn. Vậy đến sớm có được không? Đôi khi cũng không hay lắm. Ví dụ bạn đi thăm họ hàng hoặc bạn bè, nếu đến quá sớm, có thể chủ nhà chưa chuẩn bị xong, như vậy có thể gây cho họ chút bất tiện. Nói chung, đến trước hai ba phút thì tốt hơn.\nHỏi: Khi đi làm khách, đến rất sớm thì sẽ thế nào?",
+     "explain": "“如果去得太早，可能主人还没准备好，这就可能会给他们造成一些不便”. Chọn D."
+    },
+    {
+     "no": 43,
+     "group": [
+      42,
+      43
+     ],
+     "options": [
+      "迟到一点儿",
+      "提前两三分钟",
+      "越早越好",
+      "不迟到就行了"
+     ],
+     "answer": 1,
+     "question": "根据这段话，下列哪种做法比较好？",
+     "script": [
+      {
+       "who": "N",
+       "text": "关于遵守时间这个问题，人们往往认为，遵守时间就是不迟到。那么早到行不行呢？有时也不太好。比如你去拜访亲戚或朋友，如果去得太早，可能主人还没准备好，这就可能会给他们造成一些不便。一般来说，提前两三分钟到比较好。"
+      }
+     ],
+     "vi": "Về vấn đề giữ đúng giờ, người ta thường cho rằng giữ đúng giờ là không đến muộn. Vậy đến sớm có được không? Đôi khi cũng không hay lắm. Ví dụ bạn đi thăm họ hàng hoặc bạn bè, nếu đến quá sớm, có thể chủ nhà chưa chuẩn bị xong, như vậy có thể gây cho họ chút bất tiện. Nói chung, đến trước hai ba phút thì tốt hơn.\nHỏi: Theo đoạn này, cách làm nào sau đây tốt hơn?",
+     "explain": "Câu cuối: “一般来说，提前两三分钟到比较好”. Chọn B."
+    },
+    {
+     "no": 44,
+     "group": [
+      44,
+      45
+     ],
+     "options": [
+      "温度",
+      "香气",
+      "味道",
+      "颜色"
+     ],
+     "answer": 1,
+     "question": "喝酒时，鼻子能够享受到：",
+     "script": [
+      {
+       "who": "N",
+       "text": "喝酒时，鼻子可以闻到酒的香气，眼睛可以看到酒的颜色，舌头可以知道酒的味道，只有耳朵不能享受到什么。于是聪明的希腊人就想出了一个办法：在喝酒时相互碰一下杯子，杯子就会发出响声，这样耳朵也得到享受了。"
+      }
+     ],
+     "vi": "Khi uống rượu, mũi có thể ngửi hương thơm của rượu, mắt có thể thấy màu của rượu, lưỡi có thể biết vị của rượu, chỉ có tai là không thưởng thức được gì. Thế là người Hy Lạp thông minh nghĩ ra một cách: khi uống rượu cụng ly với nhau, ly sẽ phát ra tiếng kêu, như vậy tai cũng được thưởng thức.\nHỏi: Khi uống rượu, mũi có thể tận hưởng:",
+     "explain": "Đoạn nói “鼻子可以闻到酒的香气”. Chọn B."
+    },
+    {
+     "no": 45,
+     "group": [
+      44,
+      45
+     ],
+     "options": [
+      "怎样喝酒",
+      "人很聪明",
+      "声音重要",
+      "碰杯的原因"
+     ],
+     "answer": 3,
+     "question": "这段话主要谈什么？",
+     "script": [
+      {
+       "who": "N",
+       "text": "喝酒时，鼻子可以闻到酒的香气，眼睛可以看到酒的颜色，舌头可以知道酒的味道，只有耳朵不能享受到什么。于是聪明的希腊人就想出了一个办法：在喝酒时相互碰一下杯子，杯子就会发出响声，这样耳朵也得到享受了。"
+      }
+     ],
+     "vi": "Khi uống rượu, mũi có thể ngửi hương thơm của rượu, mắt có thể thấy màu của rượu, lưỡi có thể biết vị của rượu, chỉ có tai là không thưởng thức được gì. Thế là người Hy Lạp thông minh nghĩ ra một cách: khi uống rượu cụng ly với nhau, ly sẽ phát ra tiếng kêu, như vậy tai cũng được thưởng thức.\nHỏi: Đoạn này chủ yếu nói về điều gì?",
+     "explain": "Đoạn giải thích vì sao khi uống rượu người ta cụng ly để tai cũng được thưởng thức. Chọn D."
+    }
+   ]
+  }
+ }
+}

@@ -1,7 +1,9 @@
 // Unit tests for the full-test (exam) logic and data. Run: npm run test:unit
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { TESTS, TOTAL, answeredCount, examKey, filledText, gradeTest, mmss, orderedSentences, questionsOf, scaled, testByNo, toggleLetter, usedWords } from '../src/exam.js';
+import { existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { TESTS, TOTAL, TOTALS, answeredCount, audioUrl, clipsOf, gapOf, isAnswered, listeningOf, sectionQuestions, examKey, filledText, gradeTest, mmss, orderedSentences, questionsOf, scaled, testByNo, toggleLetter, usedWords } from '../src/exam.js';
 
 test('there are ten tests, numbered 1-10', () => {
   assert.deepEqual(TESTS.map((t) => t.test), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
@@ -92,4 +94,59 @@ test('orderedSentences(), filledText(), examKey(), scaled() and mmss()', () => {
   assert.equal(mmss(2400), '40:00');
   assert.equal(mmss(65), '01:05');
   assert.equal(mmss(-3), '00:00');
+});
+
+const publicPath = (url) => fileURLToPath(new URL('../public' + url, import.meta.url));
+
+test('every test has the 45 listening questions 1-45, once each, in order', () => {
+  for (const t of TESTS) {
+    assert.deepEqual(listeningOf(t).map((q) => q.no), Array.from({ length: 45 }, (_, i) => i + 1), `test ${t.test}`);
+    assert.equal(sectionQuestions(t, 'listening').length, TOTALS.listening);
+    assert.equal(sectionQuestions(t, 'reading').length, TOTALS.reading);
+  }
+});
+
+test('every listening question is well formed and has its audio clip', () => {
+  for (const t of TESTS) {
+    for (const q of listeningOf(t)) {
+      const at = `test ${t.test} Q${q.no}`;
+      assert.ok(q.explain && q.vi && q.script.length, at);
+      if (q.kind === 'tf') assert.equal(typeof q.answer, 'boolean', at);
+      else {
+        assert.equal(q.options.length, 4, at);
+        assert.ok(q.answer >= 0 && q.answer < 4, at);
+      }
+      if (q.part === 3) assert.ok(q.group.includes(q.no) && q.question, at);
+      for (const c of clipsOf(t, q)) assert.ok(existsSync(publicPath(audioUrl(c.file))), at + ' ' + c.file);
+      assert.ok(gapOf(t, q.no) >= 10 && gapOf(t, q.no) <= 21, at + ' gap');
+    }
+  }
+});
+
+test('part 1 listening has 10 questions and the exam gives 10 s then 17 s to answer', () => {
+  const t = TESTS[0];
+  assert.equal(listeningOf(t).filter((q) => q.part === 1).length, 10);
+  assert.ok(Math.abs(gapOf(t, 1) - 10) <= 1.5);
+  assert.ok(Math.abs(gapOf(t, 20) - 17) <= 1.5);
+});
+
+test('the second question of a shared passage plays the passage clip first', () => {
+  const t = TESTS[0];
+  const q36 = listeningOf(t).find((q) => q.no === 36);
+  const q37 = listeningOf(t).find((q) => q.no === 37);
+  assert.deepEqual(q36.group, [36, 37]);
+  assert.equal(clipsOf(t, q36).length, 1);
+  assert.deepEqual(clipsOf(t, q37).map((c) => c.file), ['t01/q36.mp3', 't01/q37.mp3']);
+});
+
+test('gradeTest() grades a listening section; true/false answers compare strictly', () => {
+  const t = TESTS[0];
+  const all = Object.fromEntries(listeningOf(t).map((q) => [q.no, q.answer]));
+  assert.equal(gradeTest(t, all, 'listening').score, 45);
+  assert.equal(gradeTest(t, {}, 'listening').total, 45);
+  const q1 = listeningOf(t)[0];
+  assert.equal(gradeTest(t, { ...all, 1: !q1.answer }, 'listening').score, 44);
+  assert.equal(answeredCount(t, { 1: false, 11: 0 }, 'listening'), 2);
+  assert.equal(isAnswered(q1, false), true);
+  assert.equal(isAnswered(q1, undefined), false);
 });
