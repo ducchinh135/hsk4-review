@@ -32,6 +32,18 @@ import W07 from './data/exams/hsk4-writing-07.json' with { type: 'json' };
 import W08 from './data/exams/hsk4-writing-08.json' with { type: 'json' };
 import W09 from './data/exams/hsk4-writing-09.json' with { type: 'json' };
 import W10 from './data/exams/hsk4-writing-10.json' with { type: 'json' };
+// The official Hanban papers: one file each, with reading, listening and writing together.
+import HH41002 from './data/exams/hsk4-hanban-H41002.json' with { type: 'json' };
+import HH41003 from './data/exams/hsk4-hanban-H41003.json' with { type: 'json' };
+import HH41004 from './data/exams/hsk4-hanban-H41004.json' with { type: 'json' };
+import HH41005 from './data/exams/hsk4-hanban-H41005.json' with { type: 'json' };
+import HH41006 from './data/exams/hsk4-hanban-H41006.json' with { type: 'json' };
+import HH41007 from './data/exams/hsk4-hanban-H41007.json' with { type: 'json' };
+import HH41008 from './data/exams/hsk4-hanban-H41008.json' with { type: 'json' };
+import HH41009 from './data/exams/hsk4-hanban-H41009.json' with { type: 'json' };
+import HH41110 from './data/exams/hsk4-hanban-H41110.json' with { type: 'json' };
+import HH41111 from './data/exams/hsk4-hanban-H41111.json' with { type: 'json' };
+import HH41218 from './data/exams/hsk4-hanban-H41218.json' with { type: 'json' };
 import AUDIO from './data/exams/audio-manifest.json' with { type: 'json' };
 
 const WRITING = [W01, W02, W03, W04, W05, W06, W07, W08, W09, W10];
@@ -39,7 +51,11 @@ const LISTENING = [L01, L02, L03, L04, L05, L06, L07, L08, L09, L10];
 // Each test: its reading section (hsk4-NN.json), listening section (hsk4-listening-NN.json) and writing
 // section (hsk4-writing-NN.json).
 const READING = [T01, T02, T03, T04, T05, T06, T07, T08, T09, T10];
-export const TESTS = READING.map((t, i) => ({ ...t, listening: LISTENING[i].listening, writing: WRITING[i].writing }));
+const BOOK_TESTS = READING.map((t, i) => ({ ...t, source: 'book', listening: LISTENING[i].listening, writing: WRITING[i].writing }));
+const HANBAN_TESTS = [HH41002, HH41003, HH41004, HH41005, HH41006, HH41007, HH41008, HH41009, HH41110, HH41111, HH41218];
+// Tests 1-10 are the book's mock tests, 11 and up the official Hanban papers.
+export const TESTS = [...BOOK_TESTS, ...HANBAN_TESTS];
+export const testName = (t) => (t.source === 'hanban' ? `Hanban ${t.code}` : `Đề số ${t.test}`);
 export const testByNo = (n) => TESTS.find((t) => t.test === Number(n));
 
 export const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];

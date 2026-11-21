@@ -199,8 +199,9 @@ test('matchRoute() maps the exam pages and sends anything unknown to the list', 
   assert.deepEqual(matchRoute('/exam'), list);
   assert.deepEqual(matchRoute('/exam/3/study'), { page: 'exam-study', params: { test: 3 }, path: '/exam/3/study' });
   assert.deepEqual(matchRoute('/exam/10/real'), { page: 'exam-real', params: { test: 10 }, path: '/exam/10/real' });
+  assert.deepEqual(matchRoute('/exam/21/study'), { page: 'exam-study', params: { test: 21 }, path: '/exam/21/study' });
   assert.deepEqual(matchRoute('/exam/03/real'), { page: 'exam-real', params: { test: 3 }, path: '/exam/3/real' });
-  for (const p of ['/exam/3', '/exam/0/study', '/exam/11/real', '/exam/abc/study', '/exam/3/x', '/exam/3/study/x']) assert.deepEqual(matchRoute(p), list);
+  for (const p of ['/exam/3', '/exam/0/study', '/exam/22/real', '/exam/abc/study', '/exam/3/x', '/exam/3/study/x']) assert.deepEqual(matchRoute(p), list);
   assert.equal(sectionOf('exam'), 'exam');
   for (const p of ['exam-study', 'exam-real']) assert.equal(sectionOf(p), 'exam');
 });

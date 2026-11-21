@@ -86,8 +86,8 @@ export function ListeningPaper({ test, answers, onAnswer, revealed, okOf, audio,
               ))}
               {q.part === 3 && <div className="rd-text-line">❓ {q.question}</div>}
             </div>
-            <div className="quiz-reveal-sub" style={{ whiteSpace: 'pre-line' }}>{q.vi}</div>
-            <div className="quiz-reveal-sub">💡 {q.explain}</div>
+            {q.vi && <div className="quiz-reveal-sub" style={{ whiteSpace: 'pre-line' }}>{q.vi}</div>}
+            {q.explain && <div className="quiz-reveal-sub">💡 {q.explain}</div>}
           </div>
         )}
       </div>
@@ -156,8 +156,8 @@ export function ReadingPaper({ test, answers, onAnswer, revealed, okOf }) {
                   <div className="rd-item-explain">
                     <Reveal ok={okOf(it.no)}>{okOf(it.no) ? '✅ Đúng' : `❌ Sai — đáp án: ${LETTERS[it.answer]} ${s.words[it.answer]}`}</Reveal>
                     <div className="hz">{filledText(it.text, s.words[it.answer])}</div>
-                    <div className="quiz-reveal-sub">{it.vi}</div>
-                    <div className="quiz-reveal-sub">💡 {it.explain}</div>
+                    {it.vi && <div className="quiz-reveal-sub">{it.vi}</div>}
+                    {it.explain && <div className="quiz-reveal-sub">💡 {it.explain}</div>}
                   </div>
                 )}
               </div>
@@ -202,8 +202,8 @@ export function ReadingPaper({ test, answers, onAnswer, revealed, okOf }) {
           <div className="rd-item-explain">
             <Reveal ok={okOf(q.no)}>{okOf(q.no) ? `✅ Đúng: ${arrow(q.answer)}` : `❌ Sai${order.length === 3 ? ` — bạn xếp ${arrow(order)}` : ''} · Đúng: ${arrow(q.answer)}`}</Reveal>
             <p className="rd-para">{orderedSentences(q).join('')}</p>
-            <div className="quiz-reveal-sub">{q.vi}</div>
-            <div className="quiz-reveal-sub">💡 {q.explain}</div>
+            {q.vi && <div className="quiz-reveal-sub">{q.vi}</div>}
+            {q.explain && <div className="quiz-reveal-sub">💡 {q.explain}</div>}
           </div>
         )}
       </div>
@@ -214,7 +214,7 @@ export function ReadingPaper({ test, answers, onAnswer, revealed, okOf }) {
     <div key={p.range[0]} className="rd-set">
       <div className="rd-passage">
         <div className="hz">{p.text}</div>
-        {p.questions.every((q) => revealed(q.no)) && <div className="vi">{p.vi}</div>}
+        {p.vi && p.questions.every((q) => revealed(q.no)) && <div className="vi">{p.vi}</div>}
       </div>
       {p.questions.map((q) => {
         const given = answers[q.no];
@@ -240,7 +240,7 @@ export function ReadingPaper({ test, answers, onAnswer, revealed, okOf }) {
                 <Reveal ok={okOf(q.no)}>
                   {given === undefined ? '⚪ Chưa trả lời' : okOf(q.no) ? '✅ Đúng' : '❌ Sai'} — đáp án: {LETTERS[q.answer]}
                 </Reveal>
-                <div className="quiz-reveal-sub">💡 {q.explain}</div>
+                {q.explain && <div className="quiz-reveal-sub">💡 {q.explain}</div>}
               </>
             )}
           </div>
@@ -317,8 +317,8 @@ export function WritingPaper({ test, answers, onAnswer, revealed, okOf, onCheck,
                 <Reveal ok={okOf(q.no)}>
                   {!text.trim() ? '⚪ Chưa trả lời' : okOf(q.no) ? '✅ Đúng' : '❌ Sai'} — đáp án: {q.answers.join(' / ')}
                 </Reveal>
-                <div className="quiz-reveal-sub">{q.vi}</div>
-                <div className="quiz-reveal-sub">💡 {q.explain}</div>
+                {q.vi && <div className="quiz-reveal-sub">{q.vi}</div>}
+                {q.explain && <div className="quiz-reveal-sub">💡 {q.explain}</div>}
               </div>
             )}
           </div>
@@ -352,8 +352,8 @@ export function WritingPaper({ test, answers, onAnswer, revealed, okOf, onCheck,
               <div className="rd-item-explain">
                 <div className="quiz-reveal-sub">Câu mẫu của sách:</div>
                 <div className="hz">{q.answer}</div>
-                <div className="quiz-reveal-sub">{q.vi}</div>
-                <div className="quiz-reveal-sub">💡 {q.explain}</div>
+                {q.vi && <div className="quiz-reveal-sub">{q.vi}</div>}
+                {q.explain && <div className="quiz-reveal-sub">💡 {q.explain}</div>}
                 <div className="controls exam-modes">
                   <button type="button" className={'btn' + (mark === 'ok' ? '' : ' secondary')} onClick={() => onSelf(q.no, 'ok')}>
                     ✅ Mình viết đúng

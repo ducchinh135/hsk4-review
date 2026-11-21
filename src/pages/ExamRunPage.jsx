@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ListeningPaper, ReadingPaper, WritingPaper } from '../components/ExamPaper.jsx';
 import { useApp } from '../context/AppContext.jsx';
-import { EXAM_MINUTES, SECTIONS, SECTION_NAME, TOTALS, WRITING_MINUTES, answeredCount, audioUrl, clipsOf, examKey, gapOf, gradeTest, isAnswered, isRight, listeningOf, mmss, saveResult, scaled, sectionQuestions, testByNo } from '../exam.js';
+import { EXAM_MINUTES, SECTIONS, SECTION_NAME, TOTALS, WRITING_MINUTES, answeredCount, audioUrl, clipsOf, examKey, gapOf, gradeTest, isAnswered, isRight, listeningOf, mmss, saveResult, scaled, sectionQuestions, testByNo, testName } from '../exam.js';
 import { Link } from '../router.jsx';
 
 const jump = (no) => document.getElementById('q' + no)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -195,7 +195,7 @@ export default function ExamRunPage({ test: testNo, mode }) {
         ← Các đề
       </Link>
       <span className="exercise-summary">
-        Đề số {test.test} · {real ? '⏱ Thi thật' : '📖 Ôn tập'}
+        {testName(test)} · {real ? '⏱ Thi thật' : '📖 Ôn tập'}
       </span>
     </div>
   );
@@ -206,7 +206,7 @@ export default function ExamRunPage({ test: testNo, mode }) {
       <div className="panel">
         {top}
         <div className="fillblank-box quiz-done">
-          <h2>Thi thật · Đề số {test.test}</h2>
+          <h2>Thi thật · {testName(test)}</h2>
           <div className="rd-note">
             <p>Phần <b>Nghe</b> (45 câu, khoảng 30 phút): audio phát <b>một lần</b>, không tua lại, không dừng. Sau mỗi câu có thời gian làm bài (10 giây ở phần 1, 17 giây ở phần 2–3), rồi tự sang câu tiếp.</p>
             <p>Tiếp theo là phần <b>Đọc</b> (40 câu, {EXAM_MINUTES} phút), rồi phần <b>Viết</b> (15 câu, {WRITING_MINUTES} phút). Hết giờ thì tự chuyển phần. Khi nộp bài, cả ba phần được chấm cùng lúc.</p>

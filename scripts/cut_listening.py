@@ -11,6 +11,9 @@ second question.
 Writes public/audio/exam/tNN/qQQ.mp3 (mono, 48 kbps) and src/data/exams/audio-manifest.json
 ({test: {no: {file, dur, gap}}}; gap = answering seconds that follow the clip in the real exam).
 
+The official Hanban papers (source/hanban/audio/HSK4 - H41002.mp3 ...) have the same structure plus one
+long silence at the very end (the time to fill in the answer sheet), so 49 or 50 silences are accepted.
+
 Usage: FFMPEG=/path/to/ffmpeg python3 -I scripts/cut_listening.py [test ...]
 """
 import glob
@@ -23,6 +26,9 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FF = os.environ.get('FFMPEG', 'ffmpeg')
 SRC = os.path.join(ROOT, 'source/audio')
+HANBAN_SRC = os.path.join(ROOT, 'source/hanban/audio')
+# test number -> code of the Hanban audio file (HSK4 - <code>.mp3)
+HANBAN = {11: 'H41002', 12: 'H41003', 13: 'H41004', 14: 'H41005', 15: 'H41006', 16: 'H41007', 17: 'H41008', 18: 'H41009', 19: 'H41010', 20: 'H41111', 21: 'H41218'}
 OUT = os.path.join(ROOT, 'public/audio/exam')
 MANIFEST = os.path.join(ROOT, 'src/data/exams/audio-manifest.json')
 PAD_BEFORE, PAD_AFTER = 0.15, 0.45
@@ -45,13 +51,15 @@ def question_index(no):
 
 def main(tests):
     manifest = json.load(open(MANIFEST, encoding='utf-8')) if os.path.exists(MANIFEST) else {}
-    for f in sorted(glob.glob(os.path.join(SRC, '*.mp3'))):
-        t = int(re.search(r'(\d\d)\+模拟', f).group(1))
+    files = [(int(re.search(r'(\d\d)\+模拟', f).group(1)), f) for f in sorted(glob.glob(os.path.join(SRC, '*.mp3')))]
+    files += [(t, os.path.join(HANBAN_SRC, 'HSK4 - %s.mp3' % c)) for t, c in HANBAN.items() if os.path.exists(os.path.join(HANBAN_SRC, 'HSK4 - %s.mp3' % c))]
+    for t, f in files:
         if tests and t not in tests:
             continue
         gaps = gaps_of(f)
-        if len(gaps) != 49:
-            sys.exit('test %d: expected 49 silences, found %d' % (t, len(gaps)))
+        if len(gaps) not in (49, 50):
+            sys.exit('test %d: expected 49 or 50 silences, found %d' % (t, len(gaps)))
+        gaps = gaps[:49]
         os.makedirs(os.path.join(OUT, 't%02d' % t), exist_ok=True)
         entry = {}
         for no in range(1, 46):

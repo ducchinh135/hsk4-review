@@ -608,3 +608,5 @@ select.rd-blank.bad{ background:#ffe3e3; }
 .exam-pic{ display:block; max-width:min(100%,360px); max-height:260px; margin:8px 0; border-radius:12px; background:#fff; }
 .exam-word{ font-weight:800; color:var(--accent-a,#ef6b7f); }
 .exam-count{ font-size:13px; color:#666; margin-bottom:6px; }
+
+.exam-group { margin: 18px 4px 8px; font-size: 1.05rem; }

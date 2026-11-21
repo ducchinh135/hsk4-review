@@ -5,10 +5,14 @@ import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { TESTS, TOTAL, TOTALS, hanCount, isRight, normalizeSentence, writingOf, answeredCount, audioUrl, clipsOf, gapOf, isAnswered, listeningOf, sectionQuestions, examKey, filledText, gradeTest, mmss, orderedSentences, questionsOf, scaled, testByNo, toggleLetter, usedWords } from '../src/exam.js';
 
-test('there are ten tests, numbered 1-10', () => {
-  assert.deepEqual(TESTS.map((t) => t.test), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// Every test, the Hanban papers included, has a Vietnamese translation and explanation for each question.
+const needsVi = () => true;
+
+test('there are 21 tests: 1-10 the book, 11-21 the official Hanban papers', () => {
+  assert.deepEqual(TESTS.map((t) => t.test), Array.from({ length: 21 }, (_, i) => i + 1));
+  assert.deepEqual(TESTS.filter((t) => t.source === 'hanban').map((t) => t.test), Array.from({ length: 11 }, (_, i) => i + 11));
   assert.equal(testByNo('3').test, 3);
-  assert.equal(testByNo(11), undefined);
+  assert.equal(testByNo(22), undefined);
 });
 
 test('every test has the 40 reading questions 46-85, once each, in order', () => {
@@ -22,7 +26,7 @@ test('every question is well formed', () => {
   for (const t of TESTS) {
     for (const q of questionsOf(t)) {
       const at = `test ${t.test} Q${q.no}`;
-      assert.ok(q.explain, at + ' explain');
+      assert.ok(!needsVi(t) || q.explain, at + ' explain');
       if (q.kind === 'blank') {
         assert.equal(q.set.words.length, 6, at);
         assert.ok(q.answer >= 0 && q.answer < 6 && q.answer !== q.set.example.answer, at);
@@ -110,7 +114,7 @@ test('every listening question is well formed and has its audio clip', () => {
   for (const t of TESTS) {
     for (const q of listeningOf(t)) {
       const at = `test ${t.test} Q${q.no}`;
-      assert.ok(q.explain && q.vi && q.script.length, at);
+      assert.ok((!needsVi(t) || (q.explain && q.vi)) && q.script.length, at);
       if (q.kind === 'tf') assert.equal(typeof q.answer, 'boolean', at);
       else {
         assert.equal(q.options.length, 4, at);
@@ -118,7 +122,7 @@ test('every listening question is well formed and has its audio clip', () => {
       }
       if (q.part === 3) assert.ok(q.group.includes(q.no) && q.question, at);
       for (const c of clipsOf(t, q)) assert.ok(existsSync(publicPath(audioUrl(c.file))), at + ' ' + c.file);
-      assert.ok(gapOf(t, q.no) >= 10 && gapOf(t, q.no) <= 21, at + ' gap');
+      assert.ok(gapOf(t, q.no) >= 9 && gapOf(t, q.no) <= 21, at + ' gap');
     }
   }
 });
@@ -163,7 +167,7 @@ test('every writing question is well formed, and its part-1 answers use exactly 
   for (const t of TESTS) {
     for (const q of writingOf(t)) {
       const at = `test ${t.test} Q${q.no}`;
-      assert.ok(q.vi && q.explain, at);
+      assert.ok(!needsVi(t) || (q.vi && q.explain), at);
       if (q.kind === 'sentence') {
         assert.ok(q.words.length >= 3 && q.words.length <= 6, at);
         assert.ok(q.answers.length >= 1, at);
@@ -197,4 +201,12 @@ test('writing part 1 is graded against every sentence the book lists; part 2 is 
   assert.equal(g.total, TOTALS.writing);
   assert.equal(gradeTest(t, { ...all, 86: '' }, 'writing').score, 9);
   assert.equal(answeredCount(t, { 86: '你', 96: ' ' }, 'writing'), 1);
+});
+
+test('no option, sentence or sample answer holds text leaked from the PDF (a heading, an example, a script)', () => {
+  const leak = /第\s*\d|部\s*分\s*第|例如|卷|H4\d{4}/;
+  for (const t of TESTS) {
+    for (const q of listeningOf(t)) for (const o of q.options || []) assert.ok(o.length <= 14 && !leak.test(o), `test ${t.test} L${q.no}: ${o}`);
+    for (const q of writingOf(t)) for (const a of [].concat(q.answers || q.answer || [])) assert.ok(a.length <= 45 && !/H4\d{4}|卷/.test(a), `test ${t.test} W${q.no}: ${a}`);
+  }
 });
