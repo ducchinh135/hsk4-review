@@ -16,6 +16,9 @@ export default function ExamHubPage() {
         <span className="exercise-summary">
           Luyện đề · {TESTS.length} đề HSK 4 · Nghe {TOTALS.listening} + Đọc {TOTALS.reading} + Viết 15 câu
         </span>
+        <Link to="/exam/history" className="btn secondary">
+          🕘 Lịch sử làm bài
+        </Link>
       </div>
       <div className="rd-note">
         <b>📖 Ôn tập:</b> làm từng câu, có đáp án và giải thích ngay, nghe lại audio thoải mái. <b>⏱ Thi thật:</b> nghe một lần theo nhịp đề thi, rồi phần Đọc 40 phút và phần Viết 25 phút, chấm điểm ở cuối.

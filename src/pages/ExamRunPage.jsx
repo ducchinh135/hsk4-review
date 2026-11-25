@@ -1,13 +1,21 @@
 import { useEffect, useRef, useState } from 'react';
 import { ListeningPaper, ReadingPaper, WritingPaper } from '../components/ExamPaper.jsx';
 import { useApp } from '../context/AppContext.jsx';
-import { EXAM_MINUTES, SECTIONS, SECTION_NAME, TOTALS, WRITING_MINUTES, answeredCount, audioUrl, clipsOf, examKey, gapOf, gradeTest, isAnswered, isRight, listeningOf, mmss, saveResult, scaled, sectionQuestions, testByNo, testName } from '../exam.js';
+import { EXAM_MINUTES, SECTIONS, SECTION_NAME, TOTALS, WRITING_MINUTES, answeredCount, audioUrl, clipsOf, examKey, gapOf, getAttempt, gradeTest, isAnswered, isRight, listeningOf, mmss, newAttemptId, saveAttempt, saveResult, scaled, scoresOf, sectionQuestions, testByNo, testName } from '../exam.js';
 import { Link } from '../router.jsx';
 
 const jump = (no) => document.getElementById('q' + no)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
 const ICON = { listening: '🎧', reading: '📄', writing: '✍️' };
 const COUNT = { listening: 45, reading: 40, writing: 15 };
 const TABS = [...SECTIONS, 'writing'];
+
+// All three sections graded: { listening, reading, writing, byNo }.
+function gradeAll(test, answers) {
+  const l = gradeTest(test, answers, 'listening');
+  const r = gradeTest(test, answers, 'reading');
+  const w = gradeTest(test, answers, 'writing');
+  return { listening: l, reading: r, writing: w, byNo: { ...l.byNo, ...r.byNo, ...w.byNo } };
+}
 
 // Plays the 45 listening clips of a real exam one after another with the exam's answering time after
 // each (10 s in part 1, 17 s after): no pause, no replay. Tells the page which question it is on and
@@ -79,20 +87,25 @@ function ExamAudio({ test, onNow, onEnd }) {
 // everything is graded at the end. Writing part 2 (a sentence about a picture) can only be checked by the
 // learner against the book's sample ("Mình viết đúng" / "Chưa đúng"). Wrong questions are marked "needs
 // review" in both. Progress is not kept across a reload.
-export default function ExamRunPage({ test: testNo, mode }) {
+//
+// Every attempt is kept in the history (see exam.js): a practice one as you answer, a real one when handed
+// in. With `attempt` the page shows a saved attempt again, graded, instead of starting a new one.
+function ExamRun({ test: testNo, mode, attempt }) {
   const { marks } = useApp();
   const test = testByNo(testNo);
-  const real = mode === 'real';
+  const reviewing = !!attempt;
+  const real = mode === 'real' || reviewing;
   const all = TABS.flatMap((s) => sectionQuestions(test, s));
   const qOf = (no) => all.find((q) => q.no === no);
 
-  const [answers, setAnswers] = useState({});
+  const [answers, setAnswers] = useState(attempt ? attempt.answers : {});
   const [shown, setShown] = useState({}); // study: questions already graded
-  const [selfMarks, setSelfMarks] = useState({}); // writing part 2: 'ok' | 'bad' chosen by the learner
-  const [phase, setPhase] = useState(real ? 'ready' : 'study'); // real: ready | listening | reading | writing | result
+  const [selfMarks, setSelfMarks] = useState(attempt ? attempt.selfMarks || {} : {}); // writing part 2: 'ok' | 'bad' chosen by the learner
+  const [phase, setPhase] = useState(reviewing ? 'result' : real ? 'ready' : 'study'); // real: ready | listening | reading | writing | result
   const [tab, setTab] = useState('listening');
   const [nowQ, setNowQ] = useState(0);
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState(attempt ? gradeAll(test, attempt.answers) : null);
+  const attemptRef = useRef({ id: attempt ? attempt.id : newAttemptId(), at: attempt ? attempt.at : Date.now() });
   const [left, setLeft] = useState(EXAM_MINUTES * 60);
   const [leftW, setLeftW] = useState(WRITING_MINUTES * 60);
   const latest = useRef(answers);
@@ -121,13 +134,11 @@ export default function ExamRunPage({ test: testNo, mode }) {
   };
 
   const finish = () => {
-    const l = gradeTest(test, latest.current, 'listening');
-    const r = gradeTest(test, latest.current, 'reading');
-    const w = gradeTest(test, latest.current, 'writing');
-    const byNo = { ...l.byNo, ...r.byNo, ...w.byNo };
+    const res = gradeAll(test, latest.current);
+    const { listening: l, reading: r, writing: w, byNo } = res;
     for (const no of Object.keys(byNo)) if (!byNo[no]) markWrong(Number(no));
     saveResult(test.test, { listening: l.score, reading: r.score, writing: w.score });
-    setResult({ listening: l, reading: r, writing: w, byNo });
+    setResult(res);
     setPhase('result');
     window.scrollTo(0, 0);
   };
@@ -141,10 +152,23 @@ export default function ExamRunPage({ test: testNo, mode }) {
     setResult(null);
     setLeft(EXAM_MINUTES * 60);
     setLeftW(WRITING_MINUTES * 60);
+    attemptRef.current = { id: newAttemptId(), at: Date.now() };
     setNowQ(0);
     setPhase(real ? 'ready' : 'study');
     window.scrollTo(0, 0);
   };
+
+  // keep the attempt in the history: a practice one as soon as it has an answer, a real one once handed in,
+  // and a saved one when only the self-marks of writing part 2 change
+  useEffect(() => {
+    const { id, at } = attemptRef.current;
+    if (reviewing) {
+      if (selfMarks !== attempt.selfMarks && JSON.stringify(selfMarks) !== JSON.stringify(attempt.selfMarks || {})) saveAttempt({ ...attempt, selfMarks });
+    } else if (real ? phase === 'result' : Object.keys(answers).length > 0) {
+      saveAttempt({ id, test: test.test, mode: real ? 'real' : 'study', at, answers, selfMarks, scores: scoresOf(test, answers) });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [answers, selfMarks, phase]);
 
   // the reading and writing clocks; when one runs out the exam moves on
   useEffect(() => {
@@ -191,11 +215,11 @@ export default function ExamRunPage({ test: testNo, mode }) {
   const studyRight = Object.keys(shown).filter((no) => isRight(qOf(Number(no)), answers[no])).length;
   const top = (
     <div className="exercise-top">
-      <Link to="/exam" className="link-btn">
-        ← Các đề
+      <Link to={reviewing ? '/exam/history' : '/exam'} className="link-btn">
+        ← {reviewing ? 'Lịch sử' : 'Các đề'}
       </Link>
       <span className="exercise-summary">
-        {testName(test)} · {real ? '⏱ Thi thật' : '📖 Ôn tập'}
+        {testName(test)} · {reviewing ? `🔍 Xem lại ${attempt.mode === 'real' ? 'thi thật' : 'ôn tập'} · ${new Date(attempt.at).toLocaleString('vi-VN')}` : real ? '⏱ Thi thật' : '📖 Ôn tập'}
       </span>
     </div>
   );
@@ -255,12 +279,22 @@ export default function ExamRunPage({ test: testNo, mode }) {
             </div>
           ) : null
         )}
+        {reviewing && attempt.mode === 'study' && <div className="srs-note">Bài ôn tập: câu chưa làm được tính là sai.</div>}
         <div className="controls">
-          <button type="button" className="btn" onClick={reset}>
-            🔁 Thi lại đề này
-          </button>
+          {reviewing ? (
+            <Link to={`/exam/${test.test}/real`} className="btn">
+              🔁 Thi lại đề này
+            </Link>
+          ) : (
+            <button type="button" className="btn" onClick={reset}>
+              🔁 Thi lại đề này
+            </button>
+          )}
           <Link to={`/exam/${test.test}/study`} className="btn secondary">
             📖 Ôn tập đề này
+          </Link>
+          <Link to="/exam/history" className="btn secondary">
+            🕘 Lịch sử
           </Link>
           <Link to="/exam" className="btn secondary">
             ← Các đề
@@ -352,4 +386,23 @@ export default function ExamRunPage({ test: testNo, mode }) {
       )}
     </div>
   );
+}
+
+// A new attempt (practice or real exam) of a test, or a saved one (`attemptId`) looked at again.
+export default function ExamRunPage({ test, mode, attemptId }) {
+  if (!attemptId) return <ExamRun test={test} mode={mode} />;
+  const attempt = getAttempt(attemptId);
+  if (!attempt || attempt.legacy || !testByNo(attempt.test)) {
+    return (
+      <div className="panel">
+        <div className="exercise-top">
+          <Link to="/exam/history" className="link-btn">
+            ← Lịch sử
+          </Link>
+        </div>
+        <div className="rd-note">{attempt && attempt.legacy ? 'Lần làm này được lưu từ phiên bản cũ nên chỉ có điểm, không có đáp án từng câu để xem lại.' : 'Không tìm thấy bài làm này (có thể đã bị xoá hoặc lưu ở trình duyệt khác).'}</div>
+      </div>
+    );
+  }
+  return <ExamRun test={attempt.test} mode={attempt.mode} attempt={attempt} />;
 }

@@ -205,6 +205,75 @@ export function saveResult(test, scores) {
   return all[test];
 }
 
+// Every attempt (practice and real exam) is kept in localStorage as a list, newest last:
+// { id, test, mode: 'study' | 'real', at (start), upd (last change), answers, selfMarks,
+//   scores: { listening: { score, total }, reading, writing } }.
+// A practice attempt is saved as you answer; a real one when you hand it in. Attempts made before this list
+// existed are carried over from the old last/best record as `legacy` entries (scores only, no answers).
+const ATTEMPTS_KEY = 'hsk4_exam_attempts_v1';
+const MAX_ATTEMPTS = 300;
+export const newAttemptId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+
+export function scoresOf(test, answers) {
+  const out = {};
+  for (const s of ['listening', 'reading', 'writing']) {
+    const g = gradeTest(test, answers, s);
+    out[s] = { score: g.score, total: g.total };
+  }
+  return out;
+}
+
+function legacyAttempts() {
+  const out = [];
+  for (const [no, r] of Object.entries(loadResults())) {
+    if (!r || !r.last) continue;
+    const mk = (id, at, scores, extra) => ({ id, test: Number(no), mode: 'real', at, upd: at, legacy: true, answers: {}, selfMarks: {}, scores, ...extra });
+    const l = r.last;
+    const sc = { listening: { score: l.listening, total: TOTALS.listening }, reading: { score: l.reading, total: TOTALS.reading } };
+    if (l.writing !== undefined) sc.writing = { score: l.writing, total: TOTALS.writing };
+    out.push(mk('old-' + no, l.at || 0, sc));
+    // the best total is kept only when it came from an earlier attempt than the last one
+    if (r.best > l.listening + l.reading) out.push(mk('old-best-' + no, 0, null, { bestTotal: r.best }));
+  }
+  return out;
+}
+
+export function loadAttempts() {
+  try {
+    const raw = localStorage.getItem(ATTEMPTS_KEY);
+    if (raw !== null) {
+      const list = JSON.parse(raw);
+      return Array.isArray(list) ? list : [];
+    }
+    const migrated = legacyAttempts();
+    if (migrated.length) localStorage.setItem(ATTEMPTS_KEY, JSON.stringify(migrated));
+    return migrated;
+  } catch {
+    return [];
+  }
+}
+
+function writeAttempts(list) {
+  try {
+    localStorage.setItem(ATTEMPTS_KEY, JSON.stringify(list.slice(-MAX_ATTEMPTS)));
+  } catch {
+    /* storage unavailable or full: the attempt is just not remembered */
+  }
+}
+
+export function saveAttempt(attempt) {
+  const list = loadAttempts();
+  const i = list.findIndex((a) => a.id === attempt.id);
+  const next = { ...attempt, upd: Date.now() };
+  if (i >= 0) list[i] = next;
+  else list.push(next);
+  writeAttempts(list);
+  return next;
+}
+
+export const deleteAttempt = (id) => writeAttempts(loadAttempts().filter((a) => a.id !== id));
+export const getAttempt = (id) => loadAttempts().find((a) => a.id === id) || null;
+
 // 0-100 section score the way HSK reports it (100 points per section).
 export const scaled = (score, total = TOTAL) => Math.round((score / total) * 100);
 

@@ -56,6 +56,8 @@ export const PAGE_TITLES = {
   exam: 'Luyện đề',
   'exam-study': 'Ôn tập đề',
   'exam-real': 'Thi thật',
+  'exam-history': 'Lịch sử làm bài',
+  'exam-review': 'Xem lại bài làm',
   games: 'Game phản xạ',
   'game-type': 'Gõ từ',
   'game-meteor': 'Bắn thiên thạch',
@@ -91,10 +93,13 @@ function matchCompare(parts) {
   return { page: 'compare', params: {}, path: '/compare' };
 }
 
+// /exam/history (every attempt), /exam/review/<id> (one attempt looked at again),
 // /exam (the list of tests), /exam/<n>/study (practice mode) and /exam/<n>/real (the real-exam mode); an
 // unknown test number or mode lands on the list.
 function matchExam(parts) {
   const [n, mode, ...rest] = parts;
+  if (n === 'history' && !mode) return { page: 'exam-history', params: {}, path: '/exam/history' };
+  if (n === 'review' && mode && /^[a-z0-9-]+$/i.test(mode) && !rest.length) return { page: 'exam-review', params: { id: mode }, path: `/exam/review/${mode}` };
   if (n && /^\d+$/.test(n) && testByNo(n) && (mode === 'study' || mode === 'real') && !rest.length) {
     return { page: 'exam-' + mode, params: { test: Number(n) }, path: `/exam/${Number(n)}/${mode}` };
   }

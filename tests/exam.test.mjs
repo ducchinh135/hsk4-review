@@ -210,3 +210,36 @@ test('no option, sentence or sample answer holds text leaked from the PDF (a hea
     for (const q of writingOf(t)) for (const a of [].concat(q.answers || q.answer || [])) assert.ok(a.length <= 45 && !/H4\d{4}|卷/.test(a), `test ${t.test} W${q.no}: ${a}`);
   }
 });
+
+// ---- attempt history (localStorage is stubbed: Node has none)
+import { TESTS as _T, deleteAttempt, getAttempt, loadAttempts, saveAttempt, scoresOf } from '../src/exam.js';
+import { matchRoute as _match } from '../src/routes.js';
+function stubStorage(init = {}) {
+  const m = new Map(Object.entries(init));
+  globalThis.localStorage = { getItem: (k) => (m.has(k) ? m.get(k) : null), setItem: (k, v) => m.set(k, String(v)) };
+}
+test('attempts: save, update, read and delete', () => {
+  stubStorage();
+  saveAttempt({ id: 'a', test: 1, mode: 'study', at: 1, answers: { 1: true }, selfMarks: {}, scores: scoresOf(_T[0], { 1: true }) });
+  saveAttempt({ id: 'a', test: 1, mode: 'study', at: 1, answers: { 1: true, 2: false }, selfMarks: {}, scores: scoresOf(_T[0], {}) });
+  saveAttempt({ id: 'b', test: 2, mode: 'real', at: 2, answers: {}, selfMarks: {}, scores: scoresOf(_T[1], {}) });
+  assert.equal(loadAttempts().length, 2);
+  assert.deepEqual(getAttempt('a').answers, { 1: true, 2: false });
+  deleteAttempt('a');
+  assert.equal(getAttempt('a'), null);
+  assert.equal(loadAttempts().length, 1);
+});
+test('attempts: old last/best results become legacy entries once', () => {
+  stubStorage({ hsk4_exam_results_v2: JSON.stringify({ 3: { last: { listening: 30, reading: 25, writing: 6, at: 99 }, best: 60 } }) });
+  const list = loadAttempts();
+  assert.equal(list.length, 2);
+  assert.ok(list.every((a) => a.legacy));
+  assert.equal(list[0].scores.listening.score, 30);
+  assert.equal(list[1].bestTotal, 60);
+  assert.equal(loadAttempts().length, 2);
+});
+test('routes: history and review', () => {
+  assert.equal(_match('/exam/history').page, 'exam-history');
+  const r = _match('/exam/review/abc1');
+  assert.deepEqual([r.page, r.params.id], ['exam-review', 'abc1']);
+});
