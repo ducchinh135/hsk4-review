@@ -273,10 +273,14 @@ export function subscribeAttempts(cb) {
 }
 const notify = (fromServer) => listeners.forEach((cb) => cb(fromServer));
 
+// Edit time of an attempt: always later than its previous one, so that a change is never mistaken for
+// the version the server already has.
+const nextUpd = (prev) => Math.max(Date.now(), prev ? prev.upd + 1 : 0);
+
 export function saveAttempt(attempt) {
   const list = rawAttempts();
   const i = list.findIndex((a) => a.id === attempt.id);
-  const next = { ...attempt, upd: Date.now() };
+  const next = { ...attempt, upd: nextUpd(list[i]) };
   if (i >= 0) list[i] = next;
   else list.push(next);
   writeAttempts(list);
@@ -289,7 +293,7 @@ export function deleteAttempt(id) {
   const i = list.findIndex((a) => a.id === id);
   if (i < 0) return;
   const { test, mode, at } = list[i];
-  list[i] = { id, test, mode, at, deleted: true, upd: Date.now() };
+  list[i] = { id, test, mode, at, deleted: true, upd: nextUpd(list[i]) };
   writeAttempts(list);
   notify(false);
 }
