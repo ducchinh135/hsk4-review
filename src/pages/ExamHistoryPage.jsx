@@ -17,13 +17,20 @@ function Trend({ attempts }) {
   const pts = attempts.filter((a) => a.mode === 'real' && a.at && a.scores).sort((a, b) => a.at - b.at).slice(-20);
   if (pts.length < 2) return null;
   return (
-    <div className="exam-trend" role="img" aria-label="Điểm Nghe + Đọc các lần thi thật gần đây">
-      <div className="quiz-label">Điểm Nghe + Đọc các lần thi thật (trên 85 câu)</div>
-      <div style={{ display: 'flex', alignItems: 'flex-end', gap: 4, height: 90 }}>
+    <div className="exam-trend" role="img" aria-label="Điểm Nghe + Đọc các lần thi thật gần đây" style={{ margin: '8px 0 14px' }}>
+      <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 6 }}>Điểm Nghe + Đọc các lần thi thật (tối đa 85)</div>
+      <div style={{ display: 'flex', alignItems: 'flex-end', gap: 8, height: 96, padding: '0 4px', borderBottom: '2px solid rgba(128,128,128,.35)', overflowX: 'auto' }}>
         {pts.map((a) => (
-          <div key={a.id} title={`${testName(testByNo(a.test))} · ${fmt(a.at)} · ${totalOf(a)}/85`} style={{ flex: 1, maxWidth: 28, textAlign: 'center', fontSize: 10 }}>
-            <div style={{ height: (totalOf(a) / 85) * 70, background: 'var(--accent, #4a7bd0)', borderRadius: 3, minHeight: 2 }} />
+          <div key={a.id} title={`${testName(testByNo(a.test))} · ${fmt(a.at)} · ${totalOf(a)}/85`} style={{ flex: '0 0 34px', textAlign: 'center', fontSize: 12, fontWeight: 700 }}>
             {totalOf(a)}
+            <div style={{ height: Math.max(4, (totalOf(a) / 85) * 64), background: 'var(--accent, #ee6a7c)', borderRadius: '4px 4px 0 0', marginTop: 2 }} />
+          </div>
+        ))}
+      </div>
+      <div style={{ display: 'flex', gap: 8, padding: '2px 4px', fontSize: 11, opacity: 0.7, overflowX: 'auto' }}>
+        {pts.map((a) => (
+          <div key={a.id} style={{ flex: '0 0 34px', textAlign: 'center' }}>
+            {a.test > 10 ? 'H' + a.test : 'Đề ' + a.test}
           </div>
         ))}
       </div>
