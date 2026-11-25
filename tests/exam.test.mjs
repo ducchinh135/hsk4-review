@@ -243,3 +243,31 @@ test('routes: history and review', () => {
   const r = _match('/exam/review/abc1');
   assert.deepEqual([r.page, r.params.id], ['exam-review', 'abc1']);
 });
+
+import { attemptsToPush, mergeServerAttempts } from '../src/exam.js';
+test('attempt sync: pushes only what the server lacks, newer side wins, deletions travel', () => {
+  stubStorage();
+  saveAttempt({ id: 'a', test: 1, mode: 'study', at: 1, answers: { 1: true }, selfMarks: {}, scores: {} });
+  saveAttempt({ id: 'b', test: 2, mode: 'real', at: 2, answers: {}, selfMarks: {}, scores: {} });
+  const sent = attemptsToPush();
+  assert.deepEqual(sent.map((x) => x.id).sort(), ['a', 'b']);
+  // the server echoes both back, and has a third one from another device
+  mergeServerAttempts([...sent, { id: 'c', test: 3, mode: 'study', at: 3, upd: 5, deleted: false, data: { answers: { 2: false }, selfMarks: {}, scores: {} } }]);
+  assert.equal(loadAttempts().length, 3);
+  assert.deepEqual(getAttempt('c').answers, { 2: false });
+  assert.equal(attemptsToPush().length, 0, 'nothing left to push');
+  // deleting sends a tombstone; once the server has it the local mark is dropped
+  deleteAttempt('a');
+  const del = attemptsToPush();
+  assert.equal(del.length, 1);
+  assert.equal(del[0].deleted, true);
+  assert.equal(getAttempt('a'), null);
+  mergeServerAttempts([del[0]]);
+  assert.equal(attemptsToPush().length, 0);
+  assert.equal(loadAttempts().length, 2);
+  // an older server copy does not overwrite a newer local edit
+  saveAttempt({ id: 'b', test: 2, mode: 'real', at: 2, answers: { 5: true }, selfMarks: {}, scores: {} });
+  mergeServerAttempts([{ id: 'b', test: 2, mode: 'real', at: 2, upd: 1, deleted: false, data: { answers: {}, selfMarks: {}, scores: {} } }]);
+  assert.deepEqual(getAttempt('b').answers, { 5: true });
+  assert.equal(attemptsToPush().length, 1, 'the newer edit is still to be pushed');
+});

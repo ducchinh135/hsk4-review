@@ -148,3 +148,29 @@ test('sync rejects invalid srs cards', async () => {
   const pull = await call('POST', '/api/sync', { cookie: u.cookie, body: { marks: {} } });
   assert.deepEqual(pull.data.srs, {}, 'nothing from the rejected requests was stored');
 });
+
+const attempt = (o = {}) => ({ id: 'att1', test: 3, mode: 'study', at: 1000, upd: 1000, deleted: false, data: { answers: { 1: true }, selfMarks: {}, scores: {} }, ...o });
+const sync2 = (u, attempts) => call('POST', '/api/exam-sync', { cookie: u.cookie, body: { attempts } });
+
+test('exam-sync requires login and rejects invalid attempts', async () => {
+  assert.equal((await call('POST', '/api/exam-sync', { body: { attempts: [] } })).status, 401);
+  const u = await newUser();
+  assert.equal((await sync2(u, 'x')).status, 400);
+  for (const bad of [attempt({ id: 'a b' }), attempt({ mode: 'x' }), attempt({ test: 0 }), attempt({ upd: 'now' }), attempt({ upd: Date.now() + 9e9 }), attempt({ data: null })]) {
+    assert.equal((await sync2(u, [bad])).status, 400);
+  }
+  assert.equal((await sync2(u, [attempt({ data: { answers: 'x'.repeat(30000) } })])).status, 413);
+});
+
+test('exam-sync merges last-write-wins, carries deletions and is private per user', async () => {
+  const u = await newUser();
+  const a = await sync2(u, [attempt(), attempt({ id: 'att2', test: 4 })]);
+  assert.equal(a.status, 200);
+  assert.equal(a.data.attempts.length, 2);
+  const b = await sync2(u, [attempt({ upd: 500, data: { answers: { 1: false } } }), attempt({ id: 'att2', upd: 2000, deleted: true, data: {} })]);
+  const byId = Object.fromEntries(b.data.attempts.map((x) => [x.id, x]));
+  assert.deepEqual(byId.att1.data.answers, { 1: true }, 'older edit must not overwrite');
+  assert.equal(byId.att2.deleted, true, 'newer deletion wins');
+  const other = await newUser();
+  assert.deepEqual((await sync2(other, [])).data.attempts, []);
+});

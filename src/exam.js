@@ -238,7 +238,7 @@ function legacyAttempts() {
   return out;
 }
 
-export function loadAttempts() {
+function rawAttempts() {
   try {
     const raw = localStorage.getItem(ATTEMPTS_KEY);
     if (raw !== null) {
@@ -261,18 +261,101 @@ function writeAttempts(list) {
   }
 }
 
+// A deleted attempt stays in the stored list as a tombstone ({ id, deleted: true, upd }) until the
+// account sync has told the server, so that the deletion reaches the other devices.
+export const loadAttempts = () => rawAttempts().filter((a) => !a.deleted);
+
+// Listeners hear about every change: cb(fromServer). The account sync listens for local changes only.
+const listeners = new Set();
+export function subscribeAttempts(cb) {
+  listeners.add(cb);
+  return () => listeners.delete(cb);
+}
+const notify = (fromServer) => listeners.forEach((cb) => cb(fromServer));
+
 export function saveAttempt(attempt) {
-  const list = loadAttempts();
+  const list = rawAttempts();
   const i = list.findIndex((a) => a.id === attempt.id);
   const next = { ...attempt, upd: Date.now() };
   if (i >= 0) list[i] = next;
   else list.push(next);
   writeAttempts(list);
+  notify(false);
   return next;
 }
 
-export const deleteAttempt = (id) => writeAttempts(loadAttempts().filter((a) => a.id !== id));
+export function deleteAttempt(id) {
+  const list = rawAttempts();
+  const i = list.findIndex((a) => a.id === id);
+  if (i < 0) return;
+  const { test, mode, at } = list[i];
+  list[i] = { id, test, mode, at, deleted: true, upd: Date.now() };
+  writeAttempts(list);
+  notify(false);
+}
 export const getAttempt = (id) => loadAttempts().find((a) => a.id === id) || null;
+
+// ---- account sync. SYNCED_KEY remembers the `upd` the server holds for each attempt, so only changed ones
+// are sent. The server keeps { id, test, mode, at, upd, deleted, data: { answers, selfMarks, scores, ... } }.
+const SYNCED_KEY = 'hsk4_exam_attempts_synced_v1';
+function loadSynced() {
+  try {
+    return JSON.parse(localStorage.getItem(SYNCED_KEY) || '{}') || {};
+  } catch {
+    return {};
+  }
+}
+function writeSynced(m) {
+  try {
+    localStorage.setItem(SYNCED_KEY, JSON.stringify(m));
+  } catch {
+    /* the next sync just sends everything again */
+  }
+}
+const toWire = ({ id, test, mode, at, upd, deleted, ...data }) => ({ id, test, mode, at: at || 0, upd, deleted: !!deleted, data: deleted ? {} : data });
+const fromWire = ({ id, test, mode, at, upd, deleted, data }) => (deleted ? { id, test, mode, at, upd, deleted: true } : { id, test, mode, at, upd, ...data });
+
+// The attempts the server does not have yet in their current state (at most `max`).
+export function attemptsToPush(max = 100) {
+  const synced = loadSynced();
+  return rawAttempts().filter((a) => synced[a.id] !== a.upd).slice(0, max).map(toWire);
+}
+
+// Fold the server's attempts into the local list: the newer `upd` wins for each id.
+export function mergeServerAttempts(server) {
+  const list = rawAttempts();
+  const synced = {};
+  let changed = false;
+  for (const w of server) {
+    const s = fromWire(w);
+    const i = list.findIndex((a) => a.id === s.id);
+    if (i < 0) {
+      list.push(s);
+      changed = true;
+    } else if (s.upd > list[i].upd) {
+      list[i] = s;
+      changed = true;
+    }
+    synced[s.id] = s.upd;
+  }
+  // forget the deletion marks the server has now taken over
+  const keep = list.filter((a) => !(a.deleted && synced[a.id] === a.upd));
+  if (keep.length !== list.length) changed = true;
+  writeAttempts(keep);
+  writeSynced({ ...loadSynced(), ...synced });
+  if (changed) notify(true);
+}
+
+// On logout: do not leave this account's attempts on a shared browser.
+export function clearAttempts() {
+  try {
+    localStorage.setItem(ATTEMPTS_KEY, '[]'); // not removed: an empty list keeps the old results from being carried over again
+    localStorage.removeItem(SYNCED_KEY);
+  } catch {
+    /* nothing to clear */
+  }
+  notify(true);
+}
 
 // 0-100 section score the way HSK reports it (100 points per section).
 export const scaled = (score, total = TOTAL) => Math.round((score / total) * 100);

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { attemptsToPush, clearAttempts, mergeServerAttempts, subscribeAttempts } from '../exam.js';
 
 async function api(method, path, body) {
   const res = await fetch(path, {
@@ -66,6 +67,11 @@ export function useAccount({ getMarks, mergeServer, clearMarks, onReplaced }) {
         }
         if (!r.ok) throw new Error('sync ' + r.status);
         deps.current.mergeServer(r.data.marks || {});
+        // exam attempts: a second request, so an older server without it only loses this part
+        const e = await api('POST', '/api/exam-sync', { attempts: attemptsToPush() });
+        if (!userRef.current) return false;
+        if (e.ok && e.data && Array.isArray(e.data.attempts)) mergeServerAttempts(e.data.attempts);
+        else if (e.status !== 404) throw new Error('exam-sync ' + e.status);
         if (first) deps.current.onReplaced();
         say('☁ Đã đồng bộ');
         clearTimeout(retry.current);
@@ -91,6 +97,9 @@ export function useAccount({ getMarks, mergeServer, clearMarks, onReplaced }) {
     clearTimeout(timer.current);
     timer.current = setTimeout(() => doSync.current(false), 800);
   }, []);
+
+  // a practice or exam attempt saved or deleted here is pushed like any other local edit
+  useEffect(() => subscribeAttempts((fromServer) => !fromServer && scheduleSync()), [scheduleSync]);
 
   useEffect(() => {
     let cancelled = false;
@@ -153,6 +162,7 @@ export function useAccount({ getMarks, mergeServer, clearMarks, onReplaced }) {
     setUser(null);
     say('');
     deps.current.clearMarks(); // do not leave this account's progress on a shared browser
+    clearAttempts();
     deps.current.onReplaced();
   }, []);
 

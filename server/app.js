@@ -3,6 +3,7 @@
 import { Hono } from 'hono';
 import { guardPost, noStore } from './middleware.js';
 import auth from './routes/auth.js';
+import exams from './routes/exams.js';
 import sync from './routes/sync.js';
 
 const app = new Hono().basePath('/api');
@@ -11,6 +12,7 @@ app.use('*', noStore);
 app.use('*', guardPost);
 app.route('/', auth);
 app.route('/', sync);
+app.route('/', exams);
 
 app.notFound((c) => c.json({ error: 'Không tìm thấy.' }, 404));
 app.onError((err, c) => {

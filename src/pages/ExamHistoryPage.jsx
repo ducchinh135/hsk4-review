@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { TOTALS, deleteAttempt, loadAttempts, scaled, testByNo, testName } from '../exam.js';
+import { useEffect, useState } from 'react';
+import { TOTALS, deleteAttempt, loadAttempts, scaled, subscribeAttempts, testByNo, testName } from '../exam.js';
 import { Link } from '../router.jsx';
 
 const fmt = (at) => (at ? new Date(at).toLocaleString('vi-VN', { dateStyle: 'short', timeStyle: 'short' }) : 'Không rõ ngày');
@@ -41,6 +41,8 @@ function Trend({ attempts }) {
 // Every practice and real-exam attempt, newest first: its scores, a link to look it over again, and delete.
 export default function ExamHistoryPage() {
   const [attempts, setAttempts] = useState(loadAttempts);
+  // attempts that arrive from the account sync show up without a reload
+  useEffect(() => subscribeAttempts(() => setAttempts(loadAttempts())), []);
   const [filter, setFilter] = useState('all'); // 'all' | 'real' | 'study'
   const shown = attempts.filter((a) => filter === 'all' || a.mode === filter).sort((a, b) => (b.at || 0) - (a.at || 0));
 
